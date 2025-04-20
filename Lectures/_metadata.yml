@@ -1,0 +1,6 @@
+title-prefix: "Hadron Physics"
+author: "RUB Physics"
+date-format: "MMMM D, YYYY"
+lang: en
+bibliography: references.bib
+citation-location: margin

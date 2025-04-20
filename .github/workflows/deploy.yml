@@ -17,9 +17,21 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Convert Markdown to HTML
+        run: |
+          cd Lectures
+          for file in *.md; do
+            if [ -f "$file" ]; then
+              quarto render "$file" --to html
+            fi
+          done
+
       - name: Deploy
         if: ${{ github.ref == 'refs/heads/main' }}
-        uses: peaceiris/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./Lectures
