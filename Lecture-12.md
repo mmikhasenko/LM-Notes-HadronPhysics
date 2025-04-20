@@ -11,12 +11,12 @@ The exercise sheet will now include problems on the $`R`$ ratio, which was previ
 
 To start today’s lecture, I will briefly recap our earlier discussion on helicity and chirality, specifically examining the decay of the $`\pi^{+}`$ meson:  
 
-```math
+$$
 \begin{align}
 \pi^{+} &\longrightarrow \mu^{+}\,\nu_{\mu}\,, \\
 \pi^{+} &\longrightarrow e^{+}\,\nu_{e}
 \end{align}
-```
+$$
 
 These decays illustrate key concepts in weak interactions and lepton universality. Comparing these processes will help us understand the underlying physics.
 
@@ -27,10 +27,10 @@ Cosine simularity: 0.8667178669593021
 
 The ratio of matrix elements for pion decay into electrons versus muons is given by:
 
-```math
+$$
 \frac{m_{e}}{E}<\frac{m_{\mu}}{E}\;\Longrightarrow\;  
 \frac{|\mathcal{M}_{e}|^{2}}{|\mathcal{M}_{\mu}|^{2}}\ll1
-```
+$$
 
 Here, $`m_e`$ and $`m_\mu`$ are the masses of the electron and muon, respectively, while $`E`$ is the energy scale of the decay. The inequality shows that the electron channel is suppressed compared to the muon channel due to the smaller mass of the electron.  
 
@@ -53,9 +53,9 @@ Cosine simularity: 0.9401249057468007
 
 The expression for the phase space ratio in pion decay is:  
 
-```math  
+$$  
 \frac{\Phi(\,e^{+}\nu_{e})}{\Phi(\,\mu^{+}\nu_{\mu})} = \frac{s-m_{e}^{2}}{s-m_{\mu}^{2}} > 1  
-```  
+$$  
 
 However, this does not fully explain the observed decay rates. The correct answer is that the ratio is significantly less than one, which is why pions decay predominantly to muons rather than electrons.  
 
@@ -71,7 +71,7 @@ The suppression of the electron channel is due to the small mass difference, whi
 <!--
 Cosine simularity: 0.9379395322736357
 -->
-```
+$$
 ## Magnetic Moment of the Muon and Quantum Corrections
 
 Because the pion is massless and the electron is almost massless, the phase space is much larger. For the second case, however, this does not compensate the suppression. Let's consider the phase space of the electron channel. There is an angle integral which I'm going to implement now, and the neutrino phase space is something like that. The breakup momentum is something I need to evaluate, and I will double-check the calculation.  
@@ -90,9 +90,9 @@ Integrating over the electron energies reveals that this is the preferred config
 
 We discussed this in the second lecture when we calculated the quark content of the proton's magnetic moment. Let me remind you what it is. The magnetic moment of a particle describes its interaction with a magnetic field. For a point-like fermion, it is given by the Bohr magneton and the gyromagnetic factor:  
 
-```math
+$$
 \vec{\mu} = \frac{e}{2m} g \vec{S}, \quad g = 2 \ \text{(Dirac, pointlike)}
-```
+$$
 
 This is a fundamental quantity, and $`g = 2`$ for a fermion. However, for the proton, we found $`g \approx 2.8`$. How can this be if the proton is a fermion? This discrepancy indicates that the proton is not pointlike—it is made of quarks.  
 
@@ -101,7 +101,7 @@ In the quark model, we computed the correct value by considering the charges and
 For the muon, however, we do not doubt that it is an elementary particle with no internal structure. We expect $`g = 2`$, but this is only true at first order. There are corrections from virtual processes that make $`g`$ not exactly 2. The quantity $`a = (g - 2)/2`$ is used to describe these corrections.  
 
 The muon's $`g - 2`$ is one of the most precisely known numbers in physics. It is a key test of quantum field theory and may hint at new physics if discrepancies with theory are found.
-```
+$$
 
 <!--
 Cosine simularity: 0.9076887110688191
@@ -110,9 +110,9 @@ Cosine simularity: 0.9076887110688191
 
 The quantity $`a_{\mu}`$ is defined as:
 
-```math
+$$
 a_{\mu} \equiv \frac{g-2}{2} = 0.001165\,8209(63)
-```
+$$
 
 This represents the anomalous magnetic moment of the muon. In physics, such precision is rare, and there is a significant effort to measure even more digits. This precision provides sensitivity to quantum loop effects and potential new physics, as corrections arise from virtual quantum processes.  
 
@@ -131,9 +131,9 @@ The charge of the electron and the muon combine as $`e^2 / (4\pi) = \alpha`$, wh
 
 Currently, we know the corrections up to the fifth order in $`\alpha`$, meaning we have calculated terms like $`\alpha^2`$, $`\alpha^3`$, and so on up to $`\alpha^5`$. The fifth-order correction is proportional to $`\alpha^5`$.  
 
-```math
+$$
 a_{\mu}^{\text{QED}} = \frac{\alpha}{2\pi}
-```
+$$
 
 This represents the leading-order QED contribution to the muon's anomalous magnetic moment. Higher-order terms refine this prediction.
 
@@ -144,9 +144,9 @@ Cosine simularity: 0.8658466478004531
 
 The cyclotron frequency $`\omega_c`$ is given by:
 
-```math
+$$
 \omega_{c}=\frac{eB}{m\gamma}
-```
+$$
 
 Here, $`e`$ is the muon charge, $`B`$ is the magnetic field, $`m`$ is the muon mass, and $`\gamma`$ is the Lorentz factor.  
 
@@ -156,9 +156,9 @@ The first-order correction was derived in the 1770s, and Schwinger later calcula
 
 Muons are trapped in the ring under a magnetic field, causing them to travel in circular orbits due to the bending force. The spin precession frequency $`\omega_s`$ is critical, and the difference $`\omega_c - \omega_s`$ is proportional to the anomalous magnetic moment $`a_\mu`$:
 
-```math
+$$
 \omega_c - \omega_s \propto a_\mu = \frac{g-2}{2}
-```
+$$
 
 The experiment begins with a proton beam (e.g., hydrogen) striking a target to produce pions. These pions decay into muons, which are then directed into the storage ring. The muons' spin precession is measured to determine $`g-2`$.  
 
@@ -174,9 +174,9 @@ Cosine simularity: 0.91447047666436
 
 The spin precession frequency $`\omega_s`$ is given by:  
 
-```math
+$$
 \omega_{s}= \frac{g eB}{2m} +(1-\delta)\,\frac{eB}{m}
-```
+$$
 
 Pions decay and some of them convert to muons, which become trapped in the storage ring. Since pions produce polarized muons, the initial spin configuration is already aligned for measurement.  
 
@@ -189,7 +189,7 @@ These calorimeters measure the electron flux. If the muon spin points outward, f
 <!--
 Cosine simularity: 0.8781745221016476
 -->
-```
+$$
 ## Hadronic Contributions to Anomalous Magnetic Moment
 
 The spin precession frequency $`\omega_s`$ is measured in experiments like the muon $`g-2`$ experiment. If the spin points outwards, there is a loss of detected electrons, while if it points inwards, more electrons are observed. This creates fluctuations in the energy deposit along the circular path.  
@@ -209,7 +209,7 @@ The hadronic contributions to the muon’s anomalous magnetic moment are signifi
 2. **Hadronic Light-by-Light (HLbL) Scattering**: This involves photons interacting via intermediate hadrons. The process can be visualized as light entering and exiting a hadronic blob, with intermediate hadron states like $`\pi^0`$ or $`\eta`$ mesons, which decay into two photons.  
 
 The quantum numbers ($`J^{PC}`$) of the intermediate hadrons must match those of the photon for the process to occur.  
-```
+$$
 
 <!--
 Cosine simularity: 0.8568702568782329
@@ -218,9 +218,9 @@ Cosine simularity: 0.8568702568782329
 
 The ratio $`R(s)`$ is defined as:
 
-```math
+$$
 R(s) = \frac{\sigma(e^+e^- \to \text{hadrons})}{\sigma_0(e^+e^- \to \mu^+\mu^-)}
-```
+$$
 
 This measures the relative cross section of electron-positron annihilation into hadrons compared to muon pair production.  
 
@@ -261,9 +261,9 @@ Cosine simularity: 0.8728900200071903
 
 Let's look at the expression for the Cauchy integral formula:
 
-```math
+$$
 f(s) = \frac{1}{2\pi i} \oint \frac{f(s')}{s' - s} \, ds'
-```
+$$
 
 Here, $`f(s)`$ is an analytic function, and the integral is taken over a closed contour in the complex plane. The denominator $`s' - s`$ introduces a pole at $`s' = s`$, and the residue theorem ensures the value of $`f(s)`$ is determined by its behavior at this pole.  
 
@@ -277,9 +277,9 @@ The integration starts at the threshold of the hadron production reaction. The l
 
 The integral runs from the two-pion threshold to infinity, with a $`1/s'`$ denominator. This structure is familiar from the Cauchy theorem, which states that for an analytic function, the contour integral equals the sum of residues at its poles.  
 
-```math
+$$
 \oint f(s') \, ds' = 2\pi i \sum \text{Res}(f, s'_k)
-```
+$$
 
 Here, $`f(s')`$ has a simple pole at $`s' = s`$, so the residue is just $`f(s)`$. This allows us to represent $`f(s)`$ as an integral over its boundary values.  
 
@@ -302,23 +302,23 @@ Cosine simularity: 0.8831923492481398
 
 The dispersion relation is a consequence of the Cauchy theorem, and it provides a useful representation for functions with specific analytic properties. Consider a function $`f(s)`$ that is real analytic in the domain below a cut, where the cut starts at a threshold $`s_{\text{th}}`$. The dispersion relation is given by:
 
-```math
+$$
 f(s) = \frac{1}{\pi} \int_{s_{\text{th}}}^{\infty} \frac{\operatorname{Im} f(s' + i0)}{s' - s} \, ds'
-```
+$$
 
 Now, let’s apply a contour integration trick. Suppose we have a function $`G(s)`$ that is analytic everywhere except along a cut. We can write:
 
-```math
+$$
 G(s) = \frac{1}{2\pi i} \oint_C \frac{G(s_1)}{s_1 - s} \, ds_1
-```
+$$
 
 Here, $`C`$ is a contour enclosing the singularity at $`s`$. By deforming the contour, we encounter two contributions: one from a large circle (which vanishes if $`G(s)`$ decays sufficiently at infinity) and another from the cut along the real axis.  
 
 The key property we use is the behavior of $`G(s)`$ near the cut. For $`s`$ just above the cut ($`s + i0`$) and just below ($`s - i0`$), the function satisfies:
 
-```math
+$$
 G(s + i0) = G^*(s - i0)
-```
+$$
 
 This means the real parts are equal, while the imaginary parts have opposite signs.  
 
@@ -327,23 +327,23 @@ This means the real parts are equal, while the imaginary parts have opposite sig
 
 Let’s verify this for $`x = 5`$:
 
-```math
+$$
 G(5 + i0) = \sqrt{-4 - i0} = 2i
-```
+$$
 
 This confirms the expected behavior: the real part is zero, and the imaginary part is positive above the cut. Below the cut (for $`x = -8`$):
 
-```math
+$$
 G(-8) = \sqrt{9} = 3
-```
+$$
 
 This function is real analytic below the cut.  
 
 Using these properties, we can rewrite the contour integral as:
 
-```math
+$$
 G(s) = \frac{1}{\pi} \int_{s_{\text{th}}}^{\infty} \frac{\operatorname{Im} G(s' + i0)}{s' - s} \, ds'
-```
+$$
 
 The minus sign arises because the integral along one side of the cut cancels the integral along the other side, but with opposite directions.  
 
@@ -357,9 +357,9 @@ This is the essence of the dispersion relation, which allows us to reconstruct t
 
 The final formula we derived is:
 
-```math
+$$
 G(s) = \frac{1}{\pi} \int_{s_{\text{th}}}^{\infty} \frac{\operatorname{Im} G(s' + i0)}{s' - s} \, ds'
-```
+$$
 
 This is a powerful tool for analyzing functions with known analytic properties and discontinuities.
 
@@ -376,9 +376,9 @@ When people say they perform this dispersion relation with one subtraction, it m
 
 This is called a **one-subtracted dispersion relation**. The simplest subtraction occurs at $`a = 0`$, giving:  
 
-```math
+$$
 g(s) = g(0) + \frac{s}{\pi} \int_{s_{\text{th}}}^{\infty} \frac{\operatorname{Im}g(s')}{s'(s'-s)} \, ds'
-```
+$$
 
 Here, the extra $`s`$ in the denominator comes from the subtraction. This is necessary when the function does not decrease fast enough at infinity. In such cases, you must use a one-subtracted or even a twice-subtracted relation.  
 
@@ -392,22 +392,22 @@ This method is widely used in physics, particularly in scattering amplitude anal
 <!--
 Cosine simularity: 0.8047423737876214
 -->
-```
+$$
 ## R Ratio and Resonances in Experimental Measurements
 
 The R ratio is defined as:
 
-```math
+$$
 R(s) = \frac{\sigma(e^{+}e^{-}\!\to\!\text{hadrons})}{\sigma_{0}(e^{+}e^{-}\!\to\!\mu^{+}\mu^{-})}
-```
+$$
 
 The function is real up to the threshold, and this implies a specific relation. When the function is real in the vicinity and we approach the threshold, the imaginary part appears with opposite signs on either side of the cut. This is how analyticity introduces the imaginary part consistently from both sides of the cut.  
 
 For example, consider the function $`X`$ where:  
 
-```math
+$$
 X - X = \int \frac{X}{5}
-```
+$$
 
 The imaginary part of $`\sqrt{X(1 - X)}`$ can be evaluated explicitly, and we must also include the value at zero, which is one. This may seem surprising, but it works mathematically because we started with an analytic function.  
 
@@ -421,7 +421,7 @@ The R ratio reveals all the resonances that can appear, such as the $`\rho`$, $`
 > The R ratio is a key observable because it captures both resonant and non-resonant (background) contributions, providing a comprehensive view of the hadronic cross section in electron-positron collisions.  
 
 The current status of the problem involves evaluating these contributions, including the challenges of modeling the hadronization process and its impact on the measured cross section.
-```
+$$
 
 <!--
 Cosine simularity: 0.9605728403376251
@@ -436,12 +436,12 @@ The exercise sheet will cover the $`R`$-ratio, which was originally planned for 
 
 To begin today’s lecture, I will briefly recap a previous discussion on helicity and chirality, specifically examining the decay of the $`\pi^+`$ meson:  
 
-```math
+$$
 \begin{align}
 \pi^{+} &\longrightarrow \mu^{+}\,\nu_{\mu}\,, \\
 \pi^{+} &\longrightarrow e^{+}\,\nu_{e}\,.
 \end{align}
-```
+$$
 
 This comparison will help us transition into today’s topic.
 
@@ -456,12 +456,12 @@ Since chirality relates to spin orientation in the high-mass limit, the diagram 
 
 Let’s discuss the first case: the decay $`\pi^+ \to \mu^+ \nu_\mu`$ compared to $`\pi^+ \to e^+ \nu_e`$. The weak interaction governs these processes, and chirality plays a key role in the matrix elements. The phase space difference arises due to the lepton masses, affecting the decay rates.  
 
-```math
+$$
 \begin{align}
 \pi^{+} &\longrightarrow \mu^{+}\,\nu_{\mu}\,, \\
 \pi^{+} &\longrightarrow e^{+}\,\nu_{e}\,.
 \end{align}
-```
+$$
 
 The heavier muon suppresses its phase space relative to the electron, making the electronic decay less likely despite the larger available energy. This is a direct consequence of the chiral structure in weak interactions.
 
@@ -483,9 +483,9 @@ For a right-handed particle, the spin component aligned with momentum is dominan
 
 The neutrino, being massless, has no right-handed component. However, the electron can have a suppressed right-handed component proportional to $`m_e / E`$. This suppression is stronger for the electron than for the muon due to their mass difference:  
 
-```math
+$$
 \frac{m_e}{E} \ll \frac{m_\mu}{E} \implies \frac{|\mathcal{M}_e|^2}{|\mathcal{M}_\mu|^2} \ll 1
-```
+$$
 
 For the pion decay $`\pi^+ \to \mu^+ \nu_\mu`$, the muon is nearly non-relativistic because the pion mass is only slightly larger than the muon mass. Thus, the chirality suppression is less severe compared to the electronic decay $`\pi^+ \to e^+ \nu_e`$, where the electron is highly relativistic and the suppression is stronger.  
 
@@ -496,9 +496,9 @@ Cosine simularity: 0.9526626422103761
 
 The expression for the phase space ratio in pion decay is:  
 
-```math
+$$
 \frac{\Phi(\,e^{+}\nu_{e})}{\Phi(\,\mu^{+}\nu_{\mu})} = \frac{s-m_{e}^{2}}{s-m_{\mu}^{2}} > 1
-```  
+$$  
 
 However, this ratio is not as strong as it might appear. The correct answer is that the ratio is significantly less than one. This explains why the pion decays predominantly to a muon and neutrino rather than an electron and neutrino.  
 
@@ -519,21 +519,21 @@ Because the pion is massless (or nearly massless for the electron case), the pha
 
 For the phase space of the electron channel, we evaluate the breakup momentum and include an angle integral. The breakup momentum can be expressed in terms of the squared invariant mass $`s`$ and the particle masses. The challenge function is constructed as:  
 
-```math
+$$
 f(s, m_{e}) = s - m_{e}^2
-```  
+$$  
 
 For another channel, the function would be:  
 
-```math
+$$
 f(s, m_{\mu}) = s - m_{\mu}^2
-```  
+$$  
 
 The full expression involves terms like $`x^2 + y^2 + z^2 - 2xy - 2yz - 2zx`$, but when $`b = 0`$, certain terms drop out, leaving only the difference in energies. The final phase space ratio is:  
 
-```math
+$$
 \frac{\Phi(e^{+}\nu_{e})}{\Phi(\mu^{+}\nu_{\mu})} = \frac{s - m_{e}^2}{s - m_{\mu}^2}
-```  
+$$  
 
 This ratio does not compensate for the suppression, so the dominant decay of the pion is to a muon and neutrino.  
 
@@ -542,9 +542,9 @@ This ratio does not compensate for the suppression, so the dominant decay of the
 
 Another key observation is that the muon produced in pion decay is polarized. Since the pion is spinless, the decay products (muon and neutrino) must conserve angular momentum. The neutrino is not directly detectable, but the muon's polarization can be inferred from its subsequent decay:  
 
-```math
+$$
 \mu^+ \to e^+ \nu_e \bar{\nu}_{\mu}
-```  
+$$  
 
 The muon is "self-analyzing" because the angular distribution of the emitted electron in the muon's rest frame reflects its polarization. If the muon is unpolarized, the electron emission is isotropic. However, if the muon is polarized, the electron preferentially aligns with the spin direction.  
 
@@ -562,9 +562,9 @@ Cosine simularity: 0.895631932257325
 
 The magnetic moment $`\vec{\mu}`$ of a particle is given by:
 
-```math
+$$
 \vec{\mu} = \frac{e}{2m}\,g\,\vec{S}
-```
+$$
 
 Here, $`g`$ is the gyromagnetic factor, which is exactly 2 for a pointlike Dirac fermion. The spin $`\vec{S}`$ aligns with the magnetic moment.  
 
@@ -582,9 +582,9 @@ For the muon, however, we assume it is an elementary particle with no internal s
 > [!NOTE]  
 > The deviation from $`g = 2`$ is quantified by the anomalous magnetic moment $`a`$, defined as:  
 
-```math
+$$
 a = \frac{g - 2}{2}
-```  
+$$  
 
 This quantity is one of the most precisely measured values in particle physics. The corrections arise from higher-order processes in quantum field theory, such as loop diagrams involving virtual particles.  
 
@@ -599,9 +599,9 @@ Cosine simularity: 0.9046492833640776
 
 We define the anomalous magnetic moment $`a_{\mu}`$ as:
 
-```math
+$$
 a_{\mu} \equiv \frac{g-2}{2} = 0.001165\,8209(63)
-```
+$$
 
 In physics, such precision is rare. There is a major effort to measure even more digits because this sensitivity allows us to probe quantum loop effects and potential new physics. These corrections arise from quantum processes, similar to the form factor discussed earlier.  
 
@@ -620,9 +620,9 @@ The charge of the electron and muon combine as $`e^2 / (4\pi) = \alpha`$, where 
 
 We now know corrections up to the fifth order: $`\alpha^2, \alpha^3, \alpha^4`$, and so on. The $`\alpha^5`$ correction is a known value, though the exact number isn't provided here.  
 
-```math
+$$
 a_{\mu}^{\text{QED}} = \frac{\alpha}{2\pi}
-```  
+$$  
 
 This represents the leading-order contribution to the anomalous magnetic moment. Higher-order terms refine this prediction, demonstrating the precision achievable in QED calculations.
 
@@ -635,9 +635,9 @@ The value here is approximately $`25\alpha`$, though the exact number is not cri
 
 We now have numerical techniques to evaluate these terms. The fine-structure constant $`\alpha`$ appears in higher-order corrections, such as $`\alpha^4`$ and $`\alpha^5`$, which refine predictions like the anomalous magnetic moment:
 
-```math
+$$
 a_{\mu}^{\text{QED}} = \frac{\alpha}{2\pi}
-```  
+$$  
 
 The convergence of the series is confirmed as higher-order terms are included.
 
@@ -653,9 +653,9 @@ The series is converging, and we now rely on numerical techniques. No one comput
 
 The first-order calculations date back to the 1770s. Schwinger's foundational work introduced the fine-structure constant $`\alpha`$ with his famous result:  
 
-```math
+$$
 a_e = \frac{\alpha}{2\pi}
-```  
+$$  
 
 This was a pivotal contribution to quantum electrodynamics (QED). The techniques available at the time were limited, but Schwinger managed to calculate these diagrams manually.
 
@@ -666,9 +666,9 @@ Cosine simularity: 0.8791079157453252
 
 The cyclotron frequency $`\omega_c`$ is given by:
 
-```math
+$$
 \omega_{c}=\frac{eB}{m\gamma}
-```
+$$
 
 Here, $`e`$ is the muon charge, $`B`$ is the magnetic field, $`m`$ is the muon mass, and $`\gamma`$ is the Lorentz factor.  
 
@@ -690,9 +690,9 @@ Cosine simularity: 0.9213939628714057
 
 The spin precession frequency is given by:
 
-```math
+$$
 \omega_{s}= \frac{g eB}{2m} +(1-\delta)\,\frac{eB}{m}
-```
+$$
 
 Here, $`g`$ is the g-factor, $`e`$ is the muon charge, $`B`$ is the magnetic field, $`m`$ is the muon mass, and $`\delta`$ is a small correction term.  
 
@@ -709,9 +709,9 @@ Cosine simularity: 0.9462576222173184
 
 The observable beat frequency is given by:
 
-```math
+$$
 \omega_{g}-\omega_{c}=a_{\mu}\,\frac{eB}{m}
-```
+$$
 
 If the spin points outwards, there is a loss of electrons. If the spin points inwards, more electrons are detected. Along the circular path, fluctuations in the energy deposit are observed.  
 
@@ -732,9 +732,9 @@ During the press conference, the envelope was opened, the true frequency was ent
 
 The measurement focuses on the frequency $`\omega_S`$, which is related to the muon's anomalous magnetic moment $`a_\mu`$ through the equation:  
 
-```math
+$$
 \omega_S = a_\mu \frac{eB}{m}
-```
+$$
 
 Here, $`e`$ is the muon charge, $`B`$ is the magnetic field, and $`m`$ is the muon mass.  
 
@@ -758,13 +758,13 @@ Cosine simularity: 0.8723698779227103
 
 The hadronic vacuum polarization (HVP) contribution to the anomalous magnetic moment is given by:
 
-```math
+$$
 \begin{equation}
 a_{\text{HVP}}=\left(\frac{\alpha\,m_{\mu}}{3\pi}\right)^{2}
               \int_{s_{\text{th}}}^{\infty}\!
               \frac{ds'}{s'}\,K(s')\,R(s')
 \end{equation}
-```
+$$
 
 The current experimental precision for $`a_\mu`$ is 63 parts per billion (ppb), with the theoretical prediction also around 100 ppb.  
 
@@ -852,9 +852,9 @@ These two pines must satisfy the energy-momentum constraints, meaning they carry
 
 Consider the orbital angular momentum for $`2\pi`$ with $`\ell = 1`$. To achieve this, you would combine them in an S-wave. The S-wave combination gives:  
 
-```math
+$$
 1 + 0 + \pi^0 - 0 - 0 - 0 + \ldots
-```  
+$$  
 
 This arises from the superposition of the wavefunctions.
 
@@ -865,9 +865,9 @@ Cosine simularity: 0.8639034387911048
 
 The expression:
 
-```math
+$$
 f(s)=\frac{1}{2\pi i}\oint\!\frac{f(s')}{s'-s}\,ds'
-```
+$$
 
 represents an integral formula for an analytic function $`f(s)`$. Here, $`s'`$ is the integration variable, and the contour encloses the point $`s`$.  
 
@@ -887,46 +887,46 @@ Cosine simularity: 0.8982182213092448
 
 The dispersion relation is a consequence of the Cauchy theorem, and it provides a useful representation for certain functions. Consider a function $`f(s)`$ that is real analytic in the domain below a cut, with the cut starting at a threshold $`s_{\text{th}}`$. We can write:
 
-```math
+$$
 f(s) = \frac{1}{\pi} \int_{s_{\text{th}}}^{\infty} \frac{\operatorname{Im}f(s' + i0)}{s' - s} \, ds'
-```
+$$
 
 Now, suppose we have a function $`G(s)`$ that is real analytic below the cut. We can represent it using contour integration:
 
-```math
+$$
 G(s) = \frac{1}{2\pi i} \oint_C \frac{G(s_1)}{s_1 - s} \, ds_1
-```
+$$
 
 Here, $`C`$ is a contour enclosing the point $`s`$. By deforming the contour, we encounter singularities—primarily the pole at $`s_1 = s`$—and contributions from the cut. The integral splits into two parts: one from a large circular contour and another from the cut along the real axis.  
 
 The key property we use is the behavior of $`G(s)`$ near the cut. For $`s`$ just above the cut ($`s + i0`$) and below ($`s - i0`$), the function satisfies:
 
-```math
+$$
 G(s + i0) = G^*(s - i0)
-```
+$$
 
 This means the real parts are equal, and the imaginary parts differ by a sign. To illustrate, take the example of $`G(x) = \sqrt{1 - x}`$, which has a cut starting at $`x = 1`$. For $`x < 1`$, the function is real and analytic. For $`x > 1`$, we evaluate:
 
-```math
+$$
 G(x + i0) = \sqrt{-(x - 1) - i0} = i \sqrt{x - 1}
-```
-```math
+$$
+$$
 G(x - i0) = -i \sqrt{x - 1}
-```
+$$
 
 This confirms the relation $`G(s + i0) = G^*(s - i0)`$.  
 
 Using this, we can rewrite the contour integral. The contribution from the cut reduces to an integral over the discontinuity of $`G(s)`$ across the cut:
 
-```math
+$$
 G(s) = \frac{1}{2\pi i} \left( \int_{\text{cut}} \frac{G(s_1 + i0) - G(s_1 - i0)}{s_1 - s} \, ds_1 + \text{circle contribution} \right)
-```
+$$
 
 The discontinuity is $`2i \operatorname{Im} G(s_1 + i0)`$, so:
 
-```math
+$$
 G(s) = \frac{1}{\pi} \int_{s_{\text{th}}}^{\infty} \frac{\operatorname{Im} G(s_1 + i0)}{s_1 - s} \, ds_1 + \text{circle term}
-```
+$$
 
 If $`G(s)`$ decays sufficiently fast as $`|s| \to \infty`$, the circle contribution vanishes, leaving only the dispersion integral. This is the dispersion relation, which allows us to reconstruct the full function from its imaginary part.  
 
@@ -946,9 +946,9 @@ When people say they use the dispersion relation with one subtraction, it's not 
 
 The simplest subtraction occurs at $`a = 0`$. Then, the relation becomes:  
 
-```math
+$$
 g(s) = g(0) + \frac{s}{\pi} \int_{s_{\text{th}}}^{\infty} \frac{\operatorname{Im}g(s')}{s'(s' - s)} \, ds'
-```
+$$
 
 This extra $`s`$ in the denominator is necessary when the function does not decrease fast enough at high energies. In such cases, you must use a one-subtracted or even a twice-subtracted relation. The twice-subtracted form involves raising $`(s - a)`$ to the second power.
 
@@ -967,9 +967,9 @@ For example, consider a function that is real along the real axis. As we approac
 
 The subtraction method in dispersion relations helps recover the full function from its imaginary part, maintaining consistency in the complex plane.  
 
-```math
+$$
 g(s) = g(0) + \frac{s}{\pi} \int_{s_{\text{th}}}^{\infty} \frac{\operatorname{Im}g(s')}{s'(s' - s)} \, ds'
-```  
+$$  
 
 This relation is essential when the function does not decay sufficiently at high energies, requiring one or even two subtractions to ensure convergence.
 
@@ -986,9 +986,9 @@ Now, let's return to the main expression. We relate the imaginary part of this b
 
 This explains why we start at the threshold: the function is real below the threshold and only develops an imaginary part beyond it. The polarization is computed via dispersion relations and then linked to the cross section.  
 
-```math
+$$
 g(s) = g(0) + \frac{s}{\pi} \int_{s_{\text{th}}}^{\infty} \frac{\operatorname{Im}g(s')}{s'(s' - s)} \, ds'
-```  
+$$  
 
 This dispersion relation is crucial when the function does not decay sufficiently at high energies, requiring subtractions for convergence. The function's analyticity ensures that the imaginary part appears with opposite signs across the branch cut, preserving consistency in the complex plane.
 
@@ -1003,9 +1003,9 @@ The R ratio reveals all resonances that can appear. For example, the plot of exp
 
 The current theoretical calculations for this process align closely with experimental results, but the R ratio remains a powerful tool for studying resonance phenomena.  
 
-```math
+$$
 R = \frac{\sigma(e^+e^- \to \text{hadrons})}{\sigma(e^+e^- \to \mu^+\mu^-)}
-```  
+$$  
 
 The background in the R ratio reflects the non-resonant hadronic activity, which must be accounted for when interpreting the data. The resonances sit on top of this continuum, making the R ratio a rich observable for studying QCD dynamics.
 
@@ -1052,9 +1052,9 @@ When fitting oscillations, a key question is whether you extract $`W_C`$ or the 
 
 A question arises: Why can't we be sure the main contributions are hydronic? The issue is not their magnitude but their leading uncertainty. While they are small, their uncertainty remains too large to reduce further.  
 
-```math
+$$
 \text{Key issue: Uncertainty in hydronic contributions prevents further reduction.}
-```  
+$$  
 
 <!--
 Cosine simularity: 0.8643772040247728
@@ -1066,9 +1066,9 @@ The H parts are the most difficult to calculate. The uncertainty has been reduce
 > [!NOTE]  
 > The leading uncertainty in hydronic contributions prevents further reduction, despite their small magnitude.  
 
-```math
+$$
 \text{Key challenge: } \Delta \text{(H parts)} \gg \Delta \text{(other contributions)}
-```  
+$$  
 
 <!--
 Cosine simularity: 0.9250612572877351

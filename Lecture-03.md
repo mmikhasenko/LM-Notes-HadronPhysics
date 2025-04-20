@@ -23,9 +23,9 @@ For $\Delta^{++}$:
 - The state is $`3\left(\frac{1}{2} \left( p^\uparrow p^\uparrow p^\uparrow \right)\right)`$  
 - Isospin calculation:  
 
-```math
+$$
 I_{\Delta^{++}} = \frac{3}{2} \left\{ \frac{3}{2}, \frac{3}{2} \right\} = \sqrt{\left(\frac{3}{2}\right)^2 - \left(\frac{3}{2}\right)^2}
-```  
+$$  
 
 For $\Delta^+$:  
 - The state is $`\frac{3}{2} \left( p^\uparrow p^\uparrow p^\downarrow \right)`$  
@@ -51,9 +51,9 @@ The notation often distinguishes heavy ($`Q`$) and light ($`q`$ or $`L`$) quarks
 
 For the cascade baryon ($`\Xi_b`$), it contains one light quark, so its isospin is $`\frac{1}{2}`$. The calculation follows the same logic as before:  
 
-```math
+$$
 I_{\Xi_b} = \frac{1}{2}
-```  
+$$  
 
 > [!NOTE]  
 > Isospin assignments depend strictly on the presence of light quarks ($`u`$, $`d`$). Heavy quarks ($`c`$, $`b`$, $`t`$) or strange quarks ($`s`$) do not contribute to isospin.
@@ -119,27 +119,27 @@ For example, the combination $`UUU`$ has isospin $`I_3 = 3/2`$, while $`DDD`$ ha
 
 To construct the quark flavor basis functions, we start with the state of maximum spin or flavor, which is $`|3/2, 3/2\rangle`$ (using spin or flavor notation equivalently). We then apply the lowering operator $`J_-`$ to generate the remaining states. The action of the lowering operator is given by:  
 
-```math
+$$
 J_- |j, m\rangle = \sqrt{j(j+1) - m(m-1)} \ |j, m-1\rangle
-```  
+$$  
 
 For the case where $`j = m = 3/2`$, this simplifies to:  
 
-```math
+$$
 J_- |3/2, 3/2\rangle = \sqrt{3} \ |3/2, 1/2\rangle
-```  
+$$  
 
 The lowering operator $`J_-`$ can be decomposed into individual quark operators:  
 
-```math
+$$
 J_- = J_-^{(1)} \otimes \mathbb{I}^{(2)} \otimes \mathbb{I}^{(3)} + \mathbb{I}^{(1)} \otimes J_-^{(2)} \otimes \mathbb{I}^{(3)} + \mathbb{I}^{(1)} \otimes \mathbb{I}^{(2)} \otimes J_-^{(3)}
-```  
+$$  
 
 When applied to $`UUU`$, this yields a superposition of states like $`UUD`$, ensuring proper normalization. The normalization condition requires that:  
 
-```math
+$$
 \langle \psi | \psi \rangle = 1
-```  
+$$  
 
 This is enforced using orthogonality relations: identical quark flavors (e.g., $`UU`$) are normalized, while different flavors (e.g., $`UD`$) are orthogonal.  
 
@@ -163,9 +163,9 @@ The situation becomes more complicated when considering intermediate spins, such
 
 The dimensionality of the matrix acting on this space is $`2^{94}`$, since each spin $`1/2`$ particle contributes a 2-dimensional representation. This can be written as a tensor product:  
 
-```math
+$$
 2 \otimes 2 \otimes 2 \otimes \cdots \otimes 2 \quad (\text{94 times})
-```  
+$$  
 
 This space decomposes into irreducible representations, corresponding to different spin combinations. Last time, we saw that this decomposition involves direct sums of spin states, denoted with plus signs. For example, the case of 94 spin $`1/2`$ particles follows this pattern.  
 
@@ -181,17 +181,17 @@ Cosine simularity: 0.9274902902019039
 
 The dimensionality of the isospin matrix acting on the $`qqq`$ configuration is given by:
 
-```math
+$$
 (3)(3)(3) \Rightarrow 3^3 = 27
-```
+$$
 
 This counts the different combinations of spins with the plus sign. The number 94 is very large, but one of these combinations corresponds to spin 94 with different multiplicities. Constructing 94 or 33 is more challenging, but we will address this shortly.  
 
 For the case of three quarks, we are dealing with the isospin group, which is equivalent to adding three spin-$`\frac{1}{2}`$ particles. The dimensionality here is determined by the basis vectors in the tensor product space. Each quark contributes a doublet, so the total number of basis vectors is:
 
-```math
+$$
 2 \otimes 2 \otimes 2 = 8
-```
+$$
 
 This means there are eight basis functions in the space of three quarks. Examples include states like $`|up, down, up\rangle`$ or other combinations of up and down spins.  
 
@@ -211,9 +211,9 @@ The dimensionality of the isospin matrix acting on this space is $`8 \times 8`$.
 
 To answer the question about spin combinations, we apply spin algebra:  
 
-```math
+$$
 \frac{1}{2} \otimes \frac{1}{2} \otimes \frac{1}{2} = \frac{1}{2} \oplus \frac{1}{2} \oplus 1 \oplus 0
-```  
+$$  
 
 First, combining two spin-$`\frac{1}{2}`$ particles gives possible total spins of $`0`$ or $`1`$. Then, adding a third spin-$`\frac{1}{2}`$ can yield further combinations, including another $`\frac{1}{2}`$.  
 
@@ -235,21 +235,21 @@ For the $`1/2`$ and $`3/2`$ isospin states, we have 4-plets and 2-plets. The key
 
 For example, consider the combination:  
 
-```math
+$$
 \frac{1}{\sqrt{6}} \left( |u d u\rangle + |u u d\rangle - 2 |d u u\rangle \right)
-```
+$$
 
 To verify orthogonality, we compute the scalar product with another state. When multiplying, only terms with identical quark content contribute. For normalization, squaring this gives:  
 
-```math
+$$
 1 + 1 + 4 = 6 \quad \Rightarrow \quad \text{Normalization factor} \ \frac{1}{\sqrt{6}}
-```
+$$
 
 To construct the basis function for the $`1/2`$ state with projection $`-1/2`$, we act with the lowering operator on the upper state. This yields:  
 
-```math
+$$
 \frac{1}{\sqrt{6}} \left( |d u d\rangle + |u d d\rangle - 2 |d d u\rangle \right)
-```
+$$
 
 The lowering operator acts as follows:  
 - On $`|u d u\rangle`$, it gives $`|d d u\rangle + |u d d\rangle`$.  
@@ -258,9 +258,9 @@ The lowering operator acts as follows:
 
 Combining these terms, we get:  
 
-```math
+$$
 |d u d\rangle + |u d d\rangle + |u d d\rangle - 2 |d d u\rangle = |d u d\rangle + 2 |u d d\rangle - 2 |d d u\rangle
-```
+$$
 
 After normalization, this confirms the orthogonal basis construction.  
 
@@ -284,21 +284,21 @@ Next, we consider spin-2 systems, which are more complicated. The framework appl
 
 We verify the dimensionality by checking:  
 
-```math
+$$
 3 + 3 = 1 + 3 + 5
-```
+$$
 
 This confirms the decomposition into irreducible representations. We begin constructing the basis with the simplest case, using the volume operator. The ladder operator now involves four combinations:  
 
-```math
+$$
 |0, 0\rangle, \ |+\rangle, \ |-\rangle, \ |+\ +\rangle
-```
+$$
 
 For the total spin-2 state, we have:  
 
-```math
+$$
 \frac{1}{\sqrt{2}} \left( |+\ +\rangle - |-\ -\rangle \right)
-```
+$$
 
 To ensure orthogonality, we introduce a minus sign. Care must be taken when applying lowering operators, as Clebsch-Gordan coefficients may vary. For binary systems, these coefficients are identical.  
 
@@ -313,9 +313,9 @@ For binary systems, the Clebsch-Gordan coefficients are the same, so the normali
 
 The same decomposition can be checked using the PTG captures. Let's confirm this by cross-checking with the left-hand side. We want to construct $`|2\rangle`$ for $`Y`$ and express it as combinations of the following:  
 
-```math
+$$
 |1\rangle \otimes |1\rangle, \quad |1\rangle \otimes |0\rangle + |1\rangle \otimes |1\rangle, \quad |1\rangle \otimes |{-1}\rangle, \quad |0\rangle \otimes |0\rangle
-```
+$$
 
 These coefficients can be found in the third table, and they satisfy the normalization condition $`\frac{1}{\sqrt{2}}`$.  
 
@@ -331,15 +331,15 @@ Cosine simularity: 0.8948070126539082
 
 The proton wave function must be constructed in the product of four spaces: color, space, isospin, and spin. The general form is a sum over components in these spaces, not a simple product:
 
-```math
+$$
 \Psi = \sum_i \Psi_{\text{space}} \otimes \Psi_{\text{isospin}} \otimes \Psi_{\text{spin}}
-```
+$$
 
 However, the color wave function is a singlet (scalar) and can be factored out:
 
-```math
+$$
 \Psi = \Psi_{\text{color}} \otimes \sum_i \Psi_{\text{isospin}} \otimes \Psi_{\text{spin}}
-```
+$$
 
 There is also an argument that the space wave function is a scalar and can be factored out, though this requires justification from the literature. The remaining parts — isospin and spin — are generally not factorizable and must be treated as entangled components.  
 
@@ -354,8 +354,8 @@ For spin and isospin, the Clebsch-Gordan coefficients are essential for combinin
 
 The normalization factor for binary systems is always $`\frac{1}{\sqrt{2}}`$, and the coefficients can be cross-checked using tensor methods. For example, the state $`|2\rangle`$ can be expressed as combinations of:  
 
-```math
+$$
 |1\rangle \otimes |1\rangle, \quad |1\rangle \otimes |0\rangle + |1\rangle \otimes |1\rangle, \quad |1\rangle \otimes |{-1}\rangle, \quad |0\rangle \otimes |0\rangle
-```
+$$
 
 These satisfy the normalization condition and can be found in standard tables. Spin algebra appears in quantum mechanics, particle physics, and group theory, with $`SU(2)`$ being simpler than $`SU(3)`$.

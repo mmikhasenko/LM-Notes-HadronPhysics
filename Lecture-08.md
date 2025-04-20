@@ -9,9 +9,9 @@ I will introduce two mathematical definitions: **analytic functions** and **holo
 
 A function is called **analytic** at a point $`x_0`$ if it can be represented by a Taylor series that converges to the function in a neighborhood of $`x_0`$. Mathematically, this means:  
 
-```math
+$$
 f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(x_0)}{n!} (x - x_0)^n
-```
+$$
 
 Here, $`f^{(n)}(x_0)`$ are the coefficients (derivatives of $`f`$ evaluated at $`x_0`$). If such a series exists, the function is analytic at $`x_0`$.  
 
@@ -31,9 +31,9 @@ When we define a function as analytic at a point, and when we talk about a domai
 
 Real analytic functions are another interesting class—they are real-valued and analytic, with certain scalability properties. For example, $`\sqrt{x}`$ is real analytic. There is a key property called the **Schwarz reflection principle**: if you evaluate the function in the complex plane, it satisfies  
 
-```math
+$$
 f(\overline{z}) = \overline{f(z)}
-```  
+$$  
 
 where $`\overline{z}`$ is the complex conjugate. Using our example, we can test this at $`1 + i`$.
 
@@ -46,15 +46,15 @@ For analytic functions of a single argument, it is convenient to visualize the d
 
 The **stress deflection principle** suggests a relationship between the upper and lower half-planes: values in the lower plane can be computed using values from the upper plane. For example, consider the function evaluated at $`1 + i`$.  
 
-```math
+$$
 1 + i = \sqrt{2} \cdot e^{i \pi/4}
-```
+$$
 
 Here, $`\sqrt{2}`$ is the magnitude (length) and $`\pi/4`$ (45 degrees) is the angle. Evaluating the function further, we obtain:  
 
-```math
+$$
 \sqrt{1 + i} = \sqrt[4]{2} \cdot e^{i \pi/8}
-```
+$$
 
 This demonstrates how analytic functions can be decomposed into their magnitude and phase components in the complex plane.
 
@@ -77,21 +77,21 @@ This creates a jump discontinuity at $`\phi = 0`$ (or $`2\pi`$).
 
 To compute the integral, we parameterize $`x = e^{i \phi}`$:  
 
-```math
+$$
 \int_{0}^{2\pi} e^{i \phi} \cdot i \, d\phi \cdot \sqrt{e^{i \phi}}
-```
+$$
 
 Simplifying, this becomes:  
 
-```math
+$$
 \int_{0}^{2\pi} e^{i \phi (1 + \frac{1}{2})} \cdot i \, d\phi = \int_{0}^{2\pi} e^{i \frac{3}{2} \phi} \cdot i \, d\phi
-```
+$$
 
 However, because the function is discontinuous, we cannot naively evaluate it at the endpoints. Instead, we shift the integration range to avoid the discontinuity:  
 
-```math
+$$
 \int_{-\pi}^{\pi} e^{i \frac{3}{2} \phi} \cdot i \, d\phi
-```
+$$
 
 This ensures the function is continuous within the new range, making the integral well-defined. The key takeaway is that even with discontinuities, careful treatment of the integration domain allows for convergent results.  
 
@@ -134,15 +134,15 @@ This means we can treat the amplitude as a complex function, probing it not just
 
 For example, the two-particle threshold introduces a square-root singularity, as seen in the prefactor of the imaginary part of the amplitude:  
 
-```math
+$$
 \text{Im} \, A(s) = \frac{1}{2} \cdot \frac{1}{8\pi} \cdot \frac{2p}{\sqrt{s}} |a(s)|^2
-```
+$$
 
 Here, $`p`$ is the breakup momentum, given by:  
 
-```math
+$$
 p = \frac{\lambda^{1/2}}{2\sqrt{s}}, \quad \lambda^{1/2}(s, m_1^2, m_2^2) = \sqrt{[s - (m_1 + m_2)^2][s - (m_1 - m_2)^2]}
-```
+$$
 
 The breakup momentum $`p`$ vanishes at the threshold, where the system has minimal energy—just the sum of the particle masses. At this point, the particles have no residual momentum, and the singularity arises from the vanishing of $`p`$.  
 
@@ -158,15 +158,15 @@ Cosine simularity: 0.9657801956878016
 
 For mathematically, you see that if you compute the two-body breakup momentum, you find that it is equal to the Cullen function:  
 
-```math
+$$
 x^2 + y^2 + z^2 - 2xy - 2yz - 2zx
-```  
+$$  
 
 This can be arranged as the product of two terms:  
 
-```math
+$$
 (x - y + z) \cdot (x - y - z)
-```  
+$$  
 
 Here, $`x, y, z`$ represent the masses of the two particles and their differences. The first term gives a singularity at the threshold, while the second gives a singularity at the pseudothreshold.  
 
@@ -177,9 +177,9 @@ The relation we wrote is valid only above the threshold, where the imaginary par
 
 This connects to the Schwarz reflection principle. Since our function was real and analytic on a segment of the real axis, the Schwarz reflection principle applies. It relates the amplitude in the upper half-plane to the amplitude in the lower half-plane. If the function $`F(z)`$ is analytic in the upper half-plane and real on the real axis, then:  
 
-```math
+$$
 F(z^*) = F^*(z)
-```  
+$$  
 
 This allows us to analytically continue the amplitude into the full complex plane, revealing the structure of singularities and their implications for scattering amplitudes.
 
@@ -214,9 +214,9 @@ The square-root singularity is a common feature in scattering amplitudes, partic
 
 The Schwarz reflection principle further connects the behavior of the amplitude in the upper and lower half-planes. If $`F(z)`$ is analytic in the upper half-plane and real on the real axis, then:  
 
-```math
+$$
 F(z^*) = F^*(z)
-```  
+$$  
 
 This allows for the analytic continuation of the amplitude into the full complex plane, revealing the underlying singularity structure.
 
@@ -229,15 +229,15 @@ The functions in question exhibit analyticity everywhere except at certain point
 
 Returning to the example, consider the function $`-X`$. Its analytic structure can be evaluated in the complex plane, revealing full analyticity except for a branch cut extending to the right. Evaluating this function at $`-1`$ gives:  
 
-```math
+$$
 F(-1) = 1 - (-1) = 2
-```  
+$$  
 
 This is an example of a real analytic function. Another example is the amplitude:  
 
-```math
+$$
 A(s) = \sqrt{-s + m_1 m_2}
-```  
+$$  
 
 This function has similar properties.  
 
@@ -255,9 +255,9 @@ This sign change across the branch cut confirms the non-analytic behavior.
 
 The Schwarz reflection principle connects the function's behavior in the upper and lower half-planes:  
 
-```math
+$$
 F(z^*) = F^*(z)
-```  
+$$  
 
 This allows for analytic continuation and reveals the underlying singularity structure. The branch points and cuts are intrinsic to the function's behavior in the complex plane.
 
@@ -284,23 +284,23 @@ Cosine simularity: 0.9669317522559626
 
 The amplitude $`A`$ is given by:
 
-```math
+$$
 A = \frac{g^2}{m_R^2 - s}, \quad m_R^2 = \left( m_R - i \frac{\Gamma}{2} \right)^2, \quad g^2 = -\text{Res}_{m_R^2}A
-```
+$$
 
 On the complex plane, the functions are different. To prove they are not equal, we can evaluate the function here minus one. The analytic structure of this function consists of one cut and then a second cut, with two branch points connected by the cut. To transform from this configuration to another, we can take this cut, rotate it over here, take the other cut, rotate it over there, and cancel the two cuts. This shows that the function in the original configuration has a different value minus one.  
 
 Evaluating the top expression gives:
 
-```math
+$$
 \sqrt{-2 + 2 - 1 - 2 + 2}
-```
+$$
 
 while evaluating the second expression gives:
 
-```math
+$$
 \sqrt{2i}
-```
+$$
 
 The product of these results is $`-\sqrt{2}`$. Resonances are poles of the scattering amplitude. When you hear about resonances, think of the intensity flow. The function in the complex plane is like the structure of a house, and the routers in the house are the resonances. The farther you are from the router, the weaker the signal you receive. If you sit at a point with good Internet, you are likely close to a router.  
 
@@ -324,9 +324,9 @@ The pulse can be visualized as the intensity floor in the complex domain. There 
 
 For the square root function $`\sqrt{x}`$, the branch cut is conventionally placed to the right, but practically, nothing prevents placing it to the left. Consider evaluating the function at $`-1`$:  
 
-```math
+$$
 \sqrt{-1} = i
-```  
+$$  
 
 For $`-1 + \epsilon`$ (where $`\epsilon`$ is infinitesimal), the result remains $`i`$. Rotating the branch cut simply reconfigures the "rooms" (sheets) without altering the function's behavior. The cut is merely a way to separate floors, not a physical barrier—there are no walls blocking signal strength.  
 
@@ -335,15 +335,15 @@ For $`-1 + \epsilon`$ (where $`\epsilon`$ is infinitesimal), the result remains 
 
 The analytic structure of the function involves branch points connected by cuts. Transforming between configurations involves rotating cuts and canceling overlapping segments. For example, evaluating:  
 
-```math
+$$
 \sqrt{-2 + 2 - 1 - 2 + 2}
-```  
+$$  
 
 yields a different result than:  
 
-```math
+$$
 \sqrt{2i}
-```  
+$$  
 
 The product of these results is $`-\sqrt{2}`$.  
 
@@ -368,9 +368,9 @@ When measuring an amplitude above threshold (at $`(M_1 + M_2)^2`$), the observed
 
 A single-pole amplitude has the form:  
 
-```math
+$$
 A(s) = \frac{1}{s - s_0}
-```  
+$$  
 
 where $`s_0`$ (or $`\bar{m}^2`$) is the pole location where the denominator vanishes. This is a complex number, with its real and imaginary parts defining the mass and width of the resonance:  
 

@@ -5,37 +5,37 @@ Cosine simularity: 0.9237350393996308
 
 The cross section for scattering is computed using the equation:
 
-```math
+$$
 \sigma = \frac{1}{J} \int |M|^2 \, d\Phi
-```
+$$
 
 Here, $`J`$ is the flux factor, $`|M|^2`$ is the squared matrix element, and $`d\Phi`$ is the phase space element.  
 
 For this case, the matrix element squared is $`3 + 9 + 1 = 13`$. The flux factor is given by:
 
-```math
+$$
 J = 2E_1 E_2 |v_1 - v_2|
-```
+$$
 
 Since the particles are massless, their velocities are $`v_1 = v_2 = 1`$ (speed of light), so $`J = 2 \cdot \frac{\sqrt{s}}{2} \cdot \frac{\sqrt{s}}{2} \cdot 2 = s`$.  
 
 The phase space element simplifies to:
 
-```math
+$$
 d\Phi = \frac{1}{8\pi s}
-```
+$$
 
 Combining these, the cross section becomes:
 
-```math
+$$
 \sigma = \frac{13}{s} \cdot \frac{1}{8\pi s} = \frac{13}{8\pi s^2}
-```
+$$
 
 However, the speaker later corrects this to:
 
-```math
+$$
 \sigma = \frac{13}{4\pi s}
-```
+$$
 
 > [!NOTE]  
 > The momentum for massless particles is $`p = \frac{\sqrt{s}}{2}`$, and the energy is $`E = \frac{\sqrt{s}}{2}`$.  
@@ -44,9 +44,9 @@ To convert units, recall that $`1 \ \text{fermi} \cdot \text{MeV} = 200 \ \text{
 
 The final numerical result is:
 
-```math
+$$
 \sigma = \frac{13}{4\pi s} \approx \frac{13}{4 \cdot 3 \cdot s} = \frac{13}{12s}
-```
+$$
 
 > [!IMPORTANT]  
 > The key is to start from the correct equation for the cross section, use the right expressions for flux and phase space, and ensure consistent units.  
@@ -87,9 +87,9 @@ In the algorithm diagram, the x-axis represents the real part of the matrix elem
 
 For combining spins, you first calculate the quantum numbers in combination. The process involves drawing a table and identifying which columns have the correct counting numbers. For example, the spin composition of the representations for $`P_1`$ is straightforward:  
 
-```math
+$$
 P_1 = - - +
-```  
+$$  
 
 > [!IMPORTANT]  
 > When working with spin algebra, we focus only on the spin composition of representations. Parity can be computed separately for each multiplet.  
@@ -124,14 +124,14 @@ Cosine simularity: 0.9356893471000975
 The scattering length is measured in Fermi (fm), but in relativistic formulations, it appears dimensionless. In quantum mechanics, the scattering length is defined through the expansion of the amplitude in terms of the breakup momentum $`K`$, which has units of GeV. Therefore, $`1/a`$ has units of GeV, and $`a`$ itself is in Fermi.  
 
 The non-relativistic amplitude is given by:  
-```math
+$$
 f_{NR} = \frac{1}{a - i\,k}
-```
+$$
 
 In the relativistic formulation, the amplitude becomes:  
-```math
+$$
 f_{R} = \frac{1}{\tilde a^{-1} - i\,\frac{2k}{\sqrt{s}}}
-```
+$$
 
 > [!NOTE]  
 > The imaginary part of the relativistic amplitude is related to the dimensionless phase space. The first expansion term resembles the scattering length but is itself dimensionless.  
@@ -139,9 +139,9 @@ f_{R} = \frac{1}{\tilde a^{-1} - i\,\frac{2k}{\sqrt{s}}}
 To relate the two formulations, we match them at the threshold. At threshold ($`k \to 0`$), the non-relativistic amplitude reduces to $`f_{NR} = a`$, while the relativistic amplitude becomes $`f_{R} = \tilde a`$. However, they are not directly equal—there is a numerical constant relating them.  
 
 The key is to equate the numerators or denominators up to a numerical factor. The difference arises from the relativistic phase space factor:  
-```math
+$$
 \frac{2k}{\sqrt{s}} = -i\,k \cdot \left(\frac{1}{8\pi^2 s}\right)
-```
+$$
 
 At threshold, $`\sqrt{s}`$ is the sum of the masses involved. For example, if the scattering length $`a`$ is 3 Fermi, we can determine $`\tilde a`$ by matching the amplitudes at threshold.  
 
@@ -168,18 +168,18 @@ Cosine simularity: 0.920611986690305
 
 The Dirac equation for a spin-1/2 particle is given by:  
 
-```math
+$$
 (\slashed p - m)\,\tilde u = 0
-```
+$$
 
 Here, $`\tilde u`$ is a spinor ( $`\tilde u \leftarrow \mathrm{spinor}(\xi)`$ ), and $`\slashed p = p^\mu \gamma_\mu`$ is the Feynman slash notation.  
 
 The $`\gamma`$ matrices are defined in the Dirac representation as:  
 
-```math
+$$
 \gamma^0 = \begin{pmatrix}I & 0\\[6pt]0 & -I\end{pmatrix},\quad
 \gamma^i = \begin{pmatrix}0 & \sigma^i\\[4pt]\sigma^i & 0\end{pmatrix}
-```
+$$
 
 > [!NOTE]  
 > There are two common conventions for solving the Dirac equation: the **Dirac convention** and the **Weyl (or chiral) convention**. The Weyl convention is more convenient when dealing with right-handed and left-handed particles, but we will stick to the standard Dirac convention here.  
@@ -203,23 +203,23 @@ Cosine simularity: 0.9232111081396577
 
 The four-momentum in spherical coordinates is given by:  
 
-```math
+$$
 \mathcal P = \bigl(E,\;p\sin\theta\cos\phi,\;p\sin\theta\sin\phi,\;p\cos\theta\bigr)
-```
+$$
 
 The gamma matrices ($`\gamma^\mu`$) are four-dimensional matrices, and $`\mathcal P`$ is the four-vector. When you contract the two, a summation over $`\mu`$ is performed, resulting in the expression:  
 
-```math
+$$
 \slashed p - m
-```
+$$
 
 Here, $`\slashed p = p^\mu \gamma_\mu`$ (Feynman slash notation), and $`m`$ is the scalar mass term — though it is implied that this is not multiplied by the $`4 \times 4`$ identity matrix.  
 
 The spinor $`u`$ (or "Spiner" in German) is a four-dimensional object that depends on the particle's orientation and momentum. The equation has two solutions, $`u_1`$ and $`u_2`$, corresponding to the spin states quantized along the $`z`$-axis. These solutions can be written as:  
 
-```math
+$$
 u_1 = \begin{pmatrix}1 \\ 0 \\ p \cos\theta \\ p \sin\theta \end{pmatrix}, \quad u_2 = \begin{pmatrix}0 \\ 1 \\ -p \sin\theta \\ p \cos\theta \end{pmatrix}
-```
+$$
 
 These represent canonical states with spin projections $`+\frac{1}{2}`$ and $`-\frac{1}{2}`$ along the $`z`$-axis. The states are obtained by acting with the spin operator, where $`u_1`$ corresponds to a spin projection of $`+\frac{1}{2}`$ and $`u_2`$ to $`-\frac{1}{2}`$.  
 
@@ -255,15 +255,15 @@ The canonical state $`|p; j, m\rangle_\text{can}`$ is defined as a pure boost $`
 
 The helicity state $`|p; j\rangle_{\hat{p}}`$ is constructed by applying the boost and rotation:  
 
-```math
+$$
 |p; j\rangle_{\hat{p}} = R B |0; j, m\rangle = R B R^{-1} R |0; j, m\rangle
-```
+$$
 
 This can be expanded using the Wigner rotation matrix $`\mathcal{D}^{(j)}_{m\lambda}(\theta, \phi)`$ as:  
 
-```math
+$$
 |p; j\rangle_{\hat{p}} = \sum_m \mathcal{D}^{(j)}_{m\lambda}(\theta, \phi)\,|p; j, m\rangle
-```
+$$
 
 The key step in relating canonical to helicity states is introducing an extra $`R^{-1}`$ to match the transformation properties of the canonical state. Applying $`R`$ transforms the state, and $`R B R^{-1}`$ acts on the transformed rest-frame states.  
 
@@ -286,9 +286,9 @@ The first case corresponds to the rotation sequence $`R = R_z(\phi) R_y(\theta)`
 
 The $`D`$ function (capital $`D`$) is the rotational matrix for cases beyond just $`y`$-axis rotations. Rotations about the $`y`$-axis are special because they require tabulated functions, whereas rotations about the $`z`$-axis simply introduce phase coefficients.  
 
-```math
+$$
 \mathcal{D}^{(j)}_{m\lambda}(\theta, \phi)
-```
+$$
 
 This notation represents the Wigner rotation matrix, which provides weight coefficients for the transformation between states. The $`D`$ function is crucial for describing rotations in systems with angular momentum, particularly when relating canonical and helicity states.  
 
@@ -304,26 +304,26 @@ The notation like our $`G`$ function gives you weight coefficients for the trans
 
 Coming back to our problem, we want to rotate the vector $`\vec{p}`$ from zero. This rotation is meant to rotate these two components:  
 
-```math
+$$
 \begin{pmatrix}
 \sin\theta \cos\phi \\
 \sin\theta \sin\phi \\
 \cos\theta
 \end{pmatrix}
-```
+$$
 
 When we apply this notation to the helicity state, the $`D`$ function appears. It depends on the two angles $`\theta`$ and $`\phi`$. Depending on the convention used, this $`D`$ may or may not have an extra phase.  
 
 Applying the transformation relates the helicity state for spin-$`\frac{1}{2}`$ with the spin projected along the direction of motion. This is given by the vector:  
 
-```math
+$$
 \begin{pmatrix}
 \cos\frac{\theta}{2} \\
 \sin\frac{\theta}{2}\,e^{i\varphi} \\
 \cos\frac{\theta}{2}\,p / (E + m) \\
 \sin\frac{\theta}{2}\,p / (E + m)
 \end{pmatrix}
-```
+$$
 
 I introduced the normalization constant $`N = \sqrt{E + m}`$, which is standard and appears everywhere. Both $`u_1`$ and $`u_2`$ include this $`N`$ to ensure the correct state density.  
 
@@ -341,32 +341,32 @@ Cosine simularity: 0.9243843053675861
 
 Now let me introduce projection operators which will cause us to move on. The Gamma 5 matrix is introduced as the product of the gamma matrices with the Levi-Civita tensor. In the convention we choose, it is given by:
 
-```math
+$$
 \delta^5 = \delta^0\delta^1\delta^2\delta^3 = 
 \begin{pmatrix}
 I & 0 \\ 0 & -I
 \end{pmatrix}
-```
+$$
 
 It is very convenient in the consideration of our interactions to introduce right-handed and left-handed projection operators:
 
-```math
+$$
 P_R = \frac{1 + \delta^5}{2}, \quad P_L = \frac{1 - \delta^5}{2}
-```
+$$
 
 These are called projection operators because when they act twice on a state, nothing changes: $`P_R^2 = P_R`$ and $`P_L^2 = P_L`$. To see this explicitly, consider:
 
-```math
+$$
 P_L^2 = \left(\frac{1 - \delta^5}{2}\right)^2 = \frac{1 - 2\delta^5 + (\delta^5)^2}{4} = \frac{1 - \delta^5}{2} = P_L
-```
+$$
 
 The same holds for $`P_R`$. These operators project onto orthogonal subspaces. If you project onto the left-handed space, there are no remaining components of the right-handed space, and vice versa. This means $`P_R P_L = 0`$.
 
 Another important property arises because $`\delta^5`$ anti-commutes with any $`\delta^\mu`$ (i.e., $`\delta^5 \delta^\mu = -\delta^\mu \delta^5`$). This implies that:
 
-```math
+$$
 P_R \delta^\mu P_L = 0
-```
+$$
 
 If you have $`P_L`$ followed by $`\delta^\mu`$, swapping the order introduces a sign change, converting $`P_L`$ to $`P_R`$, and $`P_R P_L = 0`$.  
 
@@ -384,23 +384,23 @@ Cosine simularity: 0.9290599680652246
 
 The right-handed and left-handed projection operators are given explicitly in matrix form as:
 
-```math
+$$
 P_R = \frac{1}{2} \begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}, \quad P_L = \frac{1}{2} \begin{pmatrix} 1 & -1 \\ -1 & 1 \end{pmatrix}
-```
+$$
 
 Using these matrices, we can decompose a spinor into its chiral components. For example, consider a spin-up helicity state represented as $`\psi = \begin{pmatrix} 1 \\ 1 \end{pmatrix}`$. When we apply the projection operators, we perform block-wise multiplication for convenience.  
 
 The right-handed projection yields:
 
-```math
+$$
 P_R \psi = \frac{1}{2} \begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix} \begin{pmatrix} 1 \\ 1 \end{pmatrix} = \begin{pmatrix} 1 \\ 1 \end{pmatrix}
-```
+$$
 
 Similarly, the left-handed projection gives:
 
-```math
+$$
 P_L \psi = \frac{1}{2} \begin{pmatrix} 1 & -1 \\ -1 & 1 \end{pmatrix} \begin{pmatrix} 1 \\ 1 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
-```
+$$
 
 At high energies, where the mass becomes negligible, the left-handed component of a right-handed helicity state is suppressed by a factor of $`(1 - \kappa)`$, where $`\kappa`$ is related to the particle's momentum. This component vanishes in the massless limit.  
 
@@ -446,9 +446,9 @@ The massless limit is the case where mass equals zero, and the states are purely
 
 On the Lagrangian level, chiral states are easier to work with because they are defined by projection operators:  
 
-```math
+$$
 P_L = \frac{1 - \gamma^5}{2}, \quad P_R = \frac{1 + \gamma^5}{2}
-```  
+$$  
 
 These project left- and right-handed states, respectively. Helicity states mix under boosts—changing frames alters the spin configuration. However, chiral states remain invariant: a left-handed chiral state stays left-handed under boosts or rotations.  
 
@@ -464,9 +464,9 @@ Cosine simularity: 0.928798819531198
 
 Here is the Lagrangian of QCD (not QCT):
 
-```math
+$$
 \mathcal{L}_\text{QCD} = -\frac{1}{4} G_{\mu\nu}^a G^{\mu\nu}_a + \bar{\Psi}_i (i\,\slashed{D} - m) \Psi_i
-```
+$$
 
 This describes the dynamics of quarks and gluons. The term $`G_{\mu\nu}^a`$ represents the gluon field strength tensor, which is the gauge part of the Lagrangian. The term $`\bar{\Psi}_i (i\,\slashed{D} - m) \Psi_i`$ includes the quark fields:  
 - $`i\,\slashed{D} \Psi_i`$ is the kinetic term,  
@@ -492,9 +492,9 @@ The low-energy expansion works because the quark masses are small. There is a sm
 
 Now, let's discuss flavor transformation. This means the flavor indices of the wave function can be rotated. We consider a global $`SU(3)_\text{flavor}`$ symmetry. The flavor part of the wave function has three components:  
 
-```math
+$$
 \Psi_i = \begin{pmatrix} u \\ d \\ s \end{pmatrix}
-```
+$$
 
 Here, we simplify our consideration to the light quarks (up, down, strange). The transformation relating these quarks is a global $`SU(3)`$ rotation, represented by a $`3 \times 3`$ matrix. We can perform any rotation or adjustment of this wave function.  
 
@@ -510,9 +510,9 @@ Cosine simularity: 0.9044505121078811
 
 The QCD Lagrangian is symmetric with respect to any transformation of chiral symmetry. The fermion field $\Psi$ is decomposed into left- and right-handed components:  
 
-```math
+$$
 \Psi = \Psi_L + \Psi_R
-```  
+$$  
 
 When applying a phase transformation to $\Psi_L$ and $\Psi_R$, the phases cancel each other. This cancellation is straightforward to verify.  
 
@@ -530,9 +530,9 @@ The transformation space is straightforward, with the phase introducing a minus 
 
 We replace all states here with left- and right-handed components using the projection operator. The sum can be written explicitly, leveraging the properties of gamma matrices under Hermitian conjugation. The vector part of the interaction is given by:
 
-```math
+$$
 \bar{\Psi}_L \gamma^\mu \Psi_L + \bar{\Psi}_R \gamma^\mu \Psi_R
-```
+$$
 
 There is no interaction mixing right- and left-handed components. The covariant derivative $`D_\mu`$ has no flavor space indices, so it remains unaffected.  
 
@@ -551,9 +551,9 @@ The mass term explicitly breaks chiral symmetry, but there is another effect: ch
 
 The QCD vacuum has a non-zero expectation value, expressed as:
 
-```math
+$$
 \langle 0 |\, \bar{\Psi}_L \Psi_R \,| 0 \rangle \ne 0 \quad \text{for } m_q = 0.
-```
+$$
 
 This is a spectacular result — the entire symmetry is broken. To visualize this, imagine a field space where the vacuum state is not at zero but at a shifted location. The potential of the theory has a shape similar to the Higgs potential, resembling a Mexican hat.  
 
@@ -606,9 +606,9 @@ I would like this analogy to incorporate complex space, even though we typically
 
 I recall seeing this approach in several books, but I want to discuss its strict definition. Often, we encounter well-defined potentials, but how do we derive them from first principles? This is related to the $`\hbar`$ expansion.  
 
-```math
+$$
 H = H_0 + \hbar H_1 + \hbar^2 H_2 + \cdots
-```
+$$
 
 Here, $`H`$ is expanded in powers of $`\hbar`$, allowing us to systematically approximate the theory. I will find a reference to clarify this further.  
 

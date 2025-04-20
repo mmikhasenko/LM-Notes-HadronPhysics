@@ -155,7 +155,9 @@ Cosine simularity: 0.9161822247076998
 <p>For <span class="math inline">\Delta^{++}</span>:<br>
 - The state is <span class="math inline">`3\left(\frac{1}{2} \left( p^\uparrow p^\uparrow p^\uparrow \right)\right)`</span><br>
 - Isospin calculation:</p>
-<pre class="math"><code>I_{\Delta^{++}} = \frac{3}{2} \left\{ \frac{3}{2}, \frac{3}{2} \right\} = \sqrt{\left(\frac{3}{2}\right)^2 - \left(\frac{3}{2}\right)^2}</code></pre>
+<p><span class="math display">
+I_{\Delta^{++}} = \frac{3}{2} \left\{ \frac{3}{2}, \frac{3}{2} \right\} = \sqrt{\left(\frac{3}{2}\right)^2 - \left(\frac{3}{2}\right)^2}
+</span></p>
 <p>For <span class="math inline">\Delta^+</span>:<br>
 - The state is <span class="math inline">`\frac{3}{2} \left( p^\uparrow p^\uparrow p^\downarrow \right)`</span><br>
 - Isospin projection: <span class="math inline">`\left\{\frac{1}{2}, \frac{1}{2}, -\frac{1}{2}\right\}`</span></p>
@@ -175,7 +177,9 @@ Cosine simularity: 0.8967760072181095
 <p>When discussing isospin, we focus only on light quarks (<span class="math inline">`u`</span>, <span class="math inline">`d`</span>). The first meson mentioned does not contain light quarks, so its isospin is zero. If a meson has one light quark, its isospin is <span class="math inline">`\frac{1}{2}`</span>. For example, a meson like <span class="math inline">`B \bar{c}`</span> has no light quarks, so its isospin is zero.</p>
 <p>The notation often distinguishes heavy (<span class="math inline">`Q`</span>) and light (<span class="math inline">`q`</span> or <span class="math inline">`L`</span>) quarks. For the strange quark (<span class="math inline">`s`</span>), if we consider it in the context of light quarks, it belongs to the <span class="math inline">`SU(3)`</span> classification. However, for isospin, <span class="math inline">`s`</span> is not included.</p>
 <p>For the cascade baryon (<span class="math inline">`\Xi_b`</span>), it contains one light quark, so its isospin is <span class="math inline">`\frac{1}{2}`</span>. The calculation follows the same logic as before:</p>
-<pre class="math"><code>I_{\Xi_b} = \frac{1}{2}</code></pre>
+<p><span class="math display">
+I_{\Xi_b} = \frac{1}{2}
+</span></p>
 <blockquote class="blockquote">
 <p>[!NOTE]<br>
 Isospin assignments depend strictly on the presence of light quarks (<span class="math inline">`u`</span>, <span class="math inline">`d`</span>). Heavy quarks (<span class="math inline">`c`</span>, <span class="math inline">`b`</span>, <span class="math inline">`t`</span>) or strange quarks (<span class="math inline">`s`</span>) do not contribute to isospin.</p>
@@ -228,13 +232,21 @@ Cosine simularity: 0.9234066551017023
 <p>We now examine the irreducible representation of the <span class="math inline">`z`</span> quarks. The dimensionality of the isospin matrix acting on three quarks is determined by the isospin space <span class="math inline">`I = 3/2`</span>. For <span class="math inline">`SU(2)`</span>, there are no decuplets or octets — those belong to <span class="math inline">`SU(3)`</span>. However, the combination rules remain analogous.</p>
 <p>For example, the combination <span class="math inline">`UUU`</span> has isospin <span class="math inline">`I_3 = 3/2`</span>, while <span class="math inline">`DDD`</span> has <span class="math inline">`I_3 = -3/2`</span>. Intermediate states like <span class="math inline">`UUD`</span> and <span class="math inline">`UDD`</span> correspond to <span class="math inline">`I_3 = 1/2`</span> and <span class="math inline">`I_3 = -1/2`</span>, respectively.</p>
 <p>To construct the quark flavor basis functions, we start with the state of maximum spin or flavor, which is <span class="math inline">`|3/2, 3/2\rangle`</span> (using spin or flavor notation equivalently). We then apply the lowering operator <span class="math inline">`J_-`</span> to generate the remaining states. The action of the lowering operator is given by:</p>
-<pre class="math"><code>J_- |j, m\rangle = \sqrt{j(j+1) - m(m-1)} \ |j, m-1\rangle</code></pre>
+<p><span class="math display">
+J_- |j, m\rangle = \sqrt{j(j+1) - m(m-1)} \ |j, m-1\rangle
+</span></p>
 <p>For the case where <span class="math inline">`j = m = 3/2`</span>, this simplifies to:</p>
-<pre class="math"><code>J_- |3/2, 3/2\rangle = \sqrt{3} \ |3/2, 1/2\rangle</code></pre>
+<p><span class="math display">
+J_- |3/2, 3/2\rangle = \sqrt{3} \ |3/2, 1/2\rangle
+</span></p>
 <p>The lowering operator <span class="math inline">`J_-`</span> can be decomposed into individual quark operators:</p>
-<pre class="math"><code>J_- = J_-^{(1)} \otimes \mathbb{I}^{(2)} \otimes \mathbb{I}^{(3)} + \mathbb{I}^{(1)} \otimes J_-^{(2)} \otimes \mathbb{I}^{(3)} + \mathbb{I}^{(1)} \otimes \mathbb{I}^{(2)} \otimes J_-^{(3)}</code></pre>
+<p><span class="math display">
+J_- = J_-^{(1)} \otimes \mathbb{I}^{(2)} \otimes \mathbb{I}^{(3)} + \mathbb{I}^{(1)} \otimes J_-^{(2)} \otimes \mathbb{I}^{(3)} + \mathbb{I}^{(1)} \otimes \mathbb{I}^{(2)} \otimes J_-^{(3)}
+</span></p>
 <p>When applied to <span class="math inline">`UUU`</span>, this yields a superposition of states like <span class="math inline">`UUD`</span>, ensuring proper normalization. The normalization condition requires that:</p>
-<pre class="math"><code>\langle \psi | \psi \rangle = 1</code></pre>
+<p><span class="math display">
+\langle \psi | \psi \rangle = 1
+</span></p>
 <p>This is enforced using orthogonality relations: identical quark flavors (e.g., <span class="math inline">`UU`</span>) are normalized, while different flavors (e.g., <span class="math inline">`UD`</span>) are orthogonal.</p>
 <p>We can continue applying the lowering operator to generate the full multiplet, including states with <span class="math inline">`I_3 = -3/2`</span>.</p>
 <blockquote class="blockquote">
@@ -252,7 +264,9 @@ Cosine simularity: 0.9045148504887814
 <p>Recall that we previously discussed spin <span class="math inline">`S = 47`</span>, which gives a dimensionality of 95. To build this from spin <span class="math inline">`1/2`</span> particles, we need 94 spin <span class="math inline">`1/2`</span> particles — essentially 94 “legs.” If we want to generate the 95-dimensional space (or 333, referring to the <span class="math inline">`E_z`</span> basis), we simply apply the lowering operator 62 times. This process can be automated.</p>
 <p>The situation becomes more complicated when considering intermediate spins, such as 90. Combining 94 spin <span class="math inline">`1/2`</span> particles allows for various total spin states. Can we get spin 0? Yes. Can we get spin 1? Yes. All intermediate spins are possible, with different multiplicities.</p>
 <p>The dimensionality of the matrix acting on this space is <span class="math inline">`2^{94}`</span>, since each spin <span class="math inline">`1/2`</span> particle contributes a 2-dimensional representation. This can be written as a tensor product:</p>
-<pre class="math"><code>2 \otimes 2 \otimes 2 \otimes \cdots \otimes 2 \quad (\text{94 times})</code></pre>
+<p><span class="math display">
+2 \otimes 2 \otimes 2 \otimes \cdots \otimes 2 \quad (\text{94 times})
+</span></p>
 <p>This space decomposes into irreducible representations, corresponding to different spin combinations. Last time, we saw that this decomposition involves direct sums of spin states, denoted with plus signs. For example, the case of 94 spin <span class="math inline">`1/2`</span> particles follows this pattern.</p>
 <blockquote class="blockquote">
 <p>[!IMPORTANT]<br>
@@ -266,10 +280,14 @@ Cosine simularity: 0.9274902902019039
 <section id="dimensionality-and-basis-construction-in-isospin-space" class="level2" data-number="9">
 <h2 data-number="9" class="anchored" data-anchor-id="dimensionality-and-basis-construction-in-isospin-space"><span class="header-section-number">9</span> Dimensionality and Basis Construction in Isospin Space</h2>
 <p>The dimensionality of the isospin matrix acting on the <span class="math inline">`qqq`</span> configuration is given by:</p>
-<pre class="math"><code>(3)(3)(3) \Rightarrow 3^3 = 27</code></pre>
+<p><span class="math display">
+(3)(3)(3) \Rightarrow 3^3 = 27
+</span></p>
 <p>This counts the different combinations of spins with the plus sign. The number 94 is very large, but one of these combinations corresponds to spin 94 with different multiplicities. Constructing 94 or 33 is more challenging, but we will address this shortly.</p>
 <p>For the case of three quarks, we are dealing with the isospin group, which is equivalent to adding three spin-<span class="math inline">`\frac{1}{2}`</span> particles. The dimensionality here is determined by the basis vectors in the tensor product space. Each quark contributes a doublet, so the total number of basis vectors is:</p>
-<pre class="math"><code>2 \otimes 2 \otimes 2 = 8</code></pre>
+<p><span class="math display">
+2 \otimes 2 \otimes 2 = 8
+</span></p>
 <p>This means there are eight basis functions in the space of three quarks. Examples include states like <span class="math inline">`|up, down, up\rangle`</span> or other combinations of up and down spins.</p>
 <blockquote class="blockquote">
 <p>[!IMPORTANT]<br>
@@ -285,7 +303,9 @@ Cosine simularity: 0.9391633078810417
 <p>The basis functions include states like <span class="math inline">`|up, down, up\rangle`</span>, <span class="math inline">`|up, up, up\rangle`</span>, or <span class="math inline">`|down, down, up\rangle`</span>, and so on. The total number of these combinations is <span class="math inline">`2^3 = 8`</span>, since each quark can be in one of two states (up or down).</p>
 <p>The dimensionality of the isospin matrix acting on this space is <span class="math inline">`8 \times 8`</span>. However, these combinations can be arranged such that they transform under isospin rotations without mixing with other states. This is called splitting into <strong>irreducible representations</strong> — grouping basis functions into multiplets that behave consistently under transformations.</p>
 <p>To answer the question about spin combinations, we apply spin algebra:</p>
-<pre class="math"><code>\frac{1}{2} \otimes \frac{1}{2} \otimes \frac{1}{2} = \frac{1}{2} \oplus \frac{1}{2} \oplus 1 \oplus 0</code></pre>
+<p><span class="math display">
+\frac{1}{2} \otimes \frac{1}{2} \otimes \frac{1}{2} = \frac{1}{2} \oplus \frac{1}{2} \oplus 1 \oplus 0
+</span></p>
 <p>First, combining two spin-<span class="math inline">`\frac{1}{2}`</span> particles gives possible total spins of <span class="math inline">`0`</span> or <span class="math inline">`1`</span>. Then, adding a third spin-<span class="math inline">`\frac{1}{2}`</span> can yield further combinations, including another <span class="math inline">`\frac{1}{2}`</span>.</p>
 <blockquote class="blockquote">
 <p>[!IMPORTANT]<br>
@@ -302,17 +322,25 @@ Cosine simularity: 0.9152561457119857
 <p>It is clear how to construct the reducible basis for the highest isospin state. You start with the known state, such as <span class="math inline">`|up, up, up\rangle`</span>, and then act with the lowering operator. However, constructing the other basis vectors requires more care.</p>
 <p>For the <span class="math inline">`1/2`</span> and <span class="math inline">`3/2`</span> isospin states, we have 4-plets and 2-plets. The key principle is that the new vectors we build must be orthogonal to what we’ve already constructed. We need wavefunctions with the same quark combinations but different coefficients to ensure orthogonality.</p>
 <p>For example, consider the combination:</p>
-<pre class="math"><code>\frac{1}{\sqrt{6}} \left( |u d u\rangle + |u u d\rangle - 2 |d u u\rangle \right)</code></pre>
+<p><span class="math display">
+\frac{1}{\sqrt{6}} \left( |u d u\rangle + |u u d\rangle - 2 |d u u\rangle \right)
+</span></p>
 <p>To verify orthogonality, we compute the scalar product with another state. When multiplying, only terms with identical quark content contribute. For normalization, squaring this gives:</p>
-<pre class="math"><code>1 + 1 + 4 = 6 \quad \Rightarrow \quad \text{Normalization factor} \ \frac{1}{\sqrt{6}}</code></pre>
+<p><span class="math display">
+1 + 1 + 4 = 6 \quad \Rightarrow \quad \text{Normalization factor} \ \frac{1}{\sqrt{6}}
+</span></p>
 <p>To construct the basis function for the <span class="math inline">`1/2`</span> state with projection <span class="math inline">`-1/2`</span>, we act with the lowering operator on the upper state. This yields:</p>
-<pre class="math"><code>\frac{1}{\sqrt{6}} \left( |d u d\rangle + |u d d\rangle - 2 |d d u\rangle \right)</code></pre>
+<p><span class="math display">
+\frac{1}{\sqrt{6}} \left( |d u d\rangle + |u d d\rangle - 2 |d d u\rangle \right)
+</span></p>
 <p>The lowering operator acts as follows:<br>
 - On <span class="math inline">`|u d u\rangle`</span>, it gives <span class="math inline">`|d d u\rangle + |u d d\rangle`</span>.<br>
 - On <span class="math inline">`|u u d\rangle`</span>, it gives <span class="math inline">`|d u d\rangle + |u d d\rangle`</span>.<br>
 - On <span class="math inline">`|d u u\rangle`</span>, it gives <span class="math inline">`0`</span> (since lowering <span class="math inline">`|d\rangle`</span> gives zero).</p>
 <p>Combining these terms, we get:</p>
-<pre class="math"><code>|d u d\rangle + |u d d\rangle + |u d d\rangle - 2 |d d u\rangle = |d u d\rangle + 2 |u d d\rangle - 2 |d d u\rangle</code></pre>
+<p><span class="math display">
+|d u d\rangle + |u d d\rangle + |u d d\rangle - 2 |d d u\rangle = |d u d\rangle + 2 |u d d\rangle - 2 |d d u\rangle
+</span></p>
 <p>After normalization, this confirms the orthogonal basis construction.</p>
 <p>The <span class="math inline">`8 \times 8`</span> matrix acting on these states decomposes into blocks:<br>
 - A <span class="math inline">`4 \times 4`</span> block (for the <span class="math inline">`3/2`</span> multiplet).<br>
@@ -329,11 +357,17 @@ Cosine simularity: 0.8770296752217894
 <p>For the first vector, we have <span class="math inline">`|u t\rangle - |u d u\rangle`</span>. The lower state is obtained by applying the lowering operator. While 94 might seem excessive, it illustrates the process for spin systems.</p>
 <p>Next, we consider spin-2 systems, which are more complicated. The framework applies not only to half-integer spins but also to integer spins. When combining two spin-1 systems, we use spin algebra to determine the possible states, ranging from the lowest (spin-0) to the highest (spin-2).</p>
 <p>We verify the dimensionality by checking:</p>
-<pre class="math"><code>3 + 3 = 1 + 3 + 5</code></pre>
+<p><span class="math display">
+3 + 3 = 1 + 3 + 5
+</span></p>
 <p>This confirms the decomposition into irreducible representations. We begin constructing the basis with the simplest case, using the volume operator. The ladder operator now involves four combinations:</p>
-<pre class="math"><code>|0, 0\rangle, \ |+\rangle, \ |-\rangle, \ |+\ +\rangle</code></pre>
+<p><span class="math display">
+|0, 0\rangle, \ |+\rangle, \ |-\rangle, \ |+\ +\rangle
+</span></p>
 <p>For the total spin-2 state, we have:</p>
-<pre class="math"><code>\frac{1}{\sqrt{2}} \left( |+\ +\rangle - |-\ -\rangle \right)</code></pre>
+<p><span class="math display">
+\frac{1}{\sqrt{2}} \left( |+\ +\rangle - |-\ -\rangle \right)
+</span></p>
 <p>To ensure orthogonality, we introduce a minus sign. Care must be taken when applying lowering operators, as Clebsch-Gordan coefficients may vary. For binary systems, these coefficients are identical.</p>
 <p>The normalization factor is <span class="math inline">`\frac{1}{\sqrt{2}}`</span>, and we proceed by constructing orthogonal vectors in the spin space.</p>
 <!--
@@ -344,7 +378,9 @@ Cosine simularity: 0.8713288743863498
 <h2 data-number="13" class="anchored" data-anchor-id="spin-algebra-and-su2-representations"><span class="header-section-number">13</span> Spin Algebra and SU2 Representations</h2>
 <p>For binary systems, the Clebsch-Gordan coefficients are the same, so the normalization factor is always <span class="math inline">`\frac{1}{\sqrt{2}}`</span>. Here, we have the Clebsch-Gordan coefficients (or “clefts”) — I call them that because they are related. This is the effect of the lowering operator we derived earlier.</p>
 <p>The same decomposition can be checked using the PTG captures. Let’s confirm this by cross-checking with the left-hand side. We want to construct <span class="math inline">`|2\rangle`</span> for <span class="math inline">`Y`</span> and express it as combinations of the following:</p>
-<pre class="math"><code>|1\rangle \otimes |1\rangle, \quad |1\rangle \otimes |0\rangle + |1\rangle \otimes |1\rangle, \quad |1\rangle \otimes |{-1}\rangle, \quad |0\rangle \otimes |0\rangle</code></pre>
+<p><span class="math display">
+|1\rangle \otimes |1\rangle, \quad |1\rangle \otimes |0\rangle + |1\rangle \otimes |1\rangle, \quad |1\rangle \otimes |{-1}\rangle, \quad |0\rangle \otimes |0\rangle
+</span></p>
 <p>These coefficients can be found in the third table, and they satisfy the normalization condition <span class="math inline">`\frac{1}{\sqrt{2}}`</span>.</p>
 <blockquote class="blockquote">
 <p>[!NOTE]<br>
@@ -358,9 +394,13 @@ Cosine simularity: 0.8948070126539082
 <section id="proton-wave-function-and-symmetry-considerations" class="level2" data-number="14">
 <h2 data-number="14" class="anchored" data-anchor-id="proton-wave-function-and-symmetry-considerations"><span class="header-section-number">14</span> Proton Wave Function and Symmetry Considerations</h2>
 <p>The proton wave function must be constructed in the product of four spaces: color, space, isospin, and spin. The general form is a sum over components in these spaces, not a simple product:</p>
-<pre class="math"><code>\Psi = \sum_i \Psi_{\text{space}} \otimes \Psi_{\text{isospin}} \otimes \Psi_{\text{spin}}</code></pre>
+<p><span class="math display">
+\Psi = \sum_i \Psi_{\text{space}} \otimes \Psi_{\text{isospin}} \otimes \Psi_{\text{spin}}
+</span></p>
 <p>However, the color wave function is a singlet (scalar) and can be factored out:</p>
-<pre class="math"><code>\Psi = \Psi_{\text{color}} \otimes \sum_i \Psi_{\text{isospin}} \otimes \Psi_{\text{spin}}</code></pre>
+<p><span class="math display">
+\Psi = \Psi_{\text{color}} \otimes \sum_i \Psi_{\text{isospin}} \otimes \Psi_{\text{spin}}
+</span></p>
 <p>There is also an argument that the space wave function is a scalar and can be factored out, though this requires justification from the literature. The remaining parts — isospin and spin — are generally not factorizable and must be treated as entangled components.</p>
 <p>To understand the internal structure of hadrons, we need the proton wave function. Similarly, the delta baryon wave function will be addressed in homework, but it may be simpler to start with its symmetries.</p>
 <p>The baryon wave function must be color-neutral, as all hadrons are. It depends on spatial coordinates (<span class="math inline">`x`</span>, <span class="math inline">`t`</span>), isospin, and spin. These components are not independent in the general case; the wave function lives in the product of these spaces and can mix them.</p>
@@ -370,7 +410,9 @@ The color wave function is a singlet, meaning it has no internal dimensionality 
 </blockquote>
 <p>For spin and isospin, the Clebsch-Gordan coefficients are essential for combining states. In <span class="math inline">`SU(2)`</span>, the coefficients follow straightforward rules, but <span class="math inline">`SU(3)`</span> is more complex. The method of combining these coefficients (or “clefts”) helps derive the wave function structure without reference books.</p>
 <p>The normalization factor for binary systems is always <span class="math inline">`\frac{1}{\sqrt{2}}`</span>, and the coefficients can be cross-checked using tensor methods. For example, the state <span class="math inline">`|2\rangle`</span> can be expressed as combinations of:</p>
-<pre class="math"><code>|1\rangle \otimes |1\rangle, \quad |1\rangle \otimes |0\rangle + |1\rangle \otimes |1\rangle, \quad |1\rangle \otimes |{-1}\rangle, \quad |0\rangle \otimes |0\rangle</code></pre>
+<p><span class="math display">
+|1\rangle \otimes |1\rangle, \quad |1\rangle \otimes |0\rangle + |1\rangle \otimes |1\rangle, \quad |1\rangle \otimes |{-1}\rangle, \quad |0\rangle \otimes |0\rangle
+</span></p>
 <p>These satisfy the normalization condition and can be found in standard tables. Spin algebra appears in quantum mechanics, particle physics, and group theory, with <span class="math inline">`SU(2)`</span> being simpler than <span class="math inline">`SU(3)`</span>.</p>
 </section>
 
