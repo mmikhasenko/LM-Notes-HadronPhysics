@@ -1,0 +1,12 @@
+format:
+  html:
+    theme: cosmo
+    toc: true
+    number-sections: true
+    html-math-method: katex
+    code-fold: true
+    highlight-style: github
+    css: styles.css
+
+metadata-files: 
+  - _metadata.yml
