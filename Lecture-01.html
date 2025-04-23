@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.43">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>lecture-01</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="Lecture-01_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Lecture-01_files/libs/quarto-html/quarto.js"></script>
+<script src="Lecture-01_files/libs/quarto-html/popper.min.js"></script>
+<script src="Lecture-01_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Lecture-01_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Lecture-01_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Lecture-01_files/libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Lecture-01_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Lecture-01_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Lecture-01_files/libs/bootstrap/bootstrap-1a748f8c722605f92e8ac4935e2e75ca.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+
+<!--
+Cosine simularity: 0.9545348806221694
+-->
+<section id="introduction-to-universe-evolution-and-planck-epoch" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-to-universe-evolution-and-planck-epoch">Introduction to Universe Evolution and Planck Epoch</h2>
+<p>If anything reasonable comes out of it, I will be happy to upload the lecture. Certainly, the lecture content with items I already have will be uploaded, along with references to material.</p>
+<p>We are living in a universe made of hardened physics, but it was not always the case. I like thinking of the evolution of the universe in terms of a time scale. Here is the origin of the universe where everything started. There was a Big Bang first, and then several epochs followed. It started with the Planck epoch, then there was the electroweak epoch.</p>
+<div class=".callout-note">
+<p>The Planck epoch is the earliest phase of the universe, lasting up to <span class="math inline">\(10^{-43}\)</span> seconds after the Big Bang, where quantum gravity effects dominated.</p>
+</div>
+<!--
+Cosine simularity: 0.8893506271369604
+-->
+</section>
+<section id="higgs-mechanism-and-electroweak-epoch" class="level2">
+<h2 class="anchored" data-anchor-id="higgs-mechanism-and-electroweak-epoch">Higgs Mechanism and Electroweak Epoch</h2>
+<p>The electroweak epoch is where the Higgs potential — the field responsible for giving particles mass and ensuring proton stability — becomes significant.</p>
+<div class=".callout-note">
+<p>The Higgs potential drives electroweak physics by forming a condensate that permeates space, giving particles inertia and mass.</p>
+</div>
+<p>This process is known as the <strong>Higgs mechanism</strong>. The transition occurs when the Higgs field develops a non-zero vacuum expectation value (vev), filling space with a condensate. Particles moving through this condensate “slow down,” acquiring mass.</p>
+<p>The evolution of the Higgs potential is described by <strong>spontaneous symmetry breaking</strong>, where the potential shifts from a symmetric state to a preferred minimum. The Higgs potential can be visualized as:</p>
+<p><span class="math display">\[
+V(\phi) = \mu^2 |\phi|^2 + \lambda |\phi|^4
+\]</span></p>
+<p>Here, <span class="math inline">\(\phi\)</span> is the Higgs field, <span class="math inline">\(\mu^2\)</span> determines the shape of the potential, and <span class="math inline">\(\lambda\)</span> is the self-coupling constant. When <span class="math inline">\(\mu^2 &lt; 0\)</span>, the potential develops a non-zero vev, breaking electroweak symmetry.</p>
+<p>This marks the electroweak epoch, where the universe transitions from a symmetric phase to one where particles gain mass and the fundamental forces separate.</p>
+<!--
+Cosine simularity: 0.9076675284806806
+-->
+</section>
+<section id="quark-epoch-and-quantum-chromodynamics" class="level2">
+<h2 class="anchored" data-anchor-id="quark-epoch-and-quantum-chromodynamics">Quark Epoch and Quantum Chromodynamics</h2>
+<p>At the quark epoch, the universe is filled with a quark-gluon plasma — an unstructured soup of quarks and gluons. We describe this as <span class="math inline">\(q + \bar{q} + g\)</span>, where quarks (<span class="math inline">\(q\)</span>), antiquarks (<span class="math inline">\(\bar{q}\)</span>), and gluons (<span class="math inline">\(g\)</span>) are freely interacting. There is no structure formation yet; this is purely a disordered state.</p>
+<p>Quarks and gluons remain confined together due to the extreme temperature. As the universe cools, the medium begins separating, leading to the quantum chromodynamics (QCD) phase transition. Small volumes form where quark interactions become confined to a measurable scale.</p>
+<div class=".callout-note">
+<p>Understanding QCD requires studying particle physics, introductory nuclear physics, and specialized courses on statistical mechanics. A dedicated course on QCD at finite temperature is essential, as the heated medium follows different physical laws.</p>
+</div>
+<!--
+Cosine simularity: 0.9174996197199632
+-->
+</section>
+<section id="early-universe-dynamics-and-hadron-formation" class="level2">
+<h2 class="anchored" data-anchor-id="early-universe-dynamics-and-hadron-formation">Early Universe Dynamics and Hadron Formation</h2>
+<p>The early universe was a heated medium where different physical laws governed strong interactions. Hydrogen formation occurred extremely quickly — within <span class="math inline">\(10^{-12}\)</span> seconds after the electroweak epoch (<span class="math inline">\(10^{-36}\)</span> seconds), followed by the QCD phase transition at <span class="math inline">\(10^{-6}\)</span> seconds, and then the hadronization process by 1 second.</p>
+<p>To put this into perspective, the time between a clap and hearing the sound (~10 milliseconds) is vastly longer than the timescale of these early universe processes. The rest of the universe’s history (billions of years) involves less intense physics from the perspective of hadron dynamics.</p>
+<p>Hadrons are objects where strong interactions are confined to a scale of a few femtometers (<span class="math inline">\(1 \ \text{fm} = 10^{-15} \ \text{m}\)</span>). Within this tiny volume, quarks and gluons interact, surrounded by mostly empty space. This is the smallest natural scale where strong interactions remain confined.</p>
+<p>By colliding hadrons, we study their internal structure and separate their constituents. However, there is no smaller scale where quarks and gluons can be isolated naturally.</p>
+<div class=".callout-note">
+<p>The Fermi scale (<span class="math inline">\(10^{-15} \ \text{m}\)</span>) is fundamental for understanding hadron physics, as it defines the confinement radius of strong interactions.</p>
+</div>
+<p>The most common elements on Earth, such as hydrogen, formed during these early stages, but their abundance reflects later astrophysical processes rather than primordial hadron dynamics.</p>
+<!--
+Cosine simularity: 0.9339935872842935
+-->
+</section>
+<section id="atomic-structure-and-electron-configuration" class="level2">
+<h2 class="anchored" data-anchor-id="atomic-structure-and-electron-configuration">Atomic Structure and Electron Configuration</h2>
+<p>One of the most common elements on Earth is oxygen. Oxygen has 8 protons and typically 8 neutrons in its most common isotope, oxygen-16. The atom is neutral, so there must be 8 electrons compensating the charge of the protons. The electron configuration of oxygen is <span class="math inline">\(1s^2 2s^2 2p^4\)</span>.</p>
+<p>The core of the atom consists of protons and neutrons packed closely together. The size of the nucleus scales with the number of nucleons as:</p>
+<p><span class="math display">\[
+R \approx R_0 A^{1/3}
+\]</span></p>
+<p>where <span class="math inline">\(R_0 \approx 1.2 \ \text{fm}\)</span> and <span class="math inline">\(A\)</span> is the mass number. For oxygen-16, this gives a nuclear radius of roughly 3 femtometers.</p>
+<p>In contrast, the electron cloud is much larger. The wave function of electrons extends over a scale about 3 orders of magnitude bigger than the nucleus, around 50 picometers (<span class="math inline">\(50 \times 10^{-12} \ \text{m}\)</span>).</p>
+<div class=".callout-note">
+<p>The nucleus occupies a tiny fraction of the atom’s volume, while electrons occupy a much larger space due to their wave-like behavior.</p>
+</div>
+<p>The size difference between the nucleus and the electron cloud is dramatic — the nucleus is about <span class="math inline">\(10^{-5}\)</span> times smaller in radius compared to the atom as a whole.</p>
+<!--
+Cosine simularity: 0.9581663787880104
+-->
+</section>
+<section id="the-standard-model-and-color-charge" class="level2">
+<h2 class="anchored" data-anchor-id="the-standard-model-and-color-charge">The Standard Model and Color Charge</h2>
+<p>Now you can think of this <span class="math inline">\(10^{-3}\)</span> scale. From that perspective, you realize how empty our space is. There is a very small core, and around it, there is a lot of space where the electrons live, with no strong interaction.</p>
+<p>The second item I wanted to discuss is what we know as the fundamental hardware. The Standard Model is the theory in particle physics that describes most of the known interactions. Putting aside neutrinos — because there are several open questions — roughly speaking, everything is well described.</p>
+<p>The part responsible for strong interactions is quantum chromodynamics (QCD). The participants of the strong interactions are quarks and gluons. These are the only particles in the Standard Model that carry <strong>color charge</strong>. They carry the charge needed to interact. Similar to electrodynamics, only objects that are not neutral can interact.</p>
+<p>In strong interactions, the relevant charge is not electric charge but <strong>color charge</strong>. We could have invented a different word for it, but it is analogous to electric charge in some ways. However, it is a different quantum number, and one should not mix them up. A particle charged electrically does not have to carry color charge, and vice versa.</p>
+<p>We usually measure charge in elementary units. For example, the electromagnetic charge of the electron is <span class="math inline">\(-1\)</span>, and the positron is <span class="math inline">\(+1\)</span>. Similarly, quarks and gluons have color charge, but we do not assign them the same units as electric charge.</p>
+<!--
+Cosine simularity: 0.9143683756659114
+-->
+</section>
+<section id="properties-and-generations-of-quarks" class="level2">
+<h2 class="anchored" data-anchor-id="properties-and-generations-of-quarks">Properties and Generations of Quarks</h2>
+<p>In the case of color charge, we do not assign units of charge but instead introduce the color wave function. Once a non-trivial wave function exists, the particles are color charged.</p>
+<p>To summarize the Standard Model, these are the only particles that carry color charge. Let me list other particles in the Standard Model: electrons, muons, and tau leptons. These are similar particles but with different masses. The electron orbits or compensates the charge of protons and neutrons in nuclei. The muon is a heavier version of the electron, and the tau lepton is much heavier than the muon. Both can exist in different configurations.</p>
+<p>Other particles in the Standard Model include photons and neutrinos. These do not carry color charge and thus do not interact via the strong force. However, they may still interact through other forces.</p>
+<div class=".callout-note">
+<p>A particle without color charge does not interact strongly, but a particle with color charge must interact strongly. This does not exclude other interactions, such as electromagnetic forces.</p>
+</div>
+<p>All quarks have different quantum numbers, including electric charge. There are six quarks in the Standard Model, distinguished by their properties. They are grouped by their electric charge:<br>
+- The upper row (up, charm, top) has a charge of <span class="math inline">\(+\frac{2}{3}\)</span>.<br>
+- The lower row (down, strange, bottom) has a charge of <span class="math inline">\(-\frac{1}{3}\)</span>.</p>
+<p>They are also divided into three generations along the horizontal axis:<br>
+1. <strong>First generation</strong> (up, down) — lightest and most common in ordinary matter.<br>
+2. <strong>Second generation</strong> (charm, strange) — heavier, produced less frequently.<br>
+3. <strong>Third generation</strong> (top, bottom) — heaviest and most difficult to produce.</p>
+<p>Most of the matter we observe is made of first-generation quarks. Strange quarks appear more easily in particle collisions, while charm and bottom quarks are rarer. Cosmic rays contain more strange particles than charm or bottom quarks.</p>
+<p>The letter <strong>C</strong> stands for charm, one of the second-generation quarks.</p>
+<!--
+Cosine simularity: 0.9353214675811721
+-->
+</section>
+<section id="strange-quarks-and-neutron-star-equation-of-state" class="level2">
+<h2 class="anchored" data-anchor-id="strange-quarks-and-neutron-star-equation-of-state">Strange Quarks and Neutron Star Equation of State</h2>
+<p>The letter <strong>C</strong> stands for charm, but strange quarks also appear in cosmic rays. There is active discussion on whether strange quark interactions are relevant for the equation of state in neutron star evolution.</p>
+<p>The equation of state determines the maximal size of a neutron star by describing how matter is packed inside. If strange quark clusters form within the neutron star, they modify the equation of state, leading to observable changes in stellar properties.</p>
+<p>Recent studies over the past five years have intensified debates on the role of strange quarks in the equation of state and their astrophysical implications.</p>
+<!--
+Cosine simularity: 0.9064543584738168
+-->
+</section>
+<section id="light-quarks-and-hadron-formation" class="level2">
+<h2 class="anchored" data-anchor-id="light-quarks-and-hadron-formation">Light Quarks and Hadron Formation</h2>
+<p>The chart work is mostly studied in collisions with high energy because you need a lot of energy to produce charm and bottom quarks. The top quark is relevant for Higgs physics, so these two domains are where they are primarily studied.</p>
+<p>These are called light quarks: the up, down, and strange quarks. The charm and bottom quarks (or charm quark) are studied extensively in colliders, particularly for precision physics and CP violation. The top quark, however, is measured well for Standard Model quantities related to Higgs physics and electroweak interactions.</p>
+<p>We will focus on the five lighter quarks and not discuss the top quark much because its lifetime is so short that it decays before it can form hadrons. Thus, no hadrons contain top quarks, but all other quarks can form hadrons.</p>
+<p>Most of the matter we know consists of two types: mesons and baryons. We will discuss the <strong>constituent quark model</strong>, which classifies hadrons as either quark-antiquark pairs (mesons) or three-quark states (baryons).</p>
+<div class=".callout-note">
+<p>The gluon field also condenses during hadronization, contributing to confinement at small scales.</p>
+</div>
+<p>There is something very interesting happening around the <strong>chiral symmetry breaking scale</strong>. When hadronization occurs, quarks and gluons from the quark-gluon plasma begin to confine themselves, and the gluon field condenses as well.</p>
+<!--
+Cosine simularity: 0.9440633111045008
+-->
+</section>
+<section id="natural-units-and-mass-scaling" class="level2">
+<h2 class="anchored" data-anchor-id="natural-units-and-mass-scaling">Natural Units and Mass Scaling</h2>
+<p>On the small scale, the gluons and the gluon field condensate as well. The gluon field, similar to the Higgs field, forms a medium in which the quarks are moving. This medium is colored, and the quarks acquire energy by interacting with it. Effectively, the gluons dress the quarks, making them massive even if they were originally massless. The quarks we observe in the constituent picture differ from the Standard Model quarks — they are quarks dressed by gluonic degrees of freedom.</p>
+<p>There is a useful way to think about this. Consider the masses of the light quarks, such as the up (<span class="math inline">\(u\)</span>) and down (<span class="math inline">\(d\)</span>) quarks, which are on the order of 3 MeV. To express this in kilograms, we use natural units, where <span class="math inline">\(c = 1\)</span> and <span class="math inline">\(\hbar = 1\)</span>.</p>
+<div class=".callout-note">
+<p>In natural units, quantities like energy, mass, and inverse distance can all be expressed in the same units (e.g., electron volts, MeV).</p>
+</div>
+<p>The relation between units is derived from fundamental constants. For example, <span class="math inline">\(\hbar\)</span> can be expressed as:</p>
+<p><span class="math display">\[
+\hbar = 6.58 \times 10^{-22} \ \text{MeV} \cdot \text{s}
+\]</span></p>
+<p>This tells us that 1/second is equivalent to <span class="math inline">\(6.58 \times 10^{-22}\)</span> MeV. Similarly, since <span class="math inline">\(c = 1\)</span>, we can relate meters to seconds:</p>
+<p><span class="math display">\[
+1 \ \text{second} = 3 \times 10^8 \ \text{meters}
+\]</span></p>
+<p>This allows us to translate between units of distance, time, and energy. For instance, electron volts (eV) can be converted to seconds or meters, and joules can be expressed in terms of kilograms.</p>
+<div class=".callout-important">
+<p>In natural units, MeV serves as a unit for mass, energy, and inverse distance. This simplifies calculations in particle physics by eliminating redundant unit conversions.</p>
+</div>
+<p>Thus, when we say the mass of a quark is 3 MeV, we are directly using natural units where mass and energy are interchangeable. This framework is essential for understanding how quarks acquire effective masses through interactions with the gluon field.</p>
+<!--
+Cosine simularity: 0.896331761154863
+-->
+</section>
+<section id="origin-of-mass-and-higgs-mechanism" class="level2">
+<h2 class="anchored" data-anchor-id="origin-of-mass-and-higgs-mechanism">Origin of Mass and Higgs Mechanism</h2>
+<p>The units of energy are also units of the inverse distance. We will be using electron volts (eV) for everything. To give a scale in kilograms, it’s roughly <span class="math inline">\(10^{-30}\)</span> — a very small number.</p>
+<p>Now, what is the mass of the proton? The proton is the elementary constituent of nuclei, made of up (<span class="math inline">\(u\)</span>) and down (<span class="math inline">\(d\)</span>) quarks. The mass of the proton is roughly 1 GeV. To be more precise, the mass density is around <span class="math inline">\(10^{-10}\)</span> g. For comparison, the proton mass is approximately <span class="math inline">\(10^{-12}\)</span> of this scale.</p>
+<p>The Higgs mechanism involves the formation of a condensate, through which particles obtain their masses. The running of the mass couplings also contributes to mass generation. The mass acquired from the Higgs is a small fraction — about 3% — of the total proton mass.</p>
+<p>Another phenomenon occurs where energy is stored in the strong interaction. At the scale where strong interactions dominate, there is a significant contribution from the gluon condensate. This gluonic energy accounts for 99% of the proton mass.</p>
+<div class=".callout-important">
+<p>When discussing the origin of mass, the Higgs mechanism explains only about 1% of the proton mass. The remaining 99% comes from gluon interactions.</p>
+</div>
+<p>For example, if I weigh 70 kg, most of that mass — around 69 kg — is due to gluon interactions and the binding energy of quarks. Only a small fraction arises from the Higgs field.</p>
+<p>Now, let’s move to a bit more formal treatment with equations.</p>
+<div class=".callout-note">
+<p>In natural units, mass and energy are interchangeable, and we express both in electron volts (eV). For instance, the mass of light quarks like <span class="math inline">\(u\)</span> and <span class="math inline">\(d\)</span> is around 3 MeV.</p>
+</div>
+<p>The relation between units is derived from fundamental constants like <span class="math inline">\(\hbar\)</span> and <span class="math inline">\(c\)</span>. For example:</p>
+<p><span class="math display">\[
+\hbar = 6.58 \times 10^{-22} \ \text{MeV} \cdot \text{s}
+\]</span></p>
+<p>This means 1/second is equivalent to <span class="math inline">\(6.58 \times 10^{-22}\)</span> MeV. Similarly, since <span class="math inline">\(c = 1\)</span>, we can relate distance and time:</p>
+<p><span class="math display">\[
+1 \ \text{second} = 3 \times 10^8 \ \text{meters}
+\]</span></p>
+<p>This framework simplifies calculations in particle physics by unifying units of mass, energy, and inverse distance.</p>
+<!--
+Cosine simularity: 0.932228722709004
+-->
+</section>
+<section id="introduction-to-quantum-electrodynamics-qed-and-vector-fields" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-to-quantum-electrodynamics-qed-and-vector-fields">Introduction to Quantum Electrodynamics (QED) and Vector Fields</h2>
+<p>Quantum chromodynamics (QCD) is the theory of strong interactions, while quantum electrodynamics (QED) describes electromagnetic interactions. There is a lot in common between these two theories.</p>
+<p>The framework we use, starting from classical mechanics and extending to quantum systems, is the Lagrangian approach. Similar to mechanical systems, we describe quantum systems using the Lagrangian and Lagrange equations.</p>
+<p>Let’s start with QED. What is QED? Essentially, QED is the theory of the electromagnetic field. If someone asks you about the key equation in QED, the first thing that comes to mind is the Maxwell equations, which are the equations of motion for the electric and magnetic fields.</p>
+<p>The index <span class="math inline">\(\mu\)</span> in the equations indicates that we are dealing with a vector field. This means that under boosts and rotations, the field transforms as a vector, just like momentum or other familiar four-vectors. For example, the zero component of a four-vector corresponds to the time component (like energy for momentum), while the spatial components represent the vector part (like momentum for a particle).</p>
+<p>When you see the index <span class="math inline">\(\mu\)</span> on a field, you know how to boost and rotate it because it belongs to the vector representation of the Lorentz group. If I give you a four-vector field and ask how it transforms under a 90-degree rotation, you can apply the rotation matrix:</p>
+<p><span class="math display">\[
+\begin{pmatrix}
+1 &amp; 0 \\
+0 &amp; \cos \theta &amp; \sin \theta \\
+0 &amp; -\sin \theta &amp; \cos \theta
+\end{pmatrix}
+\]</span></p>
+<p>Similarly, you know how to boost this field using the Lorentz transformation matrix with <span class="math inline">\(\gamma\)</span> and <span class="math inline">\(\beta\)</span> factors. This is because it is a vector field, and its transformation properties are well-defined.</p>
+<div class=".callout-note">
+<p>In QED, the electromagnetic field <span class="math inline">\(A_\mu\)</span> is a four-vector potential, and its dynamics are governed by the Lagrangian <span class="math inline">\(\mathcal{L}_{\text{QED}} = -\frac{1}{4} F_{\mu\nu} F^{\mu\nu}\)</span>, where <span class="math inline">\(F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu\)</span>.</p>
+</div>
+<p>The equations of motion derived from this Lagrangian reproduce Maxwell’s equations, confirming that QED correctly describes classical electromagnetism in the quantum framework.</p>
+<!--
+Cosine simularity: 0.9572256743611129
+-->
+</section>
+<section id="four-vectors-and-einstein-notation-in-field-theory" class="level2">
+<h2 class="anchored" data-anchor-id="four-vectors-and-einstein-notation-in-field-theory">Four Vectors and Einstein Notation in Field Theory</h2>
+<p>There is a gamma, beta, gamma, beta, gamma, gamma matrix that you apply, and then you have it. This might sound familiar already. Four vectors are seen in quantum mechanics and many other courses, and they will be extremely useful in other field theory courses.</p>
+<p>In this course, we will mostly operate with a different approach, barely using four vectors and tensor contractions explicitly.</p>
+<div class=".callout-note">
+<p>Here, I am using Einstein notation, where repeated indices imply summation. For example, if we have <span class="math inline">\(A_\mu B^\mu\)</span>, it means <span class="math inline">\(\sum_{\mu=0}^3 A_\mu B^\mu\)</span>.</p>
+</div>
+<p>If I were to write the sum explicitly, how many terms would there be for a contraction like <span class="math inline">\(A_\mu B^\mu\)</span>? It would be 4, one for each component (<span class="math inline">\(\mu = 0,1,2,3\)</span>).</p>
+<p>Now, if we consider a product like <span class="math inline">\(F_{\mu\nu} F^{\mu\nu}\)</span>, how many terms would this have? Since each index runs from 0 to 3, this is a <span class="math inline">\(4 \times 4\)</span> tensor, so there are 16 terms.</p>
+<p>If we further multiply two such tensors, like <span class="math inline">\(F_{\mu\nu} F^{\mu\nu} G_{\rho\sigma} G^{\rho\sigma}\)</span>, the total number of terms becomes <span class="math inline">\(16 \times 4 = 64\)</span>, because each <span class="math inline">\(G_{\rho\sigma}\)</span> contraction adds another 4 terms.</p>
+<p>The equation of motion for this Lagrangian is obtained using the standard variational approach.</p>
+<!--
+Cosine simularity: 0.9473164755898359
+-->
+</section>
+<section id="lagrangian-and-field-equations-in-electromagnetism" class="level2">
+<h2 class="anchored" data-anchor-id="lagrangian-and-field-equations-in-electromagnetism">Lagrangian and Field Equations in Electromagnetism</h2>
+<p>The equation of motion for this Lagrangian is obtained using the Lagrange equation. This is similar to classical mechanics, where we had time derivatives and field derivatives. Here, we treat the Lagrangian as a function of the derivatives and the fields as independent objects.</p>
+<p>First, we differentiate with respect to the derivatives, and then with respect to the fields themselves. In classical mechanics, these would be the momenta, but here they are field variables. The index <span class="math inline">\(\mu\)</span> appears twice, indicating a summation over <span class="math inline">\(\mu\)</span>. The field variable is <span class="math inline">\(A^\rho\)</span>, and applying the Lagrange equation to this Lagrangian yields the equation of motion, which describes how the field propagates through space.</p>
+<p>We know that this equation of motion gives Maxwell’s equations.</p>
+<div class=".callout-note">
+<p>The contraction <span class="math inline">\(F_{\mu\nu} F^{\mu\nu}\)</span> involves 16 terms, since each index runs from 0 to 3. If we multiply two such tensors, like <span class="math inline">\(F_{\mu\nu} F^{\mu\nu} G_{\rho\sigma} G^{\rho\sigma}\)</span>, the total number of terms becomes 64 due to the additional summation over <span class="math inline">\(\rho\)</span> and <span class="math inline">\(\sigma\)</span>.</p>
+</div>
+<!--
+Cosine simularity: 0.9368794209637901
+-->
+</section>
+<section id="gauge-invariance-and-field-transformations-in-electromagnetism" class="level2">
+<h2 class="anchored" data-anchor-id="gauge-invariance-and-field-transformations-in-electromagnetism">Gauge Invariance and Field Transformations in Electromagnetism</h2>
+<p>The equation of motion gives Maxwell’s equations, which is important. Now let me introduce the second part of the discussion. This was about the gauge field, labeled as components 1, 2, 3, 4.</p>
+<p>This concept is less intuitive than what you might have seen before, but it is necessary to understand the degrees of freedom that are not fixed for photons in the electromagnetic field. There is an arbitrary gauge that we can fix and explore.</p>
+<p>This gauge freedom is manifested in the transformation:</p>
+<p><span class="math display">\[
+A_{\mu} \rightarrow A'_{\mu} = A_{\mu} - \partial_{\mu} \chi(x)
+\]</span></p>
+<p>Here, <span class="math inline">\(\chi(x)\)</span> is an arbitrary scalar field. Under this transformation, the field strength tensor <span class="math inline">\(F_{\mu\nu}\)</span> remains unchanged:</p>
+<p><span class="math display">\[
+F_{\mu\nu} \rightarrow F'_{\mu\nu} = F_{\mu\nu}
+\]</span></p>
+<p>To see why, we substitute <span class="math inline">\(A'_{\mu}\)</span> into <span class="math inline">\(F_{\mu\nu} = \partial_{\mu} A_{\nu} - \partial_{\nu} A_{\mu}\)</span>. The extra terms from <span class="math inline">\(\partial_{\mu} \chi\)</span> cancel out due to the antisymmetry of <span class="math inline">\(F_{\mu\nu}\)</span>.</p>
+<p>The Lagrangian <span class="math inline">\(\mathcal{L}\)</span> is also invariant under this gauge transformation. This is a symmetry of the Lagrangian, known as gauge invariance.</p>
+<div class=".callout-note">
+<p>If you derive the Maxwell equations from the Lagrangian, you will not immediately obtain the familiar form. Instead, you get them up to a gauge term.</p>
+</div>
+<p>For example, differentiating <span class="math inline">\(F_{\mu\nu}\)</span> with respect to <span class="math inline">\(\partial_{\rho}\)</span> gives:</p>
+<p><span class="math display">\[
+\partial_{\rho} F^{\mu\nu} = \partial_{\rho} (\partial^{\mu} A^{\nu} - \partial^{\nu} A^{\mu})
+\]</span></p>
+<p>This leads to an extra term in the equations of motion. However, by exploiting gauge invariance, we can choose a function <span class="math inline">\(\chi(x)\)</span> that eliminates this term. Fixing the gauge in this way recovers the standard Maxwell equations.</p>
+<div class=".callout-important">
+<p>Gauge invariance allows us to impose conditions (e.g., Lorenz gauge <span class="math inline">\(\partial_{\mu} A^{\mu} = 0\)</span>) to simplify the equations while preserving physical observables.</p>
+</div>
+<p>This is how gauge transformations and invariance play a crucial role in electromagnetism.</p>
+<!--
+Cosine simularity: 0.9199390899556602
+-->
+</section>
+<section id="introduction-to-lagrangian-and-fermion-fields-in-electrodynamics" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-to-lagrangian-and-fermion-fields-in-electrodynamics">Introduction to Lagrangian and Fermion Fields in Electrodynamics</h2>
+<p>The Maxwell equations in electromagnetics are well-known. Now we introduce the fermion fields, which include all leptons like <span class="math inline">\(e\)</span>, <span class="math inline">\(\mu\)</span>, and <span class="math inline">\(\tau\)</span>, represented by the field <span class="math inline">\(\Psi\)</span>. Here, <span class="math inline">\(\bar{\Psi}\)</span> is defined as <span class="math inline">\(\Psi^\dagger \gamma^0\)</span>, and <span class="math inline">\(\Psi\)</span> is a <strong>bispinor</strong>, not a 4-vector.</p>
+<p>Every Lagrangian is a scalar quantity, meaning it has no indices — it is not a vector or a matrix. It is a function, a number, constructed from objects of different dimensionality. The fermion field describes particles with spin-1/2, and since we must account for both particle and antiparticle components, the bispinor has four components.</p>
+<div class=".callout-note">
+<p>These four components should not be confused with a 4-vector. While both have four components, the bispinor transforms differently under boosts and rotations. It does not transform like a 4-momentum.</p>
+</div>
+<p>The bispinor is a distinct mathematical object, and to construct a scalar Lagrangian, we must ensure the terms are properly contracted. The Dirac equation governs the dynamics of the fermion field:</p>
+<p><span class="math display">\[
+(i \not{\partial} - m_e) \Psi = 0
+\]</span></p>
+<p>where the Feynman slash notation <span class="math inline">\(\not{\partial} = \gamma^\mu \partial_\mu\)</span> is used. This equation describes the propagation and interaction of fermions in the theory.</p>
+<p>The Lagrangian for the free fermion field is given by:</p>
+<p><span class="math display">\[
+\mathcal{L} = \bar{\Psi} \left( i \gamma^{\mu} \partial_{\mu} - m_e \right) \Psi
+\]</span></p>
+<p>This expression ensures Lorentz invariance and correctly reproduces the Dirac equation as the equation of motion.</p>
+<!--
+Cosine simularity: 0.9307992305186558
+-->
+</section>
+<section id="gauge-invariance-and-phase-transformations-in-field-theory" class="level2">
+<h2 class="anchored" data-anchor-id="gauge-invariance-and-phase-transformations-in-field-theory">Gauge Invariance and Phase Transformations in Field Theory</h2>
+<p>The bispinor <span class="math inline">\(\Psi\)</span> is not a vector. To construct a scalar quantity from these matrices, we perform a transformation where we take the transpose to convert it into a row vector. We then multiply it by the gamma matrix <span class="math inline">\(\gamma^\mu\)</span> on the left. Since <span class="math inline">\(\gamma^\mu\)</span> is a <span class="math inline">\(4 \times 4\)</span> matrix, the result is also a matrix. The mass term is a scalar, but here we include a four-dimensional identity matrix to ensure proper dimensionality.</p>
+<p>The Lagrangian is constructed this way, and applying the Euler-Lagrange equations leads to the Dirac equation as the equation of motion. We often use condensed notation for these contractions, where the gamma matrix contraction is denoted with a slashed symbol:</p>
+<p><span class="math display">\[
+\not{\partial} = \gamma^\mu \partial_\mu
+\]</span></p>
+<p>The equation of motion is then written compactly as:</p>
+<p><span class="math display">\[
+(i \not{\partial} - m) \Psi = 0
+\]</span></p>
+<p>So far, we have dealt with a theory where photons and fermions are non-interacting. Photons propagate freely, and fermions move without any interaction. To introduce interactions, we follow gauge principles. For the electromagnetic field, gauge invariance corresponds to shifting the field <span class="math inline">\(A_\mu\)</span>. For fermions, gauge invariance implies changing the phase of the wave function <span class="math inline">\(\Psi\)</span>.</p>
+<p>The phase of <span class="math inline">\(\Psi\)</span> is not fixed since only <span class="math inline">\(|\Psi|^2\)</span> is observable. We should be able to update the phase freely, and this is called a <strong>phase transformation</strong>. Checking gauge invariance involves performing this phase transformation and verifying whether the Lagrangian remains invariant. This principle is intuitive — the phase of the wave function should not affect physical observables.</p>
+<p>The interaction term between the fermion field and the electromagnetic field is given by:</p>
+<p><span class="math display">\[
+iq \bar{\Psi} \gamma^\mu A_\mu \Psi
+\]</span></p>
+<p>This term ensures gauge invariance when combined with the covariant derivative <span class="math inline">\(D_\mu = \partial_\mu - iq A_\mu\)</span>.</p>
+<!--
+Cosine simularity: 0.9369682355155142
+-->
+</section>
+<section id="phase-update-and-derivative-action-in-gauge-transformations" class="level2">
+<h2 class="anchored" data-anchor-id="phase-update-and-derivative-action-in-gauge-transformations">Phase Update and Derivative Action in Gauge Transformations</h2>
+<p>It’s intuitive that you should be able to update the phase. The tricky part is that the phase is updated differently at every spacetime point — this is not a global phase rotation for all fields. Instead, we independently decide the phase update at each point in spacetime.</p>
+<p>This local transformation requires careful handling of the derivative. When the Lagrangian transforms under this update, the derivative acts not only on the field but also on the phase factor, introducing an extra term.</p>
+<p>For example, consider the derivative acting on a field <span class="math inline">\(\Psi\)</span> with a phase factor <span class="math inline">\(e^{iQ\theta(x)}\)</span>:</p>
+<p><span class="math display">\[
+\partial_\mu \Psi \rightarrow \partial_\mu (e^{iQ\theta(x)}\Psi) = e^{iQ\theta(x)}(\partial_\mu + iQ \partial_\mu \theta) \Psi
+\]</span></p>
+<p>The extra term <span class="math inline">\(iQ \partial_\mu \theta\)</span> arises from the derivative acting on the phase. This leads to a modification of the Lagrangian:</p>
+<p><span class="math display">\[
+\mathcal{L} \rightarrow \mathcal{L} + (\text{extra term})
+\]</span></p>
+<p>To restore gauge invariance, we introduce the covariant derivative <span class="math inline">\(D_\mu = \partial_\mu - iq A_\mu\)</span>. When both the phase <span class="math inline">\(\theta(x)\)</span> and the gauge field <span class="math inline">\(A_\mu\)</span> transform simultaneously:</p>
+<p><span class="math display">\[
+\Psi \rightarrow e^{iQ\theta(x)}\Psi, \quad A_\mu \rightarrow A_\mu + \partial_\mu \theta
+\]</span></p>
+<p>the extra term from the phase update is exactly canceled by the shift in <span class="math inline">\(A_\mu\)</span>. This ensures the Lagrangian remains invariant under local gauge transformations.</p>
+<!--
+Cosine simularity: 0.9500111742177865
+-->
+</section>
+<section id="gauge-invariance-and-interaction-structure-in-field-theory" class="level2">
+<h2 class="anchored" data-anchor-id="gauge-invariance-and-interaction-structure-in-field-theory">Gauge Invariance and Interaction Structure in Field Theory</h2>
+<p>The extra term in the Lagrangian gets compensated by the change under gauge transformation. If you think carefully, it becomes clear. When <span class="math inline">\(\Psi\)</span> is replaced, we know how the Lagrangian changes under the gauge transformation — specifically, under the phase change.</p>
+<p>Let’s apply this to the total Lagrangian of electrodynamics. The new term we don’t modify, but the original Lagrangian transforms and acquires an extra term. The term <span class="math inline">\(\Psi^\dagger \gamma^\mu Q A_\mu \Psi\)</span> changes according to the gauge transformation, and this term precisely cancels the extra term introduced by the phase transformation.</p>
+<p>This is a super important concept in field theory. The interaction between fields and fermions is dictated by gauge invariance. We require the ability to change the phase at every point in spacetime while keeping the Lagrangian invariant. The phase update determines the structure of interactions.</p>
+<p>From this Lagrangian, if you derive the equations of motion using the Euler-Lagrange equations, you won’t just get the Dirac equation — there will also be a source term. This shows that the field is not free; it interacts with photons. The term <span class="math inline">\(A_\mu \Psi^\dagger \gamma^\mu \Psi\)</span> introduces interactions.</p>
+<p>The entire field theory for vector mesons is built on this principle. The key characteristic we enforce is how the phase transformation acts on the field. Let me ask: what is the dimensionality of the phase factor <span class="math inline">\(e^{iQ\theta(x)}\)</span>? Is it a matrix, a vector, or something else?</p>
+<div class=".callout-note">
+<p>The phase factor <span class="math inline">\(e^{iQ\theta(x)}\)</span> is a scalar. You exponentiate a scalar to get another scalar — it’s just a number.</p>
+</div>
+<p>Gauge invariance does more than just defining particle interactions; it determines the entire structure of interactions. Depending on the phase transformation chosen, we obtain different interaction terms.</p>
+<p>The gauge field <span class="math inline">\(A_\mu\)</span> must transform as <span class="math inline">\(A_\mu \rightarrow A_\mu + \partial_\mu \theta\)</span> to cancel the extra term from the phase update. This ensures the Lagrangian remains invariant under local gauge transformations. The covariant derivative <span class="math inline">\(D_\mu = \partial_\mu - iQ A_\mu\)</span> is crucial for maintaining this invariance.</p>
+<!--
+Cosine simularity: 0.9319476782748534
+-->
+</section>
+<section id="phase-transformations-and-field-theory-dimensionality" class="level2">
+<h2 class="anchored" data-anchor-id="phase-transformations-and-field-theory-dimensionality">Phase Transformations and Field Theory Dimensionality</h2>
+<p>Depending on the phase you choose, different interactions emerge. The final aspect of field theoretical interactions involves examining various phase transformations and spanning all classes of field theory.</p>
+<ul>
+<li>If the phase is a <strong>scalar</strong>, you obtain <strong>electrodynamics</strong>.<br>
+</li>
+<li>If the phase is a <strong><span class="math inline">\(2 \times 2\)</span> matrix</strong>, you derive the <strong>Yang-Mills series</strong>, leading to electric interactions mediated by <span class="math inline">\(W\)</span> and <span class="math inline">\(Z\)</span> bosons.<br>
+</li>
+<li>If the phase is a <strong><span class="math inline">\(3 \times 3\)</span> matrix</strong>, you arrive at <strong>quantum chromodynamics (QCD)</strong>.</li>
+</ul>
+<p>These theories are interconnected. The dimensionality of the field must adjust to the phase transformation. The <strong>Dirac field</strong> always retains four components in the Lorentz representation, as these correspond to spacetime rotations. However, an <strong>additional index</strong> can be introduced for non-scalar transformations, allowing the wave function to carry dimensionality in the charge field.</p>
+<div class=".callout-note">
+<p>In <strong>electromagnetism</strong>, only photons exist, corresponding to a single dimension. In <strong>weak interactions</strong>, there are three fields (<span class="math inline">\(W^+, W^-, Z\)</span>), representing dimension-two objects (spinors).</p>
+</div>
+<p>The <strong>Standard Model</strong> organizes particles into doublets (e.g., up and down quarks), reflecting the gauge group’s dimensionality. The number of interaction carriers determines the gauge group structure.</p>
+<p>The <strong>phase transformation</strong> is characterized by a <strong>Lie group</strong>, which defines the set of transformations preserving the group structure. For example:<br>
+- Multiplying two phases of the same type yields another phase of that type, just with a different vector output.</p>
+<div class=".callout-important">
+<p>The <strong>dimensionality</strong> of the transformation object (scalar, matrix, etc.) dictates the resulting field theory.</p>
+</div>
+<p>The <strong>phase factor</strong> <span class="math inline">\(e^{iQ\theta(x)}\)</span> is a <strong>scalar</strong>, as exponentiating a scalar yields another scalar. However, non-scalar phases (e.g., matrices) introduce additional structure, leading to theories like Yang-Mills or QCD.</p>
+<p>The <strong>gauge field</strong> <span class="math inline">\(A_\mu\)</span> must transform as:<br>
+<span class="math display">\[
+A_\mu \rightarrow A_\mu + \partial_\mu \theta  
+\]</span><br>
+to ensure <strong>gauge invariance</strong> of the Lagrangian. The <strong>covariant derivative</strong> <span class="math inline">\(D_\mu = \partial_\mu - iQ A_\mu\)</span> is essential for maintaining this invariance.</p>
+<p>The <strong>interaction structure</strong> is entirely determined by the <strong>phase transformation</strong> chosen, whether scalar (electrodynamics) or matrix-valued (Yang-Mills, QCD).</p>
+<!--
+Cosine simularity: 0.9296089230223606
+-->
+</section>
+<section id="pauli-matrices-and-group-theory-in-exponential-form" class="level2">
+<h2 class="anchored" data-anchor-id="pauli-matrices-and-group-theory-in-exponential-form">Pauli Matrices and Group Theory in Exponential Form</h2>
+<p>Here, <span class="math inline">\(\sigma\)</span> represents the Pauli matrices. The notation <span class="math inline">\(\vec{\sigma}\)</span> is a vector where:<br>
+- The first component is the matrix <span class="math inline">\(\sigma_1\)</span>,<br>
+- The second component is <span class="math inline">\(\sigma_2\)</span>,<br>
+- The third component is <span class="math inline">\(\sigma_3\)</span>.</p>
+<p>This is combined with another vector of parameters <span class="math inline">\(\vec{\alpha}\)</span>, forming a scalar product:</p>
+<p><span class="math display">\[
+\vec{\sigma} \cdot \vec{\alpha} = \sigma_1 \alpha_1 + \sigma_2 \alpha_2 + \sigma_3 \alpha_3
+\]</span></p>
+<p>This results in a <span class="math inline">\(2 \times 2\)</span> matrix weighted by the components of <span class="math inline">\(\vec{\alpha}\)</span>. The key idea is to exponentiate this expression:</p>
+<p><span class="math display">\[
+e^{i \vec{\sigma} \cdot \vec{\alpha}}
+\]</span></p>
+<p>Writing group elements in exponential form ensures closure under multiplication. If you combine two such transformations, the result remains in the same group. This is a fundamental property in group theory — exponentiating generators guarantees the resulting object stays within the group.</p>
+<div class=".callout-important">
+<p>The exponential form <span class="math inline">\(e^{i \vec{\sigma} \cdot \vec{\alpha}}\)</span> ensures the transformation preserves the group structure, which is critical for consistency in quantum mechanics and field theory.</p>
+</div>
+<p>For those familiar with matrix exponentials, this construction is analogous to exponentiation of Lie algebra elements to obtain Lie group elements. The Pauli matrices serve as generators for the <span class="math inline">\(SU(2)\)</span> group, and their exponential form produces unitary transformations in this group.</p>
+<!--
+Cosine simularity: 0.8801623463966772
+-->
+</section>
+<section id="fourier-expansion-and-matrix-diagonalization-in-qcd" class="level2">
+<h2 class="anchored" data-anchor-id="fourier-expansion-and-matrix-diagonalization-in-qcd">Fourier Expansion and Matrix Diagonalization in QCD</h2>
+<p>For those familiar with matrix exponentials, the question arises: what is <span class="math inline">\(e^{\lambda_1}\)</span> where <span class="math inline">\(\lambda_1\)</span> is a Gell-Mann matrix? To compute this, you perform a Fourier expansion and iteratively multiply the matrix by itself — once, twice, and so on. This matrix has a simple pattern: squaring it results in a diagonal matrix, allowing truncation of the series after a few iterations.</p>
+<p>The Gell-Mann matrices <span class="math inline">\(\lambda_a\)</span> (where <span class="math inline">\(a = 1, \dots, 8\)</span>) are the generators of <span class="math inline">\(SU(3)\)</span>. For example, <span class="math inline">\(\lambda_1\)</span> is given by:</p>
+<p><span class="math display">\[
+\lambda_1 = \begin{pmatrix} 0 &amp; 1 &amp; 0 \\ 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 \end{pmatrix}
+\]</span></p>
+<p>The exponential <span class="math inline">\(e^{\lambda_1}\)</span> can be computed using its series expansion or properties of <span class="math inline">\(SU(3)\)</span> group theory.</p>
+<p>The QCD Lagrangian is constructed to be invariant under <span class="math inline">\(SU(3)\)</span> gauge transformations, analogous to earlier cases but with critical differences. It involves more indices due to the non-Abelian nature of <span class="math inline">\(SU(3)\)</span>. For example, the covariant derivative includes terms like <span class="math inline">\(ig A_\mu^B t^B\)</span>, where <span class="math inline">\(t^B = \frac{1}{2} \lambda^B\)</span> are the <span class="math inline">\(3 \times 3\)</span> generators contracted with the gauge field <span class="math inline">\(A_\mu^B\)</span>.</p>
+<div class=".callout-important">
+<p>The dimensionality of objects in QCD is crucial. The generators <span class="math inline">\(t^a\)</span> are <span class="math inline">\(3 \times 3\)</span> matrices, and contracting them with fields preserves the color structure of the theory.</p>
+</div>
+<p>A key exercise is understanding the dimensions of these objects. For instance, <span class="math inline">\(t^a\)</span> acts in the color space, ensuring gauge invariance. The Lagrangian’s form reflects this, with terms like <span class="math inline">\(F_{\mu\nu}^A F^{A\mu\nu}\)</span> and quark fields <span class="math inline">\(\psi_i\)</span> transforming under <span class="math inline">\(SU(3)_C\)</span>.</p>
+<!--
+Cosine simularity: 0.9399316749163875
+-->
+</section>
+<section id="gluon-self-interactions-and-confinement-in-qcd" class="level2">
+<h2 class="anchored" data-anchor-id="gluon-self-interactions-and-confinement-in-qcd">Gluon Self-Interactions and Confinement in QCD</h2>
+<p>The strong coupling constant appears in the Lagrangian, likely as <span class="math inline">\(g_s\)</span> or sometimes denoted as <span class="math inline">\(Q\)</span>. The theory involves color dimensions, Lorentz dimensions, and gluon fields <span class="math inline">\(A_\mu^a\)</span>. The term <span class="math inline">\(A_\mu^a A_\nu^b\)</span> represents gluon self-interactions.</p>
+<p>An important exercise is to recover the QCD equations of motion, where you will see that the color structure dominates. A key aspect of this theory is that it is fundamentally different due to the gluon self-interaction term. Even without quarks, gluons still interact with each other.</p>
+<p>When deriving the equations of motion, these interaction terms alter gluon behavior compared to photons. The self-interactions of gluons lead to <strong>confinement</strong>, where color forces exhibit screening behavior distinct from electric forces.</p>
+<div class=".callout-important">
+<p>In quantum field theory, the strength of interactions depends on the energy scale at which they are probed, a phenomenon tied to renormalization. The strong coupling constant <span class="math inline">\(g_s\)</span> in the Lagrangian is a bare parameter, but the effective coupling varies with energy.</p>
+</div>
+<p>Gluons screen the color charge, but this screening differs between QED and QCD. In QED, the coupling weakens at larger distances (lower energies). In QCD, the strong coupling grows stronger at lower energies, leading to confinement.</p>
+<p>At small energy scales, gluons and quarks form bound states due to the increasing strength of the interaction. This prevents isolated quarks or gluons from existing freely — they are confined within hadrons.</p>
+<div class=".callout-note">
+<p>The low-energy regime where confinement occurs contrasts with the high-energy regime of <strong>asymptotic freedom</strong>, where the coupling weakens. The transition between these regimes is driven by gluon self-interactions.</p>
+</div>
+<p>Even in a theory without quarks, gluon self-interactions persist, meaning there is no truly “free” QCD theory. These interactions are responsible for both confinement at low energies and asymptotic freedom at high energies. The latter is particularly relevant in Higgs physics, where high-energy probes are used.</p>
+<!--
+Cosine simularity: 0.9011246299771071
+-->
+</section>
+<section id="perturbation-theory-and-feynman-diagrams-in-qed-and-qcd" class="level2">
+<h2 class="anchored" data-anchor-id="perturbation-theory-and-feynman-diagrams-in-qed-and-qcd">Perturbation Theory and Feynman Diagrams in QED and QCD</h2>
+<p>Asymptotic freedom occurs at high energy, where large momentum transfer enables Higgs physics and the formation of matter as we know it.</p>
+<p>One aspect not discussed earlier is how computations in perturbation theory are performed in QED or in the asymptotic freedom regime of QCD. When the coupling is small, you can expand the equations of motion and iterate using the fact that the coupling is small. This leads to the perturbative approach.</p>
+<p>The diagrammatic representation of this process is the Feynman diagram method, which allows you to compute the matrix element <span class="math inline">\(\mathcal{M}\)</span>. In this course, we sometimes refer to this as the “conditional critique,” which then relates to the cross section of the process.</p>
+<p>The cross section <span class="math inline">\(\sigma\)</span> is computed using the formula:</p>
+<p><span class="math display">\[
+\sigma = \frac{1}{j} \int | \mathcal{M} |^2 d\Phi
+\]</span></p>
+<p>where:<br>
+- <span class="math inline">\(j\)</span> is the flux factor, given by:<br>
+<span class="math display">\[
+  j = 2E_1 2E_2 \left| \vec{v_1} + \vec{v_2} \right|
+  \]</span><br>
+or alternatively:<br>
+<span class="math display">\[
+  j = \frac{1}{2 s} \begin{cases}
+  2s &amp; \text{(collider)} \\
+  2 &amp; \text{(fixed target)}
+  \end{cases}
+  \]</span><br>
+- <span class="math inline">\(d\Phi\)</span> is the phase space element.</p>
+<p>Similarly, the decay width <span class="math inline">\(\Gamma\)</span> is computed as:</p>
+<p><span class="math display">\[
+\Gamma = \frac{1}{2M} \int | \mathcal{M} |^2 d\Phi
+\]</span></p>
+<p>For a 2-body final state, the phase space integral is:</p>
+<p><span class="math display">\[
+d\Phi_2 = \frac{d^3 p_1}{(2\pi)^3 2E_1} \frac{d^3 p_2}{(2\pi)^3 2E_2} (2\pi)^4 \delta^4(p - p_1 - p_2)
+\]</span></p>
+<p>For an <span class="math inline">\(n\)</span>-body final state, it generalizes to:</p>
+<p><span class="math display">\[
+d\Phi_n = \left(\prod_{i=1}^n \frac{d^3 p_i}{(2\pi)^3 2E_i}\right) (2\pi)^4 \delta^4(p - \sum_{i=1}^n p_i)
+\]</span></p>
+<!--
+Cosine simularity: 0.9101221772160827
+-->
+</section>
+<section id="transition-matrix-elements-and-cross-sections-in-field-theory" class="level2">
+<h2 class="anchored" data-anchor-id="transition-matrix-elements-and-cross-sections-in-field-theory">Transition Matrix Elements and Cross Sections in Field Theory</h2>
+<p>We can compute physical observables using these equations, where <span class="math inline">\(j\)</span> is the flux factor and <span class="math inline">\(d\Phi\)</span> stands for the phase space. The matrix element <span class="math inline">\(\mathcal{M}\)</span> is the key object in field theory for relating to experimental observables, as it tells you how to compute measurable quantities.</p>
+<p>This can be understood intuitively: you take the matrix element, which gives the probability amplitude for a transition from the initial state to the final state, and then sum over all possible final states. The phase space <span class="math inline">\(d\Phi\)</span> accounts for the available configurations of the final state.</p>
+<p>For example, in a 2-body decay, you explicitly count the number of final-state configurations. The total probability of the process is given by the squared transition matrix element <span class="math inline">\(|\mathcal{M}|^2\)</span>, summed over all possible configurations.</p>
+<div class=".callout-important">
+<p>When computing <span class="math inline">\(|\mathcal{M}|^2\)</span>, you must sum over final-state spins (if applicable) and average over initial-state spins.</p>
+</div>
+<p>For a process <span class="math inline">\(A + B \to N\)</span>, this averaging introduces factors like <span class="math inline">\(\frac{1}{2s+1}\)</span> for spin states. Once you have <span class="math inline">\(\mathcal{M}\)</span>, you can directly compute the cross section <span class="math inline">\(\sigma\)</span>, which represents an effective interaction area in <span class="math inline">\(\text{cm}^2\)</span>.</p>
+<p>The cross section physically means: if particles collide within this area, the reaction occurs; outside it, they do not interact. It defines the necessary proximity for particles to react.</p>
+<p>Similarly, the decay width <span class="math inline">\(\Gamma\)</span> is related to the particle’s lifetime and is computed as:</p>
+<p><span class="math display">\[
+\Gamma = \frac{1}{2M} \int | \mathcal{M} |^2 d\Phi
+\]</span></p>
+<p>For a 2-body final state, the phase space integral is:</p>
+<p><span class="math display">\[
+d\Phi_2 = \frac{d^3 p_1}{(2\pi)^3 2E_1} \frac{d^3 p_2}{(2\pi)^3 2E_2} (2\pi)^4 \delta^4(p - p_1 - p_2)
+\]</span></p>
+<p>For an <span class="math inline">\(n\)</span>-body final state, it generalizes to:</p>
+<p><span class="math display">\[
+d\Phi_n = \left(\prod_{i=1}^n \frac{d^3 p_i}{(2\pi)^3 2E_i}\right) (2\pi)^4 \delta^4(p - \sum_{i=1}^n p_i)
+\]</span></p>
+<p>The cross section and decay width are fundamental for connecting theoretical predictions to experimental measurements.</p>
+<!--
+Cosine simularity: 0.9399065135889966
+-->
+</section>
+<section id="course-logistics-and-exam-details" class="level2">
+<h2 class="anchored" data-anchor-id="course-logistics-and-exam-details">Course Logistics and Exam Details</h2>
+<p>The gamma <span class="math inline">\(\Gamma\)</span> is related to the lifetime of a particle, which we will discuss next time. The formulas are here, where <span class="math inline">\(M\)</span> is the mass of the decaying particle and <span class="math inline">\(J\)</span> is the flux.</p>
+<p>For the course logistics, there are 11 lectures and slightly fewer exercises due to breaks. A calendar is available on Moodle listing the anticipated lecture and exercise dates. Closer to the dates, adjustments may be discussed, but for now, the schedule remains as is.</p>
+<p>For the exam, points from exercise sheets will contribute 50% toward admission to the examination. The exam will be designed to be straightforward: you will receive the problem set in advance.</p>
+<!--
+Cosine simularity: 0.9472688101853358
+-->
+</section>
+<section id="exercise-sheets-and-homework-submission" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-sheets-and-homework-submission">Exercise Sheets and Homework Submission</h2>
+<p>The exam will be easy in the sense that you get the problem set in advance. We will send you the problems a week or two before the exam, and you can think about them. When you come to discuss the material, you bring your solutions, and we will have a chat.</p>
+<p>The most important thing is to work on the exercise sheets during the semester. Today, let me show you these exercise sheets. There is a barcode and classwork that you don’t have to do right now, but you can review your homework program and schedule.</p>
+<p>There will always be one or two problems per homework that you must solve. You write your solutions and hand them in at the lecture. You receive the sheets during the lecture and bring the completed sheets back to the next lecture. We will have a box where you submit your sheets with your name. We check them, and during the exercise sessions on Thursday, the marked sheets are returned to you. The problems are then discussed.</p>
+<div class=".callout-important">
+<p>Points from exercise sheets contribute 50% toward admission to the examination.</p>
+</div>
+<p>The exam is designed to be straightforward, with problems provided in advance.</p>
+<!--
+Cosine simularity: 0.9485711313246318
+-->
+</section>
+<section id="summer-school-opportunities-and-applications" class="level2">
+<h2 class="anchored" data-anchor-id="summer-school-opportunities-and-applications">Summer School Opportunities and Applications</h2>
+<p>We will discuss compost problems during Tuesday lectures and Thursday exercise sessions. There will be an excursion during the semester. Although the course is fully booked, we may still have one or two places available if you haven’t signed up yet.</p>
+<p>Office hours will be held on Thursdays from 9 to 10 in my office (1 3B and B). You can come to discuss anything related to the course.</p>
+<p>For our field, there are several summer schools happening this summer. These are exciting opportunities for those interested in traveling to another country. Applications for some schools have closed, but two more have recently opened:</p>
+<ul>
+<li><strong>Zurich, Switzerland</strong>: 8-week program<br>
+</li>
+<li><strong>Krakow, Poland</strong>: 4-week program</li>
+</ul>
+<p>Applications for these are still open for a couple of weeks. Additionally, we are organizing a summer school in Bochum for advanced students in July, lasting two weeks.</p>
+<div class=".callout-important">
+<p>Check the course descriptions for details on these summer schools.</p>
+</div>
+<!--
+Cosine simularity: 0.8834634081830169
+-->
+</section>
+<section id="exercise-sheet-collaboration-and-resources" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-sheet-collaboration-and-resources">Exercise Sheet Collaboration and Resources</h2>
+<p>For the exercise sheets, I anticipate and encourage collaboration. You can solve the sheets together and discuss them freely. Feel free to use any resources — the problems are standard and meant to help you learn, not to test you. The way you learn is up to you. You can use ChatGPT, books, or any other materials to get the best out of it.</p>
+<div class=".callout-important">
+<p>If you need the course announcement or further details, just write an email, and I can forward it to you. I’m not sure if it was fully propagated, but I can share it upon request.</p>
+</div>
+<p>This is a great opportunity to engage with the material in a way that works best for you.</p>
+<!--
+Cosine simularity: 0.9646611663894754
+-->
+</section>
+<section id="recommended-physics-textbooks-and-course-structure" class="level2">
+<h2 class="anchored" data-anchor-id="recommended-physics-textbooks-and-course-structure">Recommended Physics Textbooks and Course Structure</h2>
+<p>You can use books or any resources and take the best out of them. There are a few books that I follow. One of them is Hudson Martin, which was the first note. The second note is Martin Schemer. The third one is Thomson Particle Physics, which covers general particle physics. Martin Spearman is dedicated to Haddon Physics. These will be covered in the middle of the semester lectures.</p>
+<!--
+Cosine simularity: 0.9691978584704468
+-->
+</section>
+<section id="class-problem-sheets-distribution-and-instructions" class="level2">
+<h2 class="anchored" data-anchor-id="class-problem-sheets-distribution-and-instructions">Class Problem Sheets Distribution and Instructions</h2>
+<p>This is dedicated to Haddon Physics, but it will be covered in the middle of the semester lectures with exercise groups. The class problems start this week, and there are three sheets. Before leaving, please take the sheets. We should stamp them together, but ensure you don’t miss any. There are three pages per sheet, but only two sheets in total. We printed 15 copies, so take one for yourself and some for your friends. Please distribute them carefully.</p>
+<div class=".callout-important">
+<p>Each sheet has two pages, so make sure you have both.</p>
+</div>
+<p>Leave me a quarter of the sheet before you go. Please answer the questions.</p>
+<!--
+Cosine simularity: 0.8984814706965824
+-->
+</section>
+<section id="coupled-systems-and-lagrangian-mechanics" class="level2">
+<h2 class="anchored" data-anchor-id="coupled-systems-and-lagrangian-mechanics">Coupled Systems and Lagrangian Mechanics</h2>
+<p>We have a system of coupled oscillators: one is a spring, and another is a pendulum with a sliding attachment point. The kinetic term is given by:</p>
+<p><span class="math display">\[
+T = \frac{1}{2} m \dot{X}^2 + \text{(terms for the pendulum)}
+\]</span></p>
+<p>where <span class="math inline">\(\dot{X}\)</span> is the time derivative of the position <span class="math inline">\(X\)</span> of the sliding point. The potential energy term includes contributions from both the spring and the pendulum.</p>
+<p>To analyze this system, we derive the Lagrangian <span class="math inline">\(L = T - V\)</span> and apply the Euler-Lagrange equations. For the pendulum, the interaction term must account for the sliding motion.</p>
+<div class=".callout-note">
+<p>The Dirac equation and Maxwell’s equations are mentioned as advanced extensions, but solving this classical system first requires setting up the correct differential equations.</p>
+</div>
+<p>Once the Lagrangian is formulated, one can input it into a differential equation solver to obtain the dynamics. However, this approach becomes more complex in quantum field theory.</p>
+<p>The problem is left as an exercise, and the speaker encourages students to attempt solving it before the end of the semester.</p>
+<!--
+Cosine simularity: 0.9295861141114994
+-->
+</section>
+<section id="optional-exercises-and-student-participation" class="level2">
+<h2 class="anchored" data-anchor-id="optional-exercises-and-student-participation">Optional Exercises and Student Participation</h2>
+<p>People still solve exercises in quantum field theory, though it’s not as easy. These are optional, not obligatory.</p>
+<div class=".callout-note">
+<p>If someone solves an exercise, they can present it, but participation is not required for grading.</p>
+</div>
+<p>The exercises are designed for additional points, but most students will already have enough points by the end of the semester.</p>
+<div class=".callout-tip">
+<p>Attempting these problems can help solidify understanding, especially before exams.</p>
+</div>
+<p>The speaker acknowledges that getting students to present at the board can be challenging since participation is not enforced.</p>
+<!--
+Cosine simularity: 0.9401974761532471
+-->
+</section>
+<section id="introduction-to-qg-and-qt-lagrangians" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-to-qg-and-qt-lagrangians">Introduction to QG and QT Lagrangians</h2>
+<p>I will introduce the QT Lagrangian again, as well as the QG Lagrangian. We will calculate something for QT if it doesn’t take too much time.</p>
+<p>Starting with a simpler case and explaining how to calculate the terms is a good approach.</p>
+<p>I’ve done the exercise on gauge transformations for QEG, and I wonder if people have an impression of how it compares to QCD. QED explains most electromagnetic interactions, and you can include additional terms like <span class="math inline">\(A_\mu\)</span> for a more complete picture.</p>
+<div class=".callout-tip">
+<p>Comparing QED and QCD helps illustrate the complications QCD introduces, such as non-Abelian gauge fields and color charge dynamics.</p>
+</div>
+<!--
+Cosine simularity: 0.8903820256506401
+-->
+</section>
+<section id="challenges-with-classroom-equipment-and-adaptability" class="level2">
+<h2 class="anchored" data-anchor-id="challenges-with-classroom-equipment-and-adaptability">Challenges with Classroom Equipment and Adaptability</h2>
+<p>QED explains most electromagnetic interactions, and you can include additional terms like <span class="math inline">\(A_\mu\)</span> for a more complete picture.</p>
+<p>There are only four students from our department enrolled. The whiteboard in the office is too small, and I prefer writing on a blackboard. You get used to it over time, but it’s still not ideal.</p>
+<div class=".callout-tip">
+<p>Comparing QED and QCD helps illustrate the complications QCD introduces, such as non-Abelian gauge fields and color charge dynamics.</p>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

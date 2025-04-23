@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.43">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>lecture-10</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="Lecture-10_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Lecture-10_files/libs/quarto-html/quarto.js"></script>
+<script src="Lecture-10_files/libs/quarto-html/popper.min.js"></script>
+<script src="Lecture-10_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Lecture-10_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Lecture-10_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Lecture-10_files/libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Lecture-10_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Lecture-10_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Lecture-10_files/libs/bootstrap/bootstrap-1a748f8c722605f92e8ac4935e2e75ca.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+
+<!--
+Cosine simularity: 0.9237350393996308
+-->
+<section id="calculation-of-cross-section-for-scattering-of-massless-particles" class="level2">
+<h2 class="anchored" data-anchor-id="calculation-of-cross-section-for-scattering-of-massless-particles">Calculation of Cross Section for Scattering of Massless Particles</h2>
+<p>The cross section for scattering is computed using the equation:</p>
+<p><span class="math display">\[
+\sigma = \frac{1}{J} \int |M|^2 \, d\Phi
+\]</span></p>
+<p>Here, <span class="math inline">\(`J`\)</span> is the flux factor, <span class="math inline">\(`|M|^2`\)</span> is the squared matrix element, and <span class="math inline">\(`d\Phi`\)</span> is the phase space element.</p>
+<p>For this case, the matrix element squared is <span class="math inline">\(`3 + 9 + 1 = 13`\)</span>. The flux factor is given by:</p>
+<p><span class="math display">\[
+J = 2E_1 E_2 |v_1 - v_2|
+\]</span></p>
+<p>Since the particles are massless, their velocities are <span class="math inline">\(`v_1 = v_2 = 1`\)</span> (speed of light), so <span class="math inline">\(`J = 2 \cdot \frac{\sqrt{s}}{2} \cdot \frac{\sqrt{s}}{2} \cdot 2 = s`\)</span>.</p>
+<p>The phase space element simplifies to:</p>
+<p><span class="math display">\[
+d\Phi = \frac{1}{8\pi s}
+\]</span></p>
+<p>Combining these, the cross section becomes:</p>
+<p><span class="math display">\[
+\sigma = \frac{13}{s} \cdot \frac{1}{8\pi s} = \frac{13}{8\pi s^2}
+\]</span></p>
+<p>However, the speaker later corrects this to:</p>
+<p><span class="math display">\[
+\sigma = \frac{13}{4\pi s}
+\]</span></p>
+<div class=".callout-note">
+<p>The momentum for massless particles is <span class="math inline">\(`p = \frac{\sqrt{s}}{2}`\)</span>, and the energy is <span class="math inline">\(`E = \frac{\sqrt{s}}{2}`\)</span>.</p>
+</div>
+<p>To convert units, recall that <span class="math inline">\(`1 \ \text{fermi} \cdot \text{MeV} = 200 \ \text{fermi} \cdot \text{MeV} = 1`\)</span>. Therefore, <span class="math inline">\(`1/\text{GeV}^2 = 0.2 \ \text{mb}`\)</span>.</p>
+<p>The final numerical result is:</p>
+<p><span class="math display">\[
+\sigma = \frac{13}{4\pi s} \approx \frac{13}{4 \cdot 3 \cdot s} = \frac{13}{12s}
+\]</span></p>
+<div class=".callout-important">
+<p>The key is to start from the correct equation for the cross section, use the right expressions for flux and phase space, and ensure consistent units.</p>
+</div>
+<p>The speaker emphasizes that even if the numerical result is uncertain, the methodology—beginning with the correct formula and applying the proper kinematic relations—is the most important part of the calculation.</p>
+<!--
+Cosine simularity: 0.9420781424036707
+-->
+</section>
+<section id="imaginary-part-and-total-cross-section-in-scattering" class="level2">
+<h2 class="anchored" data-anchor-id="imaginary-part-and-total-cross-section-in-scattering">Imaginary Part and Total Cross Section in Scattering</h2>
+<p>The imaginary part of the matrix element is used to calculate the total cross section. This is derived from optical theory, where knowing the imaginary part allows you to compute the total cross section. However, it does not directly give the cross section for a specific process like elastic scattering.</p>
+<div class=".callout-note">
+<p>The total cross section includes all possible processes (e.g., <span class="math inline">\(`AB \to ab`\)</span>, <span class="math inline">\(`AB \to CD`\)</span>, <span class="math inline">\(`AB \to DH`\)</span>), while the elastic cross section only describes <span class="math inline">\(`AB \to ab`\)</span>. The total cross section must be larger than the elastic one.</p>
+</div>
+<p>If the imaginary part is used to compute the total cross section and the result is negative, this is unphysical. The correct relation ensures the imaginary part is positive, and thus the total cross section remains positive.</p>
+<div class=".callout-important">
+<p>The Breit-Wigner function, for example, has an imaginary part that remains positive, reinforcing this requirement.</p>
+</div>
+<p>The equation connecting the imaginary part to the total cross section does not involve an absolute value. The minus sign in the relation is unphysical, so only the positive case is valid.</p>
+<div class=".callout-tip">
+<p>A good exam question would be to derive the elastic and total cross sections from a given expression, using the imaginary part for the total cross section.</p>
+</div>
+<p>The key takeaway is that the imaginary part of the scattering amplitude is intrinsically linked to the total cross section, ensuring positivity and consistency with physical constraints.</p>
+<!--
+Cosine simularity: 0.9007088942204347
+-->
+</section>
+<section id="matrix-elements-and-quantum-numbers-in-spin-algebra" class="level2">
+<h2 class="anchored" data-anchor-id="matrix-elements-and-quantum-numbers-in-spin-algebra">Matrix Elements and Quantum Numbers in Spin Algebra</h2>
+<p>In the algorithm diagram, the x-axis represents the real part of the matrix element, while the y-axis represents the imaginary part of the amplitude. Only positive values are allowed for the amplitude, so any value below the ceiling is unphysical and illegal.</p>
+<div class=".callout-note">
+<p>In spin algebra, determining legal quantum numbers involves checking the counting numbers in the columns of a table, such as in Bosch routes.</p>
+</div>
+<p>For combining spins, you first calculate the quantum numbers in combination. The process involves drawing a table and identifying which columns have the correct counting numbers. For example, the spin composition of the representations for <span class="math inline">\(`P_1`\)</span> is straightforward:</p>
+<p><span class="math display">\[
+P_1 = - - +
+\]</span></p>
+<div class=".callout-important">
+<p>When working with spin algebra, we focus only on the spin composition of representations. Parity can be computed separately for each multiplet.</p>
+</div>
+<p>The key takeaway is that spin addition and partial wave computation are fundamental skills in spin algebra. The process involves tabulating quantum numbers and verifying their validity through counting rules.</p>
+<!--
+Cosine simularity: 0.9264557560801463
+-->
+</section>
+<section id="quantum-numbers-and-decay-violations-in-meson-physics" class="level2">
+<h2 class="anchored" data-anchor-id="quantum-numbers-and-decay-violations-in-meson-physics">Quantum Numbers and Decay Violations in Meson Physics</h2>
+<p>The parity for a multiplet is straightforward to compute. Combining <span class="math inline">\(`1^-`\)</span> and <span class="math inline">\(`1^+`\)</span> and <span class="math inline">\(`1^-`\)</span> in an S-wave gives <span class="math inline">\(`1^-`\)</span>, so the S-wave configuration works.</p>
+<p>For higher partial waves:<br>
+- In the D-wave, we have states with <span class="math inline">\(`L = 0, 1, 2`\)</span>.<br>
+- In the F-wave, we have <span class="math inline">\(`L = 1, 2, 3`\)</span>.</p>
+<p>The charge conjugation quantum number is a key consideration here. The <span class="math inline">\(`\pi`\)</span> meson has quantum numbers <span class="math inline">\(`0^- +`\)</span>, while <span class="math inline">\(`B_1`\)</span> has <span class="math inline">\(`1^+ -`\)</span>. The decay is possible, but charge conjugation is <span class="math inline">\(`+`\)</span> in this case, indicating isospin violation.</p>
+<div class=".callout-note">
+<p>The <span class="math inline">\(`\pi_1`\)</span> meson has quantum numbers <span class="math inline">\(`1^- +`\)</span>, which are not allowed in the standard quark model.</p>
+</div>
+<p>This suggests that <span class="math inline">\(`\pi_1`\)</span> is not a conventional quark-antiquark state but rather a hybrid meson. The interpretation involves gluonic excitations within the meson, where the gluonic field connecting the quark and antiquark carries additional degrees of freedom.</p>
+<p>Similarly, the <span class="math inline">\(`P_1(1400)`\)</span> state shares the same hybrid nature, with excitations arising from the gluonic string interaction rather than a simple confining potential.</p>
+<!--
+Cosine simularity: 0.9356893471000975
+-->
+</section>
+<section id="scattering-length-and-relativistic-formulation" class="level2">
+<h2 class="anchored" data-anchor-id="scattering-length-and-relativistic-formulation">Scattering Length and Relativistic Formulation</h2>
+<p>The scattering length is measured in Fermi (fm), but in relativistic formulations, it appears dimensionless. In quantum mechanics, the scattering length is defined through the expansion of the amplitude in terms of the breakup momentum <span class="math inline">\(`K`\)</span>, which has units of GeV. Therefore, <span class="math inline">\(`1/a`\)</span> has units of GeV, and <span class="math inline">\(`a`\)</span> itself is in Fermi.</p>
+<p>The non-relativistic amplitude is given by:<br>
+<span class="math display">\[
+f_{NR} = \frac{1}{a - i\,k}
+\]</span></p>
+<p>In the relativistic formulation, the amplitude becomes:<br>
+<span class="math display">\[
+f_{R} = \frac{1}{\tilde a^{-1} - i\,\frac{2k}{\sqrt{s}}}
+\]</span></p>
+<div class=".callout-note">
+<p>The imaginary part of the relativistic amplitude is related to the dimensionless phase space. The first expansion term resembles the scattering length but is itself dimensionless.</p>
+</div>
+<p>To relate the two formulations, we match them at the threshold. At threshold (<span class="math inline">\(`k \to 0`\)</span>), the non-relativistic amplitude reduces to <span class="math inline">\(`f_{NR} = a`\)</span>, while the relativistic amplitude becomes <span class="math inline">\(`f_{R} = \tilde a`\)</span>. However, they are not directly equal—there is a numerical constant relating them.</p>
+<p>The key is to equate the numerators or denominators up to a numerical factor. The difference arises from the relativistic phase space factor:<br>
+<span class="math display">\[
+\frac{2k}{\sqrt{s}} = -i\,k \cdot \left(\frac{1}{8\pi^2 s}\right)
+\]</span></p>
+<p>At threshold, <span class="math inline">\(`\sqrt{s}`\)</span> is the sum of the masses involved. For example, if the scattering length <span class="math inline">\(`a`\)</span> is 3 Fermi, we can determine <span class="math inline">\(`\tilde a`\)</span> by matching the amplitudes at threshold.</p>
+<div class=".callout-important">
+<p>The conversion between <span class="math inline">\(`a`\)</span> and <span class="math inline">\(`\tilde a`\)</span> involves the threshold energy and masses. Specifically, <span class="math inline">\(`\tilde a = a / (8\pi^2 s_{\text{threshold}})`\)</span>, where <span class="math inline">\(`s_{\text{threshold}}`\)</span> is the squared invariant mass at threshold.</p>
+</div>
+<p>This exercise demonstrates how relativistic effects modify the low-energy expansion of scattering amplitudes. The dimensionless <span class="math inline">\(`\tilde a`\)</span> in the relativistic case must be rescaled by the threshold kinematics to recover the conventional scattering length <span class="math inline">\(`a`\)</span> in Fermi.</p>
+<hr>
+<p>The discussion also touches on meson states, such as the <span class="math inline">\(`P_1(1400)`\)</span>, which was initially misidentified in older data but later corrected to appear at 1600 MeV in more precise analyses. This highlights the importance of accurate measurements in determining resonance properties.</p>
+<div class=".callout-note">
+<p>The <span class="math inline">\(`\pi_1`\)</span> meson has quantum numbers <span class="math inline">\(`1^- +`\)</span>, which are forbidden in the standard quark model, suggesting it is a hybrid meson with gluonic excitations. Similarly, the <span class="math inline">\(`P_1(1400)`\)</span> exhibits a hybrid nature due to gluonic string interactions rather than a simple quark-antiquark configuration.</p>
+</div>
+<p>The parity and charge conjugation quantum numbers play a crucial role in identifying such exotic states. For instance, the <span class="math inline">\(`\pi`\)</span> meson has <span class="math inline">\(`0^- +`\)</span>, while the <span class="math inline">\(`B_1`\)</span> meson has <span class="math inline">\(`1^+ -`\)</span>. Decays involving these states may exhibit isospin violation, particularly when charge conjugation conservation is enforced.</p>
+<p>In higher partial waves (D-wave, F-wave), the allowed orbital angular momentum states further constrain the possible quantum numbers and decay patterns of mesons. This underscores the complexity of meson spectroscopy and the need for careful theoretical and experimental scrutiny.</p>
+<!--
+Cosine simularity: 0.920611986690305
+-->
+</section>
+<section id="dirac-equation-and-spinor-conventions" class="level2">
+<h2 class="anchored" data-anchor-id="dirac-equation-and-spinor-conventions">Dirac Equation and Spinor Conventions</h2>
+<p>The Dirac equation for a spin-1/2 particle is given by:</p>
+<p><span class="math display">\[
+(\slashed p - m)\,\tilde u = 0
+\]</span></p>
+<p>Here, <span class="math inline">\(`\tilde u`\)</span> is a spinor ( <span class="math inline">\(`\tilde u \leftarrow \mathrm{spinor}(\xi)`\)</span> ), and <span class="math inline">\(`\slashed p = p^\mu \gamma_\mu`\)</span> is the Feynman slash notation.</p>
+<p>The <span class="math inline">\(`\gamma`\)</span> matrices are defined in the Dirac representation as:</p>
+<p><span class="math display">\[
+\gamma^0 = \begin{pmatrix}I &amp; 0\\[6pt]0 &amp; -I\end{pmatrix},\quad
+\gamma^i = \begin{pmatrix}0 &amp; \sigma^i\\[4pt]\sigma^i &amp; 0\end{pmatrix}
+\]</span></p>
+<div class=".callout-note">
+<p>There are two common conventions for solving the Dirac equation: the <strong>Dirac convention</strong> and the <strong>Weyl (or chiral) convention</strong>. The Weyl convention is more convenient when dealing with right-handed and left-handed particles, but we will stick to the standard Dirac convention here.</p>
+</div>
+<p>The Dirac equation describes spin-1/2 particles, where the spin information is encoded in the spinor field. The <span class="math inline">\(`\gamma`\)</span> matrices are four-dimensional and satisfy the Clifford algebra.</p>
+<div class=".callout-important">
+<p>The chirality of particles (left-handed or right-handed) is related to their spin orientation, particularly for massless particles. This symmetry is called <strong>chirality</strong>, and it plays a crucial role in understanding the behavior of spin-1/2 particles.</p>
+</div>
+<p>The Dirac equation is the fundamental equation of motion for spin-1/2 particles, and its solutions (spinors) represent the quantum states of these particles. The matrices <span class="math inline">\(`\gamma^\mu`\)</span> are essential in constructing Lorentz-invariant quantities and ensuring the correct transformation properties under relativistic boosts and rotations.</p>
+<div class=".callout-tip">
+<p>When working with spinors, it is often useful to switch between different representations (Dirac, Weyl, Majorana) depending on the physical context, but the Dirac representation is the most familiar for introductory purposes.</p>
+</div>
+<p>The study of spinors and their conventions is foundational for quantum field theory, particularly in understanding fermionic fields and their interactions.</p>
+<!--
+Cosine simularity: 0.9232111081396577
+-->
+</section>
+<section id="four-vector-contraction-and-spinor-solutions" class="level2">
+<h2 class="anchored" data-anchor-id="four-vector-contraction-and-spinor-solutions">Four-Vector Contraction and Spinor Solutions</h2>
+<p>The four-momentum in spherical coordinates is given by:</p>
+<p><span class="math display">\[
+\mathcal P = \bigl(E,\;p\sin\theta\cos\phi,\;p\sin\theta\sin\phi,\;p\cos\theta\bigr)
+\]</span></p>
+<p>The gamma matrices (<span class="math inline">\(`\gamma^\mu`\)</span>) are four-dimensional matrices, and <span class="math inline">\(`\mathcal P`\)</span> is the four-vector. When you contract the two, a summation over <span class="math inline">\(`\mu`\)</span> is performed, resulting in the expression:</p>
+<p><span class="math display">\[
+\slashed p - m
+\]</span></p>
+<p>Here, <span class="math inline">\(`\slashed p = p^\mu \gamma_\mu`\)</span> (Feynman slash notation), and <span class="math inline">\(`m`\)</span> is the scalar mass term — though it is implied that this is not multiplied by the <span class="math inline">\(`4 \times 4`\)</span> identity matrix.</p>
+<p>The spinor <span class="math inline">\(`u`\)</span> (or “Spiner” in German) is a four-dimensional object that depends on the particle’s orientation and momentum. The equation has two solutions, <span class="math inline">\(`u_1`\)</span> and <span class="math inline">\(`u_2`\)</span>, corresponding to the spin states quantized along the <span class="math inline">\(`z`\)</span>-axis. These solutions can be written as:</p>
+<p><span class="math display">\[
+u_1 = \begin{pmatrix}1 \\ 0 \\ p \cos\theta \\ p \sin\theta \end{pmatrix}, \quad u_2 = \begin{pmatrix}0 \\ 1 \\ -p \sin\theta \\ p \cos\theta \end{pmatrix}
+\]</span></p>
+<p>These represent canonical states with spin projections <span class="math inline">\(`+\frac{1}{2}`\)</span> and <span class="math inline">\(`-\frac{1}{2}`\)</span> along the <span class="math inline">\(`z`\)</span>-axis. The states are obtained by acting with the spin operator, where <span class="math inline">\(`u_1`\)</span> corresponds to a spin projection of <span class="math inline">\(`+\frac{1}{2}`\)</span> and <span class="math inline">\(`u_2`\)</span> to <span class="math inline">\(`-\frac{1}{2}`\)</span>.</p>
+<div class=".callout-note">
+<p>The spinor solutions are related to states like <span class="math inline">\(`|p; J, m\rangle`\)</span>, where the particle has momentum <span class="math inline">\(`p`\)</span>, spin <span class="math inline">\(`J`\)</span>, and projection <span class="math inline">\(`m`\)</span> along the quantization axis.</p>
+</div>
+<p>The Dirac equation <span class="math inline">\(`(\slashed p - m)u = 0`\)</span> describes these spin-1/2 solutions, and the <span class="math inline">\(`\gamma`\)</span> matrices ensure the correct transformation properties under Lorentz boosts and rotations.</p>
+<!--
+Cosine simularity: 0.9155485350584712
+-->
+</section>
+<section id="helicity-states-and-linear-combinations" class="level2">
+<h2 class="anchored" data-anchor-id="helicity-states-and-linear-combinations">Helicity States and Linear Combinations</h2>
+<p>The eigenvalue for the first spinor <span class="math inline">\(`u_1`\)</span> is <span class="math inline">\(`+\frac{1}{2}`\)</span>, and for the second spinor <span class="math inline">\(`u_2`\)</span> it is <span class="math inline">\(`-\frac{1}{2}`\)</span>. These states have a phase dependence on <span class="math inline">\(`\phi`\)</span>, which must be symmetrically present in both solutions.</p>
+<p>The two spinors <span class="math inline">\(`u_1`\)</span> and <span class="math inline">\(`u_2`\)</span> are independent solutions of the Dirac equation. Any linear combination of these two will also satisfy the Dirac equation.</p>
+<p>To transform these states into helicity states — where spin is quantized along the direction of motion — we use the same method as before. This involves relating the canonical states to the helicity states through a linear combination.</p>
+<p>Before performing this transformation, it is important to recall how the canonical states are defined. They are obtained by applying a pure boost to the rest-frame spinors, which is a standard procedure in relativistic quantum mechanics.</p>
+<div class=".callout-note">
+<p>The helicity states correspond to spin projections aligned with the particle’s momentum, unlike the canonical states, which are quantized along a fixed axis (e.g., the <span class="math inline">\(`z`\)</span>-axis).</p>
+</div>
+<p>The Dirac equation <span class="math inline">\(`(\slashed p - m)u = 0`\)</span> governs these solutions, ensuring their consistency under Lorentz transformations. The spinor solutions <span class="math inline">\(`u_1`\)</span> and <span class="math inline">\(`u_2`\)</span> represent the two possible spin states of a spin-<span class="math inline">\(`\frac{1}{2}`\)</span> particle.</p>
+<!--
+Cosine simularity: 0.8955185924219884
+-->
+</section>
+<section id="transformation-of-canonical-to-helicity-states" class="level2">
+<h2 class="anchored" data-anchor-id="transformation-of-canonical-to-helicity-states">Transformation of Canonical to Helicity States</h2>
+<p>The canonical state <span class="math inline">\(`|p; j, m\rangle_\text{can}`\)</span> is defined as a pure boost <span class="math inline">\(`B_{\vec{p}}`\)</span> acting on the rest-frame state <span class="math inline">\(`|0; j, m\rangle_\text{can}`\)</span>. Under a rotation <span class="math inline">\(`R`\)</span>, the transformation becomes <span class="math inline">\(`R B R^{-1} |0; j, m\rangle_\text{can}`\)</span>.</p>
+<p>The helicity state <span class="math inline">\(`|p; j\rangle_{\hat{p}}`\)</span> is constructed by applying the boost and rotation:</p>
+<p><span class="math display">\[
+|p; j\rangle_{\hat{p}} = R B |0; j, m\rangle = R B R^{-1} R |0; j, m\rangle
+\]</span></p>
+<p>This can be expanded using the Wigner rotation matrix <span class="math inline">\(`\mathcal{D}^{(j)}_{m\lambda}(\theta, \phi)`\)</span> as:</p>
+<p><span class="math display">\[
+|p; j\rangle_{\hat{p}} = \sum_m \mathcal{D}^{(j)}_{m\lambda}(\theta, \phi)\,|p; j, m\rangle
+\]</span></p>
+<p>The key step in relating canonical to helicity states is introducing an extra <span class="math inline">\(`R^{-1}`\)</span> to match the transformation properties of the canonical state. Applying <span class="math inline">\(`R`\)</span> transforms the state, and <span class="math inline">\(`R B R^{-1}`\)</span> acts on the transformed rest-frame states.</p>
+<div class=".callout-note">
+<p>The helicity states are obtained by quantizing spin along the momentum direction, unlike canonical states, which are quantized along a fixed axis.</p>
+</div>
+<p>The method involves applying <span class="math inline">\(`R B`\)</span> and <span class="math inline">\(`R`\)</span> to the rest-frame states to obtain the canonical states, which are then related to helicity states through the Wigner rotation matrix.</p>
+<!--
+Cosine simularity: 0.9352745627755749
+-->
+</section>
+<section id="conventions-and-definitions-of-the-d-function-in-rotational-matrices" class="level2">
+<h2 class="anchored" data-anchor-id="conventions-and-definitions-of-the-d-function-in-rotational-matrices">Conventions and Definitions of the D Function in Rotational Matrices</h2>
+<p>The canonical states are obtained by applying a pure boost <span class="math inline">\(`B_{\vec{p}}`\)</span>, which is a linear combination of canonical states with coefficients given by special matrices.</p>
+<div class=".callout-note">
+<p>There are two different conventions for defining the capital <span class="math inline">\(`D`\)</span> function for spherical arguments (angles). The first convention is standard and uses two angles. This is found in the <em>Review of Particle Physics</em> (RPP) for experimentalists, as used by Chung and others. However, the second convention appears simpler for constructions involving helicity states, though many particle physics books do not explicitly state these conventions.</p>
+</div>
+<p>The first case corresponds to the rotation sequence <span class="math inline">\(`R = R_z(\phi) R_y(\theta)`\)</span>, where you first rotate by <span class="math inline">\(`\theta`\)</span> about the <span class="math inline">\(`y`\)</span>-axis and then by <span class="math inline">\(`\phi`\)</span> about the <span class="math inline">\(`z`\)</span>-axis. The second convention gives the same result when acting on a vector with only a <span class="math inline">\(`z`\)</span>-component, since the initial rotation about <span class="math inline">\(`z`\)</span> does nothing. However, this introduces an extra phase to the states, which is an unobservable phase.</p>
+<p>The <span class="math inline">\(`D`\)</span> function (capital <span class="math inline">\(`D`\)</span>) is the rotational matrix for cases beyond just <span class="math inline">\(`y`\)</span>-axis rotations. Rotations about the <span class="math inline">\(`y`\)</span>-axis are special because they require tabulated functions, whereas rotations about the <span class="math inline">\(`z`\)</span>-axis simply introduce phase coefficients.</p>
+<p><span class="math display">\[
+\mathcal{D}^{(j)}_{m\lambda}(\theta, \phi)
+\]</span></p>
+<p>This notation represents the Wigner rotation matrix, which provides weight coefficients for the transformation between states. The <span class="math inline">\(`D`\)</span> function is crucial for describing rotations in systems with angular momentum, particularly when relating canonical and helicity states.</p>
+<div class=".callout-important">
+<p>The distinction between conventions is subtle but significant, especially when working with helicity states or tensor representations. The phase differences arising from the choice of convention must be accounted for in calculations.</p>
+</div>
+<!--
+Cosine simularity: 0.9550385202782324
+-->
+</section>
+<section id="helicity-states-and-spin-projection-in-particle-physics" class="level2">
+<h2 class="anchored" data-anchor-id="helicity-states-and-spin-projection-in-particle-physics">Helicity States and Spin Projection in Particle Physics</h2>
+<p>The notation like our <span class="math inline">\(`G`\)</span> function gives you weight coefficients for the transformation of the helicity state or dynamical state. You apply a notation to the <span class="math inline">\(`j u jn`\)</span> and then reject <span class="math inline">\(`j'`\)</span>. These vectors are given by that expression depending on your rotations.</p>
+<p>Coming back to our problem, we want to rotate the vector <span class="math inline">\(`\vec{p}`\)</span> from zero. This rotation is meant to rotate these two components:</p>
+<p><span class="math display">\[
+\begin{pmatrix}
+\sin\theta \cos\phi \\
+\sin\theta \sin\phi \\
+\cos\theta
+\end{pmatrix}
+\]</span></p>
+<p>When we apply this notation to the helicity state, the <span class="math inline">\(`D`\)</span> function appears. It depends on the two angles <span class="math inline">\(`\theta`\)</span> and <span class="math inline">\(`\phi`\)</span>. Depending on the convention used, this <span class="math inline">\(`D`\)</span> may or may not have an extra phase.</p>
+<p>Applying the transformation relates the helicity state for spin-<span class="math inline">\(`\frac{1}{2}`\)</span> with the spin projected along the direction of motion. This is given by the vector:</p>
+<p><span class="math display">\[
+\begin{pmatrix}
+\cos\frac{\theta}{2} \\
+\sin\frac{\theta}{2}\,e^{i\varphi} \\
+\cos\frac{\theta}{2}\,p / (E + m) \\
+\sin\frac{\theta}{2}\,p / (E + m)
+\end{pmatrix}
+\]</span></p>
+<p>I introduced the normalization constant <span class="math inline">\(`N = \sqrt{E + m}`\)</span>, which is standard and appears everywhere. Both <span class="math inline">\(`u_1`\)</span> and <span class="math inline">\(`u_2`\)</span> include this <span class="math inline">\(`N`\)</span> to ensure the correct state density.</p>
+<p>The expression for <span class="math inline">\(`u_{\text{down}}`\)</span> is similar, with the lower part of the spinor containing the factor <span class="math inline">\(`p / (E + m)`\)</span>. This factor approaches 1 when the mass <span class="math inline">\(`m`\)</span> is small compared to the energy <span class="math inline">\(`E`\)</span>, since <span class="math inline">\(`p \approx E`\)</span> in this limit. The state then simplifies to <span class="math inline">\(`(\cos, \sin, \cos, \sin)`\)</span>.</p>
+<div class=".callout-note">
+<p>The <span class="math inline">\(`D`\)</span> function conventions are subtle but important. The first convention follows <span class="math inline">\(`R = R_z(\phi) R_y(\theta)`\)</span>, while the second introduces an unobservable phase.</p>
+</div>
+<p>Now, let me introduce projection operators to proceed further.</p>
+<!--
+Cosine simularity: 0.9243843053675861
+-->
+</section>
+<section id="introduction-to-chiral-projection-operators-and-their-properties" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-to-chiral-projection-operators-and-their-properties">Introduction to Chiral Projection Operators and Their Properties</h2>
+<p>Now let me introduce projection operators which will cause us to move on. The Gamma 5 matrix is introduced as the product of the gamma matrices with the Levi-Civita tensor. In the convention we choose, it is given by:</p>
+<p><span class="math display">\[
+\delta^5 = \delta^0\delta^1\delta^2\delta^3 =
+\begin{pmatrix}
+I &amp; 0 \\ 0 &amp; -I
+\end{pmatrix}
+\]</span></p>
+<p>It is very convenient in the consideration of our interactions to introduce right-handed and left-handed projection operators:</p>
+<p><span class="math display">\[
+P_R = \frac{1 + \delta^5}{2}, \quad P_L = \frac{1 - \delta^5}{2}
+\]</span></p>
+<p>These are called projection operators because when they act twice on a state, nothing changes: <span class="math inline">\(`P_R^2 = P_R`\)</span> and <span class="math inline">\(`P_L^2 = P_L`\)</span>. To see this explicitly, consider:</p>
+<p><span class="math display">\[
+P_L^2 = \left(\frac{1 - \delta^5}{2}\right)^2 = \frac{1 - 2\delta^5 + (\delta^5)^2}{4} = \frac{1 - \delta^5}{2} = P_L
+\]</span></p>
+<p>The same holds for <span class="math inline">\(`P_R`\)</span>. These operators project onto orthogonal subspaces. If you project onto the left-handed space, there are no remaining components of the right-handed space, and vice versa. This means <span class="math inline">\(`P_R P_L = 0`\)</span>.</p>
+<p>Another important property arises because <span class="math inline">\(`\delta^5`\)</span> anti-commutes with any <span class="math inline">\(`\delta^\mu`\)</span> (i.e., <span class="math inline">\(`\delta^5 \delta^\mu = -\delta^\mu \delta^5`\)</span>). This implies that:</p>
+<p><span class="math display">\[
+P_R \delta^\mu P_L = 0
+\]</span></p>
+<p>If you have <span class="math inline">\(`P_L`\)</span> followed by <span class="math inline">\(`\delta^\mu`\)</span>, swapping the order introduces a sign change, converting <span class="math inline">\(`P_L`\)</span> to <span class="math inline">\(`P_R`\)</span>, and <span class="math inline">\(`P_R P_L = 0`\)</span>.</p>
+<p>Any spinor can be decomposed into right-handed and left-handed components using these projection operators. The right-handed component is <span class="math inline">\(`P_R \psi`\)</span>, and the left-handed component is <span class="math inline">\(`P_L \psi`\)</span>.</p>
+<div class=".callout-note">
+<p>The choice of convention for <span class="math inline">\(`\delta^5`\)</span> affects the explicit form of the projection operators, but their fundamental properties remain unchanged.</p>
+</div>
+<p>Now, I would like to give a physical meaning to these right-handed and left-handed states.</p>
+<!--
+Cosine simularity: 0.9290599680652246
+-->
+</section>
+<section id="decomposition-of-spin-states-into-chiral-components" class="level2">
+<h2 class="anchored" data-anchor-id="decomposition-of-spin-states-into-chiral-components">Decomposition of Spin States into Chiral Components</h2>
+<p>The right-handed and left-handed projection operators are given explicitly in matrix form as:</p>
+<p><span class="math display">\[
+P_R = \frac{1}{2} \begin{pmatrix} 1 &amp; 1 \\ 1 &amp; 1 \end{pmatrix}, \quad P_L = \frac{1}{2} \begin{pmatrix} 1 &amp; -1 \\ -1 &amp; 1 \end{pmatrix}
+\]</span></p>
+<p>Using these matrices, we can decompose a spinor into its chiral components. For example, consider a spin-up helicity state represented as <span class="math inline">\(`\psi = \begin{pmatrix} 1 \\ 1 \end{pmatrix}`\)</span>. When we apply the projection operators, we perform block-wise multiplication for convenience.</p>
+<p>The right-handed projection yields:</p>
+<p><span class="math display">\[
+P_R \psi = \frac{1}{2} \begin{pmatrix} 1 &amp; 1 \\ 1 &amp; 1 \end{pmatrix} \begin{pmatrix} 1 \\ 1 \end{pmatrix} = \begin{pmatrix} 1 \\ 1 \end{pmatrix}
+\]</span></p>
+<p>Similarly, the left-handed projection gives:</p>
+<p><span class="math display">\[
+P_L \psi = \frac{1}{2} \begin{pmatrix} 1 &amp; -1 \\ -1 &amp; 1 \end{pmatrix} \begin{pmatrix} 1 \\ 1 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
+\]</span></p>
+<p>At high energies, where the mass becomes negligible, the left-handed component of a right-handed helicity state is suppressed by a factor of <span class="math inline">\(`(1 - \kappa)`\)</span>, where <span class="math inline">\(`\kappa`\)</span> is related to the particle’s momentum. This component vanishes in the massless limit.</p>
+<div class=".callout-note">
+<p>There is no single interpretation of right-handed and left-handed states, but they are closely related to spin orientation along the direction of motion. In the zero-mass limit (or when particles move at the speed of light), they become identical. A right-handed state corresponds to spin aligned with momentum.</p>
+</div>
+<!--
+Cosine simularity: 0.9355554148441143
+-->
+</section>
+<section id="chiral-states-and-helicity-in-particle-physics" class="level2">
+<h2 class="anchored" data-anchor-id="chiral-states-and-helicity-in-particle-physics">Chiral States and Helicity in Particle Physics</h2>
+<p>When you hear “right-handed,” it means the particle travels with its spin aligned with the direction of motion. “Left-handed” means the spin is opposite to the direction of motion. However, when the mass is significant or not much smaller than the energy <span class="math inline">\(`E`\)</span>, the states become mixed, and the particle is no longer purely left- or right-handed—it contains both components.</p>
+<div class=".callout-important">
+<p>In the Standard Model, the weak interaction mediated by the <span class="math inline">\(`W`\)</span> boson decays only into right-handed leptons and left-handed anti-leptons. This is due to the structure of the Lagrangian.</p>
+</div>
+<p>The weak interaction vertex is expressed as <span class="math inline">\(`V - A`\)</span>, where <span class="math inline">\(`V`\)</span> stands for vector ( <span class="math inline">\(`\gamma^\mu`\)</span> ) and <span class="math inline">\(`A`\)</span> stands for axial ( <span class="math inline">\(`\gamma^\mu \gamma^5`\)</span> ). The Lagrangian for lepton interactions contains a term like <span class="math inline">\(`\gamma^\mu (1 - \gamma^5)`\)</span>, which can be rewritten using projection operators. Moving <span class="math inline">\(`(1 - \gamma^5)`\)</span> to the other side gives <span class="math inline">\(`(1 + \gamma^5)`\)</span>, and the interaction vertex becomes <span class="math inline">\(`\gamma^\mu P_L`\)</span>.</p>
+<p>This vertex structure implies that when a <span class="math inline">\(`W`\)</span> boson decays, it produces an electron and an antineutrino in specific chiral states:<br>
+- The electron ( <span class="math inline">\(`e^-`\)</span> ) is left-handed (spin opposite to motion).<br>
+- The antineutrino is right-handed (spin aligned with motion).</p>
+<div class=".callout-note">
+<p>The direct relationship between handedness and spin orientation is only exact in the high-energy limit or when the mass is zero. For neutrinos, this is always the case—all neutrinos are left-handed, and all antineutrinos are right-handed.</p>
+</div>
+<p>Before neutrino masses were established, right-handed neutrinos were considered candidates for new physics, with proposals that they could be heavy and even explain dark matter.</p>
+<p>In the massless case, right-handed and left-handed particles are orthogonal and do not interact. They could even be different particles with unrelated masses. Relativity connects them—once a mass is introduced, you can boost to another frame and change the spin configuration. However, for massless particles, this is impossible because they lack a rest frame.</p>
+<div class=".callout-caution">
+<p>The terms “right-handed” and “left-handed” refer to chiral states (chirality), not just helicity. The chiral limit is defined as the case where mass is zero, and the states are purely right- or left-handed.</p>
+</div>
+<!--
+Cosine simularity: 0.9554759262345949
+-->
+<hr>
+</section>
+<section id="helicity-and-chirality-in-particle-physics" class="level2">
+<h2 class="anchored" data-anchor-id="helicity-and-chirality-in-particle-physics">Helicity and Chirality in Particle Physics</h2>
+<p>The massless limit is the case where mass equals zero, and the states are purely right-handed or left-handed. Helicity describes the spin orientation relative to the direction of motion, providing a visual picture under Lorentz transformations. Chirality, however, is closely related but only coincides with helicity in the zero-mass limit.</p>
+<div class=".callout-note">
+<p>There is no intuitive picture for chiral states unless the particle is ultra-relativistic.</p>
+</div>
+<p>On the Lagrangian level, chiral states are easier to work with because they are defined by projection operators:</p>
+<p><span class="math display">\[
+P_L = \frac{1 - \gamma^5}{2}, \quad P_R = \frac{1 + \gamma^5}{2}
+\]</span></p>
+<p>These project left- and right-handed states, respectively. Helicity states mix under boosts—changing frames alters the spin configuration. However, chiral states remain invariant: a left-handed chiral state stays left-handed under boosts or rotations.</p>
+<div class=".callout-caution">
+<p>While helicity is frame-dependent, chirality is a fundamental property tied to the Lagrangian structure.</p>
+</div>
+<p>For massless particles, chirality and helicity align perfectly, but this correspondence breaks for massive particles due to mixing. Relativity connects these states once mass is introduced, but massless particles lack a rest frame, making their helicity fixed.</p>
+<!--
+Cosine simularity: 0.928798819531198
+-->
+</section>
+<section id="introduction-to-qcd-lagrangian-and-flavor-symmetry" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-to-qcd-lagrangian-and-flavor-symmetry">Introduction to QCD Lagrangian and Flavor Symmetry</h2>
+<p>Here is the Lagrangian of QCD (not QCT):</p>
+<p><span class="math display">\[
+\mathcal{L}_\text{QCD} = -\frac{1}{4} G_{\mu\nu}^a G^{\mu\nu}_a + \bar{\Psi}_i (i\,\slashed{D} - m) \Psi_i
+\]</span></p>
+<p>This describes the dynamics of quarks and gluons. The term <span class="math inline">\(`G_{\mu\nu}^a`\)</span> represents the gluon field strength tensor, which is the gauge part of the Lagrangian. The term <span class="math inline">\(`\bar{\Psi}_i (i\,\slashed{D} - m) \Psi_i`\)</span> includes the quark fields:<br>
+- <span class="math inline">\(`i\,\slashed{D} \Psi_i`\)</span> is the kinetic term,<br>
+- <span class="math inline">\(`m \bar{\Psi}_i \Psi_i`\)</span> is the mass term,<br>
+- <span class="math inline">\(`\slashed{D}`\)</span> contains the interaction with the gluon field via the covariant derivative.</p>
+<p>The index <span class="math inline">\(`i`\)</span> labels the quark flavor (e.g., up, down, strange, etc.), and there are six flavors in total. The index <span class="math inline">\(`a`\)</span> corresponds to color, and <span class="math inline">\(`T^a`\)</span> are the generators of the gauge group <span class="math inline">\(`SU(3)_c`\)</span>, connected to local gauge symmetry.</p>
+<div class=".callout-note">
+<p>The Lagrangian has multiple symmetries, including local gauge symmetry, which allows adjusting the phase of the quark wavefunction’s color components at every spacetime point.</p>
+</div>
+<p>The quark wavefunction <span class="math inline">\(`\Psi`\)</span> is a fermionic field with color components in a three-state vector. The local gauge transformation is implemented via matrix exponentials with space-dependent parameters <span class="math inline">\(`\theta^a(x)`\)</span>, ensuring the Lagrangian remains invariant. This transformation dictates how quarks and gluons interact and defines the form of the covariant derivative.</p>
+<div class=".callout-important">
+<p>For light quarks (up, down, strange), the masses are much smaller than the QCD scale (<span class="math inline">\(`\sim 1 \ \text{GeV}`\)</span>). This justifies the chiral limit (<span class="math inline">\(`m \to 0`\)</span>), enabling low-energy expansions and simplifications in theoretical treatments.</p>
+</div>
+<!--
+Cosine simularity: 0.9531392899992741
+-->
+</section>
+<section id="flavor-transformation-and-su3-symmetry-in-qcd" class="level2">
+<h2 class="anchored" data-anchor-id="flavor-transformation-and-su3-symmetry-in-qcd">Flavor Transformation and SU(3) Symmetry in QCD</h2>
+<p>The low-energy expansion works because the quark masses are small. There is a small parameter for expansion, which is the ratio of the quark mass to <span class="math inline">\(`\Lambda_\text{QCD}`\)</span> or the quark momentum to <span class="math inline">\(`\Lambda_\text{QCD}`\)</span>. This leads to effective field theory.</p>
+<p>Now, let’s discuss flavor transformation. This means the flavor indices of the wave function can be rotated. We consider a global <span class="math inline">\(`SU(3)_\text{flavor}`\)</span> symmetry. The flavor part of the wave function has three components:</p>
+<p><span class="math display">\[
+\Psi_i = \begin{pmatrix} u \\ d \\ s \end{pmatrix}
+\]</span></p>
+<p>Here, we simplify our consideration to the light quarks (up, down, strange). The transformation relating these quarks is a global <span class="math inline">\(`SU(3)`\)</span> rotation, represented by a <span class="math inline">\(`3 \times 3`\)</span> matrix. We can perform any rotation or adjustment of this wave function.</p>
+<div class=".callout-important">
+<p>The transformation is global because we do not allow the rotation parameters <span class="math inline">\(`\alpha`\)</span> to depend on spacetime coordinates. This ensures we avoid dealing with derivatives.</p>
+</div>
+<p>The QCD Lagrangian is symmetric under these global flavor transformations.</p>
+<!--
+Cosine simularity: 0.9044505121078811
+-->
+</section>
+<section id="chiral-symmetry-and-phase-cancellation-in-qcd" class="level2">
+<h2 class="anchored" data-anchor-id="chiral-symmetry-and-phase-cancellation-in-qcd">Chiral Symmetry and Phase Cancellation in QCD</h2>
+<p>The QCD Lagrangian is symmetric with respect to any transformation of chiral symmetry. The fermion field <span class="math inline">\(\Psi\)</span> is decomposed into left- and right-handed components:</p>
+<p><span class="math display">\[
+\Psi = \Psi_L + \Psi_R
+\]</span></p>
+<p>When applying a phase transformation to <span class="math inline">\(\Psi_L\)</span> and <span class="math inline">\(\Psi_R\)</span>, the phases cancel each other. This cancellation is straightforward to verify.</p>
+<div class=".callout-important">
+<p>The transformation involves the generator <span class="math inline">\(T\)</span>, which is a flavor matrix. However, the covariant derivative <span class="math inline">\(D\)</span> also contains <span class="math inline">\(T\)</span>, but here it acts in the color space, not the flavor space.</p>
+</div>
+<p>In the flavor space, the transformation is diagonal (identity matrix <span class="math inline">\(I\)</span>), so the flavor transformation is simple. The phase difference introduces a relative minus sign between the left- and right-handed components.</p>
+<!--
+Cosine simularity: 0.9289380400918554
+-->
+</section>
+<section id="gamma-matrices-and-flavor-space-transformations" class="level2">
+<h2 class="anchored" data-anchor-id="gamma-matrices-and-flavor-space-transformations">Gamma Matrices and Flavor Space Transformations</h2>
+<p>The transformation space is straightforward, with the phase introducing a minus sign. The bar operation denotes <span class="math inline">\(`\gamma^0`\)</span>, so it’s better to label indices as <span class="math inline">\(`\alpha_I`\)</span> where <span class="math inline">\(`I = 1, 2, 3`\)</span>. Alternatively, we can use <span class="math inline">\(`Z = 1, 2, 3`\)</span> or <span class="math inline">\(`D`\)</span> for clarity.</p>
+<p>We replace all states here with left- and right-handed components using the projection operator. The sum can be written explicitly, leveraging the properties of gamma matrices under Hermitian conjugation. The vector part of the interaction is given by:</p>
+<p><span class="math display">\[
+\bar{\Psi}_L \gamma^\mu \Psi_L + \bar{\Psi}_R \gamma^\mu \Psi_R
+\]</span></p>
+<p>There is no interaction mixing right- and left-handed components. The covariant derivative <span class="math inline">\(`D_\mu`\)</span> has no flavor space indices, so it remains unaffected.</p>
+<p>The current symmetry corresponds to independent transformations of the left- and right-handed components. We consider a global symmetry where the transformation is parameterized by eight numbers for the left-handed rotation and eight for the right-handed rotation, totaling 16 real parameters. Applying this transformation leaves the Lagrangian invariant if the mass term is zero, since left- and right-handed states decouple.</p>
+<p>Here, the three-component vector operates in the flavor space (SU(3)), and <span class="math inline">\(`\alpha`\)</span> is a <span class="math inline">\(`3 \times 3`\)</span> matrix independent of coordinates. The parameters for left- and right-handed rotations are weighted differently, but the Lagrangian remains unchanged unless a mass term is introduced.</p>
+<!--
+Cosine simularity: 0.924951473491417
+-->
+</section>
+<section id="spontaneous-symmetry-breaking-in-qcd" class="level2">
+<h2 class="anchored" data-anchor-id="spontaneous-symmetry-breaking-in-qcd">Spontaneous Symmetry Breaking in QCD</h2>
+<p>The left-handed and right-handed states do not talk to each other, so there is an extra phase here and another extra phase there. These phases cancel each other, and the symmetry is only broken when mass terms are introduced. This breaks the scale symmetry. The mass term mixes the two states, so the phase appears in one combination of the <span class="math inline">\(`\alpha`\)</span> parameters and disappears in the other.</p>
+<p>The mass term explicitly breaks chiral symmetry, but there is another effect: chiral symmetry is also spontaneously broken. Even if you start with no mass term in QCD, the quarks generate a non-zero expectation value through their interactions. This means the quarks appear massive even without an explicit mass term in the Lagrangian.</p>
+<p>The QCD vacuum has a non-zero expectation value, expressed as:</p>
+<p><span class="math display">\[
+\langle 0 |\, \bar{\Psi}_L \Psi_R \,| 0 \rangle \ne 0 \quad \text{for } m_q = 0.
+\]</span></p>
+<p>This is a spectacular result — the entire symmetry is broken. To visualize this, imagine a field space where the vacuum state is not at zero but at a shifted location. The potential of the theory has a shape similar to the Higgs potential, resembling a Mexican hat.</p>
+<p>When quantum fluctuations are integrated out, the effective potential takes this form, and the vacuum settles at a non-zero expectation value. This is the essence of spontaneous symmetry breaking. The theory could have a vacuum with exact chiral symmetry (located at zero), but energetically, it is favorable for the vacuum to have a non-zero expectation value.</p>
+<p>This mechanism appears in many areas of physics: superconductivity (where electron pairs form Cooper pairs), the Higgs mechanism, and other examples. The common feature is an exact symmetry at the origin of the field space, but the physical vacuum is displaced due to interactions.</p>
+<p>The spontaneous breaking is driven by the shape of the potential. The interaction terms, when integrated over quantum fluctuations, produce a potential that favors a non-zero vacuum expectation value. This is the origin of the mass gap in QCD, even in the absence of explicit mass terms.</p>
+<p>The current symmetry corresponds to independent transformations of the left- and right-handed components. For a global symmetry, there are eight parameters for the left-handed rotation and eight for the right-handed rotation, totaling 16 real parameters. The Lagrangian remains invariant under these transformations if the mass term is zero, since left- and right-handed states decouple.</p>
+<p>The flavor space (SU(3)) is described by a three-component vector, and <span class="math inline">\(`\alpha`\)</span> is a <span class="math inline">\(`3 \times 3`\)</span> matrix independent of coordinates. The left- and right-handed rotations are weighted differently, but the Lagrangian stays unchanged unless a mass term is introduced.</p>
+<!--
+Cosine simularity: 0.9270950875855584
+-->
+</section>
+<section id="introduction-to-chiral-perturbation-theory" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-to-chiral-perturbation-theory">Introduction to Chiral Perturbation Theory</h2>
+<p>In addition to spontaneous symmetry breaking, chiral perturbation theory also accounts for explicit symmetry breaking. This is introduced by assigning non-zero masses to the quarks. Spontaneous symmetry breaking is the dominant effect, but it is fully captured by the theory. Explicit symmetry breaking is a smaller effect since the quark masses are much smaller than the QCD scale <span class="math inline">\(`\Lambda_{\text{QCD}}`\)</span>.</p>
+<p>Because of this hierarchy, perturbation theory can be applied — and that is the essence of chiral perturbation theory. The theory is built on the existence of a chiral symmetry, and spontaneous symmetry breaking emerges as a consequence. This breaking is treated as a perturbation parameter.</p>
+<div class=".callout-note">
+<p>The quark masses act as a small perturbation compared to the QCD scale, allowing the use of chiral perturbation theory.</p>
+</div>
+<p>We will not go into a detailed discussion of chiral perturbation theory here, but the key idea is that it systematically incorporates both spontaneous and explicit symmetry breaking.</p>
+<!--
+Cosine simularity: 0.9153992836731415
+-->
+</section>
+<section id="discussion-of-field-expectation-values-and-potential" class="level2">
+<h2 class="anchored" data-anchor-id="discussion-of-field-expectation-values-and-potential">Discussion of Field Expectation Values and Potential</h2>
+<p>I will start the next lecture by writing the chiral Lagrangian, and then we will move forward. We won’t have time for a detailed consideration of chiral perturbation theory here, but I encourage you to explore dedicated courses. The theory department has experts in this field, and they are world-leading in their work. My goal today is to introduce the general concepts and provide an experimentalist’s perspective.</p>
+<p>Let me address some questions. The variable in this plane represents the vacuum expectation value. When you write this, the point you choose is the corrected state. It is the expectation value for the correlation. The possibility of <span class="math inline">\(`Q`\)</span> on both sides is not necessarily zero — it depends on the context.</p>
+<p>The axis represents the expectation value of the field. Strictly speaking, in quantum field theory, the potential itself is undefined. What is defined is the expectation value of the field. You can plot the potential as a function of this expectation value. Here, the expectation value is along the <span class="math inline">\(`x`\)</span>-axis, and the potential <span class="math inline">\(`V`\)</span> is on the <span class="math inline">\(`y`\)</span>-axis.</p>
+<div class=".callout-note">
+<p>The quark masses act as a small perturbation compared to the QCD scale <span class="math inline">\(`\Lambda_{\text{QCD}}`\)</span>, allowing the use of chiral perturbation theory.</p>
+</div>
+<p>The key idea is that chiral perturbation theory systematically incorporates both spontaneous and explicit symmetry breaking. The expectation value of the field is central to this discussion, as it defines the potential landscape of the theory.</p>
+<!--
+Cosine simularity: 0.9311018340240912
+-->
+</section>
+<section id="quasi-classical-expansion-and-field-theory-analogy" class="level2">
+<h2 class="anchored" data-anchor-id="quasi-classical-expansion-and-field-theory-analogy">Quasi-Classical Expansion and Field Theory Analogy</h2>
+<p>I would like this analogy to incorporate complex space, even though we typically expect the potential to be real. The quasi-classical expansion in field theory is a useful framework for this.</p>
+<p>I recall seeing this approach in several books, but I want to discuss its strict definition. Often, we encounter well-defined potentials, but how do we derive them from first principles? This is related to the <span class="math inline">\(`\hbar`\)</span> expansion.</p>
+<p><span class="math display">\[
+H = H_0 + \hbar H_1 + \hbar^2 H_2 + \cdots
+\]</span></p>
+<p>Here, <span class="math inline">\(`H`\)</span> is expanded in powers of <span class="math inline">\(`\hbar`\)</span>, allowing us to systematically approximate the theory. I will find a reference to clarify this further.</p>
+<div class=".callout-note">
+<p>The quasi-classical expansion provides a bridge between quantum field theory and classical approximations, particularly useful when analyzing potentials and expectation values.</p>
+</div>
+<!--
+Cosine simularity: 0.9434389906546551
+-->
+</section>
+<section id="spontaneous-symmetry-breaking-and-cooper-pairs-in-superconductors" class="level2">
+<h2 class="anchored" data-anchor-id="spontaneous-symmetry-breaking-and-cooper-pairs-in-superconductors">Spontaneous Symmetry Breaking and Cooper Pairs in Superconductors</h2>
+<p>To better understand this, we can look at a simpler model related to spontaneous symmetry breaking in superconductors, where the potential appears explicitly without requiring quantum field theory.</p>
+<p>You mentioned an interaction between particles and antiparticles, such as electrons and positrons. However, in superconductors, it is two electrons that form the Cooper pair.</p>
+<div class=".callout-note">
+<p>The Cooper pair mechanism involves two electrons binding together at low temperatures, leading to superconductivity.</p>
+</div>
+<p>If you have taken a particle physics course, you might recall the electroweak and Higgs mechanism. This is a key part of understanding symmetry breaking in particle physics, though it is not strictly necessary for the Cooper pair discussion. The underlying principles are similarly strong in both contexts.</p>
+<!--
+Cosine simularity: 0.8755107649761839
+-->
+</section>
+<section id="qed-electricity-and-quark-dynamics-in-qcd" class="level2">
+<h2 class="anchored" data-anchor-id="qed-electricity-and-quark-dynamics-in-qcd">QED, Electricity, and Quark Dynamics in QCD</h2>
+<p>We discussed QED in the particle physics course but did not cover electricity explicitly.</p>
+<p>For heavy quarks, the expansion is different — it is not <span class="math inline">\(`\text{quark} / \Lambda_{\text{QCD}}`\)</span> but rather non-relativistic. In this regime, you can use the momentum <span class="math inline">\(`P`\)</span> and the non-relativistic QCD framework (NRQCD) with <span class="math inline">\(`r_{\text{QCD}}`\)</span> as the characteristic scale.</p>
+<div class=".callout-note">
+<p>NRQCD simplifies quark dynamics for heavy quarks by treating them non-relativistically, where <span class="math inline">\(`P \ll m_Q c`\)</span> and <span class="math inline">\(`r_{\text{QCD}}`\)</span> defines the confinement scale.</p>
+</div>
+<!--
+Cosine simularity: 0.9212222031542752
+-->
+</section>
+<section id="project-discussion-and-internship-opportunities" class="level2">
+<h2 class="anchored" data-anchor-id="project-discussion-and-internship-opportunities">Project Discussion and Internship Opportunities</h2>
+<p>We discussed RQ (Relativistic QCD) and NRQCD (Non-Relativistic QCD) in the context of momentum <span class="math inline">\(`P`\)</span>.</p>
+<p>For summer project discussions, we will organize an event on <strong>June 28th</strong>, inviting bachelor’s, master’s students, and others interested in available projects and internships.</p>
+<div class=".callout-note">
+<p>NRQCD simplifies quark dynamics for heavy quarks where <span class="math inline">\(`P \ll m_Q c`\)</span> and <span class="math inline">\(`r_{\text{QCD}}`\)</span> defines the confinement scale.</p>
+</div>
+<!--
+Cosine simularity: 0.9571312503858783
+-->
+</section>
+<section id="assignment-distribution-and-instructions" class="level2">
+<h2 class="anchored" data-anchor-id="assignment-distribution-and-instructions">Assignment Distribution and Instructions</h2>
+<p>I will send out details about available projects and internships on <strong>June 28th</strong>.</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
