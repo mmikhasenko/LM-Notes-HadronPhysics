@@ -6,10 +6,9 @@ def transform_file(filepath):
     with open(filepath, 'r', encoding='utf-8') as file:
         content = file.read()
 
-    # Convert [!NOTE] style callouts
     content = re.sub(
-        r'^> \[!(\w+)\]\s*\n((?:^> .*\n?)*)',
-        lambda m: f"::: callout-{m.group(1).lower()}\n" + re.sub(r'^> ?', '', m.group(2), flags=re.MULTILINE) + "\n:::",
+        r'^> \[!(\w+)\]\s*\n((?:^> ?(.*\n)?|)(.*))',
+        lambda m: f"::: callout-{m.group(1).lower()}\n" + (m.group(3).strip() if m.group(3) else m.group(4).strip()) + "\n:::",
         content,
         flags=re.MULTILINE
     )
