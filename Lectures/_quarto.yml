@@ -1,3 +1,6 @@
+project:
+  type: website
+
 format:
   html:
     theme: cosmo
@@ -7,6 +10,7 @@ format:
     code-fold: true
     highlight-style: github
     css: styles.css
+    callout-appearance: simple  # Enables callouts like [!NOTE]
 
-metadata-files: 
+metadata-files:
   - _metadata.yml
