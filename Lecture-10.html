@@ -320,9 +320,9 @@ Cosine simularity: 0.920611986690305
 <h2 class="anchored" data-anchor-id="dirac-equation-and-spinor-conventions">Dirac Equation and Spinor Conventions</h2>
 <p>The Dirac equation for a spin-1/2 particle is given by:</p>
 <p><span class="math display">\[
-(\slashed p - m)\,\tilde u = 0
+(\mathrlap{/}p - m)\,\tilde u = 0
 \]</span></p>
-<p>Here, <span class="math inline">\(\tilde u\)</span> is a spinor ( <span class="math inline">\(\tilde u \leftarrow \mathrm{spinor}(\xi)\)</span> ), and <span class="math inline">\(\slashed p = p^\mu \gamma_\mu\)</span> is the Feynman slash notation.</p>
+<p>Here, <span class="math inline">\(\tilde u\)</span> is a spinor ( <span class="math inline">\(\tilde u \leftarrow \mathrm{spinor}(\xi)\)</span> ), and <span class="math inline">\(\mathrlap{/}p = p^\mu \gamma_\mu\)</span> is the Feynman slash notation.</p>
 <p>The <span class="math inline">\(\gamma\)</span> matrices are defined in the Dirac representation as:</p>
 <p><span class="math display">\[
 \gamma^0 = \begin{pmatrix}I &amp; 0\\[6pt]0 &amp; -I\end{pmatrix},\quad
@@ -382,9 +382,9 @@ Cosine simularity: 0.9232111081396577
 \]</span></p>
 <p>The gamma matrices (<span class="math inline">\(\gamma^\mu\)</span>) are four-dimensional matrices, and <span class="math inline">\(\mathcal P\)</span> is the four-vector. When you contract the two, a summation over <span class="math inline">\(\mu\)</span> is performed, resulting in the expression:</p>
 <p><span class="math display">\[
-\slashed p - m
+\mathrlap{/}p - m
 \]</span></p>
-<p>Here, <span class="math inline">\(\slashed p = p^\mu \gamma_\mu\)</span> (Feynman slash notation), and <span class="math inline">\(m\)</span> is the scalar mass term — though it is implied that this is not multiplied by the <span class="math inline">\(4 \times 4\)</span> identity matrix.</p>
+<p>Here, <span class="math inline">\(\mathrlap{/}p = p^\mu \gamma_\mu\)</span> (Feynman slash notation), and <span class="math inline">\(m\)</span> is the scalar mass term — though it is implied that this is not multiplied by the <span class="math inline">\(4 \times 4\)</span> identity matrix.</p>
 <p>The spinor <span class="math inline">\(u\)</span> (or “Spiner” in German) is a four-dimensional object that depends on the particle’s orientation and momentum. The equation has two solutions, <span class="math inline">\(u_1\)</span> and <span class="math inline">\(u_2\)</span>, corresponding to the spin states quantized along the <span class="math inline">\(z\)</span>-axis. These solutions can be written as:</p>
 <p><span class="math display">\[
 u_1 = \begin{pmatrix}1 \\ 0 \\ p \cos\theta \\ p \sin\theta \end{pmatrix}, \quad u_2 = \begin{pmatrix}0 \\ 1 \\ -p \sin\theta \\ p \cos\theta \end{pmatrix}
@@ -403,7 +403,7 @@ Note
 <p>The spinor solutions are related to states like <span class="math inline">\(|p; J, m\rangle\)</span>, where the particle has momentum <span class="math inline">\(p\)</span>, spin <span class="math inline">\(J\)</span>, and projection <span class="math inline">\(m\)</span> along the quantization axis.</p>
 </div>
 </div>
-<p>The Dirac equation <span class="math inline">\((\slashed p - m)u = 0\)</span> describes these spin-1/2 solutions, and the <span class="math inline">\(\gamma\)</span> matrices ensure the correct transformation properties under Lorentz boosts and rotations.</p>
+<p>The Dirac equation <span class="math inline">\((\mathrlap{/}p - m)u = 0\)</span> describes these spin-1/2 solutions, and the <span class="math inline">\(\gamma\)</span> matrices ensure the correct transformation properties under Lorentz boosts and rotations.</p>
 <!--
 Cosine simularity: 0.9155485350584712
 -->
@@ -427,7 +427,7 @@ Note
 <p>The helicity states correspond to spin projections aligned with the particle’s momentum, unlike the canonical states, which are quantized along a fixed axis (e.g., the <span class="math inline">\(z\)</span>-axis).</p>
 </div>
 </div>
-<p>The Dirac equation <span class="math inline">\((\slashed p - m)u = 0\)</span> governs these solutions, ensuring their consistency under Lorentz transformations. The spinor solutions <span class="math inline">\(u_1\)</span> and <span class="math inline">\(u_2\)</span> represent the two possible spin states of a spin-<span class="math inline">\(\frac{1}{2}\)</span> particle.</p>
+<p>The Dirac equation <span class="math inline">\((\mathrlap{/}p - m)u = 0\)</span> governs these solutions, ensuring their consistency under Lorentz transformations. The spinor solutions <span class="math inline">\(u_1\)</span> and <span class="math inline">\(u_2\)</span> represent the two possible spin states of a spin-<span class="math inline">\(\frac{1}{2}\)</span> particle.</p>
 <!--
 Cosine simularity: 0.8955185924219884
 -->
@@ -713,12 +713,12 @@ Cosine simularity: 0.928798819531198
 <h2 class="anchored" data-anchor-id="introduction-to-qcd-lagrangian-and-flavor-symmetry">Introduction to QCD Lagrangian and Flavor Symmetry</h2>
 <p>Here is the Lagrangian of QCD (not QCT):</p>
 <p><span class="math display">\[
-\mathcal{L}_\text{QCD} = -\frac{1}{4} G_{\mu\nu}^a G^{\mu\nu}_a + \bar{\Psi}_i (i\,\slashed{D} - m) \Psi_i
+\mathcal{L}_\text{QCD} = -\frac{1}{4} G_{\mu\nu}^a G^{\mu\nu}_a + \bar{\Psi}_i (i\,\mathrlap{/}D - m) \Psi_i
 \]</span></p>
-<p>This describes the dynamics of quarks and gluons. The term <span class="math inline">\(G_{\mu\nu}^a\)</span> represents the gluon field strength tensor, which is the gauge part of the Lagrangian. The term <span class="math inline">\(\bar{\Psi}_i (i\,\slashed{D} - m) \Psi_i\)</span> includes the quark fields:<br>
-- <span class="math inline">\(i\,\slashed{D} \Psi_i\)</span> is the kinetic term,<br>
+<p>This describes the dynamics of quarks and gluons. The term <span class="math inline">\(G_{\mu\nu}^a\)</span> represents the gluon field strength tensor, which is the gauge part of the Lagrangian. The term <span class="math inline">\(\bar{\Psi}_i (i\,\mathrlap{/}D - m) \Psi_i\)</span> includes the quark fields:<br>
+- <span class="math inline">\(i\,\mathrlap{/}D \Psi_i\)</span> is the kinetic term,<br>
 - <span class="math inline">\(m \bar{\Psi}_i \Psi_i\)</span> is the mass term,<br>
-- <span class="math inline">\(\slashed{D}\)</span> contains the interaction with the gluon field via the covariant derivative.</p>
+- <span class="math inline">\(\mathrlap{/}D\)</span> contains the interaction with the gluon field via the covariant derivative.</p>
 <p>The index <span class="math inline">\(i\)</span> labels the quark flavor (e.g., up, down, strange, etc.), and there are six flavors in total. The index <span class="math inline">\(a\)</span> corresponds to color, and <span class="math inline">\(T^a\)</span> are the generators of the gauge group <span class="math inline">\(SU(3)_c\)</span>, connected to local gauge symmetry.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
