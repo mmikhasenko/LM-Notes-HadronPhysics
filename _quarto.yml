@@ -6,13 +6,7 @@ format:
     theme: cosmo
     toc: true
     number-sections: true
-    html-math-method:
-      method: mathjax
-      config:
-        loader:
-          load: ['[tex]/physics']
-        tex:
-          packages: {'[+]': ['physics']}
+    html-math-method: katex
     code-fold: true
     highlight-style: github
     css: styles.css
