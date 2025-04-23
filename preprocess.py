@@ -9,15 +9,23 @@ def transform_file(filepath):
     # Convert [!NOTE] style callouts
     content = re.sub(
         r'^> \[!(\w+)\]\s*\n((?:^> .*\n?)*)',
-        lambda m: f"::: .callout-{m.group(1).lower()}\n" + re.sub(r'^> ?', '', m.group(2), flags=re.MULTILINE) + "\n:::",
+        lambda m: f"::: callout-{m.group(1).lower()}\n" + re.sub(r'^> ?', '', m.group(2), flags=re.MULTILINE) + "\n:::",
         content,
         flags=re.MULTILINE
     )
 
-    # Convert ```math blocks
+    # Convert ```math blocks to $$...$$
     content = re.sub(
         r'```math\s*\n(.*?)\n```',
         lambda m: f"$$\n{m.group(1)}\n$$",
+        content,
+        flags=re.DOTALL
+    )
+
+    # Convert $`math`$ to $math$
+    content = re.sub(
+        r'\$\`(.*?)\`\$',
+        lambda m: f"${m.group(1)}$",
         content,
         flags=re.DOTALL
     )
