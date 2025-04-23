@@ -20,12 +20,18 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Convert Markdown to HTML
+      - name: Preprocess Markdown Files
         run: |
-          cd Lectures
+          mkdir -p build
+          cp Lectures/*.md build/
+          python preprocess.py build/
+          
+      - name: Render HTML from Preprocessed Files
+        run: |
+          cd build
           for file in *.md; do
             if [ -f "$file" ]; then
-              quarto render "$file" --to html
+              quarto render "$file" --to html --output-dir ../Lectures
             fi
           done
 
