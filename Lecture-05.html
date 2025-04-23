@@ -32,7 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="Lecture-05_files/libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="Lecture-05_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="Lecture-05_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="Lecture-05_files/libs/bootstrap/bootstrap-feb7be27843f6a580260d43995a4e15a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="Lecture-05_files/libs/bootstrap/bootstrap-1a748f8c722605f92e8ac4935e2e75ca.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -848,7 +848,9 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>:::The amplitude <span class="math inline">\(A\)</span> represents the quantum transition amplitude, which is a probability amplitude. It is squared to give the observed probability. The quantity <span class="math inline">\(G\)</span> appears squared in experiments, as we only measure the squared value of the amplitude.</p>
+<p>The amplitude <span class="math inline">\(A\)</span> represents the quantum transition amplitude, which is a probability amplitude. It is squared to give the observed probability. The quantity <span class="math inline">\(G\)</span> appears squared in experiments, as we only measure the squared value of the amplitude.</p>
+</div>
+</div>
 <p>For unpolarized decays, the distributions are averaged. You must square the amplitude and sum over the initial and final spin projections to obtain the observable distribution in experiments.</p>
 <p>The angular distribution <span class="math inline">\(\frac{d\Gamma}{d\cos\theta}\)</span> is proportional to the squared matrix element.</p>
 <div class="callout callout-style-default callout-important callout-titled">
@@ -861,7 +863,9 @@ Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>:::The cosine of the angle (<span class="math inline">\(\cos\theta\)</span>) is preferred over <span class="math inline">\(\theta\)</span> itself because it avoids the Jacobian factor <span class="math inline">\(\sin\theta\)</span> in the differential distribution.</p>
+<p>The cosine of the angle (<span class="math inline">\(\cos\theta\)</span>) is preferred over <span class="math inline">\(\theta\)</span> itself because it avoids the Jacobian factor <span class="math inline">\(\sin\theta\)</span> in the differential distribution.</p>
+</div>
+</div>
 <p>The dynamics (encoded in <span class="math inline">\(H\)</span>) are model-dependent, while the rotational properties are fully described by Wigner <span class="math inline">\(D\)</span>-functions. For hard interactions (e.g., electromagnetic or gravitational), <span class="math inline">\(H\)</span> lacks a general parameterization and must be determined experimentally.</p>
 <p>The Wigner <span class="math inline">\(D\)</span>-function for spin states is given by:</p>
 <p><span class="math display">\[
@@ -879,10 +883,13 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>:::In aligned kinematics (<span class="math inline">\(\phi = 0\)</span>, <span class="math inline">\(\theta = 0\)</span>), the Wigner <span class="math inline">\(D\)</span>-function reduces trivially, eliminating the need for summation over <span class="math inline">\(\lambda_X\)</span>.</p>
+<p>In aligned kinematics (<span class="math inline">\(\phi = 0\)</span>, <span class="math inline">\(\theta = 0\)</span>), the Wigner <span class="math inline">\(D\)</span>-function reduces trivially, eliminating the need for summation over <span class="math inline">\(\lambda_X\)</span>.</p>
+</div>
+</div>
 <!--
 Cosine simularity: 0.9133527980701298
 -->
+</section>
 <section id="partial-wave-and-moment-analysis-in-particle-decays" class="level2">
 <h2 class="anchored" data-anchor-id="partial-wave-and-moment-analysis-in-particle-decays">Partial Wave and Moment Analysis in Particle Decays</h2>
 <p>In experiments, you observe angular distributions and wonder what they reveal. The first approach to analyze this is not to guess the amplitude directly, but to project these distributions onto orthogonal polynomials, which provide a convenient basis.</p>
@@ -901,7 +908,9 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>:::Partial wave analysis models the cross section using amplitudes ( <span class="math inline">\(H\)</span> ) with free parameters, which are then adjusted to fit the data. However, the first step often involves projecting the angular distributions onto polynomials, which yields combinations of these parameters rather than their direct values.</p>
+<p>Partial wave analysis models the cross section using amplitudes ( <span class="math inline">\(H\)</span> ) with free parameters, which are then adjusted to fit the data. However, the first step often involves projecting the angular distributions onto polynomials, which yields combinations of these parameters rather than their direct values.</p>
+</div>
+</div>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -912,12 +921,15 @@ Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>:::This projection does not immediately reveal the underlying dynamics (encoded in <span class="math inline">\(H\)</span>), but it provides constraints that can guide further analysis. The relationship between the polynomial coefficients and the physical amplitudes is non-trivial and requires careful interpretation.</p>
+<p>This projection does not immediately reveal the underlying dynamics (encoded in <span class="math inline">\(H\)</span>), but it provides constraints that can guide further analysis. The relationship between the polynomial coefficients and the physical amplitudes is non-trivial and requires careful interpretation.</p>
+</div>
+</div>
 <p>The Legendre polynomials are particularly useful because their coefficients reflect the spin structure of the decaying particle. For example, a flat distribution corresponds to spin-0, while a parabolic shape suggests spin-1 or higher.</p>
 <p>The Wigner <span class="math inline">\(D\)</span>-functions describe the rotational properties of the decay, while the dynamics ( <span class="math inline">\(H\)</span> ) must be determined experimentally. For aligned kinematics ( <span class="math inline">\(\phi = 0\)</span>, <span class="math inline">\(\theta = 0\)</span> ), the Wigner <span class="math inline">\(D\)</span>-function simplifies significantly.</p>
 <!--
 Cosine simularity: 0.9411182406125395
 -->
+</section>
 <section id="helicity-states-and-particle-definitions-in-martin-spearmans-book" class="level2">
 <h2 class="anchored" data-anchor-id="helicity-states-and-particle-definitions-in-martin-spearmans-book">Helicity States and Particle Definitions in Martin Spearman’s Book</h2>
 <p>The differences between the canonical state introduced earlier and the helicity state introduced later are not straightforward. We only briefly touched on how the state is defined in the rest frame, and we will explore this further.</p>
@@ -933,10 +945,13 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>:::Chapter 4 of <em>Elementary Particle Theory</em> by Martin Spearman is highly recommended for a deeper understanding of particle definitions and helicity states. The presentation avoids heavy mathematical formalism while maintaining rigor.</p>
+<p>Chapter 4 of <em>Elementary Particle Theory</em> by Martin Spearman is highly recommended for a deeper understanding of particle definitions and helicity states. The presentation avoids heavy mathematical formalism while maintaining rigor.</p>
+</div>
+</div>
 <!--
 Cosine simularity: 0.9374975962040448
 -->
+</section>
 <section id="kinematics-exercise-with-unlabeled-dalitz-plots" class="level2">
 <h2 class="anchored" data-anchor-id="kinematics-exercise-with-unlabeled-dalitz-plots">Kinematics Exercise with Unlabeled Dalitz Plots</h2>
 <p>I left you an exercise involving Dalitz plots from Kleo and Babar where I removed the labels. The plots correspond to <span class="math inline">\(D\)</span> and <span class="math inline">\(D_s\)</span> decays, but the final-state particles are not specified. The axis labels remain, but the masses are hidden.</p>
@@ -951,10 +966,13 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>:::Martin Spearman’s <em>Elementary Particle Theory</em> (Chapter 4) provides a clear framework for understanding particle definitions, including helicity states and canonical states, rooted in the Lorentz group. This is useful for interpreting kinematic distributions like Dalitz plots.</p>
+<p>Martin Spearman’s <em>Elementary Particle Theory</em> (Chapter 4) provides a clear framework for understanding particle definitions, including helicity states and canonical states, rooted in the Lorentz group. This is useful for interpreting kinematic distributions like Dalitz plots.</p>
+</div>
+</div>
 <!--
 Cosine simularity: 0.7748775066838646
 -->
+</section>
 <section id="homework-and-lecture-attendance-reminders" class="level2">
 <h2 class="anchored" data-anchor-id="homework-and-lecture-attendance-reminders">Homework and Lecture Attendance Reminders</h2>
 <p>I will give you one homework for your group, and then you can exchange it for another one, including the EP assignment. I have to leave now, but I can give you the homework from my office. Please come with me to collect it. Thanks for coming, and sorry for being slightly late.</p>
@@ -1006,10 +1024,12 @@ Note
 </div>
 <div class="callout-body-container callout-body">
 <p>Despite receiving exercise sheets during lectures, it’s useful to check them online for updates, as some links or corrections may be posted.</p>
-<div class="```">
+</div>
+</div>
 <!--
 Cosine simularity: 0.9151974298208496
 -->
+</section>
 <section id="feasibility-of-strong-interaction-studies-in-lattice-qcd" class="level2">
 <h2 class="anchored" data-anchor-id="feasibility-of-strong-interaction-studies-in-lattice-qcd">Feasibility of Strong Interaction Studies in Lattice QCD</h2>
 <p>The examples shown so far involve weak interactions, but the question is whether similar studies can be done for strong interactions using Lattice QCD.</p>
@@ -1060,28 +1080,6 @@ Cosine simularity: 0.9819736320521907
 <section id="lecture-context-and-feedback" class="level2">
 <h2 class="anchored" data-anchor-id="lecture-context-and-feedback">Lecture Context and Feedback</h2>
 <p>Let’s go. I would love to print a few more and distribute them. All offices are in EP1. I’m not quite sure if you got to where you wanted to get today. I think I missed the last two lectures, so I have a little lack of context. But I really enjoyed today. Nice, very nice.</p>
-</section>
-</div>
-</div>
-</div>
-</section>
-</div>
-</div>
-</section>
-</div>
-</div>
-</section>
-</div>
-</div>
-</div>
-</div>
-</section>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 </section>
 
 </main>
