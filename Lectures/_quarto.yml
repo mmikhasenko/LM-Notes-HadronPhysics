@@ -6,7 +6,7 @@ format:
     theme: cosmo
     toc: true
     number-sections: true
-    html-math-method: katex
+    html-math-method: mathjax # to render \slashed
     code-fold: true
     highlight-style: github
     css: styles.css
