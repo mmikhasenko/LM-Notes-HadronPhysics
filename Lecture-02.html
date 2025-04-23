@@ -32,7 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="Lecture-02_files/libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="Lecture-02_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="Lecture-02_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="Lecture-02_files/libs/bootstrap/bootstrap-1a748f8c722605f92e8ac4935e2e75ca.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="Lecture-02_files/libs/bootstrap/bootstrap-feb7be27843f6a580260d43995a4e15a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -82,8 +82,18 @@ Cosine simularity: 0.9169510955556898
 <h2 class="anchored" data-anchor-id="introduction-and-homework-discussion">Introduction and Homework Discussion</h2>
 <p>Do you expect anyone else to find the problems difficult? At some point, I think yes. He found last week’s problems too easy, so we should increase the difficulty.</p>
 <p>How was the homework problem level? Have you seen them before? In particle physics, some problems appear multiple times across different courses — first in nuclear physics, then in particle physics or quantum field theory.</p>
-<div class=".callout-note">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>Clebsch-Gordan coefficients are so important that you encounter them four times.</p>
+</div>
 </div>
 <p>They will be part of this week’s homework, and I hope you won’t have trouble with them.</p>
 <!--
@@ -114,14 +124,34 @@ Cosine simularity: 0.9445375076924339
 \]</span></p>
 <p>where <span class="math inline">\(1 \ \text{b} = 10^{-24} \ \text{cm}^2\)</span>.</p>
 <p>For hadrons, the total cross section is determined by their overlapping densities. If they are too far apart, they don’t interact — the strong interaction is very strong but short-ranged.</p>
-<div class=".callout-note">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The typical hadronic cross section scale is around 10 millibarns, derived from the proton’s size.</p>
+</div>
 </div>
 <p>Now, let’s transition to symmetries in hadron physics, starting with QCD and the SU group. This will lead us to isospin and the SU flavor group, where we’ll explore how quark interchange relates to spin addition and the Lorentz group.</p>
 <p>This part of the discussion is particularly elegant because it relies on fundamental spin algebra, something you can work out independently with just pen and paper.</p>
 <p>Let me begin by reminding you of the last lecture’s key points and addressing any questions before moving forward.</p>
-<div class=".callout-important">
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The cross-section estimation hinges on the proton’s size (<span class="math inline">\(\sim 1 \ \text{fm}\)</span>), translating to an interaction area of <span class="math inline">\(\sim 10 \ \text{mb}\)</span>.</p>
+</div>
 </div>
 <p>We’ll now proceed to discuss symmetries, starting with QCD and the SU group, and then connecting it to the phenomenology of the SU flavor group.</p>
 <p>The addition of spins inside hadrons mirrors the addition of quark states, and this will be a recurring theme as we link it to the Lorentz group’s rotational subgroup, SU(2).</p>
@@ -145,8 +175,18 @@ Q^a_{QCD} = g_s\int d^3x \, \Psi_i^\dagger(x) \gamma^0 T^a \Psi_j(x)
 <p>where <span class="math inline">\(T^a\)</span> are the generators of <span class="math inline">\(SU(3)\)</span>.</p>
 <p>Now, suppose we are given a field <span class="math inline">\(\Psi\)</span>. How do we determine its charge? The charge is a conserved quantity, meaning that for a freely moving field, the charge does not change. This conservation arises from a symmetry, as stated by Noether’s theorem, which guarantees a conserved current. The charge is then defined as the integral of the zero-component of this conserved current.</p>
 <p>For the Dirac field, the charge density is <span class="math inline">\(\Psi^\dagger \Psi\)</span>, which is a positive quantity for physical solutions. If <span class="math inline">\(\Psi\)</span> represents an electron, this would imply a positive charge. At first glance, this seems contradictory, but the sign of the charge is a matter of convention. We define the observed charge <span class="math inline">\(Q\)</span> to match our physical conventions, such as assigning <span class="math inline">\(-e\)</span> to the electron. The overall normalization is arbitrary; what matters is the conservation law.</p>
-<div class=".callout-note">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The sign of the charge in QED is a convention. The conserved quantity is the key feature, not the specific value assigned to particles like the electron.</p>
+</div>
 </div>
 <p>The strong interaction is very strong but operates only at short distances. Hadrons interact when their densities overlap; if they are too far apart, they do not interact at all. This is why the typical hadronic cross section is determined by the proton’s size, roughly <span class="math inline">\(1 \ \text{fm}\)</span>, leading to an interaction area of about <span class="math inline">\(10 \ \text{mb}\)</span>.</p>
 <p>The charge definitions in QED and QCD are fundamentally linked to their respective gauge symmetries—<span class="math inline">\(U(1)\)</span> for QED and <span class="math inline">\(SU(3)\)</span> for QCD—and the associated conserved currents. The distinction between observed charge and the mathematical definition is important, especially when matching theoretical predictions to experimental observations.</p>
@@ -240,8 +280,18 @@ e^A = I + A + \frac{1}{2}A^2 + \cdots
 <p>When you multiply and observe how quickly the series converges, some terms may die out. For instance, if the matrix squared (<span class="math inline">\(A^2\)</span>) equals the identity matrix <span class="math inline">\(E\)</span>, the series does not vanish quickly, and one of the elements remains.</p>
 <p>This group is important in two key applications. First, <strong>spin</strong> arises due to the conservation associated with SU(2) symmetry, which acts on the Lorentz components of vectors. For a three-vector, rotations are described by rotation matrices, but for a spinor, rotations are given by the Pauli matrices <span class="math inline">\(\sigma_i\)</span>.</p>
 <p>The second application is <strong>flavor symmetry</strong>. In mesons and baryons, transformations between up (<span class="math inline">\(u\)</span>) and down (<span class="math inline">\(d\)</span>) quarks can be performed continuously, similar to how spinor wave functions are characterized. This allows for a “flavor rotation” analogous to spin rotations in quantum mechanics.</p>
-<div class=".callout-note">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The Pauli matrices (<span class="math inline">\(\sigma_i\)</span>) are fundamental in describing spin rotations, while flavor symmetry extends similar principles to quark states.</p>
+</div>
 </div>
 <p>The algebraic structure of SU(2) is crucial in both spin and flavor symmetry, as seen in quantum mechanics and particle physics.</p>
 <!--
@@ -252,8 +302,18 @@ Cosine simularity: 0.8996625627682487
 <h2 class="anchored" data-anchor-id="introduction-to-charges-and-group-theory">Introduction to Charges and Group Theory</h2>
 <p>Before moving on, let’s revisit these questions. We will now consider two new groups: the first is <strong>allotations</strong>, and the second is <strong>flavor</strong>.</p>
 <p>What is the charge of these groups? For QED, the charge is the electric charge. The physical quantity corresponding to the charge depends on the group.</p>
-<div class=".callout-note">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The charge in a group theory context often corresponds to a conserved quantity, such as electric charge in QED or flavor charge in quark systems.</p>
+</div>
 </div>
 <!--
 Cosine simularity: 0.9355056374451567
@@ -267,8 +327,18 @@ Cosine simularity: 0.9355056374451567
 Q = \int \psi^\dagger \sigma_i \psi \, d^3x
 \]</span></p>
 <p>This charge corresponds to a parameter — specifically, the orientation of the spin. For a particle in motion, these values characterize the projection of the spin onto the direction of motion, which defines its helicity.</p>
-<div class=".callout-note">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The computed charge in this context gives the three-dimensional direction of the spin, directly related to helicity.</p>
+</div>
 </div>
 <!--
 Cosine simularity: 0.914945279586125
@@ -282,8 +352,18 @@ Cosine simularity: 0.914945279586125
 I = 2 S_c
 \]</span></p>
 <p>Here, <span class="math inline">\(S_c\)</span> represents the spin algebra. The charge computation depends on the group structure, analogous to how electric charge arises in QED or color charge in QCD.</p>
-<div class=".callout-note">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The isospin operator is derived from the spin algebra, and its value is directly tied to the quark composition of the system.</p>
+</div>
 </div>
 <!--
 Cosine simularity: 0.9167933374846267
@@ -303,8 +383,18 @@ Cosine simularity: 0.9167933374846267
 \sigma_3 = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{pmatrix}
 \]</span></p>
 <p>The commutator relation implies that <span class="math inline">\([J_1, J_2] = i J_3\)</span>, and similarly for cyclic permutations. The Pauli matrices satisfy the same commutation relations, confirming their role as generators of <span class="math inline">\(SU(2)\)</span>.</p>
-<div class=".callout-note">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>Fortunately, there is no ambiguity in conventions for Pauli matrices — they are universally defined as above.</p>
+</div>
 </div>
 <!--
 Cosine simularity: 0.9595549765594683
@@ -319,8 +409,18 @@ Cosine simularity: 0.9595549765594683
 \]</span></p>
 <p>Since <span class="math inline">\(\det(M) = 1\)</span>, this enforces <span class="math inline">\(\text{tr}(M) = 0\)</span>. However, the number of diagonal generators is crucial because it determines the eigenvalues and eigenvectors you work with.</p>
 <p>In our case, there is only one diagonal matrix among the generators, which is why the group is called <strong>rank one</strong>. For example, <span class="math inline">\(SU(2)\)</span> has rank 1 because only one generator (typically <span class="math inline">\(\sigma_3\)</span>) is diagonal.</p>
-<div class=".callout-note">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The rank of a group is deeply connected to its classification in group theory. Higher-rank groups have more diagonal generators, leading to richer structure.</p>
+</div>
 </div>
 <!--
 Cosine simularity: 0.9595630929488866
@@ -350,8 +450,18 @@ Cosine simularity: 0.9312634352032335
 G_+ G_- = J_1^2 + J_2^2 - i [J_1, J_2]
 \]</span></p>
 <p>This simplifies to <span class="math inline">\(J^2 - J_3^2 \pm J_3\)</span>, where <span class="math inline">\(J^2\)</span> is the total angular momentum operator and <span class="math inline">\(J_3\)</span> is the projection operator. The exact form depends on the algebra of the generators.</p>
-<div class=".callout-note">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The raising and lowering operators shift the <span class="math inline">\(m\)</span> eigenvalue of the state <span class="math inline">\(|j, m\rangle\)</span> by <span class="math inline">\(\pm 1\)</span>, as seen in the earlier relations for <span class="math inline">\(J_\pm\)</span>.</p>
+</div>
 </div>
 <p>The full expression involves additional terms, but the key idea is that these operators modify the state’s projection while preserving the total angular momentum <span class="math inline">\(j\)</span>.</p>
 <!--
@@ -399,8 +509,18 @@ Cosine simularity: 0.9208392081155281
 <p>There is a connection to cleft coordinates, and we can extend this to other representations. To construct arbitrary representations in four dimensions, we use a method involving matrices analogous to the Pauli matrices (<span class="math inline">\(\sigma\)</span>).</p>
 <p>For example, in the case of <span class="math inline">\(D\)</span>, we define <span class="math inline">\(G_+\)</span> as the operator that raises the projection of a state. Its matrix elements in a four-dimensional basis (e.g., <span class="math inline">\(|0\rangle, |1\rangle, |3\rangle, |7\rangle\)</span>) are non-zero only at specific positions, say <span class="math inline">\(x_1, x_2, x_3\)</span>, with the rest being zero.</p>
 <p>The action of <span class="math inline">\(G_+\)</span> on a state corresponds to a four-dimensional representation with spin <span class="math inline">\(\frac{3}{2}\)</span>, since the number of components is <span class="math inline">\(2j + 1\)</span>. This implies <span class="math inline">\(j = \frac{3}{2}\)</span>.</p>
-<div class=".callout-note">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The raising and lowering operators in higher dimensions generalize the SU(2) ladder operators, with matrix elements determined by the representation’s dimension and spin.</p>
+</div>
 </div>
 <!--
 Cosine simularity: 0.8871944117249053
@@ -422,8 +542,18 @@ J_- = \begin{pmatrix}
 G_1 = \frac{G_+ + G_-}{2}, \quad G_2 = \frac{G_+ - G_-}{2i}
 \]</span></p>
 <p>Meanwhile, <span class="math inline">\(G_3\)</span> (or <span class="math inline">\(J_3\)</span>) is the diagonal matrix containing the eigenvalues of the spin projection.</p>
-<div class=".callout-note">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The dimension of the representation determines the spin <span class="math inline">\(j\)</span>. For example, a 95-dimensional representation corresponds to <span class="math inline">\(j = 47\)</span>, since <span class="math inline">\(2j + 1 = 95\)</span>.</p>
+</div>
 </div>
 <p>The diagonal entries of <span class="math inline">\(J_3\)</span> in this representation would be:</p>
 <p><span class="math display">\[
@@ -438,8 +568,18 @@ Cosine simularity: 0.9381459498385765
 <section id="constructing-arbitrary-representations-of-the-sc2-group" class="level2">
 <h2 class="anchored" data-anchor-id="constructing-arbitrary-representations-of-the-sc2-group">Constructing Arbitrary Representations of the SC2 Group</h2>
 <p>We have the generators <span class="math inline">\(G_1\)</span> and <span class="math inline">\(G_2\)</span>. The key step is to assign the exponents for arbitrary rotations, since the group element is given by <span class="math inline">\(e^{-i \alpha G}\)</span>.</p>
-<div class=".callout-note">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>This construction is typically done computationally rather than manually.</p>
+</div>
 </div>
 <p>The discussion so far covers how to construct arbitrary representations of the SC2 group. The group <span class="math inline">\(SU(2)\)</span> plays a central role in this process.</p>
 <!--
@@ -462,8 +602,18 @@ Cosine simularity: 0.9370039322332746
 <h2 class="anchored" data-anchor-id="discovery-and-controversy-of-the-6-icc-particle">Discovery and Controversy of the 6 ICC Particle</h2>
 <p>The particles discussed here have very similar masses and lifetimes, making them appear identical. The third particle is tentatively named <strong>6 ICC</strong>, while the upper state has a double charge (<span class="math inline">\(++\)</span>) and the lower state is singly charged (<span class="math inline">\(+5cc\)</span>).</p>
 <p>One experiment reported observing a signal resembling this particle, appearing as a “bump” in the data. However, the LHCb experiment did not confirm its presence at the expected mass. Instead, LHCb discovered another state, but its mass conflicted with previous measurements by about 40 MeV.</p>
-<div class=".callout-important">
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The discrepancy in mass measurements between experiments suggests unresolved systematic effects or a possible misidentification of the state.</p>
+</div>
 </div>
 <p>This inconsistency has made the 6 ICC particle a frequent topic of discussion at conferences.</p>
 <!--
@@ -487,8 +637,18 @@ Cosine simularity: 0.9019675771575024
 <p>Strong interactions conserve properties, meaning the interaction is blind to quark flavor. Whether a quark is present or not, the outcome is determined by strong interaction dynamics.</p>
 <p>If you analyze data and discover a new particle, it could make you a prominent figure in particle physics, as such findings often lead to multiple PhD projects. However, blind analysis complicates this process. Researchers define their study parameters—such as the reactions and mass window—but avoid looking at the target region until all selection criteria and procedures are optimized.</p>
 <p>Only after finalizing all analysis steps—fixing cuts, writing programs—do they “unblind” the mass range. Sometimes, despite extensive work, the unblinding reveals no signal, leaving PhD students disappointed.</p>
-<div class=".callout-note">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>Blind analysis prevents bias by delaying access to the signal region until the full analysis is finalized.</p>
+</div>
 </div>
 <p>The approximate quark masses are:</p>
 <p><span class="math display">\[
@@ -503,8 +663,18 @@ Cosine simularity: 0.8927716577164105
 <h2 class="anchored" data-anchor-id="understanding-quark-decay-channels-and-symmetry-in-qcd">Understanding Quark Decay Channels and Symmetry in QCD</h2>
 <p>In our analysis, we pressed the button to unblind the data, but unfortunately, no signal was observed. This suggests we may not have picked the right configuration yet. The particle in question decays into many different channels, and our current statistical limitations prevent us from observing it in rare decay modes.</p>
 <p>Strong interactions are flavor-blind—they do not distinguish between a <span class="math inline">\(u\)</span> quark, <span class="math inline">\(d\)</span> quark, or any other flavor. If you examine the particle data group (PDG) listings, you’ll find that the mass difference between the <span class="math inline">\(u\)</span> and <span class="math inline">\(d\)</span> quarks is around <span class="math inline">\(3 \ \text{MeV}\)</span>.</p>
-<div class=".callout-note">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>These are the current quark masses—the values you input into the Lagrangian before gluon condensation and dynamical mass generation.</p>
+</div>
 </div>
 <p>For strong interactions, what matters is that these quarks have nearly identical masses. This leads to an approximate symmetry in QCD, where the group permuting <span class="math inline">\(u\)</span> and <span class="math inline">\(d\)</span> quarks is almost exact.</p>
 <!--
@@ -515,8 +685,18 @@ Cosine simularity: 0.9270547622741692
 <h2 class="anchored" data-anchor-id="symmetry-breaking-and-mass-terms-in-qcd-lagrangian">Symmetry Breaking and Mass Terms in QCD Lagrangian</h2>
 <p>The symmetries of the QCD Lagrangian include a term for the gluons and a term for the quarks. The quark term, the Dirac term, contains a mass parameter. If the quark masses are not identical, this mass term breaks the symmetry. For the <span class="math inline">\(u\)</span> and <span class="math inline">\(d\)</span> quarks, the masses are nearly the same, so the symmetry is not broken by the mass term, making it a good symmetry.</p>
 <p>The mass of the <span class="math inline">\(s\)</span> quark, however, is around <span class="math inline">\(100 \ \text{MeV}\)</span>, which breaks the symmetry. This leads to an approximate <span class="math inline">\(SU(3)\)</span> flavor symmetry, corresponding to the <span class="math inline">\(u\)</span>, <span class="math inline">\(d\)</span>, and <span class="math inline">\(s\)</span> quarks.</p>
-<div class=".callout-note">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The <span class="math inline">\(u\)</span> and <span class="math inline">\(d\)</span> quark mass difference is about <span class="math inline">\(3 \ \text{MeV}\)</span>, which is negligible for strong interactions, preserving the approximate symmetry.</p>
+</div>
 </div>
 <p>The symmetry breaking due to mass differences is a key feature of the QCD Lagrangian.</p>
 <!--
@@ -527,8 +707,18 @@ Cosine simularity: 0.9106136576470412
 <h2 class="anchored" data-anchor-id="introduction-to-isospin-and-cascade-particle">Introduction to Isospin and Cascade Particle</h2>
 <p>We can approximate the <span class="math inline">\(SU(2)\)</span> flavor group, where <span class="math inline">\(u\)</span> and <span class="math inline">\(d\)</span> quarks are treated as the same particle in the isospin wave function. A rotation in this space is a good symmetry.</p>
 <p>The cascade particle (historically named due to its decay pattern) is represented as a single particle in our consideration with respect to the strong interaction.</p>
-<div class=".callout-note">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The correct pronunciation is difficult for non-Greek speakers, so it is commonly referred to as “cascade.”</p>
+</div>
 </div>
 <p>In this framework, the cascade particle is treated as a state within the isospin symmetry, where <span class="math inline">\(u\)</span> and <span class="math inline">\(d\)</span> quarks are indistinguishable under strong interactions.</p>
 <!--
@@ -542,8 +732,18 @@ Cosine simularity: 0.9343637484193199
 U = e^{-i \alpha G}
 \]</span></p>
 <p>Here, <span class="math inline">\(G\)</span> represents the generator of the group.</p>
-<div class=".callout-note">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The charge of the group can be determined by applying the equation for the charge, which clarifies the role of isospin.</p>
+</div>
 </div>
 <p>Isospin behaves analogously to spin:<br>
 - A doublet (two-component representation) corresponds to isospin <span class="math inline">\(1/2\)</span>.<br>
@@ -600,12 +800,32 @@ j_1 \otimes j_2 = |j_1 - j_2| \oplus \cdots \oplus (j_1 + j_2)
 <p><span class="math display">\[
 \text{Dim: } 3 + 5 + 7 + 9 + 11
 \]</span></p>
-<div class=".callout-important">
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The dimensions on the left and right must match. For spin <span class="math inline">\(3\)</span> (dimension <span class="math inline">\(7\)</span>) and spin <span class="math inline">\(2\)</span> (dimension <span class="math inline">\(5\)</span>), the total dimension is <span class="math inline">\(7 \times 5 = 35\)</span>. On the right, the sum of dimensions is <span class="math inline">\(3 + 5 + 7 + 9 + 11 = 35\)</span>. This consistency is a crucial check when combining spins.</p>
 </div>
+</div>
 <p>The basis in this space can be thought of as unit vectors in each dimension. For example, a <span class="math inline">\(35\)</span>-dimensional vector has blocks corresponding to the different spin sectors: <span class="math inline">\(3, 5, 7, 9, 11\)</span>.</p>
-<div class=".callout-note">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>Group theory tells us that these blocks do not mix under rotations. A matrix acting on this <span class="math inline">\(35\)</span>-dimensional space will only rotate components within each block, not between them. This is the essence of irreducible representations.</p>
+</div>
 </div>
 <p>If a system has a total spin of <span class="math inline">\(3\)</span>, no rotation can change it to <span class="math inline">\(4\)</span>. This is a fundamental property: under rotations, the total spin is preserved. Mathematically, this means the interaction matrix is block-diagonal, with no mixing between different spin sectors.</p>
 <p>Now that we understand how to combine spins, we can apply this to practical examples. The key takeaway is that the dimensions must align, and the resulting representations decompose into independent blocks corresponding to each possible total spin.</p>
@@ -617,8 +837,18 @@ Cosine simularity: 0.9605135048931919
 <h2 class="anchored" data-anchor-id="introduction-to-isospin-and-spin-in-particle-physics">Introduction to Isospin and Spin in Particle Physics</h2>
 <p>Before doing a few practical combinations, let’s quickly introduce charge conjugation. It should be clear that what we discussed about spin applies equally to isospin. In particle physics, you often deal with both, and one shouldn’t mix them up.</p>
 <p>We use isospin when constructing the quark wave function, while spin is used when combining particles to understand angular dependence. The rotational group has the same algebra and methods for both—just remember whether you’re working with flavor <span class="math inline">\(SU(2)\)</span> (isospin) or the Lorentz part (spin).</p>
-<div class=".callout-important">
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The key distinction is the context: isospin deals with flavor symmetry, while spin describes angular momentum. The mathematical framework is identical, but their physical interpretations differ.</p>
+</div>
 </div>
 <!--
 Cosine simularity: 0.934302020469882
@@ -636,8 +866,18 @@ Cosine simularity: 0.934302020469882
 <p><span class="math display">\[
 \hat{C} | \psi \rangle = \pm | \psi \rangle
 \]</span></p>
-<div class=".callout-important">
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The key distinction between spin and isospin lies in their physical interpretation—spin describes angular momentum, while isospin deals with flavor symmetry. The mathematical framework (rotational <span class="math inline">\(SU(2)\)</span>) is identical for both.</p>
+</div>
 </div>
 <!--
 Cosine simularity: 0.8916620059184868
@@ -652,8 +892,18 @@ Cosine simularity: 0.8916620059184868
 \]</span></p>
 <p>Its quantum numbers are <span class="math inline">\(J^{PC} = 0^{-+}\)</span> and isospin <span class="math inline">\(I = 1\)</span>. The Particle Data Group provides comprehensive listings of these quantum numbers.</p>
 <p>For charged pions (<span class="math inline">\(\pi^+\)</span>, <span class="math inline">\(\pi^-\)</span>), charge conjugation is still assigned as positive, even though they are not eigenstates of <span class="math inline">\(\hat{C}\)</span> — acting with <span class="math inline">\(\hat{C}\)</span> on <span class="math inline">\(\pi^+\)</span> yields <span class="math inline">\(\pi^-\)</span>. The convention is derived from the neutral member of the multiplet.</p>
-<div class=".callout-important">
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The charge conjugation operator is well-defined only for neutral particles or particle-antiparticle systems. For charged particles, it maps the state to its antiparticle, not an eigenstate.</p>
+</div>
 </div>
 <!--
 Cosine simularity: 0.9471541205068776
@@ -666,8 +916,18 @@ Cosine simularity: 0.9471541205068776
 1. <strong>Total spin <span class="math inline">\(J\)</span></strong>: Compute it using spin algebra (vector addition of spins).<br>
 2. <strong>Parity <span class="math inline">\(P\)</span></strong>: It is multiplicative, given by <span class="math inline">\((-1)^L\)</span>, where <span class="math inline">\(L\)</span> is the orbital angular momentum.<br>
 3. <strong>Charge conjugation <span class="math inline">\(C\)</span></strong>: Also multiplicative, derived from the product of individual <span class="math inline">\(C\)</span> eigenvalues.</p>
-<div class=".callout-important">
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The factor <span class="math inline">\((-1)^L\)</span> arises from the parity transformation of the spatial wavefunction under coordinate inversion.</p>
+</div>
 </div>
 <p>For example, combining two particles with <span class="math inline">\(L = 1\)</span> yields a parity of <span class="math inline">\(-1\)</span>. This is a crucial skill for determining possible spin-parity combinations in particle systems.</p>
 <!--
@@ -677,8 +937,18 @@ Cosine simularity: 0.9423803255151243
 <section id="charge-conjugation-and-spin-combinations-for-fermions" class="level2">
 <h2 class="anchored" data-anchor-id="charge-conjugation-and-spin-combinations-for-fermions">Charge Conjugation and Spin Combinations for Fermions</h2>
 <p>For unequivocal fermions, charge conjugation does not apply, so we consider only spin (<span class="math inline">\(j\)</span>) and parity (<span class="math inline">\(p\)</span>). When combining two particles, we start with orbital angular momentum <span class="math inline">\(L = 0\)</span> and focus on spin and charge combinations.</p>
-<div class=".callout-important">
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The total spin <span class="math inline">\(J\)</span> is determined by vector addition of individual spins, while parity <span class="math inline">\(P\)</span> is multiplicative and given by <span class="math inline">\((-1)^L\)</span>.</p>
+</div>
 </div>
 <p>For example, combining two particles with <span class="math inline">\(L = 0\)</span> simplifies the analysis to pure spin combinations.</p>
 <!--
@@ -688,8 +958,18 @@ Cosine simularity: 0.9185823663422268
 <section id="excitation-spectrum-and-quark-model-in-lambda-baryons" class="level2">
 <h2 class="anchored" data-anchor-id="excitation-spectrum-and-quark-model-in-lambda-baryons">Excitation Spectrum and Quark Model in Lambda Baryons</h2>
 <p>When the orbital angular momentum <span class="math inline">\(L = 0\)</span>, we combine spin and charge multiplicatively. Starting with spin <span class="math inline">\(1/2\)</span> and adding 0, the result remains <span class="math inline">\(1/2\)</span>.</p>
-<div class=".callout-important">
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The charge part is multiplicative, not additive.</p>
+</div>
 </div>
 <p>For the first row, we add 1 unit of angular momentum (<span class="math inline">\(\Delta L = 1\)</span>), resulting in states with <span class="math inline">\(J = 1/2\)</span> and <span class="math inline">\(J = 3/2\)</span>. The second row follows by adding 2 units, with the parent state determined by the rule <span class="math inline">\(1N + 1\)</span>.</p>
 <p>For example, starting from <span class="math inline">\(L = 0\)</span>, the excitation spectrum for <span class="math inline">\(\Lambda_c^+\)</span> includes states with negative parity, such as <span class="math inline">\(J^P = 1/2^-\)</span> and <span class="math inline">\(3/2^-\)</span>.</p>
@@ -703,8 +983,18 @@ Cosine simularity: 0.9590870865610963
 <p>In the quark model, we consider heavy quarks where gluons have all condensed. The quarks are heavy, and among them is the charm quark, which is not part of our symmetry.</p>
 <p>From the flavor considerations of the group, the quarks can be in isospin <span class="math inline">\(I = 1\)</span> or <span class="math inline">\(I = 0\)</span>. This is how we combine the isospin, which is the flavor part of the group. There is a symmetry that holds for variance, but since the quarks are the same particle, they must be in a symmetric combination.</p>
 <p>If they are in isospin <span class="math inline">\(I = 0\)</span>, they are arranged antisymmetrically. For example, isospin zero introduces a minus sign, so the spin combination must also be in spin <span class="math inline">\(S = 0\)</span> to ensure overall antisymmetry.</p>
-<div class=".callout-important">
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The overall wave function for the baryon must be antisymmetric.</p>
+</div>
 </div>
 <p>The color wave function contributes a minus sign, and the spin wave functions must correspond to spin <span class="math inline">\(S = 0\)</span> for the <span class="math inline">\(u\)</span> and <span class="math inline">\(d\)</span> quarks. For the <span class="math inline">\(S\)</span>-wave, the spatial part is symmetric, but a minus sign is still missing in the overall antisymmetry condition.</p>
 <p>The isospin wave function is determined, and the spin wave functions must align with the spin-zero state of the <span class="math inline">\(u\)</span> and <span class="math inline">\(d\)</span> quarks.</p>
@@ -716,12 +1006,32 @@ Cosine simularity: 0.9414475513716338
 <h2 class="anchored" data-anchor-id="excitation-spectrum-of-baryons-and-lambda-particles">Excitation Spectrum of Baryons and Lambda Particles</h2>
 <p>The spin wave functions correspond to the spin-zero state of the <span class="math inline">\(u\)</span> and <span class="math inline">\(d\)</span> quarks. Now we can consider how this baryon is excited. We discussed already that one way of making different particles is to interchange <span class="math inline">\(u\)</span> and <span class="math inline">\(d\)</span> quarks. However, since it is isospin zero, there are no other particles in this multiplet — it is only one <span class="math inline">\(\Lambda_c\)</span>.</p>
 <p>The other way to make different particles is to excite the system. You can excite it radially, like the hydrogen atom, to make the object larger. Recall the hydrogen atom, where the principal quantum number <span class="math inline">\(n\)</span> determines the size of the system, essentially describing the electron’s orbitals. The same applies to <span class="math inline">\(\Lambda_c\)</span>: you can have <span class="math inline">\(1s\)</span>, <span class="math inline">\(2s\)</span>, and so on. The ground state is <span class="math inline">\(\Lambda_c\)</span>, and the next excited state would be a larger <span class="math inline">\(\Lambda_c\)</span>, which we might call <span class="math inline">\(\Lambda_c^{**}\)</span>.</p>
-<div class=".callout-note">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The <span class="math inline">\(\Lambda_c^{**}\)</span> state has been observed experimentally and is relatively broad.</p>
 </div>
+</div>
 <p>You can also excite the system orbitally by introducing angular momentum between, for example, the <span class="math inline">\(u\)</span>-<span class="math inline">\(d\)</span> quark pair and the heavy quark (the charm quark in <span class="math inline">\(\Lambda_c\)</span>). This corresponds to <span class="math inline">\(P\)</span>-wave states, labeled as <span class="math inline">\(P_{1/2}\)</span> and <span class="math inline">\(P_{3/2}\)</span>. The quantum numbers of these states have been experimentally determined.</p>
-<div class=".callout-important">
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>When we excite the system, we obtain different particles. The Particle Data Group (PDG) lists around seven different <span class="math inline">\(\Lambda_c\)</span> states discovered in experiments: the ground state, two radial excitations, two orbital excitations, and one higher-energy state whose multiplet assignment is still uncertain.</p>
+</div>
 </div>
 <p>These states, although listed as distinct particles, are essentially excitations of the ground-state <span class="math inline">\(\Lambda_c\)</span>. Understanding how to construct this spectrum is crucial.</p>
 <!--
@@ -736,12 +1046,32 @@ Cosine simularity: 0.936360389967747
 - Particle <span class="math inline">\(B\)</span> is a vector meson with <span class="math inline">\(1^-\)</span>.<br>
 - Particle <span class="math inline">\(C\)</span> has <span class="math inline">\(2^-\)</span>.</p>
 <p>The decay occurs in the rest frame of <span class="math inline">\(A\)</span>, with particles <span class="math inline">\(B\)</span> and <span class="math inline">\(C\)</span> emitted in opposite directions at an angle. The question is: <em>What is the orbital angular momentum in this decay?</em></p>
-<div class=".callout-note">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>If the decay proceeds via an <span class="math inline">\(S\)</span>-wave (<span class="math inline">\(L = 0\)</span>), the possible <span class="math inline">\(J^P\)</span> is only <span class="math inline">\(1^-\)</span>. In a <span class="math inline">\(P\)</span>-wave, the parity would be positive, and a <span class="math inline">\(D\)</span>-wave is required to reach <span class="math inline">\(2^-\)</span>.</p>
 </div>
+</div>
 <p>Thus, in this decay, the partial wave must be a <span class="math inline">\(D\)</span>-wave due to the quantum number constraints.</p>
-<div class=".callout-important">
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>Mastering this table construction is a crucial skill for analyzing particle decays. We will practice this further to solidify understanding.</p>
+</div>
 </div>
 <!--
 Cosine simularity: 0.92744607720623
@@ -750,12 +1080,32 @@ Cosine simularity: 0.92744607720623
 <section id="hydrogen-atom-excitation-spectrum-in-a-magnetic-field" class="level2">
 <h2 class="anchored" data-anchor-id="hydrogen-atom-excitation-spectrum-in-a-magnetic-field">Hydrogen Atom Excitation Spectrum in a Magnetic Field</h2>
 <p>Let’s consider a hydrogen atom placed in a strong magnetic field. The problem is to determine the excitation spectrum for states with principal quantum number <span class="math inline">\(n &lt; 3\)</span>. Specifically, we examine the <span class="math inline">\(1s\)</span>, <span class="math inline">\(2s\)</span>, <span class="math inline">\(2p\)</span>, <span class="math inline">\(3s\)</span>, and <span class="math inline">\(3d\)</span> levels, but neglect the <span class="math inline">\(f\)</span>-wave (<span class="math inline">\(L \geq 3\)</span>) since <span class="math inline">\(L\)</span> must be less than <span class="math inline">\(n\)</span> in a hydrogen atom.</p>
-<div class=".callout-note">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>For a hydrogen atom, the orbital angular momentum quantum number <span class="math inline">\(L\)</span> satisfies <span class="math inline">\(L &lt; n\)</span>, where <span class="math inline">\(n\)</span> is the principal quantum number. This restricts the possible states, such as excluding <span class="math inline">\(f\)</span>-waves for <span class="math inline">\(n &lt; 4\)</span>.</p>
 </div>
+</div>
 <p>We also neglect the spin of both the proton and the electron for simplicity. The task is to draw the energy spectrum of these states under the influence of the magnetic field.</p>
-<div class=".callout-important">
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The Zeeman effect splits the energy levels in a magnetic field. For states with <span class="math inline">\(L \geq 1\)</span>, the degeneracy is lifted, and each level splits into <span class="math inline">\(2L + 1\)</span> sublevels.</p>
+</div>
 </div>
 <p>This problem serves as a good exercise to understand how quantum states behave in external fields. We will focus on the <span class="math inline">\(s\)</span>, <span class="math inline">\(p\)</span>, and <span class="math inline">\(d\)</span> orbitals up to <span class="math inline">\(n = 3\)</span>, ensuring no <span class="math inline">\(f\)</span>-waves are included.</p>
 <!--
@@ -774,8 +1124,18 @@ Cosine simularity: 0.9233675677468438
 <h2 class="anchored" data-anchor-id="attendance-check-and-student-interaction">Attendance Check and Student Interaction</h2>
 <p>If you have any suggestions, I’m open to them. You can also whisper them anonymously to Ilya and R.<br>
 Did anyone notice if other students from the class didn’t show up today? I would then give a reminder.</p>
-<div class=".callout-note">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>Anonymous feedback can be shared with Ilya or R for discretion.</p>
+</div>
 </div>
 <p>Okay, let’s proceed. Hi, John. Is everything all right? Yes.</p>
 <!--
@@ -787,8 +1147,18 @@ Cosine simularity: 0.8926993883024781
 <p>Do you expect anyone else to find the problems difficult? At some point, I think yes. He found last week’s problems too easy, so we should increase the difficulty.</p>
 <p>How was the homework problem level? Have you seen these problems before? In particle physics, some problems appear multiple times across different courses — first in nuclear physics, then in particle physics, and later in quantum field theory.</p>
 <p>For example, Clebsch-Gordan coefficients are encountered repeatedly because they are essential.</p>
-<div class=".callout-note">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>Clebsch-Gordan coefficients (<span class="math inline">\(C^{j_1 j_2 j}_{m_1 m_2 m}\)</span>) describe the coupling of angular momenta in quantum mechanics.</p>
+</div>
 </div>
 <p>They will be part of this week’s homework, and I hope you won’t have trouble with them.</p>
 </section>

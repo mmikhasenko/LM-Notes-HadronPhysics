@@ -32,7 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="Lecture-11_files/libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="Lecture-11_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="Lecture-11_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="Lecture-11_files/libs/bootstrap/bootstrap-1a748f8c722605f92e8ac4935e2e75ca.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="Lecture-11_files/libs/bootstrap/bootstrap-feb7be27843f6a580260d43995a4e15a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -100,22 +100,32 @@ Cosine simularity: 0.9082813418250815
 </section>
 <section id="mapping-scattering-amplitudes-from-s-plane-to-k-plane" class="level2">
 <h2 class="anchored" data-anchor-id="mapping-scattering-amplitudes-from-s-plane-to-k-plane">Mapping Scattering Amplitudes from S-Plane to K-Plane</h2>
-<p>We have discussed a lot about amplitude, which is a function of <span class="math inline">\(`S`\)</span>. <span class="math inline">\(`S`\)</span> is the Mandelstam variable, calculated as <span class="math inline">\(`(P_1 + P_2)^2`\)</span> for the scattering process. This <span class="math inline">\(`S`\)</span> is a convenient variable to describe the scattering amplitude, where the partial wave amplitude <span class="math inline">\(`f`\)</span> is a function of this single variable.</p>
-<p>Equivalently, one can consider the breakup momentum variable <span class="math inline">\(`K`\)</span>, which represents the momentum carried by each particle. Here, <span class="math inline">\(`S`\)</span> is the squared energy of the system in the center-of-mass frame, while <span class="math inline">\(`K`\)</span> is the momentum of each particle in the same frame. The relationship between <span class="math inline">\(`S`\)</span> and <span class="math inline">\(`K`\)</span> is given by the channeling function, and the analytic structure of the amplitude is simpler in terms of <span class="math inline">\(`K`\)</span> near the threshold.</p>
-<p>Instead of working in the <span class="math inline">\(`S`\)</span>-plane, where the amplitude is analytic except for a few singularities, we now examine the <span class="math inline">\(`K`\)</span>-plane and relate the structures between the two planes. Specifically, we map the following points from the <span class="math inline">\(`S`\)</span>-plane to the <span class="math inline">\(`K`\)</span>-plane:</p>
+<p>We have discussed a lot about amplitude, which is a function of <span class="math inline">\(S\)</span>. <span class="math inline">\(S\)</span> is the Mandelstam variable, calculated as <span class="math inline">\((P_1 + P_2)^2\)</span> for the scattering process. This <span class="math inline">\(S\)</span> is a convenient variable to describe the scattering amplitude, where the partial wave amplitude <span class="math inline">\(f\)</span> is a function of this single variable.</p>
+<p>Equivalently, one can consider the breakup momentum variable <span class="math inline">\(K\)</span>, which represents the momentum carried by each particle. Here, <span class="math inline">\(S\)</span> is the squared energy of the system in the center-of-mass frame, while <span class="math inline">\(K\)</span> is the momentum of each particle in the same frame. The relationship between <span class="math inline">\(S\)</span> and <span class="math inline">\(K\)</span> is given by the channeling function, and the analytic structure of the amplitude is simpler in terms of <span class="math inline">\(K\)</span> near the threshold.</p>
+<p>Instead of working in the <span class="math inline">\(S\)</span>-plane, where the amplitude is analytic except for a few singularities, we now examine the <span class="math inline">\(K\)</span>-plane and relate the structures between the two planes. Specifically, we map the following points from the <span class="math inline">\(S\)</span>-plane to the <span class="math inline">\(K\)</span>-plane:</p>
 <ol type="1">
-<li>Points 1 and 2: Resonances located on the second Riemann sheet with respect to the threshold in <span class="math inline">\(`S`\)</span>.<br>
+<li>Points 1 and 2: Resonances located on the second Riemann sheet with respect to the threshold in <span class="math inline">\(S\)</span>.<br>
 </li>
 <li>Point 3: A pole on the real axis in the first Riemann sheet, corresponding to a bound state.<br>
 </li>
 <li>Point 4: A virtual state, residing on the unphysical sheet below the threshold.</li>
 </ol>
-<p>The goal is to understand how these singularities and structures translate when mapped from the <span class="math inline">\(`S`\)</span>-plane to the <span class="math inline">\(`K`\)</span>-plane.</p>
+<p>The goal is to understand how these singularities and structures translate when mapped from the <span class="math inline">\(S\)</span>-plane to the <span class="math inline">\(K\)</span>-plane.</p>
 <p><span class="math display">\[
 S = 4(K^2 + m^2)
-\]</span> where <span class="math inline">\(`m`\)</span> is the mass of the particle. This relation highlights the connection between the energy (<span class="math inline">\(`S`\)</span>) and the breakup momentum (<span class="math inline">\(`K`\)</span>).</p>
-<div class=".callout-note">
-<p>The <span class="math inline">\(`K`\)</span>-plane simplifies the analysis near thresholds, making it useful for studying bound states, resonances, and virtual states in scattering amplitudes.</p>
+\]</span> where <span class="math inline">\(m\)</span> is the mass of the particle. This relation highlights the connection between the energy (<span class="math inline">\(S\)</span>) and the breakup momentum (<span class="math inline">\(K\)</span>).</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The <span class="math inline">\(K\)</span>-plane simplifies the analysis near thresholds, making it useful for studying bound states, resonances, and virtual states in scattering amplitudes.</p>
+</div>
 </div>
 <!--
 Cosine simularity: 0.8980450598898875
@@ -123,17 +133,27 @@ Cosine simularity: 0.8980450598898875
 </section>
 <section id="understanding-the-mapping-of-real-axis-and-threshold-in-k-plane" class="level2">
 <h2 class="anchored" data-anchor-id="understanding-the-mapping-of-real-axis-and-threshold-in-k-plane">Understanding the Mapping of Real Axis and Threshold in K-Plane</h2>
-<p>The real axis in the <span class="math inline">\(`S`\)</span>-plane gets mapped to the <span class="math inline">\(`K`\)</span>-plane as well. It is easier to start by mapping the real axis first and then determine the positions of other features relative to it.</p>
-<p>The real axis above the threshold corresponds to a physical region, and this physical region is preserved when mapped to the <span class="math inline">\(`K`\)</span>-plane. The point where <span class="math inline">\(`S = 0`\)</span> corresponds to the threshold in the <span class="math inline">\(`K`\)</span>-plane. Below the threshold, when <span class="math inline">\(`S`\)</span> is smaller than the threshold value, the square root of <span class="math inline">\(`S`\)</span> becomes imaginary, meaning <span class="math inline">\(`K`\)</span> is also imaginary.</p>
-<p>The other square root term (from the breakup momentum function) does not change sign when crossing the threshold. This term remains negative, so it does not introduce any additional complications near the threshold. However, there is a branch point somewhere between zero and the threshold on the real axis in the <span class="math inline">\(`K`\)</span>-plane.</p>
-<p>The region close to zero in the <span class="math inline">\(`K`\)</span>-plane is more complicated due to this branch point, but the focus here is on the behavior near the threshold. The key observation is that the physical region in the <span class="math inline">\(`S`\)</span>-plane maps directly to the physical region in the <span class="math inline">\(`K`\)</span>-plane, while non-physical regions (below threshold) map to imaginary values in the <span class="math inline">\(`K`\)</span>-plane.</p>
-<p>The mapping simplifies the analysis of scattering amplitudes, particularly near thresholds, by transforming the <span class="math inline">\(`S`\)</span>-plane structure into a more tractable form in the <span class="math inline">\(`K`\)</span>-plane. The relationship between <span class="math inline">\(`S`\)</span> and <span class="math inline">\(`K`\)</span> is given by:</p>
+<p>The real axis in the <span class="math inline">\(S\)</span>-plane gets mapped to the <span class="math inline">\(K\)</span>-plane as well. It is easier to start by mapping the real axis first and then determine the positions of other features relative to it.</p>
+<p>The real axis above the threshold corresponds to a physical region, and this physical region is preserved when mapped to the <span class="math inline">\(K\)</span>-plane. The point where <span class="math inline">\(S = 0\)</span> corresponds to the threshold in the <span class="math inline">\(K\)</span>-plane. Below the threshold, when <span class="math inline">\(S\)</span> is smaller than the threshold value, the square root of <span class="math inline">\(S\)</span> becomes imaginary, meaning <span class="math inline">\(K\)</span> is also imaginary.</p>
+<p>The other square root term (from the breakup momentum function) does not change sign when crossing the threshold. This term remains negative, so it does not introduce any additional complications near the threshold. However, there is a branch point somewhere between zero and the threshold on the real axis in the <span class="math inline">\(K\)</span>-plane.</p>
+<p>The region close to zero in the <span class="math inline">\(K\)</span>-plane is more complicated due to this branch point, but the focus here is on the behavior near the threshold. The key observation is that the physical region in the <span class="math inline">\(S\)</span>-plane maps directly to the physical region in the <span class="math inline">\(K\)</span>-plane, while non-physical regions (below threshold) map to imaginary values in the <span class="math inline">\(K\)</span>-plane.</p>
+<p>The mapping simplifies the analysis of scattering amplitudes, particularly near thresholds, by transforming the <span class="math inline">\(S\)</span>-plane structure into a more tractable form in the <span class="math inline">\(K\)</span>-plane. The relationship between <span class="math inline">\(S\)</span> and <span class="math inline">\(K\)</span> is given by:</p>
 <p><span class="math display">\[
 S = 4(K^2 + m^2)
 \]</span></p>
-<p>where <span class="math inline">\(`m`\)</span> is the mass of the particle. This equation connects the energy variable <span class="math inline">\(`S`\)</span> to the breakup momentum <span class="math inline">\(`K`\)</span>, making it easier to study bound states, resonances, and virtual states in the <span class="math inline">\(`K`\)</span>-plane.</p>
-<div class=".callout-note">
-<p>The <span class="math inline">\(`K`\)</span>-plane provides a clearer representation of the analytic structure near thresholds, particularly for distinguishing physical and non-physical regions.</p>
+<p>where <span class="math inline">\(m\)</span> is the mass of the particle. This equation connects the energy variable <span class="math inline">\(S\)</span> to the breakup momentum <span class="math inline">\(K\)</span>, making it easier to study bound states, resonances, and virtual states in the <span class="math inline">\(K\)</span>-plane.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The <span class="math inline">\(K\)</span>-plane provides a clearer representation of the analytic structure near thresholds, particularly for distinguishing physical and non-physical regions.</p>
+</div>
 </div>
 <!--
 Cosine simularity: 0.9264734071291089
@@ -143,40 +163,60 @@ Cosine simularity: 0.9264734071291089
 <h2 class="anchored" data-anchor-id="riemann-sheets-and-analytic-structure-in-the-k-plane">Riemann Sheets and Analytic Structure in the K-Plane</h2>
 <p>I want to look at the function nearest threshold. What happens is really interesting. If you continue that, you would have another real part—somehow it flips back to the real axis. The dashed line would just come back to the real axis somehow.</p>
 <p>Number four is straightforward—we just add the dashed line, so it ends up here. For number three, the negative part of the… my intuition suggested it might need to be there because it’s on another Riemann sheet. We just stay there, but how do you realize that?</p>
-<p>The value of <span class="math inline">\(`S`\)</span> is positive—or rather, real below threshold—but on the other sheet. When you put <span class="math inline">\(`S`\)</span> below threshold here, the sheets are related to the <span class="math inline">\(`\pm`\)</span> sign. That’s where the sheet comes from. Being on the first sheet means the <span class="math inline">\(`+`\)</span> sign, and being on the second sheet means the <span class="math inline">\(`-`\)</span> sign.</p>
-<p>But also, the square root for <span class="math inline">\(`S`\)</span> matters here because these are sheets for <span class="math inline">\(`S`\)</span>. On the <span class="math inline">\(`K`\)</span>-plane, <span class="math inline">\(`S`\)</span> does not change sign, but the square root changes sign. So <span class="math inline">\(`S`\)</span> here and <span class="math inline">\(`S`\)</span> here are the same, but when you map it, you have either <span class="math inline">\(`+`\)</span> or <span class="math inline">\(`-`\)</span>. This tells you that both sheets get mapped to the same <span class="math inline">\(`K`\)</span>-plane—it’s just <span class="math inline">\(`+`\)</span> or <span class="math inline">\(`-`\)</span>.</p>
+<p>The value of <span class="math inline">\(S\)</span> is positive—or rather, real below threshold—but on the other sheet. When you put <span class="math inline">\(S\)</span> below threshold here, the sheets are related to the <span class="math inline">\(\pm\)</span> sign. That’s where the sheet comes from. Being on the first sheet means the <span class="math inline">\(+\)</span> sign, and being on the second sheet means the <span class="math inline">\(-\)</span> sign.</p>
+<p>But also, the square root for <span class="math inline">\(S\)</span> matters here because these are sheets for <span class="math inline">\(S\)</span>. On the <span class="math inline">\(K\)</span>-plane, <span class="math inline">\(S\)</span> does not change sign, but the square root changes sign. So <span class="math inline">\(S\)</span> here and <span class="math inline">\(S\)</span> here are the same, but when you map it, you have either <span class="math inline">\(+\)</span> or <span class="math inline">\(-\)</span>. This tells you that both sheets get mapped to the same <span class="math inline">\(K\)</span>-plane—it’s just <span class="math inline">\(+\)</span> or <span class="math inline">\(-\)</span>.</p>
 <p>Numbers 3 and 4, as well as 2 and 1, are rather easy. Essentially, everything is connected analytically.</p>
-<div class=".callout-note">
-<p>The Riemann sheets in the <span class="math inline">\(`S`\)</span>-plane correspond to different signs of the square root when mapped to the <span class="math inline">\(`K`\)</span>-plane, but the underlying <span class="math inline">\(`S`\)</span> values remain the same.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<p>The relationship between <span class="math inline">\(`S`\)</span> and <span class="math inline">\(`K`\)</span> is given by:</p>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The Riemann sheets in the <span class="math inline">\(S\)</span>-plane correspond to different signs of the square root when mapped to the <span class="math inline">\(K\)</span>-plane, but the underlying <span class="math inline">\(S\)</span> values remain the same.</p>
+</div>
+</div>
+<p>The relationship between <span class="math inline">\(S\)</span> and <span class="math inline">\(K\)</span> is given by:</p>
 <p><span class="math display">\[
 S = 4(K^2 + m^2)  
 \]</span></p>
-<p>where <span class="math inline">\(`m`\)</span> is the mass of the particle. This connects the energy variable <span class="math inline">\(`S`\)</span> to the breakup momentum <span class="math inline">\(`K`\)</span>, clarifying the analytic structure near thresholds.</p>
+<p>where <span class="math inline">\(m\)</span> is the mass of the particle. This connects the energy variable <span class="math inline">\(S\)</span> to the breakup momentum <span class="math inline">\(K\)</span>, clarifying the analytic structure near thresholds.</p>
 <!--
 Cosine simularity: 0.8805748676768943
 -->
 </section>
 <section id="complex-plane-transformations-and-riemann-sheets" class="level2">
 <h2 class="anchored" data-anchor-id="complex-plane-transformations-and-riemann-sheets">Complex Plane Transformations and Riemann Sheets</h2>
-<p>The transformations between the <span class="math inline">\(`S`\)</span>-plane and <span class="math inline">\(`K`\)</span>-plane are analytically connected. You can visualize this by drawing lines or curves, such as half-circles, that do not intersect the real axis (the dashed line). The exact shape (circle, bicircle, or deformed curve) does not matter as long as the mapping remains analytic.</p>
-<p>The <span class="math inline">\(`K`\)</span>-plane is simply a reparametrization of the <span class="math inline">\(`S`\)</span>-plane. For momentum space (<span class="math inline">\(`K`\)</span>-plane), there is no square root because <span class="math inline">\(`K`\)</span> itself is the square root of <span class="math inline">\(`S`\)</span>. A function with a square root has two Riemann sheets, but when expressed in terms of <span class="math inline">\(`K`\)</span>, it simplifies to a single-sheeted analytic structure. The two-sheeted nature arises from the <span class="math inline">\(`\pm`\)</span> sign in front of the square root, which is already embedded in the <span class="math inline">\(`K`\)</span>-plane.</p>
+<p>The transformations between the <span class="math inline">\(S\)</span>-plane and <span class="math inline">\(K\)</span>-plane are analytically connected. You can visualize this by drawing lines or curves, such as half-circles, that do not intersect the real axis (the dashed line). The exact shape (circle, bicircle, or deformed curve) does not matter as long as the mapping remains analytic.</p>
+<p>The <span class="math inline">\(K\)</span>-plane is simply a reparametrization of the <span class="math inline">\(S\)</span>-plane. For momentum space (<span class="math inline">\(K\)</span>-plane), there is no square root because <span class="math inline">\(K\)</span> itself is the square root of <span class="math inline">\(S\)</span>. A function with a square root has two Riemann sheets, but when expressed in terms of <span class="math inline">\(K\)</span>, it simplifies to a single-sheeted analytic structure. The two-sheeted nature arises from the <span class="math inline">\(\pm\)</span> sign in front of the square root, which is already embedded in the <span class="math inline">\(K\)</span>-plane.</p>
 <p>The mapping is given by the squaring operation:</p>
 <p><span class="math display">\[
 S = K^2
 \]</span></p>
-<p>In the <span class="math inline">\(`K`\)</span>-plane, a domain transforms under squaring, producing a two-sheeted structure in the <span class="math inline">\(`S`\)</span>-plane. This explains why the sheets are connected without discontinuity.</p>
-<div class=".callout-note">
-<p>The <span class="math inline">\(`\pm`\)</span> sign in the square root determines the Riemann sheet in the <span class="math inline">\(`S`\)</span>-plane, while the <span class="math inline">\(`K`\)</span>-plane unifies both sheets under a single analytic structure.</p>
+<p>In the <span class="math inline">\(K\)</span>-plane, a domain transforms under squaring, producing a two-sheeted structure in the <span class="math inline">\(S\)</span>-plane. This explains why the sheets are connected without discontinuity.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<p>The relationship between <span class="math inline">\(`S`\)</span> and <span class="math inline">\(`K`\)</span> is further clarified by the threshold behavior:</p>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The <span class="math inline">\(\pm\)</span> sign in the square root determines the Riemann sheet in the <span class="math inline">\(S\)</span>-plane, while the <span class="math inline">\(K\)</span>-plane unifies both sheets under a single analytic structure.</p>
+</div>
+</div>
+<p>The relationship between <span class="math inline">\(S\)</span> and <span class="math inline">\(K\)</span> is further clarified by the threshold behavior:</p>
 <p><span class="math display">\[
 S = 4(K^2 + m^2)
 \]</span></p>
-<p>where <span class="math inline">\(`m`\)</span> is the particle mass. This connects the energy variable <span class="math inline">\(`S`\)</span> to the breakup momentum <span class="math inline">\(`K`\)</span>, revealing the analytic structure near thresholds.</p>
-<p>When <span class="math inline">\(`S`\)</span> is below threshold, its value remains real but lies on the second Riemann sheet (corresponding to the <span class="math inline">\(`-`\)</span> sign). The first sheet corresponds to the <span class="math inline">\(`+`\)</span> sign. Importantly, the <span class="math inline">\(`K`\)</span>-plane does not distinguish between sheets—it only reflects the sign change in the square root.</p>
-<p>The dashed lines in the <span class="math inline">\(`S`\)</span>-plane (representing branch cuts) map to specific curves in the <span class="math inline">\(`K`\)</span>-plane, ensuring analytic continuity. This is why transformations between the planes preserve the underlying physics while simplifying the mathematical structure.</p>
+<p>where <span class="math inline">\(m\)</span> is the particle mass. This connects the energy variable <span class="math inline">\(S\)</span> to the breakup momentum <span class="math inline">\(K\)</span>, revealing the analytic structure near thresholds.</p>
+<p>When <span class="math inline">\(S\)</span> is below threshold, its value remains real but lies on the second Riemann sheet (corresponding to the <span class="math inline">\(-\)</span> sign). The first sheet corresponds to the <span class="math inline">\(+\)</span> sign. Importantly, the <span class="math inline">\(K\)</span>-plane does not distinguish between sheets—it only reflects the sign change in the square root.</p>
+<p>The dashed lines in the <span class="math inline">\(S\)</span>-plane (representing branch cuts) map to specific curves in the <span class="math inline">\(K\)</span>-plane, ensuring analytic continuity. This is why transformations between the planes preserve the underlying physics while simplifying the mathematical structure.</p>
 <!--
 Cosine simularity: 0.9072497190313804
 -->
@@ -190,8 +230,18 @@ Cosine simularity: 0.9072497190313804
 \]</span></p>
 <p>This small coupling allows perturbative expansions using Feynman diagrams in QED. However, in QCD, the theory is not in a perturbative regime due to confinement.</p>
 <p>The degrees of freedom—quarks and gluons—are confined to small scales, forming composite fields such as mesons. This non-perturbative behavior distinguishes QCD from QED, where perturbation theory is applicable.</p>
-<div class=".callout-note">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The confinement phenomenon means that quarks and gluons cannot be isolated as free particles; they only exist within bound states like hadrons.</p>
+</div>
 </div>
 <p>The transition from perturbative to non-perturbative dynamics in QCD is a key aspect of its study, as it governs the formation of hadronic matter.</p>
 <!--
@@ -202,8 +252,18 @@ Cosine simularity: 0.9161140108008128
 <h2 class="anchored" data-anchor-id="effective-chiral-perturbation-theory-and-double-well-potential">Effective Chiral Perturbation Theory and Double Well Potential</h2>
 <p>At low energy, the effective theory describing interactions is chiral perturbation theory. This is an expansion in the masses and momenta of particles, where the small parameter is not the interaction strength but rather the smallness of masses and momenta.</p>
 <p>The theory relies on composite fields (e.g., mesons) as simpler degrees of freedom. A key feature is that when working with these effective fields (fermion-antifermion pairs), the theory exhibits spontaneous symmetry breaking. The potential of this theory has a double-well structure, meaning it has two minima, and the vacuum settles into one of them.</p>
-<div class=".callout-note">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>Understanding the precise nature of the sigma field in this context is crucial for accurately describing the vacuum structure and symmetry breaking.</p>
+</div>
 </div>
 <p>This double-well potential is central to the non-perturbative dynamics of the theory, distinguishing it from perturbative expansions like those in QED.</p>
 <!--
@@ -214,8 +274,18 @@ Cosine simularity: 0.9381791812855292
 <h2 class="anchored" data-anchor-id="classical-vs.-quantum-fields-and-potential-introduction">Classical vs.&nbsp;Quantum Fields and Potential Introduction</h2>
 <p>The potential can only be introduced when considering fields as classical fields rather than quantum fields. For classical fields, the concept of potential is clear: if a particle moves in a potential, it turns back when its energy is below the potential energy. For example, a ball hitting a wall reflects back.</p>
 <p>Quantum fields behave differently. There is a probability for the particle to penetrate the potential barrier due to quantum effects. If a particle approaches a wall, the wave function has a tail inside the wall, decaying exponentially. This is a consequence of the quantum nature of the system.</p>
-<div class=".callout-note">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The classical picture assumes deterministic reflection, while quantum mechanics allows for tunneling through barriers.</p>
+</div>
 </div>
 <!--
 Cosine simularity: 0.9511210966359905
@@ -223,11 +293,21 @@ Cosine simularity: 0.9511210966359905
 </section>
 <section id="quasi-classical-expansion-and-field-averaging" class="level2">
 <h2 class="anchored" data-anchor-id="quasi-classical-expansion-and-field-averaging">Quasi-Classical Expansion and Field Averaging</h2>
-<p>The wave function has a tail in the wall due to the quantum nature of the system. The relation between particles, quantum fields, and classical fields arises through quasi-classical expansion. In quantum field theory, <span class="math inline">\(`\hbar`\)</span> is treated as a small parameter (though in natural units, it is set to 1). This parameter appears in the Lagrangian and action, allowing an expansion in powers of <span class="math inline">\(`\hbar`\)</span>.</p>
-<p>The first term in this expansion gives the average value of the fields, which we identify as the classical field. For example, the field <span class="math inline">\(`\sigma`\)</span> can be obtained by performing an <span class="math inline">\(`\hbar`\)</span>-expansion of the Lagrangian. The leading term yields not the fluctuating quantum field but the classical average value of <span class="math inline">\(`\sigma`\)</span> in space.</p>
-<p>At this level, <span class="math inline">\(`\sigma`\)</span> is no longer a function of spacetime coordinates <span class="math inline">\(`x`\)</span> (i.e., it does not fluctuate) but is instead a fixed value. We can then study the quasi-classical potential of the theory, which emerges from this approximation.</p>
-<div class=".callout-note">
+<p>The wave function has a tail in the wall due to the quantum nature of the system. The relation between particles, quantum fields, and classical fields arises through quasi-classical expansion. In quantum field theory, <span class="math inline">\(\hbar\)</span> is treated as a small parameter (though in natural units, it is set to 1). This parameter appears in the Lagrangian and action, allowing an expansion in powers of <span class="math inline">\(\hbar\)</span>.</p>
+<p>The first term in this expansion gives the average value of the fields, which we identify as the classical field. For example, the field <span class="math inline">\(\sigma\)</span> can be obtained by performing an <span class="math inline">\(\hbar\)</span>-expansion of the Lagrangian. The leading term yields not the fluctuating quantum field but the classical average value of <span class="math inline">\(\sigma\)</span> in space.</p>
+<p>At this level, <span class="math inline">\(\sigma\)</span> is no longer a function of spacetime coordinates <span class="math inline">\(x\)</span> (i.e., it does not fluctuate) but is instead a fixed value. We can then study the quasi-classical potential of the theory, which emerges from this approximation.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The classical field approximation neglects quantum fluctuations, simplifying the analysis while retaining key physical insights.</p>
+</div>
 </div>
 <!--
 Cosine simularity: 0.91486269774443
@@ -235,12 +315,22 @@ Cosine simularity: 0.91486269774443
 </section>
 <section id="potential-sigma-field-and-massless-pions" class="level2">
 <h2 class="anchored" data-anchor-id="potential-sigma-field-and-massless-pions">Potential, Sigma Field, and Massless Pions</h2>
-<p>We can analyze the quasi-classical potential of the theory as a function of the sigma field (<span class="math inline">\(`\sigma`\)</span>). The potential is visualized in three dimensions, where the x-axis represents the real part of <span class="math inline">\(`\sigma`\)</span> and the y-axis represents the imaginary part. These can be treated as two independent fields, <span class="math inline">\(`\sigma_1`\)</span> (real) and <span class="math inline">\(`\sigma_2`\)</span> (imaginary).</p>
-<p>The curvature of the potential indicates the mass of the particle. In the current theory, the degrees of freedom that experience binding in the confinement regime are associated with the sigma field, while the unimportant field is integrated out. The key observation is that the degrees of freedom not experiencing binding—those without curvature in the potential—correspond to the pion (<span class="math inline">\(`\pi`\)</span>) field.</p>
+<p>We can analyze the quasi-classical potential of the theory as a function of the sigma field (<span class="math inline">\(\sigma\)</span>). The potential is visualized in three dimensions, where the x-axis represents the real part of <span class="math inline">\(\sigma\)</span> and the y-axis represents the imaginary part. These can be treated as two independent fields, <span class="math inline">\(\sigma_1\)</span> (real) and <span class="math inline">\(\sigma_2\)</span> (imaginary).</p>
+<p>The curvature of the potential indicates the mass of the particle. In the current theory, the degrees of freedom that experience binding in the confinement regime are associated with the sigma field, while the unimportant field is integrated out. The key observation is that the degrees of freedom not experiencing binding—those without curvature in the potential—correspond to the pion (<span class="math inline">\(\pi\)</span>) field.</p>
 <p>The vacuum is centered around a non-zero value due to spontaneous symmetry breaking, filling space with a quark condensate represented by the sigma field. On top of this background, there are fluctuations of the massless pion field. This picture illustrates that the vacuum is dominated by the constant sigma field, while the pion fields fluctuate without mass.</p>
 <p>This aligns with the Goldstone theorem: when a symmetry is spontaneously broken, massless bosons (pions, in this case) appear in the theory. In QCD, pions are massless in the idealized scenario—their observed mass in reality arises from the Higgs mechanism, which gives quarks their mass.</p>
-<div class=".callout-note">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The sigma field represents a non-fluctuating classical average, while the pion fields are massless fluctuations on top of this background, as dictated by spontaneous symmetry breaking.</p>
+</div>
 </div>
 <!--
 Cosine simularity: 0.9134690194040399
@@ -248,42 +338,52 @@ Cosine simularity: 0.9134690194040399
 </section>
 <section id="spontaneous-symmetry-breaking-and-goldstone-bosons" class="level2">
 <h2 class="anchored" data-anchor-id="spontaneous-symmetry-breaking-and-goldstone-bosons">Spontaneous Symmetry Breaking and Goldstone Bosons</h2>
-<p>The Higgs mechanism gives quarks mass in real life. If quarks were massless, pions (<span class="math inline">\(`\pi`\)</span>), kaons (<span class="math inline">\(`K`\)</span>), and the eta meson (<span class="math inline">\(`\eta`\)</span>) would also be massless, forming a massless multiplet.</p>
-<p>We previously examined the current symmetry, checking whether the Lagrangian remains invariant under independent rotations of left-handed and right-handed quarks. The QCD Lagrangian has a global <span class="math inline">\(`SU(2)`\)</span> symmetry when no mass term is present. This symmetry is spontaneously broken when moving to the minimum of the theory.</p>
-<p>Introducing independent rotations of the right and left fields corresponds to rotations in the <span class="math inline">\(`\sigma`\)</span> field, reflecting the symmetry of the potential. Once the system settles at the minimum, this symmetry is broken—it is a global symmetry. The breaking of this left-right symmetry leads to the appearance of Goldstone bosons, which are pions. These pions are massless in the idealized case.</p>
+<p>The Higgs mechanism gives quarks mass in real life. If quarks were massless, pions (<span class="math inline">\(\pi\)</span>), kaons (<span class="math inline">\(K\)</span>), and the eta meson (<span class="math inline">\(\eta\)</span>) would also be massless, forming a massless multiplet.</p>
+<p>We previously examined the current symmetry, checking whether the Lagrangian remains invariant under independent rotations of left-handed and right-handed quarks. The QCD Lagrangian has a global <span class="math inline">\(SU(2)\)</span> symmetry when no mass term is present. This symmetry is spontaneously broken when moving to the minimum of the theory.</p>
+<p>Introducing independent rotations of the right and left fields corresponds to rotations in the <span class="math inline">\(\sigma\)</span> field, reflecting the symmetry of the potential. Once the system settles at the minimum, this symmetry is broken—it is a global symmetry. The breaking of this left-right symmetry leads to the appearance of Goldstone bosons, which are pions. These pions are massless in the idealized case.</p>
 <p>If the symmetry were larger, the pattern of symmetry breaking would produce additional massless modes. The mass of pions in reality arises from explicit symmetry breaking due to quark masses generated by the Higgs mechanism.</p>
 <p><span class="math display">\[
 m_u = m_d = 0 \Rightarrow M_{\pi} = 0
 \]</span></p>
-<p>This equation shows that if the up (<span class="math inline">\(`u`\)</span>) and down (<span class="math inline">\(`d`\)</span>) quarks were massless, the pion (<span class="math inline">\(`\pi`\)</span>) would also be massless.</p>
+<p>This equation shows that if the up (<span class="math inline">\(u\)</span>) and down (<span class="math inline">\(d\)</span>) quarks were massless, the pion (<span class="math inline">\(\pi\)</span>) would also be massless.</p>
 <!--
 Cosine simularity: 0.8878206251657708
 -->
 </section>
 <section id="higgs-mechanism-and-yukawa-couplings-in-mass-generation" class="level2">
 <h2 class="anchored" data-anchor-id="higgs-mechanism-and-yukawa-couplings-in-mass-generation">Higgs Mechanism and Yukawa Couplings in Mass Generation</h2>
-<p>If symmetry is bigger, like <span class="math inline">\(`SU(3)`\)</span>, we have eight mesons that are massless. And this is two kaons, three pions, and eight etas that disappear to be massless. Now, why are they not massless? Because quarks have mass.</p>
+<p>If symmetry is bigger, like <span class="math inline">\(SU(3)\)</span>, we have eight mesons that are massless. And this is two kaons, three pions, and eight etas that disappear to be massless. Now, why are they not massless? Because quarks have mass.</p>
 <p>This connects to the Higgs mechanism, as it is the Higgs interaction with fermions that gives them mass through Yukawa couplings. For the current perturbation theory, we just put a mass term explicitly in the Lagrangian. Now, with the discovery of the Higgs, we understand that a fundamental symmetry breaking occurs with the Higgs field. The vacuum is filled with the Higgs, and particles moving through it acquire mass.</p>
 <p>For the chiral perturbation theory, the mass term appears explicitly in the Lagrangian and breaks the symmetry explicitly.</p>
-<div class=".callout-note">
-<p>The Yukawa coupling in the Higgs context refers to how fermions acquire mass via interaction with the Higgs field. Originally, Yukawa proposed the exchange of pions (<span class="math inline">\(`\pi`\)</span>) as the mediator of nuclear forces, but in the Standard Model, Yukawa couplings introduce the mass matrix.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<p>Even if you consider QCD without mass terms, the <span class="math inline">\(`\eta'`\)</span> meson still appears massive. The <span class="math inline">\(`\eta'`\)</span> is related to the <span class="math inline">\(`U(1)`\)</span> symmetry, where <span class="math inline">\(`SU(3)`\)</span> symmetry breaking plays a role.</p>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The Yukawa coupling in the Higgs context refers to how fermions acquire mass via interaction with the Higgs field. Originally, Yukawa proposed the exchange of pions (<span class="math inline">\(\pi\)</span>) as the mediator of nuclear forces, but in the Standard Model, Yukawa couplings introduce the mass matrix.</p>
+</div>
+</div>
+<p>Even if you consider QCD without mass terms, the <span class="math inline">\(\eta'\)</span> meson still appears massive. The <span class="math inline">\(\eta'\)</span> is related to the <span class="math inline">\(U(1)\)</span> symmetry, where <span class="math inline">\(SU(3)\)</span> symmetry breaking plays a role.</p>
 <!--
 Cosine simularity: 0.8980919904801077
 -->
 </section>
 <section id="spontaneous-symmetry-breaking-and-goldstone-bosons-in-qcd" class="level2">
 <h2 class="anchored" data-anchor-id="spontaneous-symmetry-breaking-and-goldstone-bosons-in-qcd">Spontaneous Symmetry Breaking and Goldstone Bosons in QCD</h2>
-<p>The <span class="math inline">\(`\eta'`\)</span> meson is related to the <span class="math inline">\(`U(1)`\)</span> symmetry. Here, the “S” in both groups (e.g., <span class="math inline">\(`SU(2)`\)</span>, <span class="math inline">\(`SU(3)`\)</span>) stands for “special,” meaning the determinant of the matrix is equal to 1.</p>
-<p>For <span class="math inline">\(`SU(2)`\)</span>, we have:<br>
+<p>The <span class="math inline">\(\eta'\)</span> meson is related to the <span class="math inline">\(U(1)\)</span> symmetry. Here, the “S” in both groups (e.g., <span class="math inline">\(SU(2)\)</span>, <span class="math inline">\(SU(3)\)</span>) stands for “special,” meaning the determinant of the matrix is equal to 1.</p>
+<p>For <span class="math inline">\(SU(2)\)</span>, we have:<br>
 <span class="math display">\[
 U(2) = SU(2) \times U(1)
 \]</span><br>
-If you allow the determinant to have a phase (i.e., the <span class="math inline">\(`U(1)`\)</span> part is a unitary group where <span class="math inline">\(`|\det U|^2 = 1`\)</span>), you can consider the matrix itself as unitary but with an extra phase for the determinant.</p>
-<p>Looking at the Lagrangian, it appears invariant under this <span class="math inline">\(`U(1)`\)</span> phase transformation, especially for global symmetries where derivatives do not affect the phase. For example, a term like <span class="math inline">\(`\bar{\psi}\psi`\)</span> is invariant under such phase transformations. However, this symmetry is dynamically broken. Higher-order perturbative calculations reveal that the <span class="math inline">\(`U(1)`\)</span> symmetry is spontaneously broken, which is related to the mass of the <span class="math inline">\(`\eta'`\)</span>.</p>
-<p>When examining the light meson octet, the <span class="math inline">\(`\eta'`\)</span> stands out as special. The number of generators in <span class="math inline">\(`U(3)`\)</span> is 9, with 8 belonging to <span class="math inline">\(`SU(3)`\)</span>. These 8 generators correspond to the spontaneously broken symmetries, giving rise to 8 Goldstone bosons (the pions, kaons, and eta mesons).</p>
-<p>The remaining <span class="math inline">\(`U(1)`\)</span> symmetry is seemingly preserved, but anomalies cause the <span class="math inline">\(`\eta'`\)</span> to acquire mass, making it distinct from the other Goldstone bosons.</p>
+If you allow the determinant to have a phase (i.e., the <span class="math inline">\(U(1)\)</span> part is a unitary group where <span class="math inline">\(|\det U|^2 = 1\)</span>), you can consider the matrix itself as unitary but with an extra phase for the determinant.</p>
+<p>Looking at the Lagrangian, it appears invariant under this <span class="math inline">\(U(1)\)</span> phase transformation, especially for global symmetries where derivatives do not affect the phase. For example, a term like <span class="math inline">\(\bar{\psi}\psi\)</span> is invariant under such phase transformations. However, this symmetry is dynamically broken. Higher-order perturbative calculations reveal that the <span class="math inline">\(U(1)\)</span> symmetry is spontaneously broken, which is related to the mass of the <span class="math inline">\(\eta'\)</span>.</p>
+<p>When examining the light meson octet, the <span class="math inline">\(\eta'\)</span> stands out as special. The number of generators in <span class="math inline">\(U(3)\)</span> is 9, with 8 belonging to <span class="math inline">\(SU(3)\)</span>. These 8 generators correspond to the spontaneously broken symmetries, giving rise to 8 Goldstone bosons (the pions, kaons, and eta mesons).</p>
+<p>The remaining <span class="math inline">\(U(1)\)</span> symmetry is seemingly preserved, but anomalies cause the <span class="math inline">\(\eta'\)</span> to acquire mass, making it distinct from the other Goldstone bosons.</p>
 <!--
 Cosine simularity: 0.8863066941146426
 -->
@@ -291,12 +391,22 @@ Cosine simularity: 0.8863066941146426
 <section id="proton-mass-and-quark-gluon-interactions-in-qcd" class="level2">
 <h2 class="anchored" data-anchor-id="proton-mass-and-quark-gluon-interactions-in-qcd">Proton Mass and Quark-Gluon Interactions in QCD</h2>
 <p>The proton mass is not determined by the bare masses of the quarks but by the energy stored in quark-gluon interactions. In the chiral limit, where quark masses are set to zero, pions and kaons become massless (as they are Goldstone bosons of chiral symmetry breaking), but the proton remains massive. This is because the proton’s mass arises from the dynamics of quark-gluon interactions, not from the quark masses themselves.</p>
-<p>The proton is composed of three quarks, but unlike pions, it is not a Goldstone boson. Pions are fluctuations of the quark condensate (the <span class="math inline">\(`\sigma`\)</span> field), while protons are excitations of this condensate with additional energy stored in their structure. The mass of the proton is thus a manifestation of the strong interaction energy within QCD.</p>
-<div class=".callout-important">
+<p>The proton is composed of three quarks, but unlike pions, it is not a Goldstone boson. Pions are fluctuations of the quark condensate (the <span class="math inline">\(\sigma\)</span> field), while protons are excitations of this condensate with additional energy stored in their structure. The mass of the proton is thus a manifestation of the strong interaction energy within QCD.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The mass of hadrons (except Goldstone bosons like pions) is determined by the curvature of the QCD potential. Pions move along flat directions of the potential (no curvature, hence massless), while protons and other hadrons correspond to excitations with non-zero curvature, giving them mass.</p>
 </div>
+</div>
 <p>The quark-gluon interactions in mesons also exist, but the key difference lies in the nature of their excitations. The quark condensate forms a background, and pions are small fluctuations on this background, whereas protons are more complex excitations with additional energy contributions.</p>
-<p>To understand this mathematically, one can examine how the <span class="math inline">\(`\sigma`\)</span> field acquires a non-zero vacuum expectation value and how pions emerge as fluctuations along flat directions of the potential. The mass of particles corresponds to the curvature of the potential, and since pions move along directions with no curvature, they remain massless. Protons, however, involve excitations of the condensate itself, leading to their observed mass.</p>
+<p>To understand this mathematically, one can examine how the <span class="math inline">\(\sigma\)</span> field acquires a non-zero vacuum expectation value and how pions emerge as fluctuations along flat directions of the potential. The mass of particles corresponds to the curvature of the potential, and since pions move along directions with no curvature, they remain massless. Protons, however, involve excitations of the condensate itself, leading to their observed mass.</p>
 <p>The theory does not inherently contain a mass scale for the proton; its mass emerges dynamically from the strong interaction dynamics of QCD.</p>
 <!--
 Cosine simularity: 0.8922332044354326
@@ -304,15 +414,35 @@ Cosine simularity: 0.8922332044354326
 </section>
 <section id="impact-of-quark-masses-on-qcd-theory" class="level2">
 <h2 class="anchored" data-anchor-id="impact-of-quark-masses-on-qcd-theory">Impact of Quark Masses on QCD Theory</h2>
-<p>The theory itself does not have special values for the quark masses. You can tune the masses, increase them, or even set them to zero, and the theory remains largely unchanged. This is especially true for the light quarks (<span class="math inline">\(`u`\)</span> and <span class="math inline">\(`d`\)</span>), whose masses are much smaller than the QCD scale of 1 GeV. Introducing small quark masses does not drastically alter the physics.</p>
+<p>The theory itself does not have special values for the quark masses. You can tune the masses, increase them, or even set them to zero, and the theory remains largely unchanged. This is especially true for the light quarks (<span class="math inline">\(u\)</span> and <span class="math inline">\(d\)</span>), whose masses are much smaller than the QCD scale of 1 GeV. Introducing small quark masses does not drastically alter the physics.</p>
 <p>When quark masses are introduced, they effectively add a linear term to the potential, slightly skewing it. The overall picture remains almost the same, but the minimum on one side becomes more pronounced. In the pion direction, there is now a curvature, making pions slightly massive. The theory, however, remains fundamentally unchanged.</p>
-<div class=".callout-note">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The Mexican hat potential develops a curvature in the pion direction due to quark masses, giving pions a small mass while preserving the structure of QCD.</p>
+</div>
 </div>
 <p>One important quantity often discussed is the ratio of the proton mass to the pion mass, which is primarily determined by QCD interactions and does not change significantly even if quark masses are increased. Computations of properties in lattice QCD are highly dependent on the quark masses used. Interestingly, calculations appear easier when pions are slightly heavier, achieved by introducing larger quark masses. Despite this, the essential properties of the theory—such as those of mesons—do not change much.</p>
 <p>While details like particle masses and widths do change, the broader characteristics remain stable. This means that even with unphysical pion masses in simulations, we can still extract meaningful insights. The key takeaway is that these variations are a computational tool, not a fundamental limitation.</p>
-<div class=".callout-important">
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>Lattice QCD computations often use artificially heavy quark masses for numerical stability, but the extracted physics remains representative of the real-world theory.</p>
+</div>
 </div>
 <p>The mass of particles like pions changes with quark masses, but the underlying dynamics of QCD—such as the role of the quark condensate and chiral symmetry breaking—are preserved. This allows us to study QCD effectively even with non-physical parameters.</p>
 <!--
@@ -321,10 +451,20 @@ Cosine simularity: 0.9194840503691668
 </section>
 <section id="introduction-to-lattice-qcd-and-computational-setup" class="level2">
 <h2 class="anchored" data-anchor-id="introduction-to-lattice-qcd-and-computational-setup">Introduction to Lattice QCD and Computational Setup</h2>
-<p>We work with fields that depend on coordinates <span class="math inline">\(`X`\)</span>, which is a four-dimensional vector (time + spatial dimensions). The approach involves introducing a grid in both spatial and time dimensions, then computing the Lagrangian action or particle correlations on this grid.</p>
+<p>We work with fields that depend on coordinates <span class="math inline">\(X\)</span>, which is a four-dimensional vector (time + spatial dimensions). The approach involves introducing a grid in both spatial and time dimensions, then computing the Lagrangian action or particle correlations on this grid.</p>
 <p>A typical lattice QCD setup extends around 200 points in the time dimension and spans about 7 Fermi in spatial dimensions, discretized into 50 points per side. This forms a box with 50 points on each side, evolving over 200 time steps. These values are determined experimentally to balance computational efficiency and accuracy.</p>
-<div class=".callout-note">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The lattice size and step count are optimized through numerical testing—larger volumes and finer discretization improve accuracy but increase computational cost.</p>
+</div>
 </div>
 <p>Two primary challenges arise:<br>
 1. <strong>Finite volume effects</strong> (due to the box size).<br>
@@ -339,12 +479,22 @@ Cosine simularity: 0.8881730156253531
 </section>
 <section id="periodic-boundary-conditions-in-lattice-simulations" class="level2">
 <h2 class="anchored" data-anchor-id="periodic-boundary-conditions-in-lattice-simulations">Periodic Boundary Conditions in Lattice Simulations</h2>
-<p>The lattice size ratio <span class="math inline">\(`\frac{L}{a} \sim 20:50`\)</span> is a practical range for balancing computational feasibility and approximating an infinite, continuous space.</p>
+<p>The lattice size ratio <span class="math inline">\(\frac{L}{a} \sim 20:50\)</span> is a practical range for balancing computational feasibility and approximating an infinite, continuous space.</p>
 <p>A useful analogy for understanding lattice simulations is to think of a proton placed in a box with periodic boundary conditions. Due to the finite box size and cyclic boundaries, the proton interacts with its mirror images.</p>
 <p>Why use periodic boundary conditions? The alternatives, such as hard-wall boundaries where the wave function vanishes at the edges, introduce quantization effects and restrict the wave function’s behavior. Periodic boundary conditions avoid this by allowing the wave function to remain continuous across the box edges.</p>
 <p>In quantum field theory, periodic boundary conditions are advantageous because they preserve translational symmetry and avoid artificial quantization of momenta. This is particularly important in lattice QCD, where the wave function should not be forced to zero at the boundaries.</p>
-<div class=".callout-note">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>Hard-wall boundaries impose vanishing wave functions at the edges, while periodic boundaries allow the wave function to propagate smoothly across the box. The choice depends on the physical scenario being modeled.</p>
+</div>
 </div>
 <!--
 Cosine simularity: 0.9453669624343342
@@ -356,8 +506,18 @@ Cosine simularity: 0.9453669624343342
 <p>I should have started by saying that one can spend a semester or several semesters learning quantum thermodynamics on the lattice. It’s a rapidly moving field with many interesting techniques, but I can only give you a brief introduction.</p>
 <p>Perhaps John Gulava could hold a lecture on this topic next semester. He would be the right person to introduce all the details, as he has deep expertise in this area. For now, let me give you some vague arguments and a taste of the computations, along with common knowledge about finite volume effects.</p>
 <p>My claim is that corrections due to the lattice size—for good observables like particle masses or form factors—are exponentially suppressed with the lightest degrees of freedom in the theory, which in this case is the pion.</p>
-<div class=".callout-note">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>Finite volume effects are suppressed exponentially rather than polynomially, making lattice simulations viable for extracting physical quantities even with limited computational resources.</p>
+</div>
 </div>
 <!--
 Cosine simularity: 0.8971728545638091
@@ -370,9 +530,19 @@ Cosine simularity: 0.8971728545638091
 <p><span class="math display">\[
 V(R) \sim -e^{-m_\pi R}
 \]</span></p>
-<p>where <span class="math inline">\(`R`\)</span> is the distance and <span class="math inline">\(`m_\pi`\)</span> is the pion mass. This potential gives an argument for the exponential suppression of finite-volume effects. The pion mass sets the scale for this suppression, as it is the lightest degree of freedom in the theory.</p>
-<div class=".callout-note">
+<p>where <span class="math inline">\(R\)</span> is the distance and <span class="math inline">\(m_\pi\)</span> is the pion mass. This potential gives an argument for the exponential suppression of finite-volume effects. The pion mass sets the scale for this suppression, as it is the lightest degree of freedom in the theory.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>Virtual pions act as carriers of interactions, forming clouds around protons and mediating forces without propagating as free particles.</p>
+</div>
 </div>
 <!--
 Cosine simularity: 0.9024427746640916
@@ -380,13 +550,23 @@ Cosine simularity: 0.9024427746640916
 </section>
 <section id="lattice-volume-effects-and-discretization" class="level2">
 <h2 class="anchored" data-anchor-id="lattice-volume-effects-and-discretization">Lattice Volume Effects and Discretization</h2>
-<p>The exponential factor provides another argument for understanding finite-volume effects. Once your lattice is large compared to the inverse mass of the pion (<span class="math inline">\(`1/m_\pi`\)</span>), your computations closely approximate infinite-volume quantities. However, these are still box quantities, meaning the physics is constrained to the box. When the box size <span class="math inline">\(`L`\)</span> becomes infinite, you approach true infinite-volume physics, and the computations reflect the physical situation.</p>
+<p>The exponential factor provides another argument for understanding finite-volume effects. Once your lattice is large compared to the inverse mass of the pion (<span class="math inline">\(1/m_\pi\)</span>), your computations closely approximate infinite-volume quantities. However, these are still box quantities, meaning the physics is constrained to the box. When the box size <span class="math inline">\(L\)</span> becomes infinite, you approach true infinite-volume physics, and the computations reflect the physical situation.</p>
 <p>Discretization error is another consideration. The more steps you take in the lattice, the better the approximation. Increasing the volume of the box significantly would make computations more intensive, but the box is never truly empty. Even if no explicit particles are placed inside, the vacuum itself contains fluctuating quantum fields. These fields interact, and the box is filled with correlated fields, visualized as bubbles appearing and disappearing in the vacuum.</p>
-<p>Adjusting discretization by varying grid spacing is important. The lattice spacing <span class="math inline">\(`a`\)</span> affects the scales probed in the theory. For large <span class="math inline">\(`a`\)</span>, confinement may break down, as the theory loses its non-perturbative properties. Therefore, small step sizes are crucial to maintain confinement and ensure accurate results.</p>
-<div class=".callout-note">
+<p>Adjusting discretization by varying grid spacing is important. The lattice spacing <span class="math inline">\(a\)</span> affects the scales probed in the theory. For large <span class="math inline">\(a\)</span>, confinement may break down, as the theory loses its non-perturbative properties. Therefore, small step sizes are crucial to maintain confinement and ensure accurate results.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>Lattice computations are typically performed for multiple discretization values to demonstrate that results are not strongly affected by the choice of spacing.</p>
 </div>
-<p>In lattice QCD studies, the physical box size (e.g., 5 Fermi) is fixed, but computations are repeated for different lattice spacings (e.g., <span class="math inline">\(`a = 0.05, 0.033, 0.02 \ \text{Fermi}`\)</span>). This ensures that discretization errors are under control and that the extracted physics is reliable.</p>
+</div>
+<p>In lattice QCD studies, the physical box size (e.g., 5 Fermi) is fixed, but computations are repeated for different lattice spacings (e.g., <span class="math inline">\(a = 0.05, 0.033, 0.02 \ \text{Fermi}\)</span>). This ensures that discretization errors are under control and that the extracted physics is reliable.</p>
 <!--
 Cosine simularity: 0.9372319645190186
 -->
@@ -399,9 +579,19 @@ Cosine simularity: 0.9372319645190186
 <p><span class="math display">\[
 \langle \mathcal{O}(t) \mathcal{O}(0) \rangle  
 \]</span></p>
-<p>Here, each node of the lattice registers field values, and the quantities of interest are derived from these correlations. The computation process involves evaluating these expectation values for operators at time <span class="math inline">\(`t`\)</span> and time <span class="math inline">\(`0`\)</span>.</p>
-<div class=".callout-note">
+<p>Here, each node of the lattice registers field values, and the quantities of interest are derived from these correlations. The computation process involves evaluating these expectation values for operators at time <span class="math inline">\(t\)</span> and time <span class="math inline">\(0\)</span>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>Numerical methods are essential for handling discretization effects, as analytical solutions are often impractical for complex lattice configurations.</p>
+</div>
 </div>
 <!--
 Cosine simularity: 0.9150903973614808
@@ -409,15 +599,25 @@ Cosine simularity: 0.9150903973614808
 </section>
 <section id="high-dimensional-integral-challenges-in-lattice-field-theory" class="level2">
 <h2 class="anchored" data-anchor-id="high-dimensional-integral-challenges-in-lattice-field-theory">High-Dimensional Integral Challenges in Lattice Field Theory</h2>
-<p>The correlation function is defined as the expectation value of an operator at time <span class="math inline">\(`t`\)</span> and the same operator at time <span class="math inline">\(`0`\)</span>. Formally, it is given by:</p>
+<p>The correlation function is defined as the expectation value of an operator at time <span class="math inline">\(t\)</span> and the same operator at time <span class="math inline">\(0\)</span>. Formally, it is given by:</p>
 <p><span class="math display">\[
 \langle \mathcal{O}(t) \mathcal{O}(0) \rangle = \frac{\int \mathcal{D} \bar{\Psi} \mathcal{D} \Psi \, \mathcal{O}(t) \mathcal{O}(0) \, e^{-S[\bar{\Psi}, \Psi]}}{\int \mathcal{D} \bar{\Psi} \mathcal{D} \Psi \, e^{-S[\bar{\Psi}, \Psi]}}
 \]</span></p>
-<p>Here, <span class="math inline">\(`S[\bar{\Psi}, \Psi]`\)</span> is the Lagrangian action of the theory, and the integral is taken over all configurations of the fields <span class="math inline">\(`\bar{\Psi}`\)</span> and <span class="math inline">\(`\Psi`\)</span>. The denominator serves as a normalization factor.</p>
-<p>When discretized on a lattice, the dimensions scale as <span class="math inline">\(`(L/a)^3 \times (T/a) \times 4 \times 3`\)</span>, where <span class="math inline">\(`L`\)</span> and <span class="math inline">\(`T`\)</span> are spatial and temporal extents, <span class="math inline">\(`a`\)</span> is the lattice spacing, <span class="math inline">\(`4`\)</span> accounts for Lorentz indices, and <span class="math inline">\(`3`\)</span> for color (SU(3)). The field <span class="math inline">\(`\Psi`\)</span> is a four-dimensional Dirac spinor with color and flavor degrees of freedom.</p>
-<p>The integral becomes extremely high-dimensional—roughly <span class="math inline">\(`10^4`\)</span> dimensions per field component. For numerical integration, even sampling 10 points per dimension would require <span class="math inline">\(`10^{10^4}`\)</span> evaluations, which is computationally intractable.</p>
-<div class=".callout-important">
+<p>Here, <span class="math inline">\(S[\bar{\Psi}, \Psi]\)</span> is the Lagrangian action of the theory, and the integral is taken over all configurations of the fields <span class="math inline">\(\bar{\Psi}\)</span> and <span class="math inline">\(\Psi\)</span>. The denominator serves as a normalization factor.</p>
+<p>When discretized on a lattice, the dimensions scale as <span class="math inline">\((L/a)^3 \times (T/a) \times 4 \times 3\)</span>, where <span class="math inline">\(L\)</span> and <span class="math inline">\(T\)</span> are spatial and temporal extents, <span class="math inline">\(a\)</span> is the lattice spacing, <span class="math inline">\(4\)</span> accounts for Lorentz indices, and <span class="math inline">\(3\)</span> for color (SU(3)). The field <span class="math inline">\(\Psi\)</span> is a four-dimensional Dirac spinor with color and flavor degrees of freedom.</p>
+<p>The integral becomes extremely high-dimensional—roughly <span class="math inline">\(10^4\)</span> dimensions per field component. For numerical integration, even sampling 10 points per dimension would require <span class="math inline">\(10^{10^4}\)</span> evaluations, which is computationally intractable.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>Direct discretization and sampling methods fail due to the exponential growth in computational cost. Instead, statistical mechanics techniques are employed, leveraging importance sampling to approximate the integral efficiently.</p>
+</div>
 </div>
 <p>The challenge lies in avoiding brute-force discretization and instead using statistical methods to estimate high-dimensional integrals in lattice field theory.</p>
 <!--
@@ -426,13 +626,23 @@ Cosine simularity: 0.8976942888933842
 </section>
 <section id="monte-carlo-sampling-for-integral-evaluation" class="level2">
 <h2 class="anchored" data-anchor-id="monte-carlo-sampling-for-integral-evaluation">Monte Carlo Sampling for Integral Evaluation</h2>
-<p>Instead of discretizing and using equal-spaced grid computation, I would create a sample of <span class="math inline">\(`x`\)</span> distributed uniformly from <span class="math inline">\(`a`\)</span> to <span class="math inline">\(`b`\)</span>. The integral of <span class="math inline">\(`F(x)`\)</span> can then be approximated as the average value of the function over this sample, multiplied by the interval length:</p>
+<p>Instead of discretizing and using equal-spaced grid computation, I would create a sample of <span class="math inline">\(x\)</span> distributed uniformly from <span class="math inline">\(a\)</span> to <span class="math inline">\(b\)</span>. The integral of <span class="math inline">\(F(x)\)</span> can then be approximated as the average value of the function over this sample, multiplied by the interval length:</p>
 <p><span class="math display">\[
 \int_a^b F(x) \, dx \approx \frac{b - a}{N} \sum_{i=1}^N F(x_i)
 \]</span></p>
-<p>Here, <span class="math inline">\(`x_i`\)</span> are uniformly sampled points in <span class="math inline">\(`[a, b]`\)</span>. This is the Monte Carlo sampling technique, which avoids the need for brute-force discretization.</p>
-<div class=".callout-important">
+<p>Here, <span class="math inline">\(x_i\)</span> are uniformly sampled points in <span class="math inline">\([a, b]\)</span>. This is the Monte Carlo sampling technique, which avoids the need for brute-force discretization.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The key advantage is computational efficiency, especially for high-dimensional integrals where traditional methods fail due to exponential scaling.</p>
+</div>
 </div>
 <p>This approach leverages statistical mechanics principles, using random sampling to estimate integrals rather than deterministic grid-based methods.</p>
 <!--
@@ -443,7 +653,7 @@ Cosine simularity: 0.9582510917613123
 <h2 class="anchored" data-anchor-id="euclidean-metric-for-improved-integral-convergence">Euclidean Metric for Improved Integral Convergence</h2>
 <p>The trigger integral is evaluated using the Monte Carlo sampling technique, which is the primary method employed in lattice computations. The procedure involves first generating configurations (samples of the variables, called “tan samples”), then evaluating the statistic and computing the sum.</p>
 <p>One major challenge in applying this method is the significant fluctuation in the integration value due to the phase factor. While the computation remains possible, the convergence is poor because of oscillatory behavior, leading to the so-called “time problem.” A complex weight is unsuitable for the emergency fgametric to 5.</p>
-<p>To address this, instead of using the Minkowski metric, one performs a transformation of time to imaginary time and adopts the Euclidean metric. For example, when computing the operator correlation function ( <span class="math inline">\(`C(t)`\)</span> ), the action becomes imaginary, and the integral’s convergence improves significantly when working with real weights.</p>
+<p>To address this, instead of using the Minkowski metric, one performs a transformation of time to imaginary time and adopts the Euclidean metric. For example, when computing the operator correlation function ( <span class="math inline">\(C(t)\)</span> ), the action becomes imaginary, and the integral’s convergence improves significantly when working with real weights.</p>
 <p>The Euclidean metric is introduced by replacing time with imaginary time, which effectively transforms the Lagrangian (or action) into a real-valued quantity. This modification enhances the numerical stability and efficiency of the integral evaluation.</p>
 <!--
 Cosine simularity: 0.9163278037602303
@@ -451,15 +661,25 @@ Cosine simularity: 0.9163278037602303
 </section>
 <section id="evolution-of-operators-in-heisenberg-picture" class="level2">
 <h2 class="anchored" data-anchor-id="evolution-of-operators-in-heisenberg-picture">Evolution of Operators in Heisenberg Picture</h2>
-<p>The correlation function <span class="math inline">\(`C(t)`\)</span> is given by:</p>
+<p>The correlation function <span class="math inline">\(C(t)\)</span> is given by:</p>
 <p><span class="math display">\[
 C(t) = \langle 0 | O(t) O(0) | 0 \rangle = \frac{1}{2} \sum_{\Psi, \Psi'} D \Psi D \Psi' A O(t) O(0) e^{-S(\Psi + \Psi')}
 \]</span></p>
-<p>Here, the action <span class="math inline">\(`S`\)</span> replaces the Lagrangian, and the weights are real.</p>
-<p>In the Heisenberg picture in Minkowski space, the evolution of operators at time <span class="math inline">\(`T`\)</span> requires phase factors on both sides of the vacuum state. The Hamiltonian governs this evolution, with the phase factors being exponentials involving the Hamiltonian matrix.</p>
-<p>The Hamiltonian only gives energy when acting on eigenstates. For example, <span class="math inline">\(`O(0) | 0 \rangle`\)</span> should yield zero if <span class="math inline">\(`| 0 \rangle`\)</span> is an eigenstate of the Hamiltonian.</p>
-<div class=".callout-important">
+<p>Here, the action <span class="math inline">\(S\)</span> replaces the Lagrangian, and the weights are real.</p>
+<p>In the Heisenberg picture in Minkowski space, the evolution of operators at time <span class="math inline">\(T\)</span> requires phase factors on both sides of the vacuum state. The Hamiltonian governs this evolution, with the phase factors being exponentials involving the Hamiltonian matrix.</p>
+<p>The Hamiltonian only gives energy when acting on eigenstates. For example, <span class="math inline">\(O(0) | 0 \rangle\)</span> should yield zero if <span class="math inline">\(| 0 \rangle\)</span> is an eigenstate of the Hamiltonian.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The phase factors are crucial because they encode the time evolution of operators via the Hamiltonian.</p>
+</div>
 </div>
 <p>The Euclidean metric improves integral convergence by transforming time to imaginary time, making the action real and stabilizing numerical evaluations.</p>
 <!--
@@ -468,20 +688,30 @@ Cosine simularity: 0.9231459486259544
 </section>
 <section id="ground-state-energy-and-correlation-functions" class="level2">
 <h2 class="anchored" data-anchor-id="ground-state-energy-and-correlation-functions">Ground State Energy and Correlation Functions</h2>
-<p>The Hamiltonian should be zero when acting on the vacuum state <span class="math inline">\(`| 0 \rangle`\)</span>. The operator <span class="math inline">\(`O(0)`\)</span> applied to the vacuum should also yield zero if <span class="math inline">\(`| 0 \rangle`\)</span> is an eigenstate of the Hamiltonian.</p>
-<p>To recover the missing cross terms, we use a completeness relation involving states <span class="math inline">\(`|\Psi\rangle`\)</span> and <span class="math inline">\(`|\Psi'\rangle`\)</span>. The corrected expression includes dagger operations on the operators:</p>
+<p>The Hamiltonian should be zero when acting on the vacuum state <span class="math inline">\(| 0 \rangle\)</span>. The operator <span class="math inline">\(O(0)\)</span> applied to the vacuum should also yield zero if <span class="math inline">\(| 0 \rangle\)</span> is an eigenstate of the Hamiltonian.</p>
+<p>To recover the missing cross terms, we use a completeness relation involving states <span class="math inline">\(|\Psi\rangle\)</span> and <span class="math inline">\(|\Psi'\rangle\)</span>. The corrected expression includes dagger operations on the operators:</p>
 <p><span class="math display">\[
 C(t) = \langle 0 | O^\dagger(t) O^\dagger(0) | 0 \rangle
 \]</span></p>
-<p>This ensures proper squaring of terms. The correlation function can be expanded as a sum over energy eigenstates <span class="math inline">\(`|N\rangle`\)</span> with energies <span class="math inline">\(`E_N`\)</span>:</p>
+<p>This ensures proper squaring of terms. The correlation function can be expanded as a sum over energy eigenstates <span class="math inline">\(|N\rangle\)</span> with energies <span class="math inline">\(E_N\)</span>:</p>
 <p><span class="math display">\[
 C(t) = \sum_N e^{-(E_N - E_0)t}
 \]</span></p>
-<p>Here, <span class="math inline">\(`E_0`\)</span> is the vacuum energy. The exponential factor <span class="math inline">\(`e^{-Ht}`\)</span> acts as the identity when applied to the vacuum, assuming <span class="math inline">\(`E_0 = 0`\)</span>.</p>
-<div class=".callout-important">
+<p>Here, <span class="math inline">\(E_0\)</span> is the vacuum energy. The exponential factor <span class="math inline">\(e^{-Ht}\)</span> acts as the identity when applied to the vacuum, assuming <span class="math inline">\(E_0 = 0\)</span>.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The ground state energy is the reference level from which other energies are measured.</p>
 </div>
-<p>When computing <span class="math inline">\(`C(t)`\)</span> on a lattice with discrete time points, the long-time behavior of the correlation function is dominated by the lowest energy state. Higher-energy states are exponentially suppressed, leaving only the contribution from the ground state at large <span class="math inline">\(`t`\)</span>.</p>
+</div>
+<p>When computing <span class="math inline">\(C(t)\)</span> on a lattice with discrete time points, the long-time behavior of the correlation function is dominated by the lowest energy state. Higher-energy states are exponentially suppressed, leaving only the contribution from the ground state at large <span class="math inline">\(t\)</span>.</p>
 <!--
 Cosine simularity: 0.9147616419996627
 -->
@@ -497,33 +727,53 @@ Cosine simularity: 0.9147616419996627
 <p><span class="math display">\[
 \log \tilde{C}(t) \approx -E_1
 \]</span></p>
-<p>where <span class="math inline">\(`E_1`\)</span> is the energy of the lowest excited state. This is a common method to extract energy levels numerically. The energy obtained depends on the operator used:<br>
+<p>where <span class="math inline">\(E_1\)</span> is the energy of the lowest excited state. This is a common method to extract energy levels numerically. The energy obtained depends on the operator used:<br>
 - For pion-like operators, it approaches the pion mass.<br>
 - For vector quantum number operators, it approaches the rho meson mass.</p>
-<div class=".callout-important">
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The periodic boundary condition leads to momentum quantization.</p>
 </div>
-<p>For a particle in a box of size <span class="math inline">\(`L`\)</span>, the wave function must satisfy <span class="math inline">\(`\psi(x + L) = \psi(x)`\)</span>. For a plane wave <span class="math inline">\(`e^{i p x}`\)</span>, this implies:</p>
+</div>
+<p>For a particle in a box of size <span class="math inline">\(L\)</span>, the wave function must satisfy <span class="math inline">\(\psi(x + L) = \psi(x)\)</span>. For a plane wave <span class="math inline">\(e^{i p x}\)</span>, this implies:</p>
 <p><span class="math display">\[
 p L = 2 \pi n
 \]</span></p>
-<p>where <span class="math inline">\(`n`\)</span> is an integer. Thus, the momentum is quantized in units of <span class="math inline">\(`2 \pi / L`\)</span>.</p>
-<div class=".callout-note">
-<p>The phase of the wave function must match after traversing the full length <span class="math inline">\(`L`\)</span>, but not necessarily for smaller distances.</p>
+<p>where <span class="math inline">\(n\)</span> is an integer. Thus, the momentum is quantized in units of <span class="math inline">\(2 \pi / L\)</span>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The phase of the wave function must match after traversing the full length <span class="math inline">\(L\)</span>, but not necessarily for smaller distances.</p>
+</div>
 </div>
 <p>This means the particle’s momentum can only take discrete values:</p>
 <p><span class="math display">\[
 p_n = \frac{2 \pi n}{L}
 \]</span></p>
-<p>The step size in momentum space is determined by the system size <span class="math inline">\(`L`\)</span> — larger systems allow finer momentum resolution.</p>
+<p>The step size in momentum space is determined by the system size <span class="math inline">\(L\)</span> — larger systems allow finer momentum resolution.</p>
 <!--
 Cosine simularity: 0.9385797673327289
 -->
 </section>
 <section id="discrete-spectrum-and-interaction-shifts-in-particle-systems" class="level2">
 <h2 class="anchored" data-anchor-id="discrete-spectrum-and-interaction-shifts-in-particle-systems">Discrete Spectrum and Interaction Shifts in Particle Systems</h2>
-<p>The step size in the spectrum is as small as <span class="math inline">\(`1/L`\)</span>, where <span class="math inline">\(`L`\)</span> is the system size. For a two-particle system, the spectrum is discrete. Consider particles labeled by <span class="math inline">\(`M = 1, 2, 3, 4`\)</span> in a periodic band configuration.</p>
-<p>You can visualize this as two particles moving in a circle of length <span class="math inline">\(`L`\)</span>. This is the one-dimensional case of a box with periodic boundary conditions, and the spectrum remains discrete. The total energy of the system is simply the sum of the individual particle energies when they are non-interacting:</p>
+<p>The step size in the spectrum is as small as <span class="math inline">\(1/L\)</span>, where <span class="math inline">\(L\)</span> is the system size. For a two-particle system, the spectrum is discrete. Consider particles labeled by <span class="math inline">\(M = 1, 2, 3, 4\)</span> in a periodic band configuration.</p>
+<p>You can visualize this as two particles moving in a circle of length <span class="math inline">\(L\)</span>. This is the one-dimensional case of a box with periodic boundary conditions, and the spectrum remains discrete. The total energy of the system is simply the sum of the individual particle energies when they are non-interacting:</p>
 <p><span class="math display">\[
 E_{\text{system}} = \sum_i E_i
 \]</span></p>
@@ -532,8 +782,18 @@ E_{\text{system}} = \sum_i E_i
 E_{\text{system}} = \sum_i E_i + E_{\text{interaction}}
 \]</span></p>
 <p>This shift in energy levels due to interactions is the key idea behind lattice spectroscopy. By computing the spectrum first without interactions and then with interactions, the differences between energy levels reveal information about the particles, particularly the phase shift induced by their interactions.</p>
-<div class=".callout-note">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The discrete spectrum arises from quantization in a finite system, while interaction shifts provide insights into particle dynamics.</p>
+</div>
 </div>
 <p>The method involves comparing the non-interacting and interacting spectra to extract physical properties of the system.</p>
 <!--
@@ -542,10 +802,20 @@ Cosine simularity: 0.9323878171590935
 </section>
 <section id="pi-correlator-and-scattering-phase-shift-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="pi-correlator-and-scattering-phase-shift-analysis">2PI Correlator and Scattering Phase Shift Analysis</h2>
-<p>The 2PI correlator provides information about the phase shift of particle interactions. You compute this quantity for two pions and observe where it separates at high energy. The saturation point of the tilde function at large <span class="math inline">\(`T`\)</span> gives a measurement of the energy level.</p>
+<p>The 2PI correlator provides information about the phase shift of particle interactions. You compute this quantity for two pions and observe where it separates at high energy. The saturation point of the tilde function at large <span class="math inline">\(T\)</span> gives a measurement of the energy level.</p>
 <p>Next, you perform the same computation for the interacting system and compare it to the non-interacting (polytronic) case. The difference in shifts between the two systems reveals the scattering phase shift.</p>
-<div class=".callout-note">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The scattering phase shift is extracted by comparing the non-interacting and interacting spectra.</p>
+</div>
 </div>
 <p>The collision dynamics can also be analyzed using alternative techniques in configuration space, where real values of parameters are used. This approach is part of modern lattice QCD, which has significantly advanced our understanding of the hadron spectrum in recent years.</p>
 <!--
@@ -555,7 +825,7 @@ Cosine simularity: 0.9715297454359875
 <section id="lattice-qcd-advantages-in-studying-meson-scattering" class="level2">
 <h2 class="anchored" data-anchor-id="lattice-qcd-advantages-in-studying-meson-scattering">Lattice QCD Advantages in Studying Meson Scattering</h2>
 <p>We have learned so much about the hadron spectrum from lattice QCD. The lattice provides an isolated setup where there are no experimental effects, allowing us to study processes that are impossible in experiments. For example, while scattering two pions is feasible in experiments, scattering a photon on a sigma meson is not — yet this becomes tractable on the lattice.</p>
-<p>The <span class="math inline">\(`2\pi`\)</span>-sigma meson system, which appears as a blob in the spectrum, is a candidate for a tetraquark state at low energy. In lattice QCD, we can study <span class="math inline">\(`\pi\pi`\)</span> scattering by inserting a photon current and computing the correlation function:</p>
+<p>The <span class="math inline">\(2\pi\)</span>-sigma meson system, which appears as a blob in the spectrum, is a candidate for a tetraquark state at low energy. In lattice QCD, we can study <span class="math inline">\(\pi\pi\)</span> scattering by inserting a photon current and computing the correlation function:</p>
 <p><span class="math display">\[
 \langle \mathcal{O}(t) \mathcal{O}^\dagger(0) \rangle
 \]</span></p>
@@ -574,14 +844,24 @@ Cosine simularity: 0.9478731580075307
 </section>
 <section id="unitarity-constraints-on-scattering-amplitudes-in-resonance-production" class="level2">
 <h2 class="anchored" data-anchor-id="unitarity-constraints-on-scattering-amplitudes-in-resonance-production">Unitarity Constraints on Scattering Amplitudes in Resonance Production</h2>
-<p>For low-living resonances, experiments produce them in processes involving stable particles. The production amplitude <span class="math inline">\(`\mathcal{P}_I`\)</span> is accessible, but constraints are stronger on the scattering amplitude and elastic amplitudes.</p>
-<div class=".callout-important">
+<p>For low-living resonances, experiments produce them in processes involving stable particles. The production amplitude <span class="math inline">\(\mathcal{P}_I\)</span> is accessible, but constraints are stronger on the scattering amplitude and elastic amplitudes.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>Unitarity imposes severe constraints on the scattering amplitude — it cannot be arbitrary. The amplitude must lie within the unitary circle.</p>
+</div>
 </div>
 <p>In the previous lecture, a matrix element was written on the board, and a question arose about the imaginary part being positive due to unitarity relations. This specifically applies to the scattering amplitude, not the production amplitude.</p>
 <p><span class="math display">\[
 \text{Im}(\mathcal{M}) \geq 0
-\]</span> where <span class="math inline">\(`\mathcal{M}`\)</span> is the scattering amplitude.</p>
+\]</span> where <span class="math inline">\(\mathcal{M}\)</span> is the scattering amplitude.</p>
 <p>The elastic scattering amplitude cannot be chosen arbitrarily; it must satisfy these unitarity bounds.</p>
 <!--
 Cosine simularity: 0.9523487096357866
@@ -590,9 +870,19 @@ Cosine simularity: 0.9523487096357866
 <section id="elastic-amplitudes-and-quark-mass-dependence" class="level2">
 <h2 class="anchored" data-anchor-id="elastic-amplitudes-and-quark-mass-dependence">Elastic Amplitudes and Quark Mass Dependence</h2>
 <p>The elastic scattering amplitude must lie within the unitary circle, and if it’s elastic, it should be exactly on the circle — it cannot be outside. The imaginary part is always positive. On the lattice, you can access this quantity, which comes with strong constraints.</p>
-<p>Elastic amplitudes include processes like <span class="math inline">\(`\pi\pi \to \pi\pi`\)</span>, <span class="math inline">\(`\pi\pi \to KK`\)</span>, <span class="math inline">\(`\pi K \to \pi K`\)</span>, and <span class="math inline">\(`\pi \eta \to \pi \eta`\)</span>. Additionally, you can control the quark masses, allowing you to make pions massless or massive.</p>
-<div class=".callout-important">
-<p>Changing the pion mass significantly alters the elastic region. When pions are massless, the thresholds for <span class="math inline">\(`2\pi`\)</span>, <span class="math inline">\(`3\pi`\)</span>, and <span class="math inline">\(`5\pi`\)</span> coincide. However, if you increase the pion mass, a large region opens where the <span class="math inline">\(`2\pi`\)</span> threshold is accessible, but higher thresholds (e.g., <span class="math inline">\(`3\pi`\)</span> or <span class="math inline">\(`4\pi`\)</span>) remain closed.</p>
+<p>Elastic amplitudes include processes like <span class="math inline">\(\pi\pi \to \pi\pi\)</span>, <span class="math inline">\(\pi\pi \to KK\)</span>, <span class="math inline">\(\pi K \to \pi K\)</span>, and <span class="math inline">\(\pi \eta \to \pi \eta\)</span>. Additionally, you can control the quark masses, allowing you to make pions massless or massive.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Changing the pion mass significantly alters the elastic region. When pions are massless, the thresholds for <span class="math inline">\(2\pi\)</span>, <span class="math inline">\(3\pi\)</span>, and <span class="math inline">\(5\pi\)</span> coincide. However, if you increase the pion mass, a large region opens where the <span class="math inline">\(2\pi\)</span> threshold is accessible, but higher thresholds (e.g., <span class="math inline">\(3\pi\)</span> or <span class="math inline">\(4\pi\)</span>) remain closed.</p>
+</div>
 </div>
 <p>This creates a broad elastic region where unitarity constraints provide nearly parameter-free parameterizations, enabling deeper physical insights. By varying the quark masses, you can explore how these thresholds shift and how the elastic amplitude behaves in different regimes.</p>
 <!--
@@ -601,9 +891,19 @@ Cosine simularity: 0.9235111968827721
 </section>
 <section id="resonances-and-bound-states-in-the-k-plane" class="level2">
 <h2 class="anchored" data-anchor-id="resonances-and-bound-states-in-the-k-plane">Resonances and Bound States in the K Plane</h2>
-<p>The parameterization in the <span class="math inline">\(`K`\)</span> plane reveals deep physical insights. By adjusting quark masses, particles can transition across the <span class="math inline">\(`K`\)</span> plane, allowing bound states to become resonances or virtual states. This analytic continuity shows that these phenomena are intrinsically connected — bound states, virtual states, and resonances are all manifestations of QCD under different conditions.</p>
-<div class=".callout-important">
-<p>The quark mass determines whether a state appears as a bound state, resonance, or virtual state. As masses vary, particles “travel” through the <span class="math inline">\(`K`\)</span> plane, smoothly transitioning between these regimes.</p>
+<p>The parameterization in the <span class="math inline">\(K\)</span> plane reveals deep physical insights. By adjusting quark masses, particles can transition across the <span class="math inline">\(K\)</span> plane, allowing bound states to become resonances or virtual states. This analytic continuity shows that these phenomena are intrinsically connected — bound states, virtual states, and resonances are all manifestations of QCD under different conditions.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The quark mass determines whether a state appears as a bound state, resonance, or virtual state. As masses vary, particles “travel” through the <span class="math inline">\(K\)</span> plane, smoothly transitioning between these regimes.</p>
+</div>
 </div>
 <p>This demonstrates the unified nature of QCD phenomena, where seemingly distinct states are part of a continuous spectrum tied to quark mass dynamics.</p>
 <!--
@@ -613,8 +913,18 @@ Cosine simularity: 0.9173632046929343
 <section id="introduction-and-exercise-sheet-announcement" class="level2">
 <h2 class="anchored" data-anchor-id="introduction-and-exercise-sheet-announcement">Introduction and Exercise Sheet Announcement</h2>
 <p>The states of QCD manifestation depend on quark mass, where one state can transition into another.</p>
-<div class=".callout-note">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The exercise sheet was prepared by Ilya and printed for you. I worked on it overnight, and Ilya handled the printing.</p>
+</div>
 </div>
 <p>Thank you for attending today, and I apologize for running slightly overtime. Well done.</p>
 </section>
