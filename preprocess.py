@@ -29,6 +29,12 @@ def transform_file(filepath):
         flags=re.DOTALL
     )
 
+    content = re.sub(
+        r'\\slashed\s*(?:\{([^\}]+)\}|([a-zA-Z]))',
+        lambda m: f"\\mathrlap{{/}}{m.group(1) or m.group(2)}",
+        content
+    )
+
     with open(filepath, 'w', encoding='utf-8') as file:
         file.write(content)
 
