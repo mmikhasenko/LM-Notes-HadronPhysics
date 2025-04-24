@@ -76,682 +76,10 @@ window.Quarto = {
 
 
 <!--
-Cosine simularity: 0.9635185818681596
+Cosine simularity: 0.9618040517898078
 -->
 <section id="introduction-to-cross-section-estimation-in-hadronic-reactions" class="level2">
 <h2 class="anchored" data-anchor-id="introduction-to-cross-section-estimation-in-hadronic-reactions">Introduction to Cross Section Estimation in Hadronic Reactions</h2>
-<p>Welcome everyone to today’s lecture. It will be mostly about classification of hadrons. I will walk you a little bit through the history of how important discoveries were made and what we learned from there about the hadrons and how we can group them together.</p>
-<p>In the 50s and 60s, there were a lot of new big accelerators built, like the Bevatron. This came into operation in 1954. It was a proton accelerator with energies of up to 13 GeV. These high-energy protons were shot on a fixed target, producing and detecting many different particles. Over 100 new particles were found, leading to what was called the “particle zoo.” This term was first mentioned by Oppenheimer at a high-energy physics conference.</p>
-<p>Physicists at the time had to think about how to organize these particles—whether there was a pattern or if they were all fundamental. This is similar to how the periodic table groups atoms by their proton and neutron numbers and electron configurations. For hadrons, we group them by their quantum numbers.</p>
-<p>Let’s start with isospin. In 1932, the neutron was discovered by Chadwick. Experiments at the Bevatron showed that proton-proton, proton-neutron, and neutron-neutron interactions had very similar strengths. The masses of the proton and neutron are also nearly identical (939 MeV). This led to the idea that the proton and neutron could be considered the same particle but in two different states, described by isospin.</p>
-<p>The strong interaction does not distinguish between protons and neutrons. They behave as a single particle, the nucleon, with two isospin states. This is analogous to electron spin, where we have spin-up or spin-down states.</p>
-<p>At the quark level, protons and neutrons are composed of up and down quarks. The strong interaction does not distinguish between these quark flavors. Mathematically, we can treat isospin like spin:</p>
-<p><span class="math display">\[
-\text{Up quark: } I = \frac{1}{2}, \ I_3 = +\frac{1}{2}  
-\text{Down quark: } I = \frac{1}{2}, \ I_3 = -\frac{1}{2}
-\]</span></p>
-<p>Here, <span class="math inline">\(I\)</span> is the isospin, and <span class="math inline">\(I_3\)</span> is its third component. While isospin is not exactly like spin, it can be treated similarly in calculations.</p>
-<!--
-Cosine simularity: 0.926222107438107
--->
-</section>
-<section id="understanding-cross-section-and-its-physical-interpretation" class="level2">
-<h2 class="anchored" data-anchor-id="understanding-cross-section-and-its-physical-interpretation">Understanding Cross Section and Its Physical Interpretation</h2>
-<p>The spin and isospin can be treated similarly in mathematical formalism, both following the <span class="math inline">\(SU(2)\)</span> algebra. In the previous lecture, we discussed the <span class="math inline">\(SU(2)\)</span> algebra, which applies to matrices and can be described using rotation matrices. The generators of this algebra are the Pauli matrices.</p>
-<p>For the isospin operator, the notation is analogous to spin, where <span class="math inline">\(I\)</span> replaces <span class="math inline">\(J\)</span>. The general form of these operators includes the isospin <span class="math inline">\(I\)</span> and its third component <span class="math inline">\(I_3\)</span>. For example, applying the <span class="math inline">\(I_3\)</span> operator to an “up” state yields the eigenvalue <span class="math inline">\(+1\)</span>.</p>
-<p>Lowering operators allow transitions between different projections of isospin. If the total isospin is <span class="math inline">\(I\)</span>, the possible projections are <span class="math inline">\(I_3 = I, I-1, \ldots, -I\)</span>, giving <span class="math inline">\(2I + 1\)</span> states. These lowering operators shift from one projection to another.</p>
-<p>For a concrete example, consider the up and down quarks. Mesons can be formed by combining a quark and an antiquark. If we examine the isospin structure of these combinations, we can classify the resulting particles. The up quark has isospin <span class="math inline">\(I = \frac{1}{2}\)</span> and <span class="math inline">\(I_3 = +\frac{1}{2}\)</span>, while the down quark has <span class="math inline">\(I = \frac{1}{2}\)</span> and <span class="math inline">\(I_3 = -\frac{1}{2}\)</span>.</p>
-<p>By combining these quarks and antiquarks, we can construct mesons with well-defined isospin properties. This framework helps organize hadrons into multiplets, similar to how spin states are classified. The <span class="math inline">\(SU(2)\)</span> algebra provides the mathematical foundation for these classifications.</p>
-<!--
-Cosine simularity: 0.9373536840534448
--->
-</section>
-<section id="defining-charge-in-qed-and-qcd" class="level2">
-<h2 class="anchored" data-anchor-id="defining-charge-in-qed-and-qcd">Defining Charge in QED and QCD</h2>
-<p>For the antiquark in metals, we examine the isospin structure. Both up and down quarks have isospin <span class="math inline">\(I = \frac{1}{2}\)</span>. When combining two particles with isospin <span class="math inline">\(\frac{1}{2}\)</span>, the possible outcomes are isospin <span class="math inline">\(0\)</span> or <span class="math inline">\(1\)</span>. This is analogous to the spin combination rules.</p>
-<p>For isospin <span class="math inline">\(\frac{1}{2}\)</span>, there are two projections: <span class="math inline">\(I_3 = +\frac{1}{2}\)</span> and <span class="math inline">\(I_3 = -\frac{1}{2}\)</span>. The dimensions of the system are represented as <span class="math inline">\(2 \times 2\)</span>, and for an antiquark, we denote this with a bar on top.</p>
-<p>For isospin <span class="math inline">\(1\)</span>, the number of projections is given by <span class="math inline">\(2I + 1\)</span>, which yields three states: <span class="math inline">\(I_3 = +1, 0, -1\)</span>. For isospin <span class="math inline">\(0\)</span>, there is only one projection: <span class="math inline">\(I_3 = 0\)</span>. In terms of dimensions, this decomposition results in <span class="math inline">\(3 + 1\)</span> states.</p>
-<p>This can be expressed in group theory as a <span class="math inline">\(4 \times 4\)</span> matrix, which decomposes into a <span class="math inline">\(3 \times 3\)</span> matrix (triplet state) and a <span class="math inline">\(1 \times 1\)</span> matrix (singlet state). The triplet corresponds to the isospin <span class="math inline">\(1\)</span> state, while the singlet corresponds to isospin <span class="math inline">\(0\)</span>.</p>
-<p>To determine the coefficients and signs in these combinations, we use Clebsch-Gordan coefficients, similar to spin coupling. For example, when combining two isospin <span class="math inline">\(\frac{1}{2}\)</span> particles, the resulting states are:</p>
-<ul>
-<li>An isospin triplet (<span class="math inline">\(I = 1\)</span>) with projections <span class="math inline">\(I_3 = +1, 0, -1\)</span>.<br>
-</li>
-<li>An isospin singlet (<span class="math inline">\(I = 0\)</span>) with <span class="math inline">\(I_3 = 0\)</span>.</li>
-</ul>
-<p>The Clebsch-Gordan coefficients provide the weights for these combinations, just as they do for spin states.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The isospin formalism follows the same <span class="math inline">\(SU(2)\)</span> algebra as spin, with analogous operators and projection rules.</p>
-</div>
-</div>
-<p>This framework allows us to systematically classify quark-antiquark combinations into isospin multiplets, such as mesons, by their isospin properties.</p>
-<!--
-Cosine simularity: 0.9147268289082585
--->
-</section>
-<section id="defining-charge-in-qcd-and-group-theory-introduction" class="level2">
-<h2 class="anchored" data-anchor-id="defining-charge-in-qcd-and-group-theory-introduction">Defining Charge in QCD and Group Theory Introduction</h2>
-<p>We have an isospin triplet with isospin <span class="math inline">\(I = 1\)</span>, which gives three projections: <span class="math inline">\(I_3 = +1, 0, -1\)</span>. There is also a singlet with <span class="math inline">\(I = 0\)</span> and projection <span class="math inline">\(I_3 = 0\)</span>. Here, we can observe the Clebsch-Gordan coefficients, and you must always take the square root of these coefficients.</p>
-<p>For antiquarks, the isospin assignments are:<br>
-- Anti-up quark: <span class="math inline">\(I_3 = -\frac{1}{2}\)</span><br>
-- Anti-down quark: <span class="math inline">\(I_3 = +\frac{1}{2}\)</span></p>
-<p>The minus sign is chosen so that quarks and antiquarks behave consistently under <span class="math inline">\(SU(2)\)</span> transformations.</p>
-<p>When constructing states:<br>
-- For the singlet state from <span class="math inline">\(u\bar{u}\)</span>, we have projections <span class="math inline">\(+\frac{1}{2}, -\frac{1}{2}\)</span>, resulting in a vector with a square root factor.<br>
-- For <span class="math inline">\(d\bar{d}\)</span>, the projections are <span class="math inline">\(-\frac{1}{2}, +\frac{1}{2}\)</span>, but due to the minus sign in the antiquark assignment, the overall sign flips to a plus.</p>
-<p>The same procedure applies to the triplet (<span class="math inline">\(I = 1\)</span>) states.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The triplet states correspond to particles like pions (<span class="math inline">\(\pi^+, \pi^0, \pi^-\)</span>) or rho mesons (<span class="math inline">\(\rho^+, \rho^0, \rho^-\)</span>). The key difference between pions and rho mesons is their spin.</p>
-</div>
-</div>
-<p>This demonstrates how quark-antiquark combinations are classified into isospin multiplets using Clebsch-Gordan coefficients, analogous to spin coupling.</p>
-<!--
-Cosine simularity: 0.9527854171535775
--->
-</section>
-<section id="introduction-to-cross-section-estimation-in-hadronic-reactions-1" class="level2">
-<h2 class="anchored" data-anchor-id="introduction-to-cross-section-estimation-in-hadronic-reactions-1">Introduction to Cross Section Estimation in Hadronic Reactions</h2>
-<p>Welcome everyone to today’s lecture. It will be mostly about classification of hadrons. I will walk you a little bit through the history of how important discoveries were made and what we learned from there about the hadrons and how we can group them together.</p>
-<p>In the 50s and 60s, there were a lot of new big accelerators built, like the Bevatron. This came into operation in 1954. It was a proton accelerator with energies of up to 13 GeV. These high-energy protons were shot on a fixed target, producing and detecting many different particles. Over 100 new particles were found, leading to what was called the “particle zoo.” This term was first mentioned by Oppenheimer at a high-energy physics conference.</p>
-<p>Physicists at the time had to think about how to organize these particles. Is there a pattern? Are these all fundamental particles? This is what we will discuss today.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The periodic table groups atoms by their proton and neutron numbers, as well as the electrons in their outermost shells. Similarly, we aim to classify hadrons based on their properties.</p>
-</div>
-</div>
-<p>In the context of particle physics, the characteristics we use to group hadrons are their quantum numbers. We will discuss different quantum numbers, why they were introduced, and how they helped classify particles.</p>
-<p>Let’s start with <strong>isospin</strong>. In 1932, the neutron was discovered by Chadwick. Experiments at the Bevatron showed that proton-proton, proton-neutron, and neutron-neutron interactions had very similar interaction strengths. The rates of these interactions were practically the same. Additionally, the masses of the proton and neutron are nearly identical (939 MeV).</p>
-<p>This led to the idea that the proton and neutron could be considered the same particle but in two different states, described by <strong>isospin</strong>. The strong interaction does not distinguish between them—only electromagnetic fields reveal their differences.</p>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Mathematically, isospin is treated similarly to spin. For quarks:</p>
-</div>
-</div>
-<blockquote class="blockquote">
-<ul>
-<li>The <strong>down quark</strong> has isospin <span class="math inline">\(I = 1/2\)</span> with third component <span class="math inline">\(I_3 = -1/2\)</span>.</li>
-</ul>
-</blockquote>
-<p>This means the strong interaction does not distinguish between up and down quark flavors. The concept of isospin helps unify these particles under a single framework, much like spin states for electrons.</p>
-<!--
-Cosine simularity: 0.9394648778034843
--->
-</section>
-<section id="understanding-cross-section-and-its-physical-interpretation-1" class="level2">
-<h2 class="anchored" data-anchor-id="understanding-cross-section-and-its-physical-interpretation-1">Understanding Cross Section and Its Physical Interpretation</h2>
-<p>Mathematically, we can treat isospin similarly to spin, meaning it follows the <span class="math inline">\(SU(2)\)</span> algebra. In the last lecture, you heard about the <span class="math inline">\(SU(2)\)</span> algebra, which holds for matrices and can be described as a rotation matrix. The generators here are the Pauli matrices.</p>
-<p>For the isospin operator, the structure is the same as for spin, where <span class="math inline">\(J\)</span> is replaced by <span class="math inline">\(I\)</span>. Generally, we write these operators with the isospin <span class="math inline">\(I\)</span> and its third component <span class="math inline">\(I_3\)</span>. For example, applying the <span class="math inline">\(I_3\)</span> operator to an “up” state yields the eigenvalue <span class="math inline">\(+1\)</span>.</p>
-<p>We also have lowering operators. If you have an isospin <span class="math inline">\(I\)</span>, there are <span class="math inline">\(2I + 1\)</span> projections labeled <span class="math inline">\(I_3\)</span>, ranging from <span class="math inline">\(+I\)</span> to <span class="math inline">\(-I\)</span>. The lowering operators allow transitions between these projections.</p>
-<p>Using the definition of these operators, applying them to a state produces specific outcomes. This serves as a reminder of how the <span class="math inline">\(SU(2)\)</span> algebra works.</p>
-<p>Now, let’s consider examples. For instance, take the up and down quarks. As discussed previously, mesons can be formed by combining a quark and an antiquark. We can examine the possible particles formed by combining up and down quarks (always quark-antiquark pairs for mesons).</p>
-<p>Looking at the isospin:<br>
-- The <strong>up quark</strong> has isospin <span class="math inline">\(I = 1/2\)</span> with <span class="math inline">\(I_3 = +1/2\)</span>.<br>
-- The <strong>down quark</strong> has isospin <span class="math inline">\(I = 1/2\)</span> with <span class="math inline">\(I_3 = -1/2\)</span>.</p>
-<p>This framework helps classify particles based on their isospin properties, similar to how spin states classify electron configurations.</p>
-<!--
-Cosine simularity: 0.9350879675148182
--->
-</section>
-<section id="defining-charge-in-qed-and-qcd-1" class="level2">
-<h2 class="anchored" data-anchor-id="defining-charge-in-qed-and-qcd-1">Defining Charge in QED and QCD</h2>
-<p>For the antiquark in metals, we can examine the isospin properties. Both the up and down quarks have isospin <span class="math inline">\(I = 1/2\)</span>. When combining two particles with isospin <span class="math inline">\(1/2\)</span>, the possible outcomes are isospin <span class="math inline">\(0\)</span> or <span class="math inline">\(1\)</span>. This is analogous to combining spins, where the dimensions are determined by the projections.</p>
-<p>For isospin <span class="math inline">\(1/2\)</span>, there are two projections: <span class="math inline">\(I_3 = +1/2\)</span> and <span class="math inline">\(I_3 = -1/2\)</span>. The dimensions are represented as <span class="math inline">\(2 \times 2\)</span>, and for an antiquark, we denote this with a bar on top.</p>
-<p>For an isospin <span class="math inline">\(I = 1\)</span>, the number of projections is given by <span class="math inline">\(2I + 1\)</span>, which yields three projections: <span class="math inline">\(I_3 = +1, 0, -1\)</span>. For isospin <span class="math inline">\(0\)</span>, there is only one projection: <span class="math inline">\(I_3 = 0\)</span>. In terms of dimensions, this decomposition results in <span class="math inline">\(3 + 1\)</span>, corresponding to a triplet (isospin <span class="math inline">\(1\)</span>) and a singlet (isospin <span class="math inline">\(0\)</span>).</p>
-<p>This can also be represented in matrix form. For example, a <span class="math inline">\(4 \times 4\)</span> matrix can be decomposed into a <span class="math inline">\(3 \times 3\)</span> block (triplet) and a <span class="math inline">\(1 \times 1\)</span> block (singlet).</p>
-<p>To determine the coefficients and signs in these combinations, we use Clebsch-Gordan coefficients, similar to those used in spin combinations. For example, when combining two isospin <span class="math inline">\(1/2\)</span> particles, the resulting states are:</p>
-<ul>
-<li>An isospin triplet (<span class="math inline">\(I = 1\)</span>) with projections <span class="math inline">\(I_3 = +1, 0, -1\)</span>.<br>
-</li>
-<li>An isospin singlet (<span class="math inline">\(I = 0\)</span>) with <span class="math inline">\(I_3 = 0\)</span>.</li>
-</ul>
-<p>The Clebsch-Gordan coefficients describe the weights of these combinations. For instance, combining two <span class="math inline">\(I = 1/2\)</span> states with specific <span class="math inline">\(I_3\)</span> projections yields the resulting state and its <span class="math inline">\(I_3\)</span> value.</p>
-<p>This framework helps classify particle states in terms of quark-antiquark combinations, such as mesons, where the isospin properties are determined by the underlying <span class="math inline">\(SU(2)\)</span> algebra.</p>
-<!--
-Cosine simularity: 0.9388981052318932
--->
-</section>
-<section id="defining-charge-in-qcd-and-group-theory-introduction-1" class="level2">
-<h2 class="anchored" data-anchor-id="defining-charge-in-qcd-and-group-theory-introduction-1">Defining Charge in QCD and Group Theory Introduction</h2>
-<p>We have an isospin triplet with isospin <span class="math inline">\(I = 1\)</span>, which has three projections: <span class="math inline">\(I_3 = +1, 0, -1\)</span>. There is also a singlet with <span class="math inline">\(I = 0\)</span> and projection <span class="math inline">\(I_3 = 0\)</span>.</p>
-<p>The Clebsch-Gordan coefficients are used here, and you must always take the square root of these coefficients. This explains why the states are constructed the way they are.</p>
-<p>For antiquarks, the isospin assignments are:<br>
-- Anti-up quark: <span class="math inline">\(I_3 = -1/2\)</span><br>
-- Anti-down quark: <span class="math inline">\(I_3 = +1/2\)</span></p>
-<p>The minus sign is chosen so that quarks and antiquarks behave consistently under <span class="math inline">\(SU(2)\)</span> transformations.</p>
-<p>For the singlet state, combining up and anti-up quarks gives a vector with projections <span class="math inline">\(+1/2\)</span> and <span class="math inline">\(-1/2\)</span>, scaled by a square root factor. Similarly, for down and anti-down, we have <span class="math inline">\(-1/2\)</span> and <span class="math inline">\(+1/2\)</span>, but due to the minus sign in the antiquark assignment, the final result is a positive combination.</p>
-<p>The triplet states follow the same logic.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The triplet states correspond to pions: <span class="math inline">\(\pi^+\)</span> (<span class="math inline">\(I_3 = +1\)</span>), <span class="math inline">\(\pi^0\)</span> (<span class="math inline">\(I_3 = 0\)</span>), and <span class="math inline">\(\pi^-\)</span> (<span class="math inline">\(I_3 = -1\)</span>). Rho particles also form a similar triplet but are distinguished by their spin.</p>
-</div>
-</div>
-<!--
-Cosine simularity: 0.9377758905461728
--->
-</section>
-<section id="introduction-to-su2-group-and-its-fundamental-representation" class="level2">
-<h2 class="anchored" data-anchor-id="introduction-to-su2-group-and-its-fundamental-representation">Introduction to SU(2) Group and Its Fundamental Representation</h2>
-<p>The difference between the two states lies in their spin: one has antiparallel spin (spin zero), while the other has parallel spin. Otherwise, they are identical. For the singlets, we can have an omega here and a meta <span class="math inline">\(E'\)</span> there. By choosing the isospin quantum number, we can group certain particles together.</p>
-<p>Now, let’s consider an example: shooting a <span class="math inline">\(\pi\)</span> beam at a proton target. The <span class="math inline">\(\pi\)</span> has isospin <span class="math inline">\(I = 1\)</span>, and the nucleon target has isospin <span class="math inline">\(I = 1/2\)</span>. When combining these isospins, the possible resulting states are <span class="math inline">\(I = 3/2\)</span> or <span class="math inline">\(I = 1/2\)</span>.</p>
-<p>The dimensions of these representations are as follows:<br>
-- For <span class="math inline">\(I = 1\)</span>, there are 3 projections (dimension 3).<br>
-- For <span class="math inline">\(I = 1/2\)</span>, there are 2 projections (dimension 2).<br>
-- For the combined <span class="math inline">\(I = 3/2\)</span> state, there are 4 projections (<span class="math inline">\(\pm 3/2, \pm 1/2\)</span>).<br>
-- For the <span class="math inline">\(I = 1/2\)</span> state, there are 2 projections again.</p>
-<p>This decomposition is represented mathematically by a <span class="math inline">\(6 \times 6\)</span> matrix, which can be broken down into smaller matrices corresponding to the subspaces: a <span class="math inline">\(2 \times 2\)</span> matrix and a <span class="math inline">\(4 \times 4\)</span> matrix. These smaller matrices are called <strong>irreducible representations</strong>.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Irreducible representations are fundamental in group theory, as they cannot be decomposed further into smaller representations under the group’s operations.</p>
-</div>
-</div>
-<p>For small numbers, this decomposition is straightforward, but for larger numbers, specific methods are required to determine the irreducible representations. While we won’t delve deeper into these methods here, it’s important to recognize the underlying structure.</p>
-<p>The triplet states correspond to pions: <span class="math inline">\(\pi^+\)</span> (<span class="math inline">\(I_3 = +1\)</span>), <span class="math inline">\(\pi^0\)</span> (<span class="math inline">\(I_3 = 0\)</span>), and <span class="math inline">\(\pi^-\)</span> (<span class="math inline">\(I_3 = -1\)</span>). Rho particles also form a similar triplet but are distinguished by their spin.</p>
-<!--
-Cosine simularity: 0.8720157501900838
--->
-</section>
-<section id="matrix-exponentiation-and-taylor-series-in-su2" class="level2">
-<h2 class="anchored" data-anchor-id="matrix-exponentiation-and-taylor-series-in-su2">Matrix Exponentiation and Taylor Series in SU(2)</h2>
-<p>In the context of combining three quarks, we have <span class="math inline">\(2 \otimes 2 \otimes 2\)</span>, which gives us two possible projections for spin <span class="math inline">\(\pm 1/2\)</span>. Using the earlier decomposition, <span class="math inline">\(2 \otimes 2\)</span> yields <span class="math inline">\(3 \oplus 1\)</span>, and now with three quarks, this further decomposes into <span class="math inline">\(4 \oplus 2 \oplus 2\)</span>.</p>
-<p>This results in an eight-dimensional representation:<br>
-- A spin-<span class="math inline">\(3/2\)</span> quartet (four states).<br>
-- Two spin-<span class="math inline">\(1/2\)</span> doublets (two states each).</p>
-<p>These representations are useful in isospin analysis. For example, the delta particles (<span class="math inline">\(\Delta\)</span>) correspond to the quartet with charges <span class="math inline">\(\Delta^{++}, \Delta^+, \Delta^0, \Delta^-\)</span> and a mass around 1232 MeV.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The isospin quantum number helps group particles and explains differences in measured cross sections, as seen in exercises.</p>
-</div>
-</div>
-<p>For meson-nucleon systems (e.g., <span class="math inline">\(\pi\)</span> beam on a proton target), combining isospins <span class="math inline">\(I = 1\)</span> (pion) and <span class="math inline">\(I = 1/2\)</span> (nucleon) gives <span class="math inline">\(I = 3/2\)</span> or <span class="math inline">\(I = 1/2\)</span> states. The dimensions are:<br>
-- <span class="math inline">\(I = 3/2\)</span>: 4 projections (<span class="math inline">\(\pm 3/2, \pm 1/2\)</span>).<br>
-- <span class="math inline">\(I = 1/2\)</span>: 2 projections.</p>
-<p>This decomposition is represented by a <span class="math inline">\(6 \times 6\)</span> matrix reducible into <span class="math inline">\(4 \times 4\)</span> and <span class="math inline">\(2 \times 2\)</span> blocks, corresponding to irreducible representations.</p>
-<p>The triplet states (e.g., pions <span class="math inline">\(\pi^+, \pi^0, \pi^-\)</span>) and rho particles share similar isospin structure but differ in spin.</p>
-<!--
-Cosine simularity: 0.9112039847659703
--->
-</section>
-<section id="spin-and-su2-symmetry-in-quantum-mechanics" class="level2">
-<h2 class="anchored" data-anchor-id="spin-and-su2-symmetry-in-quantum-mechanics">Spin and SU(2) Symmetry in Quantum Mechanics</h2>
-<p>The differences in measured cross sections can be understood by examining reactions like <span class="math inline">\(\pi^+ p\)</span> and <span class="math inline">\(\pi^- p\)</span>. For example, in the delta mass region, the cross section for <span class="math inline">\(\pi^+ p\)</span> is a factor of three larger than for <span class="math inline">\(\pi^- p\)</span>. These differences can be explored further in exercises and classwork.</p>
-<p>The concept of isospin was introduced historically by observing patterns in particle reactions. In the 1950s, physicists noticed symmetries between particles like pions and later rho mesons. They grouped these particles into multiplets, such as triplets (pions) or quadruplets (delta particles), based on their isospin properties.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Isospin emerged from experimental observations that reaction rates for processes like <span class="math inline">\(pp \to pp\)</span>, <span class="math inline">\(pn \to pn\)</span>, and <span class="math inline">\(nn \to nn\)</span> were nearly identical, suggesting the strong interaction does not distinguish between protons and neutrons.</p>
-</div>
-</div>
-<p>The isospin concept was initially a mathematical tool to classify particles before deeper structures like quarks were discovered. For example:<br>
-- Pions (<span class="math inline">\(\pi^+, \pi^0, \pi^-\)</span>) form an isospin triplet.<br>
-- Delta particles (<span class="math inline">\(\Delta^{++}, \Delta^+, \Delta^0, \Delta^-\)</span>) form an isospin quadruplet.</p>
-<p>Later, larger patterns involving strangeness and hypercharge were identified, which we will discuss in upcoming lectures. The key insight is that isospin symmetry explains why certain cross sections differ, such as the factor of three observed in pion-proton scattering.</p>
-<!--
-Cosine simularity: 0.9175342223856281
--->
-</section>
-<section id="introduction-to-isospin-and-generators-in-su2" class="level2">
-<h2 class="anchored" data-anchor-id="introduction-to-isospin-and-generators-in-su2">Introduction to Isospin and Generators in SU(2)</h2>
-<p>When examining cross sections, certain reactions appear stronger, necessitating new concepts in the theory. Historically, experiments revealed that the strong interaction does not distinguish between protons and neutrons, suggesting they are nearly identical.</p>
-<p>On the quark level, this means the interaction does not differentiate between up and down quarks. This observation led to grouping the proton and neutron into an isospin doublet, as well as the up and down quarks.</p>
-<p>Initially, the isospin doublet was proposed before the quark model was developed. Later, other particles like pions and rho mesons were discovered and grouped into larger patterns. These patterns included additional quantum numbers like strangeness.</p>
-<p>The delta particles were first identified in the 1960s, particularly through experiments like those at the Bevatron. These experiments, using large accelerators, uncovered over 100 particles, creating confusion about their nature. Eventually, it was understood that these particles could be decomposed into smaller constituents, leading to the modern quark model.</p>
-<p><span class="math display">\[
-p = \left| \frac{1}{2}, +\frac{1}{2} \right&gt; \quad n = \left| \frac{1}{2}, -\frac{1}{2} \right&gt;
-\]</span></p>
-<p>This formalism represents the proton and neutron as states in an isospin doublet, with <span class="math inline">\(I = \frac{1}{2}\)</span> and third components <span class="math inline">\(I_3 = \pm \frac{1}{2}\)</span>. The symmetry in their interactions under the strong force motivated the introduction of isospin as a useful classification tool before the underlying quark structure was known.</p>
-<!--
-Cosine simularity: 0.8714485091022227
--->
-</section>
-<section id="properties-and-rank-of-su2-group" class="level2">
-<h2 class="anchored" data-anchor-id="properties-and-rank-of-su2-group">Properties and Rank of SU(2) Group</h2>
-<p>The isospin algebra is given by the commutation relation:</p>
-<p><span class="math display">\[
-[I_i, I_j] = i \epsilon_{ijk} I_k
-\]</span></p>
-<p>Here, <span class="math inline">\(I_i\)</span> are the isospin operators, and <span class="math inline">\(\epsilon_{ijk}\)</span> is the Levi-Civita symbol.</p>
-<p>We can take a short break before continuing with strangeness. Strangeness was introduced to explain the behavior of certain particles detected in cosmic rays. For example, in a cloud chamber, tracks resembling a V-shape were observed, corresponding to particles like <span class="math inline">\(\pi^+\)</span>, <span class="math inline">\(\pi^-\)</span>, and a proton. These particles appeared in pairs and had relatively long lifetimes.</p>
-<p>This led to the introduction of a new quantum number called strangeness, which was proposed to be conserved. Earlier, we mentioned that isospin is also a quantum number conserved in strong interactions.</p>
-<p>To assign strangeness, consider particles composed of up and down quarks — their strangeness is zero (e.g., pions, neutrons, protons). For particles with strangeness <span class="math inline">\(+1\)</span>, examples include the <span class="math inline">\(\Lambda\)</span> hyperon. In general, these are classified as hyperons, with different types such as the <span class="math inline">\(\Lambda\)</span>.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Isospin and strangeness are both quantum numbers used to classify particles, with isospin conserved in strong interactions and strangeness introduced to explain unusual particle behavior.</p>
-</div>
-</div>
-<!--
-Cosine simularity: 0.9003578680851617
--->
-</section>
-<section id="spin-projections-and-matrix-representations-in-su2" class="level2">
-<h2 class="anchored" data-anchor-id="spin-projections-and-matrix-representations-in-su2">Spin Projections and Matrix Representations in SU(2)</h2>
-<p>We can form two isospin doublets with <span class="math inline">\(K^+\)</span> and <span class="math inline">\(K^0\)</span>, and similarly, <span class="math inline">\(K^-\)</span> and <span class="math inline">\(\bar{K^0}\)</span> can be placed in an isospin doublet with strangeness <span class="math inline">\(-1\)</span>. Since these particles appear in pairs, strangeness must be conserved in strong interactions but not in weak interactions. For example, in the lambda decay <span class="math inline">\(\Lambda \to p + \pi^-\)</span>, neither the proton nor the pion carries strangeness, yet the decay occurs. This indicates strangeness violation, which is allowed in weak interactions.</p>
-<p>In strong or electromagnetic interactions, strangeness is conserved. The long lifetime of such decays suggests they proceed via weak interactions. For instance, the reaction <span class="math inline">\(\pi + p \to \Lambda + K^+\)</span> occurs because strangeness is produced in pairs.</p>
-<p>The hypercharge <span class="math inline">\(Y\)</span> is defined as:</p>
-<p><span class="math display">\[
-Y = B + S
-\]</span></p>
-<p>where <span class="math inline">\(B\)</span> is the baryon number and <span class="math inline">\(S\)</span> is the strangeness. Baryon number is straightforward:<br>
-- <span class="math inline">\(+1\)</span> for baryons (e.g., protons, neutrons),<br>
-- <span class="math inline">\(-1\)</span> for antibaryons,<br>
-- <span class="math inline">\(0\)</span> for mesons (e.g., pions, kaons).</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Reactions like <span class="math inline">\(p \to \pi^+ + \pi^-\)</span> are forbidden because baryon number is conserved. Similarly, a proton beam colliding with a <span class="math inline">\(\pi^-\)</span> cannot produce only mesons in the final state — a baryon must remain.</p>
-</div>
-</div>
-<p>In the isospin triplet (e.g., <span class="math inline">\(\pi^+, \pi^0, \pi^-\)</span>), the projections <span class="math inline">\(I_3 = +1, 0, -1\)</span> correlate with charge. This relationship is formalized by the Gell-Mann–Nishijima formula:</p>
-<p><span class="math display">\[
-Q = I_3 + \frac{Y}{2}
-\]</span></p>
-<p>For example, for the proton (<span class="math inline">\(I_3 = +\frac{1}{2}\)</span>, <span class="math inline">\(B = 1\)</span>, <span class="math inline">\(S = 0\)</span>), the charge is:</p>
-<p><span class="math display">\[
-Q = \frac{1}{2} + \frac{1}{2} = 1
-\]</span></p>
-<p>which matches its observed charge. This formula connects isospin, hypercharge, and electric charge.</p>
-<!--
-Cosine simularity: 0.9152291426929093
--->
-</section>
-<section id="angular-momentum-operators-and-conserved-quantities-in-quantum-mechanics" class="level2">
-<h2 class="anchored" data-anchor-id="angular-momentum-operators-and-conserved-quantities-in-quantum-mechanics">Angular Momentum Operators and Conserved Quantities in Quantum Mechanics</h2>
-<p>Let’s quickly verify the formula for the proton. If <span class="math inline">\(I = \frac{1}{2}\)</span> and the first component is <span class="math inline">\(+\frac{1}{2}\)</span>, we can check the hypercharge. The proton has strangeness <span class="math inline">\(S = 0\)</span> but is a baryon, so its baryon number <span class="math inline">\(B = 1\)</span>. Using the Gell-Mann–Nishijima formula:</p>
-<p><span class="math display">\[
-Q = I_3 + \frac{Y}{2}
-\]</span></p>
-<p>where <span class="math inline">\(Y = B + S\)</span>, we get:</p>
-<p><span class="math display">\[
-Q = \frac{1}{2} + \frac{1}{2} = +1
-\]</span></p>
-<p>This matches the proton’s charge. Similarly, for the neutron (<span class="math inline">\(I_3 = -\frac{1}{2}\)</span>, <span class="math inline">\(B = 1\)</span>, <span class="math inline">\(S = 0\)</span>), the charge is:</p>
-<p><span class="math display">\[
-Q = -\frac{1}{2} + \frac{1}{2} = 0
-\]</span></p>
-<p>Gell-Mann and Nishijima discovered larger patterns by including strangeness, leading to the “eightfold way.” This extended the analysis to the <span class="math inline">\(SU(3)\)</span> flavor symmetry, incorporating the up, down, and strange quarks.</p>
-<p>Here are the quantum numbers for these quarks:<br>
-- <strong>Baryon number</strong>: Each quark has <span class="math inline">\(B = \frac{1}{3}\)</span>, so a proton (uud) has <span class="math inline">\(B = 1\)</span>.<br>
-- <strong>Charge</strong>: Up quark (<span class="math inline">\(Q = +\frac{2}{3}\)</span>), down quark (<span class="math inline">\(Q = -\frac{1}{3}\)</span>), strange quark (<span class="math inline">\(Q = -\frac{1}{3}\)</span>).<br>
-- <strong>Strangeness</strong>: <span class="math inline">\(S = 0\)</span> for up and down, <span class="math inline">\(S = -1\)</span> for strange.</p>
-<p>Plotting the third component of isospin (<span class="math inline">\(I_3\)</span>) against strangeness (<span class="math inline">\(S\)</span>) reveals the multiplet structure for these quarks.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The eightfold way organized particles into larger multiplets, predicting new states like the <span class="math inline">\(\Omega^-\)</span> before their experimental discovery.</p>
-</div>
-</div>
-<!--
-Cosine simularity: 0.9364279717617845
--->
-</section>
-<section id="construction-of-arbitrary-representations-in-su2" class="level2">
-<h2 class="anchored" data-anchor-id="construction-of-arbitrary-representations-in-su2">Construction of Arbitrary Representations in SU(2)</h2>
-<p>For the down-strange quark, the quantum numbers are <span class="math inline">\(I_3 = -\frac{1}{2}\)</span> and strangeness <span class="math inline">\(S = -1\)</span>. These are all fermions, specifically spin-<span class="math inline">\(\frac{1}{2}\)</span> particles. We previously discussed strangeness, so let’s set it to <span class="math inline">\(-1\)</span>. For the strange quark, we use <span class="math inline">\(I = \frac{1}{2}\)</span>.</p>
-<p>Now, we examine larger patterns, starting with baryons. Baryons are composed of three quarks, which can be up, down, or strange. This gives us the combination <span class="math inline">\(3 \otimes 3 \otimes 3\)</span>, resulting in the decomposition:</p>
-<p><span class="math display">\[
-3 \otimes 3 \otimes 3 = 10 \oplus 8 \oplus 8 \oplus 1
-\]</span></p>
-<p>This includes a decuplet (10) and two octets (8). We focus first on the ground-state baryons, which can be arranged into an octet and a decuplet. The horizontal axis represents the third component of isospin (<span class="math inline">\(I_3\)</span>), while the vertical axis shows strangeness (<span class="math inline">\(S\)</span>). Some texts also use hypercharge (<span class="math inline">\(Y\)</span>) instead.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The isospin multiplets are visible along the horizontal axis: a doublet for the neutron and proton, a triplet for the sigmas, and a doublet for the cascades.</p>
-</div>
-</div>
-<p>For example, the neutron and proton form an isospin doublet with <span class="math inline">\(I_3 = \pm \frac{1}{2}\)</span>, while the sigmas form a triplet with <span class="math inline">\(I_3 = -1, 0, +1\)</span>. The cascades form another doublet with <span class="math inline">\(I_3 = -\frac{1}{2}, +\frac{1}{2}\)</span>. The quark content is also evident: particles with one strange quark lie along one line, while those with two strange quarks are further down.</p>
-<p>The masses reveal interesting patterns. The proton and neutron masses are nearly identical, differing by only about 1 MeV. Similar small mass differences occur along the horizontal axis for other particles, like the sigmas. However, vertical mass differences (e.g., between particles with different strangeness) are much larger. For instance, the mass difference between the <span class="math inline">\(\Sigma\)</span> and <span class="math inline">\(\Lambda\)</span> is around 250 MeV, and between the <span class="math inline">\(\Xi\)</span> and <span class="math inline">\(\Sigma\)</span>, it’s about 130 MeV.</p>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This indicates that isospin symmetry in <span class="math inline">\(SU(2)\)</span> is a good approximation, but including the strange quark breaks it significantly. The mass differences show that <span class="math inline">\(SU(3)\)</span> flavor symmetry is only approximate.</p>
-</div>
-</div>
-<p>The decuplet particles have spin-<span class="math inline">\(\frac{3}{2}\)</span> and positive parity, while the octet particles have spin-<span class="math inline">\(\frac{1}{2}\)</span> and positive parity. The quark spin configurations can be arranged in various permutations.</p>
-<p>The horizontal axis shows the highest <span class="math inline">\(I_3\)</span> value, while the vertical axis tracks strangeness (<span class="math inline">\(S = 0, -1, -2, -3\)</span>). All these particles share the same spin and parity: the octet has spin-<span class="math inline">\(\frac{1}{2}\)</span> and parity <span class="math inline">\(+\)</span>, while the decuplet has spin-<span class="math inline">\(\frac{3}{2}\)</span> and parity <span class="math inline">\(+\)</span>.</p>
-<!--
-Cosine simularity: 0.8857538208042935
--->
-</section>
-<section id="introduction-to-xi-and-xic-particles" class="level2">
-<h2 class="anchored" data-anchor-id="introduction-to-xi-and-xic-particles">Introduction to Xi and XIC Particles</h2>
-<p>The spin configurations can be arranged in various permutations, such as aligned spins, resulting in a total spin of <span class="math inline">\(\frac{1}{2}\)</span>. For example, all spins could be aligned in one direction.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>When Gell-Mann proposed this pattern, the <span class="math inline">\(\Omega^-\)</span> particle had not yet been discovered. Its prediction was a major success, and it was experimentally confirmed two years later in bubble chamber experiments.</p>
-</div>
-</div>
-<p>The discovery involved the reaction:<br>
-<span class="math display">\[
-K^- + p \to \Omega^- + K^+ + K^0  
-\]</span><br>
-To conserve strangeness, additional kaons (<span class="math inline">\(K\)</span>) are required, leading to further decays like:<br>
-<span class="math display">\[
-\Omega^- \to \Xi^0 + \pi^- \quad \text{or} \quad \Xi^- + \pi^0  
-\]</span><br>
-and eventually to:<br>
-<span class="math display">\[
-\Xi \to \Lambda + \pi \quad \text{and} \quad \Lambda \to p + \pi^-  
-\]</span></p>
-<p>Gell-Mann not only predicted the existence of the <span class="math inline">\(\Omega^-\)</span> but also estimated its mass. The mass differences between particles in the decuplet follow a pattern of roughly 150 MeV. For example:<br>
-- The <span class="math inline">\(\Delta(1232)\)</span> has a mass of 1232 MeV.<br>
-- The <span class="math inline">\(\Sigma^*\)</span> and <span class="math inline">\(\Xi^*\)</span> follow the horizontal mass progression.<br>
-- The <span class="math inline">\(\Omega^-\)</span> has a mass around 1680 MeV.</p>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>These predictions were based on mathematical symmetry considerations in the context of the Eightfold Way, which successfully described many hadrons. The mass differences and decay patterns provided strong evidence for the quark model.</p>
-</div>
-</div>
-<!--
-Cosine simularity: 0.9493190403262008
--->
-</section>
-<section id="conflict-in-particle-observations-and-strong-interaction-symmetry" class="level2">
-<h2 class="anchored" data-anchor-id="conflict-in-particle-observations-and-strong-interaction-symmetry">Conflict in Particle Observations and Strong Interaction Symmetry</h2>
-<p>The mass differences between particles in the octet and the decuplet can be attributed to spin-spin or spin-orbit interactions, which arise from the dynamics. For baryons, the spin configurations lead to these mass differences, and a similar analysis can be applied to mesons.</p>
-<p>For mesons, considering the quark combinations of up, down, and strange, we have <span class="math inline">\(3 \times \bar{3} = 8 + 1\)</span>, forming an octet or nonet (if including the <span class="math inline">\(\eta'\)</span>). The diagonal elements of these multiplets represent charge states:<br>
-- <span class="math inline">\(-1\)</span> for certain particles,<br>
-- <span class="math inline">\(0\)</span> and <span class="math inline">\(+1\)</span> for others,<br>
-- and <span class="math inline">\(+2\)</span> in some cases.</p>
-<p>The quantum numbers for this octet/nonet are <span class="math inline">\(0^-+\)</span>, indicating the quark-antiquark pair has antiparallel spin orientation. The parity is <span class="math inline">\(-1\)</span>, and charge conjugation (<span class="math inline">\(C\)</span>) is <span class="math inline">\(+1\)</span>. For mesons with parallel spins (spin <span class="math inline">\(1\)</span>), the parity remains <span class="math inline">\(-1\)</span>, and charge conjugation is <span class="math inline">\(-1\)</span>.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Charge conjugation converts a particle into its antiparticle. Parity inverts spatial coordinates, and for baryons, it can be calculated as <span class="math inline">\(P = (-1)^L\)</span>, where <span class="math inline">\(L\)</span> is the orbital angular momentum. For ground-state baryons ( <span class="math inline">\(L = 0\)</span> ), parity is <span class="math inline">\(+1\)</span>.</p>
-</div>
-</div>
-<p>For mesons, parity is given by:<br>
-<span class="math display">\[
-P = (-1)^{L+1}
-\]</span><br>
-This results in a parity of <span class="math inline">\(-1\)</span> for both the octet and nonet. Charge conjugation is well-defined only for neutral mesons. For example, the <span class="math inline">\(\pi^0\)</span> has <span class="math inline">\(C = +1\)</span>.</p>
-<p>When analyzing particle decays, multiplicative quantum numbers like parity (<span class="math inline">\(P\)</span>) and charge conjugation (<span class="math inline">\(C\)</span>) must be conserved. For instance, the decay <span class="math inline">\(\omega \to \pi^0 \pi^0\)</span> is forbidden because:<br>
-- <span class="math inline">\(C(\omega) = -1\)</span>,<br>
-- <span class="math inline">\(C(\pi^0 \pi^0) = (+1) \times (+1) = +1\)</span>,<br>
-violating <span class="math inline">\(C\)</span>-parity conservation.</p>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Spin combinations must also be considered in decays. For example, the total spin of decay products must match the initial particle’s spin.</p>
-</div>
-</div>
-<p>Lastly, the mass differences in the baryon decuplet follow a pattern of approximately 150 MeV:<br>
-- <span class="math inline">\(\Delta(1232)\)</span> at 1232 MeV,<br>
-- <span class="math inline">\(\Sigma^*\)</span> and <span class="math inline">\(\Xi^*\)</span> along the horizontal progression,<br>
-- <span class="math inline">\(\Omega^-\)</span> at 1680 MeV.</p>
-<p>These patterns were predicted using the Eightfold Way and confirmed experimentally, providing strong evidence for the quark model.</p>
-<!--
-Cosine simularity: 0.9212228865947888
--->
-</section>
-<section id="isospin-and-su2-symmetry-in-quark-systems" class="level2">
-<h2 class="anchored" data-anchor-id="isospin-and-su2-symmetry-in-quark-systems">Isospin and SU(2) Symmetry in Quark Systems</h2>
-<p>Nobody complained when I wrote down the quark content for the omega minus or the delta plus plus. I mentioned that all of these have aligned spins (spin up), and their flavor content is also identical. Do you see a problem here? Quarks are fermions, and according to the Pauli exclusion principle, fermions in a combined state must be distinguishable by at least one quantum number. Here, everything is the same.</p>
-<p>Let’s examine the total wave function of these baryons. For <span class="math inline">\(L = 0\)</span>, the spatial wave function is symmetric. The spin wave function is also symmetric because all spins are aligned up — exchanging any quark pair leaves the state unchanged. The flavor wave function is symmetric as well.</p>
-<p>When physicists encounter such a problem, we introduce a new quantum number. In this case, it’s <strong>color charge</strong>. The color part of the wave function must be antisymmetric to ensure the total wave function is antisymmetric. We assign each quark a distinct color (red, green, blue), making them distinguishable.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The introduction of color charge resolves the Pauli exclusion violation in baryons like the delta plus plus, where all quarks share identical spin and flavor states.</p>
-</div>
-</div>
-<p>Now, let’s briefly discuss an experiment confirming the number of colors. Last time, I mentioned we have three colors, but how do we know it’s not six? Experiments involving <span class="math inline">\(e^+ e^-\)</span> annihilation provided evidence. In these collisions, a virtual photon is exchanged, producing quark-antiquark pairs or leptons like <span class="math inline">\(\mu^+ \mu^-\)</span>. The observed rates for quark production match predictions for three colors, not more.</p>
-<p>The mass of the produced systems depends on the quark-antiquark pairs generated. This experimental consistency supports the three-color model in quantum chromodynamics (QCD).</p>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The <span class="math inline">\(e^+ e^-\)</span> annihilation cross-section measurements are a key experimental verification of the three-color structure of QCD.</p>
-</div>
-</div>
-<!--
-Cosine simularity: 0.8270094339244055
--->
-</section>
-<section id="combining-spin-representations-in-su2" class="level2">
-<h2 class="anchored" data-anchor-id="combining-spin-representations-in-su2">Combining Spin Representations in SU(2)</h2>
-<p>The expression for the squared spin operator <span class="math inline">\(\hat{I}^2\)</span> acting on the state <span class="math inline">\(\left| I, I_3 \right&gt;\)</span> is given by:</p>
-<p><span class="math display">\[
-\hat{I}^2 \left| I, I_3 \right&gt; = (I_1^2 + I_2^2 - i[I_1, I_2]) \left| I, I_3 \right&gt; = (I_1^2 + I_2^2 + I_3^2 - I_3^2 + I_3) \left| I, I_3 \right&gt;
-\]</span></p>
-<p>This gives us the mass of the produced systems that can be observed. The measured quantity is the cross-section ratio between hadronic production (quark-antiquark pairs) and lepton pair production (e.g., <span class="math inline">\(\mu^+ \mu^-\)</span>). The key idea is that leptons lack color charge, so dividing the cross-sections yields a result proportional to the number of colors.</p>
-<p>The process involves a photon exchange at the vertex, with proportionality to the squared charge. Different quark flavors contribute to the spectrum, appearing as peaks corresponding to mesons like <span class="math inline">\(\rho\)</span>, <span class="math inline">\(\omega\)</span>, and <span class="math inline">\(\pi\)</span>. At higher energies, heavier quark-antiquark bound states emerge, such as the <span class="math inline">\(J/\psi\)</span> (charm-anticharm) and <span class="math inline">\(\Upsilon\)</span> (bottom-antibottom).</p>
-<p>The step-like increases in the cross-section can be calculated precisely, and experimental data confirms the number of colors is three. This provides historical context for how observed particle patterns led to the quark model, where particles are composed of smaller constituents (quarks) with six flavors and three colors.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The cross-section ratio between hadronic and leptonic production is a direct probe of the number of color charges in QCD.</p>
-</div>
-</div>
-<p>The discussion ties back to earlier topics like strangeness and invariant masses, but the key takeaway is the experimental validation of the three-color model through <span class="math inline">\(e^+ e^-\)</span> annihilation processes.</p>
-<!--
-Cosine simularity: 0.9120572022808171
--->
-</section>
-<section id="representation-theory-and-spin-preservation" class="level2">
-<h2 class="anchored" data-anchor-id="representation-theory-and-spin-preservation">Representation Theory and Spin Preservation</h2>
-<p>The particles were called “strange” because their behavior was chaotic compared to particles with invariant masses. They appeared only in pairs and had longer lifetimes, which was initially confusing.</p>
-<p>In experiments, you can only observe the invariant mass by detecting particles like protons and pions, then analyzing their spectra. The known particles include the proton (discovered in 1932), neutron, antiproton (discovered in the 1950s), and other charged particles.</p>
-<p>The concept of charge parity (C-parity) is introduced to explain why certain decays are not observed. If a decay is not measured, it suggests a violation of a quantum number.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The invariant mass spectra of detected particles (e.g., protons and pions) provide key insights into the underlying quantum numbers governing particle interactions.</p>
-</div>
-</div>
-<!--
-Cosine simularity: 0.8845517770554193
--->
-</section>
-<section id="introduction-to-isospin-and-charge-conjugation" class="level2">
-<h2 class="anchored" data-anchor-id="introduction-to-isospin-and-charge-conjugation">Introduction to Isospin and Charge Conjugation</h2>
-<p>The isospin of a nucleon is given by:</p>
-<p><span class="math display">\[
-I = \frac{1}{2}
-\]</span></p>
-<p>The violation of certain quantum numbers in particle interactions is an important observation. The concept of charge conjugation was introduced early in particle physics, around the time when positrons were discovered (1930s) and before the antiproton was detected (1950s).</p>
-<p>Theoretical predictions and experimental discoveries often influenced each other. For example, the <span class="math inline">\(\Omega^-\)</span> particle was predicted in 1962 and later discovered in 1964. Historically, the substructure of particles was first referred to as “partons” before the term “quarks” was adopted.</p>
-<p>Mass differences between particles like the <span class="math inline">\(\Delta\)</span>, <span class="math inline">\(\Sigma\)</span>, and <span class="math inline">\(\Xi\)</span> cascades provided clues about their internal composition. These differences were often correctly predicted, such as the <span class="math inline">\(150 \ \text{MeV}\)</span> mass gap observed in some cases.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The quark model was introduced in a concise two-page paper, marking an exciting period in particle physics where theoretical predictions aligned closely with experimental findings.</p>
-</div>
-</div>
-<!--
-Cosine simularity: 0.9897630007375543
--->
-<pre><code>## Charge Conjugation and Particle Properties</code></pre>
-<!--
-Cosine simularity: 0.7875338384317487
--->
-<p>Since the provided lecture chunk after <code>---</code> is empty, there is no content to transcribe or format. If you provide the actual lecture content, I can generate a properly formatted response following all the given guidelines.</p>
-<p>For now, here’s a placeholder structure (which would be replaced with the actual content once provided):</p>
-<pre><code>## Spin and Parity Combinations for Particle Systems  
-
-[Content would go here, preserving original sentences, formulas, and speaker's phrasing.]  </code></pre>
-<p>Let me know if you’d like to share the lecture chunk, and I’ll format it accordingly!</p>
-<!--
-Cosine simularity: 0.4445169939558703
--->
-<p>Since the provided lecture chunk after <code>---</code> is empty, there is no content to transcribe or format.</p>
-<p>If you provide the actual lecture content, I can generate a properly structured response following the given guidelines.</p>
-<p>Let me know if you’d like to share the lecture chunk, and I’ll format it accordingly!</p>
-<!--
-Cosine simularity: 0.4608446263227737
--->
-<p>Since the provided lecture chunk after <code>---</code> is empty, there is no content to transcribe or format.</p>
-<p>If you provide the actual lecture content, I can generate a properly structured response following the given guidelines.</p>
-<p>Let me know if you’d like to share the lecture chunk, and I’ll format it accordingly!</p>
-<p><em>(Note: This response adheres strictly to the empty input and avoids adding any extraneous content.)</em></p>
-<!--
-Cosine simularity: 0.9618040517898078
--->
-</section>
-<section id="introduction-to-cross-section-estimation-in-hadronic-reactions-2" class="level2">
-<h2 class="anchored" data-anchor-id="introduction-to-cross-section-estimation-in-hadronic-reactions-2">Introduction to Cross Section Estimation in Hadronic Reactions</h2>
 <p>Welcome everyone to today’s lecture. It will be mostly about classification of hadrons. I will walk you a little bit through the history of how important discoveries were made and what we learned from there about the hadrons and how we can group them together.</p>
 <p>In the 50s and 60s, there were a lot of new big accelerators built, like the Bevatron. This came into operation in 1954. It was a proton accelerator with energies of up to 13 GeV. These high-energy protons were shot on a fixed target, producing and detecting many different particles. Over 100 new particles were found, leading to what was called the “particle zoo.” This term was first mentioned by Oppenheimer at a high-energy physics conference.</p>
 <p>Physicists at the time had to think about how to organize these particles. Is there a pattern? Are these all fundamental particles? This is what we will discuss today.</p>
@@ -805,8 +133,8 @@ Tip
 Cosine simularity: 0.9363954505956807
 -->
 </section>
-<section id="understanding-cross-section-and-its-physical-interpretation-2" class="level2">
-<h2 class="anchored" data-anchor-id="understanding-cross-section-and-its-physical-interpretation-2">Understanding Cross Section and Its Physical Interpretation</h2>
+<section id="understanding-cross-section-and-its-physical-interpretation" class="level2">
+<h2 class="anchored" data-anchor-id="understanding-cross-section-and-its-physical-interpretation">Understanding Cross Section and Its Physical Interpretation</h2>
 <p>The spin and isospin can be treated similarly in mathematical terms, both following the <span class="math inline">\(SU(2)\)</span> algebra. In the previous lecture, we discussed the <span class="math inline">\(SU(2)\)</span> algebra, which applies to matrices and can be described using rotation matrices. The generators of this algebra are the Pauli matrices.</p>
 <p>For the isospin operator, the notation is analogous to spin, where <span class="math inline">\(I\)</span> replaces <span class="math inline">\(J\)</span>. The general form of these operators is written with the isospin <span class="math inline">\(I\)</span> and its third component <span class="math inline">\(I_3\)</span>. For example, applying the <span class="math inline">\(I_3\)</span> operator to an “up” state yields an eigenvalue of <span class="math inline">\(+1\)</span>.</p>
 <p>We also have lowering operators in this framework. For a given isospin <span class="math inline">\(I\)</span>, there are <span class="math inline">\(2I + 1\)</span> projections, labeled as <span class="math inline">\(I_3 = I, I-1, \ldots, -I\)</span>. The lowering operators allow transitions between these projections.</p>
@@ -838,8 +166,8 @@ Note
 Cosine simularity: 0.9437302292836813
 -->
 </section>
-<section id="defining-charge-in-qed-and-qcd-2" class="level2">
-<h2 class="anchored" data-anchor-id="defining-charge-in-qed-and-qcd-2">Defining Charge in QED and QCD</h2>
+<section id="defining-charge-in-qed-and-qcd" class="level2">
+<h2 class="anchored" data-anchor-id="defining-charge-in-qed-and-qcd">Defining Charge in QED and QCD</h2>
 <p>For the antiquark in metals, we examine the isospin properties. Both the up and down quarks have isospin <span class="math inline">\(I = \frac{1}{2}\)</span>. When combining two particles with isospin <span class="math inline">\(\frac{1}{2}\)</span>, the possible outcomes are isospin <span class="math inline">\(0\)</span> or <span class="math inline">\(1\)</span>. This is analogous to combining spins, where the dimensions follow similar rules.</p>
 <p>For isospin <span class="math inline">\(\frac{1}{2}\)</span>, there are two projections: <span class="math inline">\(I_3 = +\frac{1}{2}\)</span> and <span class="math inline">\(I_3 = -\frac{1}{2}\)</span>. The dimensions can be represented as <span class="math inline">\(2 \times 2\)</span>, and for an antiquark, we denote this with a bar on top.</p>
 <p>For isospin <span class="math inline">\(1\)</span>, the number of projections is given by <span class="math inline">\(2I + 1\)</span>, which yields three projections: <span class="math inline">\(I_3 = +1, 0, -1\)</span>. For isospin <span class="math inline">\(0\)</span>, there is only one projection: <span class="math inline">\(I_3 = 0\)</span>. In terms of dimensions, this decomposition results in <span class="math inline">\(3 + 1\)</span>.</p>
@@ -878,8 +206,8 @@ Note
 Cosine simularity: 0.9283342535268201
 -->
 </section>
-<section id="defining-charge-in-qcd-and-group-theory-introduction-2" class="level2">
-<h2 class="anchored" data-anchor-id="defining-charge-in-qcd-and-group-theory-introduction-2">Defining Charge in QCD and Group Theory Introduction</h2>
+<section id="defining-charge-in-qcd-and-group-theory-introduction" class="level2">
+<h2 class="anchored" data-anchor-id="defining-charge-in-qcd-and-group-theory-introduction">Defining Charge in QCD and Group Theory Introduction</h2>
 <p>We have an isospin triplet with isospin <span class="math inline">\(I = 1\)</span>, which has three projections: <span class="math inline">\(I_3 = +1, 0, -1\)</span>. The singlet state has isospin <span class="math inline">\(I = 0\)</span> with projection <span class="math inline">\(I_3 = 0\)</span>. The Clebsch-Gordan coefficients are used here, and you must always take the square root of these coefficients.</p>
 <p>For antiquarks, the isospin assignments are:<br>
 - Anti-up quark: <span class="math inline">\(I_3 = -\frac{1}{2}\)</span><br>
@@ -896,8 +224,8 @@ Cosine simularity: 0.9283342535268201
 Cosine simularity: 0.9363218400443392
 -->
 </section>
-<section id="introduction-to-su2-group-and-its-fundamental-representation-1" class="level2">
-<h2 class="anchored" data-anchor-id="introduction-to-su2-group-and-its-fundamental-representation-1">Introduction to SU(2) Group and Its Fundamental Representation</h2>
+<section id="introduction-to-su2-group-and-its-fundamental-representation" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-to-su2-group-and-its-fundamental-representation">Introduction to SU(2) Group and Its Fundamental Representation</h2>
 <p>The distinction between the two states lies in their spin: one has anti-parallel spin (spin zero), while the other has parallel spin. Otherwise, they are identical. For the singlets, we can have an omega and a meta <span class="math inline">\(E'\)</span>. By choosing the isospin quantum number, we can group certain particles together.</p>
 <p>Now, let’s consider an example: shooting a <span class="math inline">\(\pi\)</span> beam at a proton target. The <span class="math inline">\(\pi\)</span> has isospin <span class="math inline">\(I = 1\)</span>, and the nucleon target has isospin <span class="math inline">\(I = \frac{1}{2}\)</span>. When combining these, the possible resulting isospin states are <span class="math inline">\(I = \frac{3}{2}\)</span> or <span class="math inline">\(I = \frac{1}{2}\)</span>.</p>
 <p>The dimensions of these states are as follows:<br>
@@ -925,8 +253,8 @@ Note
 Cosine simularity: 0.8578272986753702
 -->
 </section>
-<section id="matrix-exponentiation-and-taylor-series-in-su2-1" class="level2">
-<h2 class="anchored" data-anchor-id="matrix-exponentiation-and-taylor-series-in-su2-1">Matrix Exponentiation and Taylor Series in SU(2)</h2>
+<section id="matrix-exponentiation-and-taylor-series-in-su2" class="level2">
+<h2 class="anchored" data-anchor-id="matrix-exponentiation-and-taylor-series-in-su2">Matrix Exponentiation and Taylor Series in SU(2)</h2>
 <p>When combining three quarks, we have <span class="math inline">\(2 \times 2 \times 2\)</span> states, corresponding to three quarks with two possible projections each (<span class="math inline">\(\pm \frac{1}{2}\)</span><code>). Using the previous decomposition, $</code>2 = 3 + 1$, we now combine this with another <span class="math inline">\(2\)</span> to get:</p>
 <p><span class="math display">\[
 (3 + 1) \times 2 = 4 + 2 + 2
@@ -956,8 +284,8 @@ Note
 Cosine simularity: 0.9135039011988735
 -->
 </section>
-<section id="spin-and-su2-symmetry-in-quantum-mechanics-1" class="level2">
-<h2 class="anchored" data-anchor-id="spin-and-su2-symmetry-in-quantum-mechanics-1">Spin and SU(2) Symmetry in Quantum Mechanics</h2>
+<section id="spin-and-su2-symmetry-in-quantum-mechanics" class="level2">
+<h2 class="anchored" data-anchor-id="spin-and-su2-symmetry-in-quantum-mechanics">Spin and SU(2) Symmetry in Quantum Mechanics</h2>
 <p>We can use the isospin number to understand why certain measured cross sections differ in size. For example, if we plot mass against cross section, we observe the cross section for <span class="math inline">\(\pi^+ p\)</span> and <span class="math inline">\(\pi^- p\)</span> reactions. In the delta mass region, there is a factor of three difference between these cross sections. You can explore in exercises why these differences arise between the reactions.</p>
 <p>The isospin concept was introduced for protons and neutrons in the 1950s, before the discovery of quarks. Experimentally, researchers observed patterns in particle production, such as pions and later rho mesons. They grouped particles into multiplets based on symmetries, such as pions and rho mesons forming triplets, and deltas forming an isospin quadruplet.</p>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -979,8 +307,8 @@ Note
 Cosine simularity: 0.9139646757852748
 -->
 </section>
-<section id="introduction-to-isospin-and-generators-in-su2-1" class="level2">
-<h2 class="anchored" data-anchor-id="introduction-to-isospin-and-generators-in-su2-1">Introduction to Isospin and Generators in SU(2)</h2>
+<section id="introduction-to-isospin-and-generators-in-su2" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-to-isospin-and-generators-in-su2">Introduction to Isospin and Generators in SU(2)</h2>
 <p>When analyzing cross sections, certain reactions appear stronger, necessitating new concepts. For instance, the strong interaction does not distinguish between protons and neutrons, or between up and down quarks. This similarity led to grouping the proton and neutron into an isospin doublet, represented as:</p>
 <p><span class="math display">\[
 p = \left| \frac{1}{2}, +\frac{1}{2} \right&gt; \quad n = \left| \frac{1}{2}, -\frac{1}{2} \right&gt;
@@ -1005,8 +333,8 @@ Note
 Cosine simularity: 0.8692320898846009
 -->
 </section>
-<section id="properties-and-rank-of-su2-group-1" class="level2">
-<h2 class="anchored" data-anchor-id="properties-and-rank-of-su2-group-1">Properties and Rank of SU(2) Group</h2>
+<section id="properties-and-rank-of-su2-group" class="level2">
+<h2 class="anchored" data-anchor-id="properties-and-rank-of-su2-group">Properties and Rank of SU(2) Group</h2>
 <p>The isospin algebra is given by the commutation relation:</p>
 <p><span class="math display">\[
 [I_i, I_j] = i \epsilon_{ijk} I_k
@@ -1032,8 +360,8 @@ Note
 Cosine simularity: 0.9050978904814869
 -->
 </section>
-<section id="spin-projections-and-matrix-representations-in-su2-1" class="level2">
-<h2 class="anchored" data-anchor-id="spin-projections-and-matrix-representations-in-su2-1">Spin Projections and Matrix Representations in SU(2)</h2>
+<section id="spin-projections-and-matrix-representations-in-su2" class="level2">
+<h2 class="anchored" data-anchor-id="spin-projections-and-matrix-representations-in-su2">Spin Projections and Matrix Representations in SU(2)</h2>
 <p>The eigenvalue equation for the third component of isospin <span class="math inline">\(I_3\)</span> acting on a state <span class="math inline">\(\left| \frac{1}{2} \mu \right&gt;\)</span> is given by:</p>
 <p><span class="math display">\[
 I_3 \left| \frac{1}{2} \mu \right&gt; = \mu \left| \frac{1}{2} \mu \right&gt;
@@ -1067,8 +395,8 @@ Q = I_3 + \frac{Y}{2}
 Cosine simularity: 0.9158459301017114
 -->
 </section>
-<section id="angular-momentum-operators-and-conserved-quantities-in-quantum-mechanics-1" class="level2">
-<h2 class="anchored" data-anchor-id="angular-momentum-operators-and-conserved-quantities-in-quantum-mechanics-1">Angular Momentum Operators and Conserved Quantities in Quantum Mechanics</h2>
+<section id="angular-momentum-operators-and-conserved-quantities-in-quantum-mechanics" class="level2">
+<h2 class="anchored" data-anchor-id="angular-momentum-operators-and-conserved-quantities-in-quantum-mechanics">Angular Momentum Operators and Conserved Quantities in Quantum Mechanics</h2>
 <p>Let’s quickly verify the Gell-Mann–Nishijima formula for a photon. If <span class="math inline">\(I = \frac{1}{2}\)</span> and the first component is <span class="math inline">\(+\frac{1}{2}\)</span>, we can check the hypercharge. For the proton, strangeness is zero, but it’s a baryon, so <span class="math inline">\(B = 1\)</span>. Using the formula:</p>
 <p><span class="math display">\[
 Q = I_3 + \frac{Y}{2}
@@ -1097,8 +425,8 @@ Note
 Cosine simularity: 0.9455626847557598
 -->
 </section>
-<section id="construction-of-arbitrary-representations-in-su2-1" class="level2">
-<h2 class="anchored" data-anchor-id="construction-of-arbitrary-representations-in-su2-1">Construction of Arbitrary Representations in SU(2)</h2>
+<section id="construction-of-arbitrary-representations-in-su2" class="level2">
+<h2 class="anchored" data-anchor-id="construction-of-arbitrary-representations-in-su2">Construction of Arbitrary Representations in SU(2)</h2>
 <p>For the down and strange quarks, the isospin components are <span class="math inline">\(-\frac{1}{2}\)</span> and <span class="math inline">\(-3\)</span>, respectively. These are all fermions, meaning they are spin-<span class="math inline">\(\frac{1}{2}\)</span> particles. We previously discussed strangeness, which is <span class="math inline">\(-1\)</span> for the strange quark.</p>
 <p>Now, let’s examine larger patterns, starting with baryons. Baryons are composed of three quarks, which can be up, down, or strange. The combination of three quarks gives us multiplets: a decuplet (10 particles) and two octets (8 particles each). These are referred to as the ground state baryons.</p>
 <p>The particles can be arranged based on the third component of isospin (<span class="math inline">\(I_3\)</span>) on the horizontal axis and strangeness (<span class="math inline">\(S\)</span>) on the vertical axis. Some textbooks also use hypercharge (<span class="math inline">\(Y\)</span>) instead of strangeness. The isospin multiplets are visible here:<br>
@@ -1128,8 +456,8 @@ Note
 Cosine simularity: 0.9018909143777928
 -->
 </section>
-<section id="introduction-to-xi-and-xic-particles-1" class="level2">
-<h2 class="anchored" data-anchor-id="introduction-to-xi-and-xic-particles-1">Introduction to Xi and XIC Particles</h2>
+<section id="introduction-to-xi-and-xic-particles" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-to-xi-and-xic-particles">Introduction to Xi and XIC Particles</h2>
 <p>The spin configurations can vary, with all possible permutations giving a total spin of <span class="math inline">\(\frac{1}{2}\)</span>. In some cases, the spins are fully aligned, like this.</p>
 <p>At the time when Gell-Mann identified this pattern, the Omega minus had not yet been discovered. This was a major success for Gell-Mann, as he predicted the existence of the Omega minus, which was experimentally confirmed two years later in bubble chamber experiments. The reaction observed was:</p>
 <p><span class="math display">\[
@@ -1160,8 +488,8 @@ Note
 Cosine simularity: 0.9390585176736438
 -->
 </section>
-<section id="conflict-in-particle-observations-and-strong-interaction-symmetry-1" class="level2">
-<h2 class="anchored" data-anchor-id="conflict-in-particle-observations-and-strong-interaction-symmetry-1">Conflict in Particle Observations and Strong Interaction Symmetry</h2>
+<section id="conflict-in-particle-observations-and-strong-interaction-symmetry" class="level2">
+<h2 class="anchored" data-anchor-id="conflict-in-particle-observations-and-strong-interaction-symmetry">Conflict in Particle Observations and Strong Interaction Symmetry</h2>
 <p>The mass difference between particles in the octet and decuplet can be attributed to spin-spin or spin-orbit interactions, meaning it arises from dynamics. For baryons, the parity can be calculated using:</p>
 <p><span class="math display">\[
 P = (-1)^L
@@ -1205,8 +533,8 @@ Important
 Cosine simularity: 0.923763532063165
 -->
 </section>
-<section id="isospin-and-su2-symmetry-in-quark-systems-1" class="level2">
-<h2 class="anchored" data-anchor-id="isospin-and-su2-symmetry-in-quark-systems-1">Isospin and SU(2) Symmetry in Quark Systems</h2>
+<section id="isospin-and-su2-symmetry-in-quark-systems" class="level2">
+<h2 class="anchored" data-anchor-id="isospin-and-su2-symmetry-in-quark-systems">Isospin and SU(2) Symmetry in Quark Systems</h2>
 <p>Nobody complained when I wrote down the quark content for the omega minus or the delta plus plus. I mentioned that all of these have aligned spins (spin up), and their flavor content is also identical. Do you see a problem here? Quarks are fermions, and according to the Pauli exclusion principle, fermions in a combined state must be distinguishable by at least one quantum number. Here, everything is the same.</p>
 <p>Let’s examine the total wave function of these baryons. For <span class="math inline">\(L = 0\)</span>, the spatial wave function is symmetric. The spin wave function is also symmetric because all spins are aligned up — exchanging any quark pair leaves the state unchanged. The flavor wave function is symmetric as well, since all quarks are identical in flavor.</p>
 <p>When physicists encounter such a problem, we introduce a new quantum number. What could it be? Yes, color charge. This was briefly discussed last time. The color part of the wave function must be antisymmetric to ensure the total wave function is antisymmetric. We assign each quark a distinct color (red, green, blue), which distinguishes them.</p>
@@ -1229,8 +557,8 @@ Note
 Cosine simularity: 0.797384717008327
 -->
 </section>
-<section id="combining-spin-representations-in-su2-1" class="level2">
-<h2 class="anchored" data-anchor-id="combining-spin-representations-in-su2-1">Combining Spin Representations in SU(2)</h2>
+<section id="combining-spin-representations-in-su2" class="level2">
+<h2 class="anchored" data-anchor-id="combining-spin-representations-in-su2">Combining Spin Representations in SU(2)</h2>
 <p>The given expression involves the spin operator <span class="math inline">\(\hat{I}^2\)</span> acting on the state <span class="math inline">\(\left| I, I_3 \right&gt;\)</span>:</p>
 <p><span class="math display">\[
 \hat{I}^2 \left| I, I_3 \right&gt; = (I_1^2 + I_2^2 - i[I_1, I_2]) \left| I, I_3 \right&gt; = (I_1^2 + I_2^2 + I_3^2 - I_3^2 + I_3) \left| I, I_3 \right&gt;
@@ -1259,8 +587,8 @@ Note
 Cosine simularity: 0.8824743428245482
 -->
 </section>
-<section id="representation-theory-and-spin-preservation-1" class="level2">
-<h2 class="anchored" data-anchor-id="representation-theory-and-spin-preservation-1">Representation Theory and Spin Preservation</h2>
+<section id="representation-theory-and-spin-preservation" class="level2">
+<h2 class="anchored" data-anchor-id="representation-theory-and-spin-preservation">Representation Theory and Spin Preservation</h2>
 <p>The particles were called “strange” because their behavior was confusing—they appeared only in pairs and had longer lifetimes than expected.</p>
 <p>In experiments, you can only measure the invariant mass by detecting particles like protons and pions and analyzing their spectra. The proton was discovered first, followed by the neutron in 1932. Later, in the 1950s, the antiproton and other charged particles were observed.</p>
 <p>The concept of <strong>C-parity</strong> is introduced to explain why certain decays are forbidden. If a decay is not observed experimentally, it suggests a violation of a quantum number.</p>
@@ -1298,8 +626,8 @@ Important
 Cosine simularity: 0.8986943575398425
 -->
 </section>
-<section id="introduction-to-isospin-and-charge-conjugation-1" class="level2">
-<h2 class="anchored" data-anchor-id="introduction-to-isospin-and-charge-conjugation-1">Introduction to Isospin and Charge Conjugation</h2>
+<section id="introduction-to-isospin-and-charge-conjugation" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-to-isospin-and-charge-conjugation">Introduction to Isospin and Charge Conjugation</h2>
 <p>The isospin of a nucleon is given by:</p>
 <p><span class="math display">\[
 I = \frac{1}{2}
