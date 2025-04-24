@@ -16,21 +16,6 @@ I would like to ask if anyone objects to me recording this lecture using my iPho
 To begin, we will establish a timeline for the universe, marking key epochs and stages. The numbers involved are often extremely large or small, making them difficult to visualize. For reference, the current age of the universe is estimated at **14 billion years**.
 
 <!--
-Cosine simularity: 0.9842464731195378
--->
-## Introduction to Hadron Physics and the Early Universe
-
-Lecture number one will be dedicated to the introduction of hadron physics. I would like to start by explaining the origin of hadron physics and how it appeared at the early stages of the universe, where it played a role in the evolution of our universe. We will discuss the matter composition and how quark-gluon physics plays its part.  
-
-We will briefly cover the Standard Model and then the equations that describe the motion of fields. We will talk about the $`SU(3)`$ group and move to the important property of strong interaction, which is key to matter formation — confinement. I will write the basic equations that will help you solve exercises. At the end of the lecture, we will do logistics as well.  
-
-Today is the 8th. This course is being offered for the second time. I will reuse material from last year's lecture. Last year, we experimented with recording lectures and transforming them into text. There is a project we are working on to automate this process further. We are gathering more material to refine this experiment.  
-
-I would like to ask if anyone minds me recording this lecture. The recording device is this iPhone, and usually, no voices are captured. If you object, I can use last year's recordings instead. This will benefit you as well, since the idea is to provide you with the lecture text. Additionally, if someone takes pictures of the board, those will also be processed by a language model to generate a formal typed version.  
-
-We will start the lecture course by establishing a timeline for the universe, marking the different epochs and stages. These numbers are hard to imagine — either extremely small or extremely large — so we need to present them on a human scale first. I can write here the number representing our current time, which is approximately 14 billion years, the estimated age of the universe.  
-
-<!--
 Cosine simularity: 0.9370546408594295
 -->
 ## The Big Bang and Early Universe Timeline
