@@ -10,7 +10,7 @@ format:
     code-fold: true
     highlight-style: github
     css: styles.css
-    callout-appearance: default  # Enables callouts like [!NOTE]
+    callout-appearance: default
 
 metadata-files:
   - _metadata.yml
