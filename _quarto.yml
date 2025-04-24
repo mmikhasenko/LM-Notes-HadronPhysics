@@ -1,0 +1,16 @@
+project:
+  type: website
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    number-sections: true
+    html-math-method: katex
+    code-fold: true
+    highlight-style: github
+    css: styles.css
+    callout-appearance: default  # Enables callouts like [!NOTE]
+
+metadata-files:
+  - _metadata.yml

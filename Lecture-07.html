@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.43">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>lecture-07</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="Lecture-07_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Lecture-07_files/libs/quarto-html/quarto.js"></script>
+<script src="Lecture-07_files/libs/quarto-html/popper.min.js"></script>
+<script src="Lecture-07_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Lecture-07_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Lecture-07_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Lecture-07_files/libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Lecture-07_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Lecture-07_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Lecture-07_files/libs/bootstrap/bootstrap-1a748f8c722605f92e8ac4935e2e75ca.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+
+<!--
+Cosine simularity: 0.9366017729231358
+-->
+<section id="mass-and-binding-energy-of-the-pcc-bar-particle" class="level2">
+<h2 class="anchored" data-anchor-id="mass-and-binding-energy-of-the-pcc-bar-particle">Mass and Binding Energy of the PCC Bar Particle</h2>
+<p>All right, two minutes. So all of the problems are one-liners. You sold them online, but you have to know what to do. Let’s discuss quickly question number one. First, the mass of the states. This appears as the particle, right? In this condition, neglecting inelastic channels, this particle is formed by the <span class="math inline">\(\Sigma_c^+\)</span> and <span class="math inline">\(D^0\)</span> constituents.</p>
+<p>The mass of the <span class="math inline">\(P_c^+\)</span> particle is roughly the sum of the masses of its constituents:</p>
+<p><span class="math display">\[
+M_{P_c^+} \approx M_{\Sigma_c^+} + M_{D^0}
+\]</span></p>
+<p>The binding energy is defined as the mass difference between the constituents and the particle itself:</p>
+<p><span class="math display">\[
+E_{\text{binding}} = (M_{\Sigma_c^+} + M_{D^0}) - M_{P_c^+}
+\]</span></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The notation has been updated from <span class="math inline">\(P_c\)</span> to <span class="math inline">\(P_{cc}\)</span> (or <span class="math inline">\(P_{cc}\)</span> bar) to explicitly indicate the presence of charm quarks.</p>
+</div>
+</div>
+<p>The <span class="math inline">\(P_{cc}\)</span> bar particle is a hadronic molecule, meaning it is a bound state of <span class="math inline">\(\Sigma_c^+\)</span> and <span class="math inline">\(D^0\)</span>. The binding energy is small, so the state sits near the threshold of its constituents.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The heavy quarks (charm) are explicitly listed in the notation because they are conserved quantities in decays, while light quarks can be inferred from the context.</p>
+</div>
+</div>
+<p>For example:<br>
+- <span class="math inline">\(\Sigma_c\)</span> indicates a charmed baryon with two light quarks (e.g., <span class="math inline">\(uu\)</span>, <span class="math inline">\(ud\)</span>, or <span class="math inline">\(dd\)</span>).<br>
+- <span class="math inline">\(P_{cc}\)</span> denotes a pentaquark state with two charm quarks and three light quarks.</p>
+<p>In this case, the <span class="math inline">\(P_c^+\)</span> state likely has the quark content <span class="math inline">\(ud\)</span> for the light quarks.</p>
+<p>The mass of the <span class="math inline">\(P_c^+\)</span> is approximately the threshold mass of <span class="math inline">\(\Sigma_c^+\)</span> and <span class="math inline">\(D^0\)</span>, since the binding energy is small. This is why we say the state “sits at the threshold.”</p>
+<!--
+Cosine simularity: 0.9056557083938158
+-->
+</section>
+<section id="decay-mechanisms-and-lifetime-of-the-cc-bar-particle" class="level2">
+<h2 class="anchored" data-anchor-id="decay-mechanisms-and-lifetime-of-the-cc-bar-particle">Decay Mechanisms and Lifetime of the CC Bar Particle</h2>
+<p>The hadronic threshold is approximately 10 MeV. The mass of the <span class="math inline">\(\Sigma_c^+\)</span> is around 2.5 GeV, and the mass of the <span class="math inline">\(D^0\)</span> is around 2 GeV, so the sum is roughly 4.5 GeV. This is the energy range where such formations would be searched for.</p>
+<p>For quantum numbers, we have spin-parity combinations of <span class="math inline">\(1/2^-\)</span> and <span class="math inline">\(3/2^-\)</span> due to the <span class="math inline">\(S\)</span>-wave reference. This implies two expected states: one with spin-parity <span class="math inline">\(1/2^-\)</span> and another with <span class="math inline">\(3/2^-\)</span>.</p>
+<p>There is a lower bound on the lifetime of this particle, which arises from the binding of its constituents. The decay of this particle must conserve energy. In the rest frame of the particle, the total energy available is just its mass. Since the <span class="math inline">\(P_c^+\)</span> is below the threshold for strong decay into <span class="math inline">\(\Sigma_c^+\)</span> and <span class="math inline">\(D^0\)</span>, it cannot decay that way.</p>
+<p>The possible decay channels are:<br>
+1. <strong>Electromagnetic annihilation</strong> of the <span class="math inline">\(c\bar{c}\)</span> pair, but this is highly suppressed because electromagnetic processes are much weaker than other interactions.<br>
+2. <strong>Strong annihilation</strong> of the <span class="math inline">\(c\bar{c}\)</span> pair into lighter quarks, but this is also suppressed for heavy quarks like charm. The heavier the quarks, the smaller the annihilation probability.</p>
+<p>The dominant decay mechanism is the <strong>weak decay</strong> of one of the charm quarks. For example, one charm quark can transition to an <span class="math inline">\(s\)</span>-quark by emitting a <span class="math inline">\(W\)</span> boson:</p>
+<p><span class="math display">\[
+c \to s + W^+
+\]</span></p>
+<p>This is the primary decay channel for the <span class="math inline">\(P_c^+\)</span>. The lifetime can be estimated from the weak decay rate of the charm quark.</p>
+<p>There is also a <strong>radiative decay</strong> channel where the <span class="math inline">\(D\)</span>-meson component transitions to a <span class="math inline">\(D^*\)</span>-meson by emitting a <span class="math inline">\(\pi^0\)</span> or photon:</p>
+<p><span class="math display">\[
+D \to D^* + \pi^0 \quad \text{(or photon)}
+\]</span></p>
+<p>This radiative decay is the most likely channel for the <span class="math inline">\(P_c^+\)</span> if the weak decay is suppressed. The width of this decay is smaller than the width of the <span class="math inline">\(D\)</span>-meson decay, so the lifetime of the <span class="math inline">\(P_c^+\)</span> is correspondingly longer.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The lifetime of the <span class="math inline">\(P_c^+\)</span> is constrained by the weak decay of its charm quark constituents or radiative transitions of the <span class="math inline">\(D\)</span>-meson component. The exact lifetime depends on the dominant decay channel.</p>
+</div>
+</div>
+<!--
+Cosine simularity: 0.9252926135279079
+-->
+</section>
+<section id="binding-energy-and-decay-suppression-in-particle-systems" class="level2">
+<h2 class="anchored" data-anchor-id="binding-energy-and-decay-suppression-in-particle-systems">Binding Energy and Decay Suppression in Particle Systems</h2>
+<p>The width of the bound state is smaller than the width of the <span class="math inline">\(D\)</span> meson, so its lifetime is longer than that of the $D^*` meson. When two stable particles combine, the resulting bound state can live indefinitely. For example, the deuteron is made of a proton and a neutron. While the proton is stable and the neutron has a long lifetime, the deuteron itself is stable because the neutron is so tightly bound inside that its decay is suppressed.</p>
+<p>The binding mechanism suppresses the phase space available for decay, thereby increasing the particle’s lifetime. For instance, a <span class="math inline">\(`D\)</span> meson in a bound state would live longer than an isolated <span class="math inline">\(D^*\)</span> meson. The width <span class="math inline">\(\Gamma\)</span> of the bound state is smaller than the width of the <span class="math inline">\(D\)</span>, and since the lifetime <span class="math inline">\(\tau\)</span> is inversely proportional to the width:</p>
+<p><span class="math display">\[
+\tau \propto \frac{1}{\Gamma}
+\]</span></p>
+<p>the bound state has a longer lifetime.</p>
+<p>A similar effect occurs with the <span class="math inline">\(\Sigma_c^* D\)</span> system. Instead of fully dissociating, it may transition to a lower energy state, such as <span class="math inline">\(\Sigma_c D \pi\)</span> or <span class="math inline">\(\Sigma_c D \gamma\)</span>, though this requires significant energy. The binding energy and suppression of decays are actively researched topics, with frequent discussions at conferences.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The suppression of decay channels due to binding energy leads to longer-lived states, as seen in deuteron and certain mesonic systems. The exact lifetime depends on the available phase space and decay mechanisms.</p>
+</div>
+</div>
+<p>The <span class="math inline">\(\Sigma_c^+ D^0\)</span> molecule can exist, but its stability depends on whether it decays weakly or through radiative transitions. The dominant decay mechanism for such systems is often weak decay, where a charm quark transitions to a strange quark via <span class="math inline">\(W\)</span> boson emission:</p>
+<p><span class="math display">\[
+c \to s + W^+
+\]</span></p>
+<p>Alternatively, radiative decays like <span class="math inline">\(D \to D^* + \pi^0\)</span> (or photon emission) can occur, but with a smaller width than the <span class="math inline">\(D\)</span>-meson decay, leading to a longer lifetime for the bound state.</p>
+<!--
+Cosine simularity: 0.9394776879080003
+-->
+</section>
+<section id="kinematic-variables-and-invariant-masses-in-particle-reactions" class="level2">
+<h2 class="anchored" data-anchor-id="kinematic-variables-and-invariant-masses-in-particle-reactions">Kinematic Variables and Invariant Masses in Particle Reactions</h2>
+<p>For any reaction with a four-particle system (A, B, C, D), you can define invariant variables that characterize the kinematics. The first variable is the mass squared of the combined system of particles A and B:</p>
+<p><span class="math display">\[
+s = (p_A + p_B)^2
+\]</span></p>
+<p>Here, <span class="math inline">\(\sqrt{s}\)</span> is the mass of the system of particles A and B. Similarly, <span class="math inline">\(t\)</span> is the mass squared of the system with particles B and C, and <span class="math inline">\(u\)</span> is the mass squared of the system with particles A and C.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Only two variables are needed to fully characterize the kinematics of a four-particle process, due to counting degrees of freedom. These can be any pair among <span class="math inline">\(s\)</span>, <span class="math inline">\(t\)</span>, or <span class="math inline">\(u\)</span>, as they are related by the constraint:</p>
+</div>
+</div>
+<p><span class="math display">\[
+s + t + u = m_A^2 + m_B^2 + m_C^2 + m_D^2
+\]</span></p>
+<p>The scattering amplitude (or transition amplitude) depends on only two of these variables, such as <span class="math inline">\(s\)</span> and <span class="math inline">\(t\)</span>, or <span class="math inline">\(s\)</span> and <span class="math inline">\(u\)</span>. This amplitude is defined on the plane of kinematic variables, with different domains corresponding to different physical processes.</p>
+<p>To analyze the kinematics, we examine the signs of <span class="math inline">\(s\)</span>, <span class="math inline">\(t\)</span>, and <span class="math inline">\(u\)</span>. If the mass squared of a two-particle system is physical (i.e., <span class="math inline">\(s &gt; 0\)</span>), it represents a realizable state. If unphysical (e.g., <span class="math inline">\(t &lt; 0\)</span> or <span class="math inline">\(u &lt; 0\)</span>), it depends on the exact masses of the particles to determine the allowed kinematic ranges.</p>
+<p>For example, in a scattering process, <span class="math inline">\(s &gt; 0\)</span> typically corresponds to the center-of-mass energy squared, while <span class="math inline">\(t &lt; 0\)</span> or <span class="math inline">\(u &lt; 0\)</span> may describe momentum transfer in a spacelike regime. The exact placement of kinematic boundaries requires evaluating the masses of the involved particles.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The Mandelstam variables <span class="math inline">\(s\)</span>, <span class="math inline">\(t\)</span>, and <span class="math inline">\(u\)</span> are not independent — only two are needed to describe the kinematics of a four-particle reaction. The choice depends on the physical process being studied.</p>
+</div>
+</div>
+<p>The matrix element or scattering amplitude is a function of these variables, and its behavior across different kinematic domains reveals the underlying dynamics of the reaction. For instance, poles in the amplitude may indicate resonant states, while discontinuities reflect thresholds for particle production.</p>
+<!--
+Cosine simularity: 0.9021905617171998
+-->
+</section>
+<section id="definition-and-properties-of-kinematic-variables-s-t-and-u" class="level2">
+<h2 class="anchored" data-anchor-id="definition-and-properties-of-kinematic-variables-s-t-and-u">Definition and Properties of Kinematic Variables S, T, and U</h2>
+<p>The kinematic variable <span class="math inline">\(u\)</span> is defined as:</p>
+<p><span class="math display">\[
+u = (p_B + p_C)^2
+\]</span></p>
+<p>For variable <span class="math inline">\(S\)</span>, it must be positive and greater than the threshold value:</p>
+<p><span class="math display">\[
+S &gt; (m_A + m_B)^2
+\]</span></p>
+<p>This is because <span class="math inline">\(S\)</span> represents the mass squared of a system of two real particles, which is at least the sum of their masses squared. If the particles have momentum in the rest frame, the energy of the system exceeds the sum of their masses.</p>
+<p>The same logic applies to <span class="math inline">\(T\)</span> and <span class="math inline">\(U\)</span>. These variables are also physical masses of two-particle systems and must satisfy:</p>
+<p><span class="math display">\[
+T &gt; (m_B + m_C)^2, \quad U &gt; (m_A + m_C)^2
+\]</span></p>
+<p>The sign convention for these variables depends on the direction of particle momenta relative to the interaction “blob.” In this definition, all particles (<span class="math inline">\(A, B, C\)</span>) are outgoing, while <span class="math inline">\(X\)</span> is incoming, which determines the sign.</p>
+<p>The allowed kinematic domain is constrained by these thresholds. For <span class="math inline">\(S\)</span>, it must exceed the threshold <span class="math inline">\((m_B + m_C)^2\)</span>, and similarly for <span class="math inline">\(U\)</span>. The only permitted region for the first kinematic matrix corresponds to physical processes where these conditions hold.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The variables <span class="math inline">\(S\)</span>, <span class="math inline">\(T\)</span>, and <span class="math inline">\(U\)</span> are not independent — only two are needed to fully describe the kinematics of a four-particle reaction due to the constraint:</p>
+</div>
+</div>
+<p><span class="math display">\[
+S + T + U = m_A^2 + m_B^2 + m_C^2 + m_X^2
+\]</span></p>
+<p>The scattering amplitude depends on two of these variables, such as <span class="math inline">\(S\)</span> and <span class="math inline">\(T\)</span>, or <span class="math inline">\(S\)</span> and <span class="math inline">\(U\)</span>, and is defined on the plane of kinematic variables with distinct physical domains.</p>
+<!--
+Cosine simularity: 0.9527407496777264
+-->
+</section>
+<section id="kinematic-domains-and-physical-contours-in-scattering-reactions" class="level2">
+<h2 class="anchored" data-anchor-id="kinematic-domains-and-physical-contours-in-scattering-reactions">Kinematic Domains and Physical Contours in Scattering Reactions</h2>
+<p>The allowed domain for the first <span class="math inline">\(K\)</span> matrix is where <span class="math inline">\(T\)</span> is the physical mass of two particles, which must be greater than zero (above threshold). To discuss the kinematics of cross-channel reactions using the same variables, one must modify the definition of the environments by swapping momenta to minus momenta for particles moving to the other side.</p>
+<p>As mentioned earlier, you could define the directions in two different ways, and the minus signs would appear in the first place. The physical region for this case occurs when <span class="math inline">\(T &gt; 0\)</span>, since <span class="math inline">\(T\)</span> represents the squared mass of two particles. In this scenario, <span class="math inline">\(S\)</span> corresponds to particles <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>, but this becomes an impossible combination if they are on different sides, leading to <span class="math inline">\(S &lt; 0\)</span> and <span class="math inline">\(U &lt; 0\)</span>.</p>
+<p>The kinematic domain is roughly where <span class="math inline">\(U &lt; 0\)</span>, <span class="math inline">\(S &gt; 0\)</span>, and <span class="math inline">\(T &gt; 0\)</span>. Here, <span class="math inline">\(T\)</span> is the defining direction. The minimum condition is satisfied when <span class="math inline">\(S &gt; 0\)</span> and <span class="math inline">\(U &gt; 0\)</span>. Another region of interest is where <span class="math inline">\(U &gt; 0\)</span>, corresponding to the <span class="math inline">\(U\)</span>-channel process involving particles <span class="math inline">\(A\)</span> and <span class="math inline">\(C\)</span>.</p>
+<p>To identify the true physical contours for kinematics, one must calculate the physical ranges of scattering variables. For example, restricting the cosine of the scattering angle to the range <span class="math inline">\([-1, 1]\)</span> reveals that not all points in the kinematic domain are allowed — only a specific region satisfies the constraints.</p>
+<p>The true boundary for scattering is often determined by these restrictions. The variables <span class="math inline">\(S\)</span>, <span class="math inline">\(T\)</span>, and <span class="math inline">\(U\)</span> are interdependent, with the constraint:</p>
+<p><span class="math display">\[
+S + T + U = m_A^2 + m_B^2 + m_C^2 + m_X^2
+\]</span></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Only two of these variables are needed to fully describe the kinematics of a four-particle reaction. The scattering amplitude depends on combinations such as <span class="math inline">\((S, T)\)</span> or <span class="math inline">\((S, U)\)</span>, defined on the plane of kinematic variables with distinct physical domains.</p>
+</div>
+</div>
+<!--
+Cosine simularity: 0.9493055528168397
+-->
+</section>
+<section id="quantum-transition-amplitudes-and-analyticity-in-scattering-processes" class="level2">
+<h2 class="anchored" data-anchor-id="quantum-transition-amplitudes-and-analyticity-in-scattering-processes">Quantum Transition Amplitudes and Analyticity in Scattering Processes</h2>
+<p>The true boundary for scattering is often given by a sixth-order polynomial. In the center is the Dalitz plot, which represents our physical domain. There are four regions corresponding to different physical reactions, and it’s crucial to recognize that a single amplitude matrix element describes all four.</p>
+<p>If you precisely constrain this function over its domain, it yields a complex transition amplitude (e.g., <span class="math inline">\(1 + 3i\)</span>) for any point. The same matrix element can compute transition amplitudes for different processes, such as decays. This framework works exceptionally well in QED. For instance, the same matrix element describes:<br>
+- Compton scattering (photon-electron → photon-electron)<br>
+- Electron-positron annihilation into two photons<br>
+- Two-photon production of an electron-positron pair</p>
+<p>In hadron physics, however, the situation is more complicated due to the lack of a perturbative framework. When modeling the Dalitz plot, we approximate resonances as finite chunks, but this leads to unphysical infinities in the scattering amplitude. The divergence occurs because we truncate the resonance spectrum — the physics demands an infinite number of resonances to maintain analyticity.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The relationship between the amplitude and its domain implies that infinite sums of resonances are necessary to properly connect different kinematic regions, as seen in the lines of the Dalitz plot.</p>
+</div>
+</div>
+<p>The scattering amplitude’s behavior in this domain requires operating with infinite sums, as finite approximations fail to capture the full analytic structure.</p>
+<!--
+Cosine simularity: 0.9406847189105879
+-->
+</section>
+<section id="analytic-functions-and-resonance-properties-in-scattering-theory" class="level2">
+<h2 class="anchored" data-anchor-id="analytic-functions-and-resonance-properties-in-scattering-theory">Analytic Functions and Resonance Properties in Scattering Theory</h2>
+<p>There is an effort spanning 30 to 50 years to find a set of functions that works everywhere nicely, is analytic, and reasonable. The most difficult part is constructing something that accurately describes the data, particularly in regi theory. You may have heard of regi theory, which is one approach to this problem.</p>
+<p>The goal is to derive a complex function with all the desired properties: it should work well in scattering domains and decay domains. However, it currently lacks an exact understanding of resonance properties. For instance, it may predict resonances with zero width in regi theory. A key development is implementing resonances with finite widths.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A simple function called the <strong>Klein function</strong> (or <strong>challenge function</strong>) describes contours of the physical domain.</p>
+</div>
+</div>
+<p>The Klein function is given by:</p>
+<p><span class="math display">\[
+\Phi(x, y, z) = x^2 + y^2 + z^2 - 2xy - 2yz - 2zx
+\]</span></p>
+<p>Solving <span class="math inline">\(\Phi(s, t, u) = 0\)</span> yields the boundaries of the physical domain. For a fixed value of <span class="math inline">\(s\)</span> (e.g., <span class="math inline">\(s = -50\)</span> or <span class="math inline">\(s = +20\)</span>), this equation provides two solutions. The function is straightforward to implement computationally.</p>
+<p>The <strong>Kibble function</strong> extends this by combining three Klein functions, each corresponding to a different channel:</p>
+<ul>
+<li><span class="math inline">\(\Lambda_1\)</span> for the first channel<br>
+</li>
+<li><span class="math inline">\(\Lambda_2 = \lambda(t, m_X^2, m_X^2)\)</span> for the second channel<br>
+</li>
+<li><span class="math inline">\(\Lambda_3 = \lambda(u, m_X^2, m_B^2)\)</span> for the third channel</li>
+</ul>
+<p>Here, <span class="math inline">\(\lambda\)</span> denotes the standard Källén triangle function.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You can visualize these contours using tools like Wolfram Alpha by plotting <span class="math inline">\(\Phi(s, t, u) = 0\)</span> for fixed <span class="math inline">\(s\)</span>.</p>
+</div>
+</div>
+<p>This approach provides a practical way to map the physical domain while maintaining analyticity, though challenges remain in fully capturing resonance dynamics.</p>
+<!--
+Cosine simularity: 0.9173888376198314
+-->
+</section>
+<section id="introduction-to-unitarity-and-probability-conservation-in-scattering-amplitudes" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-to-unitarity-and-probability-conservation-in-scattering-amplitudes">Introduction to Unitarity and Probability Conservation in Scattering Amplitudes</h2>
+<p>The best book on particle kinematics is written by two authors with unspellable family names. The book is excellent, and if you get a chance to read it, you will learn everything about particle kinematics, particularly the peculiar properties of the Kibble function and the challenge function.</p>
+<p>Unitarity is a constraint on scattering amplitudes. In high-energy physics, we do not compute scattering amplitudes from first principles but rather model them, guided by principles that dictate what these amplitudes can be. You cannot write an arbitrary expression for the amplitude that fits the data—there are constraints, one of which is probability conservation.</p>
+<p>Probability conservation translates into a mathematical statement about the amplitude, known as unitarity. You may have seen this earlier in particle scattering, particularly in optical theory, which relates the imaginary part of the amplitude to the total cross section. Specifically, the imaginary part is equal to the coefficient of the total cross section.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This relationship is a direct consequence of unitarity and probability conservation.</p>
+</div>
+</div>
+<p>The optical theorem is a key example of how unitarity manifests in scattering theory. It ensures that the amplitude respects fundamental physical principles, such as the conservation of probability.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For deeper insights, refer to the mentioned book on particle kinematics, which covers these concepts in detail, including the Kibble and challenge functions.</p>
+</div>
+</div>
+<!--
+Cosine simularity: 0.9581674822675313
+-->
+</section>
+<section id="analytic-structure-and-singularities-in-scattering-amplitudes" class="level2">
+<h2 class="anchored" data-anchor-id="analytic-structure-and-singularities-in-scattering-amplitudes">Analytic Structure and Singularities in Scattering Amplitudes</h2>
+<p>The principle of unitarity, combined with probability conservation, leads to a powerful constraint on scattering amplitudes. This alone allows us to derive a reasonable approximation for the amplitude that captures resonance phenomena, such as the bumps observed in the spectrum.</p>
+<p>Unitarity also determines the analytic structure of the amplitude, including the types of singularities (e.g., cuts, branch points) and their locations in the complex plane. This was briefly discussed in the last lecture, where we examined the properties of analytic functions and their singularities.</p>
+<p>The location of these singularities arises from the fact that we are dealing with physical scattering processes, where unitarity imposes specific conditions on the amplitude’s behavior in the complex energy plane.</p>
+<!--
+Cosine simularity: 0.9294126983010533
+-->
+</section>
+<section id="unitarity-and-scattering-amplitudes" class="level2">
+<h2 class="anchored" data-anchor-id="unitarity-and-scattering-amplitudes">Unitarity and Scattering Amplitudes</h2>
+<p>The scattering amplitudes are real unitary functions, where the imaginary part determines the locations of the cuts in the complex plane. Let’s proceed step by step, starting with a discussion of the scattering amplitude and partial waves.</p>
+<p>For efficiency, I will first state the key result and then derive it. Unitarity imposes constraints on the full amplitude <span class="math inline">\(A\)</span>, describing a scattering process. The first unitarity condition is:</p>
+<p><span class="math display">\[
+A - A^{\dagger} = i \int A^{*} A \, d\Phi  
+\]</span></p>
+<p><em>Terms:</em><br>
+- <span class="math inline">\(A\)</span>: Scattering amplitude.<br>
+- <span class="math inline">\(A^{\dagger}\)</span>: Hermitian conjugate of <span class="math inline">\(A\)</span>.<br>
+- <span class="math inline">\(i\)</span>: Imaginary unit.<br>
+- <span class="math inline">\(\int d\Phi\)</span>: Integration over the phase space of intermediate states.</p>
+<p>Diagrammatically, this represents the relationship between the amplitude and its conjugate. For partial waves, the amplitude <span class="math inline">\(A\)</span> depends on a single variable, simplifying the phase space integration. The expression reduces to:</p>
+<p><span class="math display">\[
+A - A^{*} = i \rho A^{*} A  
+\]</span></p>
+<p>Here, <span class="math inline">\(\rho\)</span> encodes the simplified phase space factor. This shows that the difference between the amplitude and its complex conjugate gives the imaginary part of the amplitude, which is related to the phase space.</p>
+<p>The next step is to derive these expressions systematically, starting from the scattering amplitude and partial wave decomposition. The imaginary part of the amplitude plays a crucial role in determining the analytic structure, including cuts and branch points in the complex plane.</p>
+<!--
+Cosine simularity: 0.9064750693594572
+-->
+</section>
+<section id="kinematics-and-scattering-angle-in-elastic-2-to-2-process" class="level2">
+<h2 class="anchored" data-anchor-id="kinematics-and-scattering-angle-in-elastic-2-to-2-process">Kinematics and Scattering Angle in Elastic 2-to-2 Process</h2>
+<p>We are dealing with the 2-to-2 elastic scattering process, where the initial and final particles are the same. The diagram shows an interaction blob, representing some unspecified dynamics. Below it is the kinematic representation in the center-of-momentum frame, where the total momentum is zero.</p>
+<p>In this frame, even if the particles have different masses, their momenta are equal and given by the breakup momentum <span class="math inline">\(p_1 = p_2 = \frac{\Lambda^{1/2}(s, m_1^2, m_2^2)}{2\sqrt{s}}\)</span>, where <span class="math inline">\(\Lambda\)</span> is the Källén function:</p>
+<p><span class="math display">\[
+\Lambda(x, y, z) = x^2 + y^2 + z^2 - 2xy - 2xz - 2yz
+\]</span></p>
+<p>After the interaction, the masses and breakup momenta remain unchanged—only the scattering angle <span class="math inline">\(\theta\)</span> changes. The observable manifestation of the interaction dynamics is the angular distribution of the scattered particles.</p>
+<p>For a 2-to-2 process, once the energy is fixed, the only remaining variable is the scattering angle. This means the differential cross section <span class="math inline">\(\frac{d\sigma}{d\Omega}\)</span> encodes all the interaction physics in its angular dependence.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The Källén function <span class="math inline">\(\Lambda\)</span> ensures kinematic consistency, guaranteeing real-valued momenta in physical regions.</p>
+</div>
+</div>
+<p>The scattering amplitude depends on two variables: the center-of-mass energy <span class="math inline">\(\sqrt{s}\)</span> and the angle <span class="math inline">\(\theta\)</span>. The angular distribution reflects the underlying interaction mechanism, making it a key observable in scattering experiments.</p>
+<!--
+Cosine simularity: 0.9145459990975108
+-->
+</section>
+<section id="definition-and-properties-of-the-scattering-amplitude" class="level2">
+<h2 class="anchored" data-anchor-id="definition-and-properties-of-the-scattering-amplitude">Definition and Properties of the Scattering Amplitude</h2>
+<p>The scattering amplitude is defined as the expectation value of the two-particle initial state on the right and the final state on the left:</p>
+<p><span class="math display">\[
+\langle p_1', p_2' | T | p_1, p_2 \rangle = A(s, t) \langle 2a \rangle^i \delta^4(p_1 + p_2 - p_1' - p_2')
+\]</span></p>
+<p>The four-dimensional delta function <span class="math inline">\(\delta^4(p_1 + p_2 - p_1' - p_2')\)</span> ensures conservation of energy and momentum.</p>
+<p>To parameterize the scattering, we use the energy of the system and the scattering angle <span class="math inline">\(\theta\)</span>. The state vectors <span class="math inline">\(|p_1, p_2\rangle\)</span> represent the two-particle state, and the scattering amplitude depends on the angle <span class="math inline">\(\theta\)</span>.</p>
+<p>The identity operator for the two-body phase space is given by:</p>
+<p><span class="math display">\[
+\int \frac{d^3 p_1}{(2\pi)^3 2E_1} \frac{d^3 p_2}{(2\pi)^3 2E_2} |p_1, p_2\rangle \langle p_1, p_2|
+\]</span></p>
+<p>This phase space integration covers all possible directions in the sphere, parameterized by the solid angle <span class="math inline">\(d\Omega = d\cos\theta \, d\phi\)</span>. The normalization ensures that the identity operator acts correctly, preserving the state under integration.</p>
+<p>The scattering amplitude must satisfy unitarity, which imposes constraints on <span class="math inline">\(A(s, t)\)</span>. The differential cross section <span class="math inline">\(\frac{d\sigma}{d\Omega}\)</span> encodes the angular dependence of the interaction, making it a key observable in scattering experiments.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The Källén function <span class="math inline">\(\Lambda(s, m_1^2, m_2^2)\)</span> ensures kinematic consistency, guaranteeing real-valued momenta in physical regions.</p>
+</div>
+</div>
+<p>In the center-of-momentum frame, the breakup momentum is:</p>
+<p><span class="math display">\[
+p_1 = p_2 = \frac{\Lambda^{1/2}(s, m_1^2, m_2^2)}{2\sqrt{s}}
+\]</span></p>
+<p>For elastic scattering, the masses and breakup momenta remain unchanged—only the scattering angle <span class="math inline">\(\theta\)</span> varies. The scattering amplitude <span class="math inline">\(A(s, t)\)</span> thus depends on <span class="math inline">\(\sqrt{s}\)</span> and <span class="math inline">\(\theta\)</span>, fully characterizing the interaction dynamics.</p>
+<!--
+Cosine simularity: 0.9531528609161453
+-->
+</section>
+<section id="unitarity-constraint-and-scattering-operator" class="level2">
+<h2 class="anchored" data-anchor-id="unitarity-constraint-and-scattering-operator">Unitarity Constraint and Scattering Operator</h2>
+<p>Unitarity comes from the condition that <span class="math inline">\(S S^{\dagger} = I\)</span>, where <span class="math inline">\(S\)</span> is the S-matrix and <span class="math inline">\(S^{\dagger}\)</span> is its adjoint.</p>
+<p>There is also the possibility that <span class="math inline">\(P_1' = P_2\)</span> for distinguishable scalar particles, avoiding cross terms. The probability is a statement about the full scattering operator being unitary. Part of the scattering operator is the identity, representing no interaction, while the remaining part introduces the interaction operator <span class="math inline">\(T\)</span>, which defines the scattering amplitude.</p>
+<p>In field theory, we always deal with the non-trivial part of the amplitude, which is an addition to the identity. The easiest way to proceed is by subtracting the identity from the full scattering operator to isolate <span class="math inline">\(T\)</span>.</p>
+<p>This leads to the unitary constraint, which is critical because it constrains partial waves and scattering amplitudes. To see this explicitly, we need to analyze how unitarity restricts the form of <span class="math inline">\(A(s, t)\)</span>.</p>
+<!--
+Cosine simularity: 0.9325367733984057
+-->
+</section>
+<section id="derivation-of-the-unitarity-condition" class="level2">
+<h2 class="anchored" data-anchor-id="derivation-of-the-unitarity-condition">Derivation of the Unitarity Condition</h2>
+<p>The unitarity condition constrains our scattering amplitude. To see this, we start from the condition and derive the constraints on <span class="math inline">\(T\)</span>. The approach involves manipulating the expression <span class="math inline">\(1 - (1 + iT)(1 - iT^\dagger)\)</span>.</p>
+<p>Let’s verify the algebra:<br>
+- The term <span class="math inline">\((1 + iT)(1 - iT^\dagger)\)</span> expands to <span class="math inline">\(1 - iT^\dagger + iT + T T^\dagger\)</span>.<br>
+- Subtracting this from <span class="math inline">\(1\)</span> gives <span class="math inline">\(i(T - T^\dagger) + T T^\dagger\)</span>.<br>
+- Multiplying both sides by <span class="math inline">\(i\)</span> shifts the minus sign to <span class="math inline">\(T^\dagger\)</span> and removes the <span class="math inline">\(i\)</span> on the left, yielding:</p>
+<p><span class="math display">\[
+T - T^\dagger = i T T^\dagger
+\]</span></p>
+<p>Now, we insert the final state and introduce the identity operator to split it into intermediate states. The key step is inserting a complete set of intermediate states, which includes all possible momentum configurations of the intermediate particles (with fixed energy). This requires integrating over the intermediate momentum:</p>
+<p><span class="math display">\[
+\langle f | T - T^\dagger | i \rangle = i \sum_m \langle f | T^\dagger | m \rangle \langle m | T | i \rangle \frac{d^3 p^{(m)}}{(2 \pi)^3 2 E_m}
+\]</span></p>
+<p>Here, the delta functions enforce energy-momentum conservation:<br>
+- The first delta function connects the initial state to the intermediate state: <span class="math inline">\(P_1 + P_2 = P_1^{(m)} + P_2^{(m)}\)</span>.<br>
+- The second delta function connects the intermediate state to the final state: <span class="math inline">\(P_1' + P_2' = P_1^{(m)} + P_2^{(m)}\)</span>.</p>
+<p>By isolating the delta function that relates the initial and final states, we simplify the phase space integral to:</p>
+<p><span class="math display">\[
+\int \delta^{(4)}(P_1 + P_2 - P_1' - P_2') \, d^4 p^{(m)}
+\]</span></p>
+<p>This leads us to the unitarity constraint for the scattering amplitude:</p>
+<p><span class="math display">\[
+T - T^\dagger = i \int T^\dagger T \, d\Phi
+\]</span></p>
+<p>where <span class="math inline">\(d\Phi\)</span> is the phase space measure. This equation ensures that the probability is conserved, reflecting the unitarity of the <span class="math inline">\(S\)</span>-matrix.</p>
+<p>The scattering operator <span class="math inline">\(S\)</span> must satisfy <span class="math inline">\(S S^\dagger = I\)</span>, where <span class="math inline">\(S = 1 + iT\)</span>. The non-trivial part of the amplitude is encoded in <span class="math inline">\(T\)</span>, which is isolated by subtracting the identity. This constraint is critical for restricting partial waves and the form of the scattering amplitude <span class="math inline">\(A(s, t)\)</span>.</p>
+<p>For distinguishable scalar particles, there is no cross-term if <span class="math inline">\(P_1' = P_2\)</span>. The probability statement is about the full scattering operator being unitary, with <span class="math inline">\(T\)</span> representing the interaction part beyond the identity.</p>
+<!--
+Cosine simularity: 0.9351960547720913
+-->
+</section>
+<section id="partial-wave-expansion-and-its-properties" class="level2">
+<h2 class="anchored" data-anchor-id="partial-wave-expansion-and-its-properties">Partial Wave Expansion and Its Properties</h2>
+<p>We arrive at the first equation:</p>
+<p><span class="math display">\[
+T - T^\dagger = i \int T^\dagger T \, d\Phi
+\]</span></p>
+<p>The most general form of this equation, without any constraints, is very similar. Instead of integrating over two-body phase space, you must sum over all intermediate states and integrate over <span class="math inline">\(n\)</span>-body phase space if <span class="math inline">\(n\)</span>-body processes are allowed. Diagrammatically, this means the amplitude minus its conjugate must equal the sum over all intermediate states, with integration over all possible configurations.</p>
+<p>Instead of working with momentum and energy variables, we can simplify the problem by using angles. A function of angle can be approximated by partial waves, which is a convenient series because it converges well, especially in low-energy physics.</p>
+<p>There are constraints on these amplitudes: they cannot be large for high angular momentum <span class="math inline">\(j\)</span> due to a natural suppression related to the size of hadrons. Contributions from high <span class="math inline">\(j\)</span> values are small, which is why experiments often require only a few partial waves—two, three, sometimes six, but rarely more than ten. This makes partial wave expansion a very practical approximation.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If the sum is taken to infinity (as in Regge theory), the relation becomes exact.</p>
+</div>
+</div>
+<p>Another key feature is the partial wave amplitude, which is a function of a single variable. For each partial wave, there is one such function, and each has fixed quantum numbers. A major advantage of partial waves is that they do not influence each other—they are effectively decoupled.</p>
+<!--
+Cosine simularity: 0.9411214417000213
+-->
+</section>
+<section id="partial-wave-unitarity-and-phase-space-relations" class="level2">
+<h2 class="anchored" data-anchor-id="partial-wave-unitarity-and-phase-space-relations">Partial Wave Unitarity and Phase Space Relations</h2>
+<p>Partial waves do not interact with each other—they are decoupled. Since quantum numbers in scattering are conserved, partial waves in the initial state are only related to partial waves in the final state. The unitarity constraint reveals that each partial wave relates only to its own output, with no mixing between different partial waves.</p>
+<p>To proceed, we insert the following relation into the phase space simplification:</p>
+<p><span class="math display">\[
+a_j - a_j^* = i \frac{1}{8 \pi \sqrt{s}} \rho \left( a_j - a_j^* \right) = -2 \operatorname{Im} a_j
+\]</span></p>
+<p>Here, <span class="math inline">\(a_j\)</span> is the partial wave amplitude, <span class="math inline">\(s\)</span> is the Mandelstam variable (center-of-mass energy squared), and <span class="math inline">\(\rho\)</span> represents the phase space factor.</p>
+<p>A key simplification involves a “magic formula” (derivation omitted but available in references) that connects the initial and final states. The initial state has an angle of zero, while the final state is described by the transition matrix <span class="math inline">\(T\)</span>. For the final state, the Legendre polynomial <span class="math inline">\(P_J(\cos \theta)\)</span> is equivalent to the Wigner <span class="math inline">\(D\)</span>-function <span class="math inline">\(D_{00}^J(\cos \theta)\)</span>.</p>
+<p>This leads to the powerful relation:</p>
+<p><span class="math display">\[
+D_{00}^J(\cos \theta) = d^J_p(\theta) d^J_q(\theta)
+\]</span></p>
+<p>Here, <span class="math inline">\(D_{00}^J\)</span> is the Wigner <span class="math inline">\(D\)</span>-function for zero helicity states, and <span class="math inline">\(d^J_p\)</span>, <span class="math inline">\(d^J_q\)</span> are the small Wigner <span class="math inline">\(d\)</span>-functions. The capital <span class="math inline">\(G\)</span>-function is defined as:</p>
+<p><span class="math display">\[
+G_{\lambda=00} = e^{-i \lambda \theta} d^J(\theta)
+\]</span></p>
+<p>The integration over all possible intermediate states requires expanding the cosine between the first and last states into a composition of intermediate angles. This expansion is necessary to relate the amplitude to the partial wave decomposition.</p>
+<p>The final step involves dividing both sides of the equation by <span class="math inline">\(a_j\)</span>, leading to:</p>
+<p><span class="math display">\[
+\frac{1}{a_j} - \frac{1}{a_j^*} = -2i \operatorname{Im} \left( \frac{1}{a_j} \right)
+\]</span></p>
+<p>This reveals that the imaginary part of the partial wave amplitude is simply <span class="math inline">\(i - \ell\)</span>, where <span class="math inline">\(\ell\)</span> is the angular momentum. This is a remarkable result, as it directly connects the unitarity constraint to the partial wave structure.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The Wigner <span class="math inline">\(D\)</span>-functions and Legendre polynomials are essential for relating angular dependencies to partial wave expansions.</p>
+</div>
+</div>
+<p>The decoupling of partial waves simplifies calculations significantly, as each wave can be treated independently within the unitarity constraint.</p>
+<!--
+Cosine simularity: 0.9433440859387222
+-->
+</section>
+<section id="modeling-the-real-part-of-the-amplitude" class="level2">
+<h2 class="anchored" data-anchor-id="modeling-the-real-part-of-the-amplitude">Modeling the Real Part of the Amplitude</h2>
+<p>The partial amplitude is just <span class="math inline">\(I - L\)</span>. It’s amazing because it tells us exactly how the inverse amplitude—the imaginary part of the inverse amplitude—looks like. Let’s plot it. Here’s <span class="math inline">\(S\)</span>, and here is the imaginary part of <span class="math inline">\(a_J\)</span> and the phase space function.</p>
+<p>The phase space factor here is a function that starts from threshold and approaches <span class="math inline">\(1/(16\pi)\)</span> at infinity. It has a square-root behavior near threshold: <span class="math inline">\(\sqrt{s - (M_1 + M_2)^2}\)</span>. It begins with a square-root dependence but then approaches a constant, <span class="math inline">\(1/(16\pi)\)</span> or <span class="math inline">\(1/(8\pi \lambda^{1/2}/s)\)</span>. Since <span class="math inline">\(P\)</span> is a channel function, this is expected.</p>
+<p>Now, the key point is modeling. We know the imaginary part, but we do not know the real part. The real part of the amplitude is specific to the interaction. So far, everything applies universally—electromagnetic, strong, or gravitational interactions. Any unitary interaction must have an imaginary part related to phase space. However, the real part must be computed or modeled.</p>
+<p>Experimentalists extract the real part by analyzing data, such as from LABIS or harmonic measurements. The simplest model assumes the inverse amplitude equals some real function. One option for this real function is a pole, which is a common approximation.</p>
+<p>For example, we can write:</p>
+<p><span class="math display">\[
+\frac{1}{a_j} = K - i \rho
+\]</span></p>
+<p>Here, <span class="math inline">\(K\)</span> is a real function (e.g., a pole term), and <span class="math inline">\(\rho\)</span> is the phase space factor. This is a minimal model where the real part is approximated by a single pole.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The real part of the amplitude encodes the dynamics of the interaction, while the imaginary part is constrained by unitarity and phase space.</p>
+</div>
+</div>
+<p>The Wigner <span class="math inline">\(D\)</span>-functions and Legendre polynomials are essential for relating angular dependencies to partial wave expansions. The decoupling of partial waves simplifies calculations, as each wave can be treated independently under the unitarity constraint.</p>
+<p>The final relation reveals:</p>
+<p><span class="math display">\[
+\frac{1}{a_j} - \frac{1}{a_j^*} = -2i \operatorname{Im} \left( \frac{1}{a_j} \right)
+\]</span></p>
+<p>This shows that the imaginary part of the partial wave amplitude is simply <span class="math inline">\(i - \ell\)</span>, where <span class="math inline">\(\ell\)</span> is the angular momentum. This is a remarkable result, directly linking unitarity to the partial wave structure.</p>
+<!--
+Cosine simularity: 0.9755321658833734
+-->
+</section>
+<section id="introduction-to-resonant-phenomena-and-k-matrix-approach" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-to-resonant-phenomena-and-k-matrix-approach">Introduction to Resonant Phenomena and K Matrix Approach</h2>
+<p>The amplitude computed assuming that the real part is a single pole is called the predictor. This is a relativistic predictor amplitude.</p>
+<p>Modeling the amplitude in terms of pole terms is often called the K-matrix approach. Let me plot this unpertinent amplitude. Here, the absolute value of <span class="math inline">\(A\)</span> is on the Y-axis, and <span class="math inline">\(M\)</span> is a parameter that I put in. These are both real numbers. The numerator <span class="math inline">\(G\)</span> determines how broad the peak appears, and <span class="math inline">\(M\)</span> is often called the bare mass—the mass at which the peak appears.</p>
+<p>This describes a resonant phenomenon, where particles collide, form an intermediate resonance for a short moment, and then decay.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The simplest resonance amplitude describes a peak at the bare mass <span class="math inline">\(M\)</span>, with the width controlled by <span class="math inline">\(G\)</span>.</p>
+</div>
+</div>
+<p>It’s not entirely clear why we call this resonant phenomena, but imagine that what is inside the block is an intermediate resonance.</p>
+<!--
+Cosine simularity: 0.951486314799846
+-->
+</section>
+<section id="resonance-phenomenon-and-cross-section-peaks" class="level2">
+<h2 class="anchored" data-anchor-id="resonance-phenomenon-and-cross-section-peaks">Resonance Phenomenon and Cross-Section Peaks</h2>
+<p>The term “resonance phenomenon” may not be immediately clear, but consider an experiment where two particles are brought together, and their interaction probability is measured as a function of energy. By colliding particles at varying energies and counting scattering events, you observe a pattern: at certain energies, the interaction probability (cross section) peaks sharply before decreasing again.</p>
+<p>This peak indicates the presence of an intermediate resonant state—a particle that briefly forms during the collision. The cross-section plot shows two peaks corresponding to two poles in the <span class="math inline">\(K\)</span>-matrix, with a zero between them. The zero arises because <span class="math inline">\(K\)</span> vanishes at that point.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The <span class="math inline">\(K\)</span>-matrix describes resonant scattering, where poles correspond to resonant states, and zeros indicate destructive interference.</p>
+</div>
+</div>
+<p>The corrected formula involves <span class="math inline">\(K - 1\)</span>:</p>
+<p><span class="math display">\[
+\text{Amplitude} \propto \frac{1}{1 - K}
+\]</span></p>
+<p>Here, <span class="math inline">\(K\)</span> introduces singularities (poles) and a zero between them. When <span class="math inline">\(K\)</span> crosses zero, the amplitude vanishes, creating a dip in the cross-section. The poles correspond to resonant masses, and the zero propagates through the amplitude squared, ensuring the cross-section drops to zero at that point.</p>
+<p>The two-peak structure reflects the underlying dynamics of the resonant intermediate state, where the system briefly forms a particle before decaying. The <span class="math inline">\(K\)</span>-matrix approach captures this by modeling the amplitude in terms of pole terms and zeros.</p>
+<!--
+Cosine simularity: 0.9326548422368791
+-->
+</section>
+<section id="propagator-and-interaction-terms-in-scattering-amplitude" class="level2">
+<h2 class="anchored" data-anchor-id="propagator-and-interaction-terms-in-scattering-amplitude">Propagator and Interaction Terms in Scattering Amplitude</h2>
+<p>The amplitude propagates with the amplitude squared, but in this case, the amplitude is zero on this axis. The values of energy where amplified peaks occur are not exactly at the particle masses, because they enter the expression in a complicated form. The peaks appear very close to these values but not exactly at them, which is why these masses are sometimes called “bare masses.”</p>
+<p>This process of incorporating the expression addresses the bare particle masses through the propagator during the renormalization process. Let’s examine the expression:</p>
+<p><span class="math display">\[
+A = \frac{1}{K^{-1} - i \rho}
+\]</span></p>
+<p>Expanding this in a Taylor series gives:</p>
+<p><span class="math display">\[
+A = K + K i \rho K + K i \rho K i \rho K + \dots
+\]</span></p>
+<p>We see an infinite series of terms, which helps interpret the roles of <span class="math inline">\(K\)</span> and <span class="math inline">\(i\rho\)</span>. Here, <span class="math inline">\(i\rho\)</span> arises from the two-particle phase space, representing two particles propagating, while <span class="math inline">\(K\)</span> is the elementary (point-like) interaction.</p>
+<p>Diagrammatically, this can be represented as:</p>
+<ul>
+<li><span class="math inline">\(K\)</span> (elementary interaction)<br>
+</li>
+<li><span class="math inline">\(K + K i \rho K + K i \rho K i \rho K + \dots\)</span> (series of interactions with intermediate propagations)</li>
+</ul>
+<p>Here, <span class="math inline">\(\rho\)</span> corresponds to the two-particle phase space, and <span class="math inline">\(K\)</span> represents the fundamental interaction vertex.</p>
+<!--
+Cosine simularity: 0.9356596769934374
+-->
+</section>
+<section id="vertex-amplitude-and-scattering-phase-in-the-complex-plane" class="level2">
+<h2 class="anchored" data-anchor-id="vertex-amplitude-and-scattering-phase-in-the-complex-plane">Vertex Amplitude and Scattering Phase in the Complex Plane</h2>
+<p>Diagrammatically, <span class="math inline">\(\rho\)</span> is the two-particle parameter and <span class="math inline">\(k\)</span> is the elementary direction. The vertex amplitude is a complex function. What we have discussed so far is the magnitude of this complex vector, but we have not yet addressed the angle — the scattering phase, which is the argument of the scattering amplitude. This phase exhibits interesting behavior, tracing a circular path in the complex plane.</p>
+<p>From the threshold, the amplitude starts small, increases to its maximal value around <span class="math inline">\(m_1^2\)</span>, then decreases back to zero before repeating the pattern in a second loop. Here, <span class="math inline">\(A\)</span> represents the imaginary part of the amplitude, plotted as a function of <span class="math inline">\(s\)</span>.</p>
+<p>The propagator and interaction terms are given by:</p>
+<p><span class="math display">\[
+A = \frac{1}{K^{-1} - i \rho}
+\]</span></p>
+<p>Expanding this as a Taylor series yields:</p>
+<p><span class="math display">\[
+A = K + K i \rho K + K i \rho K i \rho K + \dots
+\]</span></p>
+<p>Here, <span class="math inline">\(i\rho\)</span> corresponds to the two-particle phase space, while <span class="math inline">\(K\)</span> represents the elementary (point-like) interaction vertex. The series describes repeated interactions with intermediate propagations.</p>
+<!--
+Cosine simularity: 0.8816167035778596
+-->
+</section>
+<section id="argand-diagram-and-amplitude-representation-in-the-complex-plane" class="level2">
+<h2 class="anchored" data-anchor-id="argand-diagram-and-amplitude-representation-in-the-complex-plane">Argand Diagram and Amplitude Representation in the Complex Plane</h2>
+<p>The maximal value of the amplitude is approached around <span class="math inline">\(m_1^2\)</span>. There is a second circle that the amplitude traces, forming what is called an Argand diagram.</p>
+<p>In the homework sheet, it is noted that the Argand diagram simply plots the amplitude or the amplitude multiplied by <span class="math inline">\(\rho\)</span>. The quantity <span class="math inline">\(F = A \cdot \rho\)</span> is often more convenient to plot.</p>
+<p>The vertex amplitude is a complex function, and while we have discussed its magnitude, the angle — the scattering phase — is also important. This phase traces a circular path in the complex plane.</p>
+<p>The amplitude starts small at the threshold, peaks near <span class="math inline">\(m_1^2\)</span>, then decreases before repeating in a second loop. Here, <span class="math inline">\(A\)</span> represents the imaginary part of the amplitude as a function of <span class="math inline">\(s\)</span>.</p>
+<p>The propagator and interaction terms are given by:</p>
+<p><span class="math display">\[
+A = \frac{1}{K^{-1} - i \rho}
+\]</span></p>
+<p>Expanding this as a Taylor series yields:</p>
+<p><span class="math display">\[
+A = K + K i \rho K + K i \rho K i \rho K + \dots
+\]</span></p>
+<p>Here, <span class="math inline">\(i\rho\)</span> corresponds to the two-particle phase space, and <span class="math inline">\(K\)</span> represents the elementary (point-like) interaction vertex. The series describes repeated interactions with intermediate propagations.</p>
+<!--
+Cosine simularity: 0.903186743943459
+-->
+</section>
+<section id="modeling-the-real-part-of-the-amplitude-1" class="level2">
+<h2 class="anchored" data-anchor-id="modeling-the-real-part-of-the-amplitude-1">Modeling the Real Part of the Amplitude</h2>
+<p>The quantity <span class="math inline">\(F = A \cdot \rho\)</span> is often more convenient to plot in the complex plane. The amplitude’s imaginary part is fixed by unitarity, so we only need to model the real part. This real part represents a point-like interaction that must be resummed to all orders.</p>
+<p>There are several techniques to model the real part of the amplitude. One approach uses a polynomial expansion, which is referred to as the <strong>scattering length</strong>.</p>
+<p>The amplitude can be expressed as:</p>
+<p><span class="math display">\[
+A = \frac{1}{K^{-1} - i \rho}
+\]</span></p>
+<p>Here, <span class="math inline">\(K\)</span> represents the elementary (point-like) interaction, and <span class="math inline">\(i\rho\)</span> corresponds to the two-particle phase space. Expanding this as a Taylor series gives:</p>
+<p><span class="math display">\[
+A = K + K i \rho K + K i \rho K i \rho K + \dots
+\]</span></p>
+<p>This series describes repeated interactions with intermediate propagations.</p>
+<!--
+Cosine simularity: 0.9152274800420837
+-->
+</section>
+<section id="scattering-length-and-k-approximation" class="level2">
+<h2 class="anchored" data-anchor-id="scattering-length-and-k-approximation">Scattering Length and k Approximation</h2>
+<p>The modeling is the polynomial, and this is called the <strong>scattering length approximation</strong>. The first term would be the scattering length.</p>
+<p>The second term relates to the wave number <span class="math inline">\(k\)</span>, which can be written as:</p>
+<p><span class="math display">\[
+k = a^{-1} + \frac{1}{2} r_s k^2 + \dots
+\]</span></p>
+<p>Here, <span class="math inline">\(a\)</span> is the scattering length, and <span class="math inline">\(r_s\)</span> is the effective range. This is called the <strong>scattering expansion</strong>.</p>
+<!--
+Cosine simularity: 0.9527445333685186
+-->
+</section>
+<section id="x-approximation-and-closing-remarks" class="level2">
+<h2 class="anchored" data-anchor-id="x-approximation-and-closing-remarks">x Approximation and Closing Remarks</h2>
+<p>You can write <span class="math inline">\(k\)</span> as <span class="math inline">\(a^{-1} + r_s k^2\)</span>, and this is called the <strong>scattering x approximation</strong>.</p>
+<p>I’m out of time. Thank you very much for staying to the end, and so sorry for being late. Please feel free to send me an email if something is missing. I really appreciate receiving any feedback from you. I hope you leave some exercises for me by the end. What about exercises tomorrow or Friday otherwise?</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

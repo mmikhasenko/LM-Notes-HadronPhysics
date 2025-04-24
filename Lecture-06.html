@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.43">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>lecture-06</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="Lecture-06_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Lecture-06_files/libs/quarto-html/quarto.js"></script>
+<script src="Lecture-06_files/libs/quarto-html/popper.min.js"></script>
+<script src="Lecture-06_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Lecture-06_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Lecture-06_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Lecture-06_files/libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Lecture-06_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Lecture-06_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Lecture-06_files/libs/bootstrap/bootstrap-1a748f8c722605f92e8ac4935e2e75ca.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+
+<!--
+Cosine simularity: 0.9267377551237035
+-->
+<section id="introduction-to-lambda-decay-and-interaction-type" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-to-lambda-decay-and-interaction-type">Introduction to Lambda Decay and Interaction Type</h2>
+<p>Let’s start with the physics reaction where the lambda baryon decays into a proton and a pion:</p>
+<p><span class="math display">\[
+\Lambda \rightarrow p + \pi^-
+\]</span></p>
+<p>To analyze this, we follow a standard checklist:<br>
+1. <strong>Identify the interaction type</strong> responsible for the decay.<br>
+2. Determine the variables describing the process.<br>
+3. Write the matrix element for the process.<br>
+4. Calculate the polarized decay width.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The decay involves a <strong>flavor change</strong> (strangeness violation), so it must be mediated by the <strong>weak interaction</strong>. Strong interactions preserve flavor, while weak interactions allow transitions like <span class="math inline">\(s \rightarrow u\)</span>.</p>
+</div>
+</div>
+<p>The initial state (<span class="math inline">\(\Lambda\)</span>) has strangeness <span class="math inline">\(S = -1\)</span>, while the final state (<span class="math inline">\(p + \pi^-\)</span>) has <span class="math inline">\(S = 0\)</span>. Since parity is not conserved in weak interactions, this decay violates parity.</p>
+<p>Here’s a simplified diagrammatic representation (not a Feynman diagram):<br>
+- <strong>Initial state</strong>: <span class="math inline">\(\Lambda\)</span><br>
+- <strong>Final state</strong>: <span class="math inline">\(p + \pi^-\)</span><br>
+- <strong>Interaction vertex</strong>: Weak decay (flavor-changing).</p>
+<p>The matrix element <span class="math inline">\(\mathcal{M}\)</span> for this process would involve weak coupling constants and quark-level transitions like <span class="math inline">\(u \bar{d}\)</span> for the pion.</p>
+<!--
+Cosine simularity: 0.9107277263055694
+-->
+</section>
+<section id="kinematics-and-variables-in-lambda-decay" class="level2">
+<h2 class="anchored" data-anchor-id="kinematics-and-variables-in-lambda-decay">Kinematics and Variables in Lambda Decay</h2>
+<p>We are analyzing the decay <span class="math inline">\(\Lambda \rightarrow p + \pi^-\)</span>. This is a one-to-two transition, and the kinematics are simplest when working in the center-of-mass frame. Here, the initial <span class="math inline">\(\Lambda\)</span> is at rest, and the final-state proton and pion carry momenta of fixed magnitude determined by their masses:</p>
+<p><span class="math display">\[
+|\vec{p}_p| = |\vec{p}_\pi| = \sqrt{\frac{(m_\Lambda^2 - (m_p + m_\pi)^2)(m_\Lambda^2 - (m_p - m_\pi)^2)}{4m_\Lambda^2}}
+\]</span></p>
+<p>Since there is no preferred spatial orientation in this system, no angular variables are needed to describe the process. The momenta of the particles define the only directions, and we can align the <span class="math inline">\(z\)</span>-axis arbitrarily (e.g., along the proton momentum for convenience).</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The kinematics of a two-body decay in the center-of-mass frame are fully constrained by energy-momentum conservation, leaving no free variables. The momenta magnitudes are fixed by the particle masses.</p>
+</div>
+</div>
+<!--
+Cosine simularity: 0.9372389708310774
+-->
+</section>
+<section id="spin-projection-and-matrix-elements-in-lambda-decay" class="level2">
+<h2 class="anchored" data-anchor-id="spin-projection-and-matrix-elements-in-lambda-decay">Spin Projection and Matrix Elements in Lambda Decay</h2>
+<p>We can choose the <span class="math inline">\(Z\)</span>-axis along the direction of the particle momenta. The amplitude describing this process is denoted by <span class="math inline">\(H\)</span>. The dependencies of <span class="math inline">\(H\)</span> are limited to discrete indices of spin projection, as there are no free kinematic variables in this decay.</p>
+<p>The particles involved in the interaction have the following spin and parity assignments:<br>
+- <span class="math inline">\(\Lambda\)</span>: <span class="math inline">\(J^P = \frac{1}{2}^+\)</span><br>
+- Proton: <span class="math inline">\(J^P = \frac{1}{2}^+\)</span><br>
+- Pion: <span class="math inline">\(J^P = 0^-\)</span></p>
+<p>Since this is a weak interaction, parity is not conserved in the decay. The initial state <span class="math inline">\(\Lambda\)</span> has a definite parity, but the final state does not preserve it.</p>
+<p>The key constraint comes from spin projection conservation. The spin projection of the initial <span class="math inline">\(\Lambda\)</span> must match the helicity of the proton in the final state. The transition amplitude is given by the matrix element:</p>
+<p><span class="math display">\[
+H_\lambda = \langle \text{final} | T | \text{initial} \rangle
+\]</span></p>
+<p>By convention, the initial state is written on the right and the final state on the left. The final state consists of:<br>
+- A proton with momentum <span class="math inline">\(P_Z\)</span> and spin projection <span class="math inline">\(\lambda\)</span> (helicity).<br>
+- A pion with momentum <span class="math inline">\(-P_Z\)</span> (opposite direction) and spin projection <span class="math inline">\(0\)</span> (since it is spinless).</p>
+<p>The initial state is simply <span class="math inline">\(|\Lambda, \lambda \rangle\)</span>, where <span class="math inline">\(\lambda\)</span> is the spin projection of the <span class="math inline">\(\Lambda\)</span>.</p>
+<p>The matrix element <span class="math inline">\(H_\lambda\)</span> is constrained by angular momentum conservation, requiring:</p>
+<p><span class="math display">\[
+\lambda_\Lambda = \lambda_p
+\]</span></p>
+<p>This means there is only one independent matrix element, indexed by <span class="math inline">\(\lambda\)</span>. Since <span class="math inline">\(\Lambda\)</span> has spin <span class="math inline">\(\frac{1}{2}\)</span>, there are two possible spin projections (<span class="math inline">\(\lambda = \pm \frac{1}{2}\)</span>), leading to two distinct matrix elements.</p>
+<!--
+Cosine simularity: 0.9138632735039812
+-->
+</section>
+<section id="unpolarized-decay-widths-and-lambda-lifetime" class="level2">
+<h2 class="anchored" data-anchor-id="unpolarized-decay-widths-and-lambda-lifetime">Unpolarized Decay Widths and Lambda Lifetime</h2>
+<p>The decay width <span class="math inline">\(\Gamma_\Lambda\)</span> is given by:</p>
+<p><span class="math display">\[
+\Gamma_\Lambda = \frac{1}{2m_\Lambda} \sum_{\text{final}} \int \frac{d^3p}{(2\pi)^3 2E} |\mathcal{M}|^2
+\]</span></p>
+<p>Here, <span class="math inline">\(\mathcal{M}\)</span> is the matrix element squared, averaged over initial spin states and summed over final states. Since the momenta are aligned (no angular dependence), the phase space integral simplifies. The angular integration <span class="math inline">\(\int \frac{d\Omega}{4\pi}\)</span> reduces to 1, leaving only the momentum factor:</p>
+<p><span class="math display">\[
+\frac{p}{8\pi m_\Lambda^2}
+\]</span></p>
+<p>The matrix element is constrained by spin conservation, so <span class="math inline">\(\lambda_\Lambda = \lambda_p\)</span>, meaning only two independent helicity configurations exist (<span class="math inline">\(\lambda = \pm \frac{1}{2}\)</span>).</p>
+<p>The lifetime of the <span class="math inline">\(\Lambda\)</span> baryon is determined by its dominant decay channel (<span class="math inline">\(\Lambda \to p \pi^-\)</span>). Its lifetime is relatively long at <span class="math inline">\(10^{-9}\)</span> seconds, allowing it to travel measurable distances (meters) in detectors before decaying. This makes it identifiable through secondary vertices from its decay products (charged proton and pion tracks).</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The unpolarized decay width calculation includes averaging over initial spin states and summing over final helicities, with no angular dependence due to alignment.</p>
+</div>
+</div>
+<p>The final expression for the width combines the phase space factor and the squared matrix element, providing the decay rate observable in experiments.</p>
+<!--
+Cosine simularity: 0.9185847034418799
+-->
+</section>
+<section id="helicity-frame-and-particle-spin-quantization" class="level2">
+<h2 class="anchored" data-anchor-id="helicity-frame-and-particle-spin-quantization">Helicity Frame and Particle Spin Quantization</h2>
+<p>The relation <span class="math inline">\(J^P = \frac{1}{2}^+\)</span> holds because two of the four terms vanish, leaving only two remaining terms with a factor of <span class="math inline">\(\frac{1}{2}\)</span>.</p>
+<p>When there is a preferred direction in space, such as the direction of a flying <span class="math inline">\(\Lambda\)</span> particle with non-zero momentum, this defines an axis. By boosting along the momentum direction and aligning the <span class="math inline">\(Z\)</span>-axis with this direction, you can measure angles relative to it. This is called the <strong>helicity frame</strong>.</p>
+<p>The <span class="math inline">\(|JM\rangle\)</span> states are the basis states for a particle with spin <span class="math inline">\(J\)</span>, where <span class="math inline">\(M\)</span> represents the projection onto the <span class="math inline">\(Z\)</span>-axis. Acting with the <span class="math inline">\(J_Z\)</span> operator confirms that these are eigenstates with eigenvalue <span class="math inline">\(M\)</span>. For a spin-<span class="math inline">\(J\)</span> particle, there are <span class="math inline">\(2J + 1\)</span> possible projections.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>When the <span class="math inline">\(Z\)</span>-axis is used for quantization, the state is called <strong>canonical</strong>.</p>
+</div>
+</div>
+<p>All transformations discussed here are <strong>active transformations</strong>, meaning they are applied to the particle rather than the coordinate system. For example:<br>
+- Boosting the particle in the <span class="math inline">\(Z\)</span>-direction increases its velocity along that axis.<br>
+- Rotating the particle about the <span class="math inline">\(Y\)</span>-axis is a nontrivial transformation.</p>
+<p>Consider a coordinate system with <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> axes. A rotation about the <span class="math inline">\(Y\)</span>-axis corresponds to rotating the particle itself, not the coordinate frame. This is the most common transformation we will use.</p>
+<!--
+Cosine simularity: 0.9054347361350654
+-->
+</section>
+<section id="wigner-d-functions-and-spin-rotation-matrices" class="level2">
+<h2 class="anchored" data-anchor-id="wigner-d-functions-and-spin-rotation-matrices">Wigner D Functions and Spin Rotation Matrices</h2>
+<p>When rotating a particle (rather than the coordinate system) about the <span class="math inline">\(Y\)</span>-axis, the spin projection along the <span class="math inline">\(Z\)</span>-axis is no longer well-defined. Instead, it becomes a superposition of states with coefficients <span class="math inline">\(C_{J' M'}\)</span>. These coefficients are given by the <strong>Wigner D functions</strong>, which are tabulated and can be found alongside Clebsch-Gordan coefficients.</p>
+<p>For computational purposes, the Wigner D functions can be obtained via matrix exponentiation:</p>
+<p><span class="math display">\[
+D(\theta) = e^{-i \theta J_Y}
+\]</span></p>
+<p>Here, <span class="math inline">\(J_Y\)</span> is the generator of rotations about the <span class="math inline">\(Y\)</span>-axis, and its matrix form depends on the particle’s spin.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For spin-<span class="math inline">\(\frac{1}{2}\)</span> particles, the rotation matrix is particularly simple. It involves the Pauli matrices <span class="math inline">\(\sigma_i\)</span> and a half-angle factor:</p>
+</div>
+</div>
+<p><span class="math display">\[
+D_{1/2}(\theta) = e^{-i \frac{\theta}{2} \sigma_Y}
+\]</span></p>
+<p>The half-angle arises because spin-<span class="math inline">\(\frac{1}{2}\)</span> particles transform under a double cover of the rotation group. For spin-1 particles, the rotation matrix is more complex, involving full-angle trigonometric functions:</p>
+<p><span class="math display">\[
+D_{1}(\theta) =
+\begin{pmatrix}
+\frac{1 + \cos \theta}{2} &amp; -\frac{\sin \theta}{\sqrt{2}} &amp; \frac{1 - \cos \theta}{2} \\
+\frac{\sin \theta}{\sqrt{2}} &amp; \cos \theta &amp; -\frac{\sin \theta}{\sqrt{2}} \\
+\frac{1 - \cos \theta}{2} &amp; \frac{\sin \theta}{\sqrt{2}} &amp; \frac{1 + \cos \theta}{2}
+\end{pmatrix}
+\]</span></p>
+<p>This matrix acts in the basis of <span class="math inline">\(|J M\rangle\)</span> states. Alternatively, working in the basis of ladder operators (<span class="math inline">\(J_+, J_-\)</span>) simplifies the form, but the <span class="math inline">\(|J M\rangle\)</span> basis is more commonly used in practical calculations.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The Wigner D functions describe how quantum states transform under rotation, and their explicit form depends on the spin representation. For higher spins (e.g., <span class="math inline">\(J = \frac{3}{2}, 2\)</span>), the matrices become larger but can still be computed using the same principles.</p>
+</div>
+</div>
+<p>The key insight is that rotations of quantum states are governed by the generators of the rotation group, and the Wigner D functions encode these transformations explicitly. Whether you look them up or compute them numerically, they are essential for describing spin dynamics in quantum systems.</p>
+<!--
+Cosine simularity: 0.9306259565055195
+-->
+</section>
+<section id="helicity-states-and-spin-quantization" class="level2">
+<h2 class="anchored" data-anchor-id="helicity-states-and-spin-quantization">Helicity States and Spin Quantization</h2>
+<p>When dealing with helicity states, we can either look up the Wigner D functions or compute them using matrix exponentiation. Let’s perform some algebra to understand how states transform when boosted and rotated.</p>
+<p>The simplest approach is to define spin quantization for a moving particle. Consider the coordinate axes: <span class="math inline">\(X\)</span>, <span class="math inline">\(Y\)</span>, and <span class="math inline">\(Z\)</span>, with the particle moving in the <span class="math inline">\(XZ\)</span> direction. There are two ways to quantize spin in this scenario:</p>
+<ol type="1">
+<li><strong>Helicity basis</strong>: Quantize spin along the direction of motion.<br>
+</li>
+<li><strong>Canonical basis</strong>: Quantize spin along the <span class="math inline">\(Z\)</span>-axis.</li>
+</ol>
+<p>These two bases are not equivalent but are related. If a state has a definite spin projection along the direction of motion (helicity state), it will be a superposition of states in the canonical basis. Conversely, if a state has a definite projection along the <span class="math inline">\(Z\)</span>-axis, it will be a combination of helicity states.</p>
+<p>To construct the helicity state <span class="math inline">\(|P \lambda\rangle\)</span>, we apply a sequence of transformations starting from the particle’s rest frame:</p>
+<ol type="1">
+<li>Begin with a particle at rest, having spin projection <span class="math inline">\(\lambda\)</span> along the <span class="math inline">\(Z\)</span>-axis.<br>
+</li>
+<li>Boost the particle forward—this increases its momentum without altering the spin projection.<br>
+</li>
+<li>Rotate the entire system to align with the desired configuration.</li>
+</ol>
+<p>The resulting state <span class="math inline">\(|P j \lambda\rangle\)</span> is a helicity state.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The Wigner D functions describe how quantum states transform under rotation. For a spin-<span class="math inline">\(\frac{1}{2}\)</span> particle, the rotation matrix is:</p>
+</div>
+</div>
+<p><span class="math display">\[
+D_{1/2}(\theta) = e^{-i \frac{\theta}{2} \sigma_Y}
+\]</span></p>
+<p>For spin-1 particles, the rotation matrix is more complex:</p>
+<p><span class="math display">\[
+D_{1}(\theta) =
+\begin{pmatrix}
+\frac{1 + \cos \theta}{2} &amp; -\frac{\sin \theta}{\sqrt{2}} &amp; \frac{1 - \cos \theta}{2} \\
+\frac{\sin \theta}{\sqrt{2}} &amp; \cos \theta &amp; -\frac{\sin \theta}{\sqrt{2}} \\
+\frac{1 - \cos \theta}{2} &amp; \frac{\sin \theta}{\sqrt{2}} &amp; \frac{1 + \cos \theta}{2}
+\end{pmatrix}
+\]</span></p>
+<p>These transformations are essential for describing spin dynamics in quantum systems, particularly when dealing with moving particles and different quantization axes.</p>
+<!--
+Cosine simularity: 0.9234466052038162
+-->
+</section>
+<section id="properties-and-rotation-of-helicity-states" class="level2">
+<h2 class="anchored" data-anchor-id="properties-and-rotation-of-helicity-states">Properties and Rotation of Helicity States</h2>
+<p>When you see <span class="math inline">\(|P j \lambda\rangle\)</span>, it’s a helicity state. Immediately think of it as the combination of boost and rotation operators acting on the canonical states in the rest frame.</p>
+<p>There are many properties we can derive for helicity states. One worth mentioning is that when you rotate a helicity state, only the momentum rotates—the helicity stays the same. If you apply further rotations, the momentum continues to rotate, but the spin remains quantized along the direction of motion, preserving the helicity value. This is evident from how the state is constructed.</p>
+<p>If you introduce a rotation here (multiplying by a rotation operator), you can combine the rotations into a single one, affecting only the momentum during the boost. Boosting is trickier because when you boost this state, you insert a boost operator <span class="math inline">\(B\)</span> (here, <span class="math inline">\(B_z\)</span>). For any combination of boosts and rotations (<span class="math inline">\(B R B^{-1}\)</span>), you can find equivalent pure rotations.</p>
+<p>When you evaluate this and rotate the canonical state (using the inverse operation), you obtain a combination of coefficients <span class="math inline">\(C_{\lambda'}\)</span>, yielding the helicity state. Applying boosts and rotations to this gives you back a helicity state.</p>
+<p>The most demanding part of this exercise is finding the relation between the boosted/rotated states and the original helicity basis.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The Wigner D functions describe how states transform under rotation. For example, for spin-<span class="math inline">\(\frac{1}{2}\)</span> particles, the rotation matrix is:</p>
+</div>
+</div>
+<p><span class="math display">\[
+D_{1/2}(\theta) = e^{-i \frac{\theta}{2} \sigma_Y}
+\]</span></p>
+<p>For spin-1 particles, the matrix becomes more complex:</p>
+<p><span class="math display">\[
+D_{1}(\theta) =
+\begin{pmatrix}
+\frac{1 + \cos \theta}{2} &amp; -\frac{\sin \theta}{\sqrt{2}} &amp; \frac{1 - \cos \theta}{2} \\
+\frac{\sin \theta}{\sqrt{2}} &amp; \cos \theta &amp; -\frac{\sin \theta}{\sqrt{2}} \\
+\frac{1 - \cos \theta}{2} &amp; \frac{\sin \theta}{\sqrt{2}} &amp; \frac{1 + \cos \theta}{2}
+\end{pmatrix}
+\]</span></p>
+<p>These transformations are crucial for describing spin dynamics in quantum systems, especially when dealing with moving particles and different quantization axes.</p>
+<!--
+Cosine simularity: 0.9199212060031491
+-->
+</section>
+<section id="composition-of-spin-projection-and-directional-motion" class="level2">
+<h2 class="anchored" data-anchor-id="composition-of-spin-projection-and-directional-motion">Composition of Spin Projection and Directional Motion</h2>
+<p>The most demanding part of this exercise is to find the relation between boost-rotation-boost and rotation-boost-rotation. We know what happens with the momentum when you boost—we know how Lorentz transformations act on the vectors. The boost matrix for the 4-momentum <span class="math inline">\(P^\mu\)</span> is a <span class="math inline">\(4 \times 4\)</span> matrix in <span class="math inline">\(SO(1,3)\)</span>, with components involving <span class="math inline">\(\gamma\)</span> (Lorentz factor) and <span class="math inline">\(\beta\)</span> (velocity fraction).</p>
+<p>When you apply a boost, the 4-vector <span class="math inline">\(P^\mu\)</span> transforms into a different vector <span class="math inline">\(P'^\mu\)</span>. The key remaining task is to understand the composition of spin projection and directional motion. Clearly, we have a linear combination of different projections—not just a single one.</p>
+<p>Intuitively, if you start with a vector and boost it, the vector becomes more inclined forward. Instead of boosting twice, you can boost only once to achieve the same final momentum magnitude. This is captured in the relation between boost and rotation operations.</p>
+<p>For example, applying a boost <span class="math inline">\(B_z\)</span> to a particle at rest directly produces the desired momentum. Then, the only remaining step is to rotate it to the correct orientation. This equivalence is what simplifies the problem—instead of multiple boosts, a single boost followed by a rotation suffices.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The Wigner rotation matrices describe how spin states transform under rotations. For spin-<span class="math inline">\(\frac{1}{2}\)</span> particles, the rotation matrix is:</p>
+</div>
+</div>
+<p><span class="math display">\[
+D_{1/2}(\theta) = e^{-i \frac{\theta}{2} \sigma_Y}
+\]</span></p>
+<p>For spin-1 particles, the matrix is more complex:</p>
+<p><span class="math display">\[
+D_{1}(\theta) =
+\begin{pmatrix}
+\frac{1 + \cos \theta}{2} &amp; -\frac{\sin \theta}{\sqrt{2}} &amp; \frac{1 - \cos \theta}{2} \\
+\frac{\sin \theta}{\sqrt{2}} &amp; \cos \theta &amp; -\frac{\sin \theta}{\sqrt{2}} \\
+\frac{1 - \cos \theta}{2} &amp; \frac{\sin \theta}{\sqrt{2}} &amp; \frac{1 + \cos \theta}{2}
+\end{pmatrix}
+\]</span></p>
+<p>These transformations are essential for describing how spin states evolve under combined boosts and rotations.</p>
+<!--
+Cosine simularity: 0.9072459857344257
+-->
+</section>
+<section id="transformation-of-canonical-states" class="level2">
+<h2 class="anchored" data-anchor-id="transformation-of-canonical-states">Transformation of Canonical States</h2>
+<p>The canonical spin state is represented as:</p>
+<p><span class="math display">\[
+|j m\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}_{m}
+\]</span></p>
+<p>To understand the canonical state, consider the combination of boost and rotation operations. The canonical state is defined by first rotating the system back in the rest frame of the particle, ensuring the combination has a certain projection onto the <span class="math inline">\(z\)</span>-axis. After this rotation, the state may have a slight downward projection due to the inverse rotation <span class="math inline">\(R^{-1}\)</span>.</p>
+<p>Next, we apply a boost along the momentum direction. This transforms the state into a moving frame. Finally, we perform another rotation to align the system into the desired configuration.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Notation clarity is crucial. When encountering <span class="math inline">\(|p, j, m\rangle\)</span>, it is ambiguous whether the state is canonical or helicity. To avoid confusion, explicitly label the state as <span class="math inline">\(|p, j, m\rangle_{\text{canonical}}\)</span> or <span class="math inline">\(|p, j, \lambda\rangle_{\text{helicity}}\)</span>, where <span class="math inline">\(m\)</span> refers to the <span class="math inline">\(z\)</span>-axis projection and <span class="math inline">\(\lambda\)</span> to helicity.</p>
+</div>
+</div>
+<p>The transformation of canonical states under rotation is given by:</p>
+<p><span class="math display">\[
+R |j m\rangle = D^{(j)}(R) |j m\rangle
+\]</span></p>
+<p>Here, <span class="math inline">\(D^{(j)}(R)\)</span> is the Wigner rotation matrix for spin-<span class="math inline">\(j\)</span>. For spin-<span class="math inline">\(\frac{1}{2}\)</span>, this matrix is:</p>
+<p><span class="math display">\[
+D_{1/2}(\theta) = e^{-i \frac{\theta}{2} \sigma_Y}
+\]</span></p>
+<p>For spin-1, the rotation matrix becomes:</p>
+<p><span class="math display">\[
+D_{1}(\theta) =
+\begin{pmatrix}
+\frac{1 + \cos \theta}{2} &amp; -\frac{\sin \theta}{\sqrt{2}} &amp; \frac{1 - \cos \theta}{2} \\
+\frac{\sin \theta}{\sqrt{2}} &amp; \cos \theta &amp; -\frac{\sin \theta}{\sqrt{2}} \\
+\frac{1 - \cos \theta}{2} &amp; \frac{\sin \theta}{\sqrt{2}} &amp; \frac{1 + \cos \theta}{2}
+\end{pmatrix}
+\]</span></p>
+<p>These transformations are essential for describing how spin states evolve under combined boosts and rotations. The key insight is that instead of applying multiple boosts, a single boost followed by a rotation suffices to achieve the desired momentum and orientation.</p>
+<p>The relation between boost-rotation-boost and rotation-boost-rotation simplifies the problem. For example, applying a boost <span class="math inline">\(B_z\)</span> to a particle at rest directly produces the desired momentum, and only a final rotation is needed to align the state correctly. This equivalence captures the composition of spin projection and directional motion, where the final state is a linear combination of different projections.</p>
+<!--
+Cosine simularity: 0.8930631880606437
+-->
+</section>
+<section id="introduction-to-helicity-frame-and-angle" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-to-helicity-frame-and-angle">Introduction to Helicity Frame and Angle</h2>
+<p>This is equal to what I have on the right side, where I replace the two canonical <span class="math inline">\(R\)</span> operations. I inserted <span class="math inline">\(R'^{-1} R'\)</span> here, combined these matrices, and now this gives me the canonical state when applied to the state at rest. The remaining step is to apply the rotation accelerator to the state at rest, which is described by the <span class="math inline">\(D\)</span> functions acting on this state. Therefore, the result is a sum over coefficients <span class="math inline">\(C\)</span>. After applying <span class="math inline">\(R\)</span>, I obtain a linear combination with coefficients <span class="math inline">\(C\)</span>, and for each state, I act with the inverse boost rotation to get a canonical state. Now, this is a projection labeled with <span class="math inline">\(\lambda'\)</span>, and I have a linear combination of them.</p>
+<p>The momentum <span class="math inline">\(P\)</span> also changes because the angle is rotated. The rotated momentum is <span class="math inline">\(P' = R' R P_z\)</span>, where <span class="math inline">\(P_z\)</span> is the momentum after boosting along the <span class="math inline">\(z\)</span>-axis. After the boost, the momentum becomes non-zero, and applying the rotation <span class="math inline">\(R'\)</span> gives <span class="math inline">\(P'\)</span>.</p>
+<p>Now, let’s discuss the relation between the helicity state and the canonical state. The helicity state <span class="math inline">\(|p, j, \lambda\rangle\)</span> can be expressed as a linear combination of canonical states <span class="math inline">\(|p, j, m\rangle_{\text{canonical}}\)</span>. The coefficients for this transformation are determined by applying the inverse rotation <span class="math inline">\(R^{-1}\)</span> to the state. The key operation is <span class="math inline">\(R B R^{-1}\)</span>, which converts the state into a canonical form, and then applying <span class="math inline">\(R\)</span> to this state gives the desired linear combination.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The helicity state is defined by boosting to the rest frame and then rotating. The angle of decay in this frame, measured relative to the direction of motion, is called the <strong>helicity angle</strong>.</p>
+</div>
+</div>
+<p>Returning to the example of <span class="math inline">\(\Lambda\)</span> decay, consider a <span class="math inline">\(\Lambda\)</span> moving in the lab frame. To define the <span class="math inline">\(z\)</span>-axis in the helicity frame, we boost to the rest frame of the <span class="math inline">\(\Lambda\)</span> and use its direction of motion in the lab frame. This defines the helicity frame for <span class="math inline">\(\Lambda\)</span>. The helicity angle is then the angle of decay measured relative to this <span class="math inline">\(z\)</span>-axis.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The helicity frame depends on the reference frame from which the boost is performed. Different frames will result in different rest-frame orientations of the particle.</p>
+</div>
+</div>
+<p>The helicity frame is always defined as the rest frame of the particle obtained by boosting from the frame where it was moving. The helicity angle is a standard term in hadron physics, referring to the angle measured in this boosted rest frame.</p>
+<!--
+Cosine simularity: 0.9435942757436995
+-->
+</section>
+<section id="recap-of-lambda-decay-plane-and-boost-inversion" class="level2">
+<h2 class="anchored" data-anchor-id="recap-of-lambda-decay-plane-and-boost-inversion">Recap of Lambda Decay Plane and Boost Inversion</h2>
+<p>We took the particles as the reference and measured the angle from there. All of the motion remains in the same plane as before. The boost and the two-part complement are now exactly opposite. Here, the boost inversion ( <span class="math inline">\(-1\)</span> ) occurred.</p>
+<p>We start with a <span class="math inline">\(\Lambda\)</span> flying in the <span class="math inline">\(z\)</span>-direction with a certain velocity. It decays into a proton and a pion in some plane. After inverting the boost, the proton and pion still lie in the same plane with exactly the same direction.</p>
+<p>The plane is defined by three vectors:<br>
+1. The original direction of motion of the <span class="math inline">\(\Lambda\)</span> (defining the axis).<br>
+2. The angle measured with respect to this axis.<br>
+3. The decay products forming the plane.</p>
+<p>Without the original direction of the <span class="math inline">\(\Lambda\)</span>, the plane is no longer defined. The angle and the plane are constructed from these three vectors.</p>
+<!--
+Cosine simularity: 0.9443906373930285
+-->
+</section>
+<section id="transition-operator-and-rotation-in-lambda-decay" class="level2">
+<h2 class="anchored" data-anchor-id="transition-operator-and-rotation-in-lambda-decay">Transition Operator and Rotation in Lambda Decay</h2>
+<p>The matrix element for the transition is given by:</p>
+<p><span class="math display">\[
+H = \langle f \uparrow | H | i \rangle
+\]</span></p>
+<p>We can measure the angle and define a plane. This is our recap exercise. Initially, we started with only one axis, but now we have a plane with an additional variable on which the amplitude depends, in addition to the two discrete variables. This variable is the scattering angle or the helicity angle.</p>
+<p>The final state here will be frozen binary. On the right side, we have configurations of <span class="math inline">\(\Lambda\)</span> sitting in its rest frame with the proton in <span class="math inline">\(\Lambda\)</span>. On the left side, we have this configuration of the pion-proton system. The way to proceed is to apply rotation to this configuration and align it back.</p>
+<p>The answer for this is:</p>
+<p><span class="math display">\[
+H_{\lambda p} = T_{\Lambda \lambda}
+\]</span></p>
+<p>This equation describes the matrix element for the sequence of decays. To derive it, we apply the transition operator <span class="math inline">\(T\)</span> on the final state. The goal is to simplify this expression. Here, <span class="math inline">\(T\)</span> acts on the proton state.</p>
+<p>We want to evaluate the application of the transition operator that takes the pion-proton system and transforms it into <span class="math inline">\(\Lambda\)</span>. This is the meaning of our operator. When this operator acts on the pion-proton state with momentum <span class="math inline">\(\vec{P} = (0, 0, P_z)\)</span>, we notice that it is rotated about the <span class="math inline">\(y\)</span>-axis by an angle <span class="math inline">\(\theta\)</span>.</p>
+<p>We want to align this to the left state, which has aligned combinations. Thus, we perform a rotation, pull out the outer rotation, and obtain the same combination along the <span class="math inline">\(z\)</span>-axis. The proton moves forward, time goes backward, and the rotation is made explicit.</p>
+<p>Since these operators commute and strong interactions conserve spin, we can compute the transition operator and rotation separately. We first apply the transition operator and then the rotation. Essentially, the transition operator transforms the pion-proton system into <span class="math inline">\(\Lambda\)</span>, and we explicitly perform this operation.</p>
+<p>The plane is defined by three vectors:<br>
+1. The original direction of motion of <span class="math inline">\(\Lambda\)</span> (defining the axis).<br>
+2. The angle measured with respect to this axis.<br>
+3. The decay products forming the plane.</p>
+<p>Without the original direction of <span class="math inline">\(\Lambda\)</span>, the plane is no longer defined. The angle and the plane are constructed from these three vectors.</p>
+<!--
+Cosine simularity: 0.9511209829799391
+-->
+</section>
+<section id="parity-violation-in-polarized-lambda-decay" class="level2">
+<h2 class="anchored" data-anchor-id="parity-violation-in-polarized-lambda-decay">Parity Violation in Polarized Lambda Decay</h2>
+<p>The transition operator transforms the pion-proton problem to the lambda system. We explicitly do this by inserting the identity state here. Here, we have a lambda state for the light statement. This part is a path lambda problem, and it gives us just the state of the lambda with the same speed.</p>
+<p>The matrix element we just evaluated is simply the lambda coupling. If we insert the identity, it should account for all possible combinations. Therefore, that would be a sum over lambda states. This will give us delta functions for the lambda lambda problem, allowing us to isolate a single state.</p>
+<p>The final step is to apply rotation to the system. It’s good to see this once, but once you understand the idea, it becomes clear that in the case of the cascade reaction, each transition involves the product of the block helicity amplitude (the transition matrix element for the aligned transition) and the rotation.</p>
+<p>Now, the differential cross section depends on the angle as a function of the scattering angle. The equation involves cosine and sine matrices:</p>
+<p><span class="math display">\[
+\begin{pmatrix}
+\cos \theta &amp; -\sin \theta \\
+\sin \theta &amp; \cos \theta
+\end{pmatrix}
+\]</span></p>
+<p>For the spin matrix, we have an explicit numerical form, and we have two coupling constants measured in experiments. These can be used to compute the angular distribution.</p>
+<p>The result is the same as before because:</p>
+<p><span class="math display">\[
+\sin^2 \theta + \cos^2 \theta = 1
+\]</span></p>
+<p>This term appears in front of the first component, while the second component has:</p>
+<p><span class="math display">\[
+-\sin^2 \theta + \cos^2 \theta
+\]</span></p>
+<p>This simplifies to another trivial result.</p>
+<p>From this exercise, we learn that if we start with an unpolarized particle, we will not observe any interesting angular distribution. We sum over final states and initial states, and no non-trivial angle distributions remain for the <span class="math inline">\(2\pi DDK\)</span> system before integrating over the full phase space.</p>
+<p>The phase space integral is:</p>
+<p><span class="math display">\[
+\int \frac{d\Omega}{4\pi} = \int \frac{d\cos \theta}{2} \int \frac{d\phi}{2\pi}
+\]</span></p>
+<p>This is a standard phase space measure.</p>
+<p>Now, let’s consider the case of polarized decay. Here, we obtain non-trivial distributions if the particle is polarized. Suppose the lambda particle is flying with a definite spin projection along its momentum direction, say <span class="math inline">\(+1/2\)</span>. When it decays, we find that the proton is more likely to travel forward than backward.</p>
+<p>This angle dependence of the proton’s momentum violates parity. Applying parity to the initial and final states flips the momentum but not the spin. The final configuration under parity would require the proton to be more likely backward, which contradicts the original observation.</p>
+<p>This confirms that parity is violated in this decay process. This is consistent with the fact that weak interactions, which govern this decay, do not conserve parity. The asymmetry in the angular distribution directly demonstrates this violation.</p>
+<!--
+Cosine simularity: 0.9301531663064168
+-->
+</section>
+<section id="polarization-and-analyzing-power-in-lambda-decay" class="level2">
+<h2 class="anchored" data-anchor-id="polarization-and-analyzing-power-in-lambda-decay">Polarization and Analyzing Power in Lambda Decay</h2>
+<p>We consider the decay width for the <span class="math inline">\(\Lambda\)</span> particle:</p>
+<p><span class="math display">\[
+\Gamma_{\Lambda} = \frac{1}{2 m_{\Lambda}} \sum_{i} |H_{i}|^2 \frac{2p}{8 \pi m_{\Lambda}}
+\]</span></p>
+<p>The parity validation appears when the two amplitudes are not equal to each other. If they were equal, the sum <span class="math inline">\(\sin^2 \theta + \cos^2 \theta\)</span> would give 1 with no angle dependence. The fact that they are not equal reflects parity violation.</p>
+<p>In the case of a fully polarized <span class="math inline">\(\Lambda\)</span> with <span class="math inline">\(\lambda = 1/2\)</span>, it is a pure state with 100% polarization. However, realistic scenarios involve mixed states, such as the <span class="math inline">\(\Lambda\)</span> being produced with 60% polarization in the BD case. This reduces the observed asymmetry.</p>
+<p>The differential decay width can be written as:</p>
+<p><span class="math display">\[
+d\Gamma = \Gamma_0 (1 + \alpha P \cos \theta)
+\]</span></p>
+<p>Here, <span class="math inline">\(\alpha\)</span> is the <strong>analyzing power</strong>, which quantifies how well the decay reflects the initial polarization. If the couplings are equal, <span class="math inline">\(\alpha = 0\)</span>, and the decay is insensitive to polarization. However, for most weak decays, <span class="math inline">\(\alpha \neq 0\)</span>, allowing the angular distribution to reveal parity violation.</p>
+<p>The asymmetry in the proton emission angle confirms parity violation. If the <span class="math inline">\(\Lambda\)</span> is polarized along its momentum direction (<span class="math inline">\(+1/2\)</span>), the proton is more likely to be emitted forward than backward. Under parity transformation, this configuration would reverse, contradicting the observation. This is consistent with weak interactions, which do not conserve parity.</p>
+<p>The phase space integral is given by:</p>
+<p><span class="math display">\[
+\int \frac{d\Omega}{4\pi} = \int \frac{d\cos \theta}{2} \int \frac{d\phi}{2\pi}
+\]</span></p>
+<p>This is the standard measure for integrating over the full angular distribution.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The analyzing power <span class="math inline">\(\alpha\)</span> determines the sensitivity of the decay to the initial polarization. If <span class="math inline">\(\alpha = 0\)</span>, no asymmetry is observed, even if parity is violated.</p>
+</div>
+</div>
+<p>The angular distribution asymmetry directly demonstrates parity violation in <span class="math inline">\(\Lambda\)</span> decay.</p>
+<!--
+Cosine simularity: 0.936053571621552
+-->
+</section>
+<section id="polarimetry-technique-and-initial-polarization-measurement" class="level2">
+<h2 class="anchored" data-anchor-id="polarimetry-technique-and-initial-polarization-measurement">Polarimetry Technique and Initial Polarization Measurement</h2>
+<p>The decay width <span class="math inline">\(\Gamma_{\Lambda}\)</span> is non-zero, and by examining the angular distribution, you observe parity violation. You can also measure the initial polarization using the <strong>polarimetry technique</strong>, which is actively employed.</p>
+<p>By analyzing the angle distributions, you can determine the polarization since all particles have known spin and couplings (though these must be measured in advance). The initial polarization is a powerful observable.</p>
+<p>For particles like the <span class="math inline">\(\Lambda\)</span>, which carry spin, the polarization at the interaction point contains valuable information. How the <span class="math inline">\(\Lambda\)</span> is produced—its momentum and polarization—reveals details about the internal dynamics of the interaction.</p>
+<p>For example, if the <span class="math inline">\(\Lambda\)</span> is produced in a carbon equilibrium or a plasma, its polarization can be linked to the properties of the medium.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The polarimetry technique allows extraction of initial polarization, providing insights into production mechanisms and interaction physics.</p>
+</div>
+</div>
+<!--
+Cosine simularity: 0.9555648141427531
+-->
+</section>
+<section id="polarization-and-particle-decay-in-quaternion-interaction" class="level2">
+<h2 class="anchored" data-anchor-id="polarization-and-particle-decay-in-quaternion-interaction">Polarization and Particle Decay in Quaternion Interaction</h2>
+<p>The polarization of the particle can be related to its properties, making it a free carrier of information from the quaternion interaction. Polarization plays a crucial role, often more significant than other observables.</p>
+<p>This particle not only carries information but also provides a way to measure polarization through its decay.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The ability to measure polarization via decay is essential for understanding the underlying dynamics of quaternion interactions.</p>
+</div>
+</div>
+<p>If I were to explain the material, you would already know it, but since I haven’t, I’ll pose a question instead: Can you determine the relationship between polarization and decay properties without prior lecture content?</p>
+<p>Meanwhile, let me know if you have any questions.</p>
+<!--
+Cosine simularity: 0.9220048021589232
+-->
+</section>
+<section id="introduction-to-analytic-functions-and-cauchy-integrals" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-to-analytic-functions-and-cauchy-integrals">Introduction to Analytic Functions and Cauchy Integrals</h2>
+<p>Next lecture, we will move on to discussing analytic functions and properties of amplitudes in the complex plane. This requires some background in complex analysis, so we’ll review key concepts, including the complex plane and complex algebra.</p>
+<p>The discussion arises from evaluating a circle integral. Consider a function <span class="math inline">\(F(X)\)</span> in the complex <span class="math inline">\(X\)</span>-plane. If <span class="math inline">\(F(X)\)</span> is analytic and there are no singularities inside the integration contour, the integral over a closed circle is zero:</p>
+<p><span class="math display">\[
+\oint F(X') \, dX' = 0
+\]</span></p>
+<p>However, if we introduce a pole at <span class="math inline">\(X\)</span> inside the contour, the integral is no longer zero. The Cauchy integral formula states:</p>
+<p><span class="math display">\[
+\oint \frac{F(X')}{X' - X} \, dX' = 2\pi i \, F(X)
+\]</span></p>
+<p>Here, the integral evaluates to the function at the pole <span class="math inline">\(F(X)\)</span>. This principle is central to extending the contour and handling singularities in analytic functions.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The Cauchy integral formula allows us to explicitly account for singularities inside the contour, transforming the integral into the function’s value at the pole.</p>
+</div>
+</div>
+<p>The same idea applies to more general cases, where we start with a small circle and stretch it while preserving analyticity.</p>
+<!--
+Cosine simularity: 0.8955305173789901
+-->
+</section>
+<section id="contour-integration-and-imaginary-part-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="contour-integration-and-imaginary-part-analysis">Contour Integration and Imaginary Part Analysis</h2>
+<p>I started with a small contour and stretched it to infinity. The part of the contour at infinity drops out, leaving only the integral from 1 to 7. The question is whether the equation can be satisfied when integrating the imaginary part of <span class="math inline">\(F(x)\)</span> from 1 to 7.</p>
+<p>The second question concerns the analytic structure: what do we mean by branch cuts and poles? This is common in physics, where integrals like this arise. The leftover contour from 1 to 7 integrates <span class="math inline">\(F(x)\)</span>, but since contributions from both sides of the contour have opposite signs, the real parts cancel, leaving only the imaginary part.</p>
+<p>For example, if <span class="math inline">\(F(x) = 3\)</span>, the imaginary part vanishes, and the equation holds trivially. The real question is whether non-trivial (non-constant) solutions exist where the imaginary part does not vanish.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>When integrating over a contour where <span class="math inline">\(F(x)\)</span> is analytic, contributions from opposite sides cancel the real part, leaving only the imaginary part in the final result.</p>
+</div>
+</div>
+<p>The Cauchy integral formula is central here. If <span class="math inline">\(F(X)\)</span> is analytic and has no singularities inside the contour, the integral over a closed path is zero:</p>
+<p><span class="math display">\[
+\oint F(X') \, dX' = 0
+\]</span></p>
+<p>However, if there is a pole at <span class="math inline">\(X\)</span> inside the contour, the integral becomes:</p>
+<p><span class="math display">\[
+\oint \frac{F(X')}{X' - X} \, dX' = 2\pi i \, F(X)
+\]</span></p>
+<p>This principle allows us to handle singularities and extend contours while preserving analyticity.</p>
+<!--
+Cosine simularity: 0.9165438281195135
+-->
+</section>
+<section id="constructing-special-functions-with-branch-points" class="level2">
+<h2 class="anchored" data-anchor-id="constructing-special-functions-with-branch-points">Constructing Special Functions with Branch Points</h2>
+<p>If we remove the constant term, the imaginary part vanishes entirely. The question is whether non-trivial solutions exist where the imaginary part is non-zero. The answer is yes—any function can be inserted here, and the integral will converge. For example, take <span class="math inline">\(\sqrt{X}\)</span> and place it in the expression. This constructs a special function <span class="math inline">\(F(X)\)</span> whose imaginary part equals <span class="math inline">\(\sqrt{X}\)</span> in the region from <span class="math inline">\(-1\)</span> to <span class="math inline">\(7\)</span>. Outside this interval, the function is non-zero but has no singularities.</p>
+<p>The construction introduces non-trivial analytic structures. Three candidates for these structures are:<br>
+1. A continuous stretch of poles,<br>
+2. A branch cut,<br>
+3. A combination of both.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A branch cut is a non-analytic structure where the function differs on either side. For example, <span class="math inline">\(\sqrt{-1 + i0^+}\)</span> equals <span class="math inline">\(+i\)</span>, while <span class="math inline">\(\sqrt{-1 - i0^+}\)</span> equals <span class="math inline">\(-i\)</span>. Unlike poles, branch cuts do not involve divergences—just a discontinuity in function values.</p>
+</div>
+</div>
+<p>Poles introduce divergences, whereas branch cuts do not. The distinction lies in whether the function diverges (poles) or simply changes value discontinuously (cuts). In this case, the structure is more akin to a branch cut because the function remains finite but takes different values on opposite sides of the cut.</p>
+<p>The Cauchy integral formula governs such constructions. For an analytic function <span class="math inline">\(F(X)\)</span> with no singularities inside a contour:</p>
+<p><span class="math display">\[
+\oint F(X') \, dX' = 0
+\]</span></p>
+<p>If a pole exists at <span class="math inline">\(X\)</span>, the integral becomes:</p>
+<p><span class="math display">\[
+\oint \frac{F(X')}{X' - X} \, dX' = 2\pi i \, F(X)
+\]</span></p>
+<p>This principle allows extending contours while preserving analyticity, even when introducing branch cuts or other singular structures.</p>
+<!--
+Cosine simularity: 0.9076568097224533
+-->
+</section>
+<section id="understanding-branch-points-and-cuts-in-complex-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="understanding-branch-points-and-cuts-in-complex-analysis">Understanding Branch Points and Cuts in Complex Analysis</h2>
+<p>The integrand has poles at zero and <span class="math inline">\(X\)</span>. These are not branch points. To analyze the function, you must analytically continue it—perhaps above and below the real line—to see different branches.</p>
+<p>A branch point is where a branch starts or ends. For example, if you consider the analytic structure of a function in the <span class="math inline">\(X\)</span>-plane, it might have branch points at <span class="math inline">\(1\)</span> and <span class="math inline">\(7\)</span>, connected by a branch cut. The function itself has no poles.</p>
+<p>The distinction between poles and branch cuts is important. Poles introduce divergences, while branch cuts represent discontinuities in function values. For instance, <span class="math inline">\(\sqrt{-1 + i0^+} = +i\)</span> and <span class="math inline">\(\sqrt{-1 - i0^+} = -i\)</span>—this is a branch cut, not a pole.</p>
+<p>The Cauchy integral formula governs these cases. For an analytic function <span class="math inline">\(F(X)\)</span> with no singularities inside a contour:</p>
+<p><span class="math display">\[
+\oint F(X') \, dX' = 0
+\]</span></p>
+<p>If a pole exists at <span class="math inline">\(X\)</span>, the integral becomes:</p>
+<p><span class="math display">\[
+\oint \frac{F(X')}{X' - X} \, dX' = 2\pi i \, F(X)
+\]</span></p>
+<p>This principle allows extending contours while preserving analyticity, even with branch cuts or other singular structures.</p>
+<!--
+Cosine simularity: 0.8939392133556964
+-->
+</section>
+<section id="exploring-multisheeted-complex-planes-and-singularities" class="level2">
+<h2 class="anchored" data-anchor-id="exploring-multisheeted-complex-planes-and-singularities">Exploring Multisheeted Complex Planes and Singularities</h2>
+<p>There are no poles. The function doesn’t have any poles. That’s the way we construct the function here — by introducing a “gate” in the complex plane. It’s interesting to think about where this structure comes from or where it leads.</p>
+<p>When you examine this plane, you can take a walk on it without encountering any poles or singularities. However, if you “dive under” the plane, you enter a different world — another sheet — accessible through this gate. On this new sheet, the function has poles, including at zero, and a branch cut associated with <span class="math inline">\(\sqrt{X}\)</span>.</p>
+<p>The function has a complex structure: on the regular complex plane, it has no singularities except for the gate. But through the gate, you reach another sheet where the behavior changes dramatically, with poles and branch cuts appearing.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The gate here acts as a transition point between sheets of a multisheeted Riemann surface, allowing the function to exhibit different analytic properties on each sheet.</p>
+</div>
+</div>
+<p>This is how you get used to working with multisheeted complex planes — by recognizing that singularities may exist on other sheets even if they are absent on the principal sheet.</p>
+<!--
+Cosine simularity: 0.8912046881280075
+-->
+</section>
+<section id="understanding-branch-points-and-poles-in-complex-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="understanding-branch-points-and-poles-in-complex-analysis">Understanding Branch Points and Poles in Complex Analysis</h2>
+<p>The integral converges from 1 to 7, and we are evaluating the logarithm function. Consider the expression:</p>
+<p><span class="math display">\[
+\log(1 - 8) - \log(17 - 8)
+\]</span></p>
+<p>When evaluating at <span class="math inline">\(8 \pm i\epsilon\)</span>, we observe: - <span class="math inline">\(\log(1) = 0\)</span> - <span class="math inline">\(\log(-1 \mp i\epsilon) = \log(1) \pm i\pi\)</span></p>
+<p>This leads to a discontinuity (jump) in the imaginary part, confirming the presence of a branch cut. The real part of <span class="math inline">\(X\)</span> cannot lie between 1 and 7 because the function’s structure loops around these points.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The branch points at <span class="math inline">\(X = 1\)</span> and <span class="math inline">\(X = 7\)</span> are explicitly identified by the integral’s behavior. The branch cut connects these points, restricting the domain of <span class="math inline">\(X\)</span>.</p>
+</div>
+</div>
+<p>The function has singularities at these branch points, but they are not poles. A branch point can have a divergence (e.g., <span class="math inline">\(\log(X)\)</span> diverges at <span class="math inline">\(X = 0\)</span>), but it is distinct from a pole. For example: - <span class="math inline">\(1/(X - C)^3\)</span> has a third-order pole at <span class="math inline">\(X = C\)</span>. - <span class="math inline">\(\log(X - C)\)</span> has a logarithmic branch point at <span class="math inline">\(X = C\)</span>, not a pole.</p>
+<p>A pole is a singularity that can be resolved by adding an infinitesimal shift in the complex plane (e.g., <span class="math inline">\(1/(X \pm i\epsilon)\)</span>). In contrast, branch points persist and require branch cuts to define the function’s behavior.</p>
+<p>The function here has no poles on the principal sheet, but the branch points at 1 and 7 introduce a multivalued structure. The branch cut enforces a discontinuity, preventing <span class="math inline">\(X\)</span> from taking values between 1 and 7 on the principal branch.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Branch points and poles are both singularities, but they differ in how they affect the function’s analyticity. Poles are isolated and removable with <span class="math inline">\(i\epsilon\)</span> prescriptions, while branch points necessitate cuts and multisheeted surfaces.</p>
+</div>
+</div>
+<!--
+Cosine simularity: 0.8512935455454501
+-->
+</section>
+<section id="lecture-style-and-student-feedback-on-rigor-vs.-conceptual-learning" class="level2">
+<h2 class="anchored" data-anchor-id="lecture-style-and-student-feedback-on-rigor-vs.-conceptual-learning">Lecture Style and Student Feedback on Rigor vs.&nbsp;Conceptual Learning</h2>
+<p>The unique complex plane has an infinitesimal value in the other direction, but it would stay at infinity. This is an isolated singularity. The branch point is a concept you might have encountered in mathematics, particularly in relation to the residual theorem or theoretical minimum.</p>
+<p>For example, the square root function has a branch point, though you may know it by other terminology. The exponential function <span class="math inline">\(e^X\)</span> also exhibits branch points.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Branch points and isolated singularities are distinct concepts in complex analysis. A branch point introduces multivaluedness, while an isolated singularity (like a pole) is a single-point discontinuity.</p>
+</div>
+</div>
+<p>Regarding lecture style, some students find the approach unstructured, with sketches and intuitive explanations rather than rigorous proofs. However, this makes the material more engaging for advanced learners. For first-semester students, a more structured approach might be necessary to avoid confusion.</p>
+<p>The branch point for <span class="math inline">\(\sqrt{X}\)</span> or <span class="math inline">\(\log(X)\)</span> is a key example where the function becomes multivalued. In contrast, poles (like those in <span class="math inline">\(1/(X - C)^3\)</span>) are isolated singularities resolvable with an infinitesimal shift in the complex plane.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Teaching advanced students allows for a more conceptual approach, but foundational courses require clearer structure to build rigorous understanding.</p>
+</div>
+</div>
+<p>The distinction between branch points and poles is critical: branch points require branch cuts, while poles are removable with <span class="math inline">\(i\epsilon\)</span> prescriptions.</p>
+<!--
+Cosine simularity: 0.8461662585382317
+-->
+</section>
+<section id="exploring-infinite-worlds-and-gates-in-a-virtual-environment" class="level2">
+<h2 class="anchored" data-anchor-id="exploring-infinite-worlds-and-gates-in-a-virtual-environment">Exploring Infinite Worlds and Gates in a Virtual Environment</h2>
+<p>We go through the gate, but outside the gate, the function is continuous. Here, it’s another gate. This is the first world, and the second world is entered by walking around the gate. Then, it goes through the gate and ends up in another world. This is because of how we choose the first road. You can go through the gate and appear in that world, which has many more gates. You can go around and enter on the other side, emerging elsewhere.</p>
+<p>This creates an infinite number of worlds due to the nature of the construction. For example, you can go to the forest world, which is another world with its own gate. Appearing here, you can go around and emerge elsewhere. This works because the structure is a square, while another configuration might be logarithmic.</p>
+<p>Imagine using VR glasses and walking through these gates—it would be quite fun. You could suggest this as an 80th Matrix Netflix concept, making it an escape room where you only exit by finding the first gate.</p>
+<p>The function’s behavior appears in the amplitudes, which are structured this way.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Branch points and isolated singularities are distinct in complex analysis. A branch point introduces multivaluedness (e.g., <span class="math inline">\(\sqrt{X}\)</span> or <span class="math inline">\(\log(X)\)</span>), while an isolated singularity (like a pole in <span class="math inline">\(1/(X - C)^3\)</span>) is a single-point discontinuity resolvable with an infinitesimal shift in the complex plane.</p>
+</div>
+</div>
+<p>The unique complex plane has an infinitesimal value in the other direction but remains at infinity for an isolated singularity. The branch point is a concept encountered in mathematics, particularly with the residual theorem or theoretical minimum.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Teaching advanced students allows for a conceptual approach, but foundational courses require clearer structure to build rigorous understanding.</p>
+</div>
+</div>
+<!--
+Cosine simularity: 0.8968583727372633
+-->
+</section>
+<section id="the-role-of-rigorous-proofs-in-learning" class="level2">
+<h2 class="anchored" data-anchor-id="the-role-of-rigorous-proofs-in-learning">The Role of Rigorous Proofs in Learning</h2>
+<p>The scattering amplitudes are functions of Mandelstam variables, which describe energies and momentum transfers in particle interactions. For this lecture, it would be nice to have a more rigorous proof, but I quite like that we don’t always rely on them. However, some background knowledge is necessary to follow the reasoning. Without foundational proofs, it would be difficult to understand the concepts.</p>
+<p>When I was a student, I disliked when instructors expected prior knowledge that hadn’t been taught. This feeling is more extreme in courses that focus solely on rigorous proofs. For example, Dr.&nbsp;Creeps’ lectures consist entirely of long proofs, which become tedious and disconnected from conceptual understanding. It’s better to introduce the ideas first and then provide proofs later.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Branch points and isolated singularities are distinct in complex analysis. A branch point introduces multivaluedness (e.g., <span class="math inline">\(\sqrt{X}\)</span> or <span class="math inline">\(\log(X)\)</span>), while an isolated singularity (like a pole in <span class="math inline">\(1/(X - C)^3\)</span>) is a single-point discontinuity resolvable with an infinitesimal shift in the complex plane.</p>
+</div>
+</div>
+<p>The unique structure of the complex plane means an isolated singularity remains at infinity, while branch points are tied to multivalued functions. This distinction is crucial in advanced mathematics, particularly when applying the residue theorem or theoretical minimum principles.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Teaching advanced students allows for a conceptual approach, but foundational courses require clearer structure to build rigorous understanding.</p>
+</div>
+</div>
+<!--
+Cosine simularity: 0.8648794575125085
+-->
+</section>
+<section id="compensation-for-lack-of-rigor-in-seminars-and-exercises" class="level2">
+<h2 class="anchored" data-anchor-id="compensation-for-lack-of-rigor-in-seminars-and-exercises">Compensation for Lack of Rigor in Seminars and Exercises</h2>
+<p>I think our seminars and exercise classes compensate for the absence of rigor. That’s why we spend so much time on them. I feel bad that polarization has not been covered properly — we didn’t have time to introduce the polarization matrix to explain where this <span class="math inline">\(P\)</span> comes from.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The polarization matrix ( <span class="math inline">\(P\)</span> ) describes how the polarization state of light or particles transforms, but its derivation requires more rigorous treatment than what was possible in this lecture.</p>
+</div>
+</div>
+<!--
+Cosine simularity: 0.9247812959480968
+-->
+</section>
+<section id="prioritizing-exercise-sheets-for-exam-preparation" class="level2">
+<h2 class="anchored" data-anchor-id="prioritizing-exercise-sheets-for-exam-preparation">Prioritizing Exercise Sheets for Exam Preparation</h2>
+<p>Since we have so much time in the exercises, you can stop exactly where needed. Morris wanted to proceed, but I stopped him because he will have another tweak for sheet five. We will not cover sheet five on Thursday for sure. We still have one more exercise set for sheet three and sheet four.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The course is going to end at some point, so you must decide which exercises to prioritize.</p>
+</div>
+</div>
+<p>If you have to choose between sheet three and sheet five, sheet five is more interesting and more important for the exam. You won’t be able to cover all exercises, so you must decide which ones to focus on.</p>
+<!--
+Cosine simularity: 0.9602122980577258
+-->
+</section>
+<section id="scheduling-and-discussing-exercise-sheets" class="level2">
+<h2 class="anchored" data-anchor-id="scheduling-and-discussing-exercise-sheets">Scheduling and Discussing Exercise Sheets</h2>
+<p>I hope that this Thursday will cover sheet three and sheet four. Next exercise, sheet five and sheet six. Until we discuss sheet five, they will have time to try solving it.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Extra time for exercises doesn’t help—people will do other things and forget more.</p>
+</div>
+</div>
+<p>If they have another two weeks, they might not prioritize the exercises. I don’t mind.</p>
+<!--
+Cosine simularity: 0.938574666912645
+-->
+</section>
+<section id="deciding-on-exercise-content-and-student-preparedness" class="level2">
+<h2 class="anchored" data-anchor-id="deciding-on-exercise-content-and-student-preparedness">Deciding on Exercise Content and Student Preparedness</h2>
+<p>I don’t mind giving opportunities, but people will do other things and forget things. Tomorrow, we have the second exercise covering form factors and complex integrals. It’s nice because the topics are connected.</p>
+<p>I’m considering skipping it now and bringing it up in the next exercise class when we discuss complex structures. Some students didn’t complete the exercise—they tried, but their submissions are missing key elements. That’s why we need to discuss it in class.</p>
+<p>Morris tried, but others likely just heard about it. I mentioned they have the material, but engagement varies.</p>
+<!--
+Cosine simularity: 0.933734293695889
+-->
+</section>
+<section id="selecting-participants-for-the-exercise" class="level2">
+<h2 class="anchored" data-anchor-id="selecting-participants-for-the-exercise">Selecting Participants for the Exercise</h2>
+<p>Usually we want Hendrik and Moritz.<br>
+The other participants likely just heard about it. I mentioned that they have the material.</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
