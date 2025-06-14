@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -76,6 +111,8 @@ window.Quarto = {
 
 
 
+<section id="angle-distributions-kinematic-variables-and-dalitz-plots-in-scattering-processes" class="level3">
+<h3 class="anchored" data-anchor-id="angle-distributions-kinematic-variables-and-dalitz-plots-in-scattering-processes">Angle Distributions, Kinematic Variables, and Dalitz Plots in Scattering Processes</h3>
 <p>Today we are at lecture number five. We’ll discuss <strong>angle distributions</strong> and <strong>partial wave analysis</strong>. But before going there, I would like to start with a recap.</p>
 <hr>
 <p>In the last lecture, we discussed the <strong>phase space</strong> for particle reactions and different experiments in their kinematics. We went through the list of experiments around the world that study hadrons and look at their production mechanisms and peculiarities. Let’s start with a recap on kinematics.</p>
@@ -136,11 +173,9 @@ Important
 </div>
 </div>
 <hr>
-<p>Here I would have a <strong>scalar amplitude</strong> describing amplitude as a function of <span class="math inline">\(s\)</span> and <span class="math inline">\(t\)</span>, where:</p>
-<p><span class="math display">\[
+<p>Here I would have a <strong>scalar amplitude</strong> describing amplitude as a function of <span class="math inline">\(s\)</span> and <span class="math inline">\(t\)</span>, where: <span class="math display">\[
 s = (p_1 + p_2)^2
-\]</span></p>
-<p><span class="math display">\[
+\]</span> <span class="math display">\[
 t = (p_1 - p_3)^2
 \]</span></p>
 <p>Now I’ve made my cartoon richer by indicating channels/variables in <strong>Mandelstam invariants</strong> that describe the process. The energy is given by <span class="math inline">\(s\)</span> (sum of four-vectors squared), and transferred momentum is <span class="math inline">\(t\)</span> (analogous but in the vertical direction).</p>
@@ -181,15 +216,13 @@ Tip
 <p>The homework exercise was on <strong>Dalitz plots</strong>—now entering hadron-specific material. Previous lectures overlapped with general particle physics; now we focus on hadron spectroscopy approaches. One subject is particle representation in three-body decay.</p>
 <p><strong>Dalitz plots</strong> show interaction dynamics. For three-body decay, we have one incoming, three outgoing legs. Same questions as before about variable counting, but the answer is similar (same number of legs determines variables). For <span class="math inline">\(3\pi\)</span> decay, two variables completely describe the process (<span class="math inline">\(s\)</span> and <span class="math inline">\(t\)</span> or angles).</p>
 <p>Remember my <strong>rigid body analogy</strong>: 3D-printed blob with vectors sticking out—fixed angles and lengths describe kinematics. Same for three-body decay: two variables completely specify it in the COM frame (three vectors with fixed relationships).</p>
-<p>For three-body decay:</p>
-<p><span class="math display">\[
+<p>For three-body decay: <span class="math display">\[
 s = (p_1 - p_2)^2 = (p_3 + p_4)^2
 \]</span> <span class="math display">\[
 t = (p_1 - p_3)^2
 \]</span></p>
 <p>Note there was a typo (<span class="math inline">\(p_1\)</span> should be the decaying particle)—I’ll update notation later. Key point: three-body phase space is flat in these variables.</p>
-<p>The recursive formula we discussed gives phase space as:</p>
-<p><span class="math display">\[
+<p>The recursive formula we discussed gives phase space as: <span class="math display">\[
 \frac{1}{8\pi^2} \frac{2|\vec{p}|}{\sqrt{s}}
 \]</span> for each two-body subspace. Each phase space has a <span class="math inline">\(\frac{1}{2\pi}\)</span> factor, plus 3D angular element <span class="math inline">\(\frac{d\Omega}{4\pi}\)</span>. In the asymptotic limit, this approaches 1 (unit integral if no angular dependence).</p>
 <p>For three-body decay, using the recursive formula shows the Jacobian for transformation to pair mass variables is constant—no extra dependencies. Plotting differential width vs.&nbsp;<span class="math inline">\(m_{34}^2\)</span> and <span class="math inline">\(m_{24}^2\)</span> gives an undistorted density representation. <strong>Mandelstam variables</strong> provide this clean representation where the plot directly shows interaction dynamics—this is the power of Dalitz plots.</p>
@@ -206,6 +239,9 @@ Important
 <p><strong>Dalitz plots</strong> are powerful tools for studying three-body decays, as they directly reflect the dynamics of the interaction through invariant mass variables.</p>
 </div>
 </div>
+</section>
+<section id="λc-baryon-decay-kinematics-and-dalitz-plot-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="λc-baryon-decay-kinematics-and-dalitz-plot-analysis">Λc Baryon Decay Kinematics and Dalitz Plot Analysis</h3>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -330,6 +366,9 @@ Tip
 </div>
 </div>
 <p>Let’s take two minutes to find it. Here’s a hint: particles are aligned along one line at the border of the plot. Inside the surface they always have angles between them, but at the border they become collinear. Think about how you maximize the mass and where this point lies on the border.</p>
+</section>
+<section id="three-body-decay-kinematics-dalitz-plots-and-angular-distributions-in-resonant-states" class="level3">
+<h3 class="anchored" data-anchor-id="three-body-decay-kinematics-dalitz-plots-and-angular-distributions-in-resonant-states">Three-Body Decay Kinematics, Dalitz Plots, and Angular Distributions in Resonant States</h3>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -445,6 +484,9 @@ D^J_{m'm}(\alpha,\beta,\gamma) = e^{-i\alpha m'} d^J_{m'm}(\beta) e^{-i\gamma m}
 <p><span class="math display">\[
 d^J_{m'm}(\beta) = \langle Jm'|e^{-i\beta J_y}|Jm\rangle
 \]</span></p>
+</section>
+<section id="spin-12-rotation-wigner-d-functions-and-decay-kinematics" class="level3">
+<h3 class="anchored" data-anchor-id="spin-12-rotation-wigner-d-functions-and-decay-kinematics">Spin-1/2 Rotation, Wigner D Functions, and Decay Kinematics</h3>
 <p>We need an example, a very small one, of spinning on half.<br>
 I’m going to repeat state <span class="math inline">\(1/2\)</span> by rotating it <strong>30 degrees</strong> about the <strong>Y axis</strong>.<br>
 I’ll get a <span class="math inline">\(1/2\)</span>, <span class="math inline">\(1/2\)</span> plus <span class="math inline">\(1/2\)</span> minus combination, and I want you to quickly tell me what the numbers here are.</p>
@@ -465,8 +507,8 @@ This is about the <strong>SU(2) group</strong>, and you can just open the Clebsc
 <p>Since it’s <strong>30 degrees</strong>, we won’t do it all now.<br>
 We won’t have time to look at details, but hopefully in the seminar, we’ll explore this more.<br>
 Just remember this table because it’s <strong>super simple</strong>.</p>
-<p>The <strong>Wigner D-matrix</strong> for <span class="math inline">\(m' = \pm1/2\)</span> is:</p>
-<p><span class="math display">\[
+<p>The <strong>Wigner D-matrix</strong> for <span class="math inline">\(m' = \pm1/2\)</span> is:<br>
+<span class="math display">\[
 D^{1/2}_{m'm}(\theta) = \begin{pmatrix}
 \cos(\theta/2) &amp; -\sin(\theta/2) \\
 \sin(\theta/2) &amp; \cos(\theta/2)
@@ -581,8 +623,8 @@ Note
 1. The <strong>initial particle</strong> first goes to an <strong>intermediate particle</strong> with spin <span class="math inline">\(J\)</span>.<br>
 2. Then <span class="math inline">\(X\)</span> decays to <strong>1 and 2</strong>.</p>
 <p>The <strong>three-way process</strong> with two-variable spins gives the <strong>dimension of the matrix discrete dimensions</strong>.</p>
-<p>For this problem, since all particles have spin, I’m going to deal with dimensions which are the product of <span class="math inline">\((2j+1)\)</span> for all particles:</p>
-<p><span class="math display">\[
+<p>For this problem, since all particles have spin, I’m going to deal with dimensions which are the product of <span class="math inline">\((2j+1)\)</span> for all particles:<br>
+<span class="math display">\[
 \text{Dimension} = \prod_{i=0}^3 (2j_i + 1)
 \]</span><br>
 where <span class="math inline">\(j_0\)</span> is the <strong>initial particle spin</strong>, and <span class="math inline">\(j_1, j_2, j_3\)</span> are the <strong>final state particle spins</strong>.</p>
@@ -600,6 +642,9 @@ Tip
 </div>
 </div>
 <p>But in the <strong>general case</strong>, you have many of these <strong>two-variable functions</strong>, and the way to write the <strong>amplitude</strong> is to sum over the <strong>intermediate spins</strong> and to…</p>
+</section>
+<section id="cascade-decays-framework-amplitude-structure-and-kinematic-alignment" class="level3">
+<h3 class="anchored" data-anchor-id="cascade-decays-framework-amplitude-structure-and-kinematic-alignment">Cascade Decays: Framework, Amplitude Structure, and Kinematic Alignment</h3>
 <p>For simplicity, we will align the system. We consider these <span class="math inline">\(X_3\)</span> as different restaurants—specifically, the <strong>tourism restaurant</strong> from RTPX, where <span class="math inline">\(X\)</span>reland must traverse from the initial state.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -629,17 +674,15 @@ Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The amplitude structure:<br>
-<span class="math display">\[
-A = \sum_{\lambda} H_{\lambda} \cdot D^{J*}_{\lambda,\lambda'}(\phi,\theta,0)  
-\]</span><br>
-Here, <span class="math inline">\(H_{\lambda}\)</span> encapsulates dynamics (weak/strong/EM interactions), while <span class="math inline">\(D\)</span> is the <strong>Wigner D-matrix</strong> for rotational transformations.</p>
+<p>The amplitude structure:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode latex code-with-copy"><code class="sourceCode latex"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>A = <span class="fu">\sum</span>_{<span class="fu">\lambda</span>} H_{<span class="fu">\lambda</span>} <span class="fu">\cdot</span> D^{J*}_{<span class="fu">\lambda</span>,<span class="fu">\lambda</span>'}(<span class="fu">\phi</span>,<span class="fu">\theta</span>,0)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Here, <span class="math inline">\(H_{\lambda}\)</span> encapsulates dynamics (weak/strong/EM interactions), while <span class="math inline">\(D\)</span> is the <strong>Wigner D-matrix</strong> for rotational transformations.</p>
 </div>
 </div>
 <p>The <span class="math inline">\(H\)</span> terms are <strong>dark blobs</strong> representing unresolved dynamics—weak/strong/EM interactions or other physics. This <span class="math inline">\(H\)</span> is <strong>unknown for hard interactions</strong> because we lack a parameterization.</p>
 <hr>
-<p>For a particle <span class="math inline">\(\Lambda_X\)</span> (or <span class="math inline">\(X_3\)</span>), the decay sequence is:</p>
-<p><span class="math display">\[\Lambda_X \rightarrow \Lambda_3^0 + \text{other products} \rightarrow H^0 + X \rightarrow \text{particles } 1, 2 \text{ and } G.\]</span></p>
+<p>For a particle <span class="math inline">\(\Lambda_X\)</span> (or <span class="math inline">\(X_3\)</span>), the decay sequence is:<br>
+<span class="math display">\[\Lambda_X \rightarrow \Lambda_3^0 + \text{other products} \rightarrow H^0 + X \rightarrow \text{particles } 1, 2 \text{ and } G.\]</span></p>
 <ul>
 <li><strong><span class="math inline">\(G\)</span></strong>: Describes the <strong>rotation orientation</strong> of the decay.
 <ul>
@@ -660,15 +703,13 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Helicity projections (<span class="math inline">\(\lambda\)</span>) are quantized along <span class="math inline">\(\mathbf{P}\)</span>. The Wigner small-<span class="math inline">\(d\)</span> matrix encodes spin transformations:<br>
-<span class="math display">\[
-d^{J}_{\lambda,\lambda'}(\theta)  
-\]</span></p>
+<p>Helicity projections (<span class="math inline">\(\lambda\)</span>) are quantized along <span class="math inline">\(\mathbf{P}\)</span>. The Wigner small-<span class="math inline">\(d\)</span> matrix encodes spin transformations:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode latex code-with-copy"><code class="sourceCode latex"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>d^{J}_{<span class="fu">\lambda</span>,<span class="fu">\lambda</span>'}(<span class="fu">\theta</span>)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <hr>
-<p>Let’s evaluate this in <strong>aligned kinematics</strong> (<span class="math inline">\(\phi = \theta = 0\)</span>). In the <span class="math inline">\(CM\)</span> frame, the amplitude simplifies to:</p>
-<p><span class="math display">\[\sum_{\lambda_X, \lambda_3} H_{\lambda_X, \lambda_3} \cdot \delta_{\lambda_0, \lambda_X - \lambda_3} \cdot d^{J_X}_{\lambda_X, \lambda_1 - \lambda_2}(\theta)\]</span></p>
+<p>Let’s evaluate this in <strong>aligned kinematics</strong> (<span class="math inline">\(\phi = \theta = 0\)</span>). In the <span class="math inline">\(CM\)</span> frame, the amplitude simplifies to:<br>
+<span class="math display">\[\sum_{\lambda_X, \lambda_3} H_{\lambda_X, \lambda_3} \cdot \delta_{\lambda_0, \lambda_X - \lambda_3} \cdot d^{J_X}_{\lambda_X, \lambda_1 - \lambda_2}(\theta)\]</span></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -682,11 +723,9 @@ Note
 <p>At <span class="math inline">\(\theta = 0\)</span>, no rotation is needed, so the Wigner <span class="math inline">\(D\)</span>-matrix reduces to a <strong>delta function</strong> <span class="math inline">\(\delta_{\lambda_0, \lambda_X - \lambda_3}\)</span>, enforcing angular momentum conservation.</p>
 </div>
 </div>
-<p>The <strong>final constrained expression</strong> becomes:<br>
-<span class="math display">\[
-A = H_0 \cdot d^{J_X}_{\lambda_X, \lambda_1 - \lambda_2}(\theta)  
-\]</span><br>
-where <span class="math inline">\(\lambda_X = \lambda_0 + \lambda_3\)</span> (momentum conservation).</p>
+<p>The <strong>final constrained expression</strong> becomes:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode latex code-with-copy"><code class="sourceCode latex"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>A = H_0 <span class="fu">\cdot</span> d^{J_X}_{<span class="fu">\lambda</span>_X, <span class="fu">\lambda</span>_1 - <span class="fu">\lambda</span>_2}(<span class="fu">\theta</span>)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>where <span class="math inline">\(\lambda_X = \lambda_0 + \lambda_3\)</span> (momentum conservation).</p>
 <hr>
 <ol type="1">
 <li><strong><span class="math inline">\(H\)</span> contains physics</strong>: Unresolved dynamics (e.g., couplings).<br>
@@ -708,6 +747,9 @@ Warning
 <p>Misalignment introduces additional rotational terms—always verify the frame definitions!</p>
 </div>
 </div>
+</section>
+<section id="angular-distributions-spin-multiplicity-and-partial-wave-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="angular-distributions-spin-multiplicity-and-partial-wave-analysis">Angular Distributions, Spin Multiplicity, and Partial Wave Analysis</h3>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -722,11 +764,11 @@ Important
 </div>
 </div>
 <p>What’s inside the blobs—these blocks or blobs—determines the prediction. For all values, only <strong>this one</strong> and <strong>that one</strong> are needed.</p>
-<p>The number of values here is given by the <strong>spin multiplicity factor</strong>:</p>
-<p><span class="math display">\[  
+<p>The number of values here is given by the <strong>spin multiplicity factor</strong>:<br>
+<span class="math display">\[  
 (2j_1 + 1) \times (2j_2 + 1)  
-\]</span></p>
-<p>These values might be functions of particle masses (e.g., masses of <span class="math inline">\(x\)</span>). A similar number is required for these, but a reasonable approximation exists.</p>
+\]</span><br>
+These values might be functions of particle masses (e.g., masses of <span class="math inline">\(x\)</span>). A similar number is required for these, but a reasonable approximation exists.</p>
 <hr>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -742,11 +784,11 @@ Note
 </div>
 </div>
 <p>By fixing the mass of one tube and the intensity along the line, the angle distribution can be computed.</p>
-<p>Currently, we have:</p>
-<p><span class="math display">\[  
+<p>Currently, we have:<br>
+<span class="math display">\[  
 \frac{d\Gamma}{d\cos\theta}  
-\]</span></p>
-<p><strong>Why cosine?</strong><br>
+\]</span><br>
+<strong>Why cosine?</strong><br>
 - Cosine has a better Jacobian.<br>
 - Avoids the sine Jacobian complication.<br>
 - Often, the cosine distribution is analyzed.</p>
@@ -873,6 +915,7 @@ Warning
 </div>
 <hr>
 <p><em>Thanks for attending, and apologies for the slight delay. See you tomorrow!</em></p>
+</section>
 
 </main>
 <!-- /main column -->
