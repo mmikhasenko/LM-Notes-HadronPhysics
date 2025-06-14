@@ -1,3 +1,5 @@
+### Angle Distributions, Kinematic Variables, and Dalitz Plots in Scattering Processes
+
 
 Today we are at lecture number five. We'll discuss **angle distributions** and **partial wave analysis**. But before going there, I would like to start with a recap.
 
@@ -53,11 +55,9 @@ What did you get for B? Experts in the back—how many? You have the two from be
 
 
 Here I would have a **scalar amplitude** describing amplitude as a function of $s$ and $t$, where:
-
 $$
 s = (p_1 + p_2)^2
 $$
-
 $$
 t = (p_1 - p_3)^2
 $$
@@ -97,7 +97,6 @@ The homework exercise was on **Dalitz plots**—now entering hadron-specific mat
 Remember my **rigid body analogy**: 3D-printed blob with vectors sticking out—fixed angles and lengths describe kinematics. Same for three-body decay: two variables completely specify it in the COM frame (three vectors with fixed relationships).
 
 For three-body decay:
-
 $$
 s = (p_1 - p_2)^2 = (p_3 + p_4)^2
 $$
@@ -108,7 +107,6 @@ $$
 Note there was a typo ($p_1$ should be the decaying particle)—I'll update notation later. Key point: three-body phase space is flat in these variables.
 
 The recursive formula we discussed gives phase space as:
-
 $$
 \frac{1}{8\pi^2} \frac{2|\vec{p}|}{\sqrt{s}}
 $$
@@ -119,6 +117,7 @@ For three-body decay, using the recursive formula shows the Jacobian for transfo
 > [!IMPORTANT]
 > **Dalitz plots** are powerful tools for studying three-body decays, as they directly reflect the dynamics of the interaction through invariant mass variables.
 
+### Λc Baryon Decay Kinematics and Dalitz Plot Analysis
 
 
 > [!NOTE]  
@@ -194,6 +193,7 @@ It turns out certain kinematics are more probable than others — particles pref
 
 Let's take two minutes to find it. Here's a hint: particles are aligned along one line at the border of the plot. Inside the surface they always have angles between them, but at the border they become collinear. Think about how you maximize the mass and where this point lies on the border.
 
+### Three-Body Decay Kinematics, Dalitz Plots, and Angular Distributions in Resonant States
 
 
 > [!NOTE]
@@ -292,6 +292,7 @@ $$
 d^J_{m'm}(\beta) = \langle Jm'|e^{-i\beta J_y}|Jm\rangle
 $$
 
+### Spin-1/2 Rotation, Wigner D Functions, and Decay Kinematics
 
 We need an example, a very small one, of spinning on half.  
 I'm going to repeat state $1/2$ by rotating it **30 degrees** about the **Y axis**.  
@@ -305,8 +306,7 @@ Since it's **30 degrees**, we won't do it all now.
 We won't have time to look at details, but hopefully in the seminar, we'll explore this more.  
 Just remember this table because it's **super simple**.  
 
-The **Wigner D-matrix** for $m' = \pm1/2$ is:
-
+The **Wigner D-matrix** for $m' = \pm1/2$ is:  
 $$
 D^{1/2}_{m'm}(\theta) = \begin{pmatrix}
 \cos(\theta/2) & -\sin(\theta/2) \\
@@ -376,8 +376,7 @@ I'm going to assume that **three particles** in the final state are produced via
 
 The **three-way process** with two-variable spins gives the **dimension of the matrix discrete dimensions**.  
 
-For this problem, since all particles have spin, I'm going to deal with dimensions which are the product of $(2j+1)$ for all particles:
-
+For this problem, since all particles have spin, I'm going to deal with dimensions which are the product of $(2j+1)$ for all particles:  
 $$
 \text{Dimension} = \prod_{i=0}^3 (2j_i + 1)
 $$  
@@ -388,6 +387,7 @@ where $j_0$ is the **initial particle spin**, and $j_1, j_2, j_3$ are the **fina
 
 But in the **general case**, you have many of these **two-variable functions**, and the way to write the **amplitude** is to sum over the **intermediate spins** and to...
 
+### Cascade Decays: Framework, Amplitude Structure, and Kinematic Alignment
 
 For simplicity, we will align the system. We consider these $X_3$ as different restaurants—specifically, the **tourism restaurant** from RTPX, where $X$reland must traverse from the initial state.  
 
@@ -404,7 +404,7 @@ I’d like to present a **general formula**—we’ll focus on understanding it 
 
 > [!IMPORTANT]  
 > The amplitude structure:  
-> ```math  
+> ```latex  
 > A = \sum_{\lambda} H_{\lambda} \cdot D^{J*}_{\lambda,\lambda'}(\phi,\theta,0)  
 > ```  
 > Here, $H_{\lambda}$ encapsulates dynamics (weak/strong/EM interactions), while $D$ is the **Wigner D-matrix** for rotational transformations.  
@@ -413,8 +413,7 @@ The $H$ terms are **dark blobs** representing unresolved dynamics—weak/strong/
 
 ---
 
-For a particle $\Lambda_X$ (or $X_3$), the decay sequence is:
-
+For a particle $\Lambda_X$ (or $X_3$), the decay sequence is:  
 $$\Lambda_X \rightarrow \Lambda_3^0 + \text{other products} \rightarrow H^0 + X \rightarrow \text{particles } 1, 2 \text{ and } G.$$  
 
 - **$G$**: Describes the **rotation orientation** of the decay.  
@@ -424,21 +423,20 @@ $$\Lambda_X \rightarrow \Lambda_3^0 + \text{other products} \rightarrow H^0 + X 
 
 > [!TIP]  
 > Helicity projections ($\lambda$) are quantized along $\mathbf{P}$. The Wigner small-$d$ matrix encodes spin transformations:  
-> ```math  
+> ```latex  
 > d^{J}_{\lambda,\lambda'}(\theta)  
 > ```  
 
 ---
 
-Let’s evaluate this in **aligned kinematics** ($\phi = \theta = 0$). In the $CM$ frame, the amplitude simplifies to:
-
+Let’s evaluate this in **aligned kinematics** ($\phi = \theta = 0$). In the $CM$ frame, the amplitude simplifies to:  
 $$\sum_{\lambda_X, \lambda_3} H_{\lambda_X, \lambda_3} \cdot \delta_{\lambda_0, \lambda_X - \lambda_3} \cdot d^{J_X}_{\lambda_X, \lambda_1 - \lambda_2}(\theta)$$  
 
 > [!NOTE]  
 > At $\theta = 0$, no rotation is needed, so the Wigner $D$-matrix reduces to a **delta function** $\delta_{\lambda_0, \lambda_X - \lambda_3}$, enforcing angular momentum conservation.  
 
 The **final constrained expression** becomes:  
-```math  
+```latex  
 A = H_0 \cdot d^{J_X}_{\lambda_X, \lambda_1 - \lambda_2}(\theta)  
 ```  
 where $\lambda_X = \lambda_0 + \lambda_3$ (momentum conservation).  
@@ -452,6 +450,7 @@ where $\lambda_X = \lambda_0 + \lambda_3$ (momentum conservation).
 > [!WARNING]  
 > Misalignment introduces additional rotational terms—always verify the frame definitions!
 
+### Angular Distributions, Spin Multiplicity, and Partial Wave Analysis
 
 
 > [!IMPORTANT]  
@@ -459,12 +458,10 @@ where $\lambda_X = \lambda_0 + \lambda_3$ (momentum conservation).
 
 What’s inside the blobs—these blocks or blobs—determines the prediction. For all values, only **this one** and **that one** are needed.  
 
-The number of values here is given by the **spin multiplicity factor**:
-
+The number of values here is given by the **spin multiplicity factor**:  
 $$  
 (2j_1 + 1) \times (2j_2 + 1)  
 $$  
-
 These values might be functions of particle masses (e.g., masses of $x$). A similar number is required for these, but a reasonable approximation exists.  
 
 ---
@@ -475,12 +472,10 @@ These values might be functions of particle masses (e.g., masses of $x$). A simi
 
 By fixing the mass of one tube and the intensity along the line, the angle distribution can be computed.  
 
-Currently, we have:
-
+Currently, we have:  
 $$  
 \frac{d\Gamma}{d\cos\theta}  
 $$  
-
 **Why cosine?**  
 - Cosine has a better Jacobian.  
 - Avoids the sine Jacobian complication.  
