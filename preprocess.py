@@ -4,7 +4,7 @@ import os
 
 def transform_file(filepath):
     with open(filepath, 'r', encoding='utf-8') as file:
-        content = file.read()
+        content = file.read().replace("```latex", "```math")
 
     # Match entire callout block (header + all following lines starting with >)
     pattern = re.compile(
