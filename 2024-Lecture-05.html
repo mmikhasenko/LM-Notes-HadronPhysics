@@ -20,41 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -674,9 +639,11 @@ Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The amplitude structure:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode latex code-with-copy"><code class="sourceCode latex"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>A = <span class="fu">\sum</span>_{<span class="fu">\lambda</span>} H_{<span class="fu">\lambda</span>} <span class="fu">\cdot</span> D^{J*}_{<span class="fu">\lambda</span>,<span class="fu">\lambda</span>'}(<span class="fu">\phi</span>,<span class="fu">\theta</span>,0)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Here, <span class="math inline">\(H_{\lambda}\)</span> encapsulates dynamics (weak/strong/EM interactions), while <span class="math inline">\(D\)</span> is the <strong>Wigner D-matrix</strong> for rotational transformations.</p>
+<p>The amplitude structure:<br>
+<span class="math display">\[
+A = \sum_{\lambda} H_{\lambda} \cdot D^{J*}_{\lambda,\lambda'}(\phi,\theta,0)  
+\]</span><br>
+Here, <span class="math inline">\(H_{\lambda}\)</span> encapsulates dynamics (weak/strong/EM interactions), while <span class="math inline">\(D\)</span> is the <strong>Wigner D-matrix</strong> for rotational transformations.</p>
 </div>
 </div>
 <p>The <span class="math inline">\(H\)</span> terms are <strong>dark blobs</strong> representing unresolved dynamics—weak/strong/EM interactions or other physics. This <span class="math inline">\(H\)</span> is <strong>unknown for hard interactions</strong> because we lack a parameterization.</p>
@@ -703,8 +670,10 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Helicity projections (<span class="math inline">\(\lambda\)</span>) are quantized along <span class="math inline">\(\mathbf{P}\)</span>. The Wigner small-<span class="math inline">\(d\)</span> matrix encodes spin transformations:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode latex code-with-copy"><code class="sourceCode latex"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>d^{J}_{<span class="fu">\lambda</span>,<span class="fu">\lambda</span>'}(<span class="fu">\theta</span>)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Helicity projections (<span class="math inline">\(\lambda\)</span>) are quantized along <span class="math inline">\(\mathbf{P}\)</span>. The Wigner small-<span class="math inline">\(d\)</span> matrix encodes spin transformations:<br>
+<span class="math display">\[
+d^{J}_{\lambda,\lambda'}(\theta)  
+\]</span></p>
 </div>
 </div>
 <hr>
@@ -723,9 +692,11 @@ Note
 <p>At <span class="math inline">\(\theta = 0\)</span>, no rotation is needed, so the Wigner <span class="math inline">\(D\)</span>-matrix reduces to a <strong>delta function</strong> <span class="math inline">\(\delta_{\lambda_0, \lambda_X - \lambda_3}\)</span>, enforcing angular momentum conservation.</p>
 </div>
 </div>
-<p>The <strong>final constrained expression</strong> becomes:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode latex code-with-copy"><code class="sourceCode latex"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>A = H_0 <span class="fu">\cdot</span> d^{J_X}_{<span class="fu">\lambda</span>_X, <span class="fu">\lambda</span>_1 - <span class="fu">\lambda</span>_2}(<span class="fu">\theta</span>)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>where <span class="math inline">\(\lambda_X = \lambda_0 + \lambda_3\)</span> (momentum conservation).</p>
+<p>The <strong>final constrained expression</strong> becomes:<br>
+<span class="math display">\[
+A = H_0 \cdot d^{J_X}_{\lambda_X, \lambda_1 - \lambda_2}(\theta)  
+\]</span><br>
+where <span class="math inline">\(\lambda_X = \lambda_0 + \lambda_3\)</span> (momentum conservation).</p>
 <hr>
 <ol type="1">
 <li><strong><span class="math inline">\(H\)</span> contains physics</strong>: Unresolved dynamics (e.g., couplings).<br>
