@@ -33,6 +33,7 @@ def transform_file(filepath):
 
     content = pattern.sub(callout_replacer, content)
 
+    # Convert \[...\] blocks to $$...$$
     content = re.sub(
         r'\\\[\s*\n(.*?)\n\\\]',
         lambda m: f"$$\n{m.group(1)}\n$$",
@@ -46,8 +47,14 @@ def transform_file(filepath):
         content,
         flags=re.DOTALL
     )
-
-    # Convert $`math`$ to $math$
+    # Convert \(...\) blocks to $...$
+    content = re.sub(
+        r'\\\((.*?)\\\)',
+        lambda m: f"${m.group(1)}$",
+        content,
+        flags=re.DOTALL
+    )
+    # Convert $`...`$ to $...$
     content = re.sub(
         r'\$\`(.*?)\`\$',
         lambda m: f"${m.group(1)}$",
