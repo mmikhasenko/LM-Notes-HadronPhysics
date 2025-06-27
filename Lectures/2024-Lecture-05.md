@@ -351,8 +351,8 @@ This line is the same as this one, **parallel to one side**. The $\Lambda$ reson
 > [!TIP]
 > For three-body decays like $K\pi p$, the **Dalitz plot variables** are:
 > $$
- m_{12}^2 = (p_1 + p_2)^2, \quad m_{23}^2 = (p_2 + p_3)^2 
-$$
+> m_{12}^2 = (p_1 + p_2)^2, \quad m_{23}^2 = (p_2 + p_3)^2 
+>$$
 > where $p_i$ are the 4-momenta of the decay products. These help identify resonance structures.
 
 ### Angular Distribution Inhomogeneity in Decay Bands Due to Particle Spin
