@@ -322,8 +322,8 @@ This leads to the appearance of **bent structures** in the Dalitz plot distribut
 > [!NOTE]
 > The **Breit-Wigner formula** describes the resonance cross-section:
 > $$
-\sigma(E) = \frac{4\pi}{k^2} \frac{(2J+1)}{(2s_1+1)(2s_2+1)} \frac{\Gamma^2/4}{(E-E_R)^2 + \Gamma^2/4}
-$$
+> \sigma(E) = \frac{4\pi}{k^2} \frac{(2J+1)}{(2s_1+1)(2s_2+1)} \frac{\Gamma^2/4}{(E-E_R)^2 + \Gamma^2/4}
+> $$
 > Where $E$ is the center-of-mass energy, $E_R$ is the resonance energy, and $\Gamma$ is the resonance width.
 
 This is a **cool example** I brought because there are resonances in all three particle pairs. There are resonances in these two, and these two as well.
