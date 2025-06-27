@@ -8,6 +8,7 @@ But before going there, I would like to start with a recap.
 ---
 
 Last lecture, we discussed:
+
 - The **phase space** for particle reactions
 - Different experiments in their **kinematics**
 - A list of experiments worldwide studying **hadrons**, their production mechanisms, and peculiarities
@@ -57,6 +58,7 @@ All 21 amplitudes depend on the **same two variables**, $s$ and $t$.
 ---
 
 For part C, the two variables to describe the process are:
+
 - **Mandelstam variables** $s$ and $t$ (most common choice).
 - These are **Lorentz invariants**—they characterize the process independently of the frame.
 
@@ -379,12 +381,14 @@ Let's sit in the rest frame of the $K\pi$ system where this band occurs and trav
 ---
 
 Particles often prefer certain alignments. For example:
+
 * They may favor being **parallel** rather than perpendicular
 * This is less probable kinematically
 
 Such preferences arise because particles have **spin**.
 
 The intermediate resonance (here, the $K^*$) is not a scalar—it has spin. This spin causes:
+
 1. Inhomogeneities in angular distributions
 2. Effects on the Dalitz plot
 
@@ -448,6 +452,7 @@ For most of the particles discovered so far, the quantum numbers are **not initi
 Most of the time, it is as simple as looking at the **Dalitz plot** and seeing if there is a minimum in the angular distribution. If the distribution has several structures—**nodes and maxima**—these indicate the spin.
 
 For **scalar particles** in the final state, the nodes directly tell you the spin:
+
 - **One node** corresponds to spin 1.
 - **Two nodes** correspond to spin 2.
 - **Three nodes** correspond to spin 3.
