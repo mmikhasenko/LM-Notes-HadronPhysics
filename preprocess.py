@@ -6,6 +6,15 @@ def transform_file(filepath):
     with open(filepath, 'r', encoding='utf-8') as file:
         content = file.read().replace("```latex", "```math")
 
+    
+    # Convert \(...\) blocks to $...$
+    content = re.sub(
+        r'\\\((.*?)\\\)',
+        lambda m: f"${m.group(1)}$",
+        content,
+        flags=re.DOTALL
+    )
+    
     # Match entire callout block (header + all following lines starting with >)
     pattern = re.compile(
         r'^> \[!(\w+)\]\s*\n'          # Header line: > [!TAG]
@@ -44,13 +53,6 @@ def transform_file(filepath):
     content = re.sub(
         r'```math\s*\n(.*?)\n```',
         lambda m: f"$$\n{m.group(1)}\n$$",
-        content,
-        flags=re.DOTALL
-    )
-    # Convert \(...\) blocks to $...$
-    content = re.sub(
-        r'\\\((.*?)\\\)',
-        lambda m: f"${m.group(1)}$",
         content,
         flags=re.DOTALL
     )
