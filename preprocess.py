@@ -33,6 +33,12 @@ def transform_file(filepath):
 
     content = pattern.sub(callout_replacer, content)
 
+    content = re.sub(
+        r'\\\[\s*\n(.*?)\n\\\]',
+        lambda m: f"$$\n{m.group(1)}\n$$",
+        content,
+        flags=re.DOTALL
+    )
     # Convert ```math blocks to $$...$$
     content = re.sub(
         r'```math\s*\n(.*?)\n```',
@@ -48,6 +54,7 @@ def transform_file(filepath):
         content,
         flags=re.DOTALL
     )
+    
 
     # Handle \slashed command as before
     content = re.sub(
@@ -59,6 +66,8 @@ def transform_file(filepath):
         ),
         content
     )
+
+
 
     with open(filepath, 'w', encoding='utf-8') as file:
         file.write(content)
