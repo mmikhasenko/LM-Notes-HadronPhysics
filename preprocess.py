@@ -24,7 +24,7 @@ def transform_file(filepath):
                                         #   (?:> )?          → optionally starts with "> "
                                         #   [^-].*           → line must not start with "-" (avoids matching list items)
                                         #   \n               → ends with newline (captures a full line)
-        r'((> )?(?:1\.|-|\*))\s',       # Group 2: A list item line starting with:
+        r'((> )?(?:1\.|-|\*)\s)',       # Group 2: A list item line starting with:
                                         #   (Group 3: optional "> ")  
                                         #   followed by "1.", "-" or "*"  
                                         #   then a space (to avoid matching things like "1.something")
