@@ -771,11 +771,7 @@ Cosine simularity: 0.8912046881280075
 <p><span class="math display">\[
 \log(1 - 8) - \log(17 - 8)
 \]</span></p>
-<p>When evaluating at <span class="math inline">\(8 \pm i\epsilon\)</span>, we observe:</p>
-<ul>
-<li><span class="math inline">\(\log(1) = 0\)</span></li>
-<li><span class="math inline">\(\log(-1 \mp i\epsilon) = \log(1) \pm i\pi\)</span></li>
-</ul>
+<p>When evaluating at <span class="math inline">\(8 \pm i\epsilon\)</span>, we observe: - <span class="math inline">\(\log(1) = 0\)</span> - <span class="math inline">\(\log(-1 \mp i\epsilon) = \log(1) \pm i\pi\)</span></p>
 <p>This leads to a discontinuity (jump) in the imaginary part, confirming the presence of a branch cut. The real part of <span class="math inline">\(X\)</span> cannot lie between 1 and 7 because the function’s structure loops around these points.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -790,11 +786,8 @@ Note
 <p>The branch points at <span class="math inline">\(X = 1\)</span> and <span class="math inline">\(X = 7\)</span> are explicitly identified by the integral’s behavior. The branch cut connects these points, restricting the domain of <span class="math inline">\(X\)</span>.</p>
 </div>
 </div>
-<p>The function has singularities at these branch points, but they are not poles. A branch point can have a divergence (e.g., <span class="math inline">\(\log(X)\)</span> diverges at <span class="math inline">\(X = 0\)</span>), but it is distinct from a pole. For example:</p>
-<ul>
-<li><span class="math inline">\(1/(X - C)^3\)</span> has a third-order pole at <span class="math inline">\(X = C\)</span>.</li>
-<li><span class="math inline">\(\log(X - C)\)</span> has a logarithmic branch point at <span class="math inline">\(X = C\)</span>, not a pole.</li>
-</ul>
+<p>The function has singularities at these branch points, but they are not poles. A branch point can have a divergence (e.g., <span class="math inline">\(\log(X)\)</span> diverges at <span class="math inline">\(X = 0\)</span>), but it is distinct from a pole. For example: - <span class="math inline">\(1/(X - C)^3\)</span> has a third-order pole at <span class="math inline">\(X = C\)</span>.</p>
+<p>-<span class="math inline">\(\log(X - C)\)</span> has a logarithmic branch point at <span class="math inline">\(X = C\)</span>, not a pole.</p>
 <p>A pole is a singularity that can be resolved by adding an infinitesimal shift in the complex plane (e.g., <span class="math inline">\(1/(X \pm i\epsilon)\)</span>). In contrast, branch points persist and require branch cuts to define the function’s behavior.</p>
 <p>The function here has no poles on the principal sheet, but the branch points at 1 and 7 introduce a multivalued structure. The branch cut enforces a discontinuity, preventing <span class="math inline">\(X\)</span> from taking values between 1 and 7 on the principal branch.</p>
 <div class="callout callout-style-default callout-important callout-titled">
