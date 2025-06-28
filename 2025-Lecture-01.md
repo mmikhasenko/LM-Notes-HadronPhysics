@@ -76,7 +76,7 @@ $$
 
 - $1s^2$: Two electrons in the 1s orbital (spherically symmetric).  
 
--$2s^2$: Two electrons in the 2s orbital (also spherical).  
+- $2s^2$: Two electrons in the 2s orbital (also spherical).  
 - $2p^4$: Four electrons in the 2p orbital (dumbbell-shaped).  
 
 The energy of electrons increases with angular momentum, with the 1s orbital being the lowest in energy. The wave function of the 1s orbital is:
@@ -156,13 +156,13 @@ In this course, we will explore the relationship between fundamental particles a
 
 The electroweak sector consists of three parts:  
 
-1.Electromagnetic interaction  
+1. Electromagnetic interaction  
 2. Weak interaction  
 3. Mass-energy sector (Higgs mechanism)  
 
 Let’s review the particles and their classifications:  
 
--**Higgs boson**: Belongs to the Higgs sector (mass-energy).  
+- **Higgs boson**: Belongs to the Higgs sector (mass-energy).  
 - **W boson**: Carrier of the weak interaction.  
 - **Z boson**: Also part of the weak sector.  
 - **Photon ($\gamma$)**: Mediator of electromagnetic interactions.  
@@ -173,7 +173,7 @@ The classification can sometimes appear vague because quarks are discussed in QC
 :::
 The Higgs boson stands as a separate field, but particles interact based on their charges:  
 
--If a particle carries an electric charge, it couples to photons.  
+- If a particle carries an electric charge, it couples to photons.  
 - If it has weak charge, it interacts via W/Z bosons.  
 - Color-charged particles (quarks, gluons) interact through the strong force.  
 
@@ -191,22 +191,22 @@ The charge of a particle determines how it interacts with force carriers. If you
 
 - **Top row quarks**: up, charm, top  
 
--**Bottom row quarks**: down, strange, bottom  
+- **Bottom row quarks**: down, strange, bottom  
 
 The quarks are organized into three generations:  
 
-1.**First generation**: up ($u$), down ($d$)  
+1. **First generation**: up ($u$), down ($d$)  
 2. **Second generation**: charm ($c$), strange ($s$)  
 3. **Third generation**: top ($t$), bottom ($b$)  
 
 The electric charge depends on whether the quark is in the top or bottom row:  
 
--**Top row**: $+\frac{2}{3}$  
+- **Top row**: $+\frac{2}{3}$  
 - **Bottom row**: $-\frac{1}{3}$  
 
 For weak interactions, the weak isospin charge differs:  
 
--**Upper quarks**: $+\frac{1}{2}$  
+- **Upper quarks**: $+\frac{1}{2}$  
 - **Lower quarks**: $-\frac{1}{2}$  
 
 ::: callout-note

@@ -10,7 +10,7 @@ But before going there, I would like to start with a recap.
 
 In the last lecture, we discussed:
 
--The **phase space** for particle reactions
+- The **phase space** for particle reactions
 - Different experiments and their **kinematics**
 - A list of experiments worldwide studying **hadrons**, their production mechanisms, and peculiarities
 
@@ -21,10 +21,10 @@ The first question: *How many variables does one need to describe the two-partic
 
 1. **Scalar particles** (e.g., 0-minus scalars):
 
--Scattering of 0-minus → 0-minus, with two 0-minus scalar particles in the final state.
+- Scattering of 0-minus → 0-minus, with two 0-minus scalar particles in the final state.
 2. **Particles with spin** (e.g., P-plus):
 
--Scattering of 0-minus → 3-minus and 1-plus.
+- Scattering of 0-minus → 3-minus and 1-plus.
 
 ::: callout-note
 The scattering process is represented by a "blob" in diagrams. These are **unitarity diagrams** (not Feynman diagrams), illustrating interactions without specifying dynamics.
@@ -34,7 +34,7 @@ The scattering process is represented by a "blob" in diagrams. These are **unita
 
 The question: *How many variables describe the full kinematics?*
 
--The blob's internal dynamics (strong, EM, gravity) **do not affect** the answer.
+- The blob's internal dynamics (strong, EM, gravity) **do not affect** the answer.
 - Two cases:
 - **(A)** Particles **without spin**
 - **(B)** Particles **with spin**
@@ -47,7 +47,7 @@ For **(C)**, provide an example of a variable combination that fully describes t
 1. Start with **8 variables** (2 particles × 4-momenta, minus 4 conservation constraints).
 2. Subtract **6 more** (3 rotations + 3 boosts) due to lack of reference frame.
 
--Final answer: **2 variables** for **(A)**.
+- Final answer: **2 variables** for **(A)**.
 
 For **(B)**, the answer is also **2 variables**, but the amplitude becomes a higher-rank object (e.g., 21-dimensional for spin-3 × spin-1).
 
@@ -76,7 +76,7 @@ These are **Lorentz-invariant**—they don’t depend on the reference frame.
 
 
 
--**Henrik’s choice**: Masses of particle pairs (e.g., $m_{12}^2$, $m_{13}^2$).
+- **Henrik’s choice**: Masses of particle pairs (e.g., $m_{12}^2$, $m_{13}^2$).
 - **Sven’s choice**: $s$ and $u$ (equivalent to $s$ and $t$ via linear combinations).
 - **Favorite choice**: **Center-of-mass energy** ($\sqrt{s}$) and **scattering angle** ($\theta$).
 
@@ -135,7 +135,7 @@ This is the **golden channel** for reconstructing because in the final state you
 
 * The proton is a nice charged particle; it travels and is stable.
 
-*The kaon is stable in our experiments, and the pion is stable.
+* The kaon is stable in our experiments, and the pion is stable.
 
 They fly out from the decay without any distraction, and we see the tracks clearly through all detectors.
 We observe them pointing away from the primary interaction.
@@ -161,7 +161,7 @@ If I showed you the actual experimental data, you wouldn’t distinguish it from
 
 * **X-axis**: Mass of the proton-kaon system $m_{PK}^2 = (p_P + p_K)^2$.
 
-***Y-axis**: Mass of the kaon-pion system $m_{K\pi}^2 = (p_K + p_\pi)^2$, covering all allowed values for the decay.
+* **Y-axis**: Mass of the kaon-pion system $m_{K\pi}^2 = (p_K + p_\pi)^2$, covering all allowed values for the decay.
 
 The colored region shows kinematically allowed configurations, while the white area corresponds to forbidden kinematics.
 

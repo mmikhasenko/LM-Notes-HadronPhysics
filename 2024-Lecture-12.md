@@ -206,7 +206,7 @@ The precision of the experiment is quantified in parts per billion (ppb). The cu
 
 The hadronic contributions to the muon’s anomalous magnetic moment are significant. Beyond QED corrections, there are electroweak and hadronic effects. Two prominent hadronic contributions are:  
 
-1.**Hadronic Vacuum Polarization (HVP)**: A photon produces hadrons, which then recombine into a photon. This is represented by the diagram where a photon splits into hadrons and reforms.  
+1. **Hadronic Vacuum Polarization (HVP)**: A photon produces hadrons, which then recombine into a photon. This is represented by the diagram where a photon splits into hadrons and reforms.  
 2. **Hadronic Light-by-Light (HLbL) Scattering**: This involves photons interacting via intermediate hadrons. The process can be visualized as light entering and exiting a hadronic blob, with intermediate hadron states like $\pi^0$ or $\eta$ mesons, which decay into two photons.  
 
 The quantum numbers ($J^{PC}$) of the intermediate hadrons must match those of the photon for the process to occur.  
@@ -230,7 +230,7 @@ The photon has quantum numbers $J^{PC} = 1^{--}$ (spin 1, parity -1, charge conj
 :::
 Examples of mesons with these quantum numbers include:  
 
--**Light quark sector**: The $\rho$ meson ( $u\bar{u}$ or $d\bar{d}$ ).  
+- **Light quark sector**: The $\rho$ meson ( $u\bar{u}$ or $d\bar{d}$ ).  
 - **Charm sector**: The $J/\psi$ ( $c\bar{c}$ ).  
 - **Bottom sector**: The $\Upsilon$ ( $b\bar{b}$ ).  
 - **Strange sector**: The $\phi$ ( $s\bar{s}$ ).  
@@ -247,7 +247,7 @@ Hadronic physics cannot be calculated from first principles. Instead, we rely on
 
 This allows a mixed theoretical-experimental approach:  
 
-1.Measure $\sigma(e^+e^- \to \text{hadrons})$ experimentally.  
+1. Measure $\sigma(e^+e^- \to \text{hadrons})$ experimentally.  
 2. Use unitarity to relate it to the hadronic vacuum polarization contribution.  
 
 The process is represented by diagrams where a photon fluctuates into hadrons and back, contributing to the muon's anomalous magnetic moment.  
@@ -479,7 +479,7 @@ The weak interaction vertex involves a $V - A$ structure, represented by $\gamma
 
 In pion decay, the $W$ boson vertex produces the final-state particles in their chiral configurations:  
 
--The positron ($e^+$) is right-handed.  
+- The positron ($e^+$) is right-handed.  
 - The electron ($e^-$) would be left-handed.  
 - The neutrino ($\nu_e$) is purely left-handed because it is massless.  
 
@@ -510,7 +510,7 @@ The phase space represents the number of kinematic configurations available in t
 
 The energy release is larger when the mass difference between the initial and final states is greater. For the pion decay:  
 
--The initial energy is given by the pion mass.  
+- The initial energy is given by the pion mass.  
 - The final-state particles (e.g., $\mu^+ \nu_\mu$ or $e^+ \nu_e$) carry their own masses.  
 
 In the case of $\pi^+ \to e^+ \nu_e$, the energy release is tiny because the electron mass is negligible, and most of the energy goes into kinetic energy. For $\pi^+ \to \mu^+ \nu_\mu$, the muon mass is much larger, so the energy release is smaller in comparison. This difference in phase space favors the muonic decay.
@@ -778,7 +778,7 @@ Hadronic corrections are crucial for theoretical calculations of the anomalous m
 :::
 There are two prominent hadronic contributions:  
 
-1.**Hadronic Vacuum Polarization (HVP)**: A photon produces hadrons, which then reconvert into a photon. This is a vacuum polarization effect.  
+1. **Hadronic Vacuum Polarization (HVP)**: A photon produces hadrons, which then reconvert into a photon. This is a vacuum polarization effect.  
 2. **Hadronic Light-by-Light (HLbL) Scattering**: Photons interact via intermediate hadronic states. The diagram involves photons entering and exiting a hadronic "blob."  
 
 ::: callout-note
@@ -800,7 +800,7 @@ Mesons with the same quantum numbers as the photon ($1^{--}$) are called **vecto
 :::
 In the $1S$ multiplet, there are two states: the lower one has $J^{PC} = 0^{-+}$ (pseudoscalar), and the higher one has $1^{--}$ (vector). Examples of vector mesons include:  
 
--**Light quark sector**: $\rho^0$ ($u\bar{u}$ or $d\bar{d}$), where the quark spins are aligned (e.g., up-up).  
+- **Light quark sector**: $\rho^0$ ($u\bar{u}$ or $d\bar{d}$), where the quark spins are aligned (e.g., up-up).  
 - **Charm sector**: $J/\psi$ ($c\bar{c}$).  
 - **Strange sector**: $\phi$ ($s\bar{s}$).  
 - **Bottom sector**: $\Upsilon$ ($b\bar{b}$).  
@@ -1086,7 +1086,7 @@ Ilya is happy to receive your SSI sheets. Moritz, well done.
 
 There are two events this week:  
 
-1.**Obstacle course this Thursday** — if the weather does not improve, we will cancel.  
+1. **Obstacle course this Thursday** — if the weather does not improve, we will cancel.  
 2. **Project meeting on Friday at 2:00** — everyone is invited, even those not interested in projects. There will be sweets from Switzerland.  
 
 The meeting location is at Line by Line Park.  

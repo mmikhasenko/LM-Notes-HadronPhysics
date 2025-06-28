@@ -8,18 +8,18 @@ We are fixed from now on—this room is booked and will be used for the next 10 
 
 Today is **Lecture 3**, where we will:  
 
-1.Continue discussing **symmetry** from the last lecture.  
+1. Continue discussing **symmetry** from the last lecture.  
 2. Examine the **structure of hadrons**—how they look inside and the experimental evidence that they are not point-like but made of quarks.  
 
 The lecture plan is as follows:  
 
--Start with **kinematics**, focusing on **cross-section calculations** and **multibody kinematics**.  
+- Start with **kinematics**, focusing on **cross-section calculations** and **multibody kinematics**.  
 - Begin with a simple **classical scattering** example (electron-proton).  
 - Discuss **form factors** in scattering and their relation to hadron properties, such as:  
   - Charge distributions  
   - Magnetic moments  
 
--Analyze these quantities in the **quark model**, linking experimental observations to internal hadron structure.  
+- Analyze these quantities in the **quark model**, linking experimental observations to internal hadron structure.  
 - Revisit **symmetry considerations** (flavor symmetry, spin symmetry) from the last lecture.  
 - Explore **proton/neutron spin and flavor wave functions**.  
 - Compute the **magnetic moment in the quark model** and connect it to observables.  
@@ -73,7 +73,7 @@ When you have one light quark, you are dealing with isospin $\frac{1}{2}$. If yo
 
 - For one light quark, the isospin is $\frac{1}{2}$.  
 
--For two light quarks, the possible isospin states are $0$ or $1$.  
+- For two light quarks, the possible isospin states are $0$ or $1$.  
 
 ::: callout-note
 The combination of two $\frac{1}{2}$ isospin states follows the rules of angular momentum addition, leading to either a singlet ($0$) or triplet ($1$) state.
@@ -104,7 +104,7 @@ We return to the three-quark symmetry and revisit the diagram of hypercharge ver
 
 Further, one could extend this to include the charm quark. While the charm quark is lighter than the top and bottom, we can theoretically consider a world where the charm, strange, and light quarks ($u, d$) have the same mass. In this scenario, mesons occupy points in a three-dimensional symmetry space:  
 
--One axis for **isospin**,  
+- One axis for **isospin**,  
 - Another for **strangeness**,  
 - A third for **charmness**.  
 
@@ -153,14 +153,14 @@ Now, let's discuss the second topic. It's easier to address from the final state
 
 Here, we have two vectors:  
 
--$\vec{J}_1$ with spin 1,  
+- $\vec{J}_1$ with spin 1,  
 - $\vec{J}_2$ with spin 1.  
 
 When adding these spins, the possible total spin configurations are quantized in steps of 1: $S = 0, 1, 2$. This is one of the key concepts you'll learn in this course—how to add spins. We'll practice this repeatedly until it becomes clear.  
 
 When combining these two vectors, the total spin can be:  
 
--$S = 0$ (singlet state),  
+- $S = 0$ (singlet state),  
 - $S = 1$ (triplet state),  
 - $S = 2$ (quintet state).  
 
@@ -174,7 +174,7 @@ On one side, we list their individual quantum numbers; on the other, the total $
 
 Now, let's introduce orbital angular momentum ($L$). For $L = 0$, the states are straightforward. For $L = 1$ (P-wave), the parity flips to $-$, and the possible $J^P$ combinations become:  
 
--$1^-$,  
+- $1^-$,  
 - $2^-$,  
 - $3^-$.  
 

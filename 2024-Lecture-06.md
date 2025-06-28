@@ -11,7 +11,7 @@ $$
 
 To analyze this, we follow a standard checklist:  
 
-1.**Identify the interaction type** responsible for the decay.  
+1. **Identify the interaction type** responsible for the decay.  
 2. Determine the variables describing the process.  
 3. Write the matrix element for the process.  
 4. Calculate the polarized decay width.  
@@ -23,7 +23,7 @@ The initial state ($\Lambda$) has strangeness $S = -1$, while the final state ($
 
 Here’s a simplified diagrammatic representation (not a Feynman diagram):  
 
--**Initial state**: $\Lambda$  
+- **Initial state**: $\Lambda$  
 - **Final state**: $p + \pi^-$  
 - **Interaction vertex**: Weak decay (flavor-changing).  
 
@@ -54,7 +54,7 @@ We can choose the $Z$-axis along the direction of the particle momenta. The ampl
 
 The particles involved in the interaction have the following spin and parity assignments:  
 
--$\Lambda$: $J^P = \frac{1}{2}^+$  
+- $\Lambda$: $J^P = \frac{1}{2}^+$  
 - Proton: $J^P = \frac{1}{2}^+$  
 - Pion: $J^P = 0^-$  
 
@@ -68,7 +68,7 @@ $$
 
 By convention, the initial state is written on the right and the final state on the left. The final state consists of:  
 
--A proton with momentum $P_Z$ and spin projection $\lambda$ (helicity).  
+- A proton with momentum $P_Z$ and spin projection $\lambda$ (helicity).  
 - A pion with momentum $-P_Z$ (opposite direction) and spin projection $0$ (since it is spinless).  
 
 The initial state is simply $|\Lambda, \lambda \rangle$, where $\lambda$ is the spin projection of the $\Lambda$.  
@@ -123,7 +123,7 @@ When the $Z$-axis is used for quantization, the state is called **canonical**.
 :::
 All transformations discussed here are **active transformations**, meaning they are applied to the particle rather than the coordinate system. For example:  
 
--Boosting the particle in the $Z$-direction increases its velocity along that axis.  
+- Boosting the particle in the $Z$-direction increases its velocity along that axis.  
 - Rotating the particle about the $Y$-axis is a nontrivial transformation.  
 
 Consider a coordinate system with $X$ and $Y$ axes. A rotation about the $Y$-axis corresponds to rotating the particle itself, not the coordinate frame. This is the most common transformation we will use.
@@ -355,7 +355,7 @@ We start with a $\Lambda$ flying in the $z$-direction with a certain velocity. I
 
 The plane is defined by three vectors:  
 
-1.The original direction of motion of the $\Lambda$ (defining the axis).  
+1. The original direction of motion of the $\Lambda$ (defining the axis).  
 2. The angle measured with respect to this axis.  
 3. The decay products forming the plane.  
 
@@ -392,7 +392,7 @@ Since these operators commute and strong interactions conserve spin, we can comp
 
 The plane is defined by three vectors:  
 
-1.The original direction of motion of $\Lambda$ (defining the axis).  
+1. The original direction of motion of $\Lambda$ (defining the axis).  
 2. The angle measured with respect to this axis.  
 3. The decay products forming the plane.  
 
@@ -583,7 +583,7 @@ If we remove the constant term, the imaginary part vanishes entirely. The questi
 
 The construction introduces non-trivial analytic structures. Three candidates for these structures are:  
 
-1.A continuous stretch of poles,  
+1. A continuous stretch of poles,  
 2. A branch cut,  
 3. A combination of both.  
 

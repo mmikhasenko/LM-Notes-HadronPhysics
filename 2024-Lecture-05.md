@@ -11,7 +11,7 @@ Last lecture, we discussed:
 
 - The **phase space** for particle reactions
 
--Different experiments in their **kinematics**
+- Different experiments in their **kinematics**
 - A list of experiments worldwide studying **hadrons**, their production mechanisms, and peculiarities
 
 Let’s begin with a recap on **kinematics**.
@@ -22,7 +22,7 @@ Let’s begin with a recap on **kinematics**.
 
 We have two examples:
 
-1.**Scalar particles**: $0^-$ scalars scattering to $0^-$ scalars in the final state.
+1. **Scalar particles**: $0^-$ scalars scattering to $0^-$ scalars in the final state.
 2. **Particles with spin**: $P^+$ scattering from $0^-$ to $3^-$ and $1^+$.
 
 ::: callout-note
@@ -34,13 +34,13 @@ The **internal dynamics** (electromagnetic, strong, gravity, etc.) do not affect
 
 - Start with $2 \times 2 \times 3 = 12$ degrees of freedom (4 particles, 3 momentum components each).
 
--Subtract 4 for **energy-momentum conservation**.
+- Subtract 4 for **energy-momentum conservation**.
 - Subtract 6 (3 rotations, 3 boosts) since the system has no preferred frame.
 - **Result**: 2 variables.
 
 - The answer is **also 2**.
 
--Angular distributions of final-state particles do not introduce additional independent variables.
+- Angular distributions of final-state particles do not introduce additional independent variables.
 
 ---
 
@@ -65,7 +65,7 @@ For part C, the two variables to describe the process are:
 
 - **Mandelstam variables** $s$ and $t$ (most common choice).
 
--These are **Lorentz invariants**—they characterize the process independently of the frame.
+- These are **Lorentz invariants**—they characterize the process independently of the frame.
 
 The mass of a particle is given by:
 $$
@@ -92,10 +92,10 @@ Alternatively, we can use the **center-of-mass energy** and the **angle**. That�
 ::: callout-note
 **Mandelstam Variables**:
 
--$s = (p_1 + p_2)^2$ (center-of-mass energy squared)
+- $s = (p_1 + p_2)^2$ (center-of-mass energy squared)
 - $t = (p_1 - p_3)^2$ (momentum transfer squared)
 
--$u = (p_1 - p_4)^2$ (related by $s + t + u = \sum m_i^2$)
+- $u = (p_1 - p_4)^2$ (related by $s + t + u = \sum m_i^2$)
 :::
 ---
 
@@ -115,7 +115,7 @@ Think of the rigid body analogy: a 3D-printed blob with fixed-length vectors sti
 
 For a three-body decay, we define:
 
--$s = (p_3 + p_4)^2$
+- $s = (p_3 + p_4)^2$
 - $t = (p_1 - p_3)^2$
 
 The phase space for three-body decays is flat in these variables. The differential width $\frac{d\Gamma}{dm_{34}^2 dm_{24}^2}$ is constant.

@@ -25,7 +25,7 @@ At the quark level, protons and neutrons are composed of up ($u$) and down ($d$)
 
 The isospin assignments are:  
 
--Up quark: $I = \frac{1}{2}, \ I_3 = +\frac{1}{2}$  
+- Up quark: $I = \frac{1}{2}, \ I_3 = +\frac{1}{2}$  
 - Down quark: $I = \frac{1}{2}, \ I_3 = -\frac{1}{2}$  
 
 ::: callout-tip
@@ -53,7 +53,7 @@ For instance, take the up ($u$) and down ($d$) quarks. As discussed earlier, mes
 ::: callout-note
 The isospin assignments for quarks are:  
 
--Up quark: $I = \frac{1}{2}, \ I_3 = +\frac{1}{2}$  
+- Up quark: $I = \frac{1}{2}, \ I_3 = +\frac{1}{2}$  
 - Down quark: $I = \frac{1}{2}, \ I_3 = -\frac{1}{2}$
 :::
 By studying these combinations, we can classify the resulting mesons based on their isospin properties.
@@ -91,7 +91,7 @@ These coefficients describe how the isospin states combine to form either a trip
 ::: callout-note
 The isospin assignments for quarks are:  
 
--Up quark: $I = \frac{1}{2}, \ I_3 = +\frac{1}{2}$  
+- Up quark: $I = \frac{1}{2}, \ I_3 = +\frac{1}{2}$  
 - Down quark: $I = \frac{1}{2}, \ I_3 = -\frac{1}{2}$
 :::
 This framework allows us to classify mesons formed from quark-antiquark combinations based on their isospin properties.
@@ -105,21 +105,21 @@ We have an isospin triplet with isospin $I = 1$, which has three projections: $I
 
 For antiquarks, the isospin assignments are:  
 
--Anti-up quark: $I_3 = -\frac{1}{2}$  
+- Anti-up quark: $I_3 = -\frac{1}{2}$  
 - Anti-down quark: $I_3 = +\frac{1}{2}$  
 
 The minus sign is chosen so that quarks and antiquarks behave consistently under SU transformations.  
 
 When constructing states from quark-antiquark combinations:  
 
--For the singlet state, combining up and anti-up gives a vector with projections $+\frac{1}{2}$ and $-\frac{1}{2}$, weighted by a square root factor.  
+- For the singlet state, combining up and anti-up gives a vector with projections $+\frac{1}{2}$ and $-\frac{1}{2}$, weighted by a square root factor.  
 - Similarly, for down and anti-down, the projections are $-\frac{1}{2}$ and $+\frac{1}{2}$, but due to the minus sign in the antiquark assignment, the overall sign cancels out.  
 
 The triplet states follow analogous combinations.  
 
 The particles associated with these states are:  
 
--The triplet corresponds to pions: $\pi^+$ ($I_3 = +1$), $\pi^0$ ($I_3 = 0$), and $\pi^-$ ($I_3 = -1$).  
+- The triplet corresponds to pions: $\pi^+$ ($I_3 = +1$), $\pi^0$ ($I_3 = 0$), and $\pi^-$ ($I_3 = -1$).  
 - Rho particles ($\rho$) also form a triplet with the same isospin structure but differ in spin.  
 
 <!--
@@ -133,7 +133,7 @@ Now, let's consider an example: shooting a $\pi$ beam at a proton target. The $\
 
 The dimensions of these states are as follows:  
 
--For $I = 1$, there are three projections ($I_3 = +1, 0, -1$).  
+- For $I = 1$, there are three projections ($I_3 = +1, 0, -1$).  
 - For $I = \frac{1}{2}$, there are two projections ($I_3 = +\frac{1}{2}, -\frac{1}{2}$).  
 - For the combined $I = \frac{3}{2}$, there are four projections ($I_3 = \pm \frac{3}{2}, \pm \frac{1}{2}$).  
 - For $I = \frac{1}{2}$, there are again two projections.  
@@ -160,7 +160,7 @@ $$
 
 This results in an octet (8-dimensional representation) consisting of:  
 
--A spin-$\frac{3}{2}$ quartet (4 states)  
+- A spin-$\frac{3}{2}$ quartet (4 states)  
 - Two spin-$\frac{1}{2}$ doublets (2 states each).  
 
 In the context of isospin, this decomposition helps explain observed cross-section differences in particle collisions. For example, the delta particles ($\Delta^{++}, \Delta^{+}, \Delta^{0}, \Delta^{-}$) correspond to the quartet with masses around 1232 MeV.  

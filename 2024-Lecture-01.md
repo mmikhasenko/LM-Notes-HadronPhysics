@@ -14,7 +14,7 @@ Let’s transition to logistical discussions in the final 15 minutes of the sess
 
 - **Uploads:** The lecture content and references will be shared.  
 
--**Logistics:** Administrative details will be addressed shortly.  
+- **Logistics:** Administrative details will be addressed shortly.  
 
 ---
 
@@ -22,16 +22,16 @@ Let’s transition to logistical discussions in the final 15 minutes of the sess
 **Supporting Context**  
 While this segment focuses on logistics, nuclear physics formulas like those below may appear in technical sections of the lecture:  
 
--Nuclear binding energy: $E_b = (Zm_p + Nm_n - m_{nuc})c^2$  
+- Nuclear binding energy: $E_b = (Zm_p + Nm_n - m_{nuc})c^2$  
 - Semi-empirical mass formula: $E_B = a_V A - a_S A^{2/3} - a_C \frac{Z(Z-1)}{A^{1/3}} - a_A \frac{(A-2Z)^2}{A} + \delta(A,Z)$  
 
--Radioactive decay law: $N(t) = N_0 e^{-\lambda t}$
+- Radioactive decay law: $N(t) = N_0 e^{-\lambda t}$
 :::
 ---
 
 - **Clarity:** Separating logistical announcements from technical content improves readability.  
 
--**Preparation:** References and uploads ensure access to critical materials.
+- **Preparation:** References and uploads ensure access to critical materials.
 
 ### The Evolution of the Universe: From Electroweak Epoch to QCD and Hadron Formation
 
@@ -137,7 +137,7 @@ with $D_\mu = \partial_\mu - i g_s A_\mu^a T^a$ and $G^a_{\mu\nu}$ as the gluon 
 
 Another thing to note is that here I am explicitly using **Einstein notation** and summing over repeated indices.  
 
--$\mu$ here, $\mu$ there—they are repeated.  
+- $\mu$ here, $\mu$ there—they are repeated.  
 - This means that if I were precise, I should have written here a sum from $\mu=1$ to $4$ over all components.  
 - The $\nu$ is a repeated index again, so we sum.  
 
@@ -148,7 +148,7 @@ Another thing to note is that here I am explicitly using **Einstein notation** a
 
 The equation of motion for this Lagrangian is obtained using the **Euler-Lagrange equation**.  
 
--You might remember this from classical mechanics where we had dots, and the first term was the time derivative, the second was the derivative of the field.  
+- You might remember this from classical mechanics where we had dots, and the first term was the time derivative, the second was the derivative of the field.  
 - Essentially, we treat the Lagrangian as a function of the field derivatives and the fields themselves as independent objects.  
 - First, we differentiate with respect to the derivatives, and then with respect to the fields.  
 
@@ -161,7 +161,7 @@ The derivative is with respect to $A_\rho$ (another index convention). If I take
 
 Now let me introduce the second part. This was the gauge field. Let me label it 1, 2, 3, 4.  
 
--This is a less intuitive concept that you might not have seen before, but we will need it.  
+- This is a less intuitive concept that you might not have seen before, but we will need it.  
 - There are degrees of freedom that are not fixed for photons in the electromagnetic field, and there is an arbitrary **gauge choice** we can make.  
 
 ::: callout-tip
@@ -177,7 +177,7 @@ This is a **symmetry of the Lagrangian**—the gauge symmetry. If you derive Max
 
 Now we introduce **fermion fields**.  
 
--In electrodynamics, our leptons are described by the **Dirac field** $\psi$, a four-component spinor (not a four-vector).  
+- In electrodynamics, our leptons are described by the **Dirac field** $\psi$, a four-component spinor (not a four-vector).  
 - The Lagrangian is a scalar quantity—no free indices—and is constructed from objects of different dimensionality.  
 
 ::: callout-note

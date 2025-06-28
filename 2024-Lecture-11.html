@@ -585,11 +585,17 @@ Note
 </div>
 </div>
 <p>Two primary challenges arise:</p>
-<p>1.<strong>Finite volume effects</strong> (due to the box size).<br>
-2. <strong>Discretization errors</strong> (due to step size).</p>
+<ol type="1">
+<li><strong>Finite volume effects</strong> (due to the box size).<br>
+</li>
+<li><strong>Discretization errors</strong> (due to step size).</li>
+</ol>
 <p>To mitigate these:</p>
-<p>-Increase the volume to reduce finite-volume effects.<br>
-- Decrease step size to minimize discretization errors.</p>
+<ul>
+<li>Increase the volume to reduce finite-volume effects.<br>
+</li>
+<li>Decrease step size to minimize discretization errors.</li>
+</ul>
 <p>Both adjustments come at a higher computational cost. The goal is to use the minimal number of points required for reliable results, as lattice QCD calculations are numerically intensive.</p>
 <!--
 Cosine simularity: 0.8881730156253531
@@ -846,8 +852,11 @@ Cosine simularity: 0.9147616419996627
 \log \tilde{C}(t) \approx -E_1
 </span></p>
 <p>where <span class="math inline">E_1</span> is the energy of the lowest excited state. This is a common method to extract energy levels numerically. The energy obtained depends on the operator used:</p>
-<p>-For pion-like operators, it approaches the pion mass.<br>
-- For vector quantum number operators, it approaches the rho meson mass.</p>
+<ul>
+<li>For pion-like operators, it approaches the pion mass.<br>
+</li>
+<li>For vector quantum number operators, it approaches the rho meson mass.</li>
+</ul>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
