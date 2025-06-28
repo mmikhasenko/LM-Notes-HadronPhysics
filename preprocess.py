@@ -16,8 +16,8 @@ def transform_file(filepath):
     )
     # Render lists
     content = re.sub(
-        r':\n((?:> )?(?:1\.|-|\*))\s',
-        lambda m: f":\n\n{m.group(1)} ",
+        r':\n((> )?(?:1\.|-|\*))\s',
+        lambda m: f":\n>\n{m.group(2)} " if m.group(1) else f":\n\n{m.group(2)} ",
         content,
         flags=re.DOTALL
     )
