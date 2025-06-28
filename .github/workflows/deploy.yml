@@ -22,16 +22,14 @@ jobs:
 
       - name: Preprocess Markdown Files
         run: |
-          mkdir -p build
-          cp Lectures/*.md build/
-          python preprocess.py build/
+          python preprocess.py Lectures/
           
       - name: Render HTML from Preprocessed Files
         run: |
-          cd build
+          cd Lectures
           for file in *.md; do
             if [ -f "$file" ]; then
-              quarto render "$file" --to html --output-dir ../Lectures
+              quarto render "$file" --to html --output-dir .
             fi
           done
 
