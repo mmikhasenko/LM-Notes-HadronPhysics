@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Mikhail Mikhasenko">
 
-<title>lecture-01</title>
+<title>lecture-01 – Hadron Physics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,20 +24,66 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="2024-Lecture-01_files/libs/clipboard/clipboard.min.js"></script>
-<script src="2024-Lecture-01_files/libs/quarto-html/quarto.js" type="module"></script>
-<script src="2024-Lecture-01_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="2024-Lecture-01_files/libs/quarto-html/popper.min.js"></script>
-<script src="2024-Lecture-01_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="2024-Lecture-01_files/libs/quarto-html/anchor.min.js"></script>
-<link href="2024-Lecture-01_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="2024-Lecture-01_files/libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="2024-Lecture-01_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="2024-Lecture-01_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="2024-Lecture-01_files/libs/bootstrap/bootstrap-af3b0b53a274c7d4e75779d930f447fb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-6729c19c459079745e2be02720e68a89.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -65,19 +112,58 @@ window.Quarto = {
 };
 </script>
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="fullcontent quarto-light">
+<body class="quarto-light">
 
-<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-
+<div id="quarto-search-results"></div>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#lecture-upload-plans-and-transition-to-logistics" id="toc-lecture-upload-plans-and-transition-to-logistics" class="nav-link active" data-scroll-target="#lecture-upload-plans-and-transition-to-logistics"><span class="header-section-number">0.1</span> Lecture Upload Plans and Transition to Logistics</a></li>
+  <li><a href="#the-evolution-of-the-universe-from-electroweak-epoch-to-qcd-and-hadron-formation" id="toc-the-evolution-of-the-universe-from-electroweak-epoch-to-qcd-and-hadron-formation" class="nav-link" data-scroll-target="#the-evolution-of-the-universe-from-electroweak-epoch-to-qcd-and-hadron-formation"><span class="header-section-number">0.2</span> The Evolution of the Universe: From Electroweak Epoch to QCD and Hadron Formation</a></li>
+  <li><a href="#einstein-notation-gauge-invariance-and-fermion-interactions-in-field-theory" id="toc-einstein-notation-gauge-invariance-and-fermion-interactions-in-field-theory" class="nav-link" data-scroll-target="#einstein-notation-gauge-invariance-and-fermion-interactions-in-field-theory"><span class="header-section-number">0.3</span> Einstein Notation, Gauge Invariance, and Fermion Interactions in Field Theory</a></li>
+  <li><a href="#course-logistics-exam-details-and-summer-school-opportunities" id="toc-course-logistics-exam-details-and-summer-school-opportunities" class="nav-link" data-scroll-target="#course-logistics-exam-details-and-summer-school-opportunities"><span class="header-section-number">0.4</span> Course Logistics, Exam Details, and Summer School Opportunities</a></li>
+  <li><a href="#collaborative-problem-solving-resource-use-and-course-logistics" id="toc-collaborative-problem-solving-resource-use-and-course-logistics" class="nav-link" data-scroll-target="#collaborative-problem-solving-resource-use-and-course-logistics"><span class="header-section-number">0.5</span> Collaborative Problem-Solving, Resource Use, and Course Logistics</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+</div>
 
 
 
-<section id="lecture-upload-plans-and-transition-to-logistics" class="level3">
-<h3 class="anchored" data-anchor-id="lecture-upload-plans-and-transition-to-logistics">Lecture Upload Plans and Transition to Logistics</h3>
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Mikhail Mikhasenko </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="lecture-upload-plans-and-transition-to-logistics" class="level3" data-number="0.1">
+<h3 data-number="0.1" class="anchored" data-anchor-id="lecture-upload-plans-and-transition-to-logistics"><span class="header-section-number">0.1</span> Lecture Upload Plans and Transition to Logistics</h3>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -126,9 +212,9 @@ Note
 <div class="callout-body-container callout-body">
 <p><strong>Supporting Context</strong><br>
 While this segment focuses on logistics, nuclear physics formulas like those below may appear in technical sections of the lecture:<br>
-- Nuclear binding energy: <span class="math inline">\(E_b = (Zm_p + Nm_n - m_{nuc})c^2\)</span><br>
-- Semi-empirical mass formula: <span class="math inline">\(E_B = a_V A - a_S A^{2/3} - a_C \frac{Z(Z-1)}{A^{1/3}} - a_A \frac{(A-2Z)^2}{A} + \delta(A,Z)\)</span><br>
-- Radioactive decay law: <span class="math inline">\(N(t) = N_0 e^{-\lambda t}\)</span></p>
+- Nuclear binding energy: <span class="math inline">E_b = (Zm_p + Nm_n - m_{nuc})c^2</span><br>
+- Semi-empirical mass formula: <span class="math inline">E_B = a_V A - a_S A^{2/3} - a_C \frac{Z(Z-1)}{A^{1/3}} - a_A \frac{(A-2Z)^2}{A} + \delta(A,Z)</span><br>
+- Radioactive decay law: <span class="math inline">N(t) = N_0 e^{-\lambda t}</span></p>
 </div>
 </div>
 <hr>
@@ -138,8 +224,8 @@ While this segment focuses on logistics, nuclear physics formulas like those bel
 <li><strong>Preparation:</strong> References and uploads ensure access to critical materials.</li>
 </ul>
 </section>
-<section id="the-evolution-of-the-universe-from-electroweak-epoch-to-qcd-and-hadron-formation" class="level3">
-<h3 class="anchored" data-anchor-id="the-evolution-of-the-universe-from-electroweak-epoch-to-qcd-and-hadron-formation">The Evolution of the Universe: From Electroweak Epoch to QCD and Hadron Formation</h3>
+<section id="the-evolution-of-the-universe-from-electroweak-epoch-to-qcd-and-hadron-formation" class="level3" data-number="0.2">
+<h3 data-number="0.2" class="anchored" data-anchor-id="the-evolution-of-the-universe-from-electroweak-epoch-to-qcd-and-hadron-formation"><span class="header-section-number">0.2</span> The Evolution of the Universe: From Electroweak Epoch to QCD and Hadron Formation</h3>
 <p><strong>Right.</strong><br>
 We are living in a universe made of <strong>hardened physics</strong>, but it was not always the case. Essentially, I like thinking of the evolution of the universe on a timescale. Here is the origin of the universe where everything started. There was a <strong>Big Bang</strong> first, and then several epochs followed. It started with the <strong>Planck epoch</strong>, then there was the <strong>electroweak epoch</strong>, <strong>quarks</strong>, and others. What has been happening during this is part of the physics that we also go through in the courses.</p>
 <hr>
@@ -155,10 +241,10 @@ Important
 <div class="callout-body-container callout-body">
 <p><strong>Higgs Mechanism and Symmetry Breaking</strong><br>
 The Higgs potential—the field giving mass to particles and ensuring protons don’t decay so life can exist—obtains a condensate during the electroweak epoch. The potential is given by:<br>
-<span class="math display">\[  
+<span class="math display">  
 V(\phi) = \mu^2 |\phi|^2 + \lambda |\phi|^4  
-\]</span><br>
-where <span class="math inline">\(\phi\)</span> is the Higgs field, <span class="math inline">\(\mu^2 &lt; 0\)</span> triggers symmetry breaking, and <span class="math inline">\(\lambda\)</span> is the self-coupling constant.</p>
+</span><br>
+where <span class="math inline">\phi</span> is the Higgs field, <span class="math inline">\mu^2 &lt; 0</span> triggers symmetry breaking, and <span class="math inline">\lambda</span> is the self-coupling constant.</p>
 </div>
 </div>
 <p>Essentially, let me start with the <strong>electroweak epoch</strong>, where the Higgs potential forms a condensate. The field that drives electroweak physics fills the entire space, creating a condensate of the Higgs field. Through this condensate, particles are slowed down, gain inertia, and obtain mass—this is the <strong>Higgs mechanism</strong>. The process of the potential evolving is called <strong>spontaneous symmetry breaking</strong>, where one of the minima is peaked. That’s how I like thinking about the electroweak stage.</p>
@@ -176,18 +262,18 @@ Note
 </div>
 <div class="callout-body-container callout-body">
 <p><strong>Nuclear Size Scaling</strong><br>
-The radius <span class="math inline">\(R\)</span> of a nucleus scales with the number of nucleons <span class="math inline">\(A\)</span> as:<br>
-<span class="math display">\[  
+The radius <span class="math inline">R</span> of a nucleus scales with the number of nucleons <span class="math inline">A</span> as:<br>
+<span class="math display">  
 R \approx r_0 A^{1/3}  
-\]</span><br>
-where <span class="math inline">\(r_0 \approx 1.2 \, \text{fm}\)</span> (Fermi).</p>
+</span><br>
+where <span class="math inline">r_0 \approx 1.2 \, \text{fm}</span> (Fermi).</p>
 </div>
 </div>
 <p>This medium starts forming small volumes where quark and gluon interactions bind to a scalable level. If you think of this, you’d need two years to learn it in detail. This comes in particle physics, introductory nuclear physics, and specialized courses on <strong>QCD</strong> or <strong>statistical mechanics</strong>. You could have a special course on QCD at finite temperature, since it’s a heated medium with different laws applied to what we’ll discuss for strong interactions.</p>
 <hr>
-<p><strong>Hydrogen</strong> is what we’ll focus on now. But if you think of how quickly this happened, you’ll be slightly surprised. Essentially, this is… do you have a guess? <span class="math inline">\(10^{-36}\)</span> seconds (Planck), <span class="math inline">\(10^{-12}\)</span> (electroweak), <span class="math inline">\(10^{-6}\)</span>, then <span class="math inline">\(10^{-3}\)</span>, and finally <strong>1 second</strong>. Imagine there was nothing, and then the time it takes for sound to reach you when I clap—about 10 milliseconds—by that time, we’d already passed through all these stages and everything had formed. That’s how quickly the universe evolved.</p>
+<p><strong>Hydrogen</strong> is what we’ll focus on now. But if you think of how quickly this happened, you’ll be slightly surprised. Essentially, this is… do you have a guess? <span class="math inline">10^{-36}</span> seconds (Planck), <span class="math inline">10^{-12}</span> (electroweak), <span class="math inline">10^{-6}</span>, then <span class="math inline">10^{-3}</span>, and finally <strong>1 second</strong>. Imagine there was nothing, and then the time it takes for sound to reach you when I clap—about 10 milliseconds—by that time, we’d already passed through all these stages and everything had formed. That’s how quickly the universe evolved.</p>
 <hr>
-<p>The rest of the timeline to the present <strong>13.8 billion years</strong> has other interesting physics, but not as intense from the perspective of <strong>hadron physics</strong>. Hadrons are objects where strong interactions are confined to a scale of a few femtometers (<span class="math inline">\(10^{-15} \, \text{m}\)</span>). There’s essentially nothing around—just small chunks of volume where quarks and gluons interact. By colliding hadrons, we study their internal structure, but there’s no natural scale smaller than this.</p>
+<p>The rest of the timeline to the present <strong>13.8 billion years</strong> has other interesting physics, but not as intense from the perspective of <strong>hadron physics</strong>. Hadrons are objects where strong interactions are confined to a scale of a few femtometers (<span class="math inline">10^{-15} \, \text{m}</span>). There’s essentially nothing around—just small chunks of volume where quarks and gluons interact. By colliding hadrons, we study their internal structure, but there’s no natural scale smaller than this.</p>
 <hr>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -200,14 +286,14 @@ Tip
 </div>
 <div class="callout-body-container callout-body">
 <p><strong>Proton Mass Decomposition</strong><br>
-The proton mass <span class="math inline">\(m_p\)</span> is dominated by QCD energy (gluon condensate):<br>
-<span class="math display">\[  
+The proton mass <span class="math inline">m_p</span> is dominated by QCD energy (gluon condensate):<br>
+<span class="math display">  
 m_p \approx 938 \, \text{MeV}, \quad \text{with} \quad m_{\text{quarks}} \sim 9 \, \text{MeV} \quad (\text{only} \sim 1\%)  
-\]</span><br>
+</span><br>
 The remainder arises from strong interaction energy.</p>
 </div>
 </div>
-<p>Concerning <strong>empty space</strong>, let’s sketch one of the most common elements on Earth. From the periodic table, what is it? <strong>Oxygen</strong>. Oxygen-16 (or 18) has 8 protons and 8 (or 10) neutrons. The geometry of this atom is a core of protons and neutrons, with electrons compensating the charge. The nucleus scales as the number of nucleons to the power of <span class="math inline">\(1/3\)</span> (volume scaling). Packing 16 nucleons gives a radius of about <strong>3 fm</strong>. Electrons, however, have wave functions <strong>3 orders of magnitude larger</strong> (~50 picometers). This shows how empty space is—a tiny core surrounded by vast electron space with no strong interactions.</p>
+<p>Concerning <strong>empty space</strong>, let’s sketch one of the most common elements on Earth. From the periodic table, what is it? <strong>Oxygen</strong>. Oxygen-16 (or 18) has 8 protons and 8 (or 10) neutrons. The geometry of this atom is a core of protons and neutrons, with electrons compensating the charge. The nucleus scales as the number of nucleons to the power of <span class="math inline">1/3</span> (volume scaling). Packing 16 nucleons gives a radius of about <strong>3 fm</strong>. Electrons, however, have wave functions <strong>3 orders of magnitude larger</strong> (~50 picometers). This shows how empty space is—a tiny core surrounded by vast electron space with no strong interactions.</p>
 <hr>
 <p>Now, the <strong>fundamental hardware</strong>: the <strong>Standard Model</strong> describes most known interactions (excluding neutrinos’ open questions). The part responsible for strong interactions is <strong>quantum chromodynamics (QCD)</strong>. The participants are <strong>quarks</strong> and <strong>gluons</strong>, the only particles carrying <strong>color charge</strong>—similar to electric charge but distinct. Color charge is a quantum number; we describe it via color wave functions.</p>
 <hr>
@@ -223,18 +309,18 @@ Important
 <div class="callout-body-container callout-body">
 <p><strong>QCD and QED Lagrangians</strong><br>
 The Lagrangian density for QCD is:<br>
-<span class="math display">\[  
+<span class="math display">  
 \mathcal{L}_{\text{QCD}} = \bar{\psi}_i (i \gamma^\mu D_\mu - m) \psi_i - \frac{1}{4} G^a_{\mu\nu} G_a^{\mu\nu}  
-\]</span><br>
-where <span class="math inline">\(D_\mu = \partial_\mu - i g_s A_\mu^a T^a\)</span> and <span class="math inline">\(G^a_{\mu\nu}\)</span> is the gluon field strength.<br>
+</span><br>
+where <span class="math inline">D_\mu = \partial_\mu - i g_s A_\mu^a T^a</span> and <span class="math inline">G^a_{\mu\nu}</span> is the gluon field strength.<br>
 For QED:<br>
-<span class="math display">\[  
+<span class="math display">  
 \mathcal{L}_{\text{QED}} = \bar{\psi} (i \gamma^\mu D_\mu - m) \psi - \frac{1}{4} F_{\mu\nu} F^{\mu\nu}  
-\]</span><br>
-where <span class="math inline">\(D_\mu = \partial_\mu - i e A_\mu\)</span>.</p>
+</span><br>
+where <span class="math inline">D_\mu = \partial_\mu - i e A_\mu</span>.</p>
 </div>
 </div>
-<p>Other Standard Model particles (<strong>electrons, muons, taus, photons, neutrinos</strong>) don’t carry color charge and don’t interact strongly. Quarks come in six types: <strong>up</strong> (charge <span class="math inline">\(+2/3\)</span>), <strong>down</strong> (<span class="math inline">\(-1/3\)</span>), <strong>charm</strong>, <strong>strange</strong>, <strong>top</strong>, <strong>bottom</strong>. They’re grouped by generation (<strong>light: u/d; heavier: s/c; heaviest: t/b</strong>). Most matter is made of first-generation quarks. Strange quarks may affect neutron star equations of state. Charm and bottom are studied in high-energy collisions; the top quark’s lifetime is too short for hadronization.</p>
+<p>Other Standard Model particles (<strong>electrons, muons, taus, photons, neutrinos</strong>) don’t carry color charge and don’t interact strongly. Quarks come in six types: <strong>up</strong> (charge <span class="math inline">+2/3</span>), <strong>down</strong> (<span class="math inline">-1/3</span>), <strong>charm</strong>, <strong>strange</strong>, <strong>top</strong>, <strong>bottom</strong>. They’re grouped by generation (<strong>light: u/d; heavier: s/c; heaviest: t/b</strong>). Most matter is made of first-generation quarks. Strange quarks may affect neutron star equations of state. Charm and bottom are studied in high-energy collisions; the top quark’s lifetime is too short for hadronization.</p>
 <hr>
 <p><strong>Hadrons</strong> are classified as <strong>mesons</strong> (quark-antiquark) or <strong>baryons</strong> (three quarks). At the <strong>chiral symmetry breaking scale</strong>, gluons condense, dressing quarks and giving them effective mass. The proton’s mass is ~1 GeV, but the Higgs contributes only ~1% (3 MeV per quark); <strong>99% comes from QCD energy</strong> (gluon condensate).</p>
 <hr>
@@ -249,30 +335,30 @@ Note
 </div>
 <div class="callout-body-container callout-body">
 <p><strong>Natural Units Conversion</strong><br>
-In natural units (<span class="math inline">\(\hbar = c = 1\)</span>):<br>
-<span class="math display">\[  
+In natural units (<span class="math inline">\hbar = c = 1</span>):<br>
+<span class="math display">  
 1 \, \text{GeV}^{-1} \approx 0.197 \, \text{fm}, \quad 1 \, \text{GeV} \approx 1.783 \times 10^{-27} \, \text{kg}  
-\]</span><br>
+</span><br>
 Relating energy, mass, and length scales.</p>
 </div>
 </div>
 <p>Now, <strong>quantum chromodynamics (QCD)</strong> and <strong>quantum electrodynamics (QED)</strong> share a Lagrangian framework. QED’s Lagrangian is:<br>
-<span class="math display">\[  
+<span class="math display">  
 \mathcal{L}_{\text{QED}} = \bar{\psi} (i \gamma^\mu D_\mu - m) \psi - \frac{1}{4} F_{\mu\nu} F^{\mu\nu},  
-\]</span><br>
-where <span class="math inline">\(D_\mu = \partial_\mu - i e A_\mu\)</span>. Maxwell’s equations in covariant form are <span class="math inline">\(\partial_\mu F^{\mu\nu} = j^\nu\)</span>. QCD’s Lagrangian adds color charge:<br>
-<span class="math display">\[  
+</span><br>
+where <span class="math inline">D_\mu = \partial_\mu - i e A_\mu</span>. Maxwell’s equations in covariant form are <span class="math inline">\partial_\mu F^{\mu\nu} = j^\nu</span>. QCD’s Lagrangian adds color charge:<br>
+<span class="math display">  
 \mathcal{L}_{\text{QCD}} = \bar{\psi}_i (i \gamma^\mu D_\mu - m) \psi_i - \frac{1}{4} G^a_{\mu\nu} G_a^{\mu\nu},  
-\]</span><br>
-with <span class="math inline">\(D_\mu = \partial_\mu - i g_s A_\mu^a T^a\)</span> and <span class="math inline">\(G^a_{\mu\nu}\)</span> as the gluon field strength.</p>
-<p><strong>Natural units</strong> (<span class="math inline">\(\hbar = c = 1\)</span>) simplify conversions: <span class="math inline">\(1 \, \text{GeV}^{-1} \approx 0.197 \, \text{fm}\)</span>; <span class="math inline">\(1 \, \text{GeV} \approx 1.78 \times 10^{-27} \, \text{kg}\)</span>.</p>
+</span><br>
+with <span class="math inline">D_\mu = \partial_\mu - i g_s A_\mu^a T^a</span> and <span class="math inline">G^a_{\mu\nu}</span> as the gluon field strength.</p>
+<p><strong>Natural units</strong> (<span class="math inline">\hbar = c = 1</span>) simplify conversions: <span class="math inline">1 \, \text{GeV}^{-1} \approx 0.197 \, \text{fm}</span>; <span class="math inline">1 \, \text{GeV} \approx 1.78 \times 10^{-27} \, \text{kg}</span>.</p>
 </section>
-<section id="einstein-notation-gauge-invariance-and-fermion-interactions-in-field-theory" class="level3">
-<h3 class="anchored" data-anchor-id="einstein-notation-gauge-invariance-and-fermion-interactions-in-field-theory">Einstein Notation, Gauge Invariance, and Fermion Interactions in Field Theory</h3>
+<section id="einstein-notation-gauge-invariance-and-fermion-interactions-in-field-theory" class="level3" data-number="0.3">
+<h3 data-number="0.3" class="anchored" data-anchor-id="einstein-notation-gauge-invariance-and-fermion-interactions-in-field-theory"><span class="header-section-number">0.3</span> Einstein Notation, Gauge Invariance, and Fermion Interactions in Field Theory</h3>
 <p>Another thing to note is that here I am explicitly using <strong>Einstein notation</strong> and summing over repeated indices.<br>
-- <span class="math inline">\(\mu\)</span> here, <span class="math inline">\(\mu\)</span> there—they are repeated.<br>
-- This means that if I were precise, I should have written here a sum from <span class="math inline">\(\mu=1\)</span> to <span class="math inline">\(4\)</span> over all components.<br>
-- The <span class="math inline">\(\nu\)</span> is a repeated index again, so we sum.</p>
+- <span class="math inline">\mu</span> here, <span class="math inline">\mu</span> there—they are repeated.<br>
+- This means that if I were precise, I should have written here a sum from <span class="math inline">\mu=1</span> to <span class="math inline">4</span> over all components.<br>
+- The <span class="math inline">\nu</span> is a repeated index again, so we sum.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -283,7 +369,7 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Summation Example</strong>: For <span class="math inline">\(F_{\mu\nu}F^{\mu\nu}\)</span>, expanding the sum yields <span class="math inline">\(4 \times 4 = 16\)</span> terms (4 components per index). If multiplied by another term with 4 components, the total becomes <span class="math inline">\(16 \times 4 = 64\)</span> terms.</p>
+<p><strong>Summation Example</strong>: For <span class="math inline">F_{\mu\nu}F^{\mu\nu}</span>, expanding the sum yields <span class="math inline">4 \times 4 = 16</span> terms (4 components per index). If multiplied by another term with 4 components, the total becomes <span class="math inline">16 \times 4 = 64</span> terms.</p>
 </div>
 </div>
 <hr>
@@ -301,10 +387,10 @@ Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Key Insight</strong>: In classical mechanics, these would be the momentum terms, but here they are <strong>field variables</strong>. The index <span class="math inline">\(\mu\)</span> is summed over—a simple summation.</p>
+<p><strong>Key Insight</strong>: In classical mechanics, these would be the momentum terms, but here they are <strong>field variables</strong>. The index <span class="math inline">\mu</span> is summed over—a simple summation.</p>
 </div>
 </div>
-<p>The derivative is with respect to <span class="math inline">\(A_\rho\)</span> (another index convention). If I take this Lagrangian, where everything is defined, and use the Euler-Lagrange equation, I get the equation of motion describing how the field propagates through space. We know this gives <strong>Maxwell’s equations</strong>.</p>
+<p>The derivative is with respect to <span class="math inline">A_\rho</span> (another index convention). If I take this Lagrangian, where everything is defined, and use the Euler-Lagrange equation, I get the equation of motion describing how the field propagates through space. We know this gives <strong>Maxwell’s equations</strong>.</p>
 <hr>
 <p>Now let me introduce the second part. This was the gauge field. Let me label it 1, 2, 3, 4.<br>
 - This is a less intuitive concept that you might not have seen before, but we will need it.<br>
@@ -320,16 +406,16 @@ Tip
 </div>
 <div class="callout-body-container callout-body">
 <p><strong>Gauge Transformation</strong>:<br>
-<span class="math display">\[  
+<span class="math display">  
 A_\mu \rightarrow A'_\mu = A_\mu - \partial_\mu \chi  
-\]</span><br>
-where <span class="math inline">\(\chi\)</span> is an arbitrary scalar field. Under this, <span class="math inline">\(F_{\mu\nu}\)</span> remains invariant: <span class="math inline">\(F'_{\mu\nu} = F_{\mu\nu}\)</span>.</p>
+</span><br>
+where <span class="math inline">\chi</span> is an arbitrary scalar field. Under this, <span class="math inline">F_{\mu\nu}</span> remains invariant: <span class="math inline">F'_{\mu\nu} = F_{\mu\nu}</span>.</p>
 </div>
 </div>
 <p>This is a <strong>symmetry of the Lagrangian</strong>—the gauge symmetry. If you derive Maxwell’s equations from the Lagrangian, you’ll get them up to a gauge term. By fixing the gauge, you recover the standard Maxwell equations.</p>
 <hr>
 <p>Now we introduce <strong>fermion fields</strong>.<br>
-- In electrodynamics, our leptons are described by the <strong>Dirac field</strong> <span class="math inline">\(\psi\)</span>, a four-component spinor (not a four-vector).<br>
+- In electrodynamics, our leptons are described by the <strong>Dirac field</strong> <span class="math inline">\psi</span>, a four-component spinor (not a four-vector).<br>
 - The Lagrangian is a scalar quantity—no free indices—and is constructed from objects of different dimensionality.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -342,19 +428,19 @@ Note
 </div>
 <div class="callout-body-container callout-body">
 <p><strong>Spinor Properties</strong>:<br>
-- <span class="math inline">\(\psi\)</span> describes spin-<span class="math inline">\(1/2\)</span> particles with four components (particle + antiparticle).<br>
-- The adjoint spinor is <span class="math inline">\(\bar{\psi} = \psi^\dagger \gamma^0\)</span>.<br>
+- <span class="math inline">\psi</span> describes spin-<span class="math inline">1/2</span> particles with four components (particle + antiparticle).<br>
+- The adjoint spinor is <span class="math inline">\bar{\psi} = \psi^\dagger \gamma^0</span>.<br>
 - The Dirac Lagrangian:<br>
-<span class="math display">\[  
+<span class="math display">  
 \mathcal{L}_{\text{Dirac}} = \bar{\psi} (i \gamma^\mu \partial_\mu - m) \psi  
-\]</span></p>
+</span></p>
 </div>
 </div>
-<p>The equation of motion is the <strong>Dirac equation</strong>: <span class="math inline">\((i\not{\partial} - m)\psi = 0\)</span> (using Feynman slash notation).</p>
+<p>The equation of motion is the <strong>Dirac equation</strong>: <span class="math inline">(i\not{\partial} - m)\psi = 0</span> (using Feynman slash notation).</p>
 <hr>
 <p>To introduce <strong>interactions</strong>, we use <strong>gauge invariance</strong>.<br>
-- For fermions, gauge invariance means changing the phase of <span class="math inline">\(\psi\)</span> locally at every space-time point.<br>
-- The tricky part is that <span class="math inline">\(\partial_\mu \psi\)</span> introduces extra terms under a space-dependent phase transformation.</p>
+- For fermions, gauge invariance means changing the phase of <span class="math inline">\psi</span> locally at every space-time point.<br>
+- The tricky part is that <span class="math inline">\partial_\mu \psi</span> introduces extra terms under a space-dependent phase transformation.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -366,7 +452,7 @@ Important
 </div>
 <div class="callout-body-container callout-body">
 <p><strong>Covariant Derivative Fix</strong>:<br>
-Replace <span class="math inline">\(\partial_\mu\)</span> with <span class="math inline">\(D_\mu = \partial_\mu + ieA_\mu\)</span>. Under simultaneous transformations of <span class="math inline">\(\psi\)</span> and <span class="math inline">\(A_\mu\)</span>, the Lagrangian remains invariant.</p>
+Replace <span class="math inline">\partial_\mu</span> with <span class="math inline">D_\mu = \partial_\mu + ieA_\mu</span>. Under simultaneous transformations of <span class="math inline">\psi</span> and <span class="math inline">A_\mu</span>, the Lagrangian remains invariant.</p>
 </div>
 </div>
 <p>This is the essence of <strong>QED</strong>: interactions arise from requiring invariance under local phase transformations.</p>
@@ -383,7 +469,7 @@ Warning
 </div>
 <div class="callout-body-container callout-body">
 <p><strong>Key Difference in QCD</strong>:<br>
-- Gluons self-interact due to non-Abelian structure (terms like <span class="math inline">\(f^{abc}\)</span> in <span class="math inline">\(G^a_{\mu\nu}\)</span>).<br>
+- Gluons self-interact due to non-Abelian structure (terms like <span class="math inline">f^{abc}</span> in <span class="math inline">G^a_{\mu\nu}</span>).<br>
 - Coupling runs with energy: <strong>asymptotic freedom</strong> (weak at high energy) vs.&nbsp;<strong>confinement</strong> (strong at low energy).</p>
 </div>
 </div>
@@ -401,19 +487,19 @@ Note
 <div class="callout-body-container callout-body">
 <p><strong>Cross-Section and Decay Width</strong>:<br>
 - Cross-section:<br>
-<span class="math display">\[  
+<span class="math display">  
 \sigma = \frac{1}{2E_A 2E_B |v_A - v_B|} \int |\mathcal{M}|^2 \, d\Pi_{\text{phase space}}  
-\]</span><br>
+</span><br>
 - Decay width:<br>
-<span class="math display">\[  
+<span class="math display">  
 \Gamma = \frac{1}{2m} \int |\mathcal{M}|^2 \, d\Pi_{\text{phase space}}  
-\]</span></p>
+</span></p>
 </div>
 </div>
 <p>These connect field theory to measurable quantities in experiments.</p>
 </section>
-<section id="course-logistics-exam-details-and-summer-school-opportunities" class="level3">
-<h3 class="anchored" data-anchor-id="course-logistics-exam-details-and-summer-school-opportunities">Course Logistics, Exam Details, and Summer School Opportunities</h3>
+<section id="course-logistics-exam-details-and-summer-school-opportunities" class="level3" data-number="0.4">
+<h3 data-number="0.4" class="anchored" data-anchor-id="course-logistics-exam-details-and-summer-school-opportunities"><span class="header-section-number">0.4</span> Course Logistics, Exam Details, and Summer School Opportunities</h3>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -535,8 +621,8 @@ Note
 </div>
 </div>
 </section>
-<section id="collaborative-problem-solving-resource-use-and-course-logistics" class="level3">
-<h3 class="anchored" data-anchor-id="collaborative-problem-solving-resource-use-and-course-logistics">Collaborative Problem-Solving, Resource Use, and Course Logistics</h3>
+<section id="collaborative-problem-solving-resource-use-and-course-logistics" class="level3" data-number="0.5">
+<h3 data-number="0.5" class="anchored" data-anchor-id="collaborative-problem-solving-resource-use-and-course-logistics"><span class="header-section-number">0.5</span> Collaborative Problem-Solving, Resource Use, and Course Logistics</h3>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -591,8 +677,8 @@ Important
 <div class="callout-body-container callout-body">
 <p><strong>System description</strong>:<br>
 - A <strong>spark</strong>, a <strong>balloon</strong>, and a <strong>pendulum</strong> with a sliding hanging point.<br>
-- <strong>Lagrangian</strong>: Kinetic term minus potential term (<span class="math inline">\(\mathcal{L} = T - V\)</span>).<br>
-- <span class="math inline">\(\dot{X}^2\)</span> term for the moving part.<br>
+- <strong>Lagrangian</strong>: Kinetic term minus potential term (<span class="math inline">\mathcal{L} = T - V</span>).<br>
+- <span class="math inline">\dot{X}^2</span> term for the moving part.<br>
 - Pendulum interaction and potential energy terms.<br>
 - <strong>Goal</strong>: Derive the <strong>Dirac equation</strong> and <strong>Maxwell’s equations</strong>.<br>
 <em>“This is a fun problem—I just dropped it on this table.”</em></p>
@@ -631,8 +717,8 @@ Tip
 <div class="callout-body-container callout-body">
 <p><strong>Upcoming focus</strong>:<br>
 - Reintroducing the <strong>QED Lagrangian</strong>:<br>
-<span class="math display">\[\mathcal{L}_{QED} = \bar{\psi}(i\gamma^\mu D_\mu - m)\psi - \frac{1}{4}F_{\mu\nu}F^{\mu\nu}\]</span><br>
-Where <span class="math inline">\(D_\mu = \partial_\mu + ieA_\mu\)</span> (covariant derivative).<br>
+<span class="math display">\mathcal{L}_{QED} = \bar{\psi}(i\gamma^\mu D_\mu - m)\psi - \frac{1}{4}F_{\mu\nu}F^{\mu\nu}</span><br>
+Where <span class="math inline">D_\mu = \partial_\mu + ieA_\mu</span> (covariant derivative).<br>
 - Comparing <strong>QED</strong> (electromagnetic interactions) and <strong>QCD</strong> (added complexity).<br>
 <em>“Starting with a simpler case and explaining how to calculate terms is a good starting point.”</em></p>
 </div>
@@ -676,10 +762,11 @@ Important
 </div>
 <hr>
 <p><em>“I rushed at the beginning and end, so you’ll have to explain stuff. We’ll calculate something for QED if time permits.”</em></p>
+
+
 </section>
 
-</main>
-<!-- /main column -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

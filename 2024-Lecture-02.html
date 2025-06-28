@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Mikhail Mikhasenko">
 
-<title>lecture-02</title>
+<title>lecture-02 – Hadron Physics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,20 +24,66 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="2024-Lecture-02_files/libs/clipboard/clipboard.min.js"></script>
-<script src="2024-Lecture-02_files/libs/quarto-html/quarto.js" type="module"></script>
-<script src="2024-Lecture-02_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="2024-Lecture-02_files/libs/quarto-html/popper.min.js"></script>
-<script src="2024-Lecture-02_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="2024-Lecture-02_files/libs/quarto-html/anchor.min.js"></script>
-<link href="2024-Lecture-02_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="2024-Lecture-02_files/libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="2024-Lecture-02_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="2024-Lecture-02_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="2024-Lecture-02_files/libs/bootstrap/bootstrap-af3b0b53a274c7d4e75779d930f447fb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-6729c19c459079745e2be02720e68a89.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -65,19 +112,58 @@ window.Quarto = {
 };
 </script>
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="fullcontent quarto-light">
+<body class="quarto-light">
 
-<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-
+<div id="quarto-search-results"></div>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#symmetries-in-hadron-physics-and-estimating-hadronic-cross-sections" id="toc-symmetries-in-hadron-physics-and-estimating-hadronic-cross-sections" class="nav-link active" data-scroll-target="#symmetries-in-hadron-physics-and-estimating-hadronic-cross-sections"><span class="header-section-number">0.1</span> Symmetries in Hadron Physics and Estimating Hadronic Cross Sections</a></li>
+  <li><a href="#charge-definitions-in-qed-and-qcd-and-introduction-to-su2-group-theory" id="toc-charge-definitions-in-qed-and-qcd-and-introduction-to-su2-group-theory" class="nav-link" data-scroll-target="#charge-definitions-in-qed-and-qcd-and-introduction-to-su2-group-theory"><span class="header-section-number">0.2</span> Charge Definitions in QED and QCD, and Introduction to SU(2) Group Theory</a></li>
+  <li><a href="#symmetries-of-the-qcd-lagrangian-and-quark-mass-hierarchy" id="toc-symmetries-of-the-qcd-lagrangian-and-quark-mass-hierarchy" class="nav-link" data-scroll-target="#symmetries-of-the-qcd-lagrangian-and-quark-mass-hierarchy"><span class="header-section-number">0.3</span> Symmetries of the QCD Lagrangian and Quark Mass Hierarchy</a></li>
+  <li><a href="#combining-isospin-and-spin-representations-in-su2" id="toc-combining-isospin-and-spin-representations-in-su2" class="nav-link" data-scroll-target="#combining-isospin-and-spin-representations-in-su2"><span class="header-section-number">0.4</span> Combining Isospin and Spin Representations in SU(2)</a></li>
+  <li><a href="#parity-charge-conjugation-and-composite-systems-in-particle-states" id="toc-parity-charge-conjugation-and-composite-systems-in-particle-states" class="nav-link" data-scroll-target="#parity-charge-conjugation-and-composite-systems-in-particle-states"><span class="header-section-number">0.5</span> Parity, Charge Conjugation, and Composite Systems in Particle States</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+</div>
 
 
 
-<section id="symmetries-in-hadron-physics-and-estimating-hadronic-cross-sections" class="level3">
-<h3 class="anchored" data-anchor-id="symmetries-in-hadron-physics-and-estimating-hadronic-cross-sections">Symmetries in Hadron Physics and Estimating Hadronic Cross Sections</h3>
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Mikhail Mikhasenko </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="symmetries-in-hadron-physics-and-estimating-hadronic-cross-sections" class="level3" data-number="0.1">
+<h3 data-number="0.1" class="anchored" data-anchor-id="symmetries-in-hadron-physics-and-estimating-hadronic-cross-sections"><span class="header-section-number">0.1</span> Symmetries in Hadron Physics and Estimating Hadronic Cross Sections</h3>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -117,15 +203,15 @@ Tip
 <p>Let’s start with a question from last lecture:<br>
 <strong>How would you estimate the typical cross section of hadronic reactions?</strong></p>
 <p>The <strong>exact approach</strong> involves:<br>
-<span class="math display">\[\sigma = \frac{1}{F} \int |\mathcal{M}|^2 \, d\Phi\]</span><br>
+<span class="math display">\sigma = \frac{1}{F} \int |\mathcal{M}|^2 \, d\Phi</span><br>
 where:<br>
-- <span class="math inline">\(\sigma\)</span> = cross section<br>
-- <span class="math inline">\(F\)</span> = flux factor<br>
-- <span class="math inline">\(\mathcal{M}\)</span> = matrix element<br>
-- <span class="math inline">\(d\Phi\)</span> = phase space differential</p>
+- <span class="math inline">\sigma</span> = cross section<br>
+- <span class="math inline">F</span> = flux factor<br>
+- <span class="math inline">\mathcal{M}</span> = matrix element<br>
+- <span class="math inline">d\Phi</span> = phase space differential</p>
 <p>This gives the <strong>exact value</strong> in inverse GeV (convertible to cm²).</p>
 <hr>
-<p>But what’s the <strong>scale</strong>? We’re dealing with <strong>barns</strong> (<span class="math inline">\(1\,\text{barn} = 10^{-24}\,\text{cm}^2\)</span>).</p>
+<p>But what’s the <strong>scale</strong>? We’re dealing with <strong>barns</strong> (<span class="math inline">1\,\text{barn} = 10^{-24}\,\text{cm}^2</span>).</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -136,14 +222,14 @@ Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Key Insight</strong>: The cross section represents the <strong>effective interaction area</strong>. For a proton (radius ~<span class="math inline">\(1\,\text{fm} = 10^{-13}\,\text{cm}\)</span>):<br>
-<span class="math display">\[\sigma \approx \pi r^2 = \pi (10^{-13}\,\text{cm})^2 \approx 3 \times 10^{-26}\,\text{cm}^2 \approx 30\,\text{mb}\]</span></p>
+<p><strong>Key Insight</strong>: The cross section represents the <strong>effective interaction area</strong>. For a proton (radius ~<span class="math inline">1\,\text{fm} = 10^{-13}\,\text{cm}</span>):<br>
+<span class="math display">\sigma \approx \pi r^2 = \pi (10^{-13}\,\text{cm})^2 \approx 3 \times 10^{-26}\,\text{cm}^2 \approx 30\,\text{mb}</span></p>
 </div>
 </div>
 <p>This is the <strong>typical scale</strong> for hadronic reactions. The <strong>strong interaction</strong> is powerful but <strong>short-range</strong>—particles must overlap to interact.</p>
 </section>
-<section id="charge-definitions-in-qed-and-qcd-and-introduction-to-su2-group-theory" class="level3">
-<h3 class="anchored" data-anchor-id="charge-definitions-in-qed-and-qcd-and-introduction-to-su2-group-theory">Charge Definitions in QED and QCD, and Introduction to SU(2) Group Theory</h3>
+<section id="charge-definitions-in-qed-and-qcd-and-introduction-to-su2-group-theory" class="level3" data-number="0.2">
+<h3 data-number="0.2" class="anchored" data-anchor-id="charge-definitions-in-qed-and-qcd-and-introduction-to-su2-group-theory"><span class="header-section-number">0.2</span> Charge Definitions in QED and QCD, and Introduction to SU(2) Group Theory</h3>
 <p>The second question addressed is how to define charge in <strong>QED</strong> and <strong>QCD</strong>.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -156,10 +242,10 @@ Important
 </div>
 <div class="callout-body-container callout-body">
 <p>In QED, the <strong>electric charge</strong> is physical and conserved. It corresponds to a symmetry, as per <strong>Noether’s theorem</strong>, which guarantees a conserved current. The charge is defined as the integral of the zero component of this current:<br>
-<span class="math display">\[ Q = \int d^3x \, J^0 = \int d^3x \, \psi^\dagger \psi. \]</span></p>
+<span class="math display"> Q = \int d^3x \, J^0 = \int d^3x \, \psi^\dagger \psi. </span></p>
 </div>
 </div>
-<p>For a Dirac field, <span class="math inline">\(\bar{\psi}\psi\)</span> involves conjugation with <span class="math inline">\(\gamma^0\)</span>, yielding <span class="math inline">\(\psi^\dagger \psi\)</span>—a positive quantity. This implies that if <span class="math inline">\(\psi\)</span> represents an electron, it has a <strong>positive charge</strong>. However, this is a convention:</p>
+<p>For a Dirac field, <span class="math inline">\bar{\psi}\psi</span> involves conjugation with <span class="math inline">\gamma^0</span>, yielding <span class="math inline">\psi^\dagger \psi</span>—a positive quantity. This implies that if <span class="math inline">\psi</span> represents an electron, it has a <strong>positive charge</strong>. However, this is a convention:</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -170,13 +256,13 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The observed charge <span class="math inline">\(Q\)</span> is matched to <span class="math inline">\(-e\)</span> for electrons to align with experimental conventions. The current in QED is:<br>
-<span class="math display">\[ J^\mu = -e \bar{\psi} \gamma^\mu \psi. \]</span><br>
-The <span class="math inline">\(-e\)</span> ensures consistency with standard definitions, but the <strong>conservation</strong> of the quantity is the key takeaway from field theory.</p>
+<p>The observed charge <span class="math inline">Q</span> is matched to <span class="math inline">-e</span> for electrons to align with experimental conventions. The current in QED is:<br>
+<span class="math display"> J^\mu = -e \bar{\psi} \gamma^\mu \psi. </span><br>
+The <span class="math inline">-e</span> ensures consistency with standard definitions, but the <strong>conservation</strong> of the quantity is the key takeaway from field theory.</p>
 </div>
 </div>
 <hr>
-<p>The approach in <strong>QCD</strong> is analogous but involves <strong>color indices</strong> and <strong>generators</strong> of <span class="math inline">\(SU(3)\)</span>:</p>
+<p>The approach in <strong>QCD</strong> is analogous but involves <strong>color indices</strong> and <strong>generators</strong> of <span class="math inline">SU(3)</span>:</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -188,11 +274,11 @@ Important
 </div>
 <div class="callout-body-container callout-body">
 <p>The QCD current for color charge is:<br>
-<span class="math display">\[ J^\mu_a = \bar{\psi} \gamma^\mu T_a \psi, \]</span><br>
-where <span class="math inline">\(T_a\)</span> are the <strong>Gell-Mann matrices</strong> (generators of <span class="math inline">\(SU(3)\)</span>). Unlike QED, quarks have <strong>eight color charges</strong>, corresponding to the gluon probes.</p>
+<span class="math display"> J^\mu_a = \bar{\psi} \gamma^\mu T_a \psi, </span><br>
+where <span class="math inline">T_a</span> are the <strong>Gell-Mann matrices</strong> (generators of <span class="math inline">SU(3)</span>). Unlike QED, quarks have <strong>eight color charges</strong>, corresponding to the gluon probes.</p>
 </div>
 </div>
-<p>For example, given a quark field <span class="math inline">\(\psi_{\text{color}} = (1, 2, i\sqrt{3})\)</span>, its charge is an <strong>eight-component vector</strong>—each component depends on the gluon used to probe it.</p>
+<p>For example, given a quark field <span class="math inline">\psi_{\text{color}} = (1, 2, i\sqrt{3})</span>, its charge is an <strong>eight-component vector</strong>—each component depends on the gluon used to probe it.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -203,11 +289,11 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This structure arises from <strong>group theory</strong>: QED uses <span class="math inline">\(U(1)\)</span>, while QCD uses <span class="math inline">\(SU(3)\)</span>. Today, we’ll also discuss <span class="math inline">\(SU(2)\)</span>, which shares similar principles.</p>
+<p>This structure arises from <strong>group theory</strong>: QED uses <span class="math inline">U(1)</span>, while QCD uses <span class="math inline">SU(3)</span>. Today, we’ll also discuss <span class="math inline">SU(2)</span>, which shares similar principles.</p>
 </div>
 </div>
 <hr>
-<p>The <span class="math inline">\(SU(2)\)</span> group is fundamental in particle physics. It is a <strong>special unitary group</strong> of <span class="math inline">\(2 \times 2\)</span> matrices with determinant one:</p>
+<p>The <span class="math inline">SU(2)</span> group is fundamental in particle physics. It is a <strong>special unitary group</strong> of <span class="math inline">2 \times 2</span> matrices with determinant one:</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -218,22 +304,22 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>For <span class="math inline">\(U \in SU(2)\)</span>, the conditions are:<br>
-<span class="math display">\[ U U^\dagger = I \quad \text{and} \quad U^\dagger U = I. \]</span><br>
-The <strong>determinant</strong> is restricted to <span class="math inline">\(1\)</span> (the “<span class="math inline">\(S\)</span>” in <span class="math inline">\(SU(2)\)</span>).</p>
+<p>For <span class="math inline">U \in SU(2)</span>, the conditions are:<br>
+<span class="math display"> U U^\dagger = I \quad \text{and} \quad U^\dagger U = I. </span><br>
+The <strong>determinant</strong> is restricted to <span class="math inline">1</span> (the “<span class="math inline">S</span>” in <span class="math inline">SU(2)</span>).</p>
 </div>
 </div>
 <ul>
-<li><strong>Inverse</strong>: If <span class="math inline">\(g \in SU(2)\)</span>, then <span class="math inline">\(g^{-1} \in SU(2)\)</span>.<br>
+<li><strong>Inverse</strong>: If <span class="math inline">g \in SU(2)</span>, then <span class="math inline">g^{-1} \in SU(2)</span>.<br>
 </li>
-<li><strong>Closure</strong>: For <span class="math inline">\(g_1, g_2 \in SU(2)\)</span>, <span class="math inline">\(g_1 g_2 \in SU(2)\)</span>.<br>
+<li><strong>Closure</strong>: For <span class="math inline">g_1, g_2 \in SU(2)</span>, <span class="math inline">g_1 g_2 \in SU(2)</span>.<br>
 </li>
-<li><strong>Identity</strong>: The identity matrix <span class="math inline">\(I\)</span> is included.</li>
+<li><strong>Identity</strong>: The identity matrix <span class="math inline">I</span> is included.</li>
 </ul>
-<p>Any <span class="math inline">\(SU(2)\)</span> element can be written as:<br>
-<span class="math display">\[ U = \exp\left(-i \alpha_a \sigma_a / 2\right), \]</span><br>
-where <span class="math inline">\(\sigma_a\)</span> are the <strong>Pauli matrices</strong>:<br>
-<span class="math display">\[ \sigma_1 = \begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{pmatrix}, \quad \sigma_2 = \begin{pmatrix} 0 &amp; -i \\ i &amp; 0 \end{pmatrix}, \quad \sigma_3 = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{pmatrix}. \]</span></p>
+<p>Any <span class="math inline">SU(2)</span> element can be written as:<br>
+<span class="math display"> U = \exp\left(-i \alpha_a \sigma_a / 2\right), </span><br>
+where <span class="math inline">\sigma_a</span> are the <strong>Pauli matrices</strong>:<br>
+<span class="math display"> \sigma_1 = \begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{pmatrix}, \quad \sigma_2 = \begin{pmatrix} 0 &amp; -i \\ i &amp; 0 \end{pmatrix}, \quad \sigma_3 = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{pmatrix}. </span></p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -245,16 +331,16 @@ Tip
 </div>
 <div class="callout-body-container callout-body">
 <p>For <strong>nilpotent matrices</strong>, the exponential simplifies. For example:<br>
-<span class="math display">\[ \exp\begin{pmatrix} 0 &amp; 1 \\ 0 &amp; 0 \end{pmatrix} = I + \begin{pmatrix} 0 &amp; 1 \\ 0 &amp; 0 \end{pmatrix} = \begin{pmatrix} 1 &amp; 1 \\ 0 &amp; 1 \end{pmatrix}. \]</span></p>
+<span class="math display"> \exp\begin{pmatrix} 0 &amp; 1 \\ 0 &amp; 0 \end{pmatrix} = I + \begin{pmatrix} 0 &amp; 1 \\ 0 &amp; 0 \end{pmatrix} = \begin{pmatrix} 1 &amp; 1 \\ 0 &amp; 1 \end{pmatrix}. </span></p>
 </div>
 </div>
 <hr>
-<p>In quantum mechanics, <strong>spin operators</strong> <span class="math inline">\(J_i\)</span> satisfy:<br>
-<span class="math display">\[ [J_i, J_j] = i \epsilon_{ijk} J_k. \]</span><br>
+<p>In quantum mechanics, <strong>spin operators</strong> <span class="math inline">J_i</span> satisfy:<br>
+<span class="math display"> [J_i, J_j] = i \epsilon_{ijk} J_k. </span><br>
 The <strong>raising/lowering operators</strong> are:<br>
-<span class="math display">\[ J_\pm = J_1 \pm i J_2, \]</span><br>
-acting on states <span class="math inline">\(|j, m\rangle\)</span> as:<br>
-<span class="math display">\[ J_\pm |j, m\rangle = \sqrt{j(j+1) - m(m \pm 1)} \, |j, m \pm 1\rangle. \]</span></p>
+<span class="math display"> J_\pm = J_1 \pm i J_2, </span><br>
+acting on states <span class="math inline">|j, m\rangle</span> as:<br>
+<span class="math display"> J_\pm |j, m\rangle = \sqrt{j(j+1) - m(m \pm 1)} \, |j, m \pm 1\rangle. </span></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -266,10 +352,10 @@ Note
 </div>
 <div class="callout-body-container callout-body">
 <p>The eigenvalues are:<br>
-<span class="math display">\[ J^2 |j, m\rangle = j(j+1) |j, m\rangle, \quad J_3 |j, m\rangle = m |j, m\rangle. \]</span></p>
+<span class="math display"> J^2 |j, m\rangle = j(j+1) |j, m\rangle, \quad J_3 |j, m\rangle = m |j, m\rangle. </span></p>
 </div>
 </div>
-<p>For quark states (e.g., <span class="math inline">\(\Xi\)</span> particles), <strong>flavor symmetry</strong> treats <span class="math inline">\(u\)</span> and <span class="math inline">\(d\)</span> quarks similarly due to nearly equal masses (<span class="math inline">\(m_u \approx m_d \approx 3 \text{MeV}\)</span>).</p>
+<p>For quark states (e.g., <span class="math inline">\Xi</span> particles), <strong>flavor symmetry</strong> treats <span class="math inline">u</span> and <span class="math inline">d</span> quarks similarly due to nearly equal masses (<span class="math inline">m_u \approx m_d \approx 3 \text{MeV}</span>).</p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -280,18 +366,18 @@ Warning
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The <span class="math inline">\(\Xi_{cc}\)</span> (with <span class="math inline">\(ccu\)</span> or <span class="math inline">\(ccd\)</span>) shows a <strong>puzzling mass difference</strong>, violating the expected <span class="math inline">\(SU(2)\)</span> symmetry. This remains a <strong>hot topic</strong> in particle physics.</p>
+<p>The <span class="math inline">\Xi_{cc}</span> (with <span class="math inline">ccu</span> or <span class="math inline">ccd</span>) shows a <strong>puzzling mass difference</strong>, violating the expected <span class="math inline">SU(2)</span> symmetry. This remains a <strong>hot topic</strong> in particle physics.</p>
 </div>
 </div>
 <hr>
 <p>We’ve covered:<br>
 1. <strong>Charge definitions</strong> in QED and QCD.<br>
-2. <strong><span class="math inline">\(SU(2)\)</span> group theory</strong> and its generators.<br>
+2. <strong><span class="math inline">SU(2)</span> group theory</strong> and its generators.<br>
 3. <strong>Applications</strong> to spin and flavor symmetry.</p>
-<p>Next, we’ll delve deeper into <strong><span class="math inline">\(SU(2)\)</span> representations</strong> and their role in particle physics.</p>
+<p>Next, we’ll delve deeper into <strong><span class="math inline">SU(2)</span> representations</strong> and their role in particle physics.</p>
 </section>
-<section id="symmetries-of-the-qcd-lagrangian-and-quark-mass-hierarchy" class="level3">
-<h3 class="anchored" data-anchor-id="symmetries-of-the-qcd-lagrangian-and-quark-mass-hierarchy">Symmetries of the QCD Lagrangian and Quark Mass Hierarchy</h3>
+<section id="symmetries-of-the-qcd-lagrangian-and-quark-mass-hierarchy" class="level3" data-number="0.3">
+<h3 data-number="0.3" class="anchored" data-anchor-id="symmetries-of-the-qcd-lagrangian-and-quark-mass-hierarchy"><span class="header-section-number">0.3</span> Symmetries of the QCD Lagrangian and Quark Mass Hierarchy</h3>
 <p>When we speak about the symmetries of the Lagrangian of QCD, we have in mind the Lagrangian itself. It consists of two key terms:</p>
 <ol type="1">
 <li><strong>Gluon term</strong>: Describes the dynamics of the gluon fields.</li>
@@ -307,11 +393,11 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The QCD Lagrangian is given by: <span class="math display">\[\mathcal{L}_{\text{QCD}} = -\frac{1}{4}G^{a}_{\mu u}G^{a\mu u} + \sum_{f}\bar{\psi}_f(i\gamma^\mu D_\mu - m_f)\psi_f\]</span> where: - <span class="math inline">\(G^{a}_{\mu u}\)</span> is the gluon field strength tensor, - <span class="math inline">\(\psi_f\)</span> represents quark fields of flavor <span class="math inline">\(f\)</span>, - <span class="math inline">\(m_f\)</span> are the quark masses, - <span class="math inline">\(D_\mu\)</span> is the covariant derivative.</p>
+<p>The QCD Lagrangian is given by: <span class="math display">\mathcal{L}_{\text{QCD}} = -\frac{1}{4}G^{a}_{\mu u}G^{a\mu u} + \sum_{f}\bar{\psi}_f(i\gamma^\mu D_\mu - m_f)\psi_f</span> where: - <span class="math inline">G^{a}_{\mu u}</span> is the gluon field strength tensor, - <span class="math inline">\psi_f</span> represents quark fields of flavor <span class="math inline">f</span>, - <span class="math inline">m_f</span> are the quark masses, - <span class="math inline">D_\mu</span> is the covariant derivative.</p>
 </div>
 </div>
 <hr>
-<p>If the quark masses are <strong>not the same</strong>, the mass term will break the symmetry. For the <strong>u and d quarks</strong>, since their masses are almost identical (<span class="math inline">\(m_u \approx m_d\)</span>), the symmetry is <strong>not broken</strong> by the mass terms, and this remains a good symmetry.</p>
+<p>If the quark masses are <strong>not the same</strong>, the mass term will break the symmetry. For the <strong>u and d quarks</strong>, since their masses are almost identical (<span class="math inline">m_u \approx m_d</span>), the symmetry is <strong>not broken</strong> by the mass terms, and this remains a good symmetry.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -322,12 +408,12 @@ Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The mass term in the Lagrangian is: <span class="math display">\[\mathcal{L}_{\text{mass}} = -\sum_{f=u,d,s} m_f \bar{\psi}_f \psi_f\]</span> When <span class="math inline">\(m_u \approx m_d\)</span>, this preserves an approximate <strong>SU(2) isospin symmetry</strong>.</p>
+<p>The mass term in the Lagrangian is: <span class="math display">\mathcal{L}_{\text{mass}} = -\sum_{f=u,d,s} m_f \bar{\psi}_f \psi_f</span> When <span class="math inline">m_u \approx m_d</span>, this preserves an approximate <strong>SU(2) isospin symmetry</strong>.</p>
 </div>
 </div>
 </section>
-<section id="combining-isospin-and-spin-representations-in-su2" class="level3">
-<h3 class="anchored" data-anchor-id="combining-isospin-and-spin-representations-in-su2">Combining Isospin and Spin Representations in SU(2)</h3>
+<section id="combining-isospin-and-spin-representations-in-su2" class="level3" data-number="0.4">
+<h3 data-number="0.4" class="anchored" data-anchor-id="combining-isospin-and-spin-representations-in-su2"><span class="header-section-number">0.4</span> Combining Isospin and Spin Representations in SU(2)</h3>
 <p><strong>Group.</strong><br>
 This is so <strong>ud</strong>. Let me sketch this like this: <strong>U to D</strong>. Rotation in the space is a good scene. Then my cascade particle would be in that case, if I consider <strong>U</strong> and <strong>D</strong> to be the same particle as the <strong>SSL</strong> where <strong>L</strong> is the number in the <strong>ISIS spin wave function</strong>. It’s clear that cascade.</p>
 <hr>
@@ -357,13 +443,13 @@ Important
 </div>
 <div class="callout-body-container callout-body">
 <p>The <strong>SU(2) Rotation Operator</strong> for isospin transformations is given by:<br>
-<span class="math display">\[  
+<span class="math display">  
 U = e^{-i \alpha \cdot \mathbf{G}}  
-\]</span><br>
-where <span class="math inline">\(\mathbf{G}\)</span> are the generators of <strong>SU(2)</strong> and <span class="math inline">\(\alpha\)</span> are rotation parameters.</p>
+</span><br>
+where <span class="math inline">\mathbf{G}</span> are the generators of <strong>SU(2)</strong> and <span class="math inline">\alpha</span> are rotation parameters.</p>
 </div>
 </div>
-<p>So <strong>U</strong> is equal to <span class="math inline">\(e^{-i\alpha G}\)</span>. Then what is the charge of the group of this vector? Take it in right? You put it to the equation for the charge and then we get essentially now it’s clear what the spin stands for.</p>
+<p>So <strong>U</strong> is equal to <span class="math inline">e^{-i\alpha G}</span>. Then what is the charge of the group of this vector? Take it in right? You put it to the equation for the charge and then we get essentially now it’s clear what the spin stands for.</p>
 <p><strong>Isospin</strong> is the same way as the spin would give <strong>one half</strong> for this and <strong>minus one</strong>. You get it right? Acting well, it’s a <strong>doublet</strong> corresponds to the two components. The dimension of the representation is <strong>2</strong>, it corresponds to the spin or isospin <strong>1/2</strong>. We just counted.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -375,10 +461,10 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The <strong>Isospin Doublet Representation</strong> for <span class="math inline">\(u\)</span> and <span class="math inline">\(d\)</span> quarks is:<br>
-<span class="math display">\[  
+<p>The <strong>Isospin Doublet Representation</strong> for <span class="math inline">u</span> and <span class="math inline">d</span> quarks is:<br>
+<span class="math display">  
 \begin{pmatrix} u \\ d \end{pmatrix}, \quad \text{isospin } I = \frac{1}{2}  
-\]</span></p>
+</span></p>
 </div>
 </div>
 <p>So if I get a multiplet of <strong>four dimensions</strong>, what would be the isospin? Okay, let’s come back. <strong>Four dimensions</strong> is <strong>three half</strong>. If it’s <strong>95 dimensions</strong>, it’ll be <strong>47</strong>.</p>
@@ -396,10 +482,10 @@ Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The <strong>Clebsch-Gordan Series</strong> for combining two spin-<span class="math inline">\(1/2\)</span> particles is:<br>
-<span class="math display">\[  
+<p>The <strong>Clebsch-Gordan Series</strong> for combining two spin-<span class="math inline">1/2</span> particles is:<br>
+<span class="math display">  
 \frac{1}{2} \otimes \frac{1}{2} = 0 \oplus 1  
-\]</span></p>
+</span></p>
 </div>
 </div>
 <p>The higher dimension of representations appear when I start combining considering particles more than one quark. Because in that case I have to deal with the polling situation. There is one system. There is another system with spin <strong>one half</strong>. But I want to consider them as a system, as a combined system. And I want to characterize the total system by the total either spin or isospin and the projection.</p>
@@ -417,13 +503,13 @@ Tip
 </div>
 <div class="callout-body-container callout-body">
 <p>The <strong>General Spin Addition Rule</strong> is:<br>
-<span class="math display">\[  
+<span class="math display">  
 j_1 \otimes j_2 = |j_1 - j_2| \oplus \cdots \oplus (j_1 + j_2)  
-\]</span><br>
-Example: For <span class="math inline">\(j_1 = 3\)</span>, <span class="math inline">\(j_2 = 2\)</span>:<br>
-<span class="math display">\[  
+</span><br>
+Example: For <span class="math inline">j_1 = 3</span>, <span class="math inline">j_2 = 2</span>:<br>
+<span class="math display">  
 3 \otimes 2 = 1 \oplus 2 \oplus 3 \oplus 4 \oplus 5  
-\]</span></p>
+</span></p>
 </div>
 </div>
 <p>The minimum you obtain by combining in this direction and then maximum combining and all intermediate values are possible. What we have here is combining the <strong>1/2</strong>. Let’s know the notations that we often use. That tells you you combine two vector spaces coming from the cross product to the irreducible representations.</p>
@@ -440,13 +526,13 @@ Note
 </div>
 <div class="callout-body-container callout-body">
 <p><strong>Dimension Check for Representations</strong>:<br>
-For the combination <span class="math inline">\(3 \otimes 2\)</span>:<br>
-<span class="math display">\[  
+For the combination <span class="math inline">3 \otimes 2</span>:<br>
+<span class="math display">  
 \text{Dim}(3) \times \text{Dim}(2) = 7 \times 5 = 35  
-\]</span><br>
-<span class="math display">\[  
+</span><br>
+<span class="math display">  
 \text{Dim}(1) + \text{Dim}(2) + \text{Dim}(3) + \text{Dim}(4) + \text{Dim}(5) = 3 + 5 + 7 + 9 + 11 = 35  
-\]</span></p>
+</span></p>
 </div>
 </div>
 <p>Right, <strong>20, 35</strong> on the left, <strong>35</strong> on the right. Isn’t it amazing? We just, I mean probably formally prove that by counting all intermediate states from one to another. But that tells you the way to check yourself if you want to combine spins and write it with recombinations.</p>
@@ -473,8 +559,8 @@ Important
 <p>We deal with <strong>isospin</strong> when you construct the quark wave function. But when you combine particles with spin and want to understand angular dependence, you’re dealing with <strong>spin</strong>. With rotational group, the same algebra, the same methods, everything is the same.</p>
 <p>Just keep in mind whether you’re talking about <strong>flavor SU(2)</strong> or <strong>Lorentz part of the Lorentz Group rotational SU(2)</strong>.</p>
 </section>
-<section id="parity-charge-conjugation-and-composite-systems-in-particle-states" class="level3">
-<h3 class="anchored" data-anchor-id="parity-charge-conjugation-and-composite-systems-in-particle-states">Parity, Charge Conjugation, and Composite Systems in Particle States</h3>
+<section id="parity-charge-conjugation-and-composite-systems-in-particle-states" class="level3" data-number="0.5">
+<h3 data-number="0.5" class="anchored" data-anchor-id="parity-charge-conjugation-and-composite-systems-in-particle-states"><span class="header-section-number">0.5</span> Parity, Charge Conjugation, and Composite Systems in Particle States</h3>
 <p><strong>Number 3, 4, 5</strong> in our discussion: the <strong>parity operator</strong> performs space inversion with respect to the origin. Both parity and charge conjugation act on a state and produce another state.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -486,12 +572,12 @@ Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The <strong>parity operator</strong> <span class="math inline">\(\mathcal{P}\)</span> inverts spatial coordinates:<br>
-<span class="math display">\[\mathcal{P} \psi(\vec{r}) = \eta_P \psi(-\vec{r}), \quad \eta_P = \pm 1\]</span><br>
-where <span class="math inline">\(\eta_P\)</span> is the intrinsic parity eigenvalue.</p>
+<p>The <strong>parity operator</strong> <span class="math inline">\mathcal{P}</span> inverts spatial coordinates:<br>
+<span class="math display">\mathcal{P} \psi(\vec{r}) = \eta_P \psi(-\vec{r}), \quad \eta_P = \pm 1</span><br>
+where <span class="math inline">\eta_P</span> is the intrinsic parity eigenvalue.</p>
 </div>
 </div>
-<p>The parity answers how the wave function changes when flipped through the origin. Intuitively, flipping a vector through the origin reverses all spatial components. For any particle, you can determine its parity. Acting twice with parity returns the original state, so the eigenvalue is <strong>modulo 1</strong> (conventionally <span class="math inline">\(\pm 1\)</span>).</p>
+<p>The parity answers how the wave function changes when flipped through the origin. Intuitively, flipping a vector through the origin reverses all spatial components. For any particle, you can determine its parity. Acting twice with parity returns the original state, so the eigenvalue is <strong>modulo 1</strong> (conventionally <span class="math inline">\pm 1</span>).</p>
 <hr>
 <p>Charge conjugation flips all charges, converting a particle to its antiparticle.</p>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -504,17 +590,17 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The <strong>charge conjugation operator</strong> <span class="math inline">\(\mathcal{C}\)</span> acts as:<br>
-<span class="math display">\[\mathcal{C} |\psi\rangle = \eta_C |\overline{\psi}\rangle, \quad \eta_C = \pm 1\]</span><br>
-For neutral eigenstates (e.g., <span class="math inline">\(\pi^0\)</span>), <span class="math inline">\(\eta_C\)</span> is defined, but charged particles (e.g., <span class="math inline">\(\pi^+\)</span>) are not eigenstates since <span class="math inline">\(\mathcal{C} \pi^+ = \pi^-\)</span>.</p>
+<p>The <strong>charge conjugation operator</strong> <span class="math inline">\mathcal{C}</span> acts as:<br>
+<span class="math display">\mathcal{C} |\psi\rangle = \eta_C |\overline{\psi}\rangle, \quad \eta_C = \pm 1</span><br>
+For neutral eigenstates (e.g., <span class="math inline">\pi^0</span>), <span class="math inline">\eta_C</span> is defined, but charged particles (e.g., <span class="math inline">\pi^+</span>) are not eigenstates since <span class="math inline">\mathcal{C} \pi^+ = \pi^-</span>.</p>
 </div>
 </div>
-<p>The <strong>prime notation</strong> here indicates the antiparticle. By convention, charge conjugation is defined for the neutral member of a multiplet (e.g., <span class="math inline">\(\pi^0\)</span>). The Particle Data Group lists <span class="math inline">\(J^{PC}\)</span> (spin, parity, charge conjugation) for all particles. For <span class="math inline">\(\pi^0\)</span>, <span class="math inline">\(J^{PC} = 0^{-+}\)</span>; for <span class="math inline">\(\pi^+\)</span>, charge conjugation is assigned by analogy to <span class="math inline">\(\pi^0\)</span>.</p>
+<p>The <strong>prime notation</strong> here indicates the antiparticle. By convention, charge conjugation is defined for the neutral member of a multiplet (e.g., <span class="math inline">\pi^0</span>). The Particle Data Group lists <span class="math inline">J^{PC}</span> (spin, parity, charge conjugation) for all particles. For <span class="math inline">\pi^0</span>, <span class="math inline">J^{PC} = 0^{-+}</span>; for <span class="math inline">\pi^+</span>, charge conjugation is assigned by analogy to <span class="math inline">\pi^0</span>.</p>
 <hr>
-<p>To find <span class="math inline">\(J^{PC}\)</span> for a composite system:<br>
-1. <strong>Total <span class="math inline">\(J\)</span></strong>: Use spin algebra.<br>
-2. <strong>Parity</strong>: Multiplicative, including <span class="math inline">\((-1)^L\)</span> for orbital angular momentum <span class="math inline">\(L\)</span>.<br>
-3. <strong>Charge Conjugation</strong>: Multiplicative (for neutral systems, <span class="math inline">\(C = (-1)^{L+S}\)</span>).</p>
+<p>To find <span class="math inline">J^{PC}</span> for a composite system:<br>
+1. <strong>Total <span class="math inline">J</span></strong>: Use spin algebra.<br>
+2. <strong>Parity</strong>: Multiplicative, including <span class="math inline">(-1)^L</span> for orbital angular momentum <span class="math inline">L</span>.<br>
+3. <strong>Charge Conjugation</strong>: Multiplicative (for neutral systems, <span class="math inline">C = (-1)^{L+S}</span>).</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -526,13 +612,13 @@ Tip
 </div>
 <div class="callout-body-container callout-body">
 <p><strong>Parity of a composite system</strong>:<br>
-<span class="math display">\[P = \eta_{P1} \eta_{P2} (-1)^L\]</span><br>
-where <span class="math inline">\(\eta_{P1}, \eta_{P2}\)</span> are intrinsic parities.</p>
+<span class="math display">P = \eta_{P1} \eta_{P2} (-1)^L</span><br>
+where <span class="math inline">\eta_{P1}, \eta_{P2}</span> are intrinsic parities.</p>
 </div>
 </div>
-<p><strong>Example</strong>: For <span class="math inline">\(L = 0\)</span>, combine spins multiplicatively (e.g., <span class="math inline">\(1/2 + 0 = 1/2\)</span>). For <span class="math inline">\(L = 1\)</span>, add one unit of angular momentum, with parity <span class="math inline">\((-1)^{L+1}\)</span>.</p>
+<p><strong>Example</strong>: For <span class="math inline">L = 0</span>, combine spins multiplicatively (e.g., <span class="math inline">1/2 + 0 = 1/2</span>). For <span class="math inline">L = 1</span>, add one unit of angular momentum, with parity <span class="math inline">(-1)^{L+1}</span>.</p>
 <hr>
-<p>In the quark model, heavy quarks (e.g., charm) are treated without gluons. The <span class="math inline">\(u\)</span> and <span class="math inline">\(d\)</span> quarks form isospin multiplets:<br>
+<p>In the quark model, heavy quarks (e.g., charm) are treated without gluons. The <span class="math inline">u</span> and <span class="math inline">d</span> quarks form isospin multiplets:<br>
 - <strong>Isospin 1</strong>: Symmetric combination.</p>
 <p>-<strong>Isospin 0</strong>: Antisymmetric combination (matched with antisymmetric spin wave function).</p>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -545,11 +631,11 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>For baryons like <span class="math inline">\(\Lambda_c\)</span> (isospin-0), excitations include radial (<span class="math inline">\(n=1s, 2s\)</span>) or orbital (<span class="math inline">\(P\)</span>-wave, <span class="math inline">\(D\)</span>-wave) modes. The Particle Data Group lists ~7 <span class="math inline">\(\Lambda_c\)</span> states, including ground and excited configurations.</p>
+<p>For baryons like <span class="math inline">\Lambda_c</span> (isospin-0), excitations include radial (<span class="math inline">n=1s, 2s</span>) or orbital (<span class="math inline">P</span>-wave, <span class="math inline">D</span>-wave) modes. The Particle Data Group lists ~7 <span class="math inline">\Lambda_c</span> states, including ground and excited configurations.</p>
 </div>
 </div>
 <hr>
-<p><strong>Key skill</strong>: Determine allowed <span class="math inline">\(L\)</span> in decays.</p>
+<p><strong>Key skill</strong>: Determine allowed <span class="math inline">L</span> in decays.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -560,13 +646,13 @@ Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Decay selection rules</strong>: For <span class="math inline">\(A \to B + C\)</span>, allowed <span class="math inline">\(L\)</span> satisfies:<br>
-<span class="math display">\[|J_B - J_C| \leq L \leq J_B + J_C \quad \text{and} \quad P_A = P_B P_C (-1)^L.\]</span><br>
-Example: <span class="math inline">\(0^+ \to 1^- + 2^-\)</span> requires <span class="math inline">\(L=2\)</span> (<span class="math inline">\(D\)</span>-wave) to conserve <span class="math inline">\(J^P\)</span>.</p>
+<p><strong>Decay selection rules</strong>: For <span class="math inline">A \to B + C</span>, allowed <span class="math inline">L</span> satisfies:<br>
+<span class="math display">|J_B - J_C| \leq L \leq J_B + J_C \quad \text{and} \quad P_A = P_B P_C (-1)^L.</span><br>
+Example: <span class="math inline">0^+ \to 1^- + 2^-</span> requires <span class="math inline">L=2</span> (<span class="math inline">D</span>-wave) to conserve <span class="math inline">J^P</span>.</p>
 </div>
 </div>
 <hr>
-<p>Neglecting spins, sketch the energy spectrum for <span class="math inline">\(n \leq 3\)</span> (1s, 2s, 2p, 3s, 3d). Recall <span class="math inline">\(L &lt; n\)</span> (no <span class="math inline">\(f\)</span>-waves).</p>
+<p>Neglecting spins, sketch the energy spectrum for <span class="math inline">n \leq 3</span> (1s, 2s, 2p, 3s, 3d). Recall <span class="math inline">L &lt; n</span> (no <span class="math inline">f</span>-waves).</p>
 <hr>
 <p>Thanks for attending! Questions are welcome—ask directly or anonymously.</p>
 <div class="callout callout-style-default callout-caution callout-titled">
@@ -579,13 +665,14 @@ Caution
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Practice</strong>: Constructing <span class="math inline">\(J^P\)</span> tables and decay <span class="math inline">\(L\)</span> assignments are <strong>essential skills</strong> for particle physics.</p>
+<p><strong>Practice</strong>: Constructing <span class="math inline">J^P</span> tables and decay <span class="math inline">L</span> assignments are <strong>essential skills</strong> for particle physics.</p>
 </div>
 </div>
+
+
 </section>
 
-</main>
-<!-- /main column -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
