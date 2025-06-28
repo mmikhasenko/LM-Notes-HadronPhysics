@@ -10,7 +10,7 @@ def transform_file(filepath):
     # Convert \(...\) blocks to $...$
     content = re.sub(
         r'\\\((.*?)\\\)',
-        lambda m: f"${m.group(1)}$",
+        lambda m: f"${m.group(1).strip()}$",
         content,
         flags=re.DOTALL
     )
