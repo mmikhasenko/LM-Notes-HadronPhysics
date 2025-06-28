@@ -191,17 +191,14 @@ f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(x_0)}{n!} (x - x_0)^n
 </span></p>
 <p>Here, <span class="math inline">f^{(n)}(x_0)</span> are the coefficients (derivatives of <span class="math inline">f</span> evaluated at <span class="math inline">x_0</span>). If such a series exists, the function is analytic at <span class="math inline">x_0</span>.</p>
 <p>Similarly, a function is called <strong>holomorphic</strong> if its complex derivative exists at every point in its domain, meaning the derivative is well-defined regardless of the direction of approach in the complex plane.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <p>The terms <em>analytic</em> and <em>holomorphic</em> are equivalent for complex functions. Don’t be intimidated by the word “holomorphic”—it simply means the function is analytic.</p>
+</div>
 </div>
 </div>
 <!--
@@ -241,17 +238,14 @@ Cosine simularity: 0.9124673701607288
 <h2 data-number="4" class="anchored" data-anchor-id="integration-of-discontinuous-functions-in-complex-analysis"><span class="header-section-number">4</span> Integration of Discontinuous Functions in Complex Analysis</h2>
 <p>We can evaluate <span class="math inline">4 \sqrt{2} e^{i \pi/8}</span> and <span class="math inline">1 - i = \sqrt{2} e^{-i \pi/4}</span> by considering their arguments. The function can be evaluated either directly or by using the conjugated argument to obtain the conjugated images.</p>
 <p>In the context of contour integration, if we integrate a function over a closed contour in the complex plane, the value of the integral is determined by all non-analytic features inside the contour. For poles, this is given by residues; for branch points, it involves the behavior around the discontinuity.</p>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-important">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <p>Even for discontinuous functions, the integral can be numerically well-defined. For example, integrating <span class="math inline">\sqrt{x}</span> over a circle of radius 1 converges despite the discontinuity at <span class="math inline">x = 0</span>.</p>
+</div>
 </div>
 </div>
 <p>Consider the function defined on the unit circle:</p>
@@ -289,17 +283,14 @@ Cosine simularity: 0.9449375259218931
 <p>The analyticity of the amplitude is a postulate—a foundational principle of our framework. It’s stronger than an assumption; it’s the building block of our series. All theories we’ve discussed so far incorporate unitarity, which is tied to causality—a property linked to analyticity.</p>
 <p>The amplitude being analytic is postulated in our theory, but it’s connected to causality: events outside each other’s light cones cannot influence one another. This relationship between causality and analyticity is discussed in various textbooks, but we take it as a given here.</p>
 <p>Unitarity further refines this picture. The amplitude is real analytic below the threshold, meaning it has no imaginary part in this regime. The imaginary part arises only above the threshold, as it’s associated with particle production in intermediate states. Below threshold, the amplitude is purely real.</p>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-important">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <p>The optical theorem connects the imaginary part of the amplitude to the total cross-section, reinforcing the relationship between analyticity and unitarity.</p>
+</div>
 </div>
 </div>
 <p>This structure—analyticity, unitarity, and causality—forms the backbone of scattering theory, ensuring consistency with physical principles while enabling predictive power.</p>
@@ -320,17 +311,14 @@ Cosine simularity: 0.9521017548198791
 p = \frac{\lambda^{1/2}}{2\sqrt{s}}, \quad \lambda^{1/2}(s, m_1^2, m_2^2) = \sqrt{[s - (m_1 + m_2)^2][s - (m_1 - m_2)^2]}
 </span></p>
 <p>The breakup momentum <span class="math inline">p</span> vanishes at the threshold, where the system has minimal energy—just the sum of the particle masses. At this point, the particles have no residual momentum, and the singularity arises from the vanishing of <span class="math inline">p</span>.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <p>The phase space factor <span class="math inline">\frac{2p}{\sqrt{s}}</span> in the imaginary part of the amplitude is directly tied to the two-body phase space and vanishes at threshold, reflecting the kinematic constraints of particle production.</p>
+</div>
 </div>
 </div>
 <p>This structure is generic: every threshold introduces singularities, and their form depends on the number of particles involved. For a detailed derivation, refer to Gribov’s book, but the square-root singularity for the two-particle case is straightforward to derive from the properties of the imaginary part and phase space.</p>
@@ -350,17 +338,14 @@ x^2 + y^2 + z^2 - 2xy - 2yz - 2zx
 </span></p>
 <p>Here, <span class="math inline">x, y, z</span> represent the masses of the two particles and their differences. The first term gives a singularity at the threshold, while the second gives a singularity at the pseudothreshold.</p>
 <p>The relation we wrote is valid only above the threshold, where the imaginary part is non-zero and appears only once you cross the threshold. This imaginary part exhibits a square-root behavior, indicating that the function itself has a square-root singularity.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <p>The square-root singularity above the threshold suggests a branch point in the amplitude, connecting the function’s behavior in the upper and lower half-planes.</p>
+</div>
 </div>
 </div>
 <p>This connects to the Schwarz reflection principle. Since our function was real and analytic on a segment of the real axis, the Schwarz reflection principle applies. It relates the amplitude in the upper half-plane to the amplitude in the lower half-plane. If the function <span class="math inline">F(z)</span> is analytic in the upper half-plane and real on the real axis, then:</p>
@@ -378,17 +363,14 @@ Cosine simularity: 0.8956985218406526
 <p>The term “infinitesimal” means very, very small. In this context, <span class="math inline">i\epsilon</span> is a small imaginary displacement indicating whether you are evaluating the function just above or just below the real axis.</p>
 <p>This behavior arises due to phase space considerations. If there were no phase space configuration summations, the imaginary part could be directly related to the amplitude itself, and there might not even be branch points. However, summing over phase space configurations introduces a square-root branch point.</p>
 <p>This branch point indicates that the amplitude has a singularity starting at the threshold and extending in the positive direction.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <p>The amplitude’s branch point structure is tied to the analytic continuation of the function across the real axis, where the function’s value changes depending on the direction of approach.</p>
+</div>
 </div>
 </div>
 <p>To illustrate this, consider a simple real analytic function with a branch cut, such as the square root function. The square root of <span class="math inline">x</span> has a branch cut on the left side of the complex plane.</p>
@@ -422,17 +404,14 @@ A(s) = \sqrt{-s + m_1 m_2}
 </span></p>
 <p>This function has similar properties.</p>
 <p>In the <span class="math inline">x</span>-plane, the first function has a branch cut on the right, while the second function has a shifted cut. When these cuts overlap, there is no discontinuity, and the function remains analytic in that region. The correct structure consists of cuts connecting two points, which can be subtle to identify at first glance.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <p>The absence of a jump in the function where cuts overlap indicates analyticity in that region, despite the presence of branch cuts elsewhere.</p>
+</div>
 </div>
 </div>
 <p>The square-root function serves as a simple illustration of branch cuts. For example:</p>
@@ -455,17 +434,14 @@ Cosine simularity: 0.9784571421257063
 <p>The cuts connect two points, which is a tricky concept. The first time I saw this in a mathematical context, I was shocked because the branch points are the same — there are two points <span class="math inline">X</span> and <span class="math inline">X</span> where the function is non-analytic.</p>
 <p>The location of the cut is determined by where the imaginary part of the expression under the square root has an argument of <span class="math inline">\pi</span> or <span class="math inline">-\pi</span>. For the regular square root function, the cut appears where the argument is either <span class="math inline">1</span> or <span class="math inline">-1</span>.</p>
 <p>To understand where Mathematica, C, or Python libraries would draw a cut, you need to analyze where the expression under the square root has an argument touching <span class="math inline">\pi</span> or <span class="math inline">-\pi</span>. The cut lies between the points and also extends along a line to infinity.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <p>The first cut goes to infinity, and the second cut also goes to infinity, but this behavior differs from other cases.</p>
+</div>
 </div>
 </div>
 <p>If you split the product into two square roots, the argument changes, and you remove these two cuts. This is not meant to confuse but to warn that one must be careful with how expressions are written. The exact way you split the square root affects the function’s behavior — they may appear the same on the real axis but differ in the complex plane.</p>
@@ -500,17 +476,14 @@ Cosine simularity: 0.9379185276533604
 <section id="complex-plane-and-branch-cuts-in-router-analogy" class="level2" data-number="12">
 <h2 data-number="12" class="anchored" data-anchor-id="complex-plane-and-branch-cuts-in-router-analogy"><span class="header-section-number">12</span> Complex Plane and Branch Cuts in Router Analogy</h2>
 <p>The pulse can be visualized as the intensity floor in the complex domain. There are gates connecting different floors, but these do not change the level—they simply link one floor to another. On this multi-level surface, routers are placed, influencing the intensity observed on the relaxers.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <p>The difference between a larger room and multiple floors is negligible. Both are infinitely large, but the floors are smoothly connected, requiring multiple maps or sheets for representation—similar to shopping mall floor plans.</p>
+</div>
 </div>
 </div>
 <p>For the square root function <span class="math inline">\sqrt{x}</span>, the branch cut is conventionally placed to the right, but practically, nothing prevents placing it to the left. Consider evaluating the function at <span class="math inline">-1</span>:</p>
@@ -518,17 +491,14 @@ Note
 \sqrt{-1} = i
 </span></p>
 <p>For <span class="math inline">-1 + \epsilon</span> (where <span class="math inline">\epsilon</span> is infinitesimal), the result remains <span class="math inline">i</span>. Rotating the branch cut simply reconfigures the “rooms” (sheets) without altering the function’s behavior. The cut is merely a way to separate floors, not a physical barrier—there are no walls blocking signal strength.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <p>For practical convenience, it is natural to place the branch cut in the most accessible location, such as the negative real axis.</p>
+</div>
 </div>
 </div>
 <p>The analytic structure of the function involves branch points connected by cuts. Transforming between configurations involves rotating cuts and canceling overlapping segments. For example, evaluating:</p>
@@ -541,17 +511,14 @@ Tip
 </span></p>
 <p>The product of these results is <span class="math inline">-\sqrt{2}</span>.</p>
 <p>In the router analogy, resonances are like routers in a house. The signal strength (intensity) diminishes with distance from the router. Sitting close to a router (resonance) ensures strong Internet (amplitude), while moving away weakens it. The complex plane is structured like a multi-floor house, with cuts representing the map of connected rooms.</p>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-important">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <p>The real axis is where observers (people on the couch) reside, but routers on other floors (sheets) still influence the signal. Gates (branch cuts) act as staircases connecting floors, allowing access from specific directions.</p>
+</div>
 </div>
 </div>
 <p>The routers (resonances) are visible on each floor if they lie above the threshold. The farther the router, the weaker its influence, analogous to poles in the complex plane. The picture of floors and routers helps visualize the analytic structure, though it can become overwhelming.</p>
@@ -563,17 +530,14 @@ Cosine simularity: 0.9136396991673359
 <h2 data-number="13" class="anchored" data-anchor-id="poles-and-resonances-in-the-complex-plane"><span class="header-section-number">13</span> Poles and Resonances in the Complex Plane</h2>
 <p>The branch cut can be placed in a convenient location, such as to the right, but it can also be rotated to the left. This exposes a larger range of the complex plane for analysis, even though the function may no longer be real.</p>
 <p>When measuring an amplitude above threshold (at <span class="math inline">(M_1 + M_2)^2</span>), the observed value is influenced by nearby structures in the complex plane. If a resonance appears in the data, it corresponds to a pole beneath it in the complex plane.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <p>Resonances are always associated with poles, and this is how we define particles — as poles in the amplitude.</p>
+</div>
 </div>
 </div>
 <p>A single-pole amplitude has the form:</p>
@@ -586,31 +550,25 @@ A(s) = \frac{1}{s - s_0}
 <li><p><strong>Width of the pole</strong>: Twice the imaginary part of <span class="math inline">\sqrt{s_0}</span> (i.e., <span class="math inline">\Gamma = -2 \ \text{Im}(\sqrt{s_0})</span>)</p></li>
 </ul>
 <p>These quantities relate to the experimentally observed mass and width of the resonance.</p>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-important">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <p>The pole is literally a zero of the denominator in the amplitude, and its position in the complex plane determines the physical properties of the resonance.</p>
 </div>
 </div>
+</div>
 <p>The influence of a pole diminishes with distance, analogous to signal strength weakening as you move away from a router. The complex plane acts like a multi-level structure, where resonances (poles) on different “floors” (sheets) still affect observations made on the real axis.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <p>For practical analysis, it is often most convenient to place branch cuts where they provide the clearest access to the poles of interest.</p>
+</div>
 </div>
 </div>
 <p>The observed amplitude at a given point on the real axis is shaped by nearby poles, and their effects are directly visible in the data. This framework connects the mathematical structure of the amplitude to measurable physical quantities.</p>
@@ -623,17 +581,14 @@ Cosine simularity: 0.940092977628945
 <p>Pole locations are related to the observed mass and width, which are experimentally measurable. When observing a signal, it has a peak location and a full width at half maximum (FWHM). For narrow resonances, the width <span class="math inline">\Gamma</span> is approximately equal to the FWHM, and the mass <span class="math inline">M</span> is approximately equal to the peak location. However, this is not the case for broad resonances.</p>
 <p>The analytic structure of this function is simply a pole — there are no branch points or other complexities. A slightly more complex example involves the relativistic Wigner case, which includes a pole in the <span class="math inline">K</span>-matrix and a square root branch point from phase space. The <span class="math inline">K</span>-matrix is a method to incorporate poles while maintaining the correct analytic structure, and it works for multiple loops.</p>
 <p>The ultimate goal in data analysis is to characterize resonances by their pole mass and width. This is achieved using parameterizations like the <span class="math inline">K</span>-matrix or other frameworks.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <p>For narrow resonances, the pole mass and width directly correspond to the observed peak and FWHM, but this approximation breaks down for broader resonances.</p>
+</div>
 </div>
 </div>
 <p>The <span class="math inline">K</span>-matrix ensures the proper analytic structure, including poles and branch cuts, while remaining applicable to multi-loop processes.</p>
@@ -646,17 +601,14 @@ Cosine simularity: 0.9481211051651367
 <p>We parameterize the amplitude using the <span class="math inline">K</span>-matrix or, in simpler cases, the Breit-Wigner formula, which is a limiting case of the <span class="math inline">K</span>-matrix unless constraints are applied. The amplitude’s expression can be complex, with many terms, but it remains an analytic function. By fitting data, we determine the parameters and then explore the analytic structure.</p>
 <p>For branch points, you must decide their placement (e.g., to the left or right in the complex plane). Importantly, all features in the amplitude—peaks, spikes, or cusps—originate from singularities in the complex plane. A peak typically indicates a pole, while a cusp (seen in <span class="math inline">|A|^2</span> vs.&nbsp;<span class="math inline">S</span> plots) corresponds to another type of branch point.</p>
 <p>Every threshold introduces a singularity. For two-particle systems, this is a branch point. For example, <span class="math inline">\pi\pi</span> or <span class="math inline">KK</span> thresholds introduce branch points at specific energies (e.g., <span class="math inline">KK</span> at 1 GeV). These manifest as spikes in the amplitude, signaling the presence of a branch point in the complex plane.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <p>Each branch point requires attaching a “tail” (branch cut) in the complex plane, which influences the amplitude’s behavior.</p>
+</div>
 </div>
 </div>
 <p>The <span class="math inline">K</span>-matrix method ensures the correct analytic structure, incorporating both poles and branch points while remaining applicable to multi-loop processes.</p>
@@ -669,17 +621,14 @@ Cosine simularity: 0.9598991744416047
 <p>Every branch point requires attaching a “tail” (branch cut) in the complex plane, and the placement of the cut is arbitrary — it’s up to you how to draw it. However, this introduces additional Riemann surfaces.</p>
 <p>For a triangle diagram, if the amplitude has square root singularities at threshold, these thresholds only open new surfaces in the complex plane. The real singularities — or the strong features that produce intensity peaks — are poles.</p>
 <p>When the amplitude squared exhibits threshold behavior but rises sharply and then falls, this suggests the presence of nearby poles. If the poles lie below threshold, the amplitude peaks at that location. In such cases, this typically indicates a bound state — a pole on the real axis. However, a pole on the real axis does not produce a resonance-like peak.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <p>Threshold enhancements are often signs of poles below threshold, which correspond to bound states.</p>
+</div>
 </div>
 </div>
 <p>An analogous example is the signal strength from a router: the intensity is strongest near the router and diminishes with distance. This is how threshold enhancements can be understood. There is also the phenomenon of poles at the same locations but beneath the threshold.</p>
@@ -701,17 +650,14 @@ Cosine simularity: 0.9755648752216739
 <li>Or is it a resonance in the complex plane unrelated to a threshold?</li>
 </ul>
 <p>Relation to a threshold indicates molecular nature. Every threshold involves two masses summed together, implying a continuum — one particle interacting with another. If a pole is related to a threshold, part of the wave function for this state is likely of molecular type.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <p>Identifying thresholds and the complex structure of resonance poles is crucial for determining whether a state has molecular characteristics.</p>
+</div>
 </div>
 </div>
 <!--
@@ -722,17 +668,14 @@ Cosine simularity: 0.924689262282351
 <h2 data-number="18" class="anchored" data-anchor-id="false-thresholds-and-imaginary-parts-in-amplitude-analysis"><span class="header-section-number">18</span> False Thresholds and Imaginary Parts in Amplitude Analysis</h2>
 <p>The expression <span class="math inline">(S - M_1 + M_2)^2</span> corresponds to the “soil threshold,” but it is actually a <strong>false threshold</strong>. It appears artificially in our calculations due to the breakup momentum. However, the amplitude itself is not supposed to have a singularity at this point.</p>
 <p>This indicates that you should not take this expression literally and continue it beyond the threshold. Instead, the correct approach involves using the phase space factor <span class="math inline">\frac{2p}{\sqrt{S}}</span>, which is the <strong>imaginary part</strong> of the amplitude.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <p>The false threshold arises when only the imaginary part of the amplitude is considered. If you take the full bubble diagram, the false threshold disappears.</p>
+</div>
 </div>
 </div>
 <p>The imaginary part can be derived from unitarity: when you cut the diagram, it corresponds to the product of matrix elements (both equal to 1) and the two-body phase space. This is why the false threshold appears — it is an artifact of isolating the imaginary part.</p>
