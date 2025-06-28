@@ -1,4 +1,4 @@
-### Angular Distributions, Kinematics Variables, and Dalitz Plots in Two- and Three-Body Scattering
+## Angular Distributions, Kinematics Variables, and Dalitz Plots in Two- and Three-Body Scattering
 
 
 
@@ -112,7 +112,7 @@ $$
 ::: callout-note
 The **Jacobian** for transforming to Mandelstam variables is **constant**, so Dalitz plots directly reflect dynamics.
 :::
-### Charm Decay Dynamics and Dalitz Plot Analysis of $\Lambda_c \to p K \pi$
+## Charm Decay Dynamics and Dalitz Plot Analysis of $\Lambda_c \to p K \pi$
 
 
 You can see the example of the triple decay that I have here of the $\Lambda_c$ baryon going to the proton, kaon, and pion.
@@ -251,7 +251,7 @@ $$
 where $\alpha$ depends on the resonance spin.
 This explains why some configurations are more probable than others.
 
-### Angular Distributions, Spin, and Wigner D-Functions in Particle Decays
+## Angular Distributions, Spin, and Wigner D-Functions in Particle Decays
 
 
 **Very good.**
@@ -417,7 +417,7 @@ That's easy.
 
 But in the general case, you have many of these two-variable functions, and the way to write the amplitude is to **sum over the intermediate spin** and to...
 
-### Helicity Amplitudes and Rotation Matrices in Cascade Decays
+## Helicity Amplitudes and Rotation Matrices in Cascade Decays
 
 
 Another thing I would like to say is that for simplicity, we are going to align. We are going to consider this $X_3$—they are different resonances, the two resonances from $RTPX$, and $X$ reland has to go through from the initial state.
@@ -476,7 +476,7 @@ As simple as that.
 
 ---
 
-### Predicting Angle Distributions and Partial Wave Analysis in Particle Decays
+## Predicting Angle Distributions and Partial Wave Analysis in Particle Decays
 
 
 
@@ -577,7 +577,7 @@ This is Martin Spearman's *Elementary Particle Theory*, and **Chapter 4 is funda
 - Introduces vectors with a bit of group theory—without heavy details.
 - A **really good book** for insights on particle definitions.
 
-### Identifying Decays via Dalitz Plot Kinematics
+## Identifying Decays via Dalitz Plot Kinematics
 
 
 I left you with an **exercise**, not a quiz. There are some Dalitz plots from CLEO and BaBar, and I have removed the labels. I don’t tell you which particles are in the final state. I only mention that one of them is a $D$ decay and another is a $D_s$ decay.
