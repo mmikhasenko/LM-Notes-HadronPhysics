@@ -14,10 +14,11 @@ def transform_file(filepath):
         content,
         flags=re.DOTALL
     )
+    
     # Render lists
     content = re.sub(
-        r':\n((> )?(?:1\.|-|\*))\s',
-        lambda m: f":\n>\n{m.group(1)} " if m.group(2) else f":\n\n{m.group(1)} ",
+        r'(\n(?:> )?[^-].*\n)((> )?(?:1\.|-|\*))\s',
+        lambda m: f"{m.group(1)}{'>' if m.group(3) else ''}\n{m.group(2)}",
         content,
         flags=re.DOTALL
     )
