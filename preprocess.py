@@ -14,6 +14,13 @@ def transform_file(filepath):
         content,
         flags=re.DOTALL
     )
+    # Render lists
+    content = re.sub(
+        r':\n((?:> )?(?:1\.|-|\*))\s',
+        lambda m: f":\n\n{m.group(1)} ",
+        content,
+        flags=re.DOTALL
+    )
     
     # Match entire callout block (header + all following lines starting with >)
     pattern = re.compile(
