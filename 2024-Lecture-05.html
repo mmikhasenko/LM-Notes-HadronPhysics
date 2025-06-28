@@ -507,19 +507,19 @@ D^{j}(\theta) = \exp(-i\theta J_y)
 </section>
 <section id="rotational-properties-and-aligned-kinematics-in-cascade-decays" class="level3">
 <h3 class="anchored" data-anchor-id="rotational-properties-and-aligned-kinematics-in-cascade-decays">Rotational Properties and Aligned Kinematics in Cascade Decays</h3>
-<p>For simplicity, we are going to consider <strong>aligned kinematics</strong>. We will treat $ X_3 $ as different decay products - one particle from the initial state $ X $ decays through $ R $ to particles 1 and 2.</p>
+<p>For simplicity, we are going to consider <strong>aligned kinematics</strong>. We will treat <span class="math inline">\(X_3\)</span> as different decay products - one particle from the initial state <span class="math inline">\(X\)</span> decays through <span class="math inline">\(R\)</span> to particles 1 and 2.</p>
 <hr>
 <p>Let’s look at the <strong>center-of-mass frame</strong> (CM frame). The general expression is extendable to any cascade decays. I will give you the general formula, and we’ll focus on understanding it rather than deriving it.</p>
 <p>The formula has two components: 1. <strong>A model-independent part</strong> governed by group theory and angular momentum 2. <strong>Particle interaction terms</strong> that must be inserted</p>
 <hr>
-<p>The $ H $ terms represent the remaining dynamics hidden inside particle interactions. This includes effects from: - Weak interactions - Strong interactions - Electromagnetic interactions</p>
-<p>The physics is contained in $ H $, while the rest describes the <strong>rotational properties</strong> of the system. For hadronic interactions, $ H $ is often unknown because we lack a way to parameterize it.</p>
+<p>The <span class="math inline">\(H\)</span> terms represent the remaining dynamics hidden inside particle interactions. This includes effects from: - Weak interactions - Strong interactions - Electromagnetic interactions</p>
+<p>The physics is contained in <span class="math inline">\(H\)</span>, while the rest describes the <strong>rotational properties</strong> of the system. For hadronic interactions, <span class="math inline">\(H\)</span> is often unknown because we lack a way to parameterize it.</p>
 <hr>
-<p>For a particle $ X $ with spin projection $ _X $ decaying to particles 1 and 2, we write:</p>
+<p>For a particle <span class="math inline">\(X\)</span> with spin projection <span class="math inline">\(\lambda_X\)</span> decaying to particles 1 and 2, we write:</p>
 <p><span class="math display">\[
 A = \sum_{\lambda_X, \lambda_3} H_{\lambda_X \lambda_3} D^{J_X}_{\lambda_X, \lambda_0 - \lambda_3}(0) \times H'_{\lambda_1 \lambda_2} D^{J_X}_{\lambda_X, \lambda_1 - \lambda_2}(\theta, \phi)
 \]</span></p>
-<p>Here, $ D $ represents the <strong>rotation orientation</strong> of the decay. The first index indicates the decaying particle, and the second index describes the decay products. The spin is quantized along the direction of motion.</p>
+<p>Here, <span class="math inline">\(D\)</span> represents the <strong>rotation orientation</strong> of the decay. The first index indicates the decaying particle, and the second index describes the decay products. The spin is quantized along the direction of motion.</p>
 <hr>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -533,16 +533,16 @@ Important
 <div class="callout-body-container callout-body">
 <p>Key rotational transformation: <span class="math display">\[
 D^{J}_{\lambda, \lambda'}(\theta, \phi) = \langle J, \lambda | e^{-i\phi J_z} e^{-i\theta J_y} | J, \lambda' \rangle
-\]</span> This Wigner $ D $-matrix describes how spin projections change under rotation.</p>
+\]</span> This Wigner <span class="math inline">\(D\)</span>-matrix describes how spin projections change under rotation.</p>
 </div>
 </div>
 <hr>
-<p>For particle $ X $, the spin projection $ _X $ is along its momentum. When $ X $ decays to particles 1 and 2, they emerge at some angle relative to $ X $’s motion. To account for this, we must adjust the quantization axis by rotating the spin state.</p>
-<p>In <strong>aligned kinematics</strong> ($ = = 0 $), the rotation simplifies. If the angles are zero, no rotation is needed, and the Wigner $ D $-matrix reduces to a delta function:</p>
+<p>For particle <span class="math inline">\(X\)</span>, the spin projection <span class="math inline">\(\lambda_X\)</span> is along its momentum. When <span class="math inline">\(X\)</span> decays to particles 1 and 2, they emerge at some angle relative to <span class="math inline">\(X\)</span>’s motion. To account for this, we must adjust the quantization axis by rotating the spin state.</p>
+<p>In <strong>aligned kinematics</strong> (<span class="math inline">\(\phi = \theta = 0\)</span>), the rotation simplifies. If the angles are zero, no rotation is needed, and the Wigner <span class="math inline">\(D\)</span>-matrix reduces to a delta function:</p>
 <p><span class="math display">\[
 A = \sum_{\lambda_X} H_{\lambda_X (\lambda_0 - \lambda_3)} \delta_{\lambda_X, \lambda_0 - \lambda_3} \times H'_{\lambda_1 \lambda_2} D^{J_X}_{\lambda_X, \lambda_1 - \lambda_2}(0, 0)
 \]</span></p>
-<p>This constrains $ _X = _0 + _3 $, leading to the final simplified expression:</p>
+<p>This constrains <span class="math inline">\(\lambda_X = \lambda_0 + \lambda_3\)</span>, leading to the final simplified expression:</p>
 <p><span class="math display">\[
 A = H_0 D^{J_X}_{\lambda_X, \lambda_3}(\theta) \quad \text{where} \quad \lambda_X = \lambda_0 + \lambda_3
 \]</span></p>
@@ -555,17 +555,17 @@ A = H_0 D^{J_X}_{\lambda_X, \lambda_3}(\theta) \quad \text{where} \quad \lambda_
 <p>What is inside these blobs? What’s inside this block, or this blob and that blob? To predict all the values, I just need these two components.</p>
 <p>The number of values here is given by the <strong>spin multiplicity factor</strong>: <span class="math display">\[
 (2j_1 + 1) \times (2j_2 + 1),
-\]</span> where $ j_1 $ and $ j_2 $ are the spins of the initial particles. These values might also depend on particle masses, such as the mass of $ X $.</p>
+\]</span> where <span class="math inline">\(j_1\)</span> and <span class="math inline">\(j_2\)</span> are the spins of the initial particles. These values might also depend on particle masses, such as the mass of <span class="math inline">\(X\)</span>.</p>
 <hr>
 <p>A similar number of parameters is needed for the other components, but there’s a reasonable way to approximate them. Often, in experimental analysis, we initially assume these are constants or depend only on particle properties.</p>
-<p>For simplicity, I’ll say this one is a constant $ c $, and this one is particle-dependent. With this, I should be able to compute the angle distribution.</p>
+<p>For simplicity, I’ll say this one is a constant <span class="math inline">\(c\)</span>, and this one is particle-dependent. With this, I should be able to compute the angle distribution.</p>
 <hr>
 <p>In this case, I’ll fix the mass of one particle and the intensity observed along the line. The <strong>differential cross section</strong> is given by: <span class="math display">\[
 \frac{d\Gamma}{d\cos\theta},
 \]</span> where <span class="math inline">\(\cos\theta\)</span> is used because it has a better Jacobian—no need for the <span class="math inline">\(\sin\theta\)</span> Jacobian.</p>
 <p>The matrix element is proportional to the transition amplitude: <span class="math display">\[
 |\mathcal{M}|^2.
-\]</span> Here, $ $ is fixed, and the distribution ranges from <span class="math inline">\(-1\)</span> to <span class="math inline">\(1\)</span>.</p>
+\]</span> Here, <span class="math inline">\(\mathcal{M}\)</span> is fixed, and the distribution ranges from <span class="math inline">\(-1\)</span> to <span class="math inline">\(1\)</span>.</p>
 <p>If we plot <span class="math inline">\(\theta\)</span> versus <span class="math inline">\(\cos\theta\)</span>, <span class="math inline">\(\theta = 0\)</span> corresponds to <span class="math inline">\(\cos\theta = 1\)</span>, and we scan from <span class="math inline">\(-1\)</span> to <span class="math inline">\(1\)</span>. A flat distribution is one possibility.</p>
 <p>For particles with spin, you often see a <strong>parabolic distribution</strong>—a second-order polynomial in <span class="math inline">\(\cos\theta\)</span>: <span class="math display">\[
 \frac{d\Gamma}{d\cos\theta} = A + B\cos\theta + C\cos^2\theta.
@@ -581,18 +581,18 @@ Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Key Note on Quantum Amplitudes</strong>: $ $ represents the <strong>quantum transition amplitude</strong>—a probability amplitude that is squared to give the observed probability. The helicity amplitude $ G $ appears squared in experiments, as we only measure $ |G|^2 $.</p>
+<p><strong>Key Note on Quantum Amplitudes</strong>: <span class="math inline">\(\mathcal{M}\)</span> represents the <strong>quantum transition amplitude</strong>—a probability amplitude that is squared to give the observed probability. The helicity amplitude <span class="math inline">\(G\)</span> appears squared in experiments, as we only measure <span class="math inline">\(|G|^2\)</span>.</p>
 </div>
 </div>
 <hr>
 <p>Moreover, we often deal with <strong>unpolarized decays</strong>, so distributions are averaged. You square the amplitude, sum over initial and final spin projections, and compare with experimental observations.</p>
 <p>The first step in analysis isn’t to guess the amplitude but to project the angular distributions onto <strong>orthogonal polynomials</strong>. This provides a nice basis for expansion.</p>
-<p>Any function from <span class="math inline">\(-1\)</span> to <span class="math inline">\(1\)</span> can be expanded in <strong>Legendre polynomials</strong> $ P_() $, which are related to the spin of the produced particle. This is called <strong>partial wave analysis</strong> or, for differential cross sections, <strong>moment analysis</strong>.</p>
+<p>Any function from <span class="math inline">\(-1\)</span> to <span class="math inline">\(1\)</span> can be expanded in <strong>Legendre polynomials</strong> <span class="math inline">\(P_\ell(\cos\theta)\)</span>, which are related to the spin of the produced particle. This is called <strong>partial wave analysis</strong> or, for differential cross sections, <strong>moment analysis</strong>.</p>
 <p>Partial wave analysis models the cross section with free parameters for the amplitudes, allowing you to infer what’s inside the blobs by fitting data. As a first step, projecting onto polynomials gives combinations of these parameters, though the interpretation isn’t always straightforward.</p>
 <hr>
 <p>We haven’t discussed much the differences between canonical states and helicity states, only touching on how states are defined in the rest frame. For deeper insights, I recommend <strong>Chapter 4 of Martin Spearman’s <em>Elementary Particle Theory</em></strong>.</p>
 <p>This book provides excellent coverage, starting from the Lorentz group, introducing vectors, and lightly touching on group theory without overwhelming detail. It’s a fun and insightful read.</p>
-<p>For practice, I’ve prepared an exercise using <strong>Dalitz plots</strong> from CLEO and BaBar. The labels are removed, but the axes are intact. One plot is for a $ D $ decay, another for a $ D_s $ decay. Your task is to identify the decays using kinematics and deduce the masses.</p>
+<p>For practice, I’ve prepared an exercise using <strong>Dalitz plots</strong> from CLEO and BaBar. The labels are removed, but the axes are intact. One plot is for a <span class="math inline">\(D\)</span> decay, another for a <span class="math inline">\(D_s\)</span> decay. Your task is to identify the decays using kinematics and deduce the masses.</p>
 <p>I’ll distribute one plot per group. If you have time tomorrow at 8 AM, we can discuss further. Apologies for the delay today—thank you for your patience!</p>
 <hr>
 <ul>
