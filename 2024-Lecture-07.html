@@ -224,8 +224,8 @@ Important
 <p>The heavy quarks (charm) are explicitly listed in the notation because they are conserved quantities in decays, while light quarks can be inferred from the context.</p>
 </div>
 </div>
-<p>For example:<br>
-- <span class="math inline">\Sigma_c</span> indicates a charmed baryon with two light quarks (e.g., <span class="math inline">uu</span>, <span class="math inline">ud</span>, or <span class="math inline">dd</span>).<br>
+<p>For example:</p>
+<p>-<span class="math inline">\Sigma_c</span> indicates a charmed baryon with two light quarks (e.g., <span class="math inline">uu</span>, <span class="math inline">ud</span>, or <span class="math inline">dd</span>).<br>
 - <span class="math inline">P_{cc}</span> denotes a pentaquark state with two charm quarks and three light quarks.</p>
 <p>In this case, the <span class="math inline">P_c^+</span> state likely has the quark content <span class="math inline">ud</span> for the light quarks.</p>
 <p>The mass of the <span class="math inline">P_c^+</span> is approximately the threshold mass of <span class="math inline">\Sigma_c^+</span> and <span class="math inline">D^0</span>, since the binding energy is small. This is why we say the state “sits at the threshold.”</p>
@@ -238,8 +238,8 @@ Cosine simularity: 0.9056557083938158
 <p>The hadronic threshold is approximately 10 MeV. The mass of the <span class="math inline">\Sigma_c^+</span> is around 2.5 GeV, and the mass of the <span class="math inline">D^0</span> is around 2 GeV, so the sum is roughly 4.5 GeV. This is the energy range where such formations would be searched for.</p>
 <p>For quantum numbers, we have spin-parity combinations of <span class="math inline">1/2^-</span> and <span class="math inline">3/2^-</span> due to the <span class="math inline">S</span>-wave reference. This implies two expected states: one with spin-parity <span class="math inline">1/2^-</span> and another with <span class="math inline">3/2^-</span>.</p>
 <p>There is a lower bound on the lifetime of this particle, which arises from the binding of its constituents. The decay of this particle must conserve energy. In the rest frame of the particle, the total energy available is just its mass. Since the <span class="math inline">P_c^+</span> is below the threshold for strong decay into <span class="math inline">\Sigma_c^+</span> and <span class="math inline">D^0</span>, it cannot decay that way.</p>
-<p>The possible decay channels are:<br>
-1. <strong>Electromagnetic annihilation</strong> of the <span class="math inline">c\bar{c}</span> pair, but this is highly suppressed because electromagnetic processes are much weaker than other interactions.<br>
+<p>The possible decay channels are:</p>
+<p>1.<strong>Electromagnetic annihilation</strong> of the <span class="math inline">c\bar{c}</span> pair, but this is highly suppressed because electromagnetic processes are much weaker than other interactions.<br>
 2. <strong>Strong annihilation</strong> of the <span class="math inline">c\bar{c}</span> pair into lighter quarks, but this is also suppressed for heavy quarks like charm. The heavier the quarks, the smaller the annihilation probability.</p>
 <p>The dominant decay mechanism is the <strong>weak decay</strong> of one of the charm quarks. For example, one charm quark can transition to an <span class="math inline">s</span>-quark by emitting a <span class="math inline">W</span> boson:</p>
 <p><span class="math display">
@@ -411,8 +411,8 @@ Cosine simularity: 0.9493055528168397
 <section id="quantum-transition-amplitudes-and-analyticity-in-scattering-processes" class="level2" data-number="7">
 <h2 data-number="7" class="anchored" data-anchor-id="quantum-transition-amplitudes-and-analyticity-in-scattering-processes"><span class="header-section-number">7</span> Quantum Transition Amplitudes and Analyticity in Scattering Processes</h2>
 <p>The true boundary for scattering is often given by a sixth-order polynomial. In the center is the Dalitz plot, which represents our physical domain. There are four regions corresponding to different physical reactions, and it’s crucial to recognize that a single amplitude matrix element describes all four.</p>
-<p>If you precisely constrain this function over its domain, it yields a complex transition amplitude (e.g., <span class="math inline">1 + 3i</span>) for any point. The same matrix element can compute transition amplitudes for different processes, such as decays. This framework works exceptionally well in QED. For instance, the same matrix element describes:<br>
-- Compton scattering (photon-electron → photon-electron)<br>
+<p>If you precisely constrain this function over its domain, it yields a complex transition amplitude (e.g., <span class="math inline">1 + 3i</span>) for any point. The same matrix element can compute transition amplitudes for different processes, such as decays. This framework works exceptionally well in QED. For instance, the same matrix element describes:</p>
+<p>-Compton scattering (photon-electron → photon-electron)<br>
 - Electron-positron annihilation into two photons<br>
 - Two-photon production of an electron-positron pair</p>
 <p>In hadron physics, however, the situation is more complicated due to the lack of a perturbative framework. When modeling the Dalitz plot, we approximate resonances as finite chunks, but this leads to unphysical infinities in the scattering amplitude. The divergence occurs because we truncate the resonance spectrum — the physics demands an infinite number of resonances to maintain analyticity.</p>
@@ -458,12 +458,10 @@ Note
 <p>Solving <span class="math inline">\Phi(s, t, u) = 0</span> yields the boundaries of the physical domain. For a fixed value of <span class="math inline">s</span> (e.g., <span class="math inline">s = -50</span> or <span class="math inline">s = +20</span>), this equation provides two solutions. The function is straightforward to implement computationally.</p>
 <p>The <strong>Kibble function</strong> extends this by combining three Klein functions, each corresponding to a different channel:</p>
 <ul>
-<li><span class="math inline">\Lambda_1</span> for the first channel<br>
-</li>
-<li><span class="math inline">\Lambda_2 = \lambda(t, m_X^2, m_X^2)</span> for the second channel<br>
-</li>
-<li><span class="math inline">\Lambda_3 = \lambda(u, m_X^2, m_B^2)</span> for the third channel</li>
+<li><span class="math inline">\Lambda_1</span> for the first channel</li>
 </ul>
+<p>-<span class="math inline">\Lambda_2 = \lambda(t, m_X^2, m_X^2)</span> for the second channel<br>
+- <span class="math inline">\Lambda_3 = \lambda(u, m_X^2, m_B^2)</span> for the third channel</p>
 <p>Here, <span class="math inline">\lambda</span> denotes the standard Källén triangle function.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -535,8 +533,8 @@ Cosine simularity: 0.9294126983010533
 <p><span class="math display">
 A - A^{\dagger} = i \int A^{*} A \, d\Phi  
 </span></p>
-<p><em>Terms:</em><br>
-- <span class="math inline">A</span>: Scattering amplitude.<br>
+<p><em>Terms:</em></p>
+<p>-<span class="math inline">A</span>: Scattering amplitude.<br>
 - <span class="math inline">A^{\dagger}</span>: Hermitian conjugate of <span class="math inline">A</span>.<br>
 - <span class="math inline">i</span>: Imaginary unit.<br>
 - <span class="math inline">\int d\Phi</span>: Integration over the phase space of intermediate states.</p>
@@ -626,8 +624,8 @@ Cosine simularity: 0.9325367733984057
 <section id="derivation-of-the-unitarity-condition" class="level2" data-number="15">
 <h2 data-number="15" class="anchored" data-anchor-id="derivation-of-the-unitarity-condition"><span class="header-section-number">15</span> Derivation of the Unitarity Condition</h2>
 <p>The unitarity condition constrains our scattering amplitude. To see this, we start from the condition and derive the constraints on <span class="math inline">T</span>. The approach involves manipulating the expression <span class="math inline">1 - (1 + iT)(1 - iT^\dagger)</span>.</p>
-<p>Let’s verify the algebra:<br>
-- The term <span class="math inline">(1 + iT)(1 - iT^\dagger)</span> expands to <span class="math inline">1 - iT^\dagger + iT + T T^\dagger</span>.<br>
+<p>Let’s verify the algebra:</p>
+<p>-The term <span class="math inline">(1 + iT)(1 - iT^\dagger)</span> expands to <span class="math inline">1 - iT^\dagger + iT + T T^\dagger</span>.<br>
 - Subtracting this from <span class="math inline">1</span> gives <span class="math inline">i(T - T^\dagger) + T T^\dagger</span>.<br>
 - Multiplying both sides by <span class="math inline">i</span> shifts the minus sign to <span class="math inline">T^\dagger</span> and removes the <span class="math inline">i</span> on the left, yielding:</p>
 <p><span class="math display">
@@ -637,8 +635,8 @@ T - T^\dagger = i T T^\dagger
 <p><span class="math display">
 \langle f | T - T^\dagger | i \rangle = i \sum_m \langle f | T^\dagger | m \rangle \langle m | T | i \rangle \frac{d^3 p^{(m)}}{(2 \pi)^3 2 E_m}
 </span></p>
-<p>Here, the delta functions enforce energy-momentum conservation:<br>
-- The first delta function connects the initial state to the intermediate state: <span class="math inline">P_1 + P_2 = P_1^{(m)} + P_2^{(m)}</span>.<br>
+<p>Here, the delta functions enforce energy-momentum conservation:</p>
+<p>-The first delta function connects the initial state to the intermediate state: <span class="math inline">P_1 + P_2 = P_1^{(m)} + P_2^{(m)}</span>.<br>
 - The second delta function connects the intermediate state to the final state: <span class="math inline">P_1' + P_2' = P_1^{(m)} + P_2^{(m)}</span>.</p>
 <p>By isolating the delta function that relates the initial and final states, we simplify the phase space integral to:</p>
 <p><span class="math display">

@@ -104,7 +104,8 @@ Cosine simularity: 0.9264557560801463
 The parity for a multiplet is straightforward to compute. Combining $1^-$ and $1^+$ and $1^-$ in an S-wave gives $1^-$, so the S-wave configuration works.  
 
 For higher partial waves:  
-- In the D-wave, we have states with $L = 0, 1, 2$.  
+
+-In the D-wave, we have states with $L = 0, 1, 2$.  
 - In the F-wave, we have $L = 1, 2, 3$.  
 
 The charge conjugation quantum number is a key consideration here. The $\pi$ meson has quantum numbers $0^- +$, while $B_1$ has $1^+ -$. The decay is possible, but charge conjugation is $+$ in this case, indicating isospin violation.  
@@ -420,7 +421,8 @@ In the Standard Model, the weak interaction mediated by the $W$ boson decays onl
 The weak interaction vertex is expressed as $V - A$, where $V$ stands for vector ( $\gamma^\mu$ ) and $A$ stands for axial ( $\gamma^\mu \gamma^5$ ). The Lagrangian for lepton interactions contains a term like $\gamma^\mu (1 - \gamma^5)$, which can be rewritten using projection operators. Moving $(1 - \gamma^5)$ to the other side gives $(1 + \gamma^5)$, and the interaction vertex becomes $\gamma^\mu P_L$.  
 
 This vertex structure implies that when a $W$ boson decays, it produces an electron and an antineutrino in specific chiral states:  
-- The electron ( $e^-$ ) is left-handed (spin opposite to motion).  
+
+-The electron ( $e^-$ ) is left-handed (spin opposite to motion).  
 - The antineutrino is right-handed (spin aligned with motion).  
 
 ::: callout-note
@@ -469,10 +471,10 @@ $$
 $$
 
 This describes the dynamics of quarks and gluons. The term $G_{\mu\nu}^a$ represents the gluon field strength tensor, which is the gauge part of the Lagrangian. The term $\bar{\Psi}_i (i\,\mathrlap{\,/}D - m) \Psi_i$ includes the quark fields:  
-- $i\,\mathrlap{\,/}D \Psi_i$ is the kinetic term,  
-- $m \bar{\Psi}_i \Psi_i$ is the mass term,  
 
--$\mathrlap{\,/}D$ contains the interaction with the gluon field via the covariant derivative.  
+-$i\,\mathrlap{\,/}D \Psi_i$ is the kinetic term,  
+- $m \bar{\Psi}_i \Psi_i$ is the mass term,  
+- $\mathrlap{\,/}D$ contains the interaction with the gluon field via the covariant derivative.  
 
 The index $i$ labels the quark flavor (e.g., up, down, strange, etc.), and there are six flavors in total. The index $a$ corresponds to color, and $T^a$ are the generators of the gauge group $SU(3)_c$, connected to local gauge symmetry.  
 

@@ -315,11 +315,13 @@ A typical lattice QCD setup extends around 200 points in the time dimension and 
 The lattice size and step count are optimized through numerical testing—larger volumes and finer discretization improve accuracy but increase computational cost.
 :::
 Two primary challenges arise:  
-1. **Finite volume effects** (due to the box size).  
+
+1.**Finite volume effects** (due to the box size).  
 2. **Discretization errors** (due to step size).  
 
 To mitigate these:  
-- Increase the volume to reduce finite-volume effects.  
+
+-Increase the volume to reduce finite-volume effects.  
 - Decrease step size to minimize discretization errors.  
 
 Both adjustments come at a higher computational cost. The goal is to use the minimal number of points required for reliable results, as lattice QCD calculations are numerically intensive.  
@@ -531,9 +533,9 @@ $$
 $$
 
 where $E_1$ is the energy of the lowest excited state. This is a common method to extract energy levels numerically. The energy obtained depends on the operator used:  
-- For pion-like operators, it approaches the pion mass.  
 
--For vector quantum number operators, it approaches the rho meson mass.  
+-For pion-like operators, it approaches the pion mass.  
+- For vector quantum number operators, it approaches the rho meson mass.  
 
 ::: callout-important
 The periodic boundary condition leads to momentum quantization.

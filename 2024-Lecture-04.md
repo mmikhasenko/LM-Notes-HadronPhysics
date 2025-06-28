@@ -71,7 +71,8 @@ When calculating magnetic moments, it is simplest to work with the maximal spin 
 The excitation pattern of the $\Sigma_b$ baryon is determined by its light diquark configuration, which in the ground state has spin $S = 1$ and parity $1/2^+$. A bonus question concerns the isospin partners of this baryon. Since the isospin of the $\Sigma_b$ is $I = 1$, the isospin multiplet has three charge states corresponding to the projections $I_z = +1, 0, -1$.  
 
 The charges of these states are determined by their quark composition:  
-- $\Sigma_b^+$ ( $uu b$ ) has charge $+1$ (like a proton but with a bottom quark).  
+
+-$\Sigma_b^+$ ( $uu b$ ) has charge $+1$ (like a proton but with a bottom quark).  
 - $\Sigma_b^0$ ( $ud b$ ) has charge $0$.  
 - $\Sigma_b^-$ ( $dd b$ ) has charge $-1$.  
 
@@ -128,7 +129,8 @@ $$
 $$
 
 The $\Sigma_b$ baryon's excitation pattern is determined by its light diquark ($S = 1$, $\frac{1}{2}^+$). Its isospin partners form a triplet ($I = 1$) with charges:  
-- $\Sigma_b^+$ ($uu b$): $+1$  
+
+-$\Sigma_b^+$ ($uu b$): $+1$  
 - $\Sigma_b^0$ ($ud b$): $0$  
 - $\Sigma_b^-$ ($dd b$): $-1$  
 
@@ -204,11 +206,13 @@ Hadrons bind in larger objects, such as atomic nuclei, and some hadrons are comp
 Currently, lattice QCD cannot fully address these complexities, so experiments worldwide provide new data and insights. Researchers understand these phenomena by measuring hadron properties and their decays. One approach is to observe hadrons in new decay configurations, which yield valuable information. Another is to measure the same hadron but from different production mechanisms.  
 
 Several laboratories explore these mechanisms:  
-- **Belle II (Japan) and BESIII (China)**: These experiments collide electrons and positrons, which annihilate to produce intermediate states that decay. The resulting particles are studied to understand hadron properties.  
+
+-**Belle II (Japan) and BESIII (China)**: These experiments collide electrons and positrons, which annihilate to produce intermediate states that decay. The resulting particles are studied to understand hadron properties.  
 - **LHC (CERN)**: Here, protons (not proton-antiproton pairs) are collided, producing a high-energy environment with many particles. Among these are long-lived particles like $B$ and $D$ mesons, which travel a few millimeters before decaying. Detectors track these particles, distinguishing primary and secondary vertices.  
 
 Another class of experiments uses **hadronic production**, where a hadron is fired at another hadron without fully describing the kinematics. These are typically fixed-target experiments, such as:  
-- **GLUEX (Jefferson Lab)**: Uses a photon beam on a hydrogen target.  
+
+-**GLUEX (Jefferson Lab)**: Uses a photon beam on a hydrogen target.  
 - **COMPASS (CERN)**: Uses a pion beam on a hydrogen target.  
 
 In these setups, the target particle is either excited or scatters, providing another way to study hadrons.  
@@ -281,7 +285,8 @@ Cosine simularity: 0.9038947237873494
 In the spectrum, the excitation of this system is the $\psi(2S)$, which we refer to simply as "psi" here. The lowest state in the multiplet is called the $J/\psi$, while the four states in the $P$-multiplet are labeled $\chi_{c0}$, $\chi_{c1}$, $\chi_{c2}$, and $h_c$ (with quantum numbers $0^+$, $1^+$, $2^+$, and $1^+$ respectively).  
 
 For data collection, there are two primary methods:  
-1. **Resonance peak sitting**: Accumulating data at the $J/\psi$ peak yields billions of events where the $J/\psi$ is produced and decays into various final states.  
+
+1.**Resonance peak sitting**: Accumulating data at the $J/\psi$ peak yields billions of events where the $J/\psi$ is produced and decays into various final states.  
 2. **Energy scan**: By tuning the beam energy over weeks, we measure the cross section at discrete points, building a profile of the resonance structure.  
 
 The total cross section is a superposition of all possible sub-processes, such as $e^+e^- \to \text{hadrons}$. Some resonances are more prominent in specific decay kinematics, so researchers often analyze a particular final state (e.g., $e^+e^- \to 3\pi$) at a selected scan point to extract hadron properties.  
@@ -312,7 +317,8 @@ The $\Upsilon(4S)$ is a short-lived resonance that decays immediately, leaving t
 A key question is why the beam energies are asymmetric. This design choice is deliberate and clever. By giving the electron and positron beams different energies, the entire system receives a boost when produced. This boost is in the direction of the higher-energy beam (the electron beam) due to energy conservation.  
 
 The boost has a significant effect on the B mesons:  
-- The B mesons gain a substantial longitudinal momentum.  
+
+-The B mesons gain a substantial longitudinal momentum.  
 - They live longer in the laboratory frame due to relativistic time dilation.  
 - They travel farther from the primary vertex before decaying.  
 
@@ -371,7 +377,8 @@ Cosine simularity: 0.9107210040415809
 The typical energy scale for light, low-momentum particles is a few hundred GeV. The LHC has been highly productive in discovering new particles, particularly due to its high cross-section. The cross-section for electron-positron annihilation is much smaller than for proton-proton interactions, enabling the study of hadron production.  
 
 There are two main production mechanisms in collider processes:  
-1. **Prompt production**: The particle of interest originates directly from the primary vertex.  
+
+1.**Prompt production**: The particle of interest originates directly from the primary vertex.  
 2. **Cascade production**: The particle decays weakly, producing a secondary vertex.  
 
 For example, the observation of the $\Omega_c$ baryon and the $\Xi_c^{(*)} $ states in prompt production has significantly impacted hadron spectroscopy. The cascade ($\Xi$) particle, the ground state of the cascade multiplet, decays weakly since the charm or bottom quark is stable under strong interactions.  
@@ -420,8 +427,7 @@ Cosine simularity: 0.9397949583467019
 
 The $u u g c \bar{c}$ combinations represent a resonance. Let’s briefly review fixed target experiments and their techniques, with three examples:  
 
-
-1.**GLUEX at Jefferson Lab**: Uses a 9 GeV photon beam directed at a liquid hydrogen target, which provides protons as the interaction medium.  
+1. **GLUEX at Jefferson Lab**: Uses a 9 GeV photon beam directed at a liquid hydrogen target, which provides protons as the interaction medium.  
 2. **Compass at CERN**: Operates with a pion beam and also employs a liquid hydrogen target.  
 3. **CB-ELSA (corrected from "CD alpha tops")**: Utilizes a photon beam at 2 GeV, focusing on light hadron spectroscopy rather than charm or bottom production.  
 

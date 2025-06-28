@@ -205,7 +205,8 @@ Muons are naturally polarized when produced in pion decays due to the weak inter
 The precision of the experiment is quantified in parts per billion (ppb). The current experimental uncertainty is 63 ppb, while the theoretical prediction is around 100 ppb.  
 
 The hadronic contributions to the muon’s anomalous magnetic moment are significant. Beyond QED corrections, there are electroweak and hadronic effects. Two prominent hadronic contributions are:  
-1. **Hadronic Vacuum Polarization (HVP)**: A photon produces hadrons, which then recombine into a photon. This is represented by the diagram where a photon splits into hadrons and reforms.  
+
+1.**Hadronic Vacuum Polarization (HVP)**: A photon produces hadrons, which then recombine into a photon. This is represented by the diagram where a photon splits into hadrons and reforms.  
 2. **Hadronic Light-by-Light (HLbL) Scattering**: This involves photons interacting via intermediate hadrons. The process can be visualized as light entering and exiting a hadronic blob, with intermediate hadron states like $\pi^0$ or $\eta$ mesons, which decay into two photons.  
 
 The quantum numbers ($J^{PC}$) of the intermediate hadrons must match those of the photon for the process to occur.  
@@ -228,7 +229,8 @@ This measures the relative cross section of electron-positron annihilation into 
 The photon has quantum numbers $J^{PC} = 1^{--}$ (spin 1, parity -1, charge conjugation -1).
 :::
 Examples of mesons with these quantum numbers include:  
-- **Light quark sector**: The $\rho$ meson ( $u\bar{u}$ or $d\bar{d}$ ).  
+
+-**Light quark sector**: The $\rho$ meson ( $u\bar{u}$ or $d\bar{d}$ ).  
 - **Charm sector**: The $J/\psi$ ( $c\bar{c}$ ).  
 - **Bottom sector**: The $\Upsilon$ ( $b\bar{b}$ ).  
 - **Strange sector**: The $\phi$ ( $s\bar{s}$ ).  
@@ -244,7 +246,8 @@ The $\rho$ meson alone accounts for more than 50% of the total hadronic vacuum p
 Hadronic physics cannot be calculated from first principles. Instead, we rely on experimental data, particularly from $e^+e^- \to \text{hadrons}$ cross sections, due to unitarity. The photon's transition to hadrons and back is related to the $e^+e^- \to \text{hadrons}$ cross section because the quantum numbers match ( $1^{--}$ ).  
 
 This allows a mixed theoretical-experimental approach:  
-1. Measure $\sigma(e^+e^- \to \text{hadrons})$ experimentally.  
+
+1.Measure $\sigma(e^+e^- \to \text{hadrons})$ experimentally.  
 2. Use unitarity to relate it to the hadronic vacuum polarization contribution.  
 
 The process is represented by diagrams where a photon fluctuates into hadrons and back, contributing to the muon's anomalous magnetic moment.  
@@ -475,7 +478,8 @@ Let's discuss the first point. The kinematics indicate chirality in the center-o
 The weak interaction vertex involves a $V - A$ structure, represented by $\gamma^\mu (1 - \gamma^5)$. This projects the quark current into left-handed (LH) and right-handed (RH) components. For example, a term like $\bar{u} \gamma^\mu (1 - \gamma^5) u$ ensures the quark is left-handed and the antiquark is right-handed.  
 
 In pion decay, the $W$ boson vertex produces the final-state particles in their chiral configurations:  
-- The positron ($e^+$) is right-handed.  
+
+-The positron ($e^+$) is right-handed.  
 - The electron ($e^-$) would be left-handed.  
 - The neutrino ($\nu_e$) is purely left-handed because it is massless.  
 
@@ -505,7 +509,8 @@ However, this ratio is not as strong as it might appear. The correct answer is t
 The phase space represents the number of kinematic configurations available in the decay. For two-body decays, it reduces to angular configurations, which are the same for both cases. But there is also an energy-dependent factor, which determines how much energy is released in the decay.  
 
 The energy release is larger when the mass difference between the initial and final states is greater. For the pion decay:  
-- The initial energy is given by the pion mass.  
+
+-The initial energy is given by the pion mass.  
 - The final-state particles (e.g., $\mu^+ \nu_\mu$ or $e^+ \nu_e$) carry their own masses.  
 
 In the case of $\pi^+ \to e^+ \nu_e$, the energy release is tiny because the electron mass is negligible, and most of the energy goes into kinetic energy. For $\pi^+ \to \mu^+ \nu_\mu$, the muon mass is much larger, so the energy release is smaller in comparison. This difference in phase space favors the muonic decay.
@@ -772,7 +777,8 @@ The current experimental precision for $a_\mu$ is 63 parts per billion (ppb), wi
 Hadronic corrections are crucial for theoretical calculations of the anomalous magnetic moment, alongside QED and electroweak corrections.
 :::
 There are two prominent hadronic contributions:  
-1. **Hadronic Vacuum Polarization (HVP)**: A photon produces hadrons, which then reconvert into a photon. This is a vacuum polarization effect.  
+
+1.**Hadronic Vacuum Polarization (HVP)**: A photon produces hadrons, which then reconvert into a photon. This is a vacuum polarization effect.  
 2. **Hadronic Light-by-Light (HLbL) Scattering**: Photons interact via intermediate hadronic states. The diagram involves photons entering and exiting a hadronic "blob."  
 
 ::: callout-note
@@ -793,7 +799,8 @@ The photon has spin one ($J = 1$), parity ($P$) minus, and charge conjugation ($
 Mesons with the same quantum numbers as the photon ($1^{--}$) are called **vector mesons**.
 :::
 In the $1S$ multiplet, there are two states: the lower one has $J^{PC} = 0^{-+}$ (pseudoscalar), and the higher one has $1^{--}$ (vector). Examples of vector mesons include:  
-- **Light quark sector**: $\rho^0$ ($u\bar{u}$ or $d\bar{d}$), where the quark spins are aligned (e.g., up-up).  
+
+-**Light quark sector**: $\rho^0$ ($u\bar{u}$ or $d\bar{d}$), where the quark spins are aligned (e.g., up-up).  
 - **Charm sector**: $J/\psi$ ($c\bar{c}$).  
 - **Strange sector**: $\phi$ ($s\bar{s}$).  
 - **Bottom sector**: $\Upsilon$ ($b\bar{b}$).  

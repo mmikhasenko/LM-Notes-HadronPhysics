@@ -24,7 +24,8 @@ Mathematically, we treat isospin similarly to spin. For example, the proton and 
 At the quark level, protons and neutrons are composed of up ($u$) and down ($d$) quarks. The strong interaction does not distinguish between these flavors.  
 
 The isospin assignments are:  
-- Up quark: $I = \frac{1}{2}, \ I_3 = +\frac{1}{2}$  
+
+-Up quark: $I = \frac{1}{2}, \ I_3 = +\frac{1}{2}$  
 - Down quark: $I = \frac{1}{2}, \ I_3 = -\frac{1}{2}$  
 
 ::: callout-tip
@@ -51,7 +52,8 @@ For instance, take the up ($u$) and down ($d$) quarks. As discussed earlier, mes
 
 ::: callout-note
 The isospin assignments for quarks are:  
-- Up quark: $I = \frac{1}{2}, \ I_3 = +\frac{1}{2}$  
+
+-Up quark: $I = \frac{1}{2}, \ I_3 = +\frac{1}{2}$  
 - Down quark: $I = \frac{1}{2}, \ I_3 = -\frac{1}{2}$
 :::
 By studying these combinations, we can classify the resulting mesons based on their isospin properties.
@@ -88,7 +90,8 @@ These coefficients describe how the isospin states combine to form either a trip
 
 ::: callout-note
 The isospin assignments for quarks are:  
-- Up quark: $I = \frac{1}{2}, \ I_3 = +\frac{1}{2}$  
+
+-Up quark: $I = \frac{1}{2}, \ I_3 = +\frac{1}{2}$  
 - Down quark: $I = \frac{1}{2}, \ I_3 = -\frac{1}{2}$
 :::
 This framework allows us to classify mesons formed from quark-antiquark combinations based on their isospin properties.
@@ -101,19 +104,22 @@ Cosine simularity: 0.9283342535268201
 We have an isospin triplet with isospin $I = 1$, which has three projections: $I_3 = +1, 0, -1$. The singlet state has isospin $I = 0$ with projection $I_3 = 0$. The Clebsch-Gordan coefficients are used here, and you must always take the square root of these coefficients.  
 
 For antiquarks, the isospin assignments are:  
-- Anti-up quark: $I_3 = -\frac{1}{2}$  
+
+-Anti-up quark: $I_3 = -\frac{1}{2}$  
 - Anti-down quark: $I_3 = +\frac{1}{2}$  
 
 The minus sign is chosen so that quarks and antiquarks behave consistently under SU transformations.  
 
 When constructing states from quark-antiquark combinations:  
-- For the singlet state, combining up and anti-up gives a vector with projections $+\frac{1}{2}$ and $-\frac{1}{2}$, weighted by a square root factor.  
+
+-For the singlet state, combining up and anti-up gives a vector with projections $+\frac{1}{2}$ and $-\frac{1}{2}$, weighted by a square root factor.  
 - Similarly, for down and anti-down, the projections are $-\frac{1}{2}$ and $+\frac{1}{2}$, but due to the minus sign in the antiquark assignment, the overall sign cancels out.  
 
 The triplet states follow analogous combinations.  
 
 The particles associated with these states are:  
-- The triplet corresponds to pions: $\pi^+$ ($I_3 = +1$), $\pi^0$ ($I_3 = 0$), and $\pi^-$ ($I_3 = -1$).  
+
+-The triplet corresponds to pions: $\pi^+$ ($I_3 = +1$), $\pi^0$ ($I_3 = 0$), and $\pi^-$ ($I_3 = -1$).  
 - Rho particles ($\rho$) also form a triplet with the same isospin structure but differ in spin.  
 
 <!--
@@ -126,7 +132,8 @@ The distinction between the two states lies in their spin: one has anti-parallel
 Now, let's consider an example: shooting a $\pi$ beam at a proton target. The $\pi$ has isospin $I = 1$, and the nucleon target has isospin $I = \frac{1}{2}$. When combining these, the possible resulting isospin states are $I = \frac{3}{2}$ or $I = \frac{1}{2}$.  
 
 The dimensions of these states are as follows:  
-- For $I = 1$, there are three projections ($I_3 = +1, 0, -1$).  
+
+-For $I = 1$, there are three projections ($I_3 = +1, 0, -1$).  
 - For $I = \frac{1}{2}$, there are two projections ($I_3 = +\frac{1}{2}, -\frac{1}{2}$).  
 - For the combined $I = \frac{3}{2}$, there are four projections ($I_3 = \pm \frac{3}{2}, \pm \frac{1}{2}$).  
 - For $I = \frac{1}{2}$, there are again two projections.  
@@ -152,7 +159,8 @@ $$
 $$
 
 This results in an octet (8-dimensional representation) consisting of:  
-- A spin-$\frac{3}{2}$ quartet (4 states)  
+
+-A spin-$\frac{3}{2}$ quartet (4 states)  
 - Two spin-$\frac{1}{2}$ doublets (2 states each).  
 
 In the context of isospin, this decomposition helps explain observed cross-section differences in particle collisions. For example, the delta particles ($\Delta^{++}, \Delta^{+}, \Delta^{0}, \Delta^{-}$) correspond to the quartet with masses around 1232 MeV.  
@@ -906,8 +914,7 @@ For mesons, the multiplet structure is derived from the quark-antiquark combinat
 
 - The lower diagonal entries have a charge of $-1$.  
 - The middle entries have a charge of $0$ or $+1$.  
-
--The upper diagonal entries can reach up to $+2$.  
+- The upper diagonal entries can reach up to $+2$.  
 
 This octet (or nonet, including the $\eta'$) has quantum numbers $0^-$ or $1^-$. For the pseudoscalar mesons (e.g., pions, kaons), the quark-antiquark pair has antiparallel spins, resulting in total spin $0$, parity $-1$, and charge conjugation $+1$. For the vector mesons (e.g., $\rho$, $K^*$), the spins are aligned parallel, giving spin $1$, parity $-1$, and charge conjugation $-1$.  
 

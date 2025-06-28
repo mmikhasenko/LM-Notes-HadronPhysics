@@ -71,7 +71,8 @@ In the context of contour integration, if we integrate a function over a closed 
 Even for discontinuous functions, the integral can be numerically well-defined. For example, integrating $\sqrt{x}$ over a circle of radius 1 converges despite the discontinuity at $x = 0$.
 :::
 Consider the function defined on the unit circle:  
-- Above $\phi = 0$, the function is $+i$.  
+
+-Above $\phi = 0$, the function is $+i$.  
 - Below $\phi = 0$, it is $-i$.  
 This creates a jump discontinuity at $\phi = 0$ (or $2\pi$).  
 
@@ -204,7 +205,8 @@ To illustrate this, consider a simple real analytic function with a branch cut, 
 To determine where the branch cut lies, evaluate the function just above and below the real axis:  
 
 - For $x = -1 + i\epsilon$, $\sqrt{-1 + i\epsilon} = i$  
-- For $x = -1 - i\epsilon$, $\sqrt{-1 - i\epsilon} = -i$  
+
+-For $x = -1 - i\epsilon$, $\sqrt{-1 - i\epsilon} = -i$  
 
 This shows that the function changes sign when crossing the branch cut, confirming its non-analytic nature.  
 
@@ -249,7 +251,8 @@ The absence of a jump in the function where cuts overlap indicates analyticity i
 The square-root function serves as a simple illustration of branch cuts. For example:  
 
 - $\sqrt{-1 + i\epsilon} = i$  
-- $\sqrt{-1 - i\epsilon} = -i$  
+
+-$\sqrt{-1 - i\epsilon} = -i$  
 
 This sign change across the branch cut confirms the non-analytic behavior.  
 
@@ -375,7 +378,8 @@ $$
 where $s_0$ (or $\bar{m}^2$) is the pole location where the denominator vanishes. This is a complex number, with its real and imaginary parts defining the mass and width of the resonance:  
 
 - **Mass of the pole**: Real part of $\sqrt{s_0}$  
-- **Width of the pole**: Twice the imaginary part of $\sqrt{s_0}$ (i.e., $\Gamma = -2 \ \text{Im}(\sqrt{s_0})$)  
+
+-**Width of the pole**: Twice the imaginary part of $\sqrt{s_0}$ (i.e., $\Gamma = -2 \ \text{Im}(\sqrt{s_0})$)  
 
 These quantities relate to the experimentally observed mass and width of the resonance.  
 
@@ -445,11 +449,11 @@ Cosine simularity: 0.9755648752216739
 There is another phenomenon of the poles at the same locations, but underneath another sheet which is called a virtual state. Both of them are not that different from each other. This state can live forever — it is a real state that can travel, a particle that does not decay. Another case is the one that does not travel and does not decay. This distinction is one of the objectives and discussion points in the field.  
 
 When you observe a new structure, the key questions are:  
-- What kind of structure is it?  
+
+-What kind of structure is it?  
 - Is it related to a threshold?  
 - Is it a pole sitting below a certain threshold?  
-
--Or is it a resonance in the complex plane unrelated to a threshold?  
+- Or is it a resonance in the complex plane unrelated to a threshold?  
 
 Relation to a threshold indicates molecular nature. Every threshold involves two masses summed together, implying a continuum — one particle interacting with another. If a pole is related to a threshold, part of the wave function for this state is likely of molecular type.  
 

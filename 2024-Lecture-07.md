@@ -26,7 +26,8 @@ The $P_{cc}$ bar particle is a hadronic molecule, meaning it is a bound state of
 The heavy quarks (charm) are explicitly listed in the notation because they are conserved quantities in decays, while light quarks can be inferred from the context.
 :::
 For example:  
-- $\Sigma_c$ indicates a charmed baryon with two light quarks (e.g., $uu$, $ud$, or $dd$).  
+
+-$\Sigma_c$ indicates a charmed baryon with two light quarks (e.g., $uu$, $ud$, or $dd$).  
 - $P_{cc}$ denotes a pentaquark state with two charm quarks and three light quarks.  
 
 In this case, the $P_c^+$ state likely has the quark content $ud$ for the light quarks.  
@@ -45,7 +46,8 @@ For quantum numbers, we have spin-parity combinations of $1/2^-$ and $3/2^-$ due
 There is a lower bound on the lifetime of this particle, which arises from the binding of its constituents. The decay of this particle must conserve energy. In the rest frame of the particle, the total energy available is just its mass. Since the $P_c^+$ is below the threshold for strong decay into $\Sigma_c^+$ and $D^0$, it cannot decay that way.  
 
 The possible decay channels are:  
-1. **Electromagnetic annihilation** of the $c\bar{c}$ pair, but this is highly suppressed because electromagnetic processes are much weaker than other interactions.  
+
+1.**Electromagnetic annihilation** of the $c\bar{c}$ pair, but this is highly suppressed because electromagnetic processes are much weaker than other interactions.  
 2. **Strong annihilation** of the $c\bar{c}$ pair into lighter quarks, but this is also suppressed for heavy quarks like charm. The heavier the quarks, the smaller the annihilation probability.  
 
 The dominant decay mechanism is the **weak decay** of one of the charm quarks. For example, one charm quark can transition to an $s$-quark by emitting a $W$ boson:  
@@ -194,7 +196,8 @@ Cosine simularity: 0.9493055528168397
 The true boundary for scattering is often given by a sixth-order polynomial. In the center is the Dalitz plot, which represents our physical domain. There are four regions corresponding to different physical reactions, and it's crucial to recognize that a single amplitude matrix element describes all four.  
 
 If you precisely constrain this function over its domain, it yields a complex transition amplitude (e.g., $1 + 3i$) for any point. The same matrix element can compute transition amplitudes for different processes, such as decays. This framework works exceptionally well in QED. For instance, the same matrix element describes:  
-- Compton scattering (photon-electron → photon-electron)  
+
+-Compton scattering (photon-electron → photon-electron)  
 - Electron-positron annihilation into two photons  
 - Two-photon production of an electron-positron pair  
 
@@ -228,7 +231,8 @@ Solving $\Phi(s, t, u) = 0$ yields the boundaries of the physical domain. For a 
 The **Kibble function** extends this by combining three Klein functions, each corresponding to a different channel:  
 
 - $\Lambda_1$ for the first channel  
-- $\Lambda_2 = \lambda(t, m_X^2, m_X^2)$ for the second channel  
+
+-$\Lambda_2 = \lambda(t, m_X^2, m_X^2)$ for the second channel  
 - $\Lambda_3 = \lambda(u, m_X^2, m_B^2)$ for the third channel  
 
 Here, $\lambda$ denotes the standard Källén triangle function.  
@@ -282,7 +286,8 @@ A - A^{\dagger} = i \int A^{*} A \, d\Phi
 $$  
 
 *Terms:*  
-- $A$: Scattering amplitude.  
+
+-$A$: Scattering amplitude.  
 - $A^{\dagger}$: Hermitian conjugate of $A$.  
 - $i$: Imaginary unit.  
 - $\int d\Phi$: Integration over the phase space of intermediate states.  
@@ -376,7 +381,8 @@ Cosine simularity: 0.9325367733984057
 The unitarity condition constrains our scattering amplitude. To see this, we start from the condition and derive the constraints on $T$. The approach involves manipulating the expression $1 - (1 + iT)(1 - iT^\dagger)$.  
 
 Let's verify the algebra:  
-- The term $(1 + iT)(1 - iT^\dagger)$ expands to $1 - iT^\dagger + iT + T T^\dagger$.  
+
+-The term $(1 + iT)(1 - iT^\dagger)$ expands to $1 - iT^\dagger + iT + T T^\dagger$.  
 - Subtracting this from $1$ gives $i(T - T^\dagger) + T T^\dagger$.  
 - Multiplying both sides by $i$ shifts the minus sign to $T^\dagger$ and removes the $i$ on the left, yielding:  
 
@@ -391,7 +397,8 @@ $$
 $$
 
 Here, the delta functions enforce energy-momentum conservation:  
-- The first delta function connects the initial state to the intermediate state: $P_1 + P_2 = P_1^{(m)} + P_2^{(m)}$.  
+
+-The first delta function connects the initial state to the intermediate state: $P_1 + P_2 = P_1^{(m)} + P_2^{(m)}$.  
 - The second delta function connects the intermediate state to the final state: $P_1' + P_2' = P_1^{(m)} + P_2^{(m)}$.  
 
 By isolating the delta function that relates the initial and final states, we simplify the phase space integral to:  

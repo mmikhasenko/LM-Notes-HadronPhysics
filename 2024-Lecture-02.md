@@ -8,7 +8,8 @@ The homework problems last week were deemed too easy, so we’ll **increase the 
 ---
 
 We’ll explore:  
-1. **QCD** with the **SU group** (as previously discussed).  
+
+1.**QCD** with the **SU group** (as previously discussed).  
 2. The **phenomenology of the SU flavor group**, including:  
    - **Isospin**  
    - **SU flavor** by interchanging *u/d* and squarks.  
@@ -27,7 +28,8 @@ Let’s start with a question from last lecture:
 The **exact approach** involves:  
 $$\sigma = \frac{1}{F} \int |\mathcal{M}|^2 \, d\Phi$$  
 where:  
-- $\sigma$ = cross section  
+
+-$\sigma$ = cross section  
 - $F$ = flux factor  
 - $\mathcal{M}$ = matrix element  
 - $d\Phi$ = phase space differential  
@@ -86,7 +88,8 @@ $$ U U^\dagger = I \quad \text{and} \quad U^\dagger U = I. $$
 The **determinant** is restricted to $1$ (the "$S$" in $SU(2)$).
 :::
 - **Inverse**: If $g \in SU(2)$, then $g^{-1} \in SU(2)$.  
-- **Closure**: For $g_1, g_2 \in SU(2)$, $g_1 g_2 \in SU(2)$.  
+
+-**Closure**: For $g_1, g_2 \in SU(2)$, $g_1 g_2 \in SU(2)$.  
 - **Identity**: The identity matrix $I$ is included.  
 
 Any $SU(2)$ element can be written as:  
@@ -121,7 +124,8 @@ The $\Xi_{cc}$ (with $ccu$ or $ccd$) shows a **puzzling mass difference**, viola
 
 
 We’ve covered:  
-1. **Charge definitions** in QED and QCD.  
+
+1.**Charge definitions** in QED and QCD.  
 2. **$SU(2)$ group theory** and its generators.  
 3. **Applications** to spin and flavor symmetry.  
 
@@ -139,9 +143,11 @@ When we speak about the symmetries of the Lagrangian of QCD, we have in mind the
 The QCD Lagrangian is given by:
 $$\mathcal{L}_{\text{QCD}} = -\frac{1}{4}G^{a}_{\mu u}G^{a\mu u} + \sum_{f}\bar{\psi}_f(i\gamma^\mu D_\mu - m_f)\psi_f$$
 where:
-- $G^{a}_{\mu u}$ is the gluon field strength tensor,
+
+-$G^{a}_{\mu u}$ is the gluon field strength tensor,
 - $\psi_f$ represents quark fields of flavor $f$,
-- $m_f$ are the quark masses,
+
+-$m_f$ are the quark masses,
 - $D_\mu$ is the covariant derivative.
 :::
 ---
@@ -282,7 +288,8 @@ The **prime notation** here indicates the antiparticle. By convention, charge co
 ---
 
 To find $J^{PC}$ for a composite system:  
-1. **Total $J$**: Use spin algebra.  
+
+1.**Total $J$**: Use spin algebra.  
 2. **Parity**: Multiplicative, including $(-1)^L$ for orbital angular momentum $L$.  
 3. **Charge Conjugation**: Multiplicative (for neutral systems, $C = (-1)^{L+S}$).  
 
@@ -296,9 +303,9 @@ where $\eta_{P1}, \eta_{P2}$ are intrinsic parities.
 ---
 
 In the quark model, heavy quarks (e.g., charm) are treated without gluons. The $u$ and $d$ quarks form isospin multiplets:  
-- **Isospin 1**: Symmetric combination.  
 
--**Isospin 0**: Antisymmetric combination (matched with antisymmetric spin wave function).  
+-**Isospin 1**: Symmetric combination.  
+- **Isospin 0**: Antisymmetric combination (matched with antisymmetric spin wave function).  
 
 ::: callout-note
 For baryons like $\Lambda_c$ (isospin-0), excitations include radial ($n=1s, 2s$) or orbital ($P$-wave, $D$-wave) modes. The Particle Data Group lists ~7 $\Lambda_c$ states, including ground and excited configurations.

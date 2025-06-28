@@ -10,7 +10,8 @@ $$
 $$
 
 To analyze this, we follow a standard checklist:  
-1. **Identify the interaction type** responsible for the decay.  
+
+1.**Identify the interaction type** responsible for the decay.  
 2. Determine the variables describing the process.  
 3. Write the matrix element for the process.  
 4. Calculate the polarized decay width.  
@@ -21,7 +22,8 @@ The decay involves a **flavor change** (strangeness violation), so it must be me
 The initial state ($\Lambda$) has strangeness $S = -1$, while the final state ($p + \pi^-$) has $S = 0$. Since parity is not conserved in weak interactions, this decay violates parity.  
 
 Here’s a simplified diagrammatic representation (not a Feynman diagram):  
-- **Initial state**: $\Lambda$  
+
+-**Initial state**: $\Lambda$  
 - **Final state**: $p + \pi^-$  
 - **Interaction vertex**: Weak decay (flavor-changing).  
 
@@ -51,7 +53,8 @@ Cosine simularity: 0.9372389708310774
 We can choose the $Z$-axis along the direction of the particle momenta. The amplitude describing this process is denoted by $H$. The dependencies of $H$ are limited to discrete indices of spin projection, as there are no free kinematic variables in this decay.  
 
 The particles involved in the interaction have the following spin and parity assignments:  
-- $\Lambda$: $J^P = \frac{1}{2}^+$  
+
+-$\Lambda$: $J^P = \frac{1}{2}^+$  
 - Proton: $J^P = \frac{1}{2}^+$  
 - Pion: $J^P = 0^-$  
 
@@ -64,7 +67,8 @@ H_\lambda = \langle \text{final} | T | \text{initial} \rangle
 $$  
 
 By convention, the initial state is written on the right and the final state on the left. The final state consists of:  
-- A proton with momentum $P_Z$ and spin projection $\lambda$ (helicity).  
+
+-A proton with momentum $P_Z$ and spin projection $\lambda$ (helicity).  
 - A pion with momentum $-P_Z$ (opposite direction) and spin projection $0$ (since it is spinless).  
 
 The initial state is simply $|\Lambda, \lambda \rangle$, where $\lambda$ is the spin projection of the $\Lambda$.  
@@ -118,7 +122,8 @@ The $|JM\rangle$ states are the basis states for a particle with spin $J$, where
 When the $Z$-axis is used for quantization, the state is called **canonical**.
 :::
 All transformations discussed here are **active transformations**, meaning they are applied to the particle rather than the coordinate system. For example:  
-- Boosting the particle in the $Z$-direction increases its velocity along that axis.  
+
+-Boosting the particle in the $Z$-direction increases its velocity along that axis.  
 - Rotating the particle about the $Y$-axis is a nontrivial transformation.  
 
 Consider a coordinate system with $X$ and $Y$ axes. A rotation about the $Y$-axis corresponds to rotating the particle itself, not the coordinate frame. This is the most common transformation we will use.
@@ -349,7 +354,8 @@ We took the particles as the reference and measured the angle from there. All of
 We start with a $\Lambda$ flying in the $z$-direction with a certain velocity. It decays into a proton and a pion in some plane. After inverting the boost, the proton and pion still lie in the same plane with exactly the same direction.  
 
 The plane is defined by three vectors:  
-1. The original direction of motion of the $\Lambda$ (defining the axis).  
+
+1.The original direction of motion of the $\Lambda$ (defining the axis).  
 2. The angle measured with respect to this axis.  
 3. The decay products forming the plane.  
 
@@ -385,7 +391,8 @@ We want to align this to the left state, which has aligned combinations. Thus, w
 Since these operators commute and strong interactions conserve spin, we can compute the transition operator and rotation separately. We first apply the transition operator and then the rotation. Essentially, the transition operator transforms the pion-proton system into $\Lambda$, and we explicitly perform this operation.  
 
 The plane is defined by three vectors:  
-1. The original direction of motion of $\Lambda$ (defining the axis).  
+
+1.The original direction of motion of $\Lambda$ (defining the axis).  
 2. The angle measured with respect to this axis.  
 3. The decay products forming the plane.  
 
@@ -575,7 +582,8 @@ Cosine simularity: 0.9165438281195135
 If we remove the constant term, the imaginary part vanishes entirely. The question is whether non-trivial solutions exist where the imaginary part is non-zero. The answer is yes—any function can be inserted here, and the integral will converge. For example, take $\sqrt{X}$ and place it in the expression. This constructs a special function $F(X)$ whose imaginary part equals $\sqrt{X}$ in the region from $-1$ to $7$. Outside this interval, the function is non-zero but has no singularities.  
 
 The construction introduces non-trivial analytic structures. Three candidates for these structures are:  
-1. A continuous stretch of poles,  
+
+1.A continuous stretch of poles,  
 2. A branch cut,  
 3. A combination of both.  
 
@@ -661,8 +669,7 @@ The branch points at $X = 1$ and $X = 7$ are explicitly identified by the integr
 :::
 The function has singularities at these branch points, but they are not poles. A branch point can have a divergence (e.g., $\log(X)$ diverges at $X = 0$), but it is distinct from a pole. For example:
 - $1/(X - C)^3$ has a third-order pole at $X = C$.
-
--$\log(X - C)$ has a logarithmic branch point at $X = C$, not a pole.  
+- $\log(X - C)$ has a logarithmic branch point at $X = C$, not a pole.  
 
 A pole is a singularity that can be resolved by adding an infinitesimal shift in the complex plane (e.g., $1/(X \pm i\epsilon)$). In contrast, branch points persist and require branch cuts to define the function's behavior.  
 

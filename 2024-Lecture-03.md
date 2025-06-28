@@ -20,7 +20,8 @@ We will talk today about structure functions, the structure of hadrons, and thei
 **Question 1**: Without looking at the PDG, just from the quark content, determine the isospin of the $\Delta^{++}$, $\Delta^+$, $\Delta^0$, and $\Delta^-$ particles. The quark content here is $uud$, $udd$, etc.  
 
 For $\Delta^{++}$:  
-- The state is $3\left(\frac{1}{2} \left( p^\uparrow p^\uparrow p^\uparrow \right)\right)$  
+
+-The state is $3\left(\frac{1}{2} \left( p^\uparrow p^\uparrow p^\uparrow \right)\right)$  
 - Isospin calculation:  
 
 $$
@@ -28,7 +29,8 @@ I_{\Delta^{++}} = \frac{3}{2} \left\{ \frac{3}{2}, \frac{3}{2} \right\} = \sqrt{
 $$  
 
 For $\Delta^+$:  
-- The state is $\frac{3}{2} \left( p^\uparrow p^\uparrow p^\downarrow \right)$  
+
+-The state is $\frac{3}{2} \left( p^\uparrow p^\uparrow p^\downarrow \right)$  
 - Isospin projection: $\left\{\frac{1}{2}, \frac{1}{2}, -\frac{1}{2}\right\}$  
 
 **Question 2**: What is the dimensionality of the isospin matrix acting on a space of three quarks with two charges (up and down)? If we treat the quarks as wavefunctions in two dimensions—where spin-up corresponds to the $u$-quark and spin-down to the $d$-quark—what is the size of this matrix?  
@@ -81,15 +83,18 @@ The $B^0$ and $B^+$ mesons can be understood through their quark compositions. T
 The cascade $B$ has isospin $\frac{1}{2}$, which implies a dimensionality of $2J + 1 = 2$, meaning there are two particles of this type.  
 
 To calculate charges, recall the quark charges:  
-- Upper row ($u, c, t$): $+\frac{2}{3}$  
+
+-Upper row ($u, c, t$): $+\frac{2}{3}$  
 - Lower row ($d, s, b$): $-\frac{1}{3}$  
 
 For example:  
-- Combining three lower-row quarks ($ddd$) gives a charge of $-1$.  
+
+-Combining three lower-row quarks ($ddd$) gives a charge of $-1$.  
 - Combining three upper-row quarks ($uuu$) gives a charge of $+2$.  
 
 For the $B_s$ meson ($b \bar{s}$), the charge calculation is:  
-- The $b$ quark contributes $-\frac{1}{3}$.  
+
+-The $b$ quark contributes $-\frac{1}{3}$.  
 - The $\bar{s}$ antiquark contributes $+\frac{1}{3}$ (since the antiquark flips the sign).  
 - The total charge is $0$.  
 
@@ -252,7 +257,8 @@ $$
 $$
 
 The lowering operator acts as follows:  
-- On $|u d u\rangle$, it gives $|d d u\rangle + |u d d\rangle$.  
+
+-On $|u d u\rangle$, it gives $|d d u\rangle + |u d d\rangle$.  
 - On $|u u d\rangle$, it gives $|d u d\rangle + |u d d\rangle$.  
 - On $|d u u\rangle$, it gives $0$ (since lowering $|d\rangle$ gives zero).  
 
@@ -265,10 +271,10 @@ $$
 After normalization, this confirms the orthogonal basis construction.  
 
 The $8 \times 8$ matrix acting on these states decomposes into blocks:  
-- A $4 \times 4$ block (for the $3/2$ multiplet).  
-- Two $2 \times 2$ blocks (for the $1/2$ multiplets).  
 
--Another $2 \times 2$ block (for the remaining states).  
+-A $4 \times 4$ block (for the $3/2$ multiplet).  
+- Two $2 \times 2$ blocks (for the $1/2$ multiplets).  
+- Another $2 \times 2$ block (for the remaining states).  
 
 This block-diagonal structure reflects the irreducible representations of the spin space.
 
