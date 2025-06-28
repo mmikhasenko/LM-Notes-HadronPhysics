@@ -16,11 +16,28 @@ def transform_file(filepath):
     )
     
     # Render lists
+    content = content.replace('\r\n', '\n')  # Normalize Windows line endings
     content = re.sub(
-        r'(\n(?:> )?[^-].*\n)((> )?(?:1\.|-|\*))\s',
-        lambda m: f"{m.group(1)}{'>' if m.group(3) else ''}\n{m.group(2)}",
+        # Pattern breakdown:
+        r'(\n(?:> )?[^-].*\n)'          # Group 1: A line that doesn't start with a dash:
+                                        #   \n               → starts with a newline
+                                        #   (?:> )?          → optionally starts with "> "
+                                        #   [^-].*           → line must not start with "-" (avoids matching list items)
+                                        #   \n               → ends with newline (captures a full line)
+        r'((> )?(?:1\.|-|\*))\s',       # Group 2: A list item line starting with:
+                                        #   (Group 3: optional "> ")  
+                                        #   followed by "1.", "-" or "*"  
+                                        #   then a space (to avoid matching things like "1.something")
+    
+        # Replacement logic:
+        lambda m: (
+            f"{m.group(1)}"             # Reinsert the first line (non-list content before the list)
+            f"{'>' if m.group(3) else ''}\n"  # If the bullet line had a "> ", add a new "> \n" to split it
+            f"{m.group(2)}"             # Reinsert the bullet line
+        ),
+    
         content,
-        flags=re.DOTALL
+        flags=re.DOTALL                # Makes "." match newline characters too — needed for multiline matching
     )
     
     # Match entire callout block (header + all following lines starting with >)
