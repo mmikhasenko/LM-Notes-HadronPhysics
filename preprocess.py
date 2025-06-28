@@ -37,7 +37,7 @@ def transform_file(filepath):
         ),
     
         content,
-        flags=re.DOTALL                # Makes "." match newline characters too — needed for multiline matching
+        re.MULTILINE # `.` is any character except newline
     )
     
     # Match entire callout block (header + all following lines starting with >)
