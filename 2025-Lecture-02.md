@@ -25,7 +25,10 @@ At the quark level, protons and neutrons are composed of up ($u$) and down ($d$)
 
 The isospin assignments are:  
 
+
 - Up quark: $I = \frac{1}{2}, \ I_3 = +\frac{1}{2}$  
+
+
 - Down quark: $I = \frac{1}{2}, \ I_3 = -\frac{1}{2}$  
 
 ::: callout-tip
@@ -53,7 +56,10 @@ For instance, take the up ($u$) and down ($d$) quarks. As discussed earlier, mes
 ::: callout-note
 The isospin assignments for quarks are:  
 
+
 - Up quark: $I = \frac{1}{2}, \ I_3 = +\frac{1}{2}$  
+
+
 - Down quark: $I = \frac{1}{2}, \ I_3 = -\frac{1}{2}$
 :::
 By studying these combinations, we can classify the resulting mesons based on their isospin properties.
@@ -91,7 +97,10 @@ These coefficients describe how the isospin states combine to form either a trip
 ::: callout-note
 The isospin assignments for quarks are:  
 
+
 - Up quark: $I = \frac{1}{2}, \ I_3 = +\frac{1}{2}$  
+
+
 - Down quark: $I = \frac{1}{2}, \ I_3 = -\frac{1}{2}$
 :::
 This framework allows us to classify mesons formed from quark-antiquark combinations based on their isospin properties.
@@ -105,21 +114,30 @@ We have an isospin triplet with isospin $I = 1$, which has three projections: $I
 
 For antiquarks, the isospin assignments are:  
 
+
 - Anti-up quark: $I_3 = -\frac{1}{2}$  
+
+
 - Anti-down quark: $I_3 = +\frac{1}{2}$  
 
 The minus sign is chosen so that quarks and antiquarks behave consistently under SU transformations.  
 
 When constructing states from quark-antiquark combinations:  
 
+
 - For the singlet state, combining up and anti-up gives a vector with projections $+\frac{1}{2}$ and $-\frac{1}{2}$, weighted by a square root factor.  
+
+
 - Similarly, for down and anti-down, the projections are $-\frac{1}{2}$ and $+\frac{1}{2}$, but due to the minus sign in the antiquark assignment, the overall sign cancels out.  
 
 The triplet states follow analogous combinations.  
 
 The particles associated with these states are:  
 
+
 - The triplet corresponds to pions: $\pi^+$ ($I_3 = +1$), $\pi^0$ ($I_3 = 0$), and $\pi^-$ ($I_3 = -1$).  
+
+
 - Rho particles ($\rho$) also form a triplet with the same isospin structure but differ in spin.  
 
 <!--
@@ -133,9 +151,16 @@ Now, let's consider an example: shooting a $\pi$ beam at a proton target. The $\
 
 The dimensions of these states are as follows:  
 
+
 - For $I = 1$, there are three projections ($I_3 = +1, 0, -1$).  
+
+
 - For $I = \frac{1}{2}$, there are two projections ($I_3 = +\frac{1}{2}, -\frac{1}{2}$).  
+
+
 - For the combined $I = \frac{3}{2}$, there are four projections ($I_3 = \pm \frac{3}{2}, \pm \frac{1}{2}$).  
+
+
 - For $I = \frac{1}{2}$, there are again two projections.  
 
 This decomposition is represented mathematically by a $6 \times 6$ matrix, which can be broken down into smaller matrices: a $2 \times 2$ matrix and a $4 \times 4$ matrix. These are called **irreducible representations**.  
@@ -160,13 +185,20 @@ $$
 
 This results in an octet (8-dimensional representation) consisting of:  
 
+
 - A spin-$\frac{3}{2}$ quartet (4 states)  
+
+
 - Two spin-$\frac{1}{2}$ doublets (2 states each).  
 
 In the context of isospin, this decomposition helps explain observed cross-section differences in particle collisions. For example, the delta particles ($\Delta^{++}, \Delta^{+}, \Delta^{0}, \Delta^{-}$) correspond to the quartet with masses around 1232 MeV.  
 
 The projections for these states are:  
+
+
 - $I_3 = \pm \frac{3}{2}, \pm \frac{1}{2}$ for the $I = \frac{3}{2}$ quartet.  
+
+
 - $I_3 = \pm \frac{1}{2}$ for the $I = \frac{1}{2}$ doublets.  
 
 ::: callout-note
@@ -282,8 +314,14 @@ where $Y = B + S$, we get $I_3 = \frac{1}{2}$ and $Y = 1$. Substituting these, t
 Gell-Mann and Niemann discovered larger patterns for these particles by incorporating strangeness. This led to the "eightfold way," where particles are arranged in bigger multiplets. Instead of just the up and down quarks, they included the strange quark, extending the analysis to $SU(3)$ flavor symmetry.  
 
 Here’s a summary of the quantum numbers for the up, down, and strange quarks:  
+
+
 - **Baryon number ($B$)**: Each quark has $B = \frac{1}{3}$, so a proton (uud) has $B = 1$.  
+
+
 - **Charge ($Q$)**: Up quark has $Q = +\frac{2}{3}$, down has $Q = -\frac{1}{3}$, and strange has $Q = -\frac{1}{3}$.  
+
+
 - **Strangeness ($S$)**: Up and down quarks have $S = 0$, while the strange quark has $S = -1$.  
 
 ::: callout-note
@@ -301,8 +339,14 @@ For the down and strange quarks, the isospin components are $-\frac{1}{2}$ and $
 Now, let's examine larger patterns, starting with baryons. Baryons are composed of three quarks, which can be up, down, or strange. The combination of three quarks gives us multiplets: a decuplet (10 particles) and two octets (8 particles each). These are referred to as the ground state baryons.  
 
 The particles can be arranged based on the third component of isospin ($I_3$) on the horizontal axis and strangeness ($S$) on the vertical axis. Some textbooks also use hypercharge ($Y$) instead of strangeness. The isospin multiplets are visible here:  
+
+
 - A doublet for the neutron and proton,  
+
+
 - A triplet for the sigmas,  
+
+
 - And another doublet for the cascades.  
 
 For example, the isospin values here are $\frac{1}{2}, -\frac{1}{2}, 0$, and the strangeness values are $0, -1, -2$. The quark content is also apparent: particles with one strange quark are grouped together, while those with two strange quarks form another set.  
@@ -336,8 +380,14 @@ $$
 To conserve strangeness, additional kaons ($K$) are required in the decay chain. The Omega minus decays further into a cascade ($\Xi$) and a pion ($\pi^-$), eventually producing a $\Lambda^0$, neutral pions ($\pi^0$), and photons, followed by the decay of the $\Lambda$ to a proton and a $\pi^-$.  
 
 Not only did Gell-Mann predict the Omega minus, but he also estimated its mass. Looking at the mass differences between the horizontal lines in the multiplet:  
+
+
 - The $\Delta(1232)$ has a mass of 1232 MeV,  
+
+
 - The sigmas follow,  
+
+
 - The Omega minus has a mass around 1680 MeV.  
 
 The mass differences between these states are roughly 150 MeV.  
@@ -656,9 +706,17 @@ Here, the triplet typically consists of pions: $\pi^+$, $\pi^0$, and $\pi^-$. We
 Now, let’s consider an example where a $\pi$ beam is shot at a proton target. The pion has isospin 1, and the nucleon (proton or neutron) has isospin $\frac{1}{2}$. When combining isospin 1 and isospin $\frac{1}{2}$, the possible total isospin states are $\frac{3}{2}$ or $\frac{1}{2}$.  
 
 The dimensions of these states are determined as follows:  
+
+
 - For isospin 1, there are 3 projections ($I_3 = +1, 0, -1$).  
+
+
 - For isospin $\frac{1}{2}$, there are 2 projections ($I_3 = +\frac{1}{2}, -\frac{1}{2}$).  
+
+
 - For the combined $\frac{3}{2}$ state, there are 4 projections ($I_3 = \pm\frac{3}{2}, \pm\frac{1}{2}$).  
+
+
 - For the $\frac{1}{2}$ state, there are 2 projections ($I_3 = \pm\frac{1}{2}$).  
 
 This is how the isospin addition works in this scenario. The resulting states are determined by the Clebsch-Gordan coefficients, which dictate the weights and signs of the combined states.
@@ -676,7 +734,11 @@ Irreducible representations are fundamental in group theory, as they cannot be f
 If you’ve studied group theory, particularly in advanced quantum mechanics, you may already be familiar with reducible and irreducible representations. The decomposition here illustrates how larger matrices can be broken down into simpler, irreducible components.  
 
 For example, the $6 \times 6$ matrix splits into:  
+
+
 - A $2 \times 2$ block (corresponding to one subspace).  
+
+
 - A $4 \times 4$ block (corresponding to another subspace).  
 
 This structure is essential for understanding symmetry operations in particle physics.
@@ -689,9 +751,17 @@ Cosine simularity: 0.8967091197659767
 For small numbers, it is easy to write down reducible representations, but for larger numbers, there are methods to determine them. This will not be discussed in depth, but it is important to understand the meaning.  
 
 For isospin in $SU(2)$, you get four projections, which correspond to the delta particles. These particles have four charge states:  
+
+
 - $\Delta^{++}$  
+
+
 - $\Delta^{+}$  
+
+
 - $\Delta^{0}$  
+
+
 - $\Delta^{-}$  
 
 Their mass is approximately 1232 MeV.  
@@ -769,6 +839,8 @@ Isospin is a quantum number conserved in strong interactions. For particles comp
 For particles with strangeness $+1$, examples include the lambda hyperon or kaons. These are classified as hyperons, which come in different types like sigmas and cascades. Kaons can form isospin doublets:  
 
 - $K^+$ and $K^0$ (strangeness $+1$)  
+
+
 - $K^-$ and $\overline{K^0}$ (strangeness $-1$)  
 
 Since these particles are always produced in pairs, strangeness must be conserved in strong interactions. However, it is not conserved in weak interactions. For example, in the decay of a lambda hyperon ($\Lambda \to p + \pi^-$), the final particles have no strangeness, yet the decay occurs.  
@@ -793,8 +865,14 @@ I_3 \left| \frac{1}{2} -\frac{1}{2} \right> = -\frac{1}{2} \left| \frac{1}{2} -\
 $$
 
 The baryon number is straightforward:  
+
+
 - Baryons have $B = +1$  
+
+
 - Antibaryons have $B = -1$  
+
+
 - Mesons have $B = 0$  
 
 For example, a reaction like $p \to \pi^+ + \pi^-$ cannot occur because it violates baryon number conservation. Similarly, if you start with a proton beam and a $\pi^-$, the final state must include a baryon — you cannot end up with only mesons.  
@@ -818,13 +896,25 @@ $$
 Here, $Q$ is the charge, $I_3$ is the third component of isospin, and $Y$ is the hypercharge ( $Y = B + S$, where $B$ is baryon number and $S$ is strangeness).  
 
 Let’s verify this with the proton:  
+
+
 - Isospin $I_3 = +\frac{1}{2}$  
+
+
 - Hypercharge $Y = 1$ (since the proton has strangeness $S = 0$ and baryon number $B = +1$)  
+
+
 - Charge: $Q = \frac{1}{2} + \frac{1}{2} = +1$, as expected.  
 
 Similarly, for the neutron:  
+
+
 - Isospin $I_3 = -\frac{1}{2}$  
+
+
 - Hypercharge $Y = 1$  
+
+
 - Charge: $Q = -\frac{1}{2} + \frac{1}{2} = 0$.  
 
 Using strangeness and hypercharge alongside isospin, Gell-Mann and Nishijima identified larger patterns for these particles, allowing them to be arranged into bigger multiplets. This will be explored further in the next section.  
@@ -846,24 +936,46 @@ $$
 Particles can be arranged into larger multiplets, which was historically called the "Eightfold Way." For these larger patterns, we consider not just the up and down quarks but also the strange quark, placing us in the context of $SU(3)$ flavor symmetry.  
 
 Here, we plot the third component of isospin ($I_3$) against strangeness ($S$) for the up, down, and strange quarks. The quantum numbers for these quarks are:  
+
+
 - **Baryon number**: Each quark has $B = \frac{1}{3}$, so a proton (uud) has $B = 1$.  
+
+
 - **Charge**: $Q = +\frac{2}{3}$ for up, $Q = -\frac{1}{3}$ for down, and $Q = -\frac{1}{3}$ for strange.  
+
+
 - **Spin**: All are spin-$\frac{1}{2}$ fermions.  
+
+
 - **Strangeness**: $S = 0$ for up/down, $S = -1$ for strange.  
 
 Baryons are composed of three quarks, which can be up, down, or strange. The combinations $3 \otimes 3 \otimes 3$ decompose into $10 \oplus 8 \oplus 8 \oplus 1$, forming a decuplet and two octets. We focus on the ground-state baryons, which arrange into an octet and a decuplet.  
 
 On a plot of $I_3$ vs. strangeness (or hypercharge $Y = B + S$), we observe:  
+
+
 - **Isospin doublet**: Proton ($I_3 = +\frac{1}{2}$) and neutron ($I_3 = -\frac{1}{2}$).  
+
+
 - **Isospin triplet**: Sigma baryons ($\Sigma^+, \Sigma^0, \Sigma^-$).  
+
+
 - **Isospin doublet**: Cascade baryons ($\Xi^0, \Xi^-$).  
 
 The quark content reveals:  
+
+
 - Particles with one strange quark (e.g., $\Lambda, \Sigma$).  
+
+
 - Particles with two strange quarks (e.g., $\Xi$).  
 
 Mass differences provide insights:  
+
+
 - Horizontal (same strangeness): Small mass differences (e.g., proton-neutron mass difference ~1 MeV).  
+
+
 - Vertical (increasing strangeness): Larger mass differences (e.g., $\Sigma$ to $\Xi$ ~130 MeV, $\Sigma$ to $\Lambda$ ~250 MeV).  
 
 This indicates that $SU(2)$ isospin symmetry is a good approximation, but $SU(3)$ flavor symmetry (including the strange quark) is significantly broken, as evidenced by the mass disparities.  
@@ -913,7 +1025,11 @@ These considerations from group theory mathematically describe many particles us
 For mesons, the multiplet structure is derived from the quark-antiquark combinations of up, down, and strange quarks. The product of three quarks and three antiquarks gives an octet plus a singlet ( $3 \times \bar{3} = 8 + 1$ ). The diagonal elements of the multiplet represent charge states:  
 
 - The lower diagonal entries have a charge of $-1$.  
+
+
 - The middle entries have a charge of $0$ or $+1$.  
+
+
 - The upper diagonal entries can reach up to $+2$.  
 
 This octet (or nonet, including the $\eta'$) has quantum numbers $0^-$ or $1^-$. For the pseudoscalar mesons (e.g., pions, kaons), the quark-antiquark pair has antiparallel spins, resulting in total spin $0$, parity $-1$, and charge conjugation $+1$. For the vector mesons (e.g., $\rho$, $K^*$), the spins are aligned parallel, giving spin $1$, parity $-1$, and charge conjugation $-1$.  

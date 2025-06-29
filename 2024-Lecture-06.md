@@ -11,9 +11,16 @@ $$
 
 To analyze this, we follow a standard checklist:  
 
+
 1. **Identify the interaction type** responsible for the decay.  
+
+
 2. Determine the variables describing the process.  
+
+
 3. Write the matrix element for the process.  
+
+
 4. Calculate the polarized decay width.  
 
 ::: callout-important
@@ -23,8 +30,13 @@ The initial state ($\Lambda$) has strangeness $S = -1$, while the final state ($
 
 Here’s a simplified diagrammatic representation (not a Feynman diagram):  
 
+
 - **Initial state**: $\Lambda$  
+
+
 - **Final state**: $p + \pi^-$  
+
+
 - **Interaction vertex**: Weak decay (flavor-changing).  
 
 The matrix element $\mathcal{M}$ for this process would involve weak coupling constants and quark-level transitions like $u \bar{d}$ for the pion.
@@ -54,8 +66,13 @@ We can choose the $Z$-axis along the direction of the particle momenta. The ampl
 
 The particles involved in the interaction have the following spin and parity assignments:  
 
+
 - $\Lambda$: $J^P = \frac{1}{2}^+$  
+
+
 - Proton: $J^P = \frac{1}{2}^+$  
+
+
 - Pion: $J^P = 0^-$  
 
 Since this is a weak interaction, parity is not conserved in the decay. The initial state $\Lambda$ has a definite parity, but the final state does not preserve it.  
@@ -68,7 +85,10 @@ $$
 
 By convention, the initial state is written on the right and the final state on the left. The final state consists of:  
 
+
 - A proton with momentum $P_Z$ and spin projection $\lambda$ (helicity).  
+
+
 - A pion with momentum $-P_Z$ (opposite direction) and spin projection $0$ (since it is spinless).  
 
 The initial state is simply $|\Lambda, \lambda \rangle$, where $\lambda$ is the spin projection of the $\Lambda$.  
@@ -123,7 +143,10 @@ When the $Z$-axis is used for quantization, the state is called **canonical**.
 :::
 All transformations discussed here are **active transformations**, meaning they are applied to the particle rather than the coordinate system. For example:  
 
+
 - Boosting the particle in the $Z$-direction increases its velocity along that axis.  
+
+
 - Rotating the particle about the $Y$-axis is a nontrivial transformation.  
 
 Consider a coordinate system with $X$ and $Y$ axes. A rotation about the $Y$-axis corresponds to rotating the particle itself, not the coordinate frame. This is the most common transformation we will use.
@@ -178,6 +201,8 @@ When dealing with helicity states, we can either look up the Wigner D functions 
 The simplest approach is to define spin quantization for a moving particle. Consider the coordinate axes: $X$, $Y$, and $Z$, with the particle moving in the $XZ$ direction. There are two ways to quantize spin in this scenario:  
 
 1. **Helicity basis**: Quantize spin along the direction of motion.  
+
+
 2. **Canonical basis**: Quantize spin along the $Z$-axis.  
 
 These two bases are not equivalent but are related. If a state has a definite spin projection along the direction of motion (helicity state), it will be a superposition of states in the canonical basis. Conversely, if a state has a definite projection along the $Z$-axis, it will be a combination of helicity states.  
@@ -185,7 +210,11 @@ These two bases are not equivalent but are related. If a state has a definite sp
 To construct the helicity state $|P \lambda\rangle$, we apply a sequence of transformations starting from the particle's rest frame:  
 
 1. Begin with a particle at rest, having spin projection $\lambda$ along the $Z$-axis.  
+
+
 2. Boost the particle forward—this increases its momentum without altering the spin projection.  
+
+
 3. Rotate the entire system to align with the desired configuration.  
 
 The resulting state $|P j \lambda\rangle$ is a helicity state.  
@@ -355,8 +384,13 @@ We start with a $\Lambda$ flying in the $z$-direction with a certain velocity. I
 
 The plane is defined by three vectors:  
 
+
 1. The original direction of motion of the $\Lambda$ (defining the axis).  
+
+
 2. The angle measured with respect to this axis.  
+
+
 3. The decay products forming the plane.  
 
 Without the original direction of the $\Lambda$, the plane is no longer defined. The angle and the plane are constructed from these three vectors.
@@ -392,8 +426,13 @@ Since these operators commute and strong interactions conserve spin, we can comp
 
 The plane is defined by three vectors:  
 
+
 1. The original direction of motion of $\Lambda$ (defining the axis).  
+
+
 2. The angle measured with respect to this axis.  
+
+
 3. The decay products forming the plane.  
 
 Without the original direction of $\Lambda$, the plane is no longer defined. The angle and the plane are constructed from these three vectors.
@@ -583,8 +622,13 @@ If we remove the constant term, the imaginary part vanishes entirely. The questi
 
 The construction introduces non-trivial analytic structures. Three candidates for these structures are:  
 
+
 1. A continuous stretch of poles,  
+
+
 2. A branch cut,  
+
+
 3. A combination of both.  
 
 ::: callout-note
@@ -659,7 +703,11 @@ $$
 $$
 
 When evaluating at $8 \pm i\epsilon$, we observe:
+
+
 - $\log(1) = 0$
+
+
 - $\log(-1 \mp i\epsilon) = \log(1) \pm i\pi$  
 
 This leads to a discontinuity (jump) in the imaginary part, confirming the presence of a branch cut. The real part of $X$ cannot lie between 1 and 7 because the function's structure loops around these points.  
@@ -668,7 +716,11 @@ This leads to a discontinuity (jump) in the imaginary part, confirming the prese
 The branch points at $X = 1$ and $X = 7$ are explicitly identified by the integral's behavior. The branch cut connects these points, restricting the domain of $X$.
 :::
 The function has singularities at these branch points, but they are not poles. A branch point can have a divergence (e.g., $\log(X)$ diverges at $X = 0$), but it is distinct from a pole. For example:
+
+
 - $1/(X - C)^3$ has a third-order pole at $X = C$.
+
+
 - $\log(X - C)$ has a logarithmic branch point at $X = C$, not a pole.  
 
 A pole is a singularity that can be resolved by adding an infinitesimal shift in the complex plane (e.g., $1/(X \pm i\epsilon)$). In contrast, branch points persist and require branch cuts to define the function's behavior.  

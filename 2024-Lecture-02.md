@@ -9,10 +9,15 @@ The homework problems last week were deemed too easy, so we’ll **increase the 
 
 We’ll explore:  
 
+
 1. **QCD** with the **SU group** (as previously discussed).  
+
+
 2. The **phenomenology of the SU flavor group**, including:  
    - **Isospin**  
    - **SU flavor** by interchanging *u/d* and squarks.  
+
+
 3. Connection to the **Lorentz group**, where **SU(2)** is a subgroup responsible for rotations.  
 
 You’ll see how **spin addition** relates to **quark addition inside hadrons**. This builds on **quantum mechanics** material you’ve already seen, and I hope it’s easy to follow.  
@@ -29,9 +34,16 @@ The **exact approach** involves:
 $$\sigma = \frac{1}{F} \int |\mathcal{M}|^2 \, d\Phi$$  
 where:  
 
+
 - $\sigma$ = cross section  
+
+
 - $F$ = flux factor  
+
+
 - $\mathcal{M}$ = matrix element  
+
+
 - $d\Phi$ = phase space differential  
 
 This gives the **exact value** in inverse GeV (convertible to cm²).  
@@ -87,9 +99,14 @@ For $U \in SU(2)$, the conditions are:
 $$ U U^\dagger = I \quad \text{and} \quad U^\dagger U = I. $$  
 The **determinant** is restricted to $1$ (the "$S$" in $SU(2)$).
 :::
+
+
 - **Inverse**: If $g \in SU(2)$, then $g^{-1} \in SU(2)$.  
 
+
 - **Closure**: For $g_1, g_2 \in SU(2)$, $g_1 g_2 \in SU(2)$.  
+
+
 - **Identity**: The identity matrix $I$ is included.  
 
 Any $SU(2)$ element can be written as:  
@@ -125,8 +142,13 @@ The $\Xi_{cc}$ (with $ccu$ or $ccd$) shows a **puzzling mass difference**, viola
 
 We’ve covered:  
 
+
 1. **Charge definitions** in QED and QCD.  
+
+
 2. **$SU(2)$ group theory** and its generators.  
+
+
 3. **Applications** to spin and flavor symmetry.  
 
 Next, we’ll delve deeper into **$SU(2)$ representations** and their role in particle physics.
@@ -137,6 +159,8 @@ Next, we’ll delve deeper into **$SU(2)$ representations** and their role in pa
 When we speak about the symmetries of the Lagrangian of QCD, we have in mind the Lagrangian itself. It consists of two key terms:
 
 1. **Gluon term**: Describes the dynamics of the gluon fields.
+
+
 2. **Quark term**: The Dirac term, which includes a mass parameter for the quarks.
 
 ::: callout-note
@@ -144,10 +168,16 @@ The QCD Lagrangian is given by:
 $$\mathcal{L}_{\text{QCD}} = -\frac{1}{4}G^{a}_{\mu u}G^{a\mu u} + \sum_{f}\bar{\psi}_f(i\gamma^\mu D_\mu - m_f)\psi_f$$
 where:
 
+
 - $G^{a}_{\mu u}$ is the gluon field strength tensor,
+
+
 - $\psi_f$ represents quark fields of flavor $f$,
 
+
 - $m_f$ are the quark masses,
+
+
 - $D_\mu$ is the covariant derivative.
 :::
 ---
@@ -289,8 +319,13 @@ The **prime notation** here indicates the antiparticle. By convention, charge co
 
 To find $J^{PC}$ for a composite system:  
 
+
 1. **Total $J$**: Use spin algebra.  
+
+
 2. **Parity**: Multiplicative, including $(-1)^L$ for orbital angular momentum $L$.  
+
+
 3. **Charge Conjugation**: Multiplicative (for neutral systems, $C = (-1)^{L+S}$).  
 
 ::: callout-tip
@@ -304,7 +339,10 @@ where $\eta_{P1}, \eta_{P2}$ are intrinsic parities.
 
 In the quark model, heavy quarks (e.g., charm) are treated without gluons. The $u$ and $d$ quarks form isospin multiplets:  
 
+
 - **Isospin 1**: Symmetric combination.  
+
+
 - **Isospin 0**: Antisymmetric combination (matched with antisymmetric spin wave function).  
 
 ::: callout-note

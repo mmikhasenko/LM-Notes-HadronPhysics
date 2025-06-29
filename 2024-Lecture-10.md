@@ -105,7 +105,10 @@ The parity for a multiplet is straightforward to compute. Combining $1^-$ and $1
 
 For higher partial waves:  
 
+
 - In the D-wave, we have states with $L = 0, 1, 2$.  
+
+
 - In the F-wave, we have $L = 1, 2, 3$.  
 
 The charge conjugation quantum number is a key consideration here. The $\pi$ meson has quantum numbers $0^- +$, while $B_1$ has $1^+ -$. The decay is possible, but charge conjugation is $+$ in this case, indicating isospin violation.  
@@ -422,7 +425,10 @@ The weak interaction vertex is expressed as $V - A$, where $V$ stands for vector
 
 This vertex structure implies that when a $W$ boson decays, it produces an electron and an antineutrino in specific chiral states:  
 
+
 - The electron ( $e^-$ ) is left-handed (spin opposite to motion).  
+
+
 - The antineutrino is right-handed (spin aligned with motion).  
 
 ::: callout-note
@@ -472,8 +478,13 @@ $$
 
 This describes the dynamics of quarks and gluons. The term $G_{\mu\nu}^a$ represents the gluon field strength tensor, which is the gauge part of the Lagrangian. The term $\bar{\Psi}_i (i\,\mathrlap{\,/}D - m) \Psi_i$ includes the quark fields:  
 
+
 - $i\,\mathrlap{\,/}D \Psi_i$ is the kinetic term,  
+
+
 - $m \bar{\Psi}_i \Psi_i$ is the mass term,  
+
+
 - $\mathrlap{\,/}D$ contains the interaction with the gluon field via the covariant derivative.  
 
 The index $i$ labels the quark flavor (e.g., up, down, strange, etc.), and there are six flavors in total. The index $a$ corresponds to color, and $T^a$ are the generators of the gauge group $SU(3)_c$, connected to local gauge symmetry.  

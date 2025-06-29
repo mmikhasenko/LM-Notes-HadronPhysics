@@ -36,7 +36,11 @@ Equivalently, one can consider the breakup momentum variable $K$, which represen
 Instead of working in the $S$-plane, where the amplitude is analytic except for a few singularities, we now examine the $K$-plane and relate the structures between the two planes. Specifically, we map the following points from the $S$-plane to the $K$-plane:  
 
 1. Points 1 and 2: Resonances located on the second Riemann sheet with respect to the threshold in $S$.  
+
+
 2. Point 3: A pole on the real axis in the first Riemann sheet, corresponding to a bound state.  
+
+
 3. Point 4: A virtual state, residing on the unphysical sheet below the threshold.  
 
 The goal is to understand how these singularities and structures translate when mapped from the $S$-plane to the $K$-plane.  
@@ -316,12 +320,18 @@ The lattice size and step count are optimized through numerical testing—larger
 :::
 Two primary challenges arise:  
 
+
 1. **Finite volume effects** (due to the box size).  
+
+
 2. **Discretization errors** (due to step size).  
 
 To mitigate these:  
 
+
 - Increase the volume to reduce finite-volume effects.  
+
+
 - Decrease step size to minimize discretization errors.  
 
 Both adjustments come at a higher computational cost. The goal is to use the minimal number of points required for reliable results, as lattice QCD calculations are numerically intensive.  
@@ -534,7 +544,10 @@ $$
 
 where $E_1$ is the energy of the lowest excited state. This is a common method to extract energy levels numerically. The energy obtained depends on the operator used:  
 
+
 - For pion-like operators, it approaches the pion mass.  
+
+
 - For vector quantum number operators, it approaches the rho meson mass.  
 
 ::: callout-important

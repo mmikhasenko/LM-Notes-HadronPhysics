@@ -14,6 +14,7 @@ Let’s transition to logistical discussions in the final 15 minutes of the sess
 
 - **Uploads:** The lecture content and references will be shared.  
 
+
 - **Logistics:** Administrative details will be addressed shortly.  
 
 ---
@@ -22,14 +23,19 @@ Let’s transition to logistical discussions in the final 15 minutes of the sess
 **Supporting Context**  
 While this segment focuses on logistics, nuclear physics formulas like those below may appear in technical sections of the lecture:  
 
+
 - Nuclear binding energy: $E_b = (Zm_p + Nm_n - m_{nuc})c^2$  
+
+
 - Semi-empirical mass formula: $E_B = a_V A - a_S A^{2/3} - a_C \frac{Z(Z-1)}{A^{1/3}} - a_A \frac{(A-2Z)^2}{A} + \delta(A,Z)$  
+
 
 - Radioactive decay law: $N(t) = N_0 e^{-\lambda t}$
 :::
 ---
 
 - **Clarity:** Separating logistical announcements from technical content improves readability.  
+
 
 - **Preparation:** References and uploads ensure access to critical materials.
 
@@ -137,8 +143,13 @@ with $D_\mu = \partial_\mu - i g_s A_\mu^a T^a$ and $G^a_{\mu\nu}$ as the gluon 
 
 Another thing to note is that here I am explicitly using **Einstein notation** and summing over repeated indices.  
 
+
 - $\mu$ here, $\mu$ there—they are repeated.  
+
+
 - This means that if I were precise, I should have written here a sum from $\mu=1$ to $4$ over all components.  
+
+
 - The $\nu$ is a repeated index again, so we sum.  
 
 ::: callout-note
@@ -148,8 +159,13 @@ Another thing to note is that here I am explicitly using **Einstein notation** a
 
 The equation of motion for this Lagrangian is obtained using the **Euler-Lagrange equation**.  
 
+
 - You might remember this from classical mechanics where we had dots, and the first term was the time derivative, the second was the derivative of the field.  
+
+
 - Essentially, we treat the Lagrangian as a function of the field derivatives and the fields themselves as independent objects.  
+
+
 - First, we differentiate with respect to the derivatives, and then with respect to the fields.  
 
 ::: callout-important
@@ -161,7 +177,10 @@ The derivative is with respect to $A_\rho$ (another index convention). If I take
 
 Now let me introduce the second part. This was the gauge field. Let me label it 1, 2, 3, 4.  
 
+
 - This is a less intuitive concept that you might not have seen before, but we will need it.  
+
+
 - There are degrees of freedom that are not fixed for photons in the electromagnetic field, and there is an arbitrary **gauge choice** we can make.  
 
 ::: callout-tip
@@ -177,13 +196,22 @@ This is a **symmetry of the Lagrangian**—the gauge symmetry. If you derive Max
 
 Now we introduce **fermion fields**.  
 
+
 - In electrodynamics, our leptons are described by the **Dirac field** $\psi$, a four-component spinor (not a four-vector).  
+
+
 - The Lagrangian is a scalar quantity—no free indices—and is constructed from objects of different dimensionality.  
 
 ::: callout-note
 **Spinor Properties**:  
+
+
 - $\psi$ describes spin-$1/2$ particles with four components (particle + antiparticle).  
+
+
 - The adjoint spinor is $\bar{\psi} = \psi^\dagger \gamma^0$.  
+
+
 - The Dirac Lagrangian:  
 $$  
 \mathcal{L}_{\text{Dirac}} = \bar{\psi} (i \gamma^\mu \partial_\mu - m) \psi  
@@ -194,7 +222,11 @@ The equation of motion is the **Dirac equation**: $(i\not{\partial} - m)\psi = 0
 ---
 
 To introduce **interactions**, we use **gauge invariance**.  
+
+
 - For fermions, gauge invariance means changing the phase of $\psi$ locally at every space-time point.  
+
+
 - The tricky part is that $\partial_\mu \psi$ introduces extra terms under a space-dependent phase transformation.  
 
 ::: callout-important
@@ -209,7 +241,11 @@ The same principle applies to other gauge theories (e.g., SU(2) for electroweak,
 
 ::: callout-warning
 **Key Difference in QCD**:  
+
+
 - Gluons self-interact due to non-Abelian structure (terms like $f^{abc}$ in $G^a_{\mu\nu}$).  
+
+
 - Coupling runs with energy: **asymptotic freedom** (weak at high energy) vs. **confinement** (strong at low energy).
 :::
 ---
@@ -218,10 +254,14 @@ Finally, in **perturbation theory**, we compute scattering amplitudes using Feyn
 
 ::: callout-note
 **Cross-Section and Decay Width**:  
+
+
 - Cross-section:  
 $$  
 \sigma = \frac{1}{2E_A 2E_B |v_A - v_B|} \int |\mathcal{M}|^2 \, d\Pi_{\text{phase space}}  
 $$  
+
+
 - Decay width:  
 $$  
 \Gamma = \frac{1}{2m} \int |\mathcal{M}|^2 \, d\Pi_{\text{phase space}}  
@@ -234,9 +274,17 @@ These connect field theory to measurable quantities in experiments.
 ::: callout-note
 **Lecture & Exercise Schedule**  
 It's really nice to have a watch today. We are three minutes out, but let me quickly say logistics for the course.  
+
+
 - I have notes: **11 lectures and 11 exercises**.  
+
+
 - *A bit fewer exercises* because we will have some breaks.  
+
+
 - For **Moodle**, we put a calendar listing anticipated dates for lectures and exercises.  
+
+
 - Closer to the dates, you may discuss shifting exercise sessions to other days, but for now, we keep the schedule as it is and we'll discuss later.
 :::
 ---
@@ -244,8 +292,14 @@ It's really nice to have a watch today. We are three minutes out, but let me qui
 ::: callout-important
 **Admission & Format**  
 For the exam, we would like to offer during the semester that we will check the points you gain through exercise sheets, and then **50% will admit you to the examination**.  
+
+
 - The exam is designed to be **easy**: you’ll receive problem sets in advance (e.g., 1–2 weeks before).  
+
+
 - You’ll bring your solutions to the exam, and we’ll have a discussion.  
+
+
 - **Focus**: Working on exercise sheets during the semester is *most important*.
 :::
 ---
@@ -253,18 +307,34 @@ For the exam, we would like to offer during the semester that we will check the 
 ::: callout-tip
 **How to Submit & Receive Feedback**  
 Now, let me show you these beautiful exercise sheets.  
+
+
 - Each sheet has a **barcode to scan** and classwork (optional for now).  
+
+
 - **Homework**: 1–2 problems per assignment.  
+
+
 - **Submission**: Write solutions, hand them in at the lecture, and retrieve marked sheets during Thursday exercise sessions.  
+
+
 - A **box** will be provided for submissions (include your name!).
 :::
 ---
 
 ::: callout-note
 **Key Timings**  
+
+
 - **Lectures**: Tuesday  
+
+
 - **Exercise Sessions**: Thursday  
+
+
 - **Excursion**: Fully booked, but 1–2 spots may open.  
+
+
 - **Office Hours**: Thursday, 9–10 AM (Office 13B, Building B).
 :::
 ---
@@ -272,9 +342,17 @@ Now, let me show you these beautiful exercise sheets.
 ::: callout-tip
 **Apply Soon!**  
 For our field, several **summer schools** are happening this summer:  
+
+
 1. **Zurich, Switzerland**: 8 weeks  
+
+
 2. **Krakow, Poland**: 4 weeks  
+
+
 3. **Bochum**: 2 weeks (for advanced students)  
+
+
 - Applications are open for a few more weeks.
 :::
 ::: callout-caution
@@ -294,58 +372,100 @@ For the course description... Well, in order to proceed, just write an email, an
 ---
 
 The lecturer follows several key texts:  
+
+
 1. **Hudson Martin** (first reference)  
+
+
 2. **Martin Schemer**  
+
+
 3. **Thomson's Particle Physics** (general particle physics)  
+
+
 4. **Martin Spearman** (dedicated to Hadron Physics)  
 
 ---
 
 ::: callout-note
+
+
 - Exercise groups start this week with **three class problems**.  
+
+
 - **Sheets distribution**: Two pages per sheet, 15 printed. Take one for yourself and extras for friends.  
+
+
 - *"Before leaving, please take the sheets. We should stamp them together, but make sure you don’t miss one."*  
+
+
 - *"Do you have a quarter of the sheet? Leave me this quarter before leaving."*
 :::
 ---
 
 ::: callout-important
 **System description**:  
+
+
 - A **spark**, a **balloon**, and a **pendulum** with a sliding hanging point.  
+
+
 - **Lagrangian**: Kinetic term minus potential term ($\mathcal{L} = T - V$).  
   - $\dot{X}^2$ term for the moving part.  
   - Pendulum interaction and potential energy terms.  
+
+
 - **Goal**: Derive the **Dirac equation** and **Maxwell's equations**.  
 *"This is a fun problem—I just dropped it on this table."*
 :::
 ---
 
 ::: callout-note
+
+
 - *"Thank everyone who came today. Hope we survive to the end of the semester!"*  
+
+
 - Exercises are **not obligatory**, but *"everyone has to do the work."*  
+
+
 - *"You’re gonna have troubles to get people to the board because this is not private."*
 :::
 ---
 
 ::: callout-tip
 **Upcoming focus**:  
+
+
 - Reintroducing the **QED Lagrangian**:  
   $$\mathcal{L}_{QED} = \bar{\psi}(i\gamma^\mu D_\mu - m)\psi - \frac{1}{4}F_{\mu\nu}F^{\mu\nu}$$  
   Where $D_\mu = \partial_\mu + ieA_\mu$ (covariant derivative).  
+
+
 - Comparing **QED** (electromagnetic interactions) and **QCD** (added complexity).  
 *"Starting with a simpler case and explaining how to calculate terms is a good starting point."*
 :::
 ---
 
 ::: callout-caution
+
+
 - Only **four students** from the department are enrolled.  
+
+
 - *"I don’t like the whiteboard in the office—it’s too small. You get used to it."*  
+
+
 - *"No, you can stay there. That’s still not a big... I think we go right."*
 :::
 ---
 
 ::: callout-important
+
+
 - Lecturer’s reflection: *"I’ve done this exercise for QED and wonder if people grasp the complications QCD brings."*  
+
+
 - **Key takeaway**: QED explains most electromagnetic interactions, while QCD introduces **non-abelian gauge symmetry** challenges.
 :::
 ---

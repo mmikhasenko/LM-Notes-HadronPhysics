@@ -76,7 +76,10 @@ $$
 
 - $1s^2$: Two electrons in the 1s orbital (spherically symmetric).  
 
+
 - $2s^2$: Two electrons in the 2s orbital (also spherical).  
+
+
 - $2p^4$: Four electrons in the 2p orbital (dumbbell-shaped).  
 
 The energy of electrons increases with angular momentum, with the 1s orbital being the lowest in energy. The wave function of the 1s orbital is:
@@ -156,16 +159,30 @@ In this course, we will explore the relationship between fundamental particles a
 
 The electroweak sector consists of three parts:  
 
+
 1. Electromagnetic interaction  
+
+
 2. Weak interaction  
+
+
 3. Mass-energy sector (Higgs mechanism)  
 
 Let’s review the particles and their classifications:  
 
+
 - **Higgs boson**: Belongs to the Higgs sector (mass-energy).  
+
+
 - **W boson**: Carrier of the weak interaction.  
+
+
 - **Z boson**: Also part of the weak sector.  
+
+
 - **Photon ($\gamma$)**: Mediator of electromagnetic interactions.  
+
+
 - **Quarks (e.g., top, charm)**: Governed by quantum chromodynamics (QCD), the theory of strong interactions.  
 
 ::: callout-note
@@ -173,8 +190,13 @@ The classification can sometimes appear vague because quarks are discussed in QC
 :::
 The Higgs boson stands as a separate field, but particles interact based on their charges:  
 
+
 - If a particle carries an electric charge, it couples to photons.  
+
+
 - If it has weak charge, it interacts via W/Z bosons.  
+
+
 - Color-charged particles (quarks, gluons) interact through the strong force.  
 
 Quarks are elementary particles that form hadrons (e.g., protons, neutrons) at low energies due to color confinement. Earlier in the universe, quarks existed freely before hadronization occurred.  
@@ -191,22 +213,34 @@ The charge of a particle determines how it interacts with force carriers. If you
 
 - **Top row quarks**: up, charm, top  
 
+
 - **Bottom row quarks**: down, strange, bottom  
 
 The quarks are organized into three generations:  
 
+
 1. **First generation**: up ($u$), down ($d$)  
+
+
 2. **Second generation**: charm ($c$), strange ($s$)  
+
+
 3. **Third generation**: top ($t$), bottom ($b$)  
 
 The electric charge depends on whether the quark is in the top or bottom row:  
 
+
 - **Top row**: $+\frac{2}{3}$  
+
+
 - **Bottom row**: $-\frac{1}{3}$  
 
 For weak interactions, the weak isospin charge differs:  
 
+
 - **Upper quarks**: $+\frac{1}{2}$  
+
+
 - **Lower quarks**: $-\frac{1}{2}$  
 
 ::: callout-note
@@ -220,16 +254,28 @@ Cosine simularity: 0.9483946981640996
 The upper quark has a big charge of $+1$ and a weak charge of $+\frac{1}{2}$, while the lower quark has a weak charge of $-1$.  
 
 Quarks are the most diverse particles in the Standard Model because they couple to all charges:  
+
+
 - **Electromagnetic charge**: Enables interaction with photons (e.g., light from a window).  
+
+
 - **Weak charge (big charge)**: Allows interaction with $W$ and $Z$ bosons.  
+
+
 - **Strong charge (color charge)**: Mediates interaction with gluons.  
 
 ::: callout-note
 The terms "color charge" and "strong charge" are interchangeable, similar to how an electron's charge can be positive or negative.
 :::
 For example, a quark can interact with:  
+
+
 1. Light (via electromagnetic charge),  
+
+
 2. $W/Z$ bosons (via weak charge),  
+
+
 3. Gluons (via color charge).  
 
 <!--
@@ -242,8 +288,14 @@ Just like an electron can have a positive or negative charge, the color charge c
 You will quickly get used to referring to the strong charge as a color charge. In the context of hadron physics, we discuss the strong interaction, which is also called the color interaction.  
 
 When we talk about interactions, we mean the interaction of an object with a field. These fields are represented by force carriers:  
+
+
 - $W$ and $Z$ bosons for the weak interaction,  
+
+
 - Photons for the electromagnetic interaction,  
+
+
 - Gluons for the strong (color) interaction.  
 
 <!--
@@ -256,7 +308,11 @@ The standard framework in field theory to describe fields and interactions betwe
 Here is an example: You might recall Lagrangian mechanics from your first or second semester, where the entire motion of a system was condensed into a single equation — the Lagrange equation. It consists of a kinetic term and a potential term. When you subtract them, you get an expression representing the system's energy (kinetic minus potential), which determines the equation of motion.  
 
 The evolution of the system from an initial state is described by an equation derived from the Lagrangian. To obtain it, you:  
+
+
 1. Differentiate the Lagrangian with respect to velocity ($\dot{q}$),  
+
+
 2. Subtract the term where the Lagrangian is differentiated by the coordinate ($q$).  
 
 For example, consider a system where a point mass slides without friction, connected to a pendulum with another mass. The equation of motion is a differential equation found by applying the classical Euler-Lagrange equation:  
@@ -275,7 +331,11 @@ Cosine simularity: 0.9409696270832255
 The QED Lagrangian describes how light interacts with charged particles, such as electrons, muons, or quarks. This is relevant for two reasons: first, quarks carry charge and thus interact with photons, and second, the QED Lagrangian is simpler than that of Quantum Chromodynamics (QCD), making it a good starting point.  
 
 The Lagrangian is a function of two fundamental fields:  
+
+
 - $\psi$: The fermion field (e.g., electron, muon, quark).  
+
+
 - $A_\mu$: The photon field (gauge boson).  
 
 The Lagrangian is a scalar quantity, meaning it evaluates to a single number at any point in spacetime. This is achieved by ensuring all indices are properly contracted.  
@@ -287,7 +347,11 @@ $$
 $$
 
 - $D_\mu = \partial_\mu - i e A_\mu$: The covariant derivative (incorporates electromagnetic interaction).  
+
+
 - $F_{\mu \nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$: The electromagnetic field strength tensor.  
+
+
 - $\gamma^\mu$: Dirac matrices.  
 
 The structure ensures gauge invariance under $U(1)$ transformations.  
@@ -359,9 +423,17 @@ G^{\mu \nu}_a = \partial^{\mu} A^{\nu}_a - \partial^{\nu} A^{\mu}_a + g f_{abc} 
 $$
 
 *Terms:*  
+
+
 - $G^{\mu \nu}_a$: Field strength tensor for QCD (non-Abelian gauge theory).  
+
+
 - $A^{\mu}_a$: Gauge field with color index $a$.  
+
+
 - $f_{abc}$: Structure constants of the SU(3) group.  
+
+
 - $g$: QCD coupling constant.  
 
 The dimensionality of the objects is crucial. The new object $\lambda$ (Gell-Mann matrices) is three-dimensional, and the indices $i, j$ correspond to the fundamental representation of SU(3). These indices appear in the contraction over $A$, and the trace is taken in the $ij$ space.  
@@ -380,7 +452,11 @@ D_{\mu} \psi_i = \partial_{\mu} \psi_i - i g A^{\mu}_a (T_a)_{ij} \psi_j
 $$
 
 *Terms:*  
+
+
 - $(T_a)_{ij}$: Generators of SU(3) in the fundamental representation.  
+
+
 - $g$: QCD coupling constant.  
 
 This structure ensures gauge invariance and proper contraction of color indices.
@@ -397,8 +473,14 @@ The index $F$ traces the flavors of quarks: $U, D, S, C, T, B$. Since there are 
 The index $I$ tracks the color charge, which has three dimensions (red, green, blue). The spinor indices (related to spin projections) are not explicitly included here to avoid excessive complexity.  
 
 For example, consider a quark field:  
+
+
 - Fix the flavor to "up" ($U$).  
+
+
 - Fix the color to "red".  
+
+
 - It still has four spinor components corresponding to spin projections.  
 
 The fermion field $\psi$ is not just a four-component spinor but also carries flavor and color indices. The QCD Lagrangian introduces additional structure due to these indices, but the underlying logic remains similar to QED.  
@@ -410,8 +492,14 @@ G^{\mu \nu}_a = \partial^{\mu} A^{\nu}_a - \partial^{\nu} A^{\mu}_a + g f_{abc} 
 $$
 
 - $G^{\mu \nu}_a$: Field strength tensor (non-Abelian).  
+
+
 - $A^{\mu}_a$: Gauge field with color index $a$.  
+
+
 - $f_{abc}$: SU(3) structure constants.  
+
+
 - $g$: QCD coupling constant.  
 
 The covariant derivative for the fermion field is:  
@@ -421,6 +509,8 @@ D_{\mu} \psi_i = \partial_{\mu} \psi_i - i g A^{\mu}_a (T_a)_{ij} \psi_j
 $$
 
 - $(T_a)_{ij}$: SU(3) generators in the fundamental representation.  
+
+
 - The indices $i, j$ correspond to color (SU(3)) and must be properly contracted.  
 
 ::: callout-note
@@ -446,7 +536,11 @@ G^{\mu \nu}_a = \partial^{\mu} A^{\nu}_a - \partial^{\nu} A^{\mu}_a + g f_{abc} 
 $$
 
 - $G^{\mu \nu}_a$: Non-Abelian field strength tensor.  
+
+
 - $f_{abc}$: SU(3) structure constants.  
+
+
 - $g$: QCD coupling constant.  
 
 The covariant derivative for fermions introduces gauge field interactions:  
@@ -456,6 +550,8 @@ D_{\mu} \psi_i = \partial_{\mu} \psi_i - i g A^{\mu}_a (T_a)_{ij} \psi_j
 $$
 
 - $(T_a)_{ij}$: SU(3) generators in the fundamental representation.  
+
+
 - The color indices $i, j$ must be properly contracted.
 
 <!--
@@ -514,6 +610,8 @@ G^{\mu \nu}_a = \partial^{\mu} A^{\nu}_a - \partial^{\nu} A^{\mu}_a + g f_{abc} 
 $$
 
 - $f_{abc}$: Structure constants of SU(3).  
+
+
 - $g$: Coupling constant.  
 
 The fermion covariant derivative in QCD includes the generators $T_a$:  

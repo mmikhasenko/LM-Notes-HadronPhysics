@@ -7,6 +7,8 @@ This is lecture number 4. We will have no exercise session this week due to the 
 Today's lecture will focus on experiments in spectroscopy and kinematics computations. Before diving into that, let's recap the last lecture and address two key questions:  
 
 1. **Compute the magnetic moment in the current model of the Omega baryon.**  
+
+
 2. **Compute the lowest $1s$ multiplet excitation of the $\Sigma_p$ parameter (related to ISIS spin factors).**  
 
 For question 1, we first need the quark content of the $\Omega^-$ baryon: three strange quarks ($sss$). The total wave function is a product of color, isospin, spin, and flavor components, but color and isospin are factored out, leaving only flavor and spin. The flavor part is trivial, so we focus on spin.  
@@ -72,8 +74,13 @@ The excitation pattern of the $\Sigma_b$ baryon is determined by its light diqua
 
 The charges of these states are determined by their quark composition:  
 
+
 - $\Sigma_b^+$ ( $uu b$ ) has charge $+1$ (like a proton but with a bottom quark).  
+
+
 - $\Sigma_b^0$ ( $ud b$ ) has charge $0$.  
+
+
 - $\Sigma_b^-$ ( $dd b$ ) has charge $-1$.  
 
 Acting with the isospin lowering operator reduces the charge by one unit, so the pattern is straightforward.  
@@ -130,8 +137,13 @@ $$
 
 The $\Sigma_b$ baryon's excitation pattern is determined by its light diquark ($S = 1$, $\frac{1}{2}^+$). Its isospin partners form a triplet ($I = 1$) with charges:  
 
+
 - $\Sigma_b^+$ ($uu b$): $+1$  
+
+
 - $\Sigma_b^0$ ($ud b$): $0$  
+
+
 - $\Sigma_b^-$ ($dd b$): $-1$  
 
 ::: callout-tip
@@ -207,12 +219,18 @@ Currently, lattice QCD cannot fully address these complexities, so experiments w
 
 Several laboratories explore these mechanisms:  
 
+
 - **Belle II (Japan) and BESIII (China)**: These experiments collide electrons and positrons, which annihilate to produce intermediate states that decay. The resulting particles are studied to understand hadron properties.  
+
+
 - **LHC (CERN)**: Here, protons (not proton-antiproton pairs) are collided, producing a high-energy environment with many particles. Among these are long-lived particles like $B$ and $D$ mesons, which travel a few millimeters before decaying. Detectors track these particles, distinguishing primary and secondary vertices.  
 
 Another class of experiments uses **hadronic production**, where a hadron is fired at another hadron without fully describing the kinematics. These are typically fixed-target experiments, such as:  
 
+
 - **GLUEX (Jefferson Lab)**: Uses a photon beam on a hydrogen target.  
+
+
 - **COMPASS (CERN)**: Uses a pion beam on a hydrogen target.  
 
 In these setups, the target particle is either excited or scatters, providing another way to study hadrons.  
@@ -286,7 +304,10 @@ In the spectrum, the excitation of this system is the $\psi(2S)$, which we refer
 
 For data collection, there are two primary methods:  
 
+
 1. **Resonance peak sitting**: Accumulating data at the $J/\psi$ peak yields billions of events where the $J/\psi$ is produced and decays into various final states.  
+
+
 2. **Energy scan**: By tuning the beam energy over weeks, we measure the cross section at discrete points, building a profile of the resonance structure.  
 
 The total cross section is a superposition of all possible sub-processes, such as $e^+e^- \to \text{hadrons}$. Some resonances are more prominent in specific decay kinematics, so researchers often analyze a particular final state (e.g., $e^+e^- \to 3\pi$) at a selected scan point to extract hadron properties.  
@@ -318,8 +339,13 @@ A key question is why the beam energies are asymmetric. This design choice is de
 
 The boost has a significant effect on the B mesons:  
 
+
 - The B mesons gain a substantial longitudinal momentum.  
+
+
 - They live longer in the laboratory frame due to relativistic time dilation.  
+
+
 - They travel farther from the primary vertex before decaying.  
 
 This increased flight distance is crucial for precise vertex reconstruction. By measuring the displacement between the primary vertex and the decay point (secondary vertex), we can better identify and reconstruct B meson decays. The charged tracks from these decays do not point back to the primary vertex, providing a clear signature of secondary vertices.  
@@ -378,7 +404,10 @@ The typical energy scale for light, low-momentum particles is a few hundred GeV.
 
 There are two main production mechanisms in collider processes:  
 
+
 1. **Prompt production**: The particle of interest originates directly from the primary vertex.  
+
+
 2. **Cascade production**: The particle decays weakly, producing a secondary vertex.  
 
 For example, the observation of the $\Omega_c$ baryon and the $\Xi_c^{(*)} $ states in prompt production has significantly impacted hadron spectroscopy. The cascade ($\Xi$) particle, the ground state of the cascade multiplet, decays weakly since the charm or bottom quark is stable under strong interactions.  
@@ -428,7 +457,11 @@ Cosine simularity: 0.9397949583467019
 The $u u g c \bar{c}$ combinations represent a resonance. Let’s briefly review fixed target experiments and their techniques, with three examples:  
 
 1. **GLUEX at Jefferson Lab**: Uses a 9 GeV photon beam directed at a liquid hydrogen target, which provides protons as the interaction medium.  
+
+
 2. **Compass at CERN**: Operates with a pion beam and also employs a liquid hydrogen target.  
+
+
 3. **CB-ELSA (corrected from "CD alpha tops")**: Utilizes a photon beam at 2 GeV, focusing on light hadron spectroscopy rather than charm or bottom production.  
 
 Most of these experiments study light hadrons, including pions and kaons. The GlueX experiment, in particular, investigates the same physics domain.  

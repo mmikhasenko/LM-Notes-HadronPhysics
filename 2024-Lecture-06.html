@@ -199,13 +199,10 @@ Cosine simularity: 0.9267377551237035
 </span></p>
 <p>To analyze this, we follow a standard checklist:</p>
 <ol type="1">
-<li><strong>Identify the interaction type</strong> responsible for the decay.<br>
-</li>
-<li>Determine the variables describing the process.<br>
-</li>
-<li>Write the matrix element for the process.<br>
-</li>
-<li>Calculate the polarized decay width.</li>
+<li><p><strong>Identify the interaction type</strong> responsible for the decay.</p></li>
+<li><p>Determine the variables describing the process.</p></li>
+<li><p>Write the matrix element for the process.</p></li>
+<li><p>Calculate the polarized decay width.</p></li>
 </ol>
 <div class="callout callout-style-simple callout-important">
 <div class="callout-body d-flex">
@@ -220,11 +217,9 @@ Cosine simularity: 0.9267377551237035
 <p>The initial state (<span class="math inline">\Lambda</span>) has strangeness <span class="math inline">S = -1</span>, while the final state (<span class="math inline">p + \pi^-</span>) has <span class="math inline">S = 0</span>. Since parity is not conserved in weak interactions, this decay violates parity.</p>
 <p>Here’s a simplified diagrammatic representation (not a Feynman diagram):</p>
 <ul>
-<li><strong>Initial state</strong>: <span class="math inline">\Lambda</span><br>
-</li>
-<li><strong>Final state</strong>: <span class="math inline">p + \pi^-</span><br>
-</li>
-<li><strong>Interaction vertex</strong>: Weak decay (flavor-changing).</li>
+<li><p><strong>Initial state</strong>: <span class="math inline">\Lambda</span></p></li>
+<li><p><strong>Final state</strong>: <span class="math inline">p + \pi^-</span></p></li>
+<li><p><strong>Interaction vertex</strong>: Weak decay (flavor-changing).</p></li>
 </ul>
 <p>The matrix element <span class="math inline">\mathcal{M}</span> for this process would involve weak coupling constants and quark-level transitions like <span class="math inline">u \bar{d}</span> for the pion.</p>
 <!--
@@ -257,11 +252,9 @@ Cosine simularity: 0.9372389708310774
 <p>We can choose the <span class="math inline">Z</span>-axis along the direction of the particle momenta. The amplitude describing this process is denoted by <span class="math inline">H</span>. The dependencies of <span class="math inline">H</span> are limited to discrete indices of spin projection, as there are no free kinematic variables in this decay.</p>
 <p>The particles involved in the interaction have the following spin and parity assignments:</p>
 <ul>
-<li><span class="math inline">\Lambda</span>: <span class="math inline">J^P = \frac{1}{2}^+</span><br>
-</li>
-<li>Proton: <span class="math inline">J^P = \frac{1}{2}^+</span><br>
-</li>
-<li>Pion: <span class="math inline">J^P = 0^-</span></li>
+<li><p><span class="math inline">\Lambda</span>: <span class="math inline">J^P = \frac{1}{2}^+</span></p></li>
+<li><p>Proton: <span class="math inline">J^P = \frac{1}{2}^+</span></p></li>
+<li><p>Pion: <span class="math inline">J^P = 0^-</span></p></li>
 </ul>
 <p>Since this is a weak interaction, parity is not conserved in the decay. The initial state <span class="math inline">\Lambda</span> has a definite parity, but the final state does not preserve it.</p>
 <p>The key constraint comes from spin projection conservation. The spin projection of the initial <span class="math inline">\Lambda</span> must match the helicity of the proton in the final state. The transition amplitude is given by the matrix element:</p>
@@ -270,9 +263,8 @@ H_\lambda = \langle \text{final} | T | \text{initial} \rangle
 </span></p>
 <p>By convention, the initial state is written on the right and the final state on the left. The final state consists of:</p>
 <ul>
-<li>A proton with momentum <span class="math inline">P_Z</span> and spin projection <span class="math inline">\lambda</span> (helicity).<br>
-</li>
-<li>A pion with momentum <span class="math inline">-P_Z</span> (opposite direction) and spin projection <span class="math inline">0</span> (since it is spinless).</li>
+<li><p>A proton with momentum <span class="math inline">P_Z</span> and spin projection <span class="math inline">\lambda</span> (helicity).</p></li>
+<li><p>A pion with momentum <span class="math inline">-P_Z</span> (opposite direction) and spin projection <span class="math inline">0</span> (since it is spinless).</p></li>
 </ul>
 <p>The initial state is simply <span class="math inline">|\Lambda, \lambda \rangle</span>, where <span class="math inline">\lambda</span> is the spin projection of the <span class="math inline">\Lambda</span>.</p>
 <p>The matrix element <span class="math inline">H_\lambda</span> is constrained by angular momentum conservation, requiring:</p>
@@ -328,9 +320,8 @@ Cosine simularity: 0.9185847034418799
 </div>
 <p>All transformations discussed here are <strong>active transformations</strong>, meaning they are applied to the particle rather than the coordinate system. For example:</p>
 <ul>
-<li>Boosting the particle in the <span class="math inline">Z</span>-direction increases its velocity along that axis.<br>
-</li>
-<li>Rotating the particle about the <span class="math inline">Y</span>-axis is a nontrivial transformation.</li>
+<li><p>Boosting the particle in the <span class="math inline">Z</span>-direction increases its velocity along that axis.</p></li>
+<li><p>Rotating the particle about the <span class="math inline">Y</span>-axis is a nontrivial transformation.</p></li>
 </ul>
 <p>Consider a coordinate system with <span class="math inline">X</span> and <span class="math inline">Y</span> axes. A rotation about the <span class="math inline">Y</span>-axis corresponds to rotating the particle itself, not the coordinate frame. This is the most common transformation we will use.</p>
 <!--
@@ -388,18 +379,15 @@ Cosine simularity: 0.9306259565055195
 <p>When dealing with helicity states, we can either look up the Wigner D functions or compute them using matrix exponentiation. Let’s perform some algebra to understand how states transform when boosted and rotated.</p>
 <p>The simplest approach is to define spin quantization for a moving particle. Consider the coordinate axes: <span class="math inline">X</span>, <span class="math inline">Y</span>, and <span class="math inline">Z</span>, with the particle moving in the <span class="math inline">XZ</span> direction. There are two ways to quantize spin in this scenario:</p>
 <ol type="1">
-<li><strong>Helicity basis</strong>: Quantize spin along the direction of motion.<br>
-</li>
-<li><strong>Canonical basis</strong>: Quantize spin along the <span class="math inline">Z</span>-axis.</li>
+<li><p><strong>Helicity basis</strong>: Quantize spin along the direction of motion.</p></li>
+<li><p><strong>Canonical basis</strong>: Quantize spin along the <span class="math inline">Z</span>-axis.</p></li>
 </ol>
 <p>These two bases are not equivalent but are related. If a state has a definite spin projection along the direction of motion (helicity state), it will be a superposition of states in the canonical basis. Conversely, if a state has a definite projection along the <span class="math inline">Z</span>-axis, it will be a combination of helicity states.</p>
 <p>To construct the helicity state <span class="math inline">|P \lambda\rangle</span>, we apply a sequence of transformations starting from the particle’s rest frame:</p>
 <ol type="1">
-<li>Begin with a particle at rest, having spin projection <span class="math inline">\lambda</span> along the <span class="math inline">Z</span>-axis.<br>
-</li>
-<li>Boost the particle forward—this increases its momentum without altering the spin projection.<br>
-</li>
-<li>Rotate the entire system to align with the desired configuration.</li>
+<li><p>Begin with a particle at rest, having spin projection <span class="math inline">\lambda</span> along the <span class="math inline">Z</span>-axis.</p></li>
+<li><p>Boost the particle forward—this increases its momentum without altering the spin projection.</p></li>
+<li><p>Rotate the entire system to align with the desired configuration.</p></li>
 </ol>
 <p>The resulting state <span class="math inline">|P j \lambda\rangle</span> is a helicity state.</p>
 <div class="callout callout-style-simple callout-note">
@@ -574,11 +562,9 @@ Cosine simularity: 0.9435942757436995
 <p>We start with a <span class="math inline">\Lambda</span> flying in the <span class="math inline">z</span>-direction with a certain velocity. It decays into a proton and a pion in some plane. After inverting the boost, the proton and pion still lie in the same plane with exactly the same direction.</p>
 <p>The plane is defined by three vectors:</p>
 <ol type="1">
-<li>The original direction of motion of the <span class="math inline">\Lambda</span> (defining the axis).<br>
-</li>
-<li>The angle measured with respect to this axis.<br>
-</li>
-<li>The decay products forming the plane.</li>
+<li><p>The original direction of motion of the <span class="math inline">\Lambda</span> (defining the axis).</p></li>
+<li><p>The angle measured with respect to this axis.</p></li>
+<li><p>The decay products forming the plane.</p></li>
 </ol>
 <p>Without the original direction of the <span class="math inline">\Lambda</span>, the plane is no longer defined. The angle and the plane are constructed from these three vectors.</p>
 <!--
@@ -603,11 +589,9 @@ H_{\lambda p} = T_{\Lambda \lambda}
 <p>Since these operators commute and strong interactions conserve spin, we can compute the transition operator and rotation separately. We first apply the transition operator and then the rotation. Essentially, the transition operator transforms the pion-proton system into <span class="math inline">\Lambda</span>, and we explicitly perform this operation.</p>
 <p>The plane is defined by three vectors:</p>
 <ol type="1">
-<li>The original direction of motion of <span class="math inline">\Lambda</span> (defining the axis).<br>
-</li>
-<li>The angle measured with respect to this axis.<br>
-</li>
-<li>The decay products forming the plane.</li>
+<li><p>The original direction of motion of <span class="math inline">\Lambda</span> (defining the axis).</p></li>
+<li><p>The angle measured with respect to this axis.</p></li>
+<li><p>The decay products forming the plane.</p></li>
 </ol>
 <p>Without the original direction of <span class="math inline">\Lambda</span>, the plane is no longer defined. The angle and the plane are constructed from these three vectors.</p>
 <!--
@@ -783,11 +767,9 @@ Cosine simularity: 0.9165438281195135
 <p>If we remove the constant term, the imaginary part vanishes entirely. The question is whether non-trivial solutions exist where the imaginary part is non-zero. The answer is yes—any function can be inserted here, and the integral will converge. For example, take <span class="math inline">\sqrt{X}</span> and place it in the expression. This constructs a special function <span class="math inline">F(X)</span> whose imaginary part equals <span class="math inline">\sqrt{X}</span> in the region from <span class="math inline">-1</span> to <span class="math inline">7</span>. Outside this interval, the function is non-zero but has no singularities.</p>
 <p>The construction introduces non-trivial analytic structures. Three candidates for these structures are:</p>
 <ol type="1">
-<li>A continuous stretch of poles,<br>
-</li>
-<li>A branch cut,<br>
-</li>
-<li>A combination of both.</li>
+<li><p>A continuous stretch of poles,</p></li>
+<li><p>A branch cut,</p></li>
+<li><p>A combination of both.</p></li>
 </ol>
 <div class="callout callout-style-simple callout-note">
 <div class="callout-body d-flex">
@@ -857,7 +839,11 @@ Cosine simularity: 0.8912046881280075
 <p><span class="math display">
 \log(1 - 8) - \log(17 - 8)
 </span></p>
-<p>When evaluating at <span class="math inline">8 \pm i\epsilon</span>, we observe: - <span class="math inline">\log(1) = 0</span> - <span class="math inline">\log(-1 \mp i\epsilon) = \log(1) \pm i\pi</span></p>
+<p>When evaluating at <span class="math inline">8 \pm i\epsilon</span>, we observe:</p>
+<ul>
+<li><p><span class="math inline">\log(1) = 0</span></p></li>
+<li><p><span class="math inline">\log(-1 \mp i\epsilon) = \log(1) \pm i\pi</span></p></li>
+</ul>
 <p>This leads to a discontinuity (jump) in the imaginary part, confirming the presence of a branch cut. The real part of <span class="math inline">X</span> cannot lie between 1 and 7 because the function’s structure loops around these points.</p>
 <div class="callout callout-style-simple callout-note">
 <div class="callout-body d-flex">
@@ -869,7 +855,11 @@ Cosine simularity: 0.8912046881280075
 </div>
 </div>
 </div>
-<p>The function has singularities at these branch points, but they are not poles. A branch point can have a divergence (e.g., <span class="math inline">\log(X)</span> diverges at <span class="math inline">X = 0</span>), but it is distinct from a pole. For example: - <span class="math inline">1/(X - C)^3</span> has a third-order pole at <span class="math inline">X = C</span>. - <span class="math inline">\log(X - C)</span> has a logarithmic branch point at <span class="math inline">X = C</span>, not a pole.</p>
+<p>The function has singularities at these branch points, but they are not poles. A branch point can have a divergence (e.g., <span class="math inline">\log(X)</span> diverges at <span class="math inline">X = 0</span>), but it is distinct from a pole. For example:</p>
+<ul>
+<li><p><span class="math inline">1/(X - C)^3</span> has a third-order pole at <span class="math inline">X = C</span>.</p></li>
+<li><p><span class="math inline">\log(X - C)</span> has a logarithmic branch point at <span class="math inline">X = C</span>, not a pole.</p></li>
+</ul>
 <p>A pole is a singularity that can be resolved by adding an infinitesimal shift in the complex plane (e.g., <span class="math inline">1/(X \pm i\epsilon)</span>). In contrast, branch points persist and require branch cuts to define the function’s behavior.</p>
 <p>The function here has no poles on the principal sheet, but the branch points at 1 and 7 introduce a multivalued structure. The branch cut enforces a discontinuity, preventing <span class="math inline">X</span> from taking values between 1 and 7 on the principal branch.</p>
 <div class="callout callout-style-simple callout-important">
