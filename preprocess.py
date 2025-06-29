@@ -67,17 +67,34 @@ def transform_file(filepath):
         flags=re.DOTALL
     )
 
-    # Render lists
-    content = re.sub(r'(?m)(?<!\n\n)(^(\d+\.|[-*])\s+)', r'\n\n\1', content)
+    # Render lists - add space before first list item, but not between items
+    # Use a two-step approach: first mark list items, then add spacing
+    lines = content.split('\n')
+    new_lines = []
     
+    for i, line in enumerate(lines):
+        # Check if this line is a list item
+        is_list_item = bool(re.match(r'^(\d+\.|[-*])\s+', line))
+        
+        if is_list_item:
+            # Check if previous line was also a list item
+            prev_is_list_item = (i > 0 and bool(re.match(r'^(\d+\.|[-*])\s+', lines[i-1])))
+            
+            # Add blank line before if this is the first list item in a sequence
+            if not prev_is_list_item and i > 0 and lines[i-1].strip() != '':
+                new_lines.append('')
+        
+        new_lines.append(line)
+    
+    content = '\n'.join(new_lines)
 
     # Handle \slashed command as before
     content = re.sub(
         r'\\slashed\s*(?:\{([^\}]+)\}|([a-zA-Z]))',
         lambda m: (
-            f"\\mathrlap{{\,/}}{m.group(1) or m.group(2)}"
+            rf"\mathrlap{{\,/}}{m.group(1) or m.group(2)}"
             if (m.group(1) or m.group(2)).isupper()
-            else f"\\mathrlap{{/}}{m.group(1) or m.group(2)}"
+            else rf"\mathrlap{{/}}{m.group(1) or m.group(2)}"
         ),
         content
     )
