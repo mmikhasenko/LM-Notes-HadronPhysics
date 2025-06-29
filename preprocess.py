@@ -17,28 +17,6 @@ def transform_file(filepath):
     
     # Render lists
     content = content.replace('\r\n', '\n')  # Normalize Windows line endings
-    content = re.sub(
-        # Pattern breakdown:
-        r'(\n(?:> )?[^-].*\n)'          # Group 1: A line that doesn't start with a dash:
-                                        #   \n               → starts with a newline
-                                        #   (?:> )?          → optionally starts with "> "
-                                        #   [^-].*           → line must not start with "-" (avoids matching list items)
-                                        #   \n               → ends with newline (captures a full line)
-        r'((> )?(?:1\.|-|\*)\s)',       # Group 2: A list item line starting with:
-                                        #   (Group 3: optional "> ")  
-                                        #   followed by "1.", "-" or "*"  
-                                        #   then a space (to avoid matching things like "1.something")
-    
-        # Replacement logic:
-        lambda m: (
-            f"{m.group(1)}"             # Reinsert the first line (non-list content before the list)
-            f"{'>' if m.group(3) else ''}\n"  # If the bullet line had a "> ", add a new "> \n" to split it
-            f"{m.group(2)}"             # Reinsert the bullet line
-        ),
-    
-        content,
-        re.MULTILINE # `.` is any character except newline
-    )
     
     # Match entire callout block (header + all following lines starting with >)
     pattern = re.compile(
@@ -88,6 +66,9 @@ def transform_file(filepath):
         content,
         flags=re.DOTALL
     )
+
+    # Render lists
+    content = re.sub(r'(?m)(?<!\n\n)(^(\d+\.|[-*])\s+)', r'\n\n\1', content)
     
 
     # Handle \slashed command as before
