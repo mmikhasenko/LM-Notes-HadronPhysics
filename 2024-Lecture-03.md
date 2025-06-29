@@ -21,10 +21,7 @@ We will talk today about structure functions, the structure of hadrons, and thei
 
 For $\Delta^{++}$:  
 
-
 - The state is $3\left(\frac{1}{2} \left( p^\uparrow p^\uparrow p^\uparrow \right)\right)$  
-
-
 - Isospin calculation:  
 
 $$
@@ -33,10 +30,7 @@ $$
 
 For $\Delta^+$:  
 
-
 - The state is $\frac{3}{2} \left( p^\uparrow p^\uparrow p^\downarrow \right)$  
-
-
 - Isospin projection: $\left\{\frac{1}{2}, \frac{1}{2}, -\frac{1}{2}\right\}$  
 
 **Question 2**: What is the dimensionality of the isospin matrix acting on a space of three quarks with two charges (up and down)? If we treat the quarks as wavefunctions in two dimensions—where spin-up corresponds to the $u$-quark and spin-down to the $d$-quark—what is the size of this matrix?  
@@ -90,29 +84,18 @@ The cascade $B$ has isospin $\frac{1}{2}$, which implies a dimensionality of $2J
 
 To calculate charges, recall the quark charges:  
 
-
 - Upper row ($u, c, t$): $+\frac{2}{3}$  
-
-
 - Lower row ($d, s, b$): $-\frac{1}{3}$  
 
 For example:  
 
-
 - Combining three lower-row quarks ($ddd$) gives a charge of $-1$.  
-
-
 - Combining three upper-row quarks ($uuu$) gives a charge of $+2$.  
 
 For the $B_s$ meson ($b \bar{s}$), the charge calculation is:  
 
-
 - The $b$ quark contributes $-\frac{1}{3}$.  
-
-
 - The $\bar{s}$ antiquark contributes $+\frac{1}{3}$ (since the antiquark flips the sign).  
-
-
 - The total charge is $0$.  
 
 If you replace the $\bar{s}$ with another lower-row quark, the charge becomes $-1$.  
@@ -275,13 +258,8 @@ $$
 
 The lowering operator acts as follows:  
 
-
 - On $|u d u\rangle$, it gives $|d d u\rangle + |u d d\rangle$.  
-
-
 - On $|u u d\rangle$, it gives $|d u d\rangle + |u d d\rangle$.  
-
-
 - On $|d u u\rangle$, it gives $0$ (since lowering $|d\rangle$ gives zero).  
 
 Combining these terms, we get:  
@@ -294,13 +272,8 @@ After normalization, this confirms the orthogonal basis construction.
 
 The $8 \times 8$ matrix acting on these states decomposes into blocks:  
 
-
 - A $4 \times 4$ block (for the $3/2$ multiplet).  
-
-
 - Two $2 \times 2$ blocks (for the $1/2$ multiplets).  
-
-
 - Another $2 \times 2$ block (for the remaining states).  
 
 This block-diagonal structure reflects the irreducible representations of the spin space.

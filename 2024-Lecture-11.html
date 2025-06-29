@@ -222,9 +222,11 @@ Cosine simularity: 0.9082813418250815
 <p>Equivalently, one can consider the breakup momentum variable <span class="math inline">K</span>, which represents the momentum carried by each particle. Here, <span class="math inline">S</span> is the squared energy of the system in the center-of-mass frame, while <span class="math inline">K</span> is the momentum of each particle in the same frame. The relationship between <span class="math inline">S</span> and <span class="math inline">K</span> is given by the channeling function, and the analytic structure of the amplitude is simpler in terms of <span class="math inline">K</span> near the threshold.</p>
 <p>Instead of working in the <span class="math inline">S</span>-plane, where the amplitude is analytic except for a few singularities, we now examine the <span class="math inline">K</span>-plane and relate the structures between the two planes. Specifically, we map the following points from the <span class="math inline">S</span>-plane to the <span class="math inline">K</span>-plane:</p>
 <ol type="1">
-<li><p>Points 1 and 2: Resonances located on the second Riemann sheet with respect to the threshold in <span class="math inline">S</span>.</p></li>
-<li><p>Point 3: A pole on the real axis in the first Riemann sheet, corresponding to a bound state.</p></li>
-<li><p>Point 4: A virtual state, residing on the unphysical sheet below the threshold.</p></li>
+<li>Points 1 and 2: Resonances located on the second Riemann sheet with respect to the threshold in <span class="math inline">S</span>.<br>
+</li>
+<li>Point 3: A pole on the real axis in the first Riemann sheet, corresponding to a bound state.<br>
+</li>
+<li>Point 4: A virtual state, residing on the unphysical sheet below the threshold.</li>
 </ol>
 <p>The goal is to understand how these singularities and structures translate when mapped from the <span class="math inline">S</span>-plane to the <span class="math inline">K</span>-plane.</p>
 <p><span class="math display">
@@ -542,13 +544,15 @@ Cosine simularity: 0.9194840503691668
 </div>
 <p>Two primary challenges arise:</p>
 <ol type="1">
-<li><p><strong>Finite volume effects</strong> (due to the box size).</p></li>
-<li><p><strong>Discretization errors</strong> (due to step size).</p></li>
+<li><strong>Finite volume effects</strong> (due to the box size).<br>
+</li>
+<li><strong>Discretization errors</strong> (due to step size).</li>
 </ol>
 <p>To mitigate these:</p>
 <ul>
-<li><p>Increase the volume to reduce finite-volume effects.</p></li>
-<li><p>Decrease step size to minimize discretization errors.</p></li>
+<li>Increase the volume to reduce finite-volume effects.<br>
+</li>
+<li>Decrease step size to minimize discretization errors.</li>
 </ul>
 <p>Both adjustments come at a higher computational cost. The goal is to use the minimal number of points required for reliable results, as lattice QCD calculations are numerically intensive.</p>
 <!--
@@ -780,8 +784,9 @@ Cosine simularity: 0.9147616419996627
 </span></p>
 <p>where <span class="math inline">E_1</span> is the energy of the lowest excited state. This is a common method to extract energy levels numerically. The energy obtained depends on the operator used:</p>
 <ul>
-<li><p>For pion-like operators, it approaches the pion mass.</p></li>
-<li><p>For vector quantum number operators, it approaches the rho meson mass.</p></li>
+<li>For pion-like operators, it approaches the pion mass.<br>
+</li>
+<li>For vector quantum number operators, it approaches the rho meson mass.</li>
 </ul>
 <div class="callout callout-style-simple callout-important">
 <div class="callout-body d-flex">

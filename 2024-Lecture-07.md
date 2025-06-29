@@ -27,10 +27,7 @@ The heavy quarks (charm) are explicitly listed in the notation because they are 
 :::
 For example:  
 
-
 - $\Sigma_c$ indicates a charmed baryon with two light quarks (e.g., $uu$, $ud$, or $dd$).  
-
-
 - $P_{cc}$ denotes a pentaquark state with two charm quarks and three light quarks.  
 
 In this case, the $P_c^+$ state likely has the quark content $ud$ for the light quarks.  
@@ -50,10 +47,7 @@ There is a lower bound on the lifetime of this particle, which arises from the b
 
 The possible decay channels are:  
 
-
 1. **Electromagnetic annihilation** of the $c\bar{c}$ pair, but this is highly suppressed because electromagnetic processes are much weaker than other interactions.  
-
-
 2. **Strong annihilation** of the $c\bar{c}$ pair into lighter quarks, but this is also suppressed for heavy quarks like charm. The heavier the quarks, the smaller the annihilation probability.  
 
 The dominant decay mechanism is the **weak decay** of one of the charm quarks. For example, one charm quark can transition to an $s$-quark by emitting a $W$ boson:  
@@ -203,13 +197,8 @@ The true boundary for scattering is often given by a sixth-order polynomial. In 
 
 If you precisely constrain this function over its domain, it yields a complex transition amplitude (e.g., $1 + 3i$) for any point. The same matrix element can compute transition amplitudes for different processes, such as decays. This framework works exceptionally well in QED. For instance, the same matrix element describes:  
 
-
 - Compton scattering (photon-electron → photon-electron)  
-
-
 - Electron-positron annihilation into two photons  
-
-
 - Two-photon production of an electron-positron pair  
 
 In hadron physics, however, the situation is more complicated due to the lack of a perturbative framework. When modeling the Dalitz plot, we approximate resonances as finite chunks, but this leads to unphysical infinities in the scattering amplitude. The divergence occurs because we truncate the resonance spectrum — the physics demands an infinite number of resonances to maintain analyticity.  
@@ -242,11 +231,7 @@ Solving $\Phi(s, t, u) = 0$ yields the boundaries of the physical domain. For a 
 The **Kibble function** extends this by combining three Klein functions, each corresponding to a different channel:  
 
 - $\Lambda_1$ for the first channel  
-
-
 - $\Lambda_2 = \lambda(t, m_X^2, m_X^2)$ for the second channel  
-
-
 - $\Lambda_3 = \lambda(u, m_X^2, m_B^2)$ for the third channel  
 
 Here, $\lambda$ denotes the standard Källén triangle function.  
@@ -301,16 +286,9 @@ $$
 
 *Terms:*  
 
-
 - $A$: Scattering amplitude.  
-
-
 - $A^{\dagger}$: Hermitian conjugate of $A$.  
-
-
 - $i$: Imaginary unit.  
-
-
 - $\int d\Phi$: Integration over the phase space of intermediate states.  
 
 Diagrammatically, this represents the relationship between the amplitude and its conjugate. For partial waves, the amplitude $A$ depends on a single variable, simplifying the phase space integration. The expression reduces to:  
@@ -403,13 +381,8 @@ The unitarity condition constrains our scattering amplitude. To see this, we sta
 
 Let's verify the algebra:  
 
-
 - The term $(1 + iT)(1 - iT^\dagger)$ expands to $1 - iT^\dagger + iT + T T^\dagger$.  
-
-
 - Subtracting this from $1$ gives $i(T - T^\dagger) + T T^\dagger$.  
-
-
 - Multiplying both sides by $i$ shifts the minus sign to $T^\dagger$ and removes the $i$ on the left, yielding:  
 
 $$
@@ -424,10 +397,7 @@ $$
 
 Here, the delta functions enforce energy-momentum conservation:  
 
-
 - The first delta function connects the initial state to the intermediate state: $P_1 + P_2 = P_1^{(m)} + P_2^{(m)}$.  
-
-
 - The second delta function connects the intermediate state to the final state: $P_1' + P_2' = P_1^{(m)} + P_2^{(m)}$.  
 
 By isolating the delta function that relates the initial and final states, we simplify the phase space integral to:  
@@ -610,8 +580,6 @@ We see an infinite series of terms, which helps interpret the roles of $K$ and $
 Diagrammatically, this can be represented as:  
 
 - $K$ (elementary interaction)  
-
-
 - $K + K i \rho K + K i \rho K i \rho K + \dots$ (series of interactions with intermediate propagations)  
 
 Here, $\rho$ corresponds to the two-particle phase space, and $K$ represents the fundamental interaction vertex.  

@@ -8,35 +8,20 @@ We are fixed from now on—this room is booked and will be used for the next 10 
 
 Today is **Lecture 3**, where we will:  
 
-
 1. Continue discussing **symmetry** from the last lecture.  
-
-
 2. Examine the **structure of hadrons**—how they look inside and the experimental evidence that they are not point-like but made of quarks.  
 
 The lecture plan is as follows:  
 
-
 - Start with **kinematics**, focusing on **cross-section calculations** and **multibody kinematics**.  
-
-
 - Begin with a simple **classical scattering** example (electron-proton).  
-
-
 - Discuss **form factors** in scattering and their relation to hadron properties, such as:  
   - Charge distributions  
   - Magnetic moments  
 
-
 - Analyze these quantities in the **quark model**, linking experimental observations to internal hadron structure.  
-
-
 - Revisit **symmetry considerations** (flavor symmetry, spin symmetry) from the last lecture.  
-
-
 - Explore **proton/neutron spin and flavor wave functions**.  
-
-
 - Compute the **magnetic moment in the quark model** and connect it to observables.  
 
 This structure should bring clarity to the discussion.  
@@ -87,8 +72,6 @@ This two-component wave function represents a multiplicity of two, with isospin 
 When you have one light quark, you are dealing with isospin $\frac{1}{2}$. If you have two light quarks, the system is a combination of two $\frac{1}{2}$ states, which can result in total isospin $1$ or $0$. The answer depends on counting the number of light quarks:  
 
 - For one light quark, the isospin is $\frac{1}{2}$.  
-
-
 - For two light quarks, the possible isospin states are $0$ or $1$.  
 
 ::: callout-note
@@ -120,13 +103,8 @@ We return to the three-quark symmetry and revisit the diagram of hypercharge ver
 
 Further, one could extend this to include the charm quark. While the charm quark is lighter than the top and bottom, we can theoretically consider a world where the charm, strange, and light quarks ($u, d$) have the same mass. In this scenario, mesons occupy points in a three-dimensional symmetry space:  
 
-
 - One axis for **isospin**,  
-
-
 - Another for **strangeness**,  
-
-
 - A third for **charmness**.  
 
 The symmetry implies that mesons like $D^0$ and $D^+$ are nearly identical under strong interactions, differing only by their light quark content ($u$ vs. $d$). Isospin symmetry asserts that swapping $u$ and $d$ quarks preserves particle properties—mass, width, decay modes—since QCD (quantum chromodynamics) does not distinguish them electromagnetically.  
@@ -174,23 +152,15 @@ Now, let's discuss the second topic. It's easier to address from the final state
 
 Here, we have two vectors:  
 
-
 - $\vec{J}_1$ with spin 1,  
-
-
 - $\vec{J}_2$ with spin 1.  
 
 When adding these spins, the possible total spin configurations are quantized in steps of 1: $S = 0, 1, 2$. This is one of the key concepts you'll learn in this course—how to add spins. We'll practice this repeatedly until it becomes clear.  
 
 When combining these two vectors, the total spin can be:  
 
-
 - $S = 0$ (singlet state),  
-
-
 - $S = 1$ (triplet state),  
-
-
 - $S = 2$ (quintet state).  
 
 This is represented as:  
@@ -203,24 +173,14 @@ On one side, we list their individual quantum numbers; on the other, the total $
 
 Now, let's introduce orbital angular momentum ($L$). For $L = 0$, the states are straightforward. For $L = 1$ (P-wave), the parity flips to $-$, and the possible $J^P$ combinations become:  
 
-
 - $1^-$,  
-
-
 - $2^-$,  
-
-
 - $3^-$.  
 
 Similarly, for $L = 2$ (D-wave), the possible $J^P$ values are:  
 
-
 - $2^+$,  
-
-
 - $3^+$,  
-
-
 - $4^+$.  
 
 We can continue this for higher $L$ (F-wave, G-wave, etc.), but for most practical purposes, we rarely go beyond F-wave.  
@@ -269,8 +229,6 @@ The electron is a point-like particle, so its interaction with the proton's elec
 The key idea is that the electron serves as a clean probe:  
 
 - At low $Q^2$ (momentum transfer), the electron sees the proton as a single charged object.  
-
-
 - At high $Q^2$, the electron scatters off individual quarks, revealing their dynamics inside the proton.  
 
 This method allows us to study strong interactions and how quarks are organized within hadrons. The electromagnetic current insertion on the proton side is what makes this process informative.  
@@ -392,10 +350,7 @@ The breakup momentum and phase space integrals often involve the channel functio
 :::
 For elastic scattering kinematics, the key variables are:  
 
-
 - **Total energy $E_{\text{total}}$**, fixed by the beam energy.  
-
-
 - **Scattering angle $\theta$**, which is measured experimentally.  
 
 Knowing $E_{\text{total}}$ gives $s$, and knowing $\theta$ allows determining $t$ through kinematic relations. The commonly used variable in such processes is $Q^2$, defined as:  
@@ -517,13 +472,8 @@ The delta function enforces 4-momentum conservation, ensuring the sum of initial
 
 To determine the dimensionality of the integral, we count the variables and subtract constraints. For two-body phase space:  
 
-
 - Each particle has 3 momentum components, so initially, there are 6 degrees of freedom.  
-
-
 - The 4-momentum conservation delta function imposes 4 constraints.  
-
-
 - After removing these constraints, we are left with 2 degrees of freedom.  
 
 By systematically trading constraints for differentials, we arrive at the final expression for the two-body phase space:
@@ -655,10 +605,7 @@ It is crucial to identify the dimensionality of expressions and verify that they
 :::
 Consider the contraction of indices:  
 
-
 - The term $\gamma^\mu$ (a $4 \times 4$ matrix) contracts with a Lorentz index $\mu$.  
-
-
 - The spinor $U$ (a column vector in spinor space) contracts with the gamma matrix, resulting in a scalar in spinor indices but a vector in Lorentz indices.  
 
 This pattern continues: when a matrix is contracted with a vector (row or column), the result is another matrix or scalar, depending on the context.  

@@ -10,11 +10,7 @@ But before going there, I would like to start with a recap.
 Last lecture, we discussed:
 
 - The **phase space** for particle reactions
-
-
 - Different experiments in their **kinematics**
-
-
 - A list of experiments worldwide studying **hadrons**, their production mechanisms, and peculiarities
 
 Let’s begin with a recap on **kinematics**.
@@ -25,10 +21,7 @@ Let’s begin with a recap on **kinematics**.
 
 We have two examples:
 
-
 1. **Scalar particles**: $0^-$ scalars scattering to $0^-$ scalars in the final state.
-
-
 2. **Particles with spin**: $P^+$ scattering from $0^-$ to $3^-$ and $1^+$.
 
 ::: callout-note
@@ -39,19 +32,11 @@ The scattering process is represented by a "blob" diagram, indicating interactio
 The **internal dynamics** (electromagnetic, strong, gravity, etc.) do not affect the number of variables.
 
 - Start with $2 \times 2 \times 3 = 12$ degrees of freedom (4 particles, 3 momentum components each).
-
-
 - Subtract 4 for **energy-momentum conservation**.
-
-
 - Subtract 6 (3 rotations, 3 boosts) since the system has no preferred frame.
-
-
 - **Result**: 2 variables.
 
 - The answer is **also 2**.
-
-
 - Angular distributions of final-state particles do not introduce additional independent variables.
 
 ---
@@ -76,8 +61,6 @@ If final-state particles **decay**, additional variables may be introduced. But 
 For part C, the two variables to describe the process are:
 
 - **Mandelstam variables** $s$ and $t$ (most common choice).
-
-
 - These are **Lorentz invariants**—they characterize the process independently of the frame.
 
 The mass of a particle is given by:
@@ -105,13 +88,8 @@ Alternatively, we can use the **center-of-mass energy** and the **angle**. That�
 ::: callout-note
 **Mandelstam Variables**:
 
-
 - $s = (p_1 + p_2)^2$ (center-of-mass energy squared)
-
-
 - $t = (p_1 - p_3)^2$ (momentum transfer squared)
-
-
 - $u = (p_1 - p_4)^2$ (related by $s + t + u = \sum m_i^2$)
 :::
 ---
@@ -132,10 +110,7 @@ Think of the rigid body analogy: a 3D-printed blob with fixed-length vectors sti
 
 For a three-body decay, we define:
 
-
 - $s = (p_3 + p_4)^2$
-
-
 - $t = (p_1 - p_3)^2$
 
 The phase space for three-body decays is flat in these variables. The differential width $\frac{d\Gamma}{dm_{34}^2 dm_{24}^2}$ is constant.
@@ -189,13 +164,8 @@ This is a transition within one generation, so it is not suppressed—it’s an 
 
 This is the **golden channel** for detection because the final state has three charged particles:
 
-
 - The **proton** is charged, travels well, and is stable.
-
-
 - The **kaon** is stable in our accelerator experiments.
-
-
 - The **pion** is also stable.
 
 They fly directly from the decay without distraction, leaving clear tracks in the detectors.
@@ -402,13 +372,8 @@ Let me finish this discussion and move to **today's topic**: the angular distrib
 
 Consider the phase space resonance here. As we discussed before:
 
-
 * When traversing the Dalitz plot
-
-
 * Moving through phase space from one end to another while keeping the invariant mass fixed
-
-
 * We change the angle
 
 This explores **different angular configurations**.
@@ -423,8 +388,6 @@ Let's sit in the rest frame of the $K\pi$ system where this band occurs and trav
 Particles often prefer certain alignments. For example:
 
 * They may favor being **parallel** rather than perpendicular
-
-
 * This is less probable kinematically
 
 Such preferences arise because particles have **spin**.
@@ -432,8 +395,6 @@ Such preferences arise because particles have **spin**.
 The intermediate resonance (here, the $K^*$) is not a scalar—it has spin. This spin causes:
 
 1. Inhomogeneities in angular distributions
-
-
 2. Effects on the Dalitz plot
 
 ---
@@ -456,10 +417,7 @@ $$
 
 where:
 
-
 * $P_k$ are Legendre polynomials
-
-
 * $a_k$ depend on the spin density matrix
 
 ---
@@ -472,10 +430,7 @@ $$
 
 where:
 
-
 * $d^J$ are Wigner d-functions
-
-
 * $\Delta\lambda$ is the helicity difference
 
 ---
@@ -493,8 +448,6 @@ So 15 minutes before the end, we start with today's lecture.
 **Angular distribution** is a very powerful tool to understand the properties of particles. As we already discussed, it is our way to measure **spin, parity, and other quantum numbers** in particle interactions.
 
 - **Particles with higher spin** prefer more *bumpy*, more *spiky* angular distributions.
-
-
 - **Particles with lower spin**—if everything is scalar—produce *no asymmetries at all*, no structures in the angular distributions.
 
 By looking at the angular distribution, especially in the **rest frame of the particle decay**, one examines the ratio of *aligned kinematics* to other types of kinematics. From this, one can infer information about the spin.
@@ -508,11 +461,7 @@ Most of the time, it is as simple as looking at the **Dalitz plot** and seeing i
 For **scalar particles** in the final state, the nodes directly tell you the spin:
 
 - **One node** corresponds to spin 1.
-
-
 - **Two nodes** correspond to spin 2.
-
-
 - **Three nodes** correspond to spin 3.
 
 The intensity vanishes at certain points, creating **dark spots**. However, if the particles are **not scalar**—and most of the time they are not—the situation becomes more complicated.
@@ -521,13 +470,8 @@ The intensity vanishes at certain points, creating **dark spots**. However, if t
 
 Let me give an example of scalar resonances. Here, let’s quickly check what spin they have.
 
-
 - The spin of the **proton** is $1/2$.
-
-
 - The spin of the **kaon ($K$)** and **pion ($\pi$)** is $0$.
-
-
 - The spin of the **lambda ($\Lambda$)** is the same as the proton, but the spin averages out in the distribution due to the lack of polarization.
 
 If you consider a **specific spin projection** of the $\Lambda$ and proton, you would again see nodes and zeros in the angular distribution. But since we do not polarize the initial state or measure the spin of the final state, everything is averaged. As a result, you no longer have minima or nodes—the structures are **smoothed out**.
@@ -546,13 +490,8 @@ When you rotate the state, you do not get a single state but a **mixture of diff
 **Key Rotation Formula**:
 The most general rotation is described by three Euler angles $(\alpha, \beta, \gamma)$. In particle physics conventions:
 
-
 1. First rotate by $\phi$ about the $z$-axis.
-
-
 2. Then rotate by $\theta$ about the $y$-axis.
-
-
 3. Finally, rotate by $\gamma$ about the $z$-axis again.
 :::
 ---
@@ -612,11 +551,7 @@ Any questions about the **Wigner $D$-functions**? Could you now compute rotation
 One important note: the convention has a **minus sign**. If you want to compute the matrix exponential yourself, recall that in previous exercises, we derived these matrices. You can do this numerically using **Python** or **Julia**—just compute the matrix exponential. Alternatively, you can look up the Wigner $D$-functions, but be careful with conventions.
 
 - **Mathematica**, for example, uses the **opposite convention**—it has a plus sign here and some indices swapped. Be aware of that.
-
-
 - **Wikipedia** is the most reliable source for checking conventions—search for "Wigner D-functions," and it provides tables and explanations.
-
-
 - The **SymPy** library in Python and **ROOT** both implement these functions correctly. Just be cautious with Mathematica.
 
 ---
@@ -626,8 +561,6 @@ Let me emphasize: what we’ve discussed so far has **nothing to do with weak or
 The remarkable thing is that to understand particle behavior and angular distributions, you don’t need much from strong interactions. You only need the **general properties of the rotation group**.
 
 - **Angular distributions** are determined by how space rotates, with just a small input from strong interactions—namely, the preference for certain spin states during particle production.
-
-
 - But the **decay asymmetries** and **kinematics** are entirely governed by the **quantum rotation group**.
 
 This is amazing because it means we now have a **general recipe** to construct any particle decay chain and predict its angular distribution.
@@ -647,23 +580,15 @@ Let's look at the **center-of-mass frame** (CM frame). The general expression is
 
 The formula has two components:
 
-
 1. **A model-independent part** governed by group theory and angular momentum
-
-
 2. **Particle interaction terms** that must be inserted
 
 ---
 
 The $H$ terms represent the remaining dynamics hidden inside particle interactions. This includes effects from:
 
-
 - Weak interactions
-
-
 - Strong interactions
-
-
 - Electromagnetic interactions
 
 The physics is contained in $H$, while the rest describes the **rotational properties** of the system. For hadronic interactions, $H$ is often unknown because we lack a way to parameterize it.
@@ -779,14 +704,11 @@ I’ll distribute one plot per group. If you have time tomorrow at 8 AM, we can 
 - **Spin multiplicity**:
 $$(2j_1 + 1) \times (2j_2 + 1)$$
 
-
 - **Angular distribution**:
 $$\frac{d\Gamma}{d\cos\theta} \propto |\mathcal{M}|^2$$
 
-
 - **Parabolic distribution**:
 $$\frac{d\Gamma}{d\cos\theta} = A + B\cos\theta + C\cos^2\theta$$
-
 
 - **Partial wave expansion**:
 $$\frac{d\sigma}{d\cos\theta} = \sum_{\ell=0}^{L} a_\ell P_\ell(\cos\theta)$$

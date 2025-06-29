@@ -10,13 +10,8 @@ But before going there, I would like to start with a recap.
 
 In the last lecture, we discussed:
 
-
 - The **phase space** for particle reactions
-
-
 - Different experiments and their **kinematics**
-
-
 - A list of experiments worldwide studying **hadrons**, their production mechanisms, and peculiarities
 
 ---
@@ -25,14 +20,8 @@ We start with a recap on **kinematics**.
 The first question: *How many variables does one need to describe the two-particle scattering process?* We have two problems:
 
 1. **Scalar particles** (e.g., 0-minus scalars):
-
-
 - Scattering of 0-minus → 0-minus, with two 0-minus scalar particles in the final state.
-
-
 2. **Particles with spin** (e.g., P-plus):
-
-
 - Scattering of 0-minus → 3-minus and 1-plus.
 
 ::: callout-note
@@ -43,16 +32,9 @@ The scattering process is represented by a "blob" in diagrams. These are **unita
 
 The question: *How many variables describe the full kinematics?*
 
-
 - The blob's internal dynamics (strong, EM, gravity) **do not affect** the answer.
-
-
 - Two cases:
-
-
 - **(A)** Particles **without spin**
-
-
 - **(B)** Particles **with spin**
 
 ::: callout-tip
@@ -61,11 +43,7 @@ For **(C)**, provide an example of a variable combination that fully describes t
 ---
 
 1. Start with **8 variables** (2 particles × 4-momenta, minus 4 conservation constraints).
-
-
 2. Subtract **6 more** (3 rotations + 3 boosts) due to lack of reference frame.
-
-
 - Final answer: **2 variables** for **(A)**.
 
 For **(B)**, the answer is also **2 variables**, but the amplitude becomes a higher-rank object (e.g., 21-dimensional for spin-3 × spin-1).
@@ -95,11 +73,7 @@ These are **Lorentz-invariant**—they don’t depend on the reference frame.
 
 
 - **Henrik’s choice**: Masses of particle pairs (e.g., $m_{12}^2$, $m_{13}^2$).
-
-
 - **Sven’s choice**: $s$ and $u$ (equivalent to $s$ and $t$ via linear combinations).
-
-
 - **Favorite choice**: **Center-of-mass energy** ($\sqrt{s}$) and **scattering angle** ($\theta$).
 
 ::: callout-tip
@@ -156,8 +130,6 @@ The $c \to s$ transition happens within one generation, and this is **not suppre
 This is the **golden channel** for reconstructing because in the final state you have three charged particles—no neutrals.
 
 * The proton is a nice charged particle; it travels and is stable.
-
-
 * The kaon is stable in our experiments, and the pion is stable.
 
 They fly out from the decay without any distraction, and we see the tracks clearly through all detectors.
@@ -183,8 +155,6 @@ Here is the experimental result of the analysis, which resembles the data.
 If I showed you the actual experimental data, you wouldn’t distinguish it from this plot because the statistics are so high that the distribution is very smooth.
 
 * **X-axis**: Mass of the proton-kaon system $m_{PK}^2 = (p_P + p_K)^2$.
-
-
 * **Y-axis**: Mass of the kaon-pion system $m_{K\pi}^2 = (p_K + p_\pi)^2$, covering all allowed values for the decay.
 
 The colored region shows kinematically allowed configurations, while the white area corresponds to forbidden kinematics.
@@ -258,13 +228,8 @@ This creates structures in the Dalitz plot—projecting them shows resonance-lik
 
 In this decay, resonances appear in all three pairs:
 
-
 - **Horizontal lines**: Resonances in $K\pi$ (e.g., $K^*$).
-
-
 - **Vertical lines**: Resonances in $pK$.
-
-
 - **Diagonal lines**: Resonances in $\pi p$ (e.g., $\Delta$).
 
 The symmetric plot shows these as lines parallel to the triangle’s sides.
@@ -292,10 +257,7 @@ Angular distribution is a **very powerful tool** to understand properties of par
 As we already discussed, that's our way to measure **spin, parity, and other quantum numbers** in particle interactions.
 :::
 
-
 - **Particles with higher spin** would prefer more bumpy, more spiky angular distributions.
-
-
 - **Particles with lower spin**—if everything is scalar—are going to produce **no asymmetries at all**, no structures in angular distributions.
 
 By looking at the angular distribution, especially in the **rest frame of the particle decay**, one examines the ratio of the aligned kinematics and other types of kinematics.
@@ -309,21 +271,13 @@ This is done by looking at **angular distributions**.
 
 Most of the time, it's as simple as looking at the **Dalitz plot** and seeing:
 
-
 - If there is a minimum in the angular distribution.
-
-
 - If this line has several structures, several nodes.
 
 The **maxima and nodes** indicate, in the case of scalar particles in the final state, the nodes would literally tell you the spin:
 
-
 - If you have **one node**, you have spin one.
-
-
 - If you have **two nodes**, you have spin two.
-
-
 - If you have **three nodes**, you have spin three.
 
 So the intensity would really vanish at certain points—the **dark spots**.
@@ -335,11 +289,7 @@ I will have examples of scalar resonances.
 But here, let's just quickly check what spin they are giving here:
 
 - **Baryon (proton) spin**: $\frac{1}{2}$
-
-
 - **Kaon and pion (except scalars)**: spin $0$
-
-
 - **Lambda**: same as proton, but with the jump, the presence of spin averages out the distribution.
 
 If you consider a certain spin projection of the $\Lambda_c$ and proton, you'll again have nodes and zeros in the angular distribution.
@@ -357,10 +307,7 @@ There is a $z$-axis that we need to quantize the spin, and this $z$-axis measure
 The state $|JM\rangle$ can be thought of as a vector of $2J + 1$ components.
 All operators in this case are matrices that act on these vectors and produce either:
 
-
 - The same state with a certain eigenvalue, or
-
-
 - A mixture of the states.
 :::
 When I act with the rotation on the state, I'm going to produce **not a certain state, but a mixture of different states**—it's as simple as that.
@@ -424,13 +371,8 @@ What's going to be here is the sine of 15 degrees.
 
 ::: callout-tip
 
-
 - **Mathematica** has an **opposite convention** to what we use.
-
-
 - **Wikipedia** is the most reliable source for Wigner $D$-function conventions.
-
-
 - They're coded correctly in **Python (SymPy)** and **ROOT**.
 :::
 ---
@@ -444,18 +386,12 @@ You only need the **general properties of the rotational group**, so to speak.
 
 Angular distributions are determined by:
 
-
 1. **General properties of how space is rotated**, plus
-
-
 2. A little bit that we need from strong interactions.
 
 Specifically:
 
-
 - **Strong interactions** tell us what is the preference for which spin particles are produced.
-
-
 - **Quantum group properties** determine how they decay and what the asymmetry is in the kinematics.
 
 That's amazing.
@@ -469,10 +405,7 @@ Now we're going to make up a model for what is inside of the blob.
 
 It's not just kinematics—it really comes from a **modeling assumption**, and I'm going to assume that three particles in the final state are produced via a **cascade process** where:
 
-
 1. The initial particle goes first to the intermediate particle with spin $J$.
-
-
 2. Then $X$ decays to 1 and 2.
 
 A three-way process with two variable spins just gives the **dimension of the matrix**—discrete dimensions.
@@ -500,13 +433,8 @@ $$
 \mathcal{A} = \sum_{\lambda} H_{\lambda} D^{J*}_{\lambda_0, \lambda_X - \lambda_3}(\phi, \theta) D^{J_X}_{\lambda_X, \lambda_1 - \lambda_2}(\theta', \phi')
 $$
 
-
 - $H_{\lambda}$: Dynamics (weak/strong/EM interactions)
-
-
 - $D^{J}$: Wigner rotation matrices
-
-
 - $\lambda_i$: Helicity states
 :::
 I'd like to give you a general formula, and we will only have time to understand it rather than derive it. It has two components: a model-independent part, carrier group-driven angle independence, and then bits of the particle interactions that you have to insert.
@@ -590,10 +518,7 @@ $$
 
 **Why cosine?**
 
-
 - Cosine is just better—it has a better Jacobian.
-
-
 - We don't need to have this sine Jacobian for cosine.
 
 That's why often what is looked at is the cosine, and this is going to be the matrix element proportional to the matrix element.
@@ -612,25 +537,15 @@ Or what you also often see is this.
 
 **Notice the difference:**
 
-
 - What we wrote here, $A$, is the **quantum transition amplitude**.
-
-
 - It's a probability amplitude.
-
-
 - It's one that is going to be squared to give us the observed probability.
-
-
 - This $G$ is going to appear squared.
 
 ::: callout-important
 **Experiment Observations:**
 
-
 - In experiments, we only see the squared value of the amplitude.
-
-
 - For unpolarized decays, distributions are averaged:
   $$
   \overline{|M|^2} = \frac{1}{(2s_1 + 1)(2s_2 + 1)} \sum_{\text{spins}} |M|^2
@@ -651,8 +566,6 @@ This is what is called **partial wave analysis**.
 Or if you project the differential cross section, this is called **moment analysis**.
 
 - **Partial wave analysis** models cross-sections by amplitudes, treating these terms as free parameters.
-
-
 - **Moment analysis** projects angle distributions onto polynomials, yielding combinations of conditions.
 
 ---
@@ -668,11 +581,7 @@ I would like to tell you that this book has the best coverage of this subject.
 This is Martin Spearman's *Elementary Particle Theory*, and **Chapter 4 is fundamental**.
 
 - It starts from the Lorentz group.
-
-
 - Introduces vectors with a bit of group theory—without heavy details.
-
-
 - A **really good book** for insights on particle definitions.
 
 ### Identifying Decays via Dalitz Plot Kinematics
@@ -709,18 +618,15 @@ Thanks for coming, and sorry for being slightly late. Will you have time tomorro
 
 For the Dalitz plot analysis of a 3-body decay $D \to ABC$, the relevant kinematic relations are:
 
-
 - **Invariant masses** of two-particle combinations:
 $$
 m_{AB}^2 = (p_A + p_B)^2, \quad m_{BC}^2 = (p_B + p_C)^2
 $$
 
-
 - **Total invariant mass constraint**:
 $$
 m_{AB}^2 + m_{BC}^2 + m_{AC}^2 = m_D^2 + m_A^2 + m_B^2 + m_C^2
 $$
-
 
 - **Boundary conditions** for the Dalitz plot:
 $$
