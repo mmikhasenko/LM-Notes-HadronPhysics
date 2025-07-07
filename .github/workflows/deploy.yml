@@ -22,8 +22,8 @@ jobs:
 
       - name: Preprocess Markdown Files
         run: |
-          python preprocess.py Lectures/
-          
+          python3 preprocess.py Lectures/
+
       - name: Render HTML from Preprocessed Files
         run: |
           cd Lectures
@@ -32,6 +32,10 @@ jobs:
               quarto render "$file" --to html --output-dir .
             fi
           done
+
+      - name: Fix Section Numbers in HTML
+        run: |
+          python3 fix_html_numbers.py
 
       - name: Deploy
         if: ${{ github.ref == 'refs/heads/main' }}
