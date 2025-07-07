@@ -1,661 +1,499 @@
-<!--
-Cosine simularity: 0.9237350393996308
--->
-## Calculation of Cross Section for Scattering of Massless Particles
+## Calculating Cross Sections and Spin Algebra in Scattering Processes
 
-The cross section for scattering is computed using the equation:
 
+Let me recap what we discussed in the lecture.
+I had two excellent problems before moving to the exercise.
+
+I would like you to calculate the cross section for the scattering of two massless particles.
+Each matrix element is given for spin-zero scalar particles.
+Calculate the cross section and give the answer in **millibarns squared**.
+
+**Steps for the calculation:**
+1. First, calculate the cross section—remember the equation for how we compute it.
+2. The whole computation is straightforward once you put the numbers in.
+
+The **cross section formula** is:
 $$
-\sigma = \frac{1}{J} \int |M|^2 \, d\Phi
-$$
-
-Here, $`J`$ is the flux factor, $`|M|^2`$ is the squared matrix element, and $`d\Phi`$ is the phase space element.  
-
-For this case, the matrix element squared is $`3 + 9 + 1 = 13`$. The flux factor is given by:
-
-$$
-J = 2E_1 E_2 |v_1 - v_2|
-$$
-
-Since the particles are massless, their velocities are $`v_1 = v_2 = 1`$ (speed of light), so $`J = 2 \cdot \frac{\sqrt{s}}{2} \cdot \frac{\sqrt{s}}{2} \cdot 2 = s`$.  
-
-The phase space element simplifies to:
-
-$$
-d\Phi = \frac{1}{8\pi s}
+\sigma = \frac{1}{2s} \times |\mathcal{M}|^2 \times \frac{1}{8\pi} \frac{2p}{\sqrt{s}}
 $$
 
-Combining these, the cross section becomes:
+- The matrix element squared gives $3 + 9 + 4 = 13$.
+- Here is the **flux**, and here is the **phase space**.
 
+The **phase space** is:
 $$
-\sigma = \frac{13}{s} \cdot \frac{1}{8\pi s} = \frac{13}{8\pi s^2}
-$$
-
-However, the speaker later corrects this to:
-
-$$
-\sigma = \frac{13}{4\pi s}
+\frac{1}{8\pi} \frac{2p}{\sqrt{s}}
 $$
 
-> [!NOTE]  
-> The momentum for massless particles is $`p = \frac{\sqrt{s}}{2}`$, and the energy is $`E = \frac{\sqrt{s}}{2}`$.  
+- The term $\frac{2p}{\sqrt{s}}$ must be calculated given the masses and energy.
+- For this case, it simplifies to $\sqrt{s}/4$.
+- Since momentum equals energy for massless particles, $p = \sqrt{s}/2$.
+- Thus, this factor becomes 1, leaving just $\frac{1}{8\pi}$.
 
-To convert units, recall that $`1 \ \text{fermi} \cdot \text{MeV} = 200 \ \text{fermi} \cdot \text{MeV} = 1`$. Therefore, $`1/\text{GeV}^2 = 0.2 \ \text{mb}`$.  
-
-The final numerical result is:
-
+Now, consider the **flux**:
 $$
-\sigma = \frac{13}{4\pi s} \approx \frac{13}{4 \cdot 3 \cdot s} = \frac{13}{12s}
+\text{Flux} = \frac{1}{2E} \frac{1}{|v_1 - v_2|}
 $$
+- Both energies are half the total energy, and $v_1 - v_2 = 2$ in the lab frame (since velocities are equal and at the speed of light).
+- This simplifies the flux to 2.
 
-> [!IMPORTANT]  
-> The key is to start from the correct equation for the cross section, use the right expressions for flux and phase space, and ensure consistent units.  
-
-The speaker emphasizes that even if the numerical result is uncertain, the methodology—beginning with the correct formula and applying the proper kinematic relations—is the most important part of the calculation.
-
-<!--
-Cosine simularity: 0.9420781424036707
--->
-## Imaginary Part and Total Cross Section in Scattering  
-
-The imaginary part of the matrix element is used to calculate the total cross section. This is derived from optical theory, where knowing the imaginary part allows you to compute the total cross section. However, it does not directly give the cross section for a specific process like elastic scattering.  
-
-> [!NOTE]  
-> The total cross section includes all possible processes (e.g., $`AB \to ab`$, $`AB \to CD`$, $`AB \to DH`$), while the elastic cross section only describes $`AB \to ab`$. The total cross section must be larger than the elastic one.  
-
-If the imaginary part is used to compute the total cross section and the result is negative, this is unphysical. The correct relation ensures the imaginary part is positive, and thus the total cross section remains positive.  
-
-> [!IMPORTANT]  
-> The Breit-Wigner function, for example, has an imaginary part that remains positive, reinforcing this requirement.  
-
-The equation connecting the imaginary part to the total cross section does not involve an absolute value. The minus sign in the relation is unphysical, so only the positive case is valid.  
-
-> [!TIP]  
-> A good exam question would be to derive the elastic and total cross sections from a given expression, using the imaginary part for the total cross section.  
-
-The key takeaway is that the imaginary part of the scattering amplitude is intrinsically linked to the total cross section, ensuring positivity and consistency with physical constraints.
-
-<!--
-Cosine simularity: 0.9007088942204347
--->
-## Matrix Elements and Quantum Numbers in Spin Algebra
-
-In the algorithm diagram, the x-axis represents the real part of the matrix element, while the y-axis represents the imaginary part of the amplitude. Only positive values are allowed for the amplitude, so any value below the ceiling is unphysical and illegal.  
-
-> [!NOTE]  
-> In spin algebra, determining legal quantum numbers involves checking the counting numbers in the columns of a table, such as in Bosch routes.  
-
-For combining spins, you first calculate the quantum numbers in combination. The process involves drawing a table and identifying which columns have the correct counting numbers. For example, the spin composition of the representations for $`P_1`$ is straightforward:  
-
+**Putting it all together:**
 $$
-P_1 = - - +
-$$  
-
-> [!IMPORTANT]  
-> When working with spin algebra, we focus only on the spin composition of representations. Parity can be computed separately for each multiplet.  
-
-The key takeaway is that spin addition and partial wave computation are fundamental skills in spin algebra. The process involves tabulating quantum numbers and verifying their validity through counting rules.  
-
-<!--
-Cosine simularity: 0.9264557560801463
--->
-## Quantum Numbers and Decay Violations in Meson Physics
-
-The parity for a multiplet is straightforward to compute. Combining $`1^-`$ and $`1^+`$ and $`1^-`$ in an S-wave gives $`1^-`$, so the S-wave configuration works.  
-
-For higher partial waves:  
-- In the D-wave, we have states with $`L = 0, 1, 2`$.  
-- In the F-wave, we have $`L = 1, 2, 3`$.  
-
-The charge conjugation quantum number is a key consideration here. The $`\pi`$ meson has quantum numbers $`0^- +`$, while $`B_1`$ has $`1^+ -`$. The decay is possible, but charge conjugation is $`+`$ in this case, indicating isospin violation.  
-
-> [!NOTE]  
-> The $`\pi_1`$ meson has quantum numbers $`1^- +`$, which are not allowed in the standard quark model.  
-
-This suggests that $`\pi_1`$ is not a conventional quark-antiquark state but rather a hybrid meson. The interpretation involves gluonic excitations within the meson, where the gluonic field connecting the quark and antiquark carries additional degrees of freedom.  
-
-Similarly, the $`P_1(1400)`$ state shares the same hybrid nature, with excitations arising from the gluonic string interaction rather than a simple confining potential.  
-
-<!--
-Cosine simularity: 0.9356893471000975
--->
-## Scattering Length and Relativistic Formulation
-
-The scattering length is measured in Fermi (fm), but in relativistic formulations, it appears dimensionless. In quantum mechanics, the scattering length is defined through the expansion of the amplitude in terms of the breakup momentum $`K`$, which has units of GeV. Therefore, $`1/a`$ has units of GeV, and $`a`$ itself is in Fermi.  
-
-The non-relativistic amplitude is given by:  
+\sigma = \frac{1}{2s} \times 13 \times \frac{1}{8\pi} = \frac{13}{16\pi s}
 $$
-f_{NR} = \frac{1}{a - i\,k}
+In $\text{GeV}^{-2}$, this is $\frac{13}{8\pi}$.
+
+For **unit conversion**:
+$$
+1 \text{ GeV}^{-2} = 0.2 \text{ millibarns}
+$$
+Thus, the cross section is:
+$$
+\frac{13}{8\pi} \times 0.2 \text{ millibarns}
 $$
 
-In the relativistic formulation, the amplitude becomes:  
-$$
-f_{R} = \frac{1}{\tilde a^{-1} - i\,\frac{2k}{\sqrt{s}}}
-$$
-
-> [!NOTE]  
-> The imaginary part of the relativistic amplitude is related to the dimensionless phase space. The first expansion term resembles the scattering length but is itself dimensionless.  
-
-To relate the two formulations, we match them at the threshold. At threshold ($`k \to 0`$), the non-relativistic amplitude reduces to $`f_{NR} = a`$, while the relativistic amplitude becomes $`f_{R} = \tilde a`$. However, they are not directly equal—there is a numerical constant relating them.  
-
-The key is to equate the numerators or denominators up to a numerical factor. The difference arises from the relativistic phase space factor:  
-$$
-\frac{2k}{\sqrt{s}} = -i\,k \cdot \left(\frac{1}{8\pi^2 s}\right)
-$$
-
-At threshold, $`\sqrt{s}`$ is the sum of the masses involved. For example, if the scattering length $`a`$ is 3 Fermi, we can determine $`\tilde a`$ by matching the amplitudes at threshold.  
-
-> [!IMPORTANT]  
-> The conversion between $`a`$ and $`\tilde a`$ involves the threshold energy and masses. Specifically, $`\tilde a = a / (8\pi^2 s_{\text{threshold}})`$, where $`s_{\text{threshold}}`$ is the squared invariant mass at threshold.  
-
-This exercise demonstrates how relativistic effects modify the low-energy expansion of scattering amplitudes. The dimensionless $`\tilde a`$ in the relativistic case must be rescaled by the threshold kinematics to recover the conventional scattering length $`a`$ in Fermi.  
+> [!NOTE]
+> The final numerical result depends on simplifying $\pi \approx 3$, but the **method** is what matters.
+> The key is starting with the correct equations for cross section, flux, and phase space.
 
 ---
 
-The discussion also touches on meson states, such as the $`P_1(1400)`$, which was initially misidentified in older data but later corrected to appear at 1600 MeV in more precise analyses. This highlights the importance of accurate measurements in determining resonance properties.  
-
-> [!NOTE]  
-> The $`\pi_1`$ meson has quantum numbers $`1^- +`$, which are forbidden in the standard quark model, suggesting it is a hybrid meson with gluonic excitations. Similarly, the $`P_1(1400)`$ exhibits a hybrid nature due to gluonic string interactions rather than a simple quark-antiquark configuration.  
-
-The parity and charge conjugation quantum numbers play a crucial role in identifying such exotic states. For instance, the $`\pi`$ meson has $`0^- +`$, while the $`B_1`$ meson has $`1^+ -`$. Decays involving these states may exhibit isospin violation, particularly when charge conjugation conservation is enforced.  
-
-In higher partial waves (D-wave, F-wave), the allowed orbital angular momentum states further constrain the possible quantum numbers and decay patterns of mesons. This underscores the complexity of meson spectroscopy and the need for careful theoretical and experimental scrutiny.
-
-<!--
-Cosine simularity: 0.920611986690305
--->
-## Dirac Equation and Spinor Conventions  
-
-The Dirac equation for a spin-1/2 particle is given by:  
-
+Now, consider the **imaginary part** of the matrix element.
+Using the **optical theorem**:
 $$
-(\slashed p - m)\,\tilde u = 0
+\sigma_{\text{total}} = \frac{\text{Im}\,\mathcal{M}(0)}{2p\sqrt{s}}
 $$
+This gives the **total cross section**, not just the elastic one.
 
-Here, $`\tilde u`$ is a spinor ( $`\tilde u \leftarrow \mathrm{spinor}(\xi)`$ ), and $`\slashed p = p^\mu \gamma_\mu`$ is the Feynman slash notation.  
+- The total cross section includes all processes: $AB \to AB$, $AB \to CD$, etc.
+- It should be larger than the elastic cross section.
+- If the imaginary part gives a negative result, it’s **unphysical**—the imaginary part must be positive.
 
-The $`\gamma`$ matrices are defined in the Dirac representation as:  
-
+**Example: Breit-Wigner resonance**
 $$
-\gamma^0 = \begin{pmatrix}I & 0\\[6pt]0 & -I\end{pmatrix},\quad
-\gamma^i = \begin{pmatrix}0 & \sigma^i\\[4pt]\sigma^i & 0\end{pmatrix}
+\mathcal{M} = \frac{\Gamma/2}{(E - E_0) - i\Gamma/2}
 $$
+Its imaginary part is always positive.
 
-> [!NOTE]  
-> There are two common conventions for solving the Dirac equation: the **Dirac convention** and the **Weyl (or chiral) convention**. The Weyl convention is more convenient when dealing with right-handed and left-handed particles, but we will stick to the standard Dirac convention here.  
+- Recall the **Argand diagram**: the imaginary part (y-axis) must be non-negative.
+- This constraint ensures physical results.
 
-The Dirac equation describes spin-1/2 particles, where the spin information is encoded in the spinor field. The $`\gamma`$ matrices are four-dimensional and satisfy the Clifford algebra.  
-
-> [!IMPORTANT]  
-> The chirality of particles (left-handed or right-handed) is related to their spin orientation, particularly for massless particles. This symmetry is called **chirality**, and it plays a crucial role in understanding the behavior of spin-1/2 particles.  
-
-The Dirac equation is the fundamental equation of motion for spin-1/2 particles, and its solutions (spinors) represent the quantum states of these particles. The matrices $`\gamma^\mu`$ are essential in constructing Lorentz-invariant quantities and ensuring the correct transformation properties under relativistic boosts and rotations.  
-
-> [!TIP]  
-> When working with spinors, it is often useful to switch between different representations (Dirac, Weyl, Majorana) depending on the physical context, but the Dirac representation is the most familiar for introductory purposes.  
-
-The study of spinors and their conventions is foundational for quantum field theory, particularly in understanding fermionic fields and their interactions.
-
-<!--
-Cosine simularity: 0.9232111081396577
--->
-## Four-Vector Contraction and Spinor Solutions  
-
-The four-momentum in spherical coordinates is given by:  
-
-$$
-\mathcal P = \bigl(E,\;p\sin\theta\cos\phi,\;p\sin\theta\sin\phi,\;p\cos\theta\bigr)
-$$
-
-The gamma matrices ($`\gamma^\mu`$) are four-dimensional matrices, and $`\mathcal P`$ is the four-vector. When you contract the two, a summation over $`\mu`$ is performed, resulting in the expression:  
-
-$$
-\slashed p - m
-$$
-
-Here, $`\slashed p = p^\mu \gamma_\mu`$ (Feynman slash notation), and $`m`$ is the scalar mass term — though it is implied that this is not multiplied by the $`4 \times 4`$ identity matrix.  
-
-The spinor $`u`$ (or "Spiner" in German) is a four-dimensional object that depends on the particle's orientation and momentum. The equation has two solutions, $`u_1`$ and $`u_2`$, corresponding to the spin states quantized along the $`z`$-axis. These solutions can be written as:  
-
-$$
-u_1 = \begin{pmatrix}1 \\ 0 \\ p \cos\theta \\ p \sin\theta \end{pmatrix}, \quad u_2 = \begin{pmatrix}0 \\ 1 \\ -p \sin\theta \\ p \cos\theta \end{pmatrix}
-$$
-
-These represent canonical states with spin projections $`+\frac{1}{2}`$ and $`-\frac{1}{2}`$ along the $`z`$-axis. The states are obtained by acting with the spin operator, where $`u_1`$ corresponds to a spin projection of $`+\frac{1}{2}`$ and $`u_2`$ to $`-\frac{1}{2}`$.  
-
-> [!NOTE]  
-> The spinor solutions are related to states like $`|p; J, m\rangle`$, where the particle has momentum $`p`$, spin $`J`$, and projection $`m`$ along the quantization axis.  
-
-The Dirac equation $`(\slashed p - m)u = 0`$ describes these spin-1/2 solutions, and the $`\gamma`$ matrices ensure the correct transformation properties under Lorentz boosts and rotations.
-
-<!--
-Cosine simularity: 0.9155485350584712
--->
-## Helicity States and Linear Combinations  
-
-The eigenvalue for the first spinor $`u_1`$ is $`+\frac{1}{2}`$, and for the second spinor $`u_2`$ it is $`-\frac{1}{2}`$. These states have a phase dependence on $`\phi`$, which must be symmetrically present in both solutions.  
-
-The two spinors $`u_1`$ and $`u_2`$ are independent solutions of the Dirac equation. Any linear combination of these two will also satisfy the Dirac equation.  
-
-To transform these states into helicity states — where spin is quantized along the direction of motion — we use the same method as before. This involves relating the canonical states to the helicity states through a linear combination.  
-
-Before performing this transformation, it is important to recall how the canonical states are defined. They are obtained by applying a pure boost to the rest-frame spinors, which is a standard procedure in relativistic quantum mechanics.  
-
-> [!NOTE]  
-> The helicity states correspond to spin projections aligned with the particle's momentum, unlike the canonical states, which are quantized along a fixed axis (e.g., the $`z`$-axis).  
-
-The Dirac equation $`(\slashed p - m)u = 0`$ governs these solutions, ensuring their consistency under Lorentz transformations. The spinor solutions $`u_1`$ and $`u_2`$ represent the two possible spin states of a spin-$`\frac{1}{2}`$ particle.
-
-<!--
-Cosine simularity: 0.8955185924219884
--->
-## Transformation of Canonical to Helicity States
-
-The canonical state $`|p; j, m\rangle_\text{can}`$ is defined as a pure boost $`B_{\vec{p}}`$ acting on the rest-frame state $`|0; j, m\rangle_\text{can}`$. Under a rotation $`R`$, the transformation becomes $`R B R^{-1} |0; j, m\rangle_\text{can}`$.  
-
-The helicity state $`|p; j\rangle_{\hat{p}}`$ is constructed by applying the boost and rotation:  
-
-$$
-|p; j\rangle_{\hat{p}} = R B |0; j, m\rangle = R B R^{-1} R |0; j, m\rangle
-$$
-
-This can be expanded using the Wigner rotation matrix $`\mathcal{D}^{(j)}_{m\lambda}(\theta, \phi)`$ as:  
-
-$$
-|p; j\rangle_{\hat{p}} = \sum_m \mathcal{D}^{(j)}_{m\lambda}(\theta, \phi)\,|p; j, m\rangle
-$$
-
-The key step in relating canonical to helicity states is introducing an extra $`R^{-1}`$ to match the transformation properties of the canonical state. Applying $`R`$ transforms the state, and $`R B R^{-1}`$ acts on the transformed rest-frame states.  
-
-> [!NOTE]  
-> The helicity states are obtained by quantizing spin along the momentum direction, unlike canonical states, which are quantized along a fixed axis.  
-
-The method involves applying $`R B`$ and $`R`$ to the rest-frame states to obtain the canonical states, which are then related to helicity states through the Wigner rotation matrix.
-
-<!--
-Cosine simularity: 0.9352745627755749
--->
-## Conventions and Definitions of the D Function in Rotational Matrices  
-
-The canonical states are obtained by applying a pure boost $`B_{\vec{p}}`$, which is a linear combination of canonical states with coefficients given by special matrices.  
-
-> [!NOTE]  
-> There are two different conventions for defining the capital $`D`$ function for spherical arguments (angles). The first convention is standard and uses two angles. This is found in the *Review of Particle Physics* (RPP) for experimentalists, as used by Chung and others. However, the second convention appears simpler for constructions involving helicity states, though many particle physics books do not explicitly state these conventions.  
-
-The first case corresponds to the rotation sequence $`R = R_z(\phi) R_y(\theta)`$, where you first rotate by $`\theta`$ about the $`y`$-axis and then by $`\phi`$ about the $`z`$-axis. The second convention gives the same result when acting on a vector with only a $`z`$-component, since the initial rotation about $`z`$ does nothing. However, this introduces an extra phase to the states, which is an unobservable phase.  
-
-The $`D`$ function (capital $`D`$) is the rotational matrix for cases beyond just $`y`$-axis rotations. Rotations about the $`y`$-axis are special because they require tabulated functions, whereas rotations about the $`z`$-axis simply introduce phase coefficients.  
-
-$$
-\mathcal{D}^{(j)}_{m\lambda}(\theta, \phi)
-$$
-
-This notation represents the Wigner rotation matrix, which provides weight coefficients for the transformation between states. The $`D`$ function is crucial for describing rotations in systems with angular momentum, particularly when relating canonical and helicity states.  
-
-> [!IMPORTANT]  
-> The distinction between conventions is subtle but significant, especially when working with helicity states or tensor representations. The phase differences arising from the choice of convention must be accounted for in calculations.
-
-<!--
-Cosine simularity: 0.9550385202782324
--->
-## Helicity States and Spin Projection in Particle Physics
-
-The notation like our $`G`$ function gives you weight coefficients for the transformation of the helicity state or dynamical state. You apply a notation to the $`j u jn`$ and then reject $`j'`$. These vectors are given by that expression depending on your rotations.  
-
-Coming back to our problem, we want to rotate the vector $`\vec{p}`$ from zero. This rotation is meant to rotate these two components:  
-
-$$
-\begin{pmatrix}
-\sin\theta \cos\phi \\
-\sin\theta \sin\phi \\
-\cos\theta
-\end{pmatrix}
-$$
-
-When we apply this notation to the helicity state, the $`D`$ function appears. It depends on the two angles $`\theta`$ and $`\phi`$. Depending on the convention used, this $`D`$ may or may not have an extra phase.  
-
-Applying the transformation relates the helicity state for spin-$`\frac{1}{2}`$ with the spin projected along the direction of motion. This is given by the vector:  
-
-$$
-\begin{pmatrix}
-\cos\frac{\theta}{2} \\
-\sin\frac{\theta}{2}\,e^{i\varphi} \\
-\cos\frac{\theta}{2}\,p / (E + m) \\
-\sin\frac{\theta}{2}\,p / (E + m)
-\end{pmatrix}
-$$
-
-I introduced the normalization constant $`N = \sqrt{E + m}`$, which is standard and appears everywhere. Both $`u_1`$ and $`u_2`$ include this $`N`$ to ensure the correct state density.  
-
-The expression for $`u_{\text{down}}`$ is similar, with the lower part of the spinor containing the factor $`p / (E + m)`$. This factor approaches 1 when the mass $`m`$ is small compared to the energy $`E`$, since $`p \approx E`$ in this limit. The state then simplifies to $`(\cos, \sin, \cos, \sin)`$.  
-
-> [!NOTE]  
-> The $`D`$ function conventions are subtle but important. The first convention follows $`R = R_z(\phi) R_y(\theta)`$, while the second introduces an unobservable phase.  
-
-Now, let me introduce projection operators to proceed further.
-
-<!--
-Cosine simularity: 0.9243843053675861
--->
-## Introduction to Chiral Projection Operators and Their Properties
-
-Now let me introduce projection operators which will cause us to move on. The Gamma 5 matrix is introduced as the product of the gamma matrices with the Levi-Civita tensor. In the convention we choose, it is given by:
-
-$$
-\delta^5 = \delta^0\delta^1\delta^2\delta^3 = 
-\begin{pmatrix}
-I & 0 \\ 0 & -I
-\end{pmatrix}
-$$
-
-It is very convenient in the consideration of our interactions to introduce right-handed and left-handed projection operators:
-
-$$
-P_R = \frac{1 + \delta^5}{2}, \quad P_L = \frac{1 - \delta^5}{2}
-$$
-
-These are called projection operators because when they act twice on a state, nothing changes: $`P_R^2 = P_R`$ and $`P_L^2 = P_L`$. To see this explicitly, consider:
-
-$$
-P_L^2 = \left(\frac{1 - \delta^5}{2}\right)^2 = \frac{1 - 2\delta^5 + (\delta^5)^2}{4} = \frac{1 - \delta^5}{2} = P_L
-$$
-
-The same holds for $`P_R`$. These operators project onto orthogonal subspaces. If you project onto the left-handed space, there are no remaining components of the right-handed space, and vice versa. This means $`P_R P_L = 0`$.
-
-Another important property arises because $`\delta^5`$ anti-commutes with any $`\delta^\mu`$ (i.e., $`\delta^5 \delta^\mu = -\delta^\mu \delta^5`$). This implies that:
-
-$$
-P_R \delta^\mu P_L = 0
-$$
-
-If you have $`P_L`$ followed by $`\delta^\mu`$, swapping the order introduces a sign change, converting $`P_L`$ to $`P_R`$, and $`P_R P_L = 0`$.  
-
-Any spinor can be decomposed into right-handed and left-handed components using these projection operators. The right-handed component is $`P_R \psi`$, and the left-handed component is $`P_L \psi`$.  
-
-> [!NOTE]  
-> The choice of convention for $`\delta^5`$ affects the explicit form of the projection operators, but their fundamental properties remain unchanged.  
-
-Now, I would like to give a physical meaning to these right-handed and left-handed states.
-
-<!--
-Cosine simularity: 0.9290599680652246
--->
-## Decomposition of Spin States into Chiral Components
-
-The right-handed and left-handed projection operators are given explicitly in matrix form as:
-
-$$
-P_R = \frac{1}{2} \begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}, \quad P_L = \frac{1}{2} \begin{pmatrix} 1 & -1 \\ -1 & 1 \end{pmatrix}
-$$
-
-Using these matrices, we can decompose a spinor into its chiral components. For example, consider a spin-up helicity state represented as $`\psi = \begin{pmatrix} 1 \\ 1 \end{pmatrix}`$. When we apply the projection operators, we perform block-wise multiplication for convenience.  
-
-The right-handed projection yields:
-
-$$
-P_R \psi = \frac{1}{2} \begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix} \begin{pmatrix} 1 \\ 1 \end{pmatrix} = \begin{pmatrix} 1 \\ 1 \end{pmatrix}
-$$
-
-Similarly, the left-handed projection gives:
-
-$$
-P_L \psi = \frac{1}{2} \begin{pmatrix} 1 & -1 \\ -1 & 1 \end{pmatrix} \begin{pmatrix} 1 \\ 1 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
-$$
-
-At high energies, where the mass becomes negligible, the left-handed component of a right-handed helicity state is suppressed by a factor of $`(1 - \kappa)`$, where $`\kappa`$ is related to the particle's momentum. This component vanishes in the massless limit.  
-
-> [!NOTE]  
-> There is no single interpretation of right-handed and left-handed states, but they are closely related to spin orientation along the direction of motion. In the zero-mass limit (or when particles move at the speed of light), they become identical. A right-handed state corresponds to spin aligned with momentum.
-
-<!--
-Cosine simularity: 0.9355554148441143
--->
-## Chiral States and Helicity in Particle Physics
-
-When you hear "right-handed," it means the particle travels with its spin aligned with the direction of motion. "Left-handed" means the spin is opposite to the direction of motion. However, when the mass is significant or not much smaller than the energy $`E`$, the states become mixed, and the particle is no longer purely left- or right-handed—it contains both components.  
-
-> [!IMPORTANT]  
-> In the Standard Model, the weak interaction mediated by the $`W`$ boson decays only into right-handed leptons and left-handed anti-leptons. This is due to the structure of the Lagrangian.  
-
-The weak interaction vertex is expressed as $`V - A`$, where $`V`$ stands for vector ( $`\gamma^\mu`$ ) and $`A`$ stands for axial ( $`\gamma^\mu \gamma^5`$ ). The Lagrangian for lepton interactions contains a term like $`\gamma^\mu (1 - \gamma^5)`$, which can be rewritten using projection operators. Moving $`(1 - \gamma^5)`$ to the other side gives $`(1 + \gamma^5)`$, and the interaction vertex becomes $`\gamma^\mu P_L`$.  
-
-This vertex structure implies that when a $`W`$ boson decays, it produces an electron and an antineutrino in specific chiral states:  
-- The electron ( $`e^-`$ ) is left-handed (spin opposite to motion).  
-- The antineutrino is right-handed (spin aligned with motion).  
-
-> [!NOTE]  
-> The direct relationship between handedness and spin orientation is only exact in the high-energy limit or when the mass is zero. For neutrinos, this is always the case—all neutrinos are left-handed, and all antineutrinos are right-handed.  
-
-Before neutrino masses were established, right-handed neutrinos were considered candidates for new physics, with proposals that they could be heavy and even explain dark matter.  
-
-In the massless case, right-handed and left-handed particles are orthogonal and do not interact. They could even be different particles with unrelated masses. Relativity connects them—once a mass is introduced, you can boost to another frame and change the spin configuration. However, for massless particles, this is impossible because they lack a rest frame.  
-
-> [!CAUTION]  
-> The terms "right-handed" and "left-handed" refer to chiral states (chirality), not just helicity. The chiral limit is defined as the case where mass is zero, and the states are purely right- or left-handed.  
-
-<!--
-Cosine simularity: 0.9554759262345949
--->
 ---
-## Helicity and Chirality in Particle Physics  
 
-The massless limit is the case where mass equals zero, and the states are purely right-handed or left-handed. Helicity describes the spin orientation relative to the direction of motion, providing a visual picture under Lorentz transformations. Chirality, however, is closely related but only coincides with helicity in the zero-mass limit.  
+Now, for the second problem: **spin algebra**.
+You need to combine spins and compute partial waves.
+The brute-force method involves constructing a table of quantum numbers.
 
-> [!NOTE]  
-> There is no intuitive picture for chiral states unless the particle is ultra-relativistic.  
+**Example:**
+- The $b_1$ meson with spin-parity $1^+$.
+- Combining $1^-$ and $1^+$ in S-wave gives $1^-$.
+- D-wave also allows $0^-, 1^-, 2^-$.
 
-On the Lagrangian level, chiral states are easier to work with because they are defined by projection operators:  
+**Exotic Quantum Numbers:**
+- The $\pi_1(1600)$ has exotic quantum numbers $1^-+$, forbidden in the quark model.
+- It’s interpreted as a **hybrid meson**, with excited gluonic degrees of freedom.
+- Originally misidentified as $\pi_1(1400)$, it was corrected with better data.
 
+---
+
+> [!IMPORTANT]
+> Key takeaways:
+> - Cross section calculations require careful handling of flux and phase space.
+> - The optical theorem links the imaginary part of the amplitude to the total cross section.
+> - Spin composition rules are essential for understanding particle interactions.
+
+## Scattering Length Dimensionality and Spin-1/2 Particle Representations
+
+
+I thought it's important to clarify. The notations got mixed up a little bit at the last lecture concerning the scattering length. The scattering length is indeed measured in **Fermi**. However, when you use relativistic notations, it appears **dimensionless**.
+
+In quantum mechanics, the scattering length is defined as an expansion of the amplitude in terms of \( K \), the breakup momentum. \( K \) has units of **GeV**, so \( 1/A \) has units of **GeV**, and \( A \) itself is in **Fermi**. The non-relativistic amplitude has a denominator:
 $$
-P_L = \frac{1 - \gamma^5}{2}, \quad P_R = \frac{1 + \gamma^5}{2}
-$$  
-
-These project left- and right-handed states, respectively. Helicity states mix under boosts—changing frames alters the spin configuration. However, chiral states remain invariant: a left-handed chiral state stays left-handed under boosts or rotations.  
-
-> [!CAUTION]  
-> While helicity is frame-dependent, chirality is a fundamental property tied to the Lagrangian structure.  
-
-For massless particles, chirality and helicity align perfectly, but this correspondence breaks for massive particles due to mixing. Relativity connects these states once mass is introduced, but massless particles lack a rest frame, making their helicity fixed.
-
-<!--
-Cosine simularity: 0.928798819531198
--->
-## Introduction to QCD Lagrangian and Flavor Symmetry
-
-Here is the Lagrangian of QCD (not QCT):
-
-$$
-\mathcal{L}_\text{QCD} = -\frac{1}{4} G_{\mu\nu}^a G^{\mu\nu}_a + \bar{\Psi}_i (i\,\slashed{D} - m) \Psi_i
-$$
-
-This describes the dynamics of quarks and gluons. The term $`G_{\mu\nu}^a`$ represents the gluon field strength tensor, which is the gauge part of the Lagrangian. The term $`\bar{\Psi}_i (i\,\slashed{D} - m) \Psi_i`$ includes the quark fields:  
-- $`i\,\slashed{D} \Psi_i`$ is the kinetic term,  
-- $`m \bar{\Psi}_i \Psi_i`$ is the mass term,  
-- $`\slashed{D}`$ contains the interaction with the gluon field via the covariant derivative.  
-
-The index $`i`$ labels the quark flavor (e.g., up, down, strange, etc.), and there are six flavors in total. The index $`a`$ corresponds to color, and $`T^a`$ are the generators of the gauge group $`SU(3)_c`$, connected to local gauge symmetry.  
-
-> [!NOTE]  
-> The Lagrangian has multiple symmetries, including local gauge symmetry, which allows adjusting the phase of the quark wavefunction's color components at every spacetime point.  
-
-The quark wavefunction $`\Psi`$ is a fermionic field with color components in a three-state vector. The local gauge transformation is implemented via matrix exponentials with space-dependent parameters $`\theta^a(x)`$, ensuring the Lagrangian remains invariant. This transformation dictates how quarks and gluons interact and defines the form of the covariant derivative.  
-
-> [!IMPORTANT]  
-> For light quarks (up, down, strange), the masses are much smaller than the QCD scale ($`\sim 1 \ \text{GeV}`$). This justifies the chiral limit ($`m \to 0`$), enabling low-energy expansions and simplifications in theoretical treatments.  
-
-<!--
-Cosine simularity: 0.9531392899992741
--->
-## Flavor Transformation and SU(3) Symmetry in QCD
-
-The low-energy expansion works because the quark masses are small. There is a small parameter for expansion, which is the ratio of the quark mass to $`\Lambda_\text{QCD}`$ or the quark momentum to $`\Lambda_\text{QCD}`$. This leads to effective field theory.  
-
-Now, let's discuss flavor transformation. This means the flavor indices of the wave function can be rotated. We consider a global $`SU(3)_\text{flavor}`$ symmetry. The flavor part of the wave function has three components:  
-
-$$
-\Psi_i = \begin{pmatrix} u \\ d \\ s \end{pmatrix}
+F_{\text{non-rel.}} = \frac{1}{A - iK}
 $$
 
-Here, we simplify our consideration to the light quarks (up, down, strange). The transformation relating these quarks is a global $`SU(3)`$ rotation, represented by a $`3 \times 3`$ matrix. We can perform any rotation or adjustment of this wave function.  
+In the relativistic formulation, unitarity tells us that the imaginary part of the amplitude is related to the phase space, which is dimensionless. The first expansion term is again something like the scattering length, but it is dimensionless. If you still want to talk about **Fermi**, you have to relate this to that, and the relation happens at the threshold.
 
-> [!IMPORTANT]  
-> The transformation is global because we do not allow the rotation parameters $`\alpha`$ to depend on spacetime coordinates. This ensures we avoid dealing with derivatives.  
+Since it's a threshold expansion, you would like these amplitudes to match up to a numerical constant at the threshold. In this exercise, I want you to relate these two at the threshold and determine what the relativistic amplitude is near threshold. I even give you the answer—the only thing missing is the value of \( \tilde{A} \).
 
-The QCD Lagrangian is symmetric under these global flavor transformations.
-
-<!--
-Cosine simularity: 0.9044505121078811
--->
-## Chiral Symmetry and Phase Cancellation in QCD  
-
-The QCD Lagrangian is symmetric with respect to any transformation of chiral symmetry. The fermion field $\Psi$ is decomposed into left- and right-handed components:  
-
+The scattering length is equal to **three Fermi**, corresponding to \( A \). Knowing that, you need to compute \( \tilde{A} \). The way to do this is not simply to equate the amplitudes at threshold, because then you miss the point. If you evaluate the non-relativistic amplitude at threshold (\( K = 0 \)):
 $$
-\Psi = \Psi_L + \Psi_R
-$$  
-
-When applying a phase transformation to $\Psi_L$ and $\Psi_R$, the phases cancel each other. This cancellation is straightforward to verify.  
-
-> [!IMPORTANT]  
-> The transformation involves the generator $T$, which is a flavor matrix. However, the covariant derivative $D$ also contains $T$, but here it acts in the color space, not the flavor space.  
-
-In the flavor space, the transformation is diagonal (identity matrix $I$), so the flavor transformation is simple. The phase difference introduces a relative minus sign between the left- and right-handed components.
-
-<!--
-Cosine simularity: 0.9289380400918554
--->
-## Gamma Matrices and Flavor Space Transformations
-
-The transformation space is straightforward, with the phase introducing a minus sign. The bar operation denotes $`\gamma^0`$, so it's better to label indices as $`\alpha_I`$ where $`I = 1, 2, 3`$. Alternatively, we can use $`Z = 1, 2, 3`$ or $`D`$ for clarity.  
-
-We replace all states here with left- and right-handed components using the projection operator. The sum can be written explicitly, leveraging the properties of gamma matrices under Hermitian conjugation. The vector part of the interaction is given by:
-
+F_{\text{non-rel.}} = A
 $$
-\bar{\Psi}_L \gamma^\mu \Psi_L + \bar{\Psi}_R \gamma^\mu \Psi_R
+while the relativistic amplitude is \( \tilde{A} \). They are not equal—there is a numerical constant to account for.
+
+To equate them, you must compare numerators or denominators up to a numerical constant and examine the coefficients in front of \( K \). One approach is to Taylor-expand the expression where \( S \) is a function of \( K \) and equate the first term. Alternatively, notice that the only difference between numerators is the factor \( 1/(8\pi^2 s) \).
+
+At threshold, the condition to convert one to the other is:
+$$
+\tilde{A} = \frac{A}{8\pi^2 s_{\text{thr}}}
+$$
+To solve this, you need the masses and the threshold value. For example, if \( s_{\text{thr}} = 1 \, \text{GeV}^2 \), then \( \tilde{A} = A / (8\pi^2) \).
+
+---
+
+> [!IMPORTANT]
+> **Key Insight**: The relativistic and non-relativistic scattering lengths differ by a factor of \( 8\pi^2 s_{\text{thr}} \). This conversion is essential for matching amplitudes at threshold.
+
+---
+
+This is widely used and provides interesting insights into hydrodynamics, which relies on the extra symmetry observed when particle masses are zero—called **chirality**. This is related to spin orientation for spin-1/2 particles.
+
+We now return to particles carrying spin information, focusing on **spin-1/2** and their field-theoretical representation. Spin-1/2 particles obey the Dirac equation:
+$$
+(P\!\!\!/ - m)U = 0
 $$
 
-There is no interaction mixing right- and left-handed components. The covariant derivative $`D_\mu`$ has no flavor space indices, so it remains unaffected.  
+**Notations**:
+- \( P\!\!\!/ = P_\mu \gamma^\mu \) (contraction of four-momentum with \( \gamma^\mu \) matrices).
+- \( \gamma^0 \) is part of the Dirac matrices.
 
-The current symmetry corresponds to independent transformations of the left- and right-handed components. We consider a global symmetry where the transformation is parameterized by eight numbers for the left-handed rotation and eight for the right-handed rotation, totaling 16 real parameters. Applying this transformation leaves the Lagrangian invariant if the mass term is zero, since left- and right-handed states decouple.  
+There are two common conventions for solving the Dirac equation:
+1. The **Dirac convention**
+2. The **Weyl convention**
 
-Here, the three-component vector operates in the flavor space (SU(3)), and $`\alpha`$ is a $`3 \times 3`$ matrix independent of coordinates. The parameters for left- and right-handed rotations are weighted differently, but the Lagrangian remains unchanged unless a mass term is introduced.
+The Weyl convention is more convenient for right- and left-handed particles, but we will stick to the standard **Dirac convention**.
 
-<!--
-Cosine simularity: 0.924951473491417
--->
-## Spontaneous Symmetry Breaking in QCD
+The \( \gamma^\mu \) are four-dimensional matrices, and \( P \) is a four-vector. Contracting them gives \( P\!\!\!/ \), a \( 4 \times 4 \) matrix. The term \( P\!\!\!/ - m \) implies \( m \) is multiplied by the identity matrix. \( U \) is a four-component spinor (in German, "Spinor").
 
-The left-handed and right-handed states do not talk to each other, so there is an extra phase here and another extra phase there. These phases cancel each other, and the symmetry is only broken when mass terms are introduced. This breaks the scale symmetry. The mass term mixes the two states, so the phase appears in one combination of the $`\alpha`$ parameters and disappears in the other.  
+The Dirac equation has two solutions for a given momentum \( P \). If \( P \) has spatial components, the matrix equation yields two spinors, \( U_1 \) and \( U_2 \):
+$$
+U_1 = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad U_2 = \begin{pmatrix} P \cos \theta \\ \sin \theta \end{pmatrix}
+$$
+These correspond to canonical states with spin quantized along the \( Z \)-axis, with projections \( +1/2 \) and \( -1/2 \).
 
-The mass term explicitly breaks chiral symmetry, but there is another effect: chiral symmetry is also spontaneously broken. Even if you start with no mass term in QCD, the quarks generate a non-zero expectation value through their interactions. This means the quarks appear massive even without an explicit mass term in the Lagrangian.  
+To transform these to helicity states (spin quantized along momentum), we use a linear combination. The canonical state is defined as a pure boost acting on the \( |J, M\rangle \) state at rest.
 
-The QCD vacuum has a non-zero expectation value, expressed as:
+The transformation between canonical and helicity states involves an extra rotation \( R^{-1} \) to match the canonical state, followed by \( R \). The resulting state is a linear combination of canonical states with coefficients given by **Wigner \( D \)-matrices**.
+
+There are two conventions for the Wigner \( D \)-function:
+1. **Standard**: \( R(\phi, \theta, \psi) = R_z(\phi) R_y(\theta) R_z(\psi) \).
+2. **Simplified (for helicity states)**: \( R(\phi, \theta, 0) = R_z(\phi) R_y(\theta) \).
+
+The \( D \)-function describes rotations with spherical angles \( \theta, \phi \). The simplified convention omits the unobservable phase from the first \( R_z \) rotation.
+
+Applying this to helicity states, we get:
+$$
+U_{\text{helicity}} = N \begin{pmatrix} \cos(\theta/2) \\ e^{i\phi} \sin(\theta/2) \\ \cos(\theta/2) \\ e^{i\phi} \sin(\theta/2) \end{pmatrix}
+$$
+where \( N = \sqrt{E + m} \) is the normalization. For the lower spinor component:
+$$
+U_{\text{down}} \approx \frac{P}{E + m} \begin{pmatrix} \cos(\theta/2) \\ e^{i\phi} \sin(\theta/2) \end{pmatrix}
+$$
+When \( m \ll E \), \( P \approx E \), and this factor approaches 1, simplifying the spinor.
+
+## Properties and Applications of Chiral Projection Operators
+
+
+Now let me introduce **projection operators**, which will allow us to move on.
+
+The $\gamma^5$ matrix is introduced as the product of the gamma matrices with the Levi-Civita symbol:
 
 $$
-\langle 0 |\, \bar{\Psi}_L \Psi_R \,| 0 \rangle \ne 0 \quad \text{for } m_q = 0.
+\gamma^5 = i \gamma^0 \gamma^1 \gamma^2 \gamma^3.
 $$
 
-This is a spectacular result — the entire symmetry is broken. To visualize this, imagine a field space where the vacuum state is not at zero but at a shifted location. The potential of the theory has a shape similar to the Higgs potential, resembling a Mexican hat.  
+This is the convention we choose.
 
-When quantum fluctuations are integrated out, the effective potential takes this form, and the vacuum settles at a non-zero expectation value. This is the essence of spontaneous symmetry breaking. The theory could have a vacuum with exact chiral symmetry (located at zero), but energetically, it is favorable for the vacuum to have a non-zero expectation value.  
+---
 
-This mechanism appears in many areas of physics: superconductivity (where electron pairs form Cooper pairs), the Higgs mechanism, and other examples. The common feature is an exact symmetry at the origin of the field space, but the physical vacuum is displaced due to interactions.  
-
-The spontaneous breaking is driven by the shape of the potential. The interaction terms, when integrated over quantum fluctuations, produce a potential that favors a non-zero vacuum expectation value. This is the origin of the mass gap in QCD, even in the absence of explicit mass terms.  
-
-The current symmetry corresponds to independent transformations of the left- and right-handed components. For a global symmetry, there are eight parameters for the left-handed rotation and eight for the right-handed rotation, totaling 16 real parameters. The Lagrangian remains invariant under these transformations if the mass term is zero, since left- and right-handed states decouple.  
-
-The flavor space (SU(3)) is described by a three-component vector, and $`\alpha`$ is a $`3 \times 3`$ matrix independent of coordinates. The left- and right-handed rotations are weighted differently, but the Lagrangian stays unchanged unless a mass term is introduced.
-
-<!--
-Cosine simularity: 0.9270950875855584
--->
-## Introduction to Chiral Perturbation Theory  
-
-In addition to spontaneous symmetry breaking, chiral perturbation theory also accounts for explicit symmetry breaking. This is introduced by assigning non-zero masses to the quarks. Spontaneous symmetry breaking is the dominant effect, but it is fully captured by the theory. Explicit symmetry breaking is a smaller effect since the quark masses are much smaller than the QCD scale $`\Lambda_{\text{QCD}}`$.  
-
-Because of this hierarchy, perturbation theory can be applied — and that is the essence of chiral perturbation theory. The theory is built on the existence of a chiral symmetry, and spontaneous symmetry breaking emerges as a consequence. This breaking is treated as a perturbation parameter.  
-
-> [!NOTE]  
-> The quark masses act as a small perturbation compared to the QCD scale, allowing the use of chiral perturbation theory.  
-
-We will not go into a detailed discussion of chiral perturbation theory here, but the key idea is that it systematically incorporates both spontaneous and explicit symmetry breaking.
-
-<!--
-Cosine simularity: 0.9153992836731415
--->
-## Discussion of Field Expectation Values and Potential  
-
-I will start the next lecture by writing the chiral Lagrangian, and then we will move forward. We won’t have time for a detailed consideration of chiral perturbation theory here, but I encourage you to explore dedicated courses. The theory department has experts in this field, and they are world-leading in their work. My goal today is to introduce the general concepts and provide an experimentalist’s perspective.  
-
-Let me address some questions. The variable in this plane represents the vacuum expectation value. When you write this, the point you choose is the corrected state. It is the expectation value for the correlation. The possibility of $`Q`$ on both sides is not necessarily zero — it depends on the context.  
-
-The axis represents the expectation value of the field. Strictly speaking, in quantum field theory, the potential itself is undefined. What is defined is the expectation value of the field. You can plot the potential as a function of this expectation value. Here, the expectation value is along the $`x`$-axis, and the potential $`V`$ is on the $`y`$-axis.  
-
-> [!NOTE]  
-> The quark masses act as a small perturbation compared to the QCD scale $`\Lambda_{\text{QCD}}`$, allowing the use of chiral perturbation theory.  
-
-The key idea is that chiral perturbation theory systematically incorporates both spontaneous and explicit symmetry breaking. The expectation value of the field is central to this discussion, as it defines the potential landscape of the theory.
-
-<!--
-Cosine simularity: 0.9311018340240912
--->
-## Quasi-Classical Expansion and Field Theory Analogy
-
-I would like this analogy to incorporate complex space, even though we typically expect the potential to be real. The quasi-classical expansion in field theory is a useful framework for this.  
-
-I recall seeing this approach in several books, but I want to discuss its strict definition. Often, we encounter well-defined potentials, but how do we derive them from first principles? This is related to the $`\hbar`$ expansion.  
+It is very convenient for describing interactions to introduce **right-handed** and **left-handed projection operators**:
 
 $$
-H = H_0 + \hbar H_1 + \hbar^2 H_2 + \cdots
+P_R = \frac{1}{2}(1 + \gamma^5), \quad P_L = \frac{1}{2}(1 - \gamma^5).
 $$
 
-Here, $`H`$ is expanded in powers of $`\hbar`$, allowing us to systematically approximate the theory. I will find a reference to clarify this further.  
+> [!NOTE]
+> These projection operators satisfy key properties:
+> - $P_R^2 = P_R$, $P_L^2 = P_L$ (idempotence)
+> - $P_R + P_L = 1$ (completeness)
+> - $P_R P_L = P_L P_R = 0$ (orthogonality)
 
-> [!NOTE]  
-> The quasi-classical expansion provides a bridge between quantum field theory and classical approximations, particularly useful when analyzing potentials and expectation values.
+---
 
-<!--
-Cosine simularity: 0.9434389906546551
--->
-## Spontaneous Symmetry Breaking and Cooper Pairs in Superconductors
+Why are they projection operators? Because when they act twice on a state, nothing changes:
 
-To better understand this, we can look at a simpler model related to spontaneous symmetry breaking in superconductors, where the potential appears explicitly without requiring quantum field theory.  
+$$
+P_R^2 = P_R, \quad P_L^2 = P_L.
+$$
 
-You mentioned an interaction between particles and antiparticles, such as electrons and positrons. However, in superconductors, it is two electrons that form the Cooper pair.  
+Let’s verify this explicitly for $P_L$:
 
-> [!NOTE]  
-> The Cooper pair mechanism involves two electrons binding together at low temperatures, leading to superconductivity.  
+$$
+\left(\frac{1 - \gamma^5}{2}\right) \left(\frac{1 - \gamma^5}{2}\right) = \frac{1 - 2\gamma^5 + (\gamma^5)^2}{4}.
+$$
 
-If you have taken a particle physics course, you might recall the electroweak and Higgs mechanism. This is a key part of understanding symmetry breaking in particle physics, though it is not strictly necessary for the Cooper pair discussion. The underlying principles are similarly strong in both contexts.  
+Since $(\gamma^5)^2 = 1$, this simplifies back to $\frac{1 - \gamma^5}{2}$.
 
-<!--
-Cosine simularity: 0.8755107649761839
--->
-## QED, Electricity, and Quark Dynamics in QCD
+---
 
-We discussed QED in the particle physics course but did not cover electricity explicitly.  
+Another key property is that their sum is the identity:
 
-For heavy quarks, the expansion is different — it is not $`\text{quark} / \Lambda_{\text{QCD}}`$ but rather non-relativistic. In this regime, you can use the momentum $`P`$ and the non-relativistic QCD framework (NRQCD) with $`r_{\text{QCD}}`$ as the characteristic scale.  
+$$
+P_R + P_L = 1.
+$$
 
-> [!NOTE]  
-> NRQCD simplifies quark dynamics for heavy quarks by treating them non-relativistically, where $`P \ll m_Q c`$ and $`r_{\text{QCD}}`$ defines the confinement scale.
+The spaces they project onto are **orthogonal**. If you project onto the left-handed space, there are no right-handed components left:
 
-<!--
-Cosine simularity: 0.9212222031542752
--->
-## Project Discussion and Internship Opportunities  
+$$
+P_R P_L = P_L P_R = 0.
+$$
 
-We discussed RQ (Relativistic QCD) and NRQCD (Non-Relativistic QCD) in the context of momentum $`P`$.  
+---
 
-For summer project discussions, we will organize an event on **June 28th**, inviting bachelor's, master's students, and others interested in available projects and internships.  
+An important consequence arises from the fact that $\gamma^5$ **anti-commutes** with all $\gamma^\mu$:
 
-> [!NOTE]  
-> NRQCD simplifies quark dynamics for heavy quarks where $`P \ll m_Q c`$ and $`r_{\text{QCD}}`$ defines the confinement scale.
+$$
+\{\gamma^5, \gamma^\mu\} = 0.
+$$
 
-<!--
-Cosine simularity: 0.9571312503858783
--->
-## Assignment Distribution and Instructions  
+This implies that:
 
-I will send out details about available projects and internships on **June 28th**.  
+$$
+P_R \gamma^\mu P_L = 0.
+$$
+
+Here’s why: if you start with $P_L$, multiply by $\gamma^\mu$, and swap the order using the anti-commutation relation, you get $P_R$, and $P_R P_L = 0$.
+
+---
+
+Any spinor can be **decomposed** into right-handed and left-handed components:
+
+$$
+\psi = P_R \psi + P_L \psi = \psi_R + \psi_L.
+$$
+
+---
+
+Now, let’s give **physical meaning** to these states. Consider a helicity spinor (spin-up or spin-down). We can decompose it into right-handed and left-handed parts using the explicit matrix forms of the projection operators.
+
+In a simplified representation:
+
+$$
+P_R = \frac{1}{2} \begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}, \quad P_L = \frac{1}{2} \begin{pmatrix} 1 & -1 \\ -1 & 1 \end{pmatrix}.
+$$
+
+> [!NOTE]
+> These are symbolic representations; the full forms are $4 \times 4$ matrices in the standard Dirac basis.
+
+Using these, we can decompose the spinor into its **chiral components**. The result is a clean separation, which is very useful for analyzing interactions.
+
+## Chirality, Helicity, and the \(V-A\) Interaction in Particle States
+
+
+It's cumbersome dealing with \(4 \times 4\) matrices. This product will give me blocks, and the second component gives me what is inside the block.
+
+I have this state acting on the spinor, which is \(\begin{pmatrix} 1 \\ 1 \end{pmatrix}\). When I do multiplication, I multiply in components. That's **super convenient**.
+
+When I do the projection, I realize that the left component from the operator yields a small factor \(1 - \kappa\) that is negligible—vanishing at high energy when mass gets smaller. The component of my right-handed helicity state is a spinor \(\frac{1}{2}\) and has an intrinsically small left-handed component.
+
+---
+
+There is no single interpretation of the right-handed and left-handed states. However, they are closely related to the spin orientation along the direction of motion in the limit of zero mass. When a particle moves at the speed of light, they are literally the same constants.
+
+When you hear **"right-handed,"** it means the particle travels with spin aligned with the direction of motion. When you hear **"left-handed,"** it means the spin is opposite. But when the mass is significant—or when \(m\) is not much smaller than \(E\)—things get mixed, and the state becomes a superposition of both components.
+
+> [!IMPORTANT]
+> **Chiral Projection Operators** define right-handed and left-handed states:
+> \[
+> P_R = \frac{1 + \gamma^5}{2}, \quad P_L = \frac{1 - \gamma^5}{2}
+> \]
+> These operators are key to understanding the **V-A interaction** structure in the Standard Model.
+
+---
+
+It's very interesting that in the Standard Model, the \(W\) boson, when it decays weakly, produces only the right-handed component for leptons and the left-handed component for antileptons. This happens due to the structure of the Lagrangian.
+
+You’ve likely heard that the dominant interaction in the Standard Model is the \(V-A\) interaction. Here:
+- \(V\) stands for **vector** (\(\gamma^\mu\)),
+- \(A\) stands for **axial** (\(\gamma^\mu \gamma^5\)).
+
+The \(V-A\) structure means the Lagrangian contains terms like \(\gamma^\mu (1 - \gamma^5)\), which can also be written as \(2 \gamma^\mu P_L\), where \(P_L = \frac{1 - \gamma^5}{2}\) is the left-handed projection operator.
+
+This interaction vertex governs processes like \(W\) boson decay into an electron and antineutrino. The electron (\(e^-\)) is left-handed (spin opposite to motion at high energy), while the antineutrino is right-handed (spin aligned with motion).
+
+---
+
+Have you heard about pion decay and spin suppression due to helicity mismatch? No? Good—I’m glad to be the first to explain it.
+
+One must be careful when relating handedness to spin orientation because this one-to-one correspondence only holds in the high-energy limit or for massless particles. For neutrinos, this is always true:
+- All **neutrinos** are left-handed,
+- All **antineutrinos** are right-handed.
+
+This is why, before neutrinos were well understood, right-handed neutrinos were proposed as new physics candidates—even as potential dark matter.
+
+---
+
+Due to orthogonality, right-handed and left-handed particles in the massless case do not interact. They could even be entirely different particles with different masses. What connects them is relativity.
+
+For massive particles, you can apply a boost \(\Lambda^{-1}\) to bring them to the rest frame and then analyze their spin. But for massless particles, this is impossible—they have no rest frame, and their helicity cannot be flipped.
+
+Right-handed and left-handed states are called **chiral states**. The **chiral limit** refers to the case where \(m = 0\), and particles are purely right- or left-handed.
+
+Helicity is tied to Lorentz transformations—it’s the spin’s alignment with motion. Chirality is closely related but only equivalent for massless particles. There’s no intuitive picture for chirality unless the particle is ultra-relativistic.
+
+In the Lagrangian, chiral states are easier to work with because they are defined by projection operators (\(P_L, P_R\)) and don’t mix under boosts. Helicity states, while easier to visualize, do mix when you change reference frames. A left-handed chiral state remains left-handed no matter how you boost or rotate it.
+
+## Flavor Symmetry and Chiral Limit in QCD Lagrangian
+
+
+Here is the **Lagrangian of QCD**. The Lagrangian of QCD is not the Standard Model. We don't talk about electromagnetic interactions here. The dynamics of quarks and gluons is described by this Lagrangian:
+
+$$
+\mathcal{L}_{\text{QCD}} = \bar{\psi}_I^A (i \gamma^\mu D_\mu - m_I) \psi_I^A - \frac{1}{4} G_{\mu
+u}^A G^{A,\mu
+u}
+$$
+
+> [!NOTE]
+> Key components of the QCD Lagrangian:
+> - $\bar{\psi}_I^A (i \gamma^\mu D_\mu) \psi_I^A$: Kinetic term for quarks
+> - $\bar{\psi}_I^A m_I \psi_I^A$: Mass term
+> - $G_{\mu
+u}^A G^{A,\mu
+u}$: Gluon field strength term
+
+The $G$ is the gluon field. This is the **gauge part** of the Lagrangian. There are many things here:
+- The $\bar{\psi} \partial \psi$ is the **kinetic term**
+- $\bar{\psi} m \psi$ is the **mass term**
+- The $G$ inside the covariant derivative gives the **interaction** with the gauge field
+
+---
+
+The $I$ is the index for the **flavor**. The main point is that $I$ gives flavor, which is $U, D, S, C, B, T$—one of the six flavors. The $A$ is the **color index**. The $T$ is connected to the local gauge transformation.
+
+I hope you're not afraid of these words. We discussed them before. "**Gauge**" means you can modify this; you can gauge. It means there is a **symmetry** of the Lagrangian, and there are many symmetries here. One of them, discussed in the first lecture, is the **local gauge transformation**, where you can readjust the phase of the color part of the fermion wave function.
+
+---
+
+The $\psi$ is a **fermion wave function**. It has many components, but the color components are in a three-state vector. This is something we can adjust with a local transformation. We do this using a matrix exponent with parameters that depend on the spacetime point $x$. This adjustment can be done at every point of spacetime—that's what "**local**" means. This local transformation determines how gluons and quarks interact, and that's how we construct the covariant derivative:
+
+$$
+D_\mu \psi = (\partial_\mu - i g T^A G_\mu^A) \psi
+$$
+
+---
+
+We don't go deeper into this; instead, we look at the **flavor symmetry**. The masses of the light quarks—$U, D,$ and $S$—are very small compared to the scale of quantum chromodynamics, which is about **1 GeV**. That's why we consider the **chiral limit**, setting these masses to zero. This is the basis for the low-energy expansion, where the small parameter is the ratio of the quark mass or momentum to $\Lambda_{\text{QCD}}$. This leads to our **effective theory**.
+
+---
+
+What I wanted to discuss now is the **flavor transformation**. Flavor transformation means the flavor indices of the wave function can be rotated. We consider a global $SU(3)$ flavor symmetry. The flavor part of the wave function has three components. We started with $I$ as one of six flavors, but for simplicity, we now focus on the light quarks. The transformation is a global $SU(3)$, represented by a $3 \times 3$ matrix. We can rotate or readjust this wave function freely.
+
+It's important that this is **global**—we don't allow the transformation parameters $\alpha$ to depend on spacetime coordinates. The QCD Lagrangian is symmetric under this transformation. Wherever $\psi$ appears, the phases cancel each other. This is straightforward to see.
+
+---
+
+What might be confusing is the $T$. $T$ is a **Gell-Mann matrix**, and you might wonder how it interacts with the $D_\mu$, since $D_\mu$ also contains $T$. But the $T$ inside $D_\mu$ is the **color Gell-Mann matrix**, acting in a different space. In the flavor space, it's just the identity—there are no matrices here. So the flavor transformation is simple.
+
+The phase comes from the Hermitian conjugate—or rather, the Dirac adjoint $\bar{\psi} = \psi^\dagger \gamma^0$. For clarity, let's label the indices: $\alpha^a T^a$, where $a$ runs from 1 to 8 for $SU(3)$.
+
+---
+
+Now, we project the states into **left- and right-handed components** using the chirality operators:
+
+$$
+\psi_L = P_L \psi = \frac{1 - \gamma_5}{2} \psi, \quad \psi_R = P_R \psi = \frac{1 + \gamma_5}{2} \psi
+$$
+
+The **vector part** of the interaction is $\bar{\psi}_L \gamma^\mu D_\mu \psi_L + \bar{\psi}_R \gamma^\mu D_\mu \psi_R$. There is no mixing between left and right components. The covariant derivative $D_\mu$ doesn't affect the flavor space, so it doesn't change anything here. The $\gamma^\mu$ could have been $D_\mu$, but I didn't say that.
+
+## Chiral Symmetry and Its Spontaneous Breaking in QCD
+
+
+
+**Possible symmetry.** The **chiral symmetry** is the transformation of the right and left components independently. So we want to consider a symmetry.
+
+Let’s check if everything is fine. Here is a three-component vector in the flavor space, $SU(3)$. And here is a $3 \times 3$ matrix. The parameter $\alpha$ does not depend on the coordinates—this is a **global transformation**.
+
+We introduce parameters for the left-handed rotation and right-handed states rotation. We count eight numbers here and eight numbers there, giving **16 random numbers** in total. We apply this transformation, and the Lagrangian doesn’t change unless it has mass.
+
+> [!NOTE]
+> **Chiral Transformation of Quark Fields**:
+> $$
+> q_L \rightarrow e^{i \theta_L^a T^a} q_L, \quad q_R \rightarrow e^{i \theta_R^a T^a} q_R
+> $$
+> where $q_L$ and $q_R$ are the left- and right-handed quark fields, $T^a$ are the generators of $SU(3)$, and $\theta_L^a, \theta_R^a$ are transformation parameters.
+
+**How do we see that it doesn’t change if the mass is zero?** Because left-handed and right-handed states don’t talk to each other. An extra phase appears here and cancels with the one there—same for the other terms. The symmetry is only broken when mass terms appear. That’s **chiral symmetry**.
+
+The mass term mixes the two components. Here is one combination of the $\alpha$ parameters, and here is the other one. The phases no longer cancel, so the mass term breaks chiral symmetry explicitly.
+
+> [!NOTE]
+> **Mass Term Breaking Chiral Symmetry**:
+> $$
+> \mathcal{L}_{\text{mass}} = -m \bar{q} q = -m (\bar{q}_L q_R + \bar{q}_R q_L)
+> $$
+> This term mixes left- and right-handed components, explicitly breaking chiral symmetry.
+
+**Now, something I won’t derive but you might have heard:** chiral symmetry is also **spontaneously broken**. Even if you start with no mass term in QCD at low energy, the quarks generate a non-zero expectation value through their interactions. The quarks appear massive even without a mass term in the Lagrangian.
+
+Here is the vacuum. QCD, left side, right side—it’s quite spectacular that the entire symmetry is broken.
+
+> [!NOTE]
+> **Spontaneous Symmetry Breaking via Quark Condensate**:
+> $$
+> \langle \bar{q} q \rangle 
+eq 0
+> $$
+> The non-zero vacuum expectation value of the quark condensate signals spontaneous chiral symmetry breaking.
+
+**Imagine a plane of field excitations.** If you’re at zero, chiral symmetry is exact in the Lagrangian, and you can rotate left and right states independently. But the vacuum we live in is not at zero—it’s at a shifted location in field space.
+
+This happens because the potential of the theory has a shape like the **Higgs potential**. For QCD, quark pairs acquire a non-zero expectation value by interacting, so the vacuum resides at a non-zero point in the field space.
+
+> [!NOTE]
+> **Mexican Hat Potential (for Illustration)**:
+> $$
+> V(\phi) = -\mu^2 |\phi|^2 + \lambda |\phi|^4
+> $$
+> Analogous to the Higgs mechanism, this potential shape describes spontaneous symmetry breaking, where $\phi$ represents the order parameter (e.g., quark condensate in QCD).
+
+**This continuous symmetry-breaking effect appears in many areas of physics:** superconductors (Cooper pairs), the Higgs mechanism, and others. The mechanism is always the same. You have an exact theory at zero in the coordinate space, but once you move away, symmetry breaks spontaneously.
+
+**Think of a Mexican hat potential.** The interaction integrates over gluons, and the resulting potential has this shape. We could live in a vacuum with perfect chiral symmetry, but energetically, it’s favorable to be where the expectation value is non-zero. That’s **spontaneous symmetry breaking**.
+
+**In addition to spontaneous breaking, QCD has explicit symmetry breaking from non-zero quark masses.** Spontaneous breaking is the major effect, captured by the theory. Explicit breaking is smaller since quark masses are much less than $\Lambda_{\text{QCD}}$.
+
+**This is where chiral perturbation theory comes in.** It builds on chiral symmetry, with spontaneous breaking as an outcome. The breaking is treated as a perturbation.
+
+> [!NOTE]
+> **Chiral Lagrangian (Low-Energy QCD)**:
+> $$
+> \mathcal{L}_{\text{chiral}} = \frac{f_\pi^2}{4} \text{Tr}[\partial_\mu U \partial^\mu U^\dagger] + \cdots
+> $$
+> Here, $U = e^{i \pi^a T^a / f_\pi}$ encodes the pseudo-Goldstone bosons (pions), and $f_\pi$ is the pion decay constant. The ellipsis represents higher-order terms in chiral perturbation theory.
+
+**We won’t go into details of chiral perturbation theory.** Next lecture, I’ll write the chiral Lagrangian, but we won’t have time to explore it deeply. For that, I’d recommend dedicated courses—we have experts in the theory department.
+
+I wanted to give you the **general concepts** and an **experimentalist’s perspective**.
+
+---
+
+
+**Question:** What is the variable in this plane? Is it the vacuum expectation value?
+**Answer:** Yes, the axis represents the expectation value of the field. The potential is drawn as a function of this expectation value.
+
+**Question:** Is the vacuum state always the correct one?
+**Answer:** It’s the state with the lowest energy, where the expectation value is non-zero.
+
+**Question:** What’s on the axis?
+**Answer:** The expectation value of the field. Strictly speaking, the potential in quantum field theory is defined via the expectation value.
+
+**I’m not entirely happy with this analogy** because the field space should be complex, but let me think of a simpler model, like superconductors, where this is clearer.
+
+**Question:** You mentioned electron-positron pairs earlier, but Cooper pairs are two electrons.
+**Answer:** Correct, Cooper pairs are two electrons.
+
+**Question:** Did you cover the Higgs mechanism in the particle physics course?
+**Answer:** Some of it, but not deeply.
+
+**Question:** What about heavy quarks?
+**Answer:** For heavy quarks, you use a different expansion—potential non-relativistic QCD (pNRQCD).
+
+---
+
+We’ll have a project discussion on **June 28th** for bachelors, masters, and anyone interested in internships. I’ll send details later.
+
+**Thanks!**
+

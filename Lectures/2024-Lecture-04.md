@@ -1,663 +1,344 @@
-# Lecture 04: Kinematics of reactions
+## Magnetic Moment of the Omega Baryon and Excitation Patterns of the Sigma Baryon
 
-## Recap and Questions on Magnetic Moment Computation
 
-This is lecture number 4. We will have no exercise session this week due to the trip to CERN. There is also a scheduling issue for next week's exercise class, as Thursday is a holiday. I hope Ilya can discuss rescheduling it to another day. Skipping two weeks would be too much, but we will be back from CERN on Monday, and the next lecture will proceed as planned on Tuesday.  
+Today's lecture is dedicated to **experiments in spectroscopy** and the **computations of kinematics** for these experiments.
+But before proceeding, I would like to recap the last lecture and pose two questions:
 
-Today's lecture will focus on experiments in spectroscopy and kinematics computations. Before diving into that, let's recap the last lecture and address two key questions:  
+**Question 1**: Compute the magnetic moment in the current model of the Omega baryon.
 
-1. **Compute the magnetic moment in the current model of the Omega baryon.**  
-2. **Compute the lowest $`1s`$ multiplet excitation of the $`\Sigma_p`$ parameter (related to ISIS spin factors).**  
+**Question 2**: Compute the lowest 1s multiplet excitation of the Σ particle parameter.
 
-For question 1, we first need the quark content of the $`\Omega^-`$ baryon: three strange quarks ($`sss`$). The total wave function is a product of color, isospin, spin, and flavor components, but color and isospin are factored out, leaving only flavor and spin. The flavor part is trivial, so we focus on spin.  
+For the second question, I'm referring to **isospin fermions**. Let's address this quickly because it's straightforward.
 
-The spin configuration must yield a total spin of $`3/2`$ for the $`\Omega^-`$ baryon, with parity $`+`$. This implies orbital angular momentum $`L = 1`$, and the spin must be $`1/2`$ to achieve the correct total angular momentum $`J = 3/2`$.  
+---
 
-For question 2, the $`1s`$ multiplet excitation of $`\Sigma_p`$ involves understanding the spin structure of the system, particularly how the spin states align to form the lowest-energy configuration.  
+First, what's the quark content of the Ω⁻? It consists of **three strange quarks**. What is the wave function? The total wave function is always a product of four parts, though not necessarily a direct product. It lives in the tensor product space of:
+- Color coordinates
+- Isospin
+- Spin
+- Spatial coordinates
 
-> [!NOTE]  
-> The $`\Omega^-`$ baryon's magnetic moment arises from the contributions of its three strange quarks, each with spin $`1/2`$. The total spin configuration must be symmetric to match the observed $`J = 3/2`$ state.  
+Flavor is trivial here, so we focus on **spin**. Two quarks should be spin-up, and one spin-down to match the half-spin behavior of the particle. But what is the total spin? The books state it's **$3/2$**, not $1/2$. The parity is $+$, so for $L=1$, the spin would be $1/2$. But in reality, $J$ is $3/2$ precisely.
 
-> [!TIP]  
-> When computing the $`1s`$ multiplet, remember that the lowest-energy state corresponds to the most symmetric spin arrangement, minimizing repulsive interactions.  
+The Ω⁻ exists in a $J=3/2^+$ state. What's the multiplicity? For spin-$3/2$, how many projections are there?
 
-<!--
-Cosine simularity: 0.8702025552897326
--->
-## Calculation of Magnetic Moment for Omega Baryon
+> [!NOTE]
+> The **spin multiplicity** for $J=3/2$ is given by:
+> ```latex
+> \text{Multiplicity} = 2J + 1 = 4 \quad \text{(for } J=\tfrac{3}{2}\text{)}
+> ```
 
-The parity of the Omega baryon is plus, which implies the orbital angular momentum $`L = 1`$. The spin is $`3/2`$, giving a total angular momentum $`J = 3/2`$. The multiplicity of the spin-$`3/2`$ state is four, corresponding to the four possible projections along the $`z`$-axis: $`+3/2, +1/2, -1/2, -3/2`$.  
+To obtain all components, act with a lowering operator on the maximal projection state. For the **magnetic moment calculation**, we only need one component because the magnetic moment is proportional to spin.
 
-The wave function for the $`\Omega^-`$ baryon is constructed from the spin states of the three strange quarks. Acting with the lowering operator on the highest weight state generates the other components, such as $`|\downarrow\uparrow\uparrow\rangle`$, $`|\uparrow\downarrow\uparrow\rangle`$, and $`|\uparrow\uparrow\downarrow\rangle`$, each with a coefficient of $`1/\sqrt{3}`$.  
+The magnetic moment operator is:
+```latex
+\hat{\mu}_z = \sum_{i=1}^3 \mu_{iz} = \sum_{i=1}^3 g_i \left(\frac{e \hbar}{2 m_i c}\right) S_{iz}
+```
+Here, the **g-factor** is the charge number. Since all quarks have charge $-1/3$, the total is $-1$. The magnetic moment is then:
+```latex
+\mu_{\Omega^-} = -3 \left(\frac{e \hbar}{2 m_s c}\right)
+```
+where $m_s$ is the strange quark mass (~500 MeV).
 
-The magnetic moment operator is given by:  
+The Ω⁻ mass is roughly three times the strange quark mass:
+```latex
+M_{\Omega^-} \approx 3m_s \approx 1500 \text{ MeV}
+```
+The magnetic moment is similar to the electron's but **1000 times smaller** due to the larger mass.
 
-```math
-\mu_z = \mu_{1z} + \mu_{2z} + \mu_{3z}
+**Key takeaway**: For simple wave functions, calculating the magnetic moment is straightforward. You only need the maximal projection state.
+
+---
+
+The ground state of the Σ baryon has:
+- A light diquark in a **spin-1** configuration
+- A **spin-$1/2^+$** heavy quark
+
+The isospin multiplicity is:
+```latex
+\text{Multiplicity} = 2I + 1 = 3 \quad \text{(for } I=1\text{)}
+```
+This gives three charge partners: $+1$, $0$, and $-1$.
+
+For the **excitation pattern**, we combine the spins of:
+1. The light diquark (spin-1)
+2. The heavy quark (spin-$1/2$)
+
+For the **S-wave**, we get two states: $1/2^+$ and $3/2^+$.
+
+For the **P-wave ($L=1$)**, combining spins gives:
+```latex
+J = \tfrac{1}{2}^-, \tfrac{3}{2}^-
+```
+The multiplicity for the P-block is **5**, while the S-block has **2 states**.
+
+The **hyperfine splitting** energy scale is suppressed by the heavy quark mass:
+```latex
+\Delta E_{\text{hyperfine}} \propto \frac{1}{m_Q}
 ```
 
-When applied to the state, it acts as an eigenoperator. For example, $`\mu_{1z}`$ acting on $`|\uparrow\uparrow\uparrow\rangle`$ returns the spin projection multiplied by the charge factor. The charge of each strange quark is $`-1/3`$, so the total charge contribution is:  
+These states correspond to physical particles listed in the PDG. The Σ baryon (300) was discovered roughly **10 years ago**.
 
-```math
-\mu \propto \sum_{i=1}^3 q_i \cdot s_{iz}
-```
+## Heavy Quark Spin Effects, Exotic Hadrons, and Electron-Positron Collider Experiments
 
-For the $`\Omega^-`$ baryon, the total charge is $`-1`$, and the dominant contribution comes from the spin alignment. The magnetic moment is then:  
 
-```math
-\mu \approx \frac{e\hbar}{2m_s c}
-```
+Now one word about energy splitting.
+The energy splitting between this and that state is caused by the spin of the heavy quark.
+The radial excitation is the scale given by the quark dynamics, and this is the order of $\lambda_{\text{QCD}}$.
+So that's one of the first lectures where we introduced that it's where the strong coupling, the very strong coupling, diverges.
+It's roughly a few hundred MeV, and that gives you the separation of the different blocks.
 
-where $`m_s`$ is the mass of the strange quark (approximately 500 MeV). Compared to the electron's magnetic moment, this is smaller by a factor of $`10^3`$ due to the larger mass of the strange quark.  
+Within the block, the splitting between levels comes from the dynamics of the spin of the heavy quark.
+This quark is heavy, so all spin effects are suppressed inversely proportional to its mass.
+In the Lagrangian—and in all effective theories—the spin-orbit interaction enters in terms like $\frac{\vec{S}_Q \cdot \vec{L}}{m_Q}$, where the mass of the heavy quark is in the denominator.
+The mass of the $b$ quark is about 4 GeV, so it gives an order-of-magnitude suppression.
 
-> [!NOTE]  
-> The $`\Omega^-`$ baryon's magnetic moment is determined by the spin and charge contributions of its three strange quarks, with the mass scale set by the strange quark mass.  
+$\lambda_{\text{QCD}}$ is a few hundred MeV, and the quark mass is a few GeV, so the ratio between them is roughly 1:10 or 1:15.
+That's the difference between excitation energies: the general quantum numbers versus the splitting between states.
+For example, the energy difference between $\Sigma_b$ with spin 3/2 and $\Sigma_b$ with spin 1/2 is on the order of 10 MeV.
+Can someone check that? Does the PDG list $\Sigma_b$ states?
 
-> [!TIP]  
-> When computing magnetic moments, focus on the highest weight state first, as the other states can be generated using ladder operators. The proportionality to spin simplifies the calculation.  
+---
 
-The charge of the $`\Omega^-`$ baryon is $`-1`$, arising from the sum of the three strange quark charges. The magnetic moment is thus suppressed relative to the electron due to the heavier mass scale involved.
+Today's lecture is dedicated to kinematics and experimental techniques.
+I’ll start by overviewing what we do in experimental physics.
+This field has been extremely vibrant and fruitful in the last 10 years.
+It began around 2004 when the first exotic particles appeared.
+Since then, every few months, new observations of states that don’t fit simple meson or baryon models have been reported.
+Many experiments have dedicated part of their programs to studying hadrons, especially exotic ones.
 
-<!--
-Cosine simularity: 0.9410176644208754
--->
-## Excitation Pattern and Isospin Partners of Sigma B Baryon  
+Several large labs worldwide study hadron collisions.
+One key question is understanding how hadrons form: which combinations are possible, and what rules govern their excitation patterns and properties.
+Quantum chromodynamics (QCD) describes strong interactions well where we can compute, but we still can’t classify or predict large multiplets of exotic hadrons.
+This isn’t just due to computational limits—lattice QCD works well for ground states but struggles at this scale—but also because the theory is inherently complex.
 
-The magnetic moment of the $`\Omega^-`$ baryon is negative because of its negative charge, but it is 10,000 times smaller than that of the electron. The charge of the $`\Omega^-`$ is also negative, so our intuition holds that the magnetic moment should be negative. However, the mass scale in the magnetic moment formula is determined by the quark mass rather than the mass of the $`\Omega^-`$ itself. If the quark mass is roughly 500 MeV, then the mass of the $`\Omega^-`$ would be around 1500 MeV (three times the quark mass).  
+The phenomena in QCD involve **emergent degrees of freedom**.
+The Lagrangian has quarks and gluons, but these aren’t the relevant degrees of freedom for hadrons.
+We’re seeing a transition between configurations where quark degrees of freedom dominate and those where hadrons themselves form larger structures, like atoms.
+In spectroscopy, you face this borderline: a mix of compact quark-based hadrons and sparse hadronic molecules.
 
-> [!TIP]  
-> When calculating magnetic moments, it is simplest to work with the maximal spin projection state, as it avoids complications from mixed spin configurations.  
+Lattice QCD can’t yet help much here, so experiments must provide new data.
+We study hadrons by measuring their properties and decays, either in new decay configurations or from different production mechanisms.
 
-The excitation pattern of the $`\Sigma_b`$ baryon is determined by its light diquark configuration, which in the ground state has spin $`S = 1`$ and parity $`1/2^+`$. A bonus question concerns the isospin partners of this baryon. Since the isospin of the $`\Sigma_b`$ is $`I = 1`$, the isospin multiplet has three charge states corresponding to the projections $`I_z = +1, 0, -1`$.  
+---
 
-The charges of these states are determined by their quark composition:  
-- $`\Sigma_b^+`$ ( $`uu b`$ ) has charge $`+1`$ (like a proton but with a bottom quark).  
-- $`\Sigma_b^0`$ ( $`ud b`$ ) has charge $`0`$.  
-- $`\Sigma_b^-`$ ( $`dd b`$ ) has charge $`-1`$.  
+Many labs explore different production mechanisms:
 
-Acting with the isospin lowering operator reduces the charge by one unit, so the pattern is straightforward.  
+- **Electron-positron colliders**:
+- Belle (Japan) and BES (China) collide electrons and positrons, producing intermediate states that decay.
+- CERN’s colliders study proton-proton collisions, producing long-lived particles like $B$ and $D$ mesons.
+- These travel millimeters before decaying, letting us distinguish primary and secondary vertices.
 
-> [!NOTE]  
-> Isospin symmetry is only slightly broken by quark mass differences, so the excitation patterns for all three $`\Sigma_b`$ states are nearly identical.  
+- **Hadronic production**:
+- Fixed-target experiments like GlueX (Jefferson Lab, photon beam) and COMPASS (CERN, pion beam), both using hydrogen targets.
 
-The excitation spectrum is determined by spin rather than isospin. Since all three isospin partners are related by symmetry, their properties—including their excited states—are very similar. The small isospin breaking due to quark mass differences is negligible for most practical purposes.  
+- **Lattice QCD computations**:
+- Theoretical approach to complement experimental data.
 
-```math
-\mu \approx \frac{e\hbar}{2m_q c}
-```  
-where $`m_q`$ is the quark mass, explains why the magnetic moment is suppressed compared to lighter particles like the electron.  
+---
 
-The wave function for the $`\Omega^-`$ baryon is constructed from the spin states of the three strange quarks, with the magnetic moment operator given by:  
+Let’s overview experiments, starting with BES (Beijing Spectrometer).
+It’s at the Beijing Electron-Positron Collider (BEPC), colliding electrons and positrons.
+BES studies hadrons in the charmonium and tau regions.
+The collision produces a virtual photon, which couples to hadrons.
 
-```math
-\mu_z = \sum_{i=1}^3 \mu_{iz}
-```  
+> [!NOTE]
+> **Quantum number selection rules for $e^+e^- \to \text{hadrons}$**:
+> Electrons and positrons have spin-1/2, so their collision can only produce spin-1 states (not spin-0).
+> The parity is also fixed, so BES explores hadrons with $J^P = 1^-$.
 
-For the highest spin projection state, the magnetic moment is straightforward to evaluate, as it depends only on the quark charges and spins. The charge of each strange quark is $`-1/3`$, so the total charge is $`-1`$.
+BES operates in two modes:
+1. **Resonance peak**: Collecting data at specific energies (e.g., $J/\psi$ peak).
+2. **Energy scan**: Measuring cross-sections by tuning beam energy.
 
-<!--
-Cosine simularity: 0.9385343176154074
--->
-## Heavy Quark Spin Dynamics and Energy Splitting
+The cross-section $\sigma(e^+e^- \to \text{hadrons})$ peaks at resonances like $J/\psi$ or $\psi(2S)$.
+Analyzing final states (e.g., $\pi^+\pi^-\pi^0$) reveals hadron properties.
 
-The excitation pattern remains the same regardless of which state we consider as the lowest. For the diagram, we plot different quantum numbers on the x-axis, typically orbital angular momentum in the excitation spectrum, and the rest mass energy (or hadron mass) on the y-axis.  
+---
 
-To construct this, we start by combining the spins of the light quarks and the heavy quark. For most hadrons (except light mesons), the radial excitation—moving from 1s to 2s orbitals—is much larger than hyperfine splitting. This is always true for heavy quarks. The energy difference from combining spins is suppressed by a factor of the heavy quark mass:  
+Belle II (Japan) is another $e^+e^-$ collider, originally for CP violation studies but also useful for spectroscopy.
+It’s at the SuperKEKB accelerator (upgraded from KEKB).
+Unlike symmetric colliders, Belle II uses asymmetric beam energies to boost produced $B$ mesons.
 
-```math
-\Delta E \sim \frac{1}{m_Q}
-```
+The center-of-mass energy is set to the $\Upsilon(4S)$ resonance, which decays to $B\bar{B}$ pairs.
+The boost makes $B$ mesons travel farther, improving vertex resolution.
+This design choice enhances sensitivity to CP violation.
 
-For an S-wave state, combining a light diquark with spin $`S = 1`$ and a heavy quark with spin $`S = 1/2`$ yields two possible states:  
+---
 
-```math
-J = \frac{1}{2} \oplus \frac{3}{2}
-```
+1. **Energy splitting**:
+$$
+\Delta E \sim \frac{\lambda_{\text{QCD}}}{m_Q}
+$$
 
-When adding one unit of orbital angular momentum (P-wave), we must consider both spin combinations separately. The multiplicity for the P-block is 5, while the S-block has a multiplicity of 2. The lowest states are $`\frac{1}{2}^+`$ and $`\frac{3}{2}^+`$, followed by five P-wave states. These correspond to distinct particles listed in the PDG, though some (like $`\Sigma_b(300)`$) were discovered relatively recently.  
+2. **Spin-orbit interaction**:
+$$
+\mathcal{L}_{\text{spin-orbit}} \sim \frac{\vec{S}_Q \cdot \vec{L}}{m_Q}
+$$
 
-The energy splitting between states arises from the heavy quark spin dynamics, while radial excitations are governed by QCD dynamics at the scale of $`\Lambda_{\text{QCD}}`$ (a few hundred MeV). The splitting within a block is suppressed by the heavy quark mass.  
+3. **Resonance cross-section**:
+$$
+\sigma \propto \frac{1}{(s - M_R^2)^2 + M_R^2 \Gamma_R^2}
+$$
 
-> [!NOTE]  
-> The strong coupling diverges at $`\Lambda_{\text{QCD}}`$, setting the energy scale for radial excitations.  
+4. **Boosted decay length**:
+$$
+L = \gamma c\tau \approx \frac{E}{m_B} c\tau
+$$
 
-For the $`\Omega^-`$ baryon, the magnetic moment is negative due to its negative charge, though it is much smaller than the electron's moment. The mass scale in the magnetic moment formula depends on the quark mass ($`m_q \approx 500 \ \text{MeV}`$) rather than the baryon mass ($`\sim 1500 \ \text{MeV}`$):  
+---
 
-```math
-\mu \approx \frac{e\hbar}{2m_q c}
-```
+The charmonium spectrum includes:
+- $J/\psi(1S)$ ($1^-$) and $\eta_c(1S)$ ($0^-$)
+- $\psi(2S)$ ($1^-$)
+- $P$-wave states: $\chi_{cJ}$ ($J = 0,1,2$, $J^P = 0^+,1^+,2^+$).
 
-The $`\Sigma_b`$ baryon's excitation pattern is determined by its light diquark ($`S = 1`$, $`\frac{1}{2}^+`$). Its isospin partners form a triplet ($`I = 1`$) with charges:  
-- $`\Sigma_b^+`$ ($`uu b`$): $`+1`$  
-- $`\Sigma_b^0`$ ($`ud b`$): $`0`$  
-- $`\Sigma_b^-`$ ($`dd b`$): $`-1`$  
+## Reconstructing \( e^+e^- \) Annihilation, Bottomonium Spectroscopy, and Hadron Production at Colliders
 
-> [!TIP]  
-> Isospin symmetry is nearly exact here, as quark mass differences cause only minor breaking.  
 
-The magnetic moment operator for the $`\Omega^-`$ is:  
+To reconstruct the schematics before we move away from Belle II, let me relate to what we just discussed.
+The process remains the same: **$e^+e^-$ annihilation**. The cross section $\sigma(e^+ e^- \to \text{everything})$ is the **total cross section**.
 
-```math
-\mu_z = \sum_{i=1}^3 \mu_{iz}
-```
+> [!NOTE]
+> **Key formula**: The total cross section for electron-positron annihilation is given by:
+> $$
+> \sigma(e^+ e^- \to \text{everything})
+> $$
 
-where each strange quark contributes $`-1/3`$ to the total charge.
+Belle's experiment operates in the region of **$J/\psi$** and **$\Upsilon$** production—**charmonium** and **bottomonium**. Belle specifically focuses on **bottomonium**, the bound states of **$b\bar{b}$**. Similarly, **charmonium** consists of **$c\bar{c}$**.
 
-<!--
-Cosine simularity: 0.8966537783587706
--->
-## Heavy Quark Mass and Spin Suppression in Effective Theory  
+Moving further in energy, the **$\Upsilon(4S)$** resides in the **3 GeV region** (2–4 GeV). At around **10 GeV**, we reach the **bottomonium system**, which is analogous to charmonium but with a heavier quark. Since the **$b$ quark** is more massive, the **hyperfine splitting** $\Delta m = m(1^-) - m(0^-)$ is smaller. The mass difference between **$\eta_b$** and the **vector bottomonium** is reduced, and the energy levels are more condensed. The scale between levels remains roughly a few hundred MeV, but within each block, the spacing is much tighter.
 
-The energy difference between levels arises from the dynamics of the heavy quark spin. Since the quark is heavy, all spin effects are suppressed inversely proportional to its mass. In the Lagrangian (and in all effective theories), the spin-orbit interaction appears in terms where the heavy quark mass is in the denominator.  
+Now, introducing the symbol **$\Upsilon$**: this is the **vector particle** with **spin-parity $1^-$**, the bottomonium counterpart of the **$J/\psi$**. The **$J/\psi$** is the easiest charmonium state to produce in **$e^+e^-$ annihilation** and is the most studied. Its bottomonium equivalent is the **$\Upsilon$**.
 
-For example, the mass of the $`b`$ quark is around $`4 \ \text{GeV}`$, which introduces an order-of-magnitude suppression. The QCD scale $`\Lambda_{\text{QCD}}`$ is a few hundred MeV, setting the typical energy scale for these effects.  
+The **$\Upsilon(4S)$** is part of the **excitation spectrum**. As we scan the energy, we observe:
+- **$J/\psi$**
+- **$\Upsilon(1S)$**
+- **$\Upsilon(2S)$**
+- **$\Upsilon(3S)$**
+- **$\Upsilon(4S)$**
 
-> [!NOTE]  
-> The spin-orbit coupling in heavy quark systems is suppressed by $`1/m_Q`$, where $`m_Q`$ is the heavy quark mass.  
+All these states are **above threshold**, requiring beam energies above **9 GeV**. For example:
+- The **$\Upsilon(1S)$** is at **9.46 GeV**
+- Higher states at increasing energies
 
-The strong coupling diverges at $`\Lambda_{\text{QCD}}`$, governing the radial excitations, while spin-dependent splittings are smaller due to the heavy quark mass suppression.
+---
 
-<!--
-Cosine simularity: 0.9239601881115391
--->
-## Exotic Hadrons and Experimental Challenges in QCD
+Proton-proton collisions are far messier. At the **LHC**, the energy scale is in the **TeV range**, and annihilation is not the primary process. The **multiplicity** of particles produced is enormous and grows with energy. In symmetric **7.7 TeV collisions**, beam remnants—mostly from quarks and gluons—are highly boosted.
 
-The energy scale $\Lambda_{\text{QCD}}$ is a few hundred MeV, while the typical excitation energies are on the order of a few GeV. The ratio between them is roughly 10:15, which reflects the difference between excitation energies of general quantum states and the splitting between specific levels.  
+**What is the typical multiplicity in such collisions?** How many particles are produced on average? The answer is roughly **a thousand per collision**. The **transverse momentum $p_T$ spectrum** follows an **exponential distribution**:
+$$
+\frac{dN}{dp_T} \propto e^{-p_T / T}
+$$
+with most particles at **low energy** and a tail extending to higher **$p_T$**. The typical energy per particle is **hundreds of GeV**, though many have much lower momentum.
 
-For example, the energy difference between $\Sigma_b$ with spin $3/2$ and $\Sigma_b$ with spin $1/2$ is of the order of 10 MeV.  
+---
 
-> [!NOTE]  
-> The splitting between heavy quark states like $\Sigma_b$ is governed by spin-dependent interactions, which are suppressed by the heavy quark mass.  
+LHCb has been highly productive in discovering new hadrons due to the **large cross section** of proton-proton interactions compared to **$e^+e^-$ annihilation**. Two main production mechanisms are explored:
+1. **Prompt production**: The particle of interest originates from the primary vertex.
+2. **Probe production**: Secondary vertices from decays of heavier particles.
 
-Today's lecture focuses on the kinematics and experimental techniques in hadron physics. This field has been extremely vibrant in the last 10 years, starting around 2004 when the first exotic particles were discovered. Since then, new observations of states that do not fit the conventional quark model (mesons and baryons) have been reported frequently.  
+For example, **charm production** has led to observations like the **$\Omega_c$** and **$\Xi_c^*$ baryons**. The ground state of the **cascade multiplet ($\Xi_c$)** decays weakly, with a lifetime of **$\sim 10^{-10}$ s**. At **100 GeV**, such particles travel **millimeters**, creating a **secondary vertex** resolvable from the primary vertex. By reconstructing charged particles (e.g., proton, kaon, pion), resonances appear as peaks in the **invariant mass spectrum**:
+$$
+M_{\text{inv}}(K^- \Xi_c^+)
+$$
 
-Many experiments worldwide now dedicate part of their programs to studying hadrons, particularly exotic ones. Large laboratories conducting particle collisions contribute to this effort. A key challenge is understanding the fundamental structure of matter—how hadrons form, which combinations are possible, and what rules determine their excitation patterns and properties.  
+Another method involves studying **secondary vertices** from **$B$ hadrons** (e.g., **$B$ mesons** or **$\Lambda_b$ baryons**). These ground states decay with lifetimes of **$\sim 10^{-12}$ s**, but when boosted, they produce secondary vertices **centimeters away**. This separation allows clean reconstruction of their decays.
 
-Quantum Chromodynamics (QCD) describes strong interactions well in regimes where computations are feasible. However, there has been no success yet in systematically classifying and predicting large multiplets of exotic hadrons. Observations are made, but relating them to theoretical predictions remains difficult due to computational limitations and the complexity of QCD dynamics.  
+A prominent example is the decay **$\Lambda_b \to J/\psi p K^-$**, a **three-body process**. Peaks in the **$M_{\text{inv}}(p K^-)$** spectrum correspond to **$\Lambda$ resonances**, while peaks in **$M_{\text{inv}}(J/\psi p)$** reveal **$P_c$ states** (exotic **$u u c \bar{c}$** combinations).
 
-> [!IMPORTANT]  
-> The strong coupling diverges at $\Lambda_{\text{QCD}}$, setting the scale for radial excitations, while spin-dependent effects are smaller due to heavy quark mass suppression.  
+---
 
-<!--
-Cosine simularity: 0.9299938499553769
--->
-## Transition of Matter and Hadron Spectroscopy  
+Now, let’s briefly discuss **fixed-target experiments**. Three examples are:
+1. **GlueX** at Jefferson Lab: **9 GeV photon beam** on liquid hydrogen.
+2. **COMPASS** at CERN: **Pion beam** on liquid hydrogen.
+3. **CLAS** at Jefferson Lab: **2 GeV photon beam**, focusing on light hadrons.
 
-We cannot do this partly because of the limitations of our computational methods. Lattice QCD, while effective for ground states, is not well-suited for computations at larger scales due to the complexity of the theory.  
+These experiments study **light hadron spectroscopy** via two mechanisms:
+- **Diffraction**: The proton acts as a source of gluonic fields, with the beam (photon/pion) interacting and exciting resonances.
+- **s-channel scattering**: Resonant production **$\gamma p \to X \to \text{final state}$**, where **$X$** is a hadronic resonance (e.g., **$N^*$**, **$\Delta$**).
 
-The phenomena in QCD reveal emerging behaviors that are not directly described by the Lagrangian's quark and gluon degrees of freedom. Instead, we observe a transition in matter: from configurations where quark degrees of freedom dominate (such as quark-gluon plasma) to configurations where hadrons themselves become the relevant degrees of freedom (such as in atomic nuclei).  
+At lower energies (**2–3 GeV**), **s-channel scattering dominates**, while higher energies involve both processes. **COMPASS** separates these regimes, while **GlueX** operates in an intermediate range where both mechanisms interfere.
 
-In hadron spectroscopy, this transition manifests as a boundary region where hadrons—composed of elementary quarks—coexist with larger atomic-scale objects. Here, hadrons bind into more complex structures, creating a mixed regime.  
+Some experiments, like **GlueX**, are nearing the end of their runs but may be upgraded (e.g., **GlueX2**) to explore more exotic spectroscopy.
 
-> [!NOTE]  
-> The transition between quark-dominated and hadron-dominated matter highlights the challenge of modeling QCD across different energy scales.  
+## Gluonic Fields, Exclusive Scattering, and Kinematic Variables in Phase Space Calculations
 
-The theory's complexity arises from the interplay of these scales, where neither perturbative methods nor pure lattice computations fully capture the dynamics. This is particularly evident in spectroscopy, where exotic states blur the line between quark-level and hadron-level descriptions.
 
-<!--
-Cosine simularity: 0.9332114090839496
--->
-## Hadron Production Mechanisms and Experimental Approaches
 
-Hadrons bind in larger objects, such as atomic nuclei, and some hadrons are complicated because their properties arise from a mixture of different configurations. Some properties require them to be compact hadrons, while others require them to be sparse hadronic molecules, which we refer to as "atoms" in hadron spectroscopy.  
+> [!NOTE]
+> The proton remains color-neutral, so it emits a **gluonic field** rather than a single gluon. This is why we describe it as **diffraction** rather than gluon exchange.
 
-Currently, lattice QCD cannot fully address these complexities, so experiments worldwide provide new data and insights. Researchers understand these phenomena by measuring hadron properties and their decays. One approach is to observe hadrons in new decay configurations, which yield valuable information. Another is to measure the same hadron but from different production mechanisms.  
+I have a quick question regarding the diagram. You said that they interact via gluons. So is that a direct or indirect interaction? One can see that. Essentially, what is here is the layer of gluons. Since it's color neutral, it cannot be a single gluon. The proton should stay color neutral. The thing that it emits to interact is not a single gluon, but rather a gluonic field that is color neutral. We call it diffraction rather than gluon exchange because that's something special.
 
-Several laboratories explore these mechanisms:  
-- **Belle II (Japan) and BESIII (China)**: These experiments collide electrons and positrons, which annihilate to produce intermediate states that decay. The resulting particles are studied to understand hadron properties.  
-- **LHC (CERN)**: Here, protons (not proton-antiproton pairs) are collided, producing a high-energy environment with many particles. Among these are long-lived particles like $`B`$ and $`D`$ mesons, which travel a few millimeters before decaying. Detectors track these particles, distinguishing primary and secondary vertices.  
+This process is not well understood in terms of gluons. It's understood physically. The proton sits there and emits the gluonic field. The interaction happens like light would scatter on an object and produce a diffractive picture. A similar thing happens here. The proton sits as the black disk, and what we see is a diffractive picture on the wall.
 
-Another class of experiments uses **hadronic production**, where a hadron is fired at another hadron without fully describing the kinematics. These are typically fixed-target experiments, such as:  
-- **GLUEX (Jefferson Lab)**: Uses a photon beam on a hydrogen target.  
-- **COMPASS (CERN)**: Uses a pion beam on a hydrogen target.  
+This particle that is exchanged—this letter of the gluon operators of the gluon fields—actually has a name. It's called the **pomeron**. You won't find this particle in the PDG. It's not really a particle. It's rather a phenomenological way to describe the gluon field and then the end state in delta.
 
-In these setups, the target particle is either excited or scatters, providing another way to study hadrons.  
+---
 
-The third major approach is computing hadron properties from **lattice QCD**, though this method has limitations for certain states.  
 
-> [!NOTE]  
-> Different production mechanisms (lepton collisions, proton collisions, hadronic scattering) provide complementary insights into hadron structure and dynamics.  
+In this session, I want to finish today's lecture with small computations and would like to count. So we move to the **K matrix**. Let's discuss **exclusive reactions**, meaning that there are no particles left uncounted in the interactions. It's a **1-to-n** or **2-to-n** scattering. When you see "exclusive," it means all of the particles are measured, all of them are accounted for. If you see the word "inclusive," it means the system is produced, but in parallel along with the system, many other particles are produced and we don't care about them. So it's an inclusive process, and in contrast, exclusive is when you measure everything.
 
-The interplay between these experimental methods helps clarify the transition between quark-dominated and hadron-dominated matter, a key challenge in QCD.
+---
 
-<!--
-Cosine simularity: 0.9338952543991448
--->
-## Electron-Positron Collisions and Spin Configurations
 
-The third major way to study hadrons is to compute their properties from lattice QCD, which provides a large piece of information.  
+Here in this diagram, I am going to draw the cartoons. They are not Feynman diagrams. The blob indicates the interaction, and the lines indicate the particles that either come in or leave. I would like to count how many kinematic variables this process can depend on. The way to do that is to think of the momentum that describes this process and then count the number of independent components and subtract the number of constraints.
 
-Let's overview the production mechanism and experiments. We start with the **Beijing Spectrometer (BESIII)**, located at the **Beijing Electron Positron Collider (BEPC)**. This accelerator complex collides electrons and positrons. The experiment is dedicated to studying hadrons in the energy regions of charmonium and bottomonium.  
+It's easier to work with examples. For **2-to-3 scattering**, we have $2 + 3$ particles. Every particle has four components in the four-vector and one constraint. That's why you can remove, say, energy. Every four-vector has three independent components because the fourth is constrained by mass. Then we subtract the conservation constraints mathematically.
 
-BEPC is a symmetric collider, meaning the electron and positron have the same energy. When they collide, one possible interaction is annihilation, producing a virtual photon that couples to a hadron.  
+---
 
-The spin configurations in these collisions are constrained. An electron has spin $`1/2`$, and at high energies, it has a specific helicity. When combining two spin-$`1/2`$ particles (electron and positron), the possible total spin states are $`0`$ or $`1`$. However, due to their nature as particle-antiparticle pairs and helicity conservation, the produced system can only have spin $`1`$ — spin $`0`$ is forbidden in this combination.  
 
-Additionally, the parity of the system is determined by the combination of the electron ($`1/2^-`$) and positron ($`1/2^+`$) in an $`S`$-wave state.  
+Energy-momentum conservation comes as the delta function:
+$$
+\delta^{(4)}\left(\sum p_{\text{final}} - \sum p_{\text{initial}}\right).
+$$
+It's a product of four delta functions: one for energy, one for each momentum component. The five factors come in the same power as delta functions. You will see this; that's always the case.
 
-> [!NOTE]  
-> The spin and parity selection rules in electron-positron collisions restrict the possible hadronic states produced, providing a clean environment for studying specific quantum numbers.  
+For **2-to-3 scattering**, we end up with:
+$$
+(2 + 3) \times 3 - 4 = 11.
+$$
+So **11 variables** are needed to describe this kinematics in any frame. But we can reduce this number by choosing a specific frame. By fixing the frame, we lose six degrees of freedom: three for rotation, three for boosts. That gives the number of variables in this type of matrix.
 
-<!--
-Cosine simularity: 0.917746999673113
--->
-## Hadron Production and Resonance Peaks in Collider Experiments
+---
 
-We combine particles with quantum numbers $`1/2^-`$ and $`1/2^+`$ in an $`S`$-wave configuration. This experiment focuses on hadrons produced with quantum numbers $`1^-`$. The data collection process involves setting the beam energy to accumulate large datasets, such as millions of events for the $`J/\psi`$ peak.  
 
-When plotting the cross section as a function of energy, the distribution is not homogeneous but exhibits peaking structures. These peaks occur when the system resonates at specific frequencies, corresponding to hadronic states. By tuning the collision energy to match these resonances, the interaction probability (and thus the cross section) increases.  
+If it's clear at this stage—let me confuse you a little. Before that, maybe I should say a few words. The boost and rotation considerations are important to realize. Here's an analogy: think of the reaction—this blob—as a solid rigid body out of which the arrows are sticking. You can hold it in your hand. For rigid bodies, there are three Euler rotations that tell you the orientation. These are exactly the three rotations you have to fix.
 
-> [!NOTE]  
-> The cross section magnitude indicates interaction frequency and directly influences the data volume recorded.  
+For every event, for every set of kinematic variables, you can identify the length of the vectors and their mutual orientation. For every set, you can take a 3D printer and print it. Then these three rotations will come into play to orient it properly.
 
-The $`J/\psi`$ peak is a prominent example. The German spectrum (shown here) plots orbital excitations on the $`X`$-axis and system energy on the $`Y`$-axis. The lowest state is followed by higher multiplicities, derived from quark algebra. The $`J/\psi`$ and $`\eta_c`$ belong to the same multiplet, with $`J/\psi`$ being the first discovered charmonium state.  
+---
 
-The $`J/\psi`$ is a clear peak in the $`e^+e^-`$ cross section spectrum, with quantum numbers $`1^-`$. Its production is straightforward due to quantum number selection rules in relativistic collisions. The second peak in the spectrum corresponds to the excited state $`\psi(2S)`$.  
 
-The naming convention for $`J/\psi`$ reflects its discovery history, where "J" honors one of the lead researchers. This state is a benchmark for studying charmonium spectroscopy due to its clean experimental signature.  
+In the computation, we often need the quantity that counts the number of configurations in which the system can be. These configurations include not only the orientations of the overall system—the three rotations and three boosts—but also the mutual orientations of the components. Essentially, the phase space element counts the number of configurations for every particle.
 
-```math
-\sigma(E) \propto \text{Resonance amplitude at energy } E
-```
+For every particle in the final state, we have **Lorentz-invariant phase space**:
+$$
+d\Phi_n = \prod_{i=1}^n \frac{d^4 p_i}{(2\pi)^4} (2\pi) \delta(p_i^2 - m_i^2) \theta(p_i^0) \cdot (2\pi)^4 \delta^{(4)}\left(\sum p_{\text{in}} - \sum p_{\text{out}}\right).
+$$
+You can integrate over the energy of a particle and use the delta function to get $2E$ in the denominator. To avoid summing over negative energy, you often include a $\theta$ function for energy. Every delta function comes with its own $2\pi$. That's easy to remember.
 
-The cross section enhancement at resonance energies ($`E_{\text{res}}`$) follows the Breit-Wigner distribution:  
+---
 
-```math
-\sigma(E) \sim \frac{\Gamma^2/4}{(E - E_{\text{res}})^2 + \Gamma^2/4}
-```
 
-where $`\Gamma`$ is the resonance width.  
+The last thing I would like to discuss is the **recursive evaluation**. Here's an example of a 4-body system. Mathematically, we might have an exercise, but I don't think we need to demonstrate that this integral can be simplified to a product of two-body phase spaces. This diagram does not represent the dynamics of the process. It's simply operating with kinematic variables. So **1-to-4** is going to be another degree of freedom.
 
-> [!IMPORTANT]  
-> Resonance peaks provide direct access to hadronic states with specific quantum numbers, enabling systematic studies of quarkonium spectra.  
+When you calculate the phase space, you see that 3 integrals come for every particle. For the phase space to count, only the final state counts. The initial state doesn't enter. The four energy-momentum conservations come here explicitly. That's the number of integrals that remain. For **2-to-3**, it's $3 \times 4 - 8 = 4$, leaving **5 kinematic variables**. The three rotations are the Euler angles, but which five you pick to parameterize your kinematics is up to you.
 
-The $`\psi(2S)`$ state, as an excitation of the $`J/\psi`$ system, further probes the dynamics of heavy quark bound states.  
+One particular choice is to introduce intermediate masses and write the phase space as:
+$$
+d\Phi_4 = \frac{dM_x^2}{2\pi} \frac{dM_y^2}{2\pi} d\Phi(0 \to Y + 3) \, d\Phi(Y \to 1 + 2).
+$$
+This is referred to as the **recursive expression**. It's not only valid for 2, but you can also do this for 3. The important thing is that you introduce intermediate masses and integrate over them, with every integral coming with a $2\pi$ in the denominator.
 
-<!--
-Cosine simularity: 0.9038947237873494
--->
-## J/ψ and Υ Resonance Studies in Electron-Positron Collisions
+---
 
-In the spectrum, the excitation of this system is the $\psi(2S)$, which we refer to simply as "psi" here. The lowest state in the multiplet is called the $J/\psi$, while the four states in the $P$-multiplet are labeled $\chi_{c0}$, $\chi_{c1}$, $\chi_{c2}$, and $h_c$ (with quantum numbers $0^+$, $1^+$, $2^+$, and $1^+$ respectively).  
 
-For data collection, there are two primary methods:  
-1. **Resonance peak sitting**: Accumulating data at the $J/\psi$ peak yields billions of events where the $J/\psi$ is produced and decays into various final states.  
-2. **Energy scan**: By tuning the beam energy over weeks, we measure the cross section at discrete points, building a profile of the resonance structure.  
+A more general treatment for the **two-body phase space** is:
+$$
+d\Phi_2 = \frac{|\mathbf{p}|}{4\pi^2 \sqrt{s}} d\Omega.
+$$
+With this expression, you can calculate any $n$-body phase space. There's an exercise at home to play with the **three-body phase space**. The three-body phase space has $3 \times 3 - 4 - 3 = 2$ variables, often chosen as the invariant masses of pairs, represented in a **Dalitz plot**.
 
-The total cross section is a superposition of all possible sub-processes, such as $e^+e^- \to \text{hadrons}$. Some resonances are more prominent in specific decay kinematics, so researchers often analyze a particular final state (e.g., $e^+e^- \to 3\pi$) at a selected scan point to extract hadron properties.  
-
-> [!NOTE]  
-> The cross section enhancement follows the Breit-Wigner distribution:  
-
-```math
-\sigma(E) \sim \frac{\Gamma^2/4}{(E - E_{\text{res}})^2 + \Gamma^2/4}
-```
-
-where $`\Gamma`$ is the resonance width and $`E_{\text{res}}`$ is the resonance energy.  
-
-The $J/\psi$ and $\Upsilon$ families provide clean signatures for studying quarkonium spectroscopy due to their well-defined quantum numbers ($1^-$) and relativistic production mechanisms. The $\psi(2S)$ serves as an excited-state benchmark, probing the dynamics of heavy quark bound systems.
-
-<!--
-Cosine simularity: 0.8993914983087137
--->
-## Asymmetric Beam Energies and Boost in B Meson Studies
-
-The BEL2 experiment in Japan was originally designed with the primary goal of studying CP violation, but its data proved extremely valuable for hadron spectroscopy as well. This experiment operates as an electron-positron collider and is located at KEK. It was initially called the Belle experiment, and after an upgrade 10 years ago, it became known as the SuperKEKB experiment. The predecessor was called Belle, and the upgraded version is referred to as Belle II.  
-
-In contrast to the Belle experiment, the colliding beams in Belle II are not symmetric. The center-of-mass energy is adjusted to a specific resonance, primarily to study B mesons and CP violation. The experiment operates at the $`\Upsilon(4S)`$ resonance, which predominantly decays into a $`B\bar{B}`$ pair.  
-
-> [!IMPORTANT]  
-> The $`\Upsilon(4S)`$ is a short-lived resonance that decays immediately, leaving the primary vertex and producing a $`B\bar{B}`$ pair. The physics of CP violation is then studied using these decays.  
-
-A key question is why the beam energies are asymmetric. This design choice is deliberate and clever. By giving the electron and positron beams different energies, the entire system receives a boost when produced. This boost is in the direction of the higher-energy beam (the electron beam) due to energy conservation.  
-
-The boost has a significant effect on the B mesons:  
-- The B mesons gain a substantial longitudinal momentum.  
-- They live longer in the laboratory frame due to relativistic time dilation.  
-- They travel farther from the primary vertex before decaying.  
-
-This increased flight distance is crucial for precise vertex reconstruction. By measuring the displacement between the primary vertex and the decay point (secondary vertex), we can better identify and reconstruct B meson decays. The charged tracks from these decays do not point back to the primary vertex, providing a clear signature of secondary vertices.  
-
-> [!NOTE]  
-> The boost effect can be quantified using relativistic kinematics. The Lorentz factor $`\gamma`$ and the velocity $`\beta`$ determine the observed lifetime $`\tau_{\text{lab}}`$ in the lab frame:  
-
-```math
-\tau_{\text{lab}} = \gamma \tau_0, \quad \gamma = \frac{E}{m}, \quad \beta = \frac{p}{E}
-```
-
-where $`\tau_0`$ is the proper lifetime, $`E`$ is the energy, $`m`$ is the mass, and $`p`$ is the momentum of the B meson.  
-
-This technique enhances our ability to separate signal from background and improves the precision of CP violation measurements. Before moving away from Belle II, let me connect this back to what we discussed earlier.
-
-<!--
-Cosine simularity: 0.864971669763634
--->
-## Charmonium and Bottomonium Spectra in Electron-Positron Annihilation
-
-Let me relate to what we just discussed earlier. Essentially, it's the same process of $`e^+e^-`$ annihilation, so we consider the total cross section $`\sigma(e^+e^- \to \text{everything})`$.  
-
-The Belle experiment operates in the energy region of $`J/\psi`$ and $`\tau`$ production (charmonium), while the Belle II experiment focuses on the bottomonium region. Charmonium consists of $`c\bar{c}`$ states, while bottomonium is made of $`b\bar{b}`$ pairs.  
-
-Moving to higher energies, around 10 GeV, we enter the bottomonium system, which is structurally similar to charmonium. However, since the $`b`$ quark is even heavier, the hyperfine splitting is smaller. The mass difference between the $`\eta_b`$ and the vector bottomonium state ( $`\Upsilon`$ ) is reduced compared to charmonium.  
-
-The energy scale between levels remains roughly the same (a few hundred MeV), but within each multiplet, the states are more tightly packed. The $`\Upsilon`$ is the vector particle (spin $`1^{--}`$) and is the bottomonium counterpart of the $`J/\psi`$ in charmonium.  
-
-<!--
-Cosine simularity: 0.8645416733979943
--->
-## Production and Study of Upsilon Particles in Proton Collisions
-
-The Upsilon ($`\Upsilon`$) is a vector particle with spin $`1^{--}`$, analogous to the $`J/\psi`$ in the charmonium spectrum. The $`J/\psi`$ is the easiest particle to produce in the charmonium spectrum due to its quantum numbers ($`1^{--}`$), especially in electron-positron annihilation, making it the most studied state.  
-
-In the bottomonium spectrum, the counterpart of the $`J/\psi`$ is the $`\Upsilon`$. The notation $`4s`$ refers to the fourth excited state in the bottomonium spectrum, arising from the $`4 \times`$ acceleration of the spectrum. When scanning the energy, the states appear sequentially: first the $`\Upsilon(1s)`$, then $`\Upsilon(2s)`$, $`\Upsilon(3s)`$, and finally $`\Upsilon(4s)`$.  
-
-All these states lie above the threshold for $`B`$-meson production, with masses exceeding 9 GeV. For example, the $`\Upsilon(1s)`$ has a mass around 9.46 GeV, while higher states like $`\Upsilon(4s)`$ are even heavier.  
-
-Proton-proton collisions are significantly more complex than electron-positron annihilations. The multiplicity of particles produced in such collisions is very high, increasing with energy. At the LHC, with proton beams at 7.7 TeV, the collisions are symmetric. However, since these are not annihilation processes, the produced particles are typically boosted due to the initial quark and gluon interactions.  
-
-The typical multiplicity of particles produced in a single proton-proton collision is on the order of thousands. The transverse momentum ($`p_T`$) spectrum follows an exponential distribution, with most particles at low momentum and a tail extending to higher energies. The typical energy scale for particles in these collisions is hundreds of GeV, though individual particle energies can range from tens to hundreds of GeV.  
-
-```math
-\frac{dN}{dp_T} \sim e^{-p_T / T}
-```
-
-Here, $`T`$ represents the characteristic temperature of the system, describing the slope of the momentum distribution. Even when the total collision energy is shared among thousands of particles, the typical energy per particle remains in the range of a few GeV, with many low-momentum particles dominating the spectrum.
-
-<!--
-Cosine simularity: 0.9107210040415809
--->
-## Production Mechanisms and Vertex Analysis in Hadron Spectroscopy
-
-The typical energy scale for light, low-momentum particles is a few hundred GeV. The LHC has been highly productive in discovering new particles, particularly due to its high cross-section. The cross-section for electron-positron annihilation is much smaller than for proton-proton interactions, enabling the study of hadron production.  
-
-There are two main production mechanisms in collider processes:  
-1. **Prompt production**: The particle of interest originates directly from the primary vertex.  
-2. **Cascade production**: The particle decays weakly, producing a secondary vertex.  
-
-For example, the observation of the $\Omega_c$ baryon and the $\Xi_c^{(*)} $ states in prompt production has significantly impacted hadron spectroscopy. The cascade ($\Xi$) particle, the ground state of the cascade multiplet, decays weakly since the charm or bottom quark is stable under strong interactions.  
-
-The lifetime of such weakly decaying particles is around $`10^{-10}`$ seconds. If the particle is boosted to 100 GeV, it travels millimeters before decaying, allowing separation from the primary vertex. Ground states of charm or bottom hadrons typically displace by 5–6 millimeters.  
-
-To reconstruct the secondary vertex, charged particles (e.g., proton-kaon pairs) are combined from the thousands of produced particles. By looping over all kaon-proton ($K\pi$) pairs and matching them with identified cascade decays, resonances produced at the primary vertex can be isolated. The mass spectrum of the $\Xi_c K$ system reveals clear peaks corresponding to these resonances.  
-
-```math
-\frac{dN}{dp_T} \sim e^{-p_T / T}
-```
-
-Here, $`T`$ represents the characteristic temperature of the system, describing the exponential slope of the transverse momentum ($`p_T`$) distribution. Most particles have low momentum, with a tail extending to higher energies.  
-
-> [!NOTE]  
-> Weak decays of heavy-flavor hadrons (e.g., $\Xi_c$) produce measurable secondary vertices, crucial for distinguishing them from prompt backgrounds.  
-
-> [!TIP]  
-> Vertex resolution at the LHC is sufficient to resolve displacements as small as a few millimeters, enabling precise reconstruction of cascade decays.  
-
-<!--
-Cosine simularity: 0.9312895931241527
--->
-## Resonance States and Strangeness in Omega C Model
-
-In the spectrum of the cascade $\Xi_c$ mass, you observe five distinct bumps. These correspond to the highest probability of producing a system, indicating resonant behavior at frequencies matching the excited states in the $\Omega_c$ model.  
-
-The $\Omega_c$ baryon is identified by counting strangeness: it contains two strange quarks ( $`s`$ ) and one charm quark ( $`c`$ ), denoted as $`ssc`$. In contrast, the cascade ( $\Xi_c$ ) is $`suc`$, and the kaon-nucleon ( $`KN`$ ) system is $`s\bar{u}`$.  
-
-Another approach involves studying secondary vertices from $`B`$ decays. Ground-state hadrons with a $`b`$ quark include $`B`$ mesons and $\Lambda_b$ baryons. These are most easily produced via currents carrying the $`b`$ quark. As ground states, they decay rapidly, with lifetimes on the order of $`10^{-9}`$ seconds. However, when boosted, they produce secondary vertices several centimeters away from the primary interaction point.  
-
-For example, a displacement of two centimeters is observable in detectors, such as those at CERN. This flight distance separates the primary interaction vertex from the decay products, enabling clean kinematic reconstruction. By measuring the momentum of the $`B`$ hadron and the decay length, you isolate its decay and study resonances within it.  
-
-A prominent example is the decay $\Lambda_b \to J/\psi \, p \, K^-$. This three-body decay allows analysis of exclusive final-state combinations ( $`J/\psi \, p \, K^-`$ ). The spectrum of the $`pK^-`$ system shows bumps corresponding to $\Lambda$ resonances, while the $`J/\psi \, p`$ spectrum reveals unexpected peaks. These peaks are attributed to pentaquark ( $`P_c`$ ) resonances, specifically $`u u g c \bar{c}`$ combinations.  
-
-> [!NOTE]  
-> The $\Omega_c$ and $\Xi_c$ resonances are key to understanding the spectrum of charm-strange baryons, with their production and decay patterns offering insights into QCD dynamics.  
-
-> [!TIP]  
-> Secondary vertex analysis is crucial for isolating weakly decaying heavy-flavor hadrons, as their displaced decays reduce background contamination from prompt production.  
-
-<!--
-Cosine simularity: 0.9397949583467019
--->
-## Fixed Target Experiments and Light Hadron Spectroscopy  
-
-The $`u u g c \bar{c}`$ combinations represent a resonance. Let’s briefly review fixed target experiments and their techniques, with three examples:  
-
-1. **GLUEX at Jefferson Lab**: Uses a 9 GeV photon beam directed at a liquid hydrogen target, which provides protons as the interaction medium.  
-2. **Compass at CERN**: Operates with a pion beam and also employs a liquid hydrogen target.  
-3. **CB-ELSA (corrected from "CD alpha tops")**: Utilizes a photon beam at 2 GeV, focusing on light hadron spectroscopy rather than charm or bottom production.  
-
-Most of these experiments study light hadrons, including pions and kaons. The GlueX experiment, in particular, investigates the same physics domain.  
-
-> [!NOTE]  
-> Fixed target experiments like GlueX and Compass are optimized for precision measurements of light hadron spectra, leveraging controlled beam-target interactions.  
-
-> [!TIP]  
-> Liquid hydrogen targets are commonly used due to their purity and simplicity in providing proton targets for beam interactions.
-
-<!--
-Cosine simularity: 0.9486278359758714
--->
-## Diffraction and S-Channel Scattering in Particle Collisions
-
-The GlueX experiment is doing the same physics but with a different setup, beam type, and energy. CPL setups in Bonn are starting with rns, and it begins in the office.  
-
-It is important to realize that there are two different mechanisms involved in fixed-target experiments at intermediate energies. These are not TVs. The first process is diffraction, and the second is S-channel scattering. The process that occurs when two particles collide depends on the energy.  
-
-In diffraction, the proton acts as a source of the strong interaction field. Here, the proton emits gluons, serving as a source of gluonic fields. A pion or photon then interacts with these gluonic fields and becomes excited. The excited state ($`X`$) propagates briefly before decaying.  
-
-<!--
-Cosine simularity: 0.9180090761478364
--->
-## Kinematics and Resonances in Particle Interactions
-
-The excited state "flies" for a brief moment before decaying, though in reality, it doesn't physically move far due to the strong interaction timescales. Hadronic resonances, particularly light ones in detectors, exist for times on the order of $`10^{-25}`$ seconds, which is insufficient to displace them measurably from the primary vertex. However, we still represent them as separate particles in diagrams for clarity.  
-
-If the system's energy is too high, resonances cannot form — there are no frequencies for the system to "resonate" at. The process becomes more plausible at lower energies, where a proton and an incoming beam (pion or photon) can resonate at specific frequencies. For instance, at energies around 2–3 GeV, this resonant interaction occurs.  
-
-In fixed-target kinematics, experiments like COMPASS study the diffractive regime, while CERN’s CPL focuses on $`S`$-channel production. These experiments probe baryonic excitations by analyzing resonance decays. The GlueX experiment at Jefferson Lab operates at 9 GeV, an intermediate energy where both diffractive and $`S`$-channel processes coexist, leading to coherent interference. Ideally, higher energies would isolate one process over the other, but at these scales, all possible interactions occur and must be accounted for.  
-
-<!--
-Cosine simularity: 0.9420182752582591
--->
-## Diffractive Gluon Interactions and the Pomeron  
-
-In particle interactions, all possible kinematic configurations occur, and we must account for them. The setups and kinematics involve many intricate and interesting aspects that may be explored in future lectures.  
-
-Regarding experiments, some are currently operational, while others are planned for the future. For example, the GlueX experiment is still running but is in its final years. There are proposals to upgrade it to "GlueX2" or a similar configuration, which would focus more on spectroscopy.  
-
-A key question arises about the interaction mechanism in diagrams: is it direct or indirect gluon exchange? The answer lies in the color-neutral nature of the proton. Since a single gluon cannot maintain color neutrality, the proton emits a **gluonic field** instead. This field is color-neutral, and we describe the process as **diffraction** rather than simple gluon exchange.  
-
-The physical interpretation is as follows: the proton acts as a stationary source, emitting this gluonic field. The interaction resembles light scattering off an object, producing a diffractive pattern. The proton behaves like a "black disk," and the resulting diffraction is observed. The exchanged entity — a collective state of gluon fields — is called the **Pomeron**.  
-
-> [!NOTE]  
-> The Pomeron is not a true particle and does not appear in the Particle Data Group (PDG) listings. It is a phenomenological construct used to describe the behavior of the gluon field in diffractive processes.  
-
-This process is not fully understood in terms of individual gluons but is well-established phenomenologically. The Pomeron represents the effective description of the gluon field's role in diffraction.
-
-<!--
-Cosine simularity: 0.9227952781857875
--->
-## Kinematic Variables in Exclusive Scattering Processes
-
-The sum of momenta in an exclusive scattering process is given by:
-
-```math
-\sum_i (\vec{p}_1 + \vec{p}_2 + \vec{p}_3 + ... - \vec{p}_A - \vec{p}_B) = \sum_i \sum_p \sum_p \sum_A
-```
-
-This represents the momentum balance between initial and final states.  
-
-Exclusive reactions are those where all particles are measured and accounted for, such as $`1 \to n`$ or $`2 \to n`$ processes. In contrast, inclusive processes involve unmeasured particles produced alongside the system of interest.  
-
-To count the kinematic variables describing such a process, we consider the four-momenta of all particles involved. Each particle has four components in its four-vector, but one constraint (mass-shell condition) reduces this to three independent components. For a $`2 \to 3`$ process, we have $`5`$ particles (2 initial + 3 final), each contributing $`3`$ independent momentum components, totaling $`15`$ variables.  
-
-We then subtract the constraints from energy-momentum conservation, which imposes four delta functions (one for energy and three for momentum):
-
-```math
-\delta^4 \left( \sum_{\text{final}} p_i - \sum_{\text{initial}} p_j \right)
-```
-
-This reduces the number of independent variables to $`15 - 4 = 11`$ for a $`2 \to 3`$ process.  
-
-The interaction in such processes is often represented diagrammatically, where a "blob" denotes the interaction and lines represent incoming or outgoing particles. The Pomeron, a phenomenological construct, describes the collective gluon field in diffractive interactions, though it is not a true particle.  
-
-> [!NOTE]  
-> The Pomeron is color-neutral and represents the effective description of the gluon field's role in diffraction, rather than a single gluon exchange.  
-
-This approach is well-established phenomenologically, even if the underlying gluon dynamics are not fully understood.
-
-<!--
-Cosine simularity: 0.9137797269581968
--->
-## Degrees of Freedom and Frame Fixing in Kinematics  
-
-For a $`2 \to 3`$ process, we start with 15 variables (5 particles × 3 independent momentum components each). After accounting for energy-momentum conservation, we reduce this to $`15 - 4 = 11`$ variables needed to describe the kinematics in any frame.  
-
-We can further reduce these degrees of freedom by choosing a specific frame. Fixing the frame eliminates 6 degrees of freedom: 3 for rotations and 3 for boosts.  
-
-The momentum balance is given by:  
-
-```math
-\sum_i (\vec{p}_1 + \vec{p}_2 + \vec{p}_3 + ... - \vec{p}_A - \vec{p}_B) = \sum_i \sum_p \sum_p \sum_A
-```
-
-<!--
-Cosine simularity: 0.9684183049094974
--->
-## Rigid Body Analogy and Euler Rotations in Kinematics
-
-I'm going to lose six degrees of freedom: three for rotation and three for boosts. This gives the number of variables in this type of matrix.  
-
-The boost annotations are important to realize. The analogy is that you can think of the reaction block as a solid rigid bow with arrows sticking out. You can hold it in your hand, and this is essentially a rigid body.  
-
-For rigid bodies, there are three Euler rotations that describe the orientation of the body. These are exactly the three rotations you need to fix. You can think of it this way: for every event, for every set of kinematic variables, you can identify the length of the vectors and their mutual orientation.  
-
-For every set of kinematic variables, you could take a 3D printer and print it. These three rotations would then determine its orientation. In computations, these rotations are crucial for fixing the frame.
-
-<!--
-Cosine simularity: 0.9383335911616315
--->
-## Lorentz-Invariant Phase Space and Energy-Momentum Conservation  
-
-In computations, we often need the quantity that's essential for calculating cross sections: the number of configurations the system can take. These configurations include not only the overall system's orientation (three rotations and three boosts) but also the mutual orientations of the components.  
-
-The Lorentz-invariant phase space element counts the number of configurations for every particle in the final state. For each particle, the phase space element is:  
-
-```math
-d\rho = \frac{d^4 p}{(2\pi)^4} \delta(p^2 - m^2)
-```
-
-Here, $`d^4 p`$ is the four-momentum volume element, and the delta function enforces the mass-shell condition. By integrating over the energy component, we obtain the familiar form:  
-
-```math
-\frac{d^3 p}{2E (2\pi)^3}
-```  
-
-The delta function ensures energy-momentum conservation, and we sum over all zeros of the delta function. To exclude negative-energy solutions, we include a theta function for energy:  
-
-```math
-\delta(p^2 - m^2) \rightarrow \delta(E^2 - \vec{p}^2 - m^2) \theta(E)
-```  
-
-Each delta function comes with a factor of $`2\pi`$, which is straightforward to remember. The energy-momentum conservation constraint is implemented via:  
-
-```math
-(2\pi)^4 \delta^4 \left( \sum_i p_i - P_{\text{tot}} \right)
-```  
-
-This ensures the total four-momentum is conserved in the system.  
-
-> [!NOTE]  
-> The phase space element accounts for all possible kinematic configurations while respecting Lorentz invariance and energy-momentum conservation.  
-
-The rigid body analogy helps visualize this: for every set of kinematic variables, the system's orientation is fixed by three Euler rotations, analogous to holding a rigid body in space. These rotations are crucial for defining the reference frame in computations.
-
-<!--
-Cosine simularity: 0.9361641999767065
--->
-## Recursive Evaluation of Phase Space in Particle Dynamics  
-
-The recursive evaluation of phase space is a straightforward concept, particularly when considering multi-particle systems. Here, we examine the case of a 4-body process. While the mathematical exercise of simplifying the integral is possible, it is not necessary to demonstrate explicitly that this complex integral reduces to a product of two-body phase spaces.  
-
-The diagram in question does not represent the dynamics of the process but rather operates with kinematic variables. The transition from 1 to 4 particles introduces additional degrees of freedom—specifically, 15 variables. When calculating phase space, we account for 3 integrals per particle, hence the factor of 3 in the phase space formula for each particle.  
-
-The initial state does not contribute to the phase space count; only the final state is considered. The four energy-momentum conservation laws are explicitly enforced, reducing the number of remaining integrals. Starting with 12 integrals (3 per particle for 4 particles), we subtract 4 for momentum conservation, leaving 8.  
-
-The remaining kinematic degrees of freedom include 5 variables for overall rotation (3 of which are finite Euler angles) and 3 boosts. The choice of these 5 variables is arbitrary and depends on the most convenient parameterization for calculating dynamics. The recursive approach does not prescribe specific interactions or reaction pathways—it is purely a kinematic parameterization.  
-
-A common choice is to introduce intermediate mass variables, such as $`x`$ and $`y`$, and express the phase space as:  
-
-```math
-d\rho = \int \frac{dM_x^2}{2\pi} \frac{dM_y^2}{2\pi} \cdot d\rho_2(0 \to y + 3)
-```  
-
-This recursive expression is not limited to 2-body processes but can also be extended to 3-body cases. The key feature is the introduction of intermediate mass variables, over which we integrate. Each such integral includes a factor of $`2\pi`$ in the numerator.  
-
-The Lorentz-invariant phase space element for each particle is given by:  
-
-```math
-d\rho = \frac{d^3 p_i}{2E_i (2\pi)^3}
-```  
-
-and the overall conservation is enforced by:  
-
-```math
-(2\pi)^4 \delta^4 \left( \sum_i \vec{p}_i - \vec{P}_{\text{tot}} \right)
-```  
-
-This recursive decomposition simplifies the computation of multi-particle phase space while maintaining Lorentz invariance and energy-momentum conservation. The choice of kinematic variables remains flexible, tailored to the specific problem at hand.
-
-<!--
-Cosine simularity: 0.8983028078706422
--->
-## Calculation and Simplification of 2-Body Phase Space  
-
-Every integral in phase space comes with a $`2\pi`$ in the numerator. For example, introducing an intermediate state $`Y`$ in the process $`0 \to Y + 4`$ and then $`Y \to 1 + 2 + 3`$ is a valid decomposition. Once you learn this trick, phase space calculations become straightforward because every 2-body phase space has the form:  
-
-```math
-d\rho_2 = \frac{2p}{\sqrt{s}} \cdot \frac{\Omega}{4\pi} \cdot \frac{1}{2\pi}
-```  
-
-This expression does not simplify further and represents a general feature of the 2-body phase space. We had an opportunity to derive this in class, but we did not complete it.  
-
-The Lorentz-invariant phase space for a single particle is given by:  
-
-```math
-d\rho = \frac{d^3 p_i}{2E_i (2\pi)^3}
-```  
-
-and the overall energy-momentum conservation is enforced by:  
-
-```math
-(2\pi)^4 \delta^4 \left( \sum_i \vec{p}_i - \vec{P}_{\text{tot}} \right)
-```  
-
-The recursive approach allows breaking down multi-particle phase space into simpler 2-body components, making calculations more manageable.
-
-<!--
-Cosine simularity: 0.8364749397179856
--->
-## Introduction to 3-Body Phase Space and Dalitz Plot
-
-With the formula we derived, you can now calculate any $`n`$-body phase space. There is an exercise to explore the three-body phase space, which has $`3 \times 3 - 4 = 5`$ degrees of freedom, minus 3 for rotations, leaving only 2 variables. The distribution is often represented using these two variables, typically chosen as invariant masses. This representation is called the Dalitz plot.  
-
-The Lorentz-invariant phase space for a single particle is:  
-
-```math
-d\rho = \frac{d^3 p_i}{2E_i (2\pi)^3}
-```  
-
-and overall energy-momentum conservation is enforced by:  
-
-```math
-(2\pi)^4 \delta^4 \left( \sum_i \vec{p}_i - \vec{P}_{\text{tot}} \right)
-```  
-
-The recursive approach simplifies multi-particle phase space calculations by breaking them into 2-body components.
-
-<!--
-Cosine simularity: 0.8514463015085423
--->
-## Q&A and Exercise Schedule Announcement
-
-The representation is called Dalitz plot. Hope to get the book next time. Let's have a round of questions for a minute. I won't have an exercise tonight. Any questions? Have you seen this before? That's really good, because these computations are not complicated, but they give you a lot of insight into how things work. Thanks for coming today, and don't forget to leave feedback sheets.  
-
-This week we will not have exercises. Next week, would Wednesday or Friday work for you?  

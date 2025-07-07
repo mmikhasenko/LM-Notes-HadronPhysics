@@ -1,783 +1,645 @@
-<!--
-Cosine simularity: 0.9267377551237035
--->
-## Introduction to Lambda Decay and Interaction Type
+## Lambda Baryon Decay: Weak Interaction, Matrix Elements, and Helicity States
 
-Let's start with the physics reaction where the lambda baryon decays into a proton and a pion:  
 
-```math
-\Lambda \rightarrow p + \pi^-
-```
+Let's start with the recap.
+The physics reaction to consider is the lambda baryon decay into a proton and pion:
+$$
+\Lambda \to p + \pi^-
+$$
 
-To analyze this, we follow a standard checklist:  
-1. **Identify the interaction type** responsible for the decay.  
-2. Determine the variables describing the process.  
-3. Write the matrix element for the process.  
-4. Calculate the polarized decay width.  
+We go through our **standard checklist** to understand this reaction:
+1. What type of interaction is responsible?
+2. What variables describe the process?
+3. Write the matrix element for the process.
+4. Calculate the polarized decay width.
 
-> [!IMPORTANT]  
-> The decay involves a **flavor change** (strangeness violation), so it must be mediated by the **weak interaction**. Strong interactions preserve flavor, while weak interactions allow transitions like $`s \rightarrow u`$.  
+Take two minutes to think about these items, and then we'll discuss.
 
-The initial state ($`\Lambda`$) has strangeness $`S = -1`$, while the final state ($`p + \pi^-`$) has $`S = 0`$. Since parity is not conserved in weak interactions, this decay violates parity.  
+---
 
-Here’s a simplified diagrammatic representation (not a Feynman diagram):  
-- **Initial state**: $`\Lambda`$  
-- **Final state**: $`p + \pi^-`$  
-- **Interaction vertex**: Weak decay (flavor-changing).  
+What interaction is responsible? I like drawing cartoon diagrams (not Feynman diagrams) to visualize this. Here’s the lambda decaying into a proton and pion, with a block representing the interaction.
 
-The matrix element $`\mathcal{M}`$ for this process would involve weak coupling constants and quark-level transitions like $`u \bar{d}`$ for the pion.
+Is this a **strong interaction**? No, it’s **weak** because flavor is changing:
+$$
+u, d, s \to u, d, \bar{u}d
+$$
+The strangeness changes, and strangeness transitions can only occur via weak interactions. Strong interactions preserve flavor.
 
-<!--
-Cosine simularity: 0.9107277263055694
--->
-## Kinematics and Variables in Lambda Decay  
+Since this is a weak interaction, **parity is not conserved**. This decay violates parity.
 
-We are analyzing the decay $`\Lambda \rightarrow p + \pi^-`$. This is a one-to-two transition, and the kinematics are simplest when working in the center-of-mass frame. Here, the initial $`\Lambda`$ is at rest, and the final-state proton and pion carry momenta of fixed magnitude determined by their masses:  
+---
 
-```math
-|\vec{p}_p| = |\vec{p}_\pi| = \sqrt{\frac{(m_\Lambda^2 - (m_p + m_\pi)^2)(m_\Lambda^2 - (m_p - m_\pi)^2)}{4m_\Lambda^2}}
-```
+Now, the first item is to check the particles. The second is: what variables describe the process, and how many are there?
 
-Since there is no preferred spatial orientation in this system, no angular variables are needed to describe the process. The momenta of the particles define the only directions, and we can align the $`z`$-axis arbitrarily (e.g., along the proton momentum for convenience).  
+This is a **one-to-two transition**, and we work in the **center-of-mass frame**. The lambda is at rest initially, and the proton and pion are the decay products. The momentum magnitude is fixed by the particle masses. There is no orientation in space, so no angular variables. The only direction is given by the momentum, and we can align the $z$-axis with it.
 
-> [!NOTE]  
-> The kinematics of a two-body decay in the center-of-mass frame are fully constrained by energy-momentum conservation, leaving no free variables. The momenta magnitudes are fixed by the particle masses.
+---
 
-<!--
-Cosine simularity: 0.9372389708310774
--->
-## Spin Projection and Matrix Elements in Lambda Decay
+Next, the matrix element. The amplitude for this process is denoted $H$. What does $H$ depend on? No variables, because the kinematics are fixed. The only dependencies are the discrete spin projection indices.
 
-We can choose the $`Z`$-axis along the direction of the particle momenta. The amplitude describing this process is denoted by $`H`$. The dependencies of $`H`$ are limited to discrete indices of spin projection, as there are no free kinematic variables in this decay.  
+The particles involved have spins:
+- **Lambda**: $J^P = \frac{1}{2}^+$
+- **Proton**: $J^P = \frac{1}{2}^+$
+- **Pion**: $J^P = 0^-$
 
-The particles involved in the interaction have the following spin and parity assignments:  
-- $`\Lambda`$: $`J^P = \frac{1}{2}^+`$  
-- Proton: $`J^P = \frac{1}{2}^+`$  
-- Pion: $`J^P = 0^-`$  
+Since parity is not conserved, the **spin structure matters**. By angular momentum conservation, the proton’s spin projection must match the lambda’s.
 
-Since this is a weak interaction, parity is not conserved in the decay. The initial state $`\Lambda`$ has a definite parity, but the final state does not preserve it.  
+The matrix element is written as:
+$$
+H_\lambda = \langle p(\vec{p}, \lambda_p), \pi^-(-\vec{p}) | T | \Lambda(0, \lambda_\Lambda) \rangle
+$$
+Here, $\lambda_\Lambda = \lambda_p$ due to spin conservation. The initial state is on the left, and the final state on the right.
 
-The key constraint comes from spin projection conservation. The spin projection of the initial $`\Lambda`$ must match the helicity of the proton in the final state. The transition amplitude is given by the matrix element:  
+The pion is spinless, so its state is $|0, 0\rangle$. The proton has helicity $\lambda_p$, and the lambda has spin projection $\lambda_\Lambda$.
 
-```math
-H_\lambda = \langle \text{final} | T | \text{initial} \rangle
-```  
+The amplitude $H_\lambda$ has two values: $\lambda = \pm \frac{1}{2}$.
 
-By convention, the initial state is written on the right and the final state on the left. The final state consists of:  
-- A proton with momentum $`P_Z`$ and spin projection $`\lambda`$ (helicity).  
-- A pion with momentum $`-P_Z`$ (opposite direction) and spin projection $`0`$ (since it is spinless).  
+---
 
-The initial state is simply $`|\Lambda, \lambda \rangle`$, where $`\lambda`$ is the spin projection of the $`\Lambda`$.  
+Next, the unpolarized decay width:
+$$
+\Gamma = \frac{1}{2m_\Lambda} \frac{1}{2} \sum_\lambda |H_\lambda|^2 \frac{|\vec{p}|}{8\pi^2 m_\Lambda}
+$$
+The phase space integral simplifies to 1 because the kinematics are aligned.
 
-The matrix element $`H_\lambda`$ is constrained by angular momentum conservation, requiring:  
+This decay is the **main channel** for lambda decay, determining its lifetime of about $10^{-9}$ seconds. In experiments, the lambda is identified by its decay to a proton and pion, with charged tracks pointing to a secondary vertex.
 
-```math
-\lambda_\Lambda = \lambda_p
-```  
+> [!NOTE]
+> Did I forget the $\frac{1}{2}$ from $\frac{1}{2J+1}$? No, it’s absorbed correctly because only two terms survive in the sum.
 
-This means there is only one independent matrix element, indexed by $`\lambda`$. Since $`\Lambda`$ has spin $`\frac{1}{2}`$, there are two possible spin projections ($`\lambda = \pm \frac{1}{2}`$), leading to two distinct matrix elements.
+This becomes more interesting when there’s a **preferred direction** in space, such as when the lambda is moving. The direction of motion provides a reference axis, and we can study the decay in the helicity frame.
 
-<!--
-Cosine simularity: 0.9138632735039812
--->
-## Unpolarized Decay Widths and Lambda Lifetime
+---
 
-The decay width $\Gamma_\Lambda$ is given by:
+Now, let’s discuss helicity states in more detail.
 
-```math
-\Gamma_\Lambda = \frac{1}{2m_\Lambda} \sum_{\text{final}} \int \frac{d^3p}{(2\pi)^3 2E} |\mathcal{M}|^2
-```
+The $|JM\rangle$ states are basis states for a particle with spin $J$, quantized along the $z$-axis with projection $M$. Acting with $J_z$ gives:
+$$
+J_z |JM\rangle = M |JM\rangle
+$$
 
-Here, $`\mathcal{M}`$ is the matrix element squared, averaged over initial spin states and summed over final states. Since the momenta are aligned (no angular dependence), the phase space integral simplifies. The angular integration $`\int \frac{d\Omega}{4\pi}`$ reduces to 1, leaving only the momentum factor:
+We use **active transformations**: rotating or boosting the particle, not the coordinate system. For example, boosting a particle along the $z$-axis increases its momentum without changing its spin projection.
 
-```math
-\frac{p}{8\pi m_\Lambda^2}
-```
+Rotating a state about the $y$-axis mixes the spin projections. The coefficients are given by **Wigner D-functions**:
+$$
+D^J_{m'm}(\theta) = \langle Jm' | e^{-i\theta J_y} | Jm \rangle
+$$
 
-The matrix element is constrained by spin conservation, so $`\lambda_\Lambda = \lambda_p`$, meaning only two independent helicity configurations exist ($`\lambda = \pm \frac{1}{2}`$).  
+For **spin-$\frac{1}{2}$**, the rotation matrix is:
+$$
+R_{1/2}(\theta) = e^{-i\theta \sigma_y / 2} = \cos\left(\frac{\theta}{2}\right) - i\sigma_y \sin\left(\frac{\theta}{2}\right)
+$$
 
-The lifetime of the $`\Lambda`$ baryon is determined by its dominant decay channel ($`\Lambda \to p \pi^-`$). Its lifetime is relatively long at $`10^{-9}`$ seconds, allowing it to travel measurable distances (meters) in detectors before decaying. This makes it identifiable through secondary vertices from its decay products (charged proton and pion tracks).  
+---
 
-> [!NOTE]  
-> The unpolarized decay width calculation includes averaging over initial spin states and summing over final helicities, with no angular dependence due to alignment.  
+For a moving particle, there are two ways to define spin states:
+1. **Helicity states**: Spin quantized along the direction of motion.
+2. **Canonical states**: Spin quantized along the $z$-axis.
 
-The final expression for the width combines the phase space factor and the squared matrix element, providing the decay rate observable in experiments.  
+These are related. A helicity state is constructed by boosting and rotating a canonical state:
+$$
+|p, \lambda\rangle = R(\hat{p}) B_z(p) |0, \lambda\rangle
+$$
+
+When you rotate a helicity state, the momentum rotates but the helicity remains the same. Boosting is trickier because it changes the momentum direction relative to the spin.
+
+The **Lorentz boost matrix** for a 4-vector is:
+$$
+B_z(\beta) = \begin{pmatrix}
+\gamma & 0 & 0 & \gamma\beta \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+\gamma\beta & 0 & 0 & \gamma
+\end{pmatrix}, \quad \gamma = \frac{1}{\sqrt{1-\beta^2}}
+$$
+
+For canonical states, you first rotate the particle, then boost it. This ensures the spin projection is along the $z$-axis in the lab frame.
+
+## Distinguishing Canonical and Helicity States in Particle Decays and Rotations
+
+
+Note on the notation: I have to distinguish.
+When I just tell you $P, M$, you need to ask, is it canonical? Strictly speaking, when you see $P, J$, and then another number, there is no way to figure out whether I'm talking about a canonical state or a helicity state.
+
+However, for the general notation, before I put the numbers here instead of $M$ and $\lambda$, $M$ usually refers to the z-axis projection, and $\lambda$ refers to the helicity.
+It's way better if you indicate that explicitly.
+So if I talk about helicity, I might say "helicity" here, or I can say "canonical" here.
+Adding these indices to the state to indicate what I'm talking about would be better.
+If I just say $J, P$, it might be confusing.
+Still, I will be doing this sometimes because of rushing.
+
+---
+
+Now it's also clear how to relate the two.
+But before we start talking about canonical, let me just show you the transformation of canonical states.
+I want to rotate, and then I immediately rotate.
+Put a definition of the state: it's a rotation and then acting on the state $B^{-1}(P) \ket{0, J, M}$.
+And then I only have to deal with matrices before it becomes something I can apply.
+So this is equal to...
+I will try to make on this side the same as I have on the right side to replace these two canonical $R$.
+
+What I have done: I inserted right here $R'^{-1} R'$.
+Then I put these matrices together, and now this—what is this?—is something that gives me a canonical state if applied to this state at rest.
+The only thing that remains is I have to apply the rotation operator to the state at rest.
+And this, you know, is the Wigner D-matrix acting on this state.
+Therefore, what I'm going to get is the sum of Clebsch-Gordan coefficients.
+
+> [!NOTE]
+> **Key Transformation**:
+> The canonical state $\ket{P, J, M}_{\text{can}}$ is defined as:
+> $$\ket{P, J, M}_{\text{can}} = R B_z^{-1}(P) \ket{0, J, M}$$
+> where $R$ is the rotation operator and $B_z^{-1}(P)$ is the inverse boost along the $z$-axis.
+
+---
+
+**Question:** Doesn't the momentum $P$ also change because we change the angle?
+**Response:** Very good, thanks.
+So, it gets rotated.
+But you're not sure if it's just $R P$? It should include $R'$.
+$R'$ is the second one—$R' P$.
+Maybe I would just call it $P'$ instead.
+Somebody else can do the computation.
+Let me just say $P'$ and then explain what $P'$ is.
+
+So, $P'$ is $R' P$.
+Or it is also equal to $R' R$ acting on $P_z$.
+Here I boosted, so the momentum became non-zero.
+Once I boosted after the boost along the z-axis, my momentum is just $P_z$, and then in the following operation, I apply the rotation.
+So here I apply the rotation, and now $R' P_z$, and that way I get $P'$.
+
+---
+
+I learned how to boost yourself in the exercises, and now let's discuss their relation to bosons.
+If you need to relate one to another, this is a gluon state.
+This is a canonical state.
+Here we have $\ket{P, J, M}_{\text{can}}$.
+What I want—I want to write so clearly—they are not equal to each other, but one can express $\ket{P, J, \lambda}_{\text{hel}}$ as the linear combination of canonical states.
+And these coefficients are then...
+I would like you to have a clear understanding of how we find these coefficients.
+
+> [!NOTE]
+> **Helicity State Relation**:
+> The helicity state $\ket{P, J, \lambda}_{\text{hel}}$ can be expressed as:
+> $$\ket{P, J, \lambda}_{\text{hel}} = \sum_{M} C_{M \lambda} \ket{P, J, M}_{\text{can}}$$
+> where $C_{M \lambda}$ are Clebsch-Gordan coefficients.
+
+---
+
+I wanted to quickly come back to the lambda decay and tell a little bit more about how we derived the formula.
+The large peak formula is the many D functions and $H$'s from the last lecture.
+I'm going to consider now a lambda that moves in the wave frame.
+It is a helicity state, and then it decays.
+
+In order to get a z-axis, we need the direction of motion of lambda in the lab frame, and that gives us after the boost the z-axis.
+The way to define the z-axis in this manner is called the helicity frame for lambda.
+This is when we say "lab frame." You always have to describe from which frame you are boosting, because it depends.
+In different frames, the direction of lambda will be different, and there will be differences when you arrive at the rest frame of lambda depending on from which frame you boost it.
+
+The helicity frame is defined as the rest frame of the particle obtained by boosting from the frame where it was moving.
+The angle of the decay of the particle—when you take one of the particles, particle number one, and use this to define the angle—is called the helicity angle.
+That's common jargon in hadron physics.
+When we talk about the helicity angle, it implies that we boosted to the rest frame and then took one of the particles as the reference and measured the angle from there.
+But all of the motion is still in the same plane as before.
+The boost and the two-particle system are now exactly opposite.
+
+---
+
+We start with a lambda flying in the z-direction with a certain velocity.
+Then it decays.
+It has a proton and a pion in some plane.
+And then we invert the boost, and we still have the proton and pion in the same plane.
+If I took this picture out, you would not have the plane any longer.
+The plane is formed by three vectors.
+So I need the original direction of motion of lambda to define the axis with respect to which I can measure the angle, and then I have a plane.
+This is our recap exercise.
+We started without knowing that, so we only had one axis.
+But now we have a plane.
+Now I have one more variable on which the amplitude depends, in addition to these two discrete variables.
+This is the scattering angle or the helicity angle.
+
+I have to compute now a final state here going to be frozen binary.
+Here, on the right side, we have configurations of lambda sitting in its rest state with the proton in lambda.
+And on the left side, we have this configuration.
+The way to proceed is to apply rotation to this configuration and arrive at the back.
+So the answer for this is $H_{\lambda_p \lambda_\pi} T_{\lambda \lambda}$.
+And the problem of $T_{\lambda}$.
+That's the equation we had last time, where I was describing the matrix element for the sequence of the decays.
+
+Let me apply $T$ on the final state.
+I want to simplify this.
+This is $T$ acting on the proton.
+We want to evaluate the application of the transition operator that takes pion-proton and then transforms this to lambda.
+This is the meaning of our operator.
+This operator acting now on the pion-proton state that has the $P$ vector $(0,0)$.
+We notice that this is rotated about the y-axis by the angle $\theta$.
+We want to align this because, on the left state, we have aligned combinations.
+So we have a rotation.
+Now we pull out the rotation, and then we have the same combination now along the z-axis.
+Proton goes forward, time goes backward, and rotation is explicit.
+
+Since these operators commute—strong interactions conserve spin—therefore, one can compute the transition operator and rotation and then act first with the transition and then by rotation.
+Essentially, this transition operator transforms pion-proton to lambda.
+We explicitly do this by inserting the identity state here.
+Here I have a $\ket{\lambda}_{\text{hel}}$ for the left state.
+This part is a path $\lambda_p$.
+It's going to give me just the state of the lambda with the same spin.
+This matrix element we just evaluated—this is just a Clebsch-Gordan coupling.
+The identity that we inserted here should have some overall possible combinations.
+Therefore, that would be a sum over $\lambda$.
+This will give me delta functions for the $\lambda_p \lambda_\pi$.
+And that's why I want only one state—I can do this.
+Now the last step to do is to apply rotation to it.
+
+It's good to see it once.
+But once you get the idea, it's easy to believe that in the same case of the cascade reaction, what you have for every bit of the transition is the product of this block helicity that is the transition matrix element for the aligned transition.
+And then the rotation I want to evaluate as well.
+Now, the differential cross section exists as a function of the angle.
+This is my equation.
+We know that these are—so these are our $\cos \theta, -\sin \theta, \sin \theta, \cos \theta$ matrices.
+For the spin-half, we just had an explicit matrix, and we have two coupling constants that are measured in experiment.
+You can take them to compute the angular distribution.
+
+It's a little bit disappointing right now if I just tell you the answer.
+The answer is the same as you had before, because you have a $\sin^2 \theta + \cos^2 \theta$, which is one.
+And this is in front of the first one.
+In front of the second one, you have a $-\sin^2 \theta + \cos^2 \theta$.
+
+All right, so what we learned now in this example is that once you have an unpolarized particle, you're not going to observe any interesting angular distribution.
+We actually summed over the final state, we summed over the initial state.
+There is no non-trivial angle distribution that remains for the $2\pi$ before we integrate the whole $\cos \theta$.
+Now we have a differential $\cos \theta$—right before, we just wrote the gamma is equal to...
+and then the phase space has...
+it has a $d\Omega / 4\pi$, an integral $d(\cos \theta) / 2$, $d\phi / 2\pi$.
+This is one decision.
+And now I just move this $\cos \theta$ to the other side.
+
+---
+
+Polarized decay.
+Now finally, polarized decay.
+When I get non-trivial distributions if I polarize my particle.
+So let me say when lambda was flying, it had only spin, only $\lambda$.
+And now finally we have something.
+I have a formula.
+But now let's try to see what I'm going to see in the experiment.
+
+Lambda travels with a certain momentum, and the projection of the spin to the direction of motion is equal to $1/2$.
+And then it decays.
+In the decay of this state, we are going to find that it's more likely for the proton to travel forward than backward.
+But this is the angle of the proton.
+Interestingly, this violates parity.
+Because you can apply parity to the initial state and final state and find out that by applying parity you flip the momentum, you don't flip the spin.
+And then in the final configuration you flip momentum, you don't flip the spin.
+So parity implies that there cannot be a symmetry.
+Parity is violated here.
+This is also consistent with the fact that we consider inside of the blob here...
+big decay amplitudes.
+Parity...
+we likely put the weak decay in.
+
+> [!IMPORTANT]
+> **Parity Violation in Decay**:
+> The differential decay rate for polarized particles (e.g., $\Lambda$) shows parity violation:
+> $$\frac{d\Gamma}{d\cos\theta} \propto 1 + \alpha P \cos\theta$$
+> where $\alpha$ is the asymmetry parameter and $P$ is the polarization. This asymmetry arises from weak interactions.
 
-<!--
-Cosine simularity: 0.9185847034418799
--->
-## Helicity Frame and Particle Spin Quantization
+## Parity Violation in Asymmetric Angular Distribution
+
+
+No, it's not.
+Well, it is.
+
+You told me that it's a **linear function**.
+No, I don't.
+
+The point is in the **general**.
+It's a great question.
+
+> [!IMPORTANT]
+> Where this parity violation appears is when the two terms are not equal to each other. If they were equal, $\sin^2\theta + \cos^2\theta$ would give 1 with no angle dependence.
+
+The parity violation is in the fact that these terms are not equal. This introduces an **asymmetry**, making the distribution angle-dependent, as seen in the formula:
+
+\[
+\frac{d\sigma}{d\Omega} \propto 1 + \alpha \cos\theta
+\]
+
+Here, $\alpha 
+eq 0$ signals **parity violation**, breaking the isotropy of $\sin^2\theta + \cos^2\theta = 1$.
 
-The relation $`J^P = \frac{1}{2}^+`$ holds because two of the four terms vanish, leaving only two remaining terms with a factor of $`\frac{1}{2}`$.  
+## Polarization and Angular Distribution in Λ Decay
 
-When there is a preferred direction in space, such as the direction of a flying $`\Lambda`$ particle with non-zero momentum, this defines an axis. By boosting along the momentum direction and aligning the $`Z`$-axis with this direction, you can measure angles relative to it. This is called the **helicity frame**.  
 
-The $`|JM\rangle`$ states are the basis states for a particle with spin $`J`$, where $`M`$ represents the projection onto the $`Z`$-axis. Acting with the $`J_Z`$ operator confirms that these are eigenstates with eigenvalue $`M`$. For a spin-$`J`$ particle, there are $`2J + 1`$ possible projections.  
+Thanks for the question. That's **really important** to know, and in fact, they are not.
 
-> [!NOTE]  
-> When the $`Z`$-axis is used for quantization, the state is called **canonical**.  
+Moreover, we consider the **polarized decay**: the 100% polarization $\lambda = \frac{1}{2}$ is a pure state, a spin projection $\frac{1}{2}$, and it's fully polarized. One can also consider a **mixed state** where it's not fully polarized.
 
-All transformations discussed here are **active transformations**, meaning they are applied to the particle rather than the coordinate system. For example:  
-- Boosting the particle in the $`Z`$-direction increases its velocity along that axis.  
-- Rotating the particle about the $`Y`$-axis is a nontrivial transformation.  
+Most realistically, the degree of polarization for the $\Lambda$ is not 100% but around **60%**. That's what we have. In the $B$ decay case, the $\Lambda$ is produced with a polarization of 60%, and in that case, the asymmetry is smaller.
 
-Consider a coordinate system with $`X`$ and $`Y`$ axes. A rotation about the $`Y`$-axis corresponds to rotating the particle itself, not the coordinate frame. This is the most common transformation we will use.
+---
 
-<!--
-Cosine simularity: 0.9054347361350654
--->
-## Wigner D Functions and Spin Rotation Matrices
+The **angular distribution of the decay** is given by:
 
-When rotating a particle (rather than the coordinate system) about the $`Y`$-axis, the spin projection along the $`Z`$-axis is no longer well-defined. Instead, it becomes a superposition of states with coefficients $`C_{J' M'}`$. These coefficients are given by the **Wigner D functions**, which are tabulated and can be found alongside Clebsch-Gordan coefficients.  
+$$
+\frac{d\Gamma}{d\cos\theta} = \Gamma_0 (1 + \alpha \lambda \cos\theta),
+$$
 
-For computational purposes, the Wigner D functions can be obtained via matrix exponentiation:  
+where:
+- $\Gamma_0$ is the **total decay rate**,
+- $\alpha$ is the **analyzing power** (polarizing power),
+- $\lambda$ is the **degree of polarization** ($0 \leq \lambda \leq 1$),
+- $\theta$ is the **decay angle**.
 
-```math
-D(\theta) = e^{-i \theta J_Y}
-```
+---
 
-Here, $`J_Y`$ is the generator of rotations about the $`Y`$-axis, and its matrix form depends on the particle's spin.  
+We can rewrite these equations by contracting the matrix element with the polarization matrix and find that the **difference between two edges** defines how well this particular decay reflects polarization. The quantity $\alpha$ is often called the **polarizing power**. It tells you how well this decay is suited to measure the initial polarization.
 
-> [!NOTE]  
-> For spin-$`\frac{1}{2}`$ particles, the rotation matrix is particularly simple. It involves the Pauli matrices $`\sigma_i`$ and a half-angle factor:  
+> [!IMPORTANT]
+> If the couplings are equal to each other, you don't have sensitivity to the initial polarization. It can also happen even for big decays that the couplings are equal. Parity can be violated, but for most cases, there is a non-zero analyzing power.
 
-```math
-D_{1/2}(\theta) = e^{-i \frac{\theta}{2} \sigma_Y}
-```
+This $\alpha$ is **non-zero**, and that's why by looking at the angular distribution, you see **parity violation**. But you can also measure the initial polarization. That's called the **polarimetry technique**, and it's actively used.
 
-The half-angle arises because spin-$`\frac{1}{2}`$ particles transform under a double cover of the rotation group. For spin-1 particles, the rotation matrix is more complex, involving full-angle trigonometric functions:  
+---
 
-```math
-D_{1}(\theta) = 
-\begin{pmatrix}
-\frac{1 + \cos \theta}{2} & -\frac{\sin \theta}{\sqrt{2}} & \frac{1 - \cos \theta}{2} \\
-\frac{\sin \theta}{\sqrt{2}} & \cos \theta & -\frac{\sin \theta}{\sqrt{2}} \\
-\frac{1 - \cos \theta}{2} & \frac{\sin \theta}{\sqrt{2}} & \frac{1 + \cos \theta}{2}
-\end{pmatrix}
-```
+Look at the angular distributions. All particles have **known spin**, and the couplings are known. But these values have to be measured in advance, and in that case, you can measure polarization.
 
-This matrix acts in the basis of $`|J M\rangle`$ states. Alternatively, working in the basis of ladder operators ($`J_+, J_-`$) simplifies the form, but the $`|J M\rangle`$ basis is more commonly used in practical calculations.  
+This **initial polarization** is a **super powerful observable**. Particles like $\Lambda$ with spin carry polarization out of the interaction point, which is part of the information. How $\Lambda$ is produced—with what momentum and with what polarization—tells us about the **internals of the interaction**.
 
-> [!IMPORTANT]  
-> The Wigner D functions describe how quantum states transform under rotation, and their explicit form depends on the spin representation. For higher spins (e.g., $`J = \frac{3}{2}, 2`$), the matrices become larger but can still be computed using the same principles.  
+Imagine $\Lambda$ is produced in the **quark-gluon plasma**. Its polarization can now be related to the properties of the plasma. This is a kind of **free carrier of information** out of the mess of the quark-gluon interaction.
 
-The key insight is that rotations of quantum states are governed by the generators of the rotation group, and the Wigner D functions encode these transformations explicitly. Whether you look them up or compute them numerically, they are essential for describing spin dynamics in quantum systems.  
+Polarization plays an **important role**, if not more than other observables. This particle not only carries polarization but also, by decaying, gives us a way to measure it.
 
-<!--
-Cosine simularity: 0.9306259565055195
--->
-## Helicity States and Spin Quantization
+---
 
-When dealing with helicity states, we can either look up the Wigner D functions or compute them using matrix exponentiation. Let's perform some algebra to understand how states transform when boosted and rotated.  
+## Engaging with Questions Before the Lecture
 
-The simplest approach is to define spin quantization for a moving particle. Consider the coordinate axes: $`X`$, $`Y`$, and $`Z`$, with the particle moving in the $`XZ`$ direction. There are two ways to quantize spin in this scenario:  
 
-1. **Helicity basis**: Quantize spin along the direction of motion.  
-2. **Canonical basis**: Quantize spin along the $`Z`$-axis.  
+**Questions, questions, questions.**
+We have time, but it is up.
 
-These two bases are not equivalent but are related. If a state has a definite spin projection along the direction of motion (helicity state), it will be a superposition of states in the canonical basis. Conversely, if a state has a definite projection along the $`Z`$-axis, it will be a combination of helicity states.  
+Instead of starting a new lecture, I would like to give you *a question I have in mind* for the lecture.
+For example:
 
-To construct the helicity state $`|P \lambda\rangle`$, we apply a sequence of transformations starting from the particle's rest frame:  
+* If I were to explain the material to you, you would already know it
+* But I haven't
 
-1. Begin with a particle at rest, having spin projection $`\lambda`$ along the $`Z`$-axis.  
-2. Boost the particle forward—this increases its momentum without altering the spin projection.  
-3. Rotate the entire system to align with the desired configuration.  
+> [!NOTE]
+> The speaker is using a Socratic approach - testing understanding before delivering content. Common in physics lectures to gauge baseline knowledge.
 
-The resulting state $`|P j \lambda\rangle`$ is a helicity state.  
+So I'll just give you the question and see if you know it *without my lecture*.
+Meanwhile, tell me if you have questions.
 
-> [!NOTE]  
-> The Wigner D functions describe how quantum states transform under rotation. For a spin-$`\frac{1}{2}`$ particle, the rotation matrix is:  
+## Analytic Functions, Contour Integrals, and Dispersion Relations
 
-```math
-D_{1/2}(\theta) = e^{-i \frac{\theta}{2} \sigma_Y}
-```
 
-For spin-1 particles, the rotation matrix is more complex:  
+Can you find half or maybe a quarter page? Maybe we can take Ilya—can you help obtain quarter-page pieces of paper?
 
-```math
-D_{1}(\theta) = 
-\begin{pmatrix}
-\frac{1 + \cos \theta}{2} & -\frac{\sin \theta}{\sqrt{2}} & \frac{1 - \cos \theta}{2} \\
-\frac{\sin \theta}{\sqrt{2}} & \cos \theta & -\frac{\sin \theta}{\sqrt{2}} \\
-\frac{1 - \cos \theta}{2} & \frac{\sin \theta}{\sqrt{2}} & \frac{1 + \cos \theta}{2}
-\end{pmatrix}
-```
+---
 
-These transformations are essential for describing spin dynamics in quantum systems, particularly when dealing with moving particles and different quantization axes.
+**Next lecture**, we will move on to discussing **analytic functions** and properties of amplitudes in the complex plane. This requires you to have a little bit of **complex analysis**. We’ll discuss this further—the next sheet also has a bit of discussion on the complex plane.
 
-<!--
-Cosine simularity: 0.9234466052038162
--->
-## Properties and Rotation of Helicity States  
+So, we need a little bit of **complex algebra**, from 1 to 7. From 1 to 7. Let me just say where this comes from.
 
-When you see $`|P j \lambda\rangle`$, it's a helicity state. Immediately think of it as the combination of boost and rotation operators acting on the canonical states in the rest frame.  
+---
 
-There are many properties we can derive for helicity states. One worth mentioning is that when you rotate a helicity state, only the momentum rotates—the helicity stays the same. If you apply further rotations, the momentum continues to rotate, but the spin remains quantized along the direction of motion, preserving the helicity value. This is evident from how the state is constructed.  
+> [!IMPORTANT]
+> **Key Theorem**:
+> The **Cauchy Integral Theorem** states that for any analytic function \( F(z) \) inside and on a closed contour \( C \):
+> \[
+> \oint_C F(z) \, dz = 0.
+> \]
 
-If you introduce a rotation here (multiplying by a rotation operator), you can combine the rotations into a single one, affecting only the momentum during the boost. Boosting is trickier because when you boost this state, you insert a boost operator $`B`$ (here, $`B_z`$). For any combination of boosts and rotations ($`B R B^{-1}`$), you can find equivalent pure rotations.  
+What is written here is obtained by doing the **contour integral**. I started with a small circle—my function is analytic—and I’m going to stretch the circle in all directions. This is my complex plane (\( x \)-plane).
 
-When you evaluate this and rotate the canonical state (using the inverse operation), you obtain a combination of coefficients $`C_{\lambda'}`$, yielding the helicity state. Applying boosts and rotations to this gives you back a helicity state.  
+The **Cauchy integral** of \( F(x) \), if no singularities occur inside my integration contour, is zero for any analytic function:
+\[
+\oint_C F(z) \, dz = 0.
+\]
 
-The most demanding part of this exercise is finding the relation between the boosted/rotated states and the original helicity basis.  
+---
 
-> [!NOTE]  
-> The Wigner D functions describe how states transform under rotation. For example, for spin-$`\frac{1}{2}`$ particles, the rotation matrix is:  
+Then, there is a theorem that tells me I can insert a **singularity** explicitly inside the circle. If I integrate \( \frac{F(x')}{x' - x} \, dx' \) and integrate this around—the integral was zero, but now let me put a pole explicitly inside like this.
 
-```math
-D_{1/2}(\theta) = e^{-i \frac{\theta}{2} \sigma_Y}
-```  
+When I integrate, my integral is no longer zero—it’s equal to the function evaluated at the pole, and that’s my \( F \). This is given by **Cauchy's Integral Formula**:
+\[
+F(a) = \frac{1}{2\pi i} \oint_C \frac{F(z)}{z - a} \, dz.
+\]
 
-For spin-1 particles, the matrix becomes more complex:  
+---
 
-```math
-D_{1}(\theta) = 
-\begin{pmatrix}
-\frac{1 + \cos \theta}{2} & -\frac{\sin \theta}{\sqrt{2}} & \frac{1 - \cos \theta}{2} \\
-\frac{\sin \theta}{\sqrt{2}} & \cos \theta & -\frac{\sin \theta}{\sqrt{2}} \\
-\frac{1 - \cos \theta}{2} & \frac{\sin \theta}{\sqrt{2}} & \frac{1 + \cos \theta}{2}
-\end{pmatrix}
-```  
+Now, I have this beast here. It’s something similar, but I started from a small contour and stretched it to infinity. Here is infinity—this part of the contour drops out, and the only thing that remains is the integral from 1 to 7.
 
-These transformations are crucial for describing spin dynamics in quantum systems, especially when dealing with moving particles and different quantization axes.
+I’m integrating the **imaginary part** of \( F(x) \) from 1 to 7 and asking: Can this equation be satisfied? This relates to the **dispersion relation**:
+\[
+\text{Re}\, F(x) = \frac{1}{\pi} \mathcal{P} \int_{1}^{7} \frac{\text{Im}\, F(x')}{x' - x} \, dx'.
+\]
 
-<!--
-Cosine simularity: 0.9199212060031491
--->
-## Composition of Spin Projection and Directional Motion  
+---
 
-The most demanding part of this exercise is to find the relation between boost-rotation-boost and rotation-boost-rotation. We know what happens with the momentum when you boost—we know how Lorentz transformations act on the vectors. The boost matrix for the 4-momentum $`P^\mu`$ is a $`4 \times 4`$ matrix in $`SO(1,3)`$, with components involving $`\gamma`$ (Lorentz factor) and $`\beta`$ (velocity fraction).  
+**Second question**: What is the **analytic structure**? What do you mean by "analytic"?
 
-When you apply a boost, the 4-vector $`P^\mu`$ transforms into a different vector $`P'^\mu`$. The key remaining task is to understand the composition of spin projection and directional motion. Clearly, we have a linear combination of different projections—not just a single one.  
+> [!NOTE]
+> **Analytic Functions**: A function is **analytic** in a region if it is **complex differentiable** at every point in that region. This implies the function is infinitely differentiable and can be represented by a **power series** locally.
 
-Intuitively, if you start with a vector and boost it, the vector becomes more inclined forward. Instead of boosting twice, you can boost only once to achieve the same final momentum magnitude. This is captured in the relation between boost and rotation operations.  
+## Branch Points, Cuts, and Analytic Structure in Complex Integration
 
-For example, applying a boost $`B_z`$ to a particle at rest directly produces the desired momentum. Then, the only remaining step is to rotate it to the correct orientation. This equivalence is what simplifies the problem—instead of multiple boosts, a single boost followed by a rotation suffices.  
 
-> [!NOTE]  
-> The Wigner rotation matrices describe how spin states transform under rotations. For spin-$`\frac{1}{2}`$ particles, the rotation matrix is:  
+Cut both branch points.
+This is **super unusual** for math courses, but that's what we use all the time in physics—this type of integral where the leftover of the contour is from $1$ to $7$, and what you integrate is your function $F$.
 
-```math
-D_{1/2}(\theta) = e^{-i \frac{\theta}{2} \sigma_Y}
-```  
+Since it comes from both sides, from this side and that side, and they have opposite signs, what remains is the **imaginary part**. The real part is the same. It cancels out when you calculate. So the thing that remains is the integral from the same.
 
-For spin-1 particles, the matrix is more complex:  
+If you have anything to say about that, write it down. Maybe it's too complicated.
 
-```math
-D_{1}(\theta) = 
-\begin{pmatrix}
-\frac{1 + \cos \theta}{2} & -\frac{\sin \theta}{\sqrt{2}} & \frac{1 - \cos \theta}{2} \\
-\frac{\sin \theta}{\sqrt{2}} & \cos \theta & -\frac{\sin \theta}{\sqrt{2}} \\
-\frac{1 - \cos \theta}{2} & \frac{\sin \theta}{\sqrt{2}} & \frac{1 + \cos \theta}{2}
-\end{pmatrix}
-```  
+---
 
-These transformations are essential for describing how spin states evolve under combined boosts and rotations.
+Let’s make a round. Say a few words about this. Start with:
+- Can you be satisfied?
+- Can we be satisfied?
 
-<!--
-Cosine simularity: 0.9072459857344257
--->
-## Transformation of Canonical States  
+Three is a solution. You can just take the constant $3$ because it has no imaginary part. The real question is, if you remove the three, at least there are **non-trivial solutions**. Sometimes non-constant words like *non-vanishing*.
 
-The canonical spin state is represented as:  
+If you say $F(X) = 3$, it has no imaginary part. Then the imaginary part is not present anywhere. The question is, if you remove the three—well, that's the question.
 
-```math
-|j m\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}_{m}
-```  
+If you just ask this, I think you're completely right. But I was actually thinking of **non-trivial solutions**. Do we say it exists or not?
 
-To understand the canonical state, consider the combination of boost and rotation operations. The canonical state is defined by first rotating the system back in the rest frame of the particle, ensuring the combination has a certain projection onto the $`z`$-axis. After this rotation, the state may have a slight downward projection due to the inverse rotation $`R^{-1}`$.  
+---
 
-Next, we apply a boost along the momentum direction. This transforms the state into a moving frame. Finally, we perform another rotation to align the system into the desired configuration.  
+You can probably put power series in. It might work—**totally could work**.
 
-> [!NOTE]  
-> Notation clarity is crucial. When encountering $`|p, j, m\rangle`$, it is ambiguous whether the state is canonical or helicity. To avoid confusion, explicitly label the state as $`|p, j, m\rangle_{\text{canonical}}`$ or $`|p, j, \lambda\rangle_{\text{helicity}}`$, where $`m`$ refers to the $`z`$-axis projection and $`\lambda`$ to helicity.  
+It can be satisfied. The answer is: Give me any function, whatever you want. I put it here. Any function $X$—that integral actually converges for any value.
 
-The transformation of canonical states under rotation is given by:  
+Take $\sqrt{X}$. Put it here, and it's satisfied. Just anything put inside the imaginary part, it's satisfied. The reason we're satisfied is this: it's a way to construct the function.
 
-```math
-R |j m\rangle = D^{(j)}(R) |j m\rangle
-```  
+> [!IMPORTANT]
+> The function $F(X)$ can be constructed using the integral representation:
+> $$
+> F(x) = \frac{1}{\pi} \int_1^7 \frac{\sqrt{t}}{t - x} dt
+> $$
+> where the integral is taken along the real axis, avoiding the branch cut.
 
-Here, $`D^{(j)}(R)`$ is the Wigner rotation matrix for spin-$`j`$. For spin-$`\frac{1}{2}`$, this matrix is:  
+---
 
-```math
-D_{1/2}(\theta) = e^{-i \frac{\theta}{2} \sigma_Y}
-```  
+Let me show you: this $\sqrt{X}$, I put it here instead of this expression, $\sqrt{X}$. Then this way I compute my function $F(X)$. This is a **super special function**. Its imaginary part is equal to $\sqrt{X}$ in the region from $-1$ to $7$.
 
-For spin-1, the rotation matrix becomes:  
+In $-1$ to $7$, if I evaluate, the imaginary part is equal to that. In the rest of the complex plane, the function is non-zero. But there are no singularities.
 
-```math
-D_{1}(\theta) = 
-\begin{pmatrix}
-\frac{1 + \cos \theta}{2} & -\frac{\sin \theta}{\sqrt{2}} & \frac{1 - \cos \theta}{2} \\
-\frac{\sin \theta}{\sqrt{2}} & \cos \theta & -\frac{\sin \theta}{\sqrt{2}} \\
-\frac{1 - \cos \theta}{2} & \frac{\sin \theta}{\sqrt{2}} & \frac{1 + \cos \theta}{2}
-\end{pmatrix}
-```  
+This insertion that I made is actually done by introducing some **non-trivial analytic structures**. Now we have three candidates. Let's give them votes.
 
-These transformations are essential for describing how spin states evolve under combined boosts and rotations. The key insight is that instead of applying multiple boosts, a single boost followed by a rotation suffices to achieve the desired momentum and orientation.  
+---
 
-The relation between boost-rotation-boost and rotation-boost-rotation simplifies the problem. For example, applying a boost $`B_z`$ to a particle at rest directly produces the desired momentum, and only a final rotation is needed to align the state correctly. This equivalence captures the composition of spin projection and directional motion, where the final state is a linear combination of different projections.
+What kind of non-analytic structures have I introduced? It's like a continuous stretch of poles—a stretch of poles. What is meant by a cut? They just end somewhere.
 
-<!--
-Cosine simularity: 0.8930631880606437
--->
-## Introduction to Helicity Frame and Angle
+The cut is the non-analytic structure where the function on one side is different from the function on the other side. It's like $\sqrt{-1 + i}$ and $\sqrt{-1 - i}$.
 
-This is equal to what I have on the right side, where I replace the two canonical $`R`$ operations. I inserted $`R'^{-1} R'`$ here, combined these matrices, and now this gives me the canonical state when applied to the state at rest. The remaining step is to apply the rotation accelerator to the state at rest, which is described by the $`D`$ functions acting on this state. Therefore, the result is a sum over coefficients $`C`$. After applying $`R`$, I obtain a linear combination with coefficients $`C`$, and for each state, I act with the inverse boost rotation to get a canonical state. Now, this is a projection labeled with $`\lambda'`$, and I have a linear combination of them.  
+We see that this one is equal to $+i$ and this one is equal to $-i$. On different sides, I have different values. This is a cut. It's not really anything else than a spectrum of poles.
 
-The momentum $`P`$ also changes because the angle is rotated. The rotated momentum is $`P' = R' R P_z`$, where $`P_z`$ is the momentum after boosting along the $`z`$-axis. After the boost, the momentum becomes non-zero, and applying the rotation $`R'`$ gives $`P'`$.  
+Poles have divergence, and this thing does not have divergence. So what will you say? You go for poles.
 
-Now, let’s discuss the relation between the helicity state and the canonical state. The helicity state $`|p, j, \lambda\rangle`$ can be expressed as a linear combination of canonical states $`|p, j, m\rangle_{\text{canonical}}`$. The coefficients for this transformation are determined by applying the inverse rotation $`R^{-1}`$ to the state. The key operation is $`R B R^{-1}`$, which converts the state into a canonical form, and then applying $`R`$ to this state gives the desired linear combination.  
+---
 
-> [!NOTE]  
-> The helicity state is defined by boosting to the rest frame and then rotating. The angle of decay in this frame, measured relative to the direction of motion, is called the **helicity angle**.  
+Are you attracted by the concept of **branch points** or **cuts**? I was thinking about cuts, but now I'm convinced both solutions are not poles.
 
-Returning to the example of $`\Lambda`$ decay, consider a $`\Lambda`$ moving in the lab frame. To define the $`z`$-axis in the helicity frame, we boost to the rest frame of the $`\Lambda`$ and use its direction of motion in the lab frame. This defines the helicity frame for $`\Lambda`$. The helicity angle is then the angle of decay measured relative to this $`z`$-axis.  
+In the integral, there are no poles. The integrand has poles, but they are at zero.
 
-> [!IMPORTANT]  
-> The helicity frame depends on the reference frame from which the boost is performed. Different frames will result in different rest-frame orientations of the particle.  
+You have to analytically continue something. It's like you probably have to take it above the complex line or the real line, and below, probably differently.
 
-The helicity frame is always defined as the rest frame of the particle obtained by boosting from the frame where it was moving. The helicity angle is a standard term in hadron physics, referring to the angle measured in this boosted rest frame.  
+The branch point is where it starts and where it ends. You forget about the branch work for the elements.
 
-<!--
-Cosine simularity: 0.9435942757436995
--->
-## Recap of Lambda Decay Plane and Boost Inversion
+---
 
-We took the particles as the reference and measured the angle from there. All of the motion remains in the same plane as before. The boost and the two-part complement are now exactly opposite. Here, the boost inversion ( $`-1`$ ) occurred.  
+The analytic structure of my function in the $X$ plane has:
+- A branch point at $1$,
+- A branch point at $7$,
+- And they're connected by a cut.
 
-We start with a $`\Lambda`$ flying in the $`z`$-direction with a certain velocity. It decays into a proton and a pion in some plane. After inverting the boost, the proton and pion still lie in the same plane with exactly the same direction.  
+There are no poles. The function doesn't have any poles.
 
-The plane is defined by three vectors:  
-1. The original direction of motion of the $`\Lambda`$ (defining the axis).  
-2. The angle measured with respect to this axis.  
-3. The decay products forming the plane.  
+The way we construct the function here—in this way, you introduce on the cut, you don't do your space.
 
-Without the original direction of the $`\Lambda`$, the plane is no longer defined. The angle and the plane are constructed from these three vectors.
+---
 
-<!--
-Cosine simularity: 0.9443906373930285
--->
-## Transition Operator and Rotation in Lambda Decay
+It's really funny to think where this guy didn't come from, go where. You can look at this plane and take a walk here. You don't experience any poles, any singularities.
 
-The matrix element for the transition is given by:
+We can dive under. You end up in a different world that has a gate. Through the gate, you go to the other world. There you find poles—this is zero, it has poles. And it has $\sqrt{X}$, so it has another cut.
 
-```math
-H = \langle f \uparrow | H | i \rangle
-```
+The function has an **interesting and complicated structure** in the complex plane. On the regular complex plane where we call the function, it doesn't have any singularities except one gate.
 
-We can measure the angle and define a plane. This is our recap exercise. Initially, we started with only one axis, but now we have a plane with an additional variable on which the amplitude depends, in addition to the two discrete variables. This variable is the scattering angle or the helicity angle.  
+Through the gate, you can go to the other so-called sheet, and there you have a lot of stuff going on.
 
-The final state here will be frozen binary. On the right side, we have configurations of $`\Lambda`$ sitting in its rest frame with the proton in $`\Lambda`$. On the left side, we have this configuration of the pion-proton system. The way to proceed is to apply rotation to this configuration and align it back.  
+---
 
-The answer for this is:
+You just get used to it. It's really fun to think of this. We will discuss a little bit more of the complex chart structure and how scattering—what is actually the complex structure of the scattering amplitudes.
 
-```math
-H_{\lambda p} = T_{\Lambda \lambda}
-```
+## Branch Points, Poles, and Multivalued Functions in Complex Analysis
 
-This equation describes the matrix element for the sequence of decays. To derive it, we apply the transition operator $`T`$ on the final state. The goal is to simplify this expression. Here, $`T`$ acts on the proton state.  
 
-We want to evaluate the application of the transition operator that takes the pion-proton system and transforms it into $`\Lambda`$. This is the meaning of our operator. When this operator acts on the pion-proton state with momentum $`\vec{P} = (0, 0, P_z)`$, we notice that it is rotated about the $`y`$-axis by an angle $`\theta`$.  
+**Opening Remarks:**
+*Sorry for being late, and thanks for coming.*
+*We have a two-week break next week.*
+*We don’t have class, so have a nice holiday.*
 
-We want to align this to the left state, which has aligned combinations. Thus, we perform a rotation, pull out the outer rotation, and obtain the same combination along the $`z`$-axis. The proton moves forward, time goes backward, and the rotation is made explicit.  
+---
 
-Since these operators commute and strong interactions conserve spin, we can compute the transition operator and rotation separately. We first apply the transition operator and then the rotation. Essentially, the transition operator transforms the pion-proton system into $`\Lambda`$, and we explicitly perform this operation.  
+**Simplifying the Problem:**
+*Let’s make it simpler because it can be.*
+*Let’s make a constant in order to simplify—oh, I don’t even need this.*
 
-The plane is defined by three vectors:  
-1. The original direction of motion of $`\Lambda`$ (defining the axis).  
-2. The angle measured with respect to this axis.  
-3. The decay products forming the plane.  
+---
 
-Without the original direction of $`\Lambda`$, the plane is no longer defined. The angle and the plane are constructed from these three vectors.
+**Integration and Logarithmic Behavior:**
+The integral will always converge from 1 to 7.
+This is what we have.
+This is a logarithm.
+The logarithm itself can have a pole.
 
-<!--
-Cosine simularity: 0.9511209829799391
--->
-## Parity Violation in Polarized Lambda Decay
+Let’s evaluate the function at 8:
+$$
+\log(1 - 8) - \log(17 - 8).
+$$
+I’m going to say $8 \pm \epsilon$, and then:
+$$
+\log(1) = 0, \quad \log(-1) = i\pi.
+$$
+$$
+\log(-x) = \log(x) + i\pi.
+$$
 
-The transition operator transforms the pion-proton problem to the lambda system. We explicitly do this by inserting the identity state here. Here, we have a lambda state for the light statement. This part is a path lambda problem, and it gives us just the state of the lambda with the same speed.  
+---
 
-The matrix element we just evaluated is simply the lambda coupling. If we insert the identity, it should account for all possible combinations. Therefore, that would be a sum over lambda states. This will give us delta functions for the lambda lambda problem, allowing us to isolate a single state.  
+**Results and Continuity:**
+We arrive at the result that may equal each other.
+The difference here is $-i\pi$ and $+i\pi$.
+In the equation, this is continuous, and here is the jump.
+The real part of $x$ cannot be between 1 and 7 because we want to have a structure around it.
 
-The final step is to apply rotation to the system. It's good to see this once, but once you understand the idea, it becomes clear that in the case of the cascade reaction, each transition involves the product of the block helicity amplitude (the transition matrix element for the aligned transition) and the rotation.  
+We cannot have $x$ from 1 to 7 because we have the structures looping around it.
+The structure is looking around.
+You introduced the branch points at the edges and then a cut connecting these points.
 
-Now, the differential cross section depends on the angle as a function of the scattering angle. The equation involves cosine and sine matrices:  
+---
 
-```math
-\begin{pmatrix}
-\cos \theta & -\sin \theta \\
-\sin \theta & \cos \theta
-\end{pmatrix}
-```
+**Singularities and Branch Points:**
+It’s explicitly clear on the determinant itself by doing a simple integral.
+This expression has an $n$-structure: a cut, branch point at 1, branch point at 7, and then a cut.
+Is it anything else but a pole? No.
 
-For the spin matrix, we have an explicit numerical form, and we have two coupling constants measured in experiments. These can be used to compute the angular distribution.  
+A branch point can have a divergence—like the function could be infinity there—but it doesn’t have to.
+This function’s branch point is zero.
+The function is zero here; the function is infinity here.
 
-The result is the same as before because:  
+The pole is this:
+$$
+\frac{1}{x^3} \text{ is a pole of third order.}
+$$
+$$
+\frac{1}{(x - c)\log(x - c)} \text{ is not a pole.}
+$$
 
-```math
-\sin^2 \theta + \cos^2 \theta = 1
-```
+> [!NOTE]
+> **Key distinction:**
+> - A **pole** is an isolated singularity that can be resolved by an infinitesimal shift in the complex plane.
+> - A **branch point** (e.g., for $\sqrt{x}$ or $\log(x)$) is non-isolated and requires branch cuts to define the function uniquely.
 
-This term appears in front of the first component, while the second component has:  
+---
 
-```math
--\sin^2 \theta + \cos^2 \theta
-```
+**Teaching Style and Context:**
+*For us, your lectures are a bit unstructured, and you’re a bit all over the place.*
+*But it also makes it more fun because of your sketches of boosts, beasts, and rotations—just sketches.*
+*You don’t really prove anything like in other courses.*
+*It’s not a strict or rigorous proof of everything—it’s just not fun for a while.*
 
-This simplifies to another trivial result.  
+*I’m fine teaching advanced people, but you have to be more structured for younger students.*
 
-From this exercise, we learn that if we start with an unpolarized particle, we will not observe any interesting angular distribution. We sum over final states and initial states, and no non-trivial angle distributions remain for the $`2\pi DDK`$ system before integrating over the full phase space.  
+---
 
-The phase space integral is:  
+**Metaphor of "Gates" and Multivalued Functions:**
+We go through the gate, but outside the gate, you said the function is fine, it’s continuous.
+Here you said it’s another gate.
+This is the first world, second world enter.
+Here we can walk around the gate; it’s fine.
+But then it goes through the gate and ends up in another world.
 
-```math
-\int \frac{d\Omega}{4\pi} = \int \frac{d\cos \theta}{2} \int \frac{d\phi}{2\pi}
-```
+You can go through the gate and appear in that world.
+It has many more gates.
+You can go around this and enter on the other side—that’s where you come out here.
+If you do this, you are not at the end.
 
-This is a standard phase space measure.  
+It’s a third world.
+Then it’s an infinite number of worlds because it’s a loop at infinity.
+This gives an infinite number of worlds, but this one is simpler.
 
-Now, let’s consider the case of polarized decay. Here, we obtain non-trivial distributions if the particle is polarized. Suppose the lambda particle is flying with a definite spin projection along its momentum direction, say $`+1/2`$. When it decays, we find that the proton is more likely to travel forward than backward.  
+---
 
-This angle dependence of the proton’s momentum violates parity. Applying parity to the initial and final states flips the momentum but not the spin. The final configuration under parity would require the proton to be more likely backward, which contradicts the original observation.  
+**Practical Application and Fun Idea:**
+Imagine taking VR glasses and walking through this.
+That would be quite fun.
+You can suggest this to Matrix Netflix.
+Make it an escape room—you only get out if you find the first gate.
 
-This confirms that parity is violated in this decay process. This is consistent with the fact that weak interactions, which govern this decay, do not conserve parity. The asymmetry in the angular distribution directly demonstrates this violation.  
+---
 
-<!--
-Cosine simularity: 0.9301531663064168
--->
-## Polarization and Analyzing Power in Lambda Decay
+**Connection to Physics:**
+Where does this function appear?
+All scattering amplitudes as functions of **Mandelstam variables** ($s, t, u$) have energies—the area state.
 
-We consider the decay width for the $\Lambda$ particle:
-
-```math
-\Gamma_{\Lambda} = \frac{1}{2 m_{\Lambda}} \sum_{i} |H_{i}|^2 \frac{2p}{8 \pi m_{\Lambda}}
-```
-
-The parity validation appears when the two amplitudes are not equal to each other. If they were equal, the sum $`\sin^2 \theta + \cos^2 \theta`$ would give 1 with no angle dependence. The fact that they are not equal reflects parity violation.  
-
-In the case of a fully polarized $\Lambda$ with $`\lambda = 1/2`$, it is a pure state with 100% polarization. However, realistic scenarios involve mixed states, such as the $\Lambda$ being produced with 60% polarization in the BD case. This reduces the observed asymmetry.  
-
-The differential decay width can be written as:
-
-```math
-d\Gamma = \Gamma_0 (1 + \alpha P \cos \theta)
-```
-
-Here, $`\alpha`$ is the **analyzing power**, which quantifies how well the decay reflects the initial polarization. If the couplings are equal, $`\alpha = 0`$, and the decay is insensitive to polarization. However, for most weak decays, $`\alpha \neq 0`$, allowing the angular distribution to reveal parity violation.  
-
-The asymmetry in the proton emission angle confirms parity violation. If the $\Lambda$ is polarized along its momentum direction ($`+1/2`$), the proton is more likely to be emitted forward than backward. Under parity transformation, this configuration would reverse, contradicting the observation. This is consistent with weak interactions, which do not conserve parity.  
-
-The phase space integral is given by:
-
-```math
-\int \frac{d\Omega}{4\pi} = \int \frac{d\cos \theta}{2} \int \frac{d\phi}{2\pi}
-```
-
-This is the standard measure for integrating over the full angular distribution.  
-
-> [!IMPORTANT]  
-> The analyzing power $`\alpha`$ determines the sensitivity of the decay to the initial polarization. If $`\alpha = 0`$, no asymmetry is observed, even if parity is violated.  
-
-The angular distribution asymmetry directly demonstrates parity violation in $\Lambda$ decay.
-
-<!--
-Cosine simularity: 0.936053571621552
--->
-## Polarimetry Technique and Initial Polarization Measurement  
-
-The decay width $`\Gamma_{\Lambda}`$ is non-zero, and by examining the angular distribution, you observe parity violation. You can also measure the initial polarization using the **polarimetry technique**, which is actively employed.  
-
-By analyzing the angle distributions, you can determine the polarization since all particles have known spin and couplings (though these must be measured in advance). The initial polarization is a powerful observable.  
-
-For particles like the $`\Lambda`$, which carry spin, the polarization at the interaction point contains valuable information. How the $`\Lambda`$ is produced—its momentum and polarization—reveals details about the internal dynamics of the interaction.  
-
-For example, if the $`\Lambda`$ is produced in a carbon equilibrium or a plasma, its polarization can be linked to the properties of the medium.  
-
-> [!IMPORTANT]  
-> The polarimetry technique allows extraction of initial polarization, providing insights into production mechanisms and interaction physics.
-
-<!--
-Cosine simularity: 0.9555648141427531
--->
-## Polarization and Particle Decay in Quaternion Interaction
-
-The polarization of the particle can be related to its properties, making it a free carrier of information from the quaternion interaction. Polarization plays a crucial role, often more significant than other observables.  
-
-This particle not only carries information but also provides a way to measure polarization through its decay.  
-
-> [!IMPORTANT]  
-> The ability to measure polarization via decay is essential for understanding the underlying dynamics of quaternion interactions.  
-
-If I were to explain the material, you would already know it, but since I haven’t, I’ll pose a question instead: Can you determine the relationship between polarization and decay properties without prior lecture content?  
-
-Meanwhile, let me know if you have any questions.  
-
-<!--
-Cosine simularity: 0.9220048021589232
--->
-## Introduction to Analytic Functions and Cauchy Integrals
-
-Next lecture, we will move on to discussing analytic functions and properties of amplitudes in the complex plane. This requires some background in complex analysis, so we’ll review key concepts, including the complex plane and complex algebra.  
-
-The discussion arises from evaluating a circle integral. Consider a function $`F(X)`$ in the complex $`X`$-plane. If $`F(X)`$ is analytic and there are no singularities inside the integration contour, the integral over a closed circle is zero:  
-
-```math
-\oint F(X') \, dX' = 0
-```
-
-However, if we introduce a pole at $`X`$ inside the contour, the integral is no longer zero. The Cauchy integral formula states:  
-
-```math
-\oint \frac{F(X')}{X' - X} \, dX' = 2\pi i \, F(X)
-```
-
-Here, the integral evaluates to the function at the pole $`F(X)`$. This principle is central to extending the contour and handling singularities in analytic functions.  
-
-> [!NOTE]  
-> The Cauchy integral formula allows us to explicitly account for singularities inside the contour, transforming the integral into the function's value at the pole.  
-
-The same idea applies to more general cases, where we start with a small circle and stretch it while preserving analyticity.  
-
-<!--
-Cosine simularity: 0.8955305173789901
--->
-## Contour Integration and Imaginary Part Analysis
-
-I started with a small contour and stretched it to infinity. The part of the contour at infinity drops out, leaving only the integral from 1 to 7. The question is whether the equation can be satisfied when integrating the imaginary part of $`F(x)`$ from 1 to 7.  
-
-The second question concerns the analytic structure: what do we mean by branch cuts and poles? This is common in physics, where integrals like this arise. The leftover contour from 1 to 7 integrates $`F(x)`$, but since contributions from both sides of the contour have opposite signs, the real parts cancel, leaving only the imaginary part.  
-
-For example, if $`F(x) = 3`$, the imaginary part vanishes, and the equation holds trivially. The real question is whether non-trivial (non-constant) solutions exist where the imaginary part does not vanish.  
-
-> [!NOTE]  
-> When integrating over a contour where $`F(x)`$ is analytic, contributions from opposite sides cancel the real part, leaving only the imaginary part in the final result.  
-
-The Cauchy integral formula is central here. If $`F(X)`$ is analytic and has no singularities inside the contour, the integral over a closed path is zero:  
-
-```math
-\oint F(X') \, dX' = 0
-```
-
-However, if there is a pole at $`X`$ inside the contour, the integral becomes:  
-
-```math
-\oint \frac{F(X')}{X' - X} \, dX' = 2\pi i \, F(X)
-```
-
-This principle allows us to handle singularities and extend contours while preserving analyticity.
-
-<!--
-Cosine simularity: 0.9165438281195135
--->
-## Constructing Special Functions with Branch Points  
-
-If we remove the constant term, the imaginary part vanishes entirely. The question is whether non-trivial solutions exist where the imaginary part is non-zero. The answer is yes—any function can be inserted here, and the integral will converge. For example, take $`\sqrt{X}`$ and place it in the expression. This constructs a special function $`F(X)`$ whose imaginary part equals $`\sqrt{X}`$ in the region from $`-1`$ to $`7`$. Outside this interval, the function is non-zero but has no singularities.  
-
-The construction introduces non-trivial analytic structures. Three candidates for these structures are:  
-1. A continuous stretch of poles,  
-2. A branch cut,  
-3. A combination of both.  
-
-> [!NOTE]  
-> A branch cut is a non-analytic structure where the function differs on either side. For example, $`\sqrt{-1 + i0^+}`$ equals $`+i`$, while $`\sqrt{-1 - i0^+}`$ equals $`-i`$. Unlike poles, branch cuts do not involve divergences—just a discontinuity in function values.  
-
-Poles introduce divergences, whereas branch cuts do not. The distinction lies in whether the function diverges (poles) or simply changes value discontinuously (cuts). In this case, the structure is more akin to a branch cut because the function remains finite but takes different values on opposite sides of the cut.  
-
-The Cauchy integral formula governs such constructions. For an analytic function $`F(X)`$ with no singularities inside a contour:  
-
-```math
-\oint F(X') \, dX' = 0
-```
-
-If a pole exists at $`X`$, the integral becomes:  
-
-```math
-\oint \frac{F(X')}{X' - X} \, dX' = 2\pi i \, F(X)
-```
-
-This principle allows extending contours while preserving analyticity, even when introducing branch cuts or other singular structures.
-
-<!--
-Cosine simularity: 0.9076568097224533
--->
-## Understanding Branch Points and Cuts in Complex Analysis  
-
-The integrand has poles at zero and $`X`$. These are not branch points. To analyze the function, you must analytically continue it—perhaps above and below the real line—to see different branches.  
-
-A branch point is where a branch starts or ends. For example, if you consider the analytic structure of a function in the $`X`$-plane, it might have branch points at $`1`$ and $`7`$, connected by a branch cut. The function itself has no poles.  
-
-The distinction between poles and branch cuts is important. Poles introduce divergences, while branch cuts represent discontinuities in function values. For instance, $`\sqrt{-1 + i0^+} = +i`$ and $`\sqrt{-1 - i0^+} = -i`$—this is a branch cut, not a pole.  
-
-The Cauchy integral formula governs these cases. For an analytic function $`F(X)`$ with no singularities inside a contour:  
-
-```math
-\oint F(X') \, dX' = 0
-```
-
-If a pole exists at $`X`$, the integral becomes:  
-
-```math
-\oint \frac{F(X')}{X' - X} \, dX' = 2\pi i \, F(X)
-```
-
-This principle allows extending contours while preserving analyticity, even with branch cuts or other singular structures.
-
-<!--
-Cosine simularity: 0.8939392133556964
--->
-## Exploring Multisheeted Complex Planes and Singularities
-
-There are no poles. The function doesn't have any poles. That's the way we construct the function here — by introducing a "gate" in the complex plane. It's interesting to think about where this structure comes from or where it leads.  
-
-When you examine this plane, you can take a walk on it without encountering any poles or singularities. However, if you "dive under" the plane, you enter a different world — another sheet — accessible through this gate. On this new sheet, the function has poles, including at zero, and a branch cut associated with $`\sqrt{X}`$.  
-
-The function has a complex structure: on the regular complex plane, it has no singularities except for the gate. But through the gate, you reach another sheet where the behavior changes dramatically, with poles and branch cuts appearing.  
-
-> [!NOTE]  
-> The gate here acts as a transition point between sheets of a multisheeted Riemann surface, allowing the function to exhibit different analytic properties on each sheet.  
-
-This is how you get used to working with multisheeted complex planes — by recognizing that singularities may exist on other sheets even if they are absent on the principal sheet.  
-
-<!--
-Cosine simularity: 0.8912046881280075
--->
-## Understanding Branch Points and Poles in Complex Analysis
-
-The integral converges from 1 to 7, and we are evaluating the logarithm function. Consider the expression:
-
-```math
-\log(1 - 8) - \log(17 - 8)
-```
-
-When evaluating at $`8 \pm i\epsilon`$, we observe:
-- $`\log(1) = 0`$
-- $`\log(-1 \mp i\epsilon) = \log(1) \pm i\pi`$  
-
-This leads to a discontinuity (jump) in the imaginary part, confirming the presence of a branch cut. The real part of $`X`$ cannot lie between 1 and 7 because the function's structure loops around these points.  
-
-> [!NOTE]  
-> The branch points at $`X = 1`$ and $`X = 7`$ are explicitly identified by the integral's behavior. The branch cut connects these points, restricting the domain of $`X`$.
-
-The function has singularities at these branch points, but they are not poles. A branch point can have a divergence (e.g., $`\log(X)`$ diverges at $`X = 0`$), but it is distinct from a pole. For example:
-- $`1/(X - C)^3`$ has a third-order pole at $`X = C`$.
-- $`\log(X - C)`$ has a logarithmic branch point at $`X = C`$, not a pole.  
-
-A pole is a singularity that can be resolved by adding an infinitesimal shift in the complex plane (e.g., $`1/(X \pm i\epsilon)`$). In contrast, branch points persist and require branch cuts to define the function's behavior.  
-
-The function here has no poles on the principal sheet, but the branch points at 1 and 7 introduce a multivalued structure. The branch cut enforces a discontinuity, preventing $`X`$ from taking values between 1 and 7 on the principal branch.  
-
-> [!IMPORTANT]  
-> Branch points and poles are both singularities, but they differ in how they affect the function's analyticity. Poles are isolated and removable with $`i\epsilon`$ prescriptions, while branch points necessitate cuts and multisheeted surfaces.
-
-<!--
-Cosine simularity: 0.8512935455454501
--->
-## Lecture Style and Student Feedback on Rigor vs. Conceptual Learning  
-
-The unique complex plane has an infinitesimal value in the other direction, but it would stay at infinity. This is an isolated singularity. The branch point is a concept you might have encountered in mathematics, particularly in relation to the residual theorem or theoretical minimum.  
-
-For example, the square root function has a branch point, though you may know it by other terminology. The exponential function $`e^X`$ also exhibits branch points.  
-
-> [!NOTE]  
-> Branch points and isolated singularities are distinct concepts in complex analysis. A branch point introduces multivaluedness, while an isolated singularity (like a pole) is a single-point discontinuity.  
-
-Regarding lecture style, some students find the approach unstructured, with sketches and intuitive explanations rather than rigorous proofs. However, this makes the material more engaging for advanced learners. For first-semester students, a more structured approach might be necessary to avoid confusion.  
-
-The branch point for $`\sqrt{X}`$ or $`\log(X)`$ is a key example where the function becomes multivalued. In contrast, poles (like those in $`1/(X - C)^3`$) are isolated singularities resolvable with an infinitesimal shift in the complex plane.  
-
-> [!IMPORTANT]  
-> Teaching advanced students allows for a more conceptual approach, but foundational courses require clearer structure to build rigorous understanding.  
-
-The distinction between branch points and poles is critical: branch points require branch cuts, while poles are removable with $`i\epsilon`$ prescriptions.
-
-<!--
-Cosine simularity: 0.8461662585382317
--->
-## Exploring Infinite Worlds and Gates in a Virtual Environment
-
-We go through the gate, but outside the gate, the function is continuous. Here, it's another gate. This is the first world, and the second world is entered by walking around the gate. Then, it goes through the gate and ends up in another world. This is because of how we choose the first road. You can go through the gate and appear in that world, which has many more gates. You can go around and enter on the other side, emerging elsewhere.  
-
-This creates an infinite number of worlds due to the nature of the construction. For example, you can go to the forest world, which is another world with its own gate. Appearing here, you can go around and emerge elsewhere. This works because the structure is a square, while another configuration might be logarithmic.  
-
-Imagine using VR glasses and walking through these gates—it would be quite fun. You could suggest this as an 80th Matrix Netflix concept, making it an escape room where you only exit by finding the first gate.  
-
-The function's behavior appears in the amplitudes, which are structured this way.  
-
-> [!NOTE]  
-> Branch points and isolated singularities are distinct in complex analysis. A branch point introduces multivaluedness (e.g., $`\sqrt{X}`$ or $`\log(X)`$), while an isolated singularity (like a pole in $`1/(X - C)^3`$) is a single-point discontinuity resolvable with an infinitesimal shift in the complex plane.  
-
-The unique complex plane has an infinitesimal value in the other direction but remains at infinity for an isolated singularity. The branch point is a concept encountered in mathematics, particularly with the residual theorem or theoretical minimum.  
-
-> [!IMPORTANT]  
-> Teaching advanced students allows for a conceptual approach, but foundational courses require clearer structure to build rigorous understanding.  
-
-<!--
-Cosine simularity: 0.8968583727372633
--->
-## The Role of Rigorous Proofs in Learning
-
-The scattering amplitudes are functions of Mandelstam variables, which describe energies and momentum transfers in particle interactions. For this lecture, it would be nice to have a more rigorous proof, but I quite like that we don't always rely on them. However, some background knowledge is necessary to follow the reasoning. Without foundational proofs, it would be difficult to understand the concepts.  
-
-When I was a student, I disliked when instructors expected prior knowledge that hadn't been taught. This feeling is more extreme in courses that focus solely on rigorous proofs. For example, Dr. Creeps' lectures consist entirely of long proofs, which become tedious and disconnected from conceptual understanding. It’s better to introduce the ideas first and then provide proofs later.  
-
-> [!NOTE]  
-> Branch points and isolated singularities are distinct in complex analysis. A branch point introduces multivaluedness (e.g., $`\sqrt{X}`$ or $`\log(X)`$), while an isolated singularity (like a pole in $`1/(X - C)^3`$) is a single-point discontinuity resolvable with an infinitesimal shift in the complex plane.  
-
-The unique structure of the complex plane means an isolated singularity remains at infinity, while branch points are tied to multivalued functions. This distinction is crucial in advanced mathematics, particularly when applying the residue theorem or theoretical minimum principles.  
-
-> [!IMPORTANT]  
-> Teaching advanced students allows for a conceptual approach, but foundational courses require clearer structure to build rigorous understanding.  
-
-<!--
-Cosine simularity: 0.8648794575125085
--->
-## Compensation for Lack of Rigor in Seminars and Exercises
-
-I think our seminars and exercise classes compensate for the absence of rigor. That’s why we spend so much time on them. I feel bad that polarization has not been covered properly — we didn’t have time to introduce the polarization matrix to explain where this $`P`$ comes from.  
-
-> [!NOTE]  
-> The polarization matrix ( $`P`$ ) describes how the polarization state of light or particles transforms, but its derivation requires more rigorous treatment than what was possible in this lecture.  
-
-<!--
-Cosine simularity: 0.9247812959480968
--->
-## Prioritizing Exercise Sheets for Exam Preparation
-
-Since we have so much time in the exercises, you can stop exactly where needed. Morris wanted to proceed, but I stopped him because he will have another tweak for sheet five. We will not cover sheet five on Thursday for sure. We still have one more exercise set for sheet three and sheet four.  
-
-> [!NOTE]  
-> The course is going to end at some point, so you must decide which exercises to prioritize.  
-
-If you have to choose between sheet three and sheet five, sheet five is more interesting and more important for the exam. You won’t be able to cover all exercises, so you must decide which ones to focus on.  
-
-<!--
-Cosine simularity: 0.9602122980577258
--->
-## Scheduling and Discussing Exercise Sheets
-
-I hope that this Thursday will cover sheet three and sheet four. Next exercise, sheet five and sheet six. Until we discuss sheet five, they will have time to try solving it.  
-
-> [!NOTE]  
-> Extra time for exercises doesn't help—people will do other things and forget more.  
-
-If they have another two weeks, they might not prioritize the exercises. I don't mind.
-
-<!--
-Cosine simularity: 0.938574666912645
--->
-## Deciding on Exercise Content and Student Preparedness
-
-I don’t mind giving opportunities, but people will do other things and forget things. Tomorrow, we have the second exercise covering form factors and complex integrals. It’s nice because the topics are connected.  
-
-I’m considering skipping it now and bringing it up in the next exercise class when we discuss complex structures. Some students didn’t complete the exercise—they tried, but their submissions are missing key elements. That’s why we need to discuss it in class.  
-
-Morris tried, but others likely just heard about it. I mentioned they have the material, but engagement varies.  
-
-<!--
-Cosine simularity: 0.933734293695889
--->
-## Selecting Participants for the Exercise
-
-Usually we want Hendrik and Moritz.  
-The other participants likely just heard about it. I mentioned that they have the material.  
