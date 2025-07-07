@@ -99,14 +99,18 @@ def transform_file(filepath):
         content
     )
 
-
-
     with open(filepath, 'w', encoding='utf-8') as file:
         file.write(content)
 
 
 if __name__ == '__main__':
     directory = sys.argv[1]
+    
+    print("Applying content transformations:")
     for filename in os.listdir(directory):
         if filename.endswith('.md'):
-            transform_file(os.path.join(directory, filename))
+            filepath = os.path.join(directory, filename)
+            print(f"  Processing {filename}")
+            transform_file(filepath)
+    
+    print(f"\nProcessed all markdown files with content transformations")

@@ -1,3 +1,7 @@
 Lectures/Lecture-0*_files/
 
 public/
+
+# Generated Quarto files
+Lectures/_book/
+Lectures/site_libs/
