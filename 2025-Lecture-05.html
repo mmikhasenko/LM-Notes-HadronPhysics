@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Mikhail Mikhasenko">
+
+<title>lecture-05 – Hadron Physics</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 17.8em;
+  margin: 0 17.8em 17.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-6729c19c459079745e2be02720e68a89.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-search-results"></div>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#production-mechanisms-and-kinematic-analysis-in-hadron-spectroscopy" id="toc-production-mechanisms-and-kinematic-analysis-in-hadron-spectroscopy" class="nav-link active" data-scroll-target="#production-mechanisms-and-kinematic-analysis-in-hadron-spectroscopy"><span class="header-section-number">1</span> Production Mechanisms and Kinematic Analysis in Hadron Spectroscopy</a></li>
+  <li><a href="#flavor-multiplets-isospin-symmetry-and-gauge-symmetry-in-baryons" id="toc-flavor-multiplets-isospin-symmetry-and-gauge-symmetry-in-baryons" class="nav-link" data-scroll-target="#flavor-multiplets-isospin-symmetry-and-gauge-symmetry-in-baryons"><span class="header-section-number">2</span> Flavor Multiplets, Isospin Symmetry, and Gauge Symmetry in Baryons</a></li>
+  <li><a href="#classes-of-particle-production-experiments-fixed-target-vs.-collider-setups" id="toc-classes-of-particle-production-experiments-fixed-target-vs.-collider-setups" class="nav-link" data-scroll-target="#classes-of-particle-production-experiments-fixed-target-vs.-collider-setups"><span class="header-section-number">3</span> Classes of Particle Production Experiments: Fixed Target vs.&nbsp;Collider Setups</a></li>
+  <li><a href="#exclusive-vs.-inclusive-processes-and-kinematic-frames-in-particle-production" id="toc-exclusive-vs.-inclusive-processes-and-kinematic-frames-in-particle-production" class="nav-link" data-scroll-target="#exclusive-vs.-inclusive-processes-and-kinematic-frames-in-particle-production"><span class="header-section-number">4</span> Exclusive vs.&nbsp;Inclusive Processes and Kinematic Frames in Particle Production</a></li>
+  <li><a href="#kinematics-collider-experiments-and-particle-decay-analysis" id="toc-kinematics-collider-experiments-and-particle-decay-analysis" class="nav-link" data-scroll-target="#kinematics-collider-experiments-and-particle-decay-analysis"><span class="header-section-number">5</span> Kinematics, Collider Experiments, and Particle Decay Analysis</a></li>
+  <li><a href="#particle-identification-and-phase-space-in-decay-dynamics" id="toc-particle-identification-and-phase-space-in-decay-dynamics" class="nav-link" data-scroll-target="#particle-identification-and-phase-space-in-decay-dynamics"><span class="header-section-number">6</span> Particle Identification and Phase Space in Decay Dynamics</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Mikhail Mikhasenko </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="production-mechanisms-and-kinematic-analysis-in-hadron-spectroscopy" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="production-mechanisms-and-kinematic-analysis-in-hadron-spectroscopy"><span class="header-section-number">1</span> Production Mechanisms and Kinematic Analysis in Hadron Spectroscopy</h2>
+<p>Let’s start this lecture.</p>
+<p>Today, <strong>lecture number five</strong> will be dedicated to the production mechanisms in different directions across the world to study <strong>hadron spectroscopy</strong>.</p>
+<p>We will also go into depth on the <strong>kinematics of different reactions</strong>, discuss <strong>numerical algorithms</strong> to produce distributions of particles—particularly decays—and look at one of the most important kinematic setups: <strong>frames</strong> and the kinematic representation of the <strong>phase space</strong> for different reactions.</p>
+<hr>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Key formulas referenced in this lecture:</p>
+<ol type="1">
+<li><p><strong>Invariant Mass</strong> (Mandelstam variable <span class="math inline">s</span>): <span class="math display"> s = (p_1 + p_2)^2 = (E_1 + E_2)^2 - (\vec{p}_1 + \vec{p}_2)^2 </span></p></li>
+<li><p><strong>Decay Width</strong>: <span class="math display"> \Gamma = \frac{1}{\tau} = \frac{|\mathcal{M}|^2}{2\pi} \rho_f </span></p></li>
+<li><p><strong>Lorentz Invariant Phase Space</strong>: <span class="math display"> d\Phi_n = (2\pi)^4 \delta^4\left(P - \sum_{i=1}^n p_i\right) \prod_{i=1}^n \frac{d^3p_i}{(2\pi)^3 2E_i} </span></p></li>
+</ol>
+<p>These are foundational for understanding reaction kinematics and phase space representations in hadron spectroscopy.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="flavor-multiplets-isospin-symmetry-and-gauge-symmetry-in-baryons" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="flavor-multiplets-isospin-symmetry-and-gauge-symmetry-in-baryons"><span class="header-section-number">2</span> Flavor Multiplets, Isospin Symmetry, and Gauge Symmetry in Baryons</h2>
+<p>Before starting, we go through the recap and I ask you quickly to give me the answers. <strong>Who feels confident on question number one?</strong> Let’s break it down. So I would ask you guys in the first row to translate the words one by one.</p>
+<hr>
+<ul>
+<li><strong>Flavor</strong>: <em>What does “flavor” mean?</em> It’s the charge of the strong interaction. In this context, <em>what does “flavor” refer to here?</em> It’s a <strong>quantum number</strong> for the multiplet. There are many quantum numbers. This is a quantum number—the <strong>flavor quantum number</strong>.</li>
+</ul>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Flavor quantum numbers include: <strong>up, down, strange, charm</strong> (not to be confused with <strong>color</strong> charges like red, green, blue).</p>
+</div>
+</div>
+</div>
+<ul>
+<li><strong>Multiplet</strong>: <em>What is a multiplet?</em> There are singlets and multiplets. It’s <strong>different possible combinations</strong> for one quantum number. Like if I have one total spin and multiple configurations, that’s called multiplets.</li>
+</ul>
+<hr>
+<p><em>Alexander, you’re up. What’s your name again? Benedict.</em> <strong>Benedict, what remains for you?</strong> The whole question. <em>What are the flavor multiplets of Σ_b?</em></p>
+<ul>
+<li><p><strong>Σ_b</strong>: <em>“Flavor” is clear. “Multiplet” is clear.</em> Σ_b is the name of the baryon with this quark content. We are looking for <strong>flavor multiplets</strong> of this baryon.</p></li>
+<li><p><strong>Baryon Composition</strong>: <span class="math display">
+\Sigma_b^+ = (u\, s\, b), \quad \Sigma_b^0 = (d\, s\, b), \quad \Sigma_b^- = (d\, d\, b)
+</span> These represent the quark content of the Σ_b baryons in the <strong>isospin multiplet</strong>.</p></li>
+</ul>
+<hr>
+<ul>
+<li><p><strong>Isospin SU(2)</strong>: Replace <strong>u</strong> with <strong>d</strong>, and you get Σ_b^0. Same particle, different isospin projection—different charge. <em>What is the charge of Σ_b^0?</em> It’s neutral.</p></li>
+<li><p><strong>SU(3) Flavor Multiplets</strong>: For baryons composed of three quarks: <span class="math display">
+3 \otimes 3 \otimes 3 = 10 \oplus 8 \oplus 8 \oplus 1
+</span> (or alternatively mentioned as <span class="math inline">6 \oplus \bar{3}</span> for 3 ⊗ 3).</p></li>
+</ul>
+<hr>
+<p><em>What are possible spins for a two-pion system?</em></p>
+<ul>
+<li><strong>Pion</strong>: Quantum numbers <span class="math inline">0^-</span>.</li>
+<li><strong>D-wave spin</strong>: <span class="math display">
+J^P = 2^+
+</span> (from combining <span class="math inline">L = 2</span> with total intrinsic spin <span class="math inline">S = 0</span>).</li>
+</ul>
+<hr>
+<p><em>Is flavor symmetry gauge? Is Lorentz symmetry gauge?</em></p>
+<ul>
+<li><p><strong>Flavor Symmetry</strong>: <em>Anna, flavor symmetry is global.</em> <span class="math display">
+\mathcal{L} \rightarrow \mathcal{L}' = \mathcal{L} \quad \text{under global } SU(3)_\text{flavor}
+</span></p></li>
+<li><p><strong>Lorentz Symmetry</strong>: <em>Can you boost different points of spacetime differently?</em> No.&nbsp;In standard treatment, Lorentz is global: <span class="math display">
+x^\mu \rightarrow \Lambda^\mu_
+u x^
+u \quad \text{(applied uniformly)}
+</span></p></li>
+</ul>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>In gravity, Lorentz symmetry can be promoted to <strong>local symmetry</strong>, but here it is treated as global.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="classes-of-particle-production-experiments-fixed-target-vs.-collider-setups" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="classes-of-particle-production-experiments-fixed-target-vs.-collider-setups"><span class="header-section-number">3</span> Classes of Particle Production Experiments: Fixed Target vs.&nbsp;Collider Setups</h2>
+<p>Today is <strong>8, 6, 6</strong>, and we start <strong>lecture 5</strong> on <strong>particle production</strong>. I called the first section <em>“A Dictionary and Slang of Particle Production,”</em> but I essentially want to discuss a follow-up to what Farah started last time on different production mechanisms.</p>
+<hr>
+<p>When we talk about <strong>production kinematics</strong>, it makes sense to distinguish a few different classes. We will see this classification depending on:</p>
+<ul>
+<li>The <strong>reaction kinematics</strong></li>
+<li>The <strong>practicalities</strong> of the experiments</li>
+</ul>
+<hr>
+<p>I want to start by separating the two different classes of experiments:</p>
+<ol type="1">
+<li><strong>Fixed target experiments</strong>: where you install the target and shoot it with a beam.</li>
+<li><strong>Collider experiments</strong>: where you collide two beams.</li>
+</ol>
+<p>There are practical differences in these reactions:</p>
+<ul>
+<li>The energy one can achieve is <strong>much higher</strong> when you collide two particles.</li>
+<li>However, the decay products are also <strong>more boosted</strong> in a fixed target experiment.</li>
+</ul>
+<p>Depending on what you want to achieve—either <strong>higher collision energy</strong> or <strong>more forward-boosted decay products</strong>—you should choose different reactions.</p>
+<hr>
+<p>Most of the time, fixed target experiments study reactions that were <strong>historically easier to perform</strong>.</p>
+<ul>
+<li>You just need the target and the beam, and the setup is much simpler.</li>
+<li>Essentially, you only care about the <strong>beam production</strong>.</li>
+<li>The two particles are directed to your experiment, and the target is a simple fixed setup.</li>
+</ul>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>The <strong>interaction rate</strong> in fixed target experiments can be expressed as: <span class="math display">R = \Phi \cdot \sigma \cdot n \cdot L</span> where:</p>
+<ul>
+<li><span class="math inline">\Phi</span> = beam flux</li>
+<li><span class="math inline">\sigma</span> = interaction cross section</li>
+<li><span class="math inline">n</span> = target number density</li>
+<li><span class="math inline">L</span> = target length</li>
+</ul>
+</div>
+</div>
+</div>
+<hr>
+<p>As an example, consider experiments with <strong>fixed target particle production</strong> and <strong>hadron spectroscopy studies</strong>. I would name the <strong>GlueX experiment</strong> that Farah introduced last time, where we have:</p>
+<ul>
+<li>A <strong>photon beam</strong> on a <strong>hydrogen target</strong></li>
+<li><strong>Pion or proton beams</strong></li>
+<li>Sometimes a <strong>mixed beam of K and N</strong></li>
+</ul>
+<p>There are different targets:</p>
+<ul>
+<li><strong>Lead</strong></li>
+<li><strong>Front targets</strong></li>
+<li><strong>Ammonia</strong> (for polarized targets) But mostly, it’s a <strong>hydrogen target</strong>.</li>
+</ul>
+<hr>
+<p>To give you an idea, <strong>hydrogen targets</strong> are the most popular in hadron spectroscopy.</p>
+<ul>
+<li>They look like a <strong>1-meter pipe, 30 cm long</strong>, filled with <strong>liquid hydrogen</strong>—which is <strong>highly explosive</strong>.</li>
+<li>Handling this apparatus requires <strong>great care</strong>.</li>
+<li>The hydrogen must be kept <strong>liquid under high pressure</strong>.</li>
+<li>Not every experiment can operate with such a setup.</li>
+</ul>
+<div class="callout callout-style-simple callout-caution">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>At CERN, setting up <strong>COMPASS</strong> took years of effort to pass security inspections for a liquid hydrogen target.</p>
+<ul>
+<li>If it exploded, it could destroy the <strong>entire building</strong>.</li>
+<li>With such a volume of liquid hydrogen (e.g., 1 meter long and 30 cm in diameter), it would be a <strong>major disaster</strong>.</li>
+</ul>
+</div>
+</div>
+</div>
+<hr>
+<p>The beam interacts with protons in the hydrogen target somewhere inside it.</p>
+<ul>
+<li>By reconstructing <strong>final-state particles</strong> and tracing them back, you can determine the exact <strong>interaction vertex</strong>.</li>
+<li>If you collect data for days and plot the vertex distribution, it matches the <strong>target shape</strong>.</li>
+</ul>
+<p>One funny observation is that the target isn’t always filled to <strong>100%</strong>.</p>
+<ul>
+<li>If you plot the <strong>XY coordinates</strong>, you see empty regions where there are no vertices.</li>
+<li>This is a <strong>transverse cut</strong> of the target.</li>
+</ul>
+<p>The beam has a <strong>Gaussian profile</strong>: <span class="math display">
+\frac{dN}{dr} \propto \exp\left(-\frac{r^2}{2\sigma_r^2}\right)
+</span> and is slightly <strong>wider than the target</strong> in COMPASS, so the entire target is exposed.</p>
+<ul>
+<li>Ideally, the beam should be <strong>more focused</strong> to avoid wasting particles that miss the target.</li>
+</ul>
+<hr>
+<p>A <strong>beryllium target</strong> is simpler—just a <strong>3 cm disk</strong>, a few centimeters thick.</p>
+<ul>
+<li>It’s the <strong>cheapest and easiest</strong> target to use.</li>
+<li>At this thickness, it provides a <strong>significant particle production rate</strong>.</li>
+</ul>
+<p><strong>Lead targets</strong> have even higher <strong>Z</strong>, so the cross section is larger.</p>
+<ul>
+<li><p>The cross section scales with <strong>Z</strong> (the number of protons in the target): <span class="math display">\sigma \propto Z^\alpha</span> where <span class="math inline">\alpha</span> is typically <strong>1-2</strong> depending on the process.</p></li>
+<li><p>For some physics programs, <strong>heavy-Z targets</strong> are preferred.</p></li>
+</ul>
+<hr>
+<p>Earlier, we discussed how the <strong>Buicks setup</strong> differs slightly. To produce photons for experiments, you use <strong>bremsstrahlung</strong> from electron scattering:</p>
+<ul>
+<li>When electrons pass through a <strong>thin foil</strong> (a few hundred micrometers), photons are emitted.</li>
+<li>The electron beam is converted into a <strong>photon beam</strong>.</li>
+<li>Electrons that emit bremsstrahlung lose momentum and are deflected by a magnet, while the photons continue forward.</li>
+<li>A <strong>magnetic field</strong> placed after the foil removes all electrons, leaving only the photon beam to hit the target.</li>
+</ul>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>The <strong>bremsstrahlung cross section</strong> for photon production is: <span class="math display">\frac{d\sigma}{dE_\gamma} \propto \frac{Z^2}{E_\gamma}</span> where <span class="math inline">Z</span> is the atomic number of the target and <span class="math inline">E_\gamma</span> is the photon energy.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="exclusive-vs.-inclusive-processes-and-kinematic-frames-in-particle-production" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="exclusive-vs.-inclusive-processes-and-kinematic-frames-in-particle-production"><span class="header-section-number">4</span> Exclusive vs.&nbsp;Inclusive Processes and Kinematic Frames in Particle Production</h2>
+<p>To discuss the physics of the production mechanism, we draw <strong>cartoons</strong> like this, where the incoming particles enter the blob on the left side and outgoing particles appear on the right side. When we account for all the particles and none are missing, we call the production <strong>“exclusive,”</strong> which should be contrasted with <strong>“inclusive”</strong> processes.</p>
+<hr>
+<p>In <strong>inclusive processes</strong>, we characterize the class of reactions as <strong>statistical ensembles</strong>. We say we don’t care about each individual state—the 2 pions, 3 pions, 2 kaons—they are produced in addition to the one. We only care that the <strong>1 kaon</strong> is produced and nothing else.</p>
+<hr>
+<p><strong>Exclusive and inclusive reactions are complementary to each other.</strong> If one wants to understand the exact details of the production mechanism—where this kaon comes from, which particular resonance—one has to study <strong>exclusive processes</strong>. Inclusive processes average over different production mechanisms and in turn provide access to <strong>average quantities</strong> that are sometimes not accessible otherwise.</p>
+<hr>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Key distinction</strong>:</p>
+<ul>
+<li><strong>Exclusive</strong>: All particles accounted for.</li>
+<li><strong>Inclusive</strong>: Only specific particles of interest are tracked, others are averaged over.</li>
+</ul>
+</div>
+</div>
+</div>
+<hr>
+<p>If you want to see how this <strong>strangeness</strong> is produced—well, depending on the case, it would probably be better to use <strong>muons</strong> here. That’s what is studied in <strong>COMPASS</strong>: a muon gets scattered, and a kaon is detected. To make these computations more physical—if you want to study the strangeness inside the proton—we would study reactions like this: the <strong>electromagnetic current</strong> from the muon interacts with the proton, and somehow a kaon gets produced. This gives us access to the <strong>gluon probability distribution function</strong> inside the proton—how strange quarks are produced from the sea of gluons inside the proton. That’s a typical example of an <strong>inclusive process</strong>.</p>
+<hr>
+<p>For now, let’s focus on the <strong>kinematics of exclusive reactions</strong>. I want to introduce two important <strong>kinematic frames</strong> used for studying these reactions. In particle physics, we deal with <strong>four-vectors</strong>—quantities that, under boost transformations, follow Lorentz group representations. We know how to boost and rotate four-vectors, and the frame in which you perform computations does not matter in principle. However, for <strong>practical considerations</strong>, some frames are better suited. When discussing quantities like angles or specific energy values, it’s crucial to specify the frame.</p>
+<hr>
+<p>Translating between frames is <strong>mathematically straightforward</strong>—a conceptually simple procedure. You are in one frame, you boost, and your energy and angles change. However, it still requires <strong>practice</strong>, which is why it’s worth discussing.</p>
+<hr>
+<p>Let’s start with the <strong>center-of-momentum frame</strong>. In this frame, the four-vectors of the beam and target sum to zero—they are <strong>back-to-back</strong>. Here, I have a <strong>photon</strong>, and here I have a <strong>proton</strong>. In the center-of-momentum frame, the magnitudes of these two vectors are equal. Then we have scattered particles: here, a <strong>recoiling proton</strong>, and here, a combination of <strong>two pions</strong>. Clearly, these two vectors are equal and back-to-back, as are these two. Thus, we have a <strong>reaction plane</strong>.</p>
+<hr>
+<p>The total energy is given by the square of the sum of the four-vectors of the target and beam—this is our <strong>Mandelstam variable <span class="math inline">S</span></strong>, the center-of-mass energy squared:</p>
+<p><span class="math display">
+S = (P_{\text{beam}} + P_{\text{target}})^2
+</span></p>
+<hr>
+<p>There’s a <strong>trick</strong> to evaluate the magnitudes of these vectors and momenta using this relation: for the target four-vector, we write it as the total minus the beam, square it, and obtain <span class="math inline">S + m_{\text{beam}}^2</span> (which is zero for a photon) minus <span class="math inline">m_{\text{target}}^2</span>. This formula holds in any rest frame. If you have two particles at rest, the energy of each particle is computed as:</p>
+<p><span class="math display">
+E_1 = \frac{S + m_1^2 - m_2^2}{2 \sqrt{S}}
+</span></p>
+<hr>
+<p>Another useful relation comes from squaring the energy expression and subtracting the mass: <span class="math inline">E^2 - m^2 = p^2</span>, leading to the <strong>breakup momentum formula</strong>:</p>
+<p><span class="math display">
+p = \frac{\sqrt{\lambda(S, m_1^2, m_2^2)}}{2 \sqrt{S}}
+</span></p>
+<p>where <span class="math inline">\lambda(x, y, z)</span> is the <strong>Källén (or triangle) function</strong>:</p>
+<p><span class="math display">
+\lambda(x, y, z) = x^2 + y^2 + z^2 - 2xy - 2xz - 2yz
+</span></p>
+<p>This function is <strong>symmetric</strong> in its arguments, so the order doesn’t matter.</p>
+<hr>
+<p>Now, let’s compute momenta for <strong>final-state particles</strong>. The expression remains the same—just replace the masses with those of the decay products. For example, for the two-pion system, we use <span class="math inline">m_{\pi\pi}^2</span>, <span class="math inline">m_{\text{recoil}}^2</span>, and <span class="math inline">m_{\text{proton}}^2</span>.</p>
+<hr>
+<p>A question arises: This only works if we treat the two pions as a <strong>single particle</strong> moving in the same direction. Why can we do this? The answer is <strong>kinematics, not physics</strong>. We write momentum conservation as:</p>
+<p><span class="math display">
+P_{\text{target}} + P_{\text{beam}} = (P_{\pi^+} + P_{\pi^-}) + P_{\text{recoil}}
+</span></p>
+<p>and replace <span class="math inline">P_{\pi^+} + P_{\pi^-}</span> with <span class="math inline">P_{\pi\pi}</span>. This composite four-vector has its own energy and momentum, but the pions need not be collinear—they can decay at an angle.</p>
+<hr>
+<p>Now, let’s expand on the <span class="math inline">\pi\pi</span> production. We can go to the <strong>rest frame of the <span class="math inline">\pi\pi</span> system</strong>—the <strong>Gottfried-Jackson frame</strong>—where the two pions are back-to-back. This frame is common in <strong>spectroscopy studies</strong>. It’s obtained by boosting and rotating along the resonance direction, aligning the beam with the <span class="math inline">z</span>-axis and placing the target and recoil in the <span class="math inline">xz</span>-plane.</p>
+<hr>
+<p>In this frame, <span class="math inline">\pi^+</span> and <span class="math inline">\pi^-</span> are back-to-back, and the beam is back-to-back with the difference between the target and recoil.</p>
+<p>Absolutely. The same trick that I applied here now can work for these two vectors. We know that in this frame, the four-vector of the <span class="math inline">\pi^+</span> and the four-vector of the <span class="math inline">\pi^-</span> end up as a vector that has no spatial component—it’s in the rest frame. Therefore, it’s just <span class="math inline">(m_{\pi\pi}, \mathbf{0})</span>. So let’s just write, for completeness:</p>
+<p><span class="math display">
+P_{\pi^+}^{\text{GJ}} + P_{\pi^-}^{\text{GJ}} = (m_{\pi\pi}, \mathbf{0})
+</span></p>
+</section>
+<section id="kinematics-collider-experiments-and-particle-decay-analysis" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="kinematics-collider-experiments-and-particle-decay-analysis"><span class="header-section-number">5</span> Kinematics, Collider Experiments, and Particle Decay Analysis</h2>
+<p>I will probably try to add a few more exercises on kinematics because that’s something worth practicing—how you derive these particular expressions—and it’s all over the place. It’s a very important skill to be able to operate with the <strong>four-vectors</strong>.</p>
+<p>But we continue with discussing another type of the class of experiments, particularly <strong>collider experiments</strong>. It’s the Beijing Spectrometer. There are a few collider experiments in the world, and depending on the colliding particles, you have different physics.</p>
+<ul>
+<li><strong>Fermilab</strong>: Antiproton beams were collided here.</li>
+<li><strong>LHC (Large Hadron Collider)</strong>: The biggest running machine where two protons collide.</li>
+<li><strong>LHCb</strong>: The most dedicated experiment to study strong interactions.</li>
+<li><strong>Electron-positron machines</strong>: Currently running are the <strong>BESIII</strong> and <strong>Belle II</strong> experiments.</li>
+</ul>
+<hr>
+<p>Two important concepts to introduce are <strong>production</strong> and <strong>decays</strong>:</p>
+<ol type="1">
+<li><strong>Prompt production</strong>: Hadrons produced directly from the colliding beams (primary vertex).</li>
+<li><strong>Delayed production</strong>: Long-lived particles fly away from the primary vertex and decay later.</li>
+</ol>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>The <strong>strong interaction</strong> is called “strong” because it makes the cross section large and processes happen quickly. The <strong>weak interaction</strong> is “weak” because it has a smaller cross section, leading to longer lifetimes for particles decaying weakly.</p>
+</div>
+</div>
+</div>
+<p>For example:</p>
+<ul>
+<li><strong>B meson</strong>, <strong>D meson</strong>, <strong>Lambda baryon</strong>, <strong>Omega baryons</strong> all decay weakly because the strong interaction cannot change flavor or color.</li>
+</ul>
+<hr>
+<p>When a particle decays weakly, its lifetime is large, allowing it to fly away from the primary vertex before decaying.</p>
+<ul>
+<li><p><strong>B meson</strong>: Lifetime <span class="math inline">\sim 10^{-9}</span> seconds, but due to relativistic boost (<span class="math inline">\gamma = \frac{E}{m}</span>), it lives longer in the lab frame.</p></li>
+<li><p>For <span class="math inline">E = 500\,\text{GeV}</span> and <span class="math inline">m = 5\,\text{GeV}</span>, <span class="math inline">\gamma = 100</span>.</p></li>
+<li><p>Lab-frame lifetime: <span class="math inline">10^{-7}</span> seconds.</p></li>
+<li><p>Travel distance: <span class="math inline">\sim 20\,\text{mm}</span>.</p></li>
+<li><p><strong>Charm particles</strong>: Shorter travel distance (<span class="math inline">\sim 5\,\text{mm}</span>).</p></li>
+</ul>
+<div class="callout callout-style-simple callout-important">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>The distance a particle travels is <strong>not fixed</strong>—it follows an <strong>exponential distribution</strong> due to quantum decay probabilities: <span class="math display"> N(t) = N_0 e^{-\lambda t} </span></p>
+</div>
+</div>
+</div>
+<hr>
+<p>In experiments, we reconstruct decays by tracking final-state particles (e.g., pions). Key steps:</p>
+<ol type="1">
+<li><strong>Track reconstruction</strong>: Fit trajectories (straight or curved in a magnetic field).</li>
+<li><strong>Vertex fitting</strong>: Identify secondary vertices displaced from the primary vertex.</li>
+<li><strong>Impact parameter (IP)</strong>: Closest distance of a track to the primary vertex, normalized by uncertainty: <span class="math display"> \text{IP} \chi^2 = \left( \frac{d}{\sigma_d} \right)^2 </span></li>
+</ol>
+<ul>
+<li><strong>Lambda decays</strong>: Can fly meters (e.g., <span class="math inline">5\,\text{m}</span> at LHCb due to high boost).</li>
+</ul>
+<hr>
+<p>When analyzing decays (e.g., <span class="math inline">B^0 \to 3\pi</span>), we compute the <strong>invariant mass</strong>: <span class="math display"> M = \sqrt{\left( \sum_i E_i \right)^2 - \left( \sum_i \vec{p}_i \right)^2 } </span></p>
+<p>The spectrum shows:</p>
+<ol type="1">
+<li><strong>Peak</strong>: Centered at <span class="math inline">M_B</span>, smeared by experimental resolution (Gaussian shape).</li>
+<li><strong>Background</strong>: Combinatorial noise from random track associations.</li>
+<li><strong>Secondary peaks</strong>: Misidentified particles.</li>
+</ol>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>The <strong>multiplicity</strong> of proton-proton collisions at the LHC (<span class="math inline">7\,\text{TeV}</span>) is <strong>a few thousand particles per event</strong>, leading to high combinatorics in track reconstruction.</p>
+</div>
+</div>
+</div>
+<hr>
+<p>Theoretically, the spectrum should be a <strong>delta function</strong> at <span class="math inline">M_B</span>, but experimental uncertainties widen it into a Gaussian.</p>
+<ul>
+<li><strong>Key factors</strong>: Tracking precision, hit resolution, and energy/momentum measurements.</li>
+<li><strong>Background</strong>: Arises from random combinations of pions passing selection cuts.</li>
+</ul>
+</section>
+<section id="particle-identification-and-phase-space-in-decay-dynamics" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="particle-identification-and-phase-space-in-decay-dynamics"><span class="header-section-number">6</span> Particle Identification and Phase Space in Decay Dynamics</h2>
+<p>The last feature I want to discuss here is <strong>PID (Particle Identification)</strong>. It’s important for all experiments.</p>
+<p>When we track particles, we don’t measure their mass directly. The momentum is determined by the curvature of the track in the magnetic field. By solving the differential equations of charged particle motion in a magnetic field, we can fit the momentum to the measured points.</p>
+<p>The four-vector has energy and momentum components. We measure momentum, but energy is computed under a mass assumption. For these calculations, we must assume the particle is a pion.</p>
+<p>Among thousands of charged particles, they all look similar without extra identification. Without PID detectors, we can’t distinguish pions, protons, or kaons. This assumption introduces background.</p>
+<p>For example, in an event like <span class="math inline">B \to K^- \pi^+ \pi^-</span>, the tracks look identical to our signal. If we misidentify the kaon as a pion, we compute the wrong energy. The momentum is correct, but the energy is not. This leads to an incorrect invariant mass.</p>
+<p>If we assume a pion mass for a kaon, the reconstructed mass shifts. Since the kaon mass is larger, using a smaller pion mass distorts the result. Without PID, we’d be in trouble.</p>
+<p>That’s why experiments need good particle identification detectors, like ring-imaging Cherenkov or time-of-flight systems. These suppress misidentification.</p>
+<hr>
+<div class="callout callout-style-simple callout-important">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Key Challenge in PID</strong>: Misidentifying particles (e.g., kaons as pions) leads to incorrect energy calculations and distorted invariant mass reconstructions. Proper PID detectors are essential to suppress this background.</p>
+</div>
+</div>
+</div>
+<hr>
+<p>In experiments, simulation is crucial. We model collisions, decays, and detector interactions using computer programs.</p>
+<p>We must know cross-sections and available phase space—the configuration space for particles.</p>
+<p>For an <span class="math inline">N</span>-particle phase space, the differential is:</p>
+<p><span class="math display"> d\Pi_N </span></p>
+<p>with <span class="math inline">3N - 4</span> integrals, reflecting four-momentum constraints.</p>
+<p>For two-body phase space:</p>
+<p><span class="math display"> d\Pi_2 = \frac{1}{8\pi} \frac{2p}{\sqrt{s}} d\Omega </span></p>
+<p>After resolving energy-momentum conservation, only angular integrals remain.</p>
+<p>For three-body phase space, it’s more complex:</p>
+<p><span class="math display"> d\Pi_3(1,2,3) = d\Pi_2(1,2) \times d\Pi_2((12),3) \times \frac{dM_{12}^2}{2\pi} </span></p>
+<p>We split phase space into pairs, introducing intermediate masses.</p>
+<p>The <strong>Kibble function</strong> defines the Dalitz plot boundary:</p>
+<p><span class="math display"> \Phi = \lambda_1 \lambda_2 \lambda_3 - \lambda_1 \lambda_{23}^2 - \lambda_2 \lambda_{13}^2 - \lambda_3 \lambda_{12}^2 \leq 0 </span></p>
+<p>where <span class="math inline">\lambda</span> is the <strong>Källén function</strong>:</p>
+<p><span class="math display"> \lambda(x,y,z) = x^2 + y^2 + z^2 - 2xy - 2xz - 2yz </span></p>
+<p>The differential decay width is:</p>
+<p><span class="math display"> d\Gamma = \frac{|\mathcal{M}|^2}{2M_0} d\Pi </span></p>
+<p>On the Dalitz plot, phase space is flat—only the matrix element introduces structure.</p>
+<hr>
+<p>Let’s map momenta to a Dalitz plot. Given three momenta summing to zero, we find their coordinates.</p>
+<p>Here’s a <strong>COMPASS measurement example</strong>. The mass distribution in a 2D plot reveals dynamics—phase space is uniform, but the matrix element shapes the data.</p>
+<hr>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Phase Space &amp; Dalitz Plots</strong>:</p>
+<ul>
+<li>Two-body phase space reduces to angular integrals after momentum conservation.</li>
+<li>Three-body phase space decomposes into sequential two-body systems with intermediate masses.</li>
+<li>The Kibble function <span class="math inline">\Phi \leq 0</span> defines the physical boundary of the Dalitz plot.</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

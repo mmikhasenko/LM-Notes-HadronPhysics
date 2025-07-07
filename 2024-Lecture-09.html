@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Mikhail Mikhasenko">
+
+<title>lecture-09 – Hadron Physics</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 9.8em;
+  margin: 0 9.8em 9.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-6729c19c459079745e2be02720e68a89.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-search-results"></div>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#personalized-lectures-homework-encouragement-and-flexible-learning" id="toc-personalized-lectures-homework-encouragement-and-flexible-learning" class="nav-link active" data-scroll-target="#personalized-lectures-homework-encouragement-and-flexible-learning"><span class="header-section-number">1</span> Personalized Lectures, Homework Encouragement, and Flexible Learning</a></li>
+  <li><a href="#transition-from-unitarity-to-hadron-spectroscopy-models-and-lecture-schedule" id="toc-transition-from-unitarity-to-hadron-spectroscopy-models-and-lecture-schedule" class="nav-link" data-scroll-target="#transition-from-unitarity-to-hadron-spectroscopy-models-and-lecture-schedule"><span class="header-section-number">2</span> Transition from Unitarity to Hadron Spectroscopy: Models and Lecture Schedule</a></li>
+  <li><a href="#unitarity-constraints-on-partial-amplitudes-and-the-argand-diagram" id="toc-unitarity-constraints-on-partial-amplitudes-and-the-argand-diagram" class="nav-link" data-scroll-target="#unitarity-constraints-on-partial-amplitudes-and-the-argand-diagram"><span class="header-section-number">3</span> Unitarity Constraints on Partial Amplitudes and the Argand Diagram</a></li>
+  <li><a href="#unitarity-and-partial-wave-expansions-in-scattering-amplitudes" id="toc-unitarity-and-partial-wave-expansions-in-scattering-amplitudes" class="nav-link" data-scroll-target="#unitarity-and-partial-wave-expansions-in-scattering-amplitudes"><span class="header-section-number">4</span> Unitarity and Partial Wave Expansions in Scattering Amplitudes</a></li>
+  <li><a href="#kinematic-singularities-and-angular-momentum-compensation-in-scattering-amplitudes" id="toc-kinematic-singularities-and-angular-momentum-compensation-in-scattering-amplitudes" class="nav-link" data-scroll-target="#kinematic-singularities-and-angular-momentum-compensation-in-scattering-amplitudes"><span class="header-section-number">5</span> Kinematic Singularities and Angular Momentum Compensation in Scattering Amplitudes</a></li>
+  <li><a href="#scattering-phase-shift-and-amplitude-near-threshold" id="toc-scattering-phase-shift-and-amplitude-near-threshold" class="nav-link" data-scroll-target="#scattering-phase-shift-and-amplitude-near-threshold"><span class="header-section-number">6</span> Scattering Phase Shift and Amplitude Near Threshold</a></li>
+  <li><a href="#scattering-length-bound-states-and-effective-field-theory-in-threshold-scattering" id="toc-scattering-length-bound-states-and-effective-field-theory-in-threshold-scattering" class="nav-link" data-scroll-target="#scattering-length-bound-states-and-effective-field-theory-in-threshold-scattering"><span class="header-section-number">7</span> Scattering Length, Bound States, and Effective Field Theory in Threshold Scattering</a></li>
+  <li><a href="#homework-submission-and-scheduling-discussion" id="toc-homework-submission-and-scheduling-discussion" class="nav-link" data-scroll-target="#homework-submission-and-scheduling-discussion"><span class="header-section-number">8</span> Homework Submission and Scheduling Discussion</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Mikhail Mikhasenko </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="personalized-lectures-homework-encouragement-and-flexible-learning" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="personalized-lectures-homework-encouragement-and-flexible-learning"><span class="header-section-number">1</span> Personalized Lectures, Homework Encouragement, and Flexible Learning</h2>
+<p>Similar to courses you’ve had, <strong>there were always two of us in the lecture</strong>, so it was a personalized education. I remember my teacher saying that <em>the quality of the lecture was measured by whether Mikael was sleeping or not</em>.</p>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Engagement tip</strong>: Use physical cues like eye contact or note-taking as indicators of lecture effectiveness, just like Mikael’s wakefulness served as a quality measure.</p>
+</div>
+</div>
+</div>
+<p>If he was sleeping, the lecture was bad, and if he was awake, the lecture was good. So <strong>you’re not sleeping—follow along</strong>. Probably the lecture is good.</p>
+<hr>
+<p>It was a little bit funny. We would come to the professor’s office. He had a little board, and we would sit in front of his chair, sketching things on it. <em>Not so many people were there</em>.</p>
+<hr>
+<p><strong>Homework discussion</strong>:</p>
+<ul>
+<li>Have you done the exercise sheets?</li>
+<li>Yes, but I don’t have anything like I did, at least the first exercise.</li>
+<li>You cannot—because Eva is not here today.</li>
+<li>But I could have collected them.</li>
+</ul>
+<div class="callout callout-style-simple callout-important">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Submission reminder</strong>: Always bring completed exercises even if collection isn’t scheduled - you never know when they might be accepted.</p>
+</div>
+</div>
+</div>
+<p>Very good—you brought something. I encourage you to <strong>hand them in</strong>, in addition to looking at them. It’s really good that you looked.</p>
+<hr>
+<p><strong>Exam requirements</strong>:</p>
+<ul>
+<li>We proved and wanted to report points on exams</li>
+<li>We set the admission criteria at a low 50% of points</li>
+<li>But you’re not there yet—none of the students are there yet</li>
+</ul>
+<p><strong>Action items</strong>:</p>
+<ol type="1">
+<li>Please work on the homework</li>
+<li>If you want to have enough at the end, we might allow for:</li>
+</ol>
+<ul>
+<li>A lower number of points</li>
+<li>Or let you submit exercises later</li>
+</ul>
+<p>This is something to fulfill, and <strong>I would like you to fulfill that</strong>.</p>
+<hr>
+<p><strong>About the exercises</strong>:</p>
+<ul>
+<li>They have been <strong>non-standard</strong> in the sense that you don’t find them in books</li>
+<li>Allowed resources include:</li>
+<li>Course materials</li>
+<li>ChatGPT help</li>
+<li><em>Everything</em> - just like in research</li>
+</ul>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Problem-solving approach</strong>: While the exercises aren’t textbook problems, they’re designed to be solvable with available tools and require creative thinking rather than rote memorization.</p>
+</div>
+</div>
+</div>
+<p>Have a look. They are not that difficult, as you probably discovered, but they require <strong>some thinking</strong>.</p>
+</section>
+<section id="transition-from-unitarity-to-hadron-spectroscopy-models-and-lecture-schedule" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="transition-from-unitarity-to-hadron-spectroscopy-models-and-lecture-schedule"><span class="header-section-number">2</span> Transition from Unitarity to Hadron Spectroscopy: Models and Lecture Schedule</h2>
+<p>Today we are finishing with <strong>unitarity</strong> and moving toward discussing approaches used in <strong>hadron spectroscopy</strong>. A few lectures in the future, I want to dedicate to the field—the approaches from theory and experiment, mostly from theory—that use hadron spectroscopy.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>The <strong>unitarity condition</strong> for the S-matrix is a foundational constraint: <span class="math display">S^\dagger S = SS^\dagger = I</span> This ensures probability conservation in scattering processes.</p>
+</div>
+</div>
+</div>
+<p>So far, we have discussed the <strong>Lorentz group</strong>, <strong>helicity states</strong>, and <strong>angular distributions</strong>, which are model-independent. We also discussed <strong>unitarity</strong>, another model-independent approach that provides a guiding principle rather than a definitive answer.</p>
+<hr>
+<p>Now we will move toward <strong>models</strong>. If you have a Lagrangian, you can derive everything. The models that approximate Lagrangians—we’ll discuss:</p>
+<ul>
+<li><p><strong>Chiral Perturbation Theory (ChPT)</strong>: A low-energy effective field theory. The leading-order Lagrangian is: <span class="math display">\mathcal{L}_{\text{ChPT}} = \frac{F_\pi^2}{4} \text{Tr}[\partial_\mu U \partial^\mu U^\dagger] + \frac{F_\pi^2 B_0}{2} \text{Tr}[M(U + U^\dagger)]</span> where <span class="math inline">U</span> is the chiral field, <span class="math inline">F_\pi</span> the pion decay constant, and <span class="math inline">B_0</span> relates to the quark condensate.</p></li>
+<li><p><strong>pNRQCD</strong>: A non-relativistic effective field theory for charmonium states. The Hamiltonian for heavy quarkonia is: <span class="math display">H_{\text{pNRQCD}} = \frac{\mathbf{p}^2}{m_Q} + V(r) + \mathcal{O}(1/m_Q^2)</span> where <span class="math inline">m_Q</span> is the heavy quark mass and <span class="math inline">V(r)</span> is the QCD potential.</p></li>
+<li><p><strong>Lattice QCD</strong>: We’ll explore its methods and applications in hadron spectroscopy. The action for Wilson fermions is: <span class="math display">S_{\text{LQCD}} = \sum_{x} \bar{\psi}(x) D_W \psi(x) + S_G[U]</span> with <span class="math inline">D_W</span> as the Wilson-Dirac operator and <span class="math inline">S_G</span> the gauge action.</p></li>
+</ul>
+<hr>
+<p>I would like to spend one more lecture on <strong>B meson</strong> and <strong>D meson</strong> physics, where hadron physics plays a crucial role. While these studies often focus on <strong>CP violation</strong> and searches for <strong>new physics beyond the Standard Model</strong>, hadron physics provides essential input on strong interactions.</p>
+<div class="callout callout-style-simple callout-important">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>The <strong>weak decay amplitude</strong> for <span class="math inline">B \to f</span> transitions is: <span class="math display">\mathcal{A}(B \to f) = \langle f|\mathcal{H}_{\text{weak}}|B\rangle = V_{ub} V_{uq}^* \mathcal{M}_{\text{strong}}</span> Here, <span class="math inline">\mathcal{M}_{\text{strong}}</span> encodes hadronic matrix elements, emphasizing the need to understand strong phases.</p>
+</div>
+</div>
+</div>
+<p>Determining weak phases almost always requires knowledge of the <strong>strong phase</strong> of the transition. Understanding how hadrons form and their properties is key.</p>
+<hr>
+<p>I think we have <strong>four more lectures</strong> to go, possibly fewer. I plan for four, aiming to finish in the <strong>first week of July</strong>. The <strong>16th</strong> is a spare lecture in case we need additional discussion. But the <strong>9th of July</strong> is marked as the last lecture on my calendar.</p>
+<p>Does the semester usually run until mid- or late July? I forget the exact schedule. In my calendar, the semester extends until the <strong>third week of July</strong>. So the <strong>9th, 16th, and even the 23rd</strong> are still part of the semester. However, a research school in Bochum will occupy our time, so we aim to finish one week earlier.</p>
+</section>
+<section id="unitarity-constraints-on-partial-amplitudes-and-the-argand-diagram" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="unitarity-constraints-on-partial-amplitudes-and-the-argand-diagram"><span class="header-section-number">3</span> Unitarity Constraints on Partial Amplitudes and the Argand Diagram</h2>
+<p>Today’s lecture—<strong>lecture number one</strong>—will start with the <strong>theoretical unitarity</strong>. We’ll discuss the <strong>threshold expansion</strong>, particularly amplitude behavior at the threshold, as well as the <strong>scattering length approximation</strong>. Then we’ll move to <strong>effective field theory (EFT)</strong> and compare <strong>EFT and unitarity</strong>. Finally, we’ll cover <strong>ππ scattering in S-wave</strong>, where the current perturbation theory gives us the scattering amplitude.</p>
+<hr>
+<p>The first question is: <em>Which values are allowed for the transition as partial amplitude</em> <span class="math inline">F = T \rho</span>, <em>where</em> <span class="math inline">T</span> <em>is the scattering amplitude?</em></p>
+<ul>
+<li><strong>Consistency is important</strong>. The scattering amplitude is the scattering amplitude, and this is the partial amplitude.</li>
+<li>If you don’t have any clue for the first one, you might just—if you don’t do homework, you have no clue for the first one, probably.</li>
+<li>The second one is standard, something we discussed many times.</li>
+</ul>
+<p>Let’s start with <strong>number two</strong>. First, each partial wave—you can just speak aloud. What are your thoughts? What do you think?</p>
+<hr>
+<p>We noted last time that we want the function to be <strong>analytical on the right-hand side</strong>, and <span class="math inline">A</span> isn’t analytic in this region. If I put <span class="math inline">F</span> plane, where is <span class="math inline">F</span>? It’s <span class="math inline">3 - 2A</span>. This one is here, somewhere at 45 degrees. And this one is <span class="math inline">-1</span>.</p>
+<p>It was just the golden ratio but with an <span class="math inline">i</span> in it. No, it’s not the golden ratio, but I thought it was <span class="math inline">1 + \sqrt{2}</span> divided by—it’s <span class="math inline">\sqrt{5}/2</span> for the golden ratio. That would have been a point where I could have said it’s just invented by you. But it’s important to understand the principle—<strong>what’s allowed when you talk about something being allowed</strong>.</p>
+<hr>
+<div class="callout callout-style-simple callout-important">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Unitarity and the Argand Diagram</strong></p>
+<ul>
+<li><p>Unitarity tells us that the imaginary part of the amplitude is driven by the interaction loop.</p></li>
+<li><p>The imaginary part of the inverse amplitude is given by: <span class="math display"> \text{Im}(T^{-1}) = -\rho </span></p></li>
+<li><p>The amplitude can be written as: <span class="math display"> T = \frac{e^{i\delta} \sin \delta}{\rho} </span></p></li>
+<li><p>For elastic scattering, the amplitude lies on a <strong>unitarity circle</strong> in the complex plane.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<hr>
+<p>This is about <strong>unitarity</strong>, and I would like to use unitarity here. Last time, and also in the homework exercise sheets, we’ve seen the <strong>Argand diagram</strong>. This is how we determine the values of the amplitude when you plot them in the complex plane.</p>
+<p>For <strong>regular resonances</strong>, the amplitude makes a circle. Unitarity tells us that the imaginary part of the amplitude is driven by the interaction loop, and it’s only determined. The imaginary part of the inverse amplitude from this relation is simply <span class="math inline">-\rho</span>, and the amplitude can be written as an inner real function—a real function without singularities—minus <span class="math inline">\rho</span>. From that, once you plot the amplitude, you end up on a circle.</p>
+<p>How do you see that? This is <span class="math inline">A</span> in terms of <span class="math inline">F</span>, or this is <span class="math inline">T</span>, and what I want is atoms. So my <span class="math inline">F</span> is <span class="math inline">A \times \rho</span>. We haven’t done this last time, but it’s a straightforward exercise to see that such an amplitude is actually sitting on the circle. <strong>Only values that the amplitude can have are on the circle</strong>.</p>
+<p>To see that, one takes this general form and divides by <span class="math inline">\rho</span>, replaces <span class="math inline">\rho</span> by its form in terms of <span class="math inline">\delta</span>, and ends up with something very simple: <span class="math inline">\sin \delta \, e^{i \delta}</span>. This is the only possible value of <span class="math inline">W</span>. You can write it differently: <span class="math inline">e^{2i \delta}/2 - \dots</span>.</p>
+<p>When <span class="math inline">\delta = 0</span>, this is zero. When <span class="math inline">\delta</span> reaches its maximum value, which is <span class="math inline">\pi/2</span>, this is <span class="math inline">1</span>, and <span class="math inline">e^{i \pi/2} = i</span>. So it reaches the maximum value at <span class="math inline">i</span>.</p>
+<p>When <span class="math inline">\delta = \pi/2</span>, this is <span class="math inline">e^{2 \pi i} = -1</span>. But something doesn’t work. Between this and this, I made a mistake. The numerator is <span class="math inline">i/2</span>, and then you have <span class="math inline">1 - e^{2i \delta}</span>. This is straightforward to see what’s happening. You are sitting—and if this distance term were absent, you’d have <span class="math inline">i/2</span>. But this term gives you a shift in the delta direction, and you move along this circle.</p>
+<p>Here is <span class="math inline">\delta = 0</span>, here is <span class="math inline">\delta = \pi/2</span>, and then you move on. Here is <span class="math inline">\delta = \pi</span>. This is the <strong>Argand diagram</strong>.</p>
+<hr>
+<p>For the <strong>elastic amplitude</strong>—where you have only one channel—all allowed values of the amplitude are located along this circle. There are no other possible ways. Among this list, none of them are sitting on the circle. For the single scattering amplitude, none of them would be allowed values from unitarity.</p>
+<p>For <strong>non-elastic scattering</strong>—where particles can transition to other channels—values inside the circle are also allowed. Unitarity tells you that for elastic channels, only the circle is allowed. For inelastic scattering, all values inside the circle are allowed.</p>
+<p>You look at the list and quickly see which are inside, which are not. I’ve already put the values on the complex plane. <span class="math inline">A</span> is not, <span class="math inline">B</span> is in. To arrive at the center, you need some inelastic channels. It cannot be <span class="math inline">\pi \pi</span> to <span class="math inline">\pi \pi</span>. It must be—below the first elastic threshold, the next one is outside. But to make it inside, I think if I put it over eight, this is inside, so <span class="math inline">B</span> is also valid. <span class="math inline">D</span> is here, and it’s even in the negative domain. I have to modify something significantly to make it inside. Put a plus here, perhaps. Then I’m not sure if it sits inside or outside.</p>
+<hr>
+<p><strong>Questions?</strong> <span class="math inline">\delta</span> is the <strong>scattering phase</strong>, a really important quantity in quantum mechanics. You consider a plane wave that interacts with the source, and there is a spherical wave with the scattering phase. This is exactly the same phase. It determines the scattering.</p>
+<ul>
+<li>If <span class="math inline">\delta = 0</span>, that is essentially trivial—<strong>no scattering</strong>.</li>
+<li>This phase determines the <strong>strength of your scattering</strong>.</li>
+</ul>
+</section>
+<section id="unitarity-and-partial-wave-expansions-in-scattering-amplitudes" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="unitarity-and-partial-wave-expansions-in-scattering-amplitudes"><span class="header-section-number">4</span> Unitarity and Partial Wave Expansions in Scattering Amplitudes</h2>
+<p>Is this representation correct? Isn’t this just the <span class="math inline">T</span>-matrix represented as the <span class="math inline">S</span>-matrix? This “$ (1 - e^{2i }) $,” so just this.</p>
+<p>In my bachelor’s, I’ve seen it or used it as the on-shell representation of the <span class="math inline">T</span>-matrix. But it’s not. Not this.</p>
+<p>For the <span class="math inline">S</span>-matrix, you have just the phase, no sign. That’s why I said it’s the <span class="math inline">T</span>-matrix represented as written. Yes, that’s exactly the <span class="math inline">T</span>-matrix that I discussed.</p>
+<p>Now, this <span class="math inline">T</span> is the expectation of the <span class="math inline">T</span>-matrix. Because there’s also the physical factor <span class="math inline">\rho</span> in it, but maybe it just dropped out. Right, exactly.</p>
+<p>In quantum mechanics, the same thing appears, but instead of <span class="math inline">\rho</span>, we have <span class="math inline">K</span>, the wave number for the breakup momentum, which is also part of <span class="math inline">\rho</span>. The factor is slightly different, but <span class="math inline">P</span> is the breakup momentum. That’s what you see in the quantum mechanics derivation.</p>
+<p>There is no “$ $.” This is a relativistic factor that only appears in relativistic scattering. Overall, it’s a normalization constant. But you’re absolutely right.</p>
+<p>From that, you also see the <span class="math inline">T</span>-matrix. The relation between them is <span class="math inline">S = 1 + i \rho T</span>. So the <span class="math inline">S</span>-matrix is <span class="math inline">S = 1 + 2i \rho T</span>. When you substitute this, you should have just <span class="math inline">e^{2i \delta}</span>. Then you see that unitarity is satisfied with <span class="math inline">S^\dagger S = 1</span>.</p>
+<hr>
+<div class="callout callout-style-simple callout-important">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Key formulas discussed:</p>
+<ul>
+<li><span class="math inline">T = \frac{i}{2}(1 - e^{2i\delta})</span></li>
+<li><span class="math inline">S = 1 + 2i\rho T</span></li>
+<li>Unitarity condition: <span class="math inline">S^\dagger S = 1</span></li>
+</ul>
+</div>
+</div>
+</div>
+<hr>
+<p>Quickly, exercise number two: in which case does this happen? For the sake of time, we should move on.</p>
+<p>The first one applies to all of them. To determine that, you do simple spin algebra:</p>
+<ul>
+<li><span class="math inline">0^- \rightarrow 1^-</span> is a <span class="math inline">P</span>-wave.</li>
+<li><span class="math inline">2^+ \rightarrow 0^-</span>.</li>
+<li><span class="math inline">1^- \rightarrow 0^-</span>.</li>
+</ul>
+<p>Here, <span class="math inline">2^+ \rightarrow 0^+</span> in <span class="math inline">S</span>-wave would be <span class="math inline">2^-</span>. But the answer is… Oh, that’s interesting.</p>
+<p>For the first one in the <span class="math inline">P</span>-wave, these two combine to <span class="math inline">1^-</span>, matching the quantum numbers of the <span class="math inline">\rho</span> meson. The <span class="math inline">\rho</span> meson is <span class="math inline">1^-</span>, and this decay conserves parity.</p>
+<p>The second one is electromagnetic. If you combine <span class="math inline">2^+</span> and <span class="math inline">0^+</span> in <span class="math inline">S</span>-wave, you get <span class="math inline">2^-</span>. In <span class="math inline">D</span>-wave, you can have <span class="math inline">0^-</span>, <span class="math inline">1^-</span>, <span class="math inline">2^-</span>, <span class="math inline">3^-</span>, or <span class="math inline">4^-</span>. But the <span class="math inline">D</span> meson has quantum numbers <span class="math inline">1^-</span>, so this matches.</p>
+<p>Importantly, this decay can also happen in different partial waves. No—wait, it cannot. This decay doesn’t have to conserve parity for this transition. Both <span class="math inline">0^-</span> and <span class="math inline">0^+</span> transitions are possible because it’s a weak decay. From this, you get <span class="math inline">S</span>, but it’s not the only answer. Another possibility is <span class="math inline">1^+</span>. With two units of orbital angular momentum, you can get <span class="math inline">1^+</span>, <span class="math inline">2^+</span>.</p>
+<hr>
+<p>I would like to motivate the next subject: how the amplitude <span class="math inline">A(s)</span> behaves near particle thresholds. For <span class="math inline">A(s) = M_1 + M_2</span>, we are still discussing general properties.</p>
+<p>Let’s look at the partial wave expansion for a particle with spin <span class="math inline">j</span> and helicity <span class="math inline">\lambda</span> decaying into two scalar particles. We can rewrite the decay using Wigner rotations, matching the alignment of the final states. The initial state has spin projection <span class="math inline">\lambda</span> along the <span class="math inline">z</span>-axis, and the Wigner <span class="math inline">d</span>-function depends on the helicity difference of the final particles.</p>
+<p>In the rest frame, the spin projection is <span class="math inline">\lambda</span>, and the decay angle is <span class="math inline">\theta</span>. Let’s examine <span class="math inline">\lambda = 0</span> and the spherical harmonics.</p>
+<p>For <span class="math inline">l = 1</span>, it’s <span class="math inline">\cos \theta</span>. For <span class="math inline">l = 2</span>, it’s <span class="math inline">\frac{3}{2} \cos^2 \theta - \frac{1}{2}</span>. And the third one is <span class="math inline">\frac{3}{2} \cos^2 \theta - \frac{1}{2} - 1</span>, right? No, it’s just <span class="math inline">\cos \theta</span>. For <span class="math inline">2 \rightarrow 2</span>, it’s straightforward.</p>
+<hr>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Partial wave expansion for spin <span class="math inline">j</span> and helicity <span class="math inline">\lambda</span>: <span class="math display">
+A(s) \propto \sum_j (2j + 1) d^j_{\lambda,0}(\theta) \mathcal{A}_j(s)
+</span> where <span class="math inline">d^j_{\lambda,0}(\theta)</span> is the Wigner <span class="math inline">d</span>-function.</p>
+</div>
+</div>
+</div>
+<hr>
+<p>The spherical harmonics for <span class="math inline">\lambda = 0</span> are:</p>
+<ul>
+<li><span class="math inline">Y_1^0(\theta) \propto \cos\theta</span></li>
+<li><span class="math inline">Y_2^0(\theta) \propto \frac{3}{2}\cos^2\theta - \frac{1}{2}</span></li>
+</ul>
+<hr>
+<p>The breakup momentum <span class="math inline">P</span> in relativistic scattering is given by: <span class="math display">
+\rho \propto P = \frac{\sqrt{(s - (M_1 + M_2)^2)(s - (M_1 - M_2)^2)}}{2\sqrt{s}}
+</span></p>
+</section>
+<section id="kinematic-singularities-and-angular-momentum-compensation-in-scattering-amplitudes" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="kinematic-singularities-and-angular-momentum-compensation-in-scattering-amplitudes"><span class="header-section-number">5</span> Kinematic Singularities and Angular Momentum Compensation in Scattering Amplitudes</h2>
+<p>Earlier we discussed that there are <strong>invariant variables</strong> described by Mandelstam variables: <span class="math inline">S</span> and <span class="math inline">T</span>. It is often convenient to express the cosine of the scattering angle in terms of these variables. One can use either the basis of the scattering angle and the energy <span class="math inline">\sqrt{S}</span>, or work directly with Mandelstam variables, as they are related. Thus, <span class="math inline">\cos \theta</span> can be expressed in terms of <span class="math inline">T</span> and <span class="math inline">S</span>.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>The relation for cosine of the scattering angle is: <span class="math display">\cos \theta = f(S, T)</span> where <span class="math inline">f(S, T)</span> is a polynomial in <span class="math inline">T</span> and <span class="math inline">S</span>.</p>
+</div>
+</div>
+</div>
+<p>For this decay process, we don’t have <span class="math inline">T</span>. But for the point I would like to make, let’s imagine that this is produced by an external reference—a two-particle scattering that gives us an extra vector to calculate <span class="math inline">T</span>. If <span class="math inline">\cos \theta</span> is expressed in terms of <span class="math inline">S</span> and <span class="math inline">T</span>, one finds that it is essentially a polynomial: a first-order polynomial in <span class="math inline">T</span> and a second-order in <span class="math inline">S</span>, divided by the <strong>Chew-Mandelstam functions</strong>, which are the breakup momentum of the particles in the <span class="math inline">S</span>-channel.</p>
+<hr>
+<p>For the <strong>S-wave</strong>, there is a constant factor. For the <strong>P-wave</strong>, the breakup momentum appears in the first power in the denominator. For the <strong>D-wave</strong>, it appears in the second power. To compensate for the <span class="math inline">p^J</span> dependence in the denominator from angular momentum, this factor must appear in the numerator of the partial wave. This ensures the total amplitude is free of kinematic singularities at the threshold. The amplitude does not fully account for the threshold behavior <span class="math inline">p^{2L}</span>, so this compensation is necessary.</p>
+<div class="callout callout-style-simple callout-important">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Breakup momentum dependence for partial waves:</p>
+<ul>
+<li><strong>S-wave (<span class="math inline">L = 0</span>)</strong>: No explicit <span class="math inline">p</span> dependence</li>
+<li><strong>P-wave (<span class="math inline">L = 1</span>)</strong>: <span class="math inline">\frac{1}{p}</span></li>
+<li><strong>D-wave (<span class="math inline">L = 2</span>)</strong>: <span class="math inline">\frac{1}{p^2}</span></li>
+</ul>
+</div>
+</div>
+</div>
+<hr>
+<p>This is often seen in phenomenological constructions. When fitting data, the recipe includes <span class="math inline">p^L</span> in the partial wave (for <span class="math inline">L</span>-wave) because it compensates for the angular momentum dependence, which scales as <span class="math inline">1/p^L</span>. This is important. For example, in the parameterization of the <span class="math inline">\rho</span> meson decaying to <span class="math inline">\pi\pi</span>, the <span class="math inline">p^2</span> factor appears twice: once in the numerator to compensate for angular dependence, and once in the denominator in the width parameter, because the width sums over the <span class="math inline">\pi\pi</span> scattering phase space.</p>
+<p>This leads to a parameterization where, at every vertex, there is a <span class="math inline">p^1</span>. The <span class="math inline">p^{2L}</span> arises from vertices due to the <span class="math inline">p^2</span> factor, and another from phase space. For the <span class="math inline">\rho</span> meson transition, this results in <span class="math inline">p^3</span> appearing in the denominator of the width parameter.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Rho meson width parameterization (P-wave decay, <span class="math inline">J = 1</span>): <span class="math display">\Gamma_\rho \sim p^3</span></p>
+</div>
+</div>
+</div>
+<hr>
+<p>Another example is the <span class="math inline">D</span> meson decay, where <span class="math inline">p^L</span> also appears. The <span class="math inline">D^* \to D\pi</span> decay is in P-wave, so there is always a momentum factor. Often, when constructing amplitudes, the kinematic-singularity-free amplitude <span class="math inline">\hat{A}</span> is introduced, defined as <span class="math inline">\hat{A} = A \cdot (2p)^J</span> for <span class="math inline">L</span>-wave. This replacement introduces the factor <span class="math inline">(2p)^{2J}</span> on the right side.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Kinematic-singularity-free amplitude: <span class="math display">\hat{A} = A \cdot (2p)^J \quad \text{(for L-wave)}</span></p>
+</div>
+</div>
+</div>
+<hr>
+<p>I need to clarify the difference between resonance production and particle scattering. Typically, <span class="math inline">A</span> denotes the production amplitude, while <span class="math inline">T</span> denotes the scattering amplitude. The kinematic-free amplitude reduction ensures <span class="math inline">T_J</span> is free of kinematic singularities. The key difference is that <span class="math inline">T</span> involves the same initial and final states (e.g., <span class="math inline">\pi\pi \to \pi\pi</span>), while <span class="math inline">A</span> involves different states (e.g., <span class="math inline">X \to \pi\pi</span>).</p>
+<p>For <span class="math inline">T_J</span>, the factor is <span class="math inline">(2p)^{2J}</span>. The amplitude here refers to scattering, not production. In the production amplitude, <span class="math inline">p</span> and <span class="math inline">q</span> are distinct, but for identical initial and final states, they are the same, leading to <span class="math inline">p^{2J}</span>. The denominator’s parameterization describes how particles scatter, which is why the factor <span class="math inline">(2J + 1)</span> appears.</p>
+<div class="callout callout-style-simple callout-important">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Partial wave expansion:</p>
+<ul>
+<li><strong>Scattering (<span class="math inline">\pi\pi \to \pi\pi</span>)</strong>: <span class="math inline">T_J \sim (2p)^{2J}</span></li>
+<li><strong>Production (<span class="math inline">X \to \pi\pi</span>)</strong>: <span class="math inline">A_J \sim (2p)^J</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="scattering-phase-shift-and-amplitude-near-threshold" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="scattering-phase-shift-and-amplitude-near-threshold"><span class="header-section-number">6</span> Scattering Phase Shift and Amplitude Near Threshold</h2>
+<p>Let’s think how to derive this in the quickest way.</p>
+<p>It is straightforward to see that the <strong>phase shift</strong> <span class="math inline">\delta</span> near threshold behaves as:</p>
+<p><span class="math display">
+\delta \propto p^{2L + 1}
+</span></p>
+<p>Transforming this to <span class="math inline">\sqrt{s}</span>, we get:</p>
+<p><span class="math display">
+\delta \propto (\sqrt{s} - (m_1 + m_2))^{2L + 1}
+</span></p>
+<hr>
+<p>For <strong>S-wave scattering</strong>, the amplitude is constant at the threshold, as is the scattering amplitude. We can write this as:</p>
+<p><span class="math display">
+A = \frac{1}{R - i \rho}
+</span></p>
+<p>For the S-wave at threshold, <span class="math inline">\rho</span> vanishes because <span class="math inline">\rho</span> has the momentum in the first power, leaving only the regular function <span class="math inline">R</span>.</p>
+<p>The value of <span class="math inline">R</span> at the threshold is called the <strong>scattering length</strong>. Let’s denote it as <span class="math inline">\alpha</span> (or <span class="math inline">a</span>).</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Scattering Length Approximation</strong>: Replace the unknown <span class="math inline">R</span> function by a constant. This is valid for all amplitudes near the threshold, where <span class="math inline">R</span> behaves as a constant.</p>
+</div>
+</div>
+</div>
+<hr>
+<p>For some amplitudes, this approximation holds even farther from the threshold, especially if no other singularities influence the amplitude. There are two interesting cases:</p>
+<ul>
+<li><strong><span class="math inline">R &gt; 0</span></strong></li>
+<li><strong><span class="math inline">R &lt; 0</span></strong></li>
+</ul>
+<p>These lead to distinct phenomena.</p>
+<hr>
+<p>As a function of <span class="math inline">s</span>, <span class="math inline">\rho</span> starts at the threshold and grows like:</p>
+<p><span class="math display">
+\rho \approx \frac{1}{2} \sqrt{s - (m_1 + m_2)^2}
+</span></p>
+<p>Near threshold, it behaves as <span class="math inline">\sqrt{s}</span>.</p>
+<p>Below the threshold, <span class="math inline">\rho</span> becomes imaginary. For <span class="math inline">s &lt; (m_1 + m_2)^2</span>:</p>
+<p><span class="math display">
+\rho = i \sqrt{(m_1 + m_2)^2 - s}
+</span></p>
+<p>So <span class="math inline">-i\rho</span> has a negative imaginary part.</p>
+<hr>
+<ul>
+<li>If <span class="math inline">1/a</span> is <strong>negative and small</strong>, there is a zero in the denominator.</li>
+<li>If <span class="math inline">a</span> is <strong>positive</strong>, there is no pole in the physical region. The function continues downward, with <span class="math inline">\rho</span> negative.</li>
+</ul>
+<p>The square root is a <strong>two-valued function</strong>, creating a branch point and a cut. For every point, the square root can be evaluated with:</p>
+<ul>
+<li><strong>Plus sign</strong> (on the first sheet)</li>
+<li><strong>Minus sign</strong> (on the second sheet)</li>
+</ul>
+<p>For <span class="math inline">a &gt; 0</span>, there is still a pole, but it is hidden—only visible if you go under the cut. This is the <strong>virtual state</strong>: a pole below the threshold on the second Riemann sheet.</p>
+<hr>
+<div class="callout callout-style-simple callout-important">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Key Takeaway</strong>: The scattering length approximation simplifies the amplitude near threshold, but the behavior of <span class="math inline">\rho</span> and the pole conditions reveal deeper structures like virtual states.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="scattering-length-bound-states-and-effective-field-theory-in-threshold-scattering" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="scattering-length-bound-states-and-effective-field-theory-in-threshold-scattering"><span class="header-section-number">7</span> Scattering Length, Bound States, and Effective Field Theory in Threshold Scattering</h2>
+<p>The <strong>scattering length</strong> is an important quantity that is measured from any scattering experiment in nuclear physics. This is one of the <strong>good observables</strong> that people use. This quantity characterizes the strength of the matrix element at the threshold.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Near threshold, the transition matrix element simplifies to: <span class="math display"> T \approx A </span> where <span class="math inline">T</span> is the transition matrix and <span class="math inline">A</span> is the scattering length.</p>
+</div>
+</div>
+</div>
+<p>As you see, you just evaluate <span class="math inline">T</span> at the threshold, this vanishes and <span class="math inline">T</span> is literally equal to <span class="math inline">A</span>. But if the validity of the scattering length approximation extends a little further, you find that for large values of <span class="math inline">A</span>, you can get a bound state near the threshold.</p>
+<hr>
+<p>This bound state is the example of the <strong>deuteron</strong>. The deuteron, which is formed by the scattering of a proton and neutron, is a bound state of the proton and neutron. It is a good example where the scattering length approximation works.</p>
+<p>When you scatter a proton and neutron near threshold, you find that <span class="math inline">A</span> is negative, which corresponds to the neutron being below the threshold. Alternatively, due to the presence of the neutron below threshold, when a proton and neutron scatter, they feel the presence of the neutron and have a negative scattering length.</p>
+<p>The scattering length is measured in units of <strong>Fermi</strong>. For the deuteron, it is approximately <span class="math inline">-5.4</span> to <span class="math inline">-5.5</span> Fermi.</p>
+<hr>
+<p>We will now consider different approaches to quantum physics. One of them, <strong>effective field theory at low energy</strong>, deals with calculating a low momentum expansion. This approach gives parameters like the scattering length approximation or the next term in the expansion, called the <strong>effective range</strong>.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>The <strong>effective range expansion</strong> for S-wave scattering is: <span class="math display"> k \cot \delta_0 \approx -\frac{1}{A} + \frac{1}{2} r_0 k^2 + \mathcal{O}(k^4) </span> where:</p>
+<ul>
+<li><span class="math inline">k</span> is the momentum,</li>
+<li><span class="math inline">\delta_0</span> is the S-wave phase shift,</li>
+<li><span class="math inline">A</span> is the scattering length,</li>
+<li><span class="math inline">r_0</span> is the effective range.</li>
+</ul>
+</div>
+</div>
+</div>
+<p>For neutron scattering, measurements are difficult because neutrons are non-magnetic. Proton scattering is much easier to calculate.</p>
+<p>In the notes, I have a value, but the conventions are slightly different. The units must be corrected—we want something in Fermi. What I have here is the mass of the pion in the numerator and the low-energy constant <span class="math inline">F_\pi</span> in GeV. They cancel each other, so this is not in our usual conventions.</p>
+<hr>
+<p>For pion s-wave scattering, we can use <strong>effective field theory</strong> to compute scattering near threshold. The result depends on a single constant, <span class="math inline">F_\pi</span>, which is fixed experimentally. This low-energy theory uses <strong>spontaneous symmetry breaking</strong>, similar to the Higgs mechanism. Like all effective field theories, it builds the most general Lagrangian and fixes all constants.</p>
+<p>At the lowest order, the amplitude is constant. This theory does not account for unitarity, so it does not include an imaginary part. The constant is equal to the scattering length in this sector. Effective field theory works well near threshold, where it provides constraints for fitting experimental data.</p>
+<hr>
+<p><strong>Unitarity</strong> tells us how the amplitude behaves generally, but not the exact functional form. Constraints on these functions come from other methods, such as effective field theory.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>The unitarity condition for partial wave amplitudes is: <span class="math display"> \text{Im}\, f_l(k) = k |f_l(k)|^2 </span> which must be satisfied for elastic scattering.</p>
+</div>
+</div>
+</div>
+<p>I planned to cover more today, including <strong>chiral perturbation theory</strong>, but we are out of time.</p>
+<hr>
+<p>We discussed <strong>kinematic singularities</strong>, which arise because the full amplitude must be free of them. Angular factors introduce <span class="math inline">1/P^j</span> due to cosine or sine terms. The same factor appears in partial wave amplitudes and modifies unitarity.</p>
+<p>We introduced <span class="math inline">\hat{A}</span> and <span class="math inline">\hat{T}</span>, which are kinematic singularity-free functions. For mean parity equations, an extra factor impacts how we construct the amplitude.</p>
+<hr>
+<p>The first term in the expansion is related to the partial wave. For the S-wave, it is simply <span class="math inline">P</span>, and the prefactor is <span class="math inline">1/A</span>. The next term is <span class="math inline">r P^2 / 2</span>, where <span class="math inline">r</span> is the effective range. The function <span class="math inline">R</span> is regular, and <span class="math inline">P^2</span> appears because lower powers would introduce a branch point.</p>
+<hr>
+<p>We examined the <strong>analytic structure</strong> of the scattering length approximation. A negative scattering length introduces a pole, while a large positive value leads to a virtual state.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>The pole position for a bound state near threshold is: <span class="math display"> E_{\text{pole}} \approx -\frac{\hbar^2}{2\mu A^2} </span> where <span class="math inline">\mu</span> is the reduced mass and <span class="math inline">A</span> is the scattering length (negative for a bound state).</p>
+</div>
+</div>
+</div>
+<p>The closer the pole is to the threshold, the larger the amplitude near threshold. A large scattering length suggests a nearby pole—either a virtual state (positive) or a bound state (negative).</p>
+<hr>
+<p>For <strong>proton-neutron scattering</strong>, the interaction strength is high due to the deuteron. However, scattering cannot form a deuteron because energy conservation prevents it. The amplitude above threshold reflects the pole below threshold.</p>
+<p>If we tune the scattering length from a small negative value, the pole moves toward threshold. At <span class="math inline">A = -\infty</span>, the pole reaches threshold, then jumps to <span class="math inline">+\infty</span> and moves away.</p>
+<p>An example of a virtual state is <strong>neutron-neutron scattering</strong>. There is no bound state, but the amplitude is large at threshold due to a virtual state.</p>
+<hr>
+<p>That concludes today’s discussion. Next time, we will cover methods for sophisticated matrix element calculations, including <strong>lattice QCD</strong>.</p>
+</section>
+<section id="homework-submission-and-scheduling-discussion" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="homework-submission-and-scheduling-discussion"><span class="header-section-number">8</span> Homework Submission and Scheduling Discussion</h2>
+<p><strong>Will</strong> wants to give me your homework exercise, but <strong>Ilya</strong> is not present. I think you will have a replacement for this. <em>No, you don’t.</em></p>
+<hr>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Scheduling discussion follows below. The current date is established as Tuesday the 11th before planning future dates.</p>
+</div>
+</div>
+</div>
+<p>But which day is better for you? <strong>Wednesday.</strong> Okay, let’s fix it.</p>
+<p>The date today is <strong>Tuesday, the 11th.</strong> Yeah, the <strong>19th.</strong> And then the next one, the <strong>26th.</strong> 26th. 26th.</p>
+<hr>
+<p><strong>TP2 band discussion:</strong> Do you have a flag of TP2? Is it John’s logo or is it combined with the whole logo? It’s much… It’s, it’s. It.</p>
+<hr>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>No physics formulas were present in this administrative discussion. For reference, typical nuclear physics formulas might include:</p>
+<ul>
+<li>Radioactive decay: <span class="math inline">\frac{dN}{dt} = -\lambda N</span></li>
+<li>Half-life: <span class="math inline">t_{1/2} = \frac{\ln(2)}{\lambda}</span></li>
+</ul>
+<p>But these are not relevant to the current conversation about scheduling and logos.</p>
+</div>
+</div>
+</div>
+<hr>
+<p><em>All original sentences preserved exactly as spoken, with only Markdown formatting added for clarity.</em></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

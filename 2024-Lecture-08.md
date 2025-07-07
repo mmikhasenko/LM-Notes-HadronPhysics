@@ -1,504 +1,552 @@
-<!--
-Cosine simularity: 0.9477788073897907
--->
-## Introduction to Analytic and Holomorphic Functions
+## Unitarity, Analyticity, and the Schwarz Reflection Principle
 
-Today's lecture will discuss unitarity and complex functions, building on what was briefly mentioned in the previous lecture. This topic is important and connects to concepts you already know from mathematics.  
 
-I will introduce two mathematical definitions: **analytic functions** and **holomorphic functions**, which are often used interchangeably.  
+In today's lecture, I would like to discuss **unitarity** and **complex numbers**, and move towards discussing **complex functions**.
+We had too little time in the previous lecture to cover these aspects, but they are **important to understand** and connect to what you already know from mathematics.
 
-A function is called **analytic** at a point $x_0$ if it can be represented by a Taylor series that converges to the function in a neighborhood of $x_0$. Mathematically, this means:  
+---
 
+I will introduce two mathematical concepts:
+
+- **Analytic functions**
+- **Holomorphic functions** (which are interchangeable terms)
+
+A function is called **analytic** if there is a Taylor series equal to the function in the vicinity of each point.
+If there are coefficients such that the series gives exact values of the function, then the function is analytic at the point $X$.
+
+::: callout-note
+The Taylor series expansion for an analytic function at point $x_0$ is:
 $$
 f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(x_0)}{n!} (x - x_0)^n
 $$
+:::
+A function is analytic at $X_0$ if the series exists for $(X - X_0)^N$, with coefficients depending on $X_0$:
+$$
+f(X) = \sum_{n=0}^{\infty} \frac{f^{(n)}(X_0)}{n!} (X - X_0)^n.
+$$
+If the **complex derivatives** exist—meaning the limit exists when approaching the point from any direction—the function is called **holomorphic**, which is the same as analytic.
+*Holomorphic is just a fancy word for analytic—mathematicians like cool terms.*
 
-Here, $f^{(n)}(x_0)$ are the coefficients (derivatives of $f$ evaluated at $x_0$). If such a series exists, the function is analytic at $x_0$.  
+---
 
-Similarly, a function is called **holomorphic** if its complex derivative exists at every point in its domain, meaning the derivative is well-defined regardless of the direction of approach in the complex plane.  
+- **All polynomials** are fully analytic.
+- **Rational functions** (polynomials divided by polynomials) are analytic except at the zeros of the denominator.
+- A function is analytic in a **domain** if every point in that domain is a point of analyticity.
+- The **square root function** $\sqrt{X}$ is analytic everywhere except at zero, where it has no derivative or valid Taylor series—this is called a **branch point**.
+
+---
+
+**Real analytic functions** are another interesting class.
+For example, $\sqrt{X}$ is real analytic.
+They satisfy the **Schwarz reflection principle**: when extended to the complex plane, the function evaluated at the conjugate point equals the conjugate of the function:
+$$
+f(\overline{z}) = \overline{f(z)}.
+$$
 
 ::: callout-note
-The terms *analytic* and *holomorphic* are equivalent for complex functions. Don't be intimidated by the word "holomorphic"—it simply means the function is analytic.
+Demonstration using $1 + i = \sqrt{2} e^{i\pi/4}$:
+
+- $\sqrt{1 + i} = 2^{1/4} e^{i\pi/8}$
+- $\sqrt{1 - i} = 2^{1/4} e^{-i\pi/8}$
+This confirms the reflection principle since $\sqrt{\overline{z}} = \overline{\sqrt{z}}$.
 :::
-<!--
-Cosine simularity: 0.945084418823526
--->
-## Properties and Examples of Analytic Functions
+---
 
-Don't be afraid of the word holomorphic—this is just mathematicians inventing cool words. As an example, let me give you functions that are fully analytic. All polynomials are analytic. A rational function (polynomial divided by polynomial) is analytic except at a finite number of points, which are the zeros of the denominator.  
+For **analytic functions** of a single argument, it's useful to visualize the domain as the complex plane:
 
-When we define a function as analytic at a point, and when we talk about a domain, it means every point in this domain is a point of analyticity. For example, $\sqrt{x}$ is analytic everywhere except at zero. Zero is called a **branch point**, where the derivative does not exist and no Taylor series converges to the function. Both conditions fail, making it non-analytic at that point.  
+- **Real part** on the x-axis
+- **Imaginary part** on the y-axis
 
-Real analytic functions are another interesting class—they are real-valued and analytic, with certain scalability properties. For example, $\sqrt{x}$ is real analytic. There is a key property called the **Schwarz reflection principle**: if you evaluate the function in the complex plane, it satisfies  
+The Schwarz reflection principle implies **symmetry** between the upper and lower planes—values in the lower plane can be derived from the upper plane via conjugation.
 
-$$
-f(\overline{z}) = \overline{f(z)}
-$$  
+For instance:
 
-where $\overline{z}$ is the complex conjugate. Using our example, we can test this at $1 + i$.
+- $1 + i$ has magnitude $\sqrt{2}$ and angle $\pi/4$
+- Its square root is $2^{1/4} e^{i\pi/8}$
+- Similarly, $1 - i$ gives the conjugate result, illustrating the reflection principle.
 
-<!--
-Cosine simularity: 0.9155999997945228
--->
-## Introduction to Analytic Functions and Complex Plane Visualization
+## Cauchy's Theorem and Numerical Integration of Discontinuous Functions
 
-For analytic functions of a single argument, it is convenient to visualize the domain as a complex plane, where the x-axis represents the real part of the argument and the y-axis represents the imaginary part. At every point in this plane, we can compute the function. While this diagram does not fully describe the function, it helps illustrate its behavior.  
 
-The **stress deflection principle** suggests a relationship between the upper and lower half-planes: values in the lower plane can be computed using values from the upper plane. For example, consider the function evaluated at $1 + i$.  
 
-$$
-1 + i = \sqrt{2} \cdot e^{i \pi/4}
-$$
-
-Here, $\sqrt{2}$ is the magnitude (length) and $\pi/4$ (45 degrees) is the angle. Evaluating the function further, we obtain:  
-
-$$
-\sqrt{1 + i} = \sqrt[4]{2} \cdot e^{i \pi/8}
-$$
-
-This demonstrates how analytic functions can be decomposed into their magnitude and phase components in the complex plane.
-
-<!--
-Cosine simularity: 0.9124673701607288
--->
-## Integration of Discontinuous Functions in Complex Analysis
-
-We can evaluate $4 \sqrt{2} e^{i \pi/8}$ and $1 - i = \sqrt{2} e^{-i \pi/4}$ by considering their arguments. The function can be evaluated either directly or by using the conjugated argument to obtain the conjugated images.  
-
-In the context of contour integration, if we integrate a function over a closed contour in the complex plane, the value of the integral is determined by all non-analytic features inside the contour. For poles, this is given by residues; for branch points, it involves the behavior around the discontinuity.  
+I would like to cover **Cauchy's theorem**.
+It states that the integral over a closed contour in the complex plane of a function is equal to all **non-analytic contributions** inside this contour.
+If it's a pole, it's given by residues. If it's a branch point, the correct way is to contour around it, and so on—the left side captures all non-analytic behavior.
 
 ::: callout-important
-Even for discontinuous functions, the integral can be numerically well-defined. For example, integrating $\sqrt{x}$ over a circle of radius 1 converges despite the discontinuity at $x = 0$.
+**Cauchy's Integral Theorem (general form)**:
+$$
+\oint_\gamma f(z) \, dz = 2\pi i \sum \text{Res}(f, a_k)
+$$
+where $\gamma$ is a closed contour and $a_k$ are the poles (or other singularities) inside $\gamma$.
 :::
-Consider the function defined on the unit circle:  
+What I realized recently is that this is actually a **numerically well-defined procedure** to integrate a discontinuous function.
+For example, we can compute the integral of $\sqrt{z}$ over a circle of radius 1, and the integral converges despite the function being discontinuous at the branch point.
 
-- Above $\phi = 0$, the function is $+i$.  
-- Below $\phi = 0$, it is $-i$.  
-This creates a jump discontinuity at $\phi = 0$ (or $2\pi$).  
-
-To compute the integral, we parameterize $x = e^{i \phi}$:  
-
+On the circle, the function is parameterized as $z = e^{i\phi}$.
+Above the branch cut, it's $+i$, and below, it's $-i$.
+If I plot the function in the integration domain, the integral becomes:
 $$
-\int_{0}^{2\pi} e^{i \phi} \cdot i \, d\phi \cdot \sqrt{e^{i \phi}}
+\int_0^{2\pi} i e^{i\phi} \sqrt{e^{i\phi}} \, d\phi.
 $$
+The key point is that within the integration domain $0$ to $2\pi$, the function jumps at $\phi = 0$ due to the branch cut.
+Yet, the integral remains well-defined because it’s equivalent to integrating around the branch point.
 
-Simplifying, this becomes:  
-
+Let me emphasize this more clearly. The integral is:
 $$
-\int_{0}^{2\pi} e^{i \phi (1 + \frac{1}{2})} \cdot i \, d\phi = \int_{0}^{2\pi} e^{i \frac{3}{2} \phi} \cdot i \, d\phi
+\int_0^{2\pi} e^{i\phi} \cdot i \cdot \sqrt{e^{i\phi}} \, d\phi.
 $$
-
-However, because the function is discontinuous, we cannot naively evaluate it at the endpoints. Instead, we shift the integration range to avoid the discontinuity:  
-
+This simplifies to:
 $$
-\int_{-\pi}^{\pi} e^{i \frac{3}{2} \phi} \cdot i \, d\phi
+\int_0^{2\pi} e^{3i\phi/2} \, d\phi.
 $$
+However, since the function is discontinuous, I cannot naively evaluate it at the endpoints.
 
-This ensures the function is continuous within the new range, making the integral well-defined. The key takeaway is that even with discontinuities, careful treatment of the integration domain allows for convergent results.  
+---
 
-The example illustrates how branch points and discontinuities can be handled in complex integration, similar to integrating around branch cuts.
 
-<!--
-Cosine simularity: 0.9449375259218931
--->
-## Analyticity and Unitarity in Scattering Amplitudes
+A better approach is to shift the integration range to $-\pi$ to $\pi$, where the function is continuous.
+Mathematically, this becomes:
+$$
+\int_{-\pi}^{\pi} e^{3i\phi/2} \, d\phi.
+$$
+Evaluating this properly accounts for the branch cut.
 
-The integration direction is equivalent to integrating the function in this direction. If we shrink the contour, it becomes an integral from zero to minus one of the function evaluated above. One probably finds the same answer, which in this case will be five.  
+The deeper insight here is that this integral equals the integral of the **discontinuity across the branch cut**.
+If I shrink the contour, it’s equivalent to integrating $\sqrt{z}$ along the real axis from $0$ to $-1$.
+You’ll find the same result—this is the power of **Cauchy's theorem**.
 
-This is a nice property of analytic functions, where Cauchy's theorem plays a crucial role. It states that you can deform your contour of integration freely as long as you avoid non-analytic regions. You can compute the integral along a circular contour or shrink it into a different path. For this example, I encourage you to verify that these methods yield the same result. If they don’t, we can discuss it further—I believe it’s a straightforward calculation, but we’ll proceed for now.  
+It tells you that you can deform the contour freely, as long as you avoid **non-analytic regions**.
+You can compute the integral along the circle or shrink it to a real-axis integration.
+For this example, I encourage you to verify that both methods give the same answer.
 
-What remains is to evaluate the imaginary part of the expression, which is simply $\sqrt{x} \cdot i$ (or without the $i$), leading to a simple integration on the real axis.  
+---
 
-The scattering amplitude is a remarkable function. Returning to our earlier discussion, we derived the optical theorem and examined the analytic structure of this function. The claim is that the amplitude is a "real magic" function—or at least part of it.  
 
-Let’s clarify the assumptions and physical principles here. The amplitude itself is not directly measurable in experiments; we only observe its square. Access to the amplitude is indirect, mediated by observables. However, scattering theory and probability conservation impose constraints on the amplitude, particularly on its imaginary part, and dictate where this imaginary part exists.  
+The final step is to evaluate the real-axis integral:
+$$
+\int_{-1}^0 \sqrt{x} \, dx.
+$$
+This is straightforward, and the result aligns with the contour integration.
+The key takeaway is that even with discontinuities, **Cauchy's theorem** provides a rigorous way to compute such integrals.
 
-The analyticity of the amplitude is a postulate—a foundational principle of our framework. It’s stronger than an assumption; it’s the building block of our series. All theories we’ve discussed so far incorporate unitarity, which is tied to causality—a property linked to analyticity.  
+::: callout-note
+**Equivalence of Methods**:
+The integral along the branch cut ($\int_{-1}^0 \sqrt{x} \, dx$) matches the contour integral result, demonstrating the flexibility of contour deformation in complex analysis.
+:::
+## The Scattering Amplitude: Analyticity, Unitarity, and Threshold Behavior
 
-The amplitude being analytic is postulated in our theory, but it’s connected to causality: events outside each other’s light cones cannot influence one another. This relationship between causality and analyticity is discussed in various textbooks, but we take it as a given here.  
 
-Unitarity further refines this picture. The amplitude is real analytic below the threshold, meaning it has no imaginary part in this regime. The imaginary part arises only above the threshold, as it’s associated with particle production in intermediate states. Below threshold, the amplitude is purely real.  
+The **scattering amplitude** is the *real magic function*.
+Let's come back to our two sketches in the amplitude, for which we derived the **optical theorem** and discussed the **analytic structure** of this function.
+The claim is that the amplitude is a *real magic function*, or part of it.
+
+---
+
+1. **Assumptions**:
+The amplitude is not accessed directly in the experiment, so we cannot validate its properties exactly.
+What we measure is the amplitude squared.
+Access to the amplitude itself is only available through our observables.
+
+2. **Constraints from Scattering Theory**:
+However, scattering theory and probability conservation imply that certain properties of the amplitude constrain the imaginary part and tell us where the imaginary part is present.
+
+---
 
 ::: callout-important
-The optical theorem connects the imaginary part of the amplitude to the total cross-section, reinforcing the relationship between analyticity and unitarity.
+**Analyticity as a Postulate**:
+The fact that it's analytic is a postulate.
+This is something we have to assume—though it's stronger than an assumption.
+We don't assume its analytic properties; this is the building principle of our series.
 :::
-This structure—analyticity, unitarity, and causality—forms the backbone of scattering theory, ensuring consistency with physical principles while enabling predictive power.  
+---
 
-<!--
-Cosine simularity: 0.9521017548198791
--->
-## Threshold Singularities and Branch Points in Scattering Amplitudes
+- **Unitarity**:
+All series we have seen so far have unitarity built in.
+Therefore, not only unitarity but also **causality**, which is related to analyticity.
 
-Below the threshold, the amplitude has no imaginary part—it is purely real. Consider a diagram on the x-axis representing the complex plane of energy, where $S = E^2$ and $E$ is the center-of-mass energy. The amplitude $A(S)$ is an analytic function, but we typically deal with its values only above the threshold. However, the principles of our theory allow us to extend the domain of definition into the full complex plane using analyticity.  
+- **Causality and Analyticity**:
+The amplitude being an analytic function is a principle postulated in our theory.
+It is related to the **causality** of the theory—that the past does not influence events outside the causality cone.
 
-This means we can treat the amplitude as a complex function, probing it not just for real interaction energies (e.g., 5 GeV) but also for complex values. This extended function exhibits singularities, particularly branch points. The absence of an imaginary part below threshold and its sudden appearance above threshold indicates the emergence of these singularities.  
+This connection is not derived here, but you can find it in several books linking causality to analyticity.
+We take it as a postulate.
 
-For example, the two-particle threshold introduces a square-root singularity, as seen in the prefactor of the imaginary part of the amplitude:  
+---
 
+- **Analyticity**:
+The amplitude is analytic, and unitarity further tells us that it is **real analytic below the threshold**.
+
+- **Imaginary Part and Thresholds**:
+The imaginary part is connected to the appearance of particles in intermediate states.
+This only occurs **above threshold**, because the interaction introduces an imaginary part there.
+Below threshold, the amplitude has no imaginary part; it is purely real.
+
+---
+
+1. **Optical Theorem**:
 $$
-\text{Im} \, A(s) = \frac{1}{2} \cdot \frac{1}{8\pi} \cdot \frac{2p}{\sqrt{s}} |a(s)|^2
-$$
-
-Here, $p$ is the breakup momentum, given by:  
-
-$$
-p = \frac{\lambda^{1/2}}{2\sqrt{s}}, \quad \lambda^{1/2}(s, m_1^2, m_2^2) = \sqrt{[s - (m_1 + m_2)^2][s - (m_1 - m_2)^2]}
-$$
-
-The breakup momentum $p$ vanishes at the threshold, where the system has minimal energy—just the sum of the particle masses. At this point, the particles have no residual momentum, and the singularity arises from the vanishing of $p$.  
-
-::: callout-note
-The phase space factor $\frac{2p}{\sqrt{s}}$ in the imaginary part of the amplitude is directly tied to the two-body phase space and vanishes at threshold, reflecting the kinematic constraints of particle production.
-:::
-This structure is generic: every threshold introduces singularities, and their form depends on the number of particles involved. For a detailed derivation, refer to Gribov's book, but the square-root singularity for the two-particle case is straightforward to derive from the properties of the imaginary part and phase space.  
-
-<!--
-Cosine simularity: 0.9657801956878016
--->
-## Threshold Singularities and the Schwarz Reflection Principle  
-
-For mathematically, you see that if you compute the two-body breakup momentum, you find that it is equal to the Cullen function:  
-
-$$
-x^2 + y^2 + z^2 - 2xy - 2yz - 2zx
-$$  
-
-This can be arranged as the product of two terms:  
-
-$$
-(x - y + z) \cdot (x - y - z)
-$$  
-
-Here, $x, y, z$ represent the masses of the two particles and their differences. The first term gives a singularity at the threshold, while the second gives a singularity at the pseudothreshold.  
-
-The relation we wrote is valid only above the threshold, where the imaginary part is non-zero and appears only once you cross the threshold. This imaginary part exhibits a square-root behavior, indicating that the function itself has a square-root singularity.  
-
-::: callout-note
-The square-root singularity above the threshold suggests a branch point in the amplitude, connecting the function's behavior in the upper and lower half-planes.
-:::
-This connects to the Schwarz reflection principle. Since our function was real and analytic on a segment of the real axis, the Schwarz reflection principle applies. It relates the amplitude in the upper half-plane to the amplitude in the lower half-plane. If the function $F(z)$ is analytic in the upper half-plane and real on the real axis, then:  
-
-$$
-F(z^*) = F^*(z)
-$$  
-
-This allows us to analytically continue the amplitude into the full complex plane, revealing the structure of singularities and their implications for scattering amplitudes.
-
-<!--
-Cosine simularity: 0.8956985218406526
--->
-## Analytic Structure and Branch Points in Complex Functions
-
-The function $F(x + i\epsilon)$ tells us that the imaginary part flips when crossing the real axis from above to below. This is a relation where $\epsilon$ is infinitesimal.  
-
-The term "infinitesimal" means very, very small. In this context, $i\epsilon$ is a small imaginary displacement indicating whether you are evaluating the function just above or just below the real axis.  
-
-This behavior arises due to phase space considerations. If there were no phase space configuration summations, the imaginary part could be directly related to the amplitude itself, and there might not even be branch points. However, summing over phase space configurations introduces a square-root branch point.  
-
-This branch point indicates that the amplitude has a singularity starting at the threshold and extending in the positive direction.  
-
-::: callout-note
-The amplitude's branch point structure is tied to the analytic continuation of the function across the real axis, where the function's value changes depending on the direction of approach.
-:::
-To illustrate this, consider a simple real analytic function with a branch cut, such as the square root function. The square root of $x$ has a branch cut on the left side of the complex plane.  
-
-To determine where the branch cut lies, evaluate the function just above and below the real axis:  
-
-- For $x = -1 + i\epsilon$, $\sqrt{-1 + i\epsilon} = i$  
-- For $x = -1 - i\epsilon$, $\sqrt{-1 - i\epsilon} = -i$  
-
-This shows that the function changes sign when crossing the branch cut, confirming its non-analytic nature.  
-
-A branch point splits the complex plane into distinct Riemann sheets, where the function takes different values on each sheet. The branch cut is the curve connecting the branch point to infinity, separating these sheets.  
-
-The square-root singularity is a common feature in scattering amplitudes, particularly near kinematic thresholds. This structure is mathematically unavoidable due to the phase space constraints and leads to the analytic properties observed in physical amplitudes.  
-
-The Schwarz reflection principle further connects the behavior of the amplitude in the upper and lower half-planes. If $F(z)$ is analytic in the upper half-plane and real on the real axis, then:  
-
-$$
-F(z^*) = F^*(z)
-$$  
-
-This allows for the analytic continuation of the amplitude into the full complex plane, revealing the underlying singularity structure.
-
-<!--
-Cosine simularity: 0.9321677706056716
--->
-## Analytic Continuation and Branch Cuts in Complex Functions
-
-The functions in question exhibit analyticity everywhere except at certain points, and you must work to verify this analyticity. Essentially, you need to analytically continue these functions. If you observe the pattern, you can always make the function analytic, but it requires extending the domain of analyticity.  
-
-Returning to the example, consider the function $-X$. Its analytic structure can be evaluated in the complex plane, revealing full analyticity except for a branch cut extending to the right. Evaluating this function at $-1$ gives:  
-
-$$
-F(-1) = 1 - (-1) = 2
-$$  
-
-This is an example of a real analytic function. Another example is the amplitude:  
-
-$$
-A(s) = \sqrt{-s + m_1 m_2}
-$$  
-
-This function has similar properties.  
-
-In the $x$-plane, the first function has a branch cut on the right, while the second function has a shifted cut. When these cuts overlap, there is no discontinuity, and the function remains analytic in that region. The correct structure consists of cuts connecting two points, which can be subtle to identify at first glance.  
-
-::: callout-note
-The absence of a jump in the function where cuts overlap indicates analyticity in that region, despite the presence of branch cuts elsewhere.
-:::
-The square-root function serves as a simple illustration of branch cuts. For example:  
-
-- $\sqrt{-1 + i\epsilon} = i$  
-- $\sqrt{-1 - i\epsilon} = -i$  
-
-This sign change across the branch cut confirms the non-analytic behavior.  
-
-The Schwarz reflection principle connects the function's behavior in the upper and lower half-planes:  
-
-$$
-F(z^*) = F^*(z)
-$$  
-
-This allows for analytic continuation and reveals the underlying singularity structure. The branch points and cuts are intrinsic to the function's behavior in the complex plane.
-
-<!--
-Cosine simularity: 0.9784571421257063
--->
-## Branch Points and Cuts in Complex Square Roots  
-
-The cuts connect two points, which is a tricky concept. The first time I saw this in a mathematical context, I was shocked because the branch points are the same — there are two points $X$ and $X$ where the function is non-analytic.  
-
-The location of the cut is determined by where the imaginary part of the expression under the square root has an argument of $\pi$ or $-\pi$. For the regular square root function, the cut appears where the argument is either $1$ or $-1$.  
-
-To understand where Mathematica, C, or Python libraries would draw a cut, you need to analyze where the expression under the square root has an argument touching $\pi$ or $-\pi$. The cut lies between the points and also extends along a line to infinity.  
-
-::: callout-note
-The first cut goes to infinity, and the second cut also goes to infinity, but this behavior differs from other cases.
-:::
-If you split the product into two square roots, the argument changes, and you remove these two cuts. This is not meant to confuse but to warn that one must be careful with how expressions are written. The exact way you split the square root affects the function’s behavior — they may appear the same on the real axis but differ in the complex plane.
-
-<!--
-Cosine simularity: 0.9669317522559626
--->
-## Resonances and Internet Router Analogy in Complex Plane
-
-The amplitude $A$ is given by:
-
-$$
-A = \frac{g^2}{m_R^2 - s}, \quad m_R^2 = \left( m_R - i \frac{\Gamma}{2} \right)^2, \quad g^2 = -\text{Res}_{m_R^2}A
+\text{Im}\, f(0) = \frac{k}{4\pi} \sigma_{\text{tot}}
 $$
 
-On the complex plane, the functions are different. To prove they are not equal, we can evaluate the function here minus one. The analytic structure of this function consists of one cut and then a second cut, with two branch points connected by the cut. To transform from this configuration to another, we can take this cut, rotate it over here, take the other cut, rotate it over there, and cancel the two cuts. This shows that the function in the original configuration has a different value minus one.  
-
-Evaluating the top expression gives:
-
+2. **Unitarity Condition**:
 $$
-\sqrt{-2 + 2 - 1 - 2 + 2}
+\text{Im}\, f(\theta) = \frac{k}{4\pi} \int f^*(\theta') f(\theta) \, d\Omega'
 $$
 
-while evaluating the second expression gives:
-
+3. **Threshold Behavior**:
 $$
-\sqrt{2i}
+f(E) = \begin{cases}
+\text{real} & \text{if } E < E_{\text{threshold}} \\
+\text{complex} & \text{if } E \geq E_{\text{threshold}}
+\end{cases}
 $$
 
-The product of these results is $-\sqrt{2}$. Resonances are poles of the scattering amplitude. When you hear about resonances, think of the intensity flow. The function in the complex plane is like the structure of a house, and the routers in the house are the resonances. The farther you are from the router, the weaker the signal you receive. If you sit at a point with good Internet, you are likely close to a router.  
+## Analyticity, Threshold Singularities, and Unitarity in Scattering Amplitudes
 
-This is analogous to our position in the house where people experience different Internet strengths. The routers represent the resonances. Here, the Y-axis represents the complex $S$ plane, with real $S$ on the axis and minus imaginary $S$ indicated here. This is the same as the complex frame. A square represents the strength of your Internet when you sit on the couch. The middle of the square is the closest distance to the router (resonance), so the signal strength is highest. As you move away, the Internet weakens.  
 
-Now, let's make the house more complex by adding several floors. The cuts represent the map of the room. The couch where people sit is on the real axis, but the house has multiple floors with different electronics. If there is a router in another room, you can still experience its influence from your position.  
 
-Sheet one represents floor one, and sheet two represents floor two. The gate is like stairs connecting the floors. If a router is placed here, the signal strength is strong here and here, but weakens around the corner. The distance increases, and the signal must travel around the wall. The gate to the other floor allows access only from one side.  
+So here I have a diagram on the $x$-axis. Again, it's a complex plane of the energy. The variable $S$ is $E^2$, where $E$ is the center-of-mass energy, and the amplitude as a function of $S$ is an analytic function.
 
-The picture of floors and routers is helpful but can be overwhelming. The routers are the resonances, and you can see them on each floor if they are above the threshold. When you hear about the complex plane and poles, think of the intensity flow in the house.  
-
-<!--
-Cosine simularity: 0.9379185276533604
--->
-## Complex Plane and Branch Cuts in Router Analogy  
-
-The pulse can be visualized as the intensity floor in the complex domain. There are gates connecting different floors, but these do not change the level—they simply link one floor to another. On this multi-level surface, routers are placed, influencing the intensity observed on the relaxers.  
-
-::: callout-note
-The difference between a larger room and multiple floors is negligible. Both are infinitely large, but the floors are smoothly connected, requiring multiple maps or sheets for representation—similar to shopping mall floor plans.
-:::
-For the square root function $\sqrt{x}$, the branch cut is conventionally placed to the right, but practically, nothing prevents placing it to the left. Consider evaluating the function at $-1$:  
-
-$$
-\sqrt{-1} = i
-$$  
-
-For $-1 + \epsilon$ (where $\epsilon$ is infinitesimal), the result remains $i$. Rotating the branch cut simply reconfigures the "rooms" (sheets) without altering the function's behavior. The cut is merely a way to separate floors, not a physical barrier—there are no walls blocking signal strength.  
-
-::: callout-tip
-For practical convenience, it is natural to place the branch cut in the most accessible location, such as the negative real axis.
-:::
-The analytic structure of the function involves branch points connected by cuts. Transforming between configurations involves rotating cuts and canceling overlapping segments. For example, evaluating:  
-
-$$
-\sqrt{-2 + 2 - 1 - 2 + 2}
-$$  
-
-yields a different result than:  
-
-$$
-\sqrt{2i}
-$$  
-
-The product of these results is $-\sqrt{2}$.  
-
-In the router analogy, resonances are like routers in a house. The signal strength (intensity) diminishes with distance from the router. Sitting close to a router (resonance) ensures strong Internet (amplitude), while moving away weakens it. The complex plane is structured like a multi-floor house, with cuts representing the map of connected rooms.  
+What we get to deal with is only the values of this amplitude above the threshold. However, the past tenets of our theory tell you that using analyticity, we can extend the domain of the definition into the full complex plane.
 
 ::: callout-important
-The real axis is where observers (people on the couch) reside, but routers on other floors (sheets) still influence the signal. Gates (branch cuts) act as staircases connecting floors, allowing access from specific directions.
+**Key Idea**: The amplitude $A(s)$ can be analytically continued into the complex plane, allowing us to evaluate it at complex energies, not just real ones above threshold.
 :::
-The routers (resonances) are visible on each floor if they lie above the threshold. The farther the router, the weaker its influence, analogous to poles in the complex plane. The picture of floors and routers helps visualize the analytic structure, though it can become overwhelming.
+I hope you wrap your mind around the idea that now we can extend this analytic domain and think of our amplitude as a complex function. So instead of energy of the interactions of, say, 5 GeV, you can put a complex number there and then probe the function away from the real axis.
 
-<!--
-Cosine simularity: 0.9136396991673359
--->
-## Poles and Resonances in the Complex Plane
+Now, this function has a certain range of singularities. From the fact that the imaginary part is not present below threshold and then suddenly appears above threshold tells you that a certain singular disk pops up. And these singularities are the branch points.
 
-The branch cut can be placed in a convenient location, such as to the right, but it can also be rotated to the left. This exposes a larger range of the complex plane for analysis, even though the function may no longer be real.  
+At every threshold, there are nice derivations of the threshold singularities for different numbers of particles. In Gribov's book, I leave it out. However, something easy to see is the two-body threshold. And I want to show you that it introduces square root singularities. It simply follows from the fact that the imaginary part has a square root.
 
-When measuring an amplitude above threshold (at $(M_1 + M_2)^2$), the observed value is influenced by nearby structures in the complex plane. If a resonance appears in the data, it corresponds to a pole beneath it in the complex plane.  
+---
 
-::: callout-note
-Resonances are always associated with poles, and this is how we define particles — as poles in the amplitude.
-:::
-A single-pole amplitude has the form:  
+
+So let me show you that the imaginary part of the amplitude from unitarity that we derived last time is related to the amplitude squared itself. The unitarity condition is:
 
 $$
-A(s) = \frac{1}{s - s_0}
-$$  
+\text{Im}\, A(s) = \frac{1}{2} |A(s)|^2 \cdot \Phi_2(s)
+$$
 
-where $s_0$ (or $\bar{m}^2$) is the pole location where the denominator vanishes. This is a complex number, with its real and imaginary parts defining the mass and width of the resonance:  
+where $\Phi_2(s)$ is the two-body phase space factor.
 
-- **Mass of the pole**: Real part of $\sqrt{s_0}$  
-- **Width of the pole**: Twice the imaginary part of $\sqrt{s_0}$ (i.e., $\Gamma = -2 \ \text{Im}(\sqrt{s_0})$)  
+The prefactor here is the phase space—simply two-body phase space. The one-half comes from $(A - A^*)$. So, the imaginary part here—I replace it—and $\frac{1}{2}$ over here.
 
-These quantities relate to the experimentally observed mass and width of the resonance.  
+The two-body phase space has the form:
+
+$$
+\Phi_2(s) = \frac{2p}{\sqrt{s}}
+$$
+
+where $p$ is the breakup momentum. This is something that actually makes a singularity, something that vanishes at the threshold.
+
+---
+
+
+The breakup momentum is the momentum particles have. Clearly, if you are at the threshold, you have a minimal energy of the system. It's simply two masses of the particles. They don't have free energy; they don't have momentum. And that's something that vanishes, and it vanishes.
+
+Mathematically, you see that if you compute this two-body breakup momentum—I think you've done it in earlier exercises—you find that it's equal to the Källén function:
+
+$$
+p = \frac{\sqrt{\lambda(s, m_1^2, m_2^2)}}{2\sqrt{s}}
+$$
+
+where $\lambda$ is the Källén function:
+
+$$
+\lambda(x, y, z) = x^2 + y^2 + z^2 - 2xy - 2yz - 2zx
+$$
+
+or equivalently:
+
+$$
+\lambda(x, y, z) = (x - (y + z)^2)(x - (y - z)^2)
+$$
+
+Remember this: the first term gives you a singularity at the threshold, and the second one gives you a singularity at the pseudo-threshold.
+
+## Square Root Behavior and Schwarz Reflection Principle in Threshold Energy Analysis
+
+
+Interior relations, as we wrote it, as we derived, are valid **only above the threshold**. The imaginary part is non-zero and present only once you go above the threshold.
+
+This imaginary part behaves like a **square root function**:
+
+$$
+\text{Im}\, f(E) \propto \sqrt{E - E_{\text{th}}},
+$$
+
+where $E$ is the energy and $E_{\text{th}}$ is the threshold energy. This indicates that the function itself has a **square root branch point**.
+
+---
+
+Above the threshold, the function exhibits this square root behavior. It would be useful to connect this to the **Schwarz reflection principle**.
 
 ::: callout-important
-The pole is literally a zero of the denominator in the amplitude, and its position in the complex plane determines the physical properties of the resonance.
+Since our function was real and analytic on a segment of the real axis, the Schwarz reflection principle applies. It relates the amplitude in the upper half-plane to the amplitude in the lower half-plane:
+
+$$
+f(E + i\epsilon) = \overline{f(E - i\epsilon)},
+$$
+
+for real $E$ and small $\epsilon > 0$, where $\overline{f}$ denotes the complex conjugate.
 :::
-The influence of a pole diminishes with distance, analogous to signal strength weakening as you move away from a router. The complex plane acts like a multi-level structure, where resonances (poles) on different "floors" (sheets) still affect observations made on the real axis.  
+---
 
-::: callout-tip
-For practical analysis, it is often most convenient to place branch cuts where they provide the clearest access to the poles of interest.
-:::
-The observed amplitude at a given point on the real axis is shaped by nearby poles, and their effects are directly visible in the data. This framework connects the mathematical structure of the amplitude to measurable physical quantities.
+This means the imaginary part flips sign when you cross the real axis:
 
-<!--
-Cosine simularity: 0.940092977628945
--->
-## Analytic Structure and Pole Characterization in Resonances
+$$
+\text{Im}\, f(E + i\epsilon) = -\text{Im}\, f(E - i\epsilon).
+$$
 
-Pole locations are related to the observed mass and width, which are experimentally measurable. When observing a signal, it has a peak location and a full width at half maximum (FWHM). For narrow resonances, the width $\Gamma$ is approximately equal to the FWHM, and the mass $M$ is approximately equal to the peak location. However, this is not the case for broad resonances.  
+The relation holds for $\epsilon$ small enough.
 
-The analytic structure of this function is simply a pole — there are no branch points or other complexities. A slightly more complex example involves the relativistic Wigner case, which includes a pole in the $K$-matrix and a square root branch point from phase space. The $K$-matrix is a method to incorporate poles while maintaining the correct analytic structure, and it works for multiple loops.  
+---
 
-The ultimate goal in data analysis is to characterize resonances by their pole mass and width. This is achieved using parameterizations like the $K$-matrix or other frameworks.  
+- The **square root behavior** of $\text{Im}\, f(E)$ is tied to the threshold energy $E_{\text{th}}$.
+- The **Schwarz reflection principle** ensures symmetry between the upper and lower half-planes.
+- The sign flip in the imaginary part reflects the **discontinuity** across the real axis.
+
+## Analytic Structure and Branch Cuts in Square Root Functions
+
+
+Have you heard a song with the word **"infinitesimal"**? I think it's by one of the rock bands. I was really impressed. This is now in pop, in rock. People like the word. Maybe next time I'll bring you something. I was impressed recently. Who is singing **"Infinite"**? You know, *Mother Mother*. That's about *Mother Mother*. So listen to the song **"Infinitesimal."** I like the song actually, but it just means very, very small—**infinitesimal**.
+
+---
+
+I'm going to use this $i\varepsilon$, and you've seen it before. This is just the little number that indicates you are like a very, very small amount above the real axis or below the real axis. It happens due to the **phase space**. We realized that if the function had no phase space configuration summations on the right, you could relate the imaginary part to the real part itself, and there would not be branch points. But it's unavoidable. You have to sum over phase configurations, and that gives you the **square root branch point**. It also tells you that the amplitude has a branch point starting at the threshold and going in the positive direction.
+
+---
 
 ::: callout-note
-For narrow resonances, the pole mass and width directly correspond to the observed peak and FWHM, but this approximation breaks down for broader resonances.
+The $i\varepsilon$ prescription is a common technique in complex analysis and quantum field theory to handle poles and branch cuts by shifting the contour infinitesimally away from the real axis.
 :::
-The $K$-matrix ensures the proper analytic structure, including poles and branch cuts, while remaining applicable to multi-loop processes.  
+---
 
-<!--
-Cosine simularity: 0.9481211051651367
--->
-## Branch Points and Threshold Singularities in Amplitude Analysis
+I wanted to quickly give an example of such a function—an example of a **real analytic function**, discarding this cut to the right. An example of a real analytic function like our scattering amplitude, but something very simple with a square root function that has a cut to the right. So $\sqrt{x}$ doesn’t work—its cut is on the left. Let’s cut to the left. How do I see where it has the cut? Simply because $\text{Amplitude}(1 + \varepsilon) = \text{Amplitude}(1 - \varepsilon)$, there is no cut. Then, $\sqrt{-1 - \varepsilon} = -i$, and $\sqrt{-1 + \varepsilon} = i$. On this side, the function evaluated from above and below have different values. That tells me in which direction I put my cut.
 
-We parameterize the amplitude using the $K$-matrix or, in simpler cases, the Breit-Wigner formula, which is a limiting case of the $K$-matrix unless constraints are applied. The amplitude's expression can be complex, with many terms, but it remains an analytic function. By fitting data, we determine the parameters and then explore the analytic structure.  
+---
 
-For branch points, you must decide their placement (e.g., to the left or right in the complex plane). Importantly, all features in the amplitude—peaks, spikes, or cusps—originate from singularities in the complex plane. A peak typically indicates a pole, while a cusp (seen in $|A|^2$ vs. $S$ plots) corresponds to another type of branch point.  
+This is a **branch point**, and this is a **non-analytic point**. But for every branch point, there is a cut attached, and it splits my manifold. Analyticity into the functions—into the surfaces—differentiates. Everywhere else except this point, the functions are analytic. But you have to work to see this analyticity. Essentially, you have to **analytically continue** functions. If you see the pattern, you want to make this function analytic. It's always possible, but you have to work a little by extending the domain of analyticity.
 
-Every threshold introduces a singularity. For two-particle systems, this is a branch point. For example, $\pi\pi$ or $KK$ thresholds introduce branch points at specific energies (e.g., $KK$ at 1 GeV). These manifest as spikes in the amplitude, signaling the presence of a branch point in the complex plane.  
+---
+
+Coming back to the example, you'll understand it better once I finish this. If I take $-\sqrt{x}$, what was the analytic structure of $-\sqrt{x}$? According to the same logic, I can evaluate the function somewhere in the complex plane and find that it's now analytic here, fully analytic, and it has a cut to the right. Now, let's evaluate this function at $-1$. What does it equal? So I evaluate my function here, and it gives me $\sqrt{1}$. This is an example of a **real analytic function**. Or let's take the simplest amplitude: the amplitude $\mathcal{A}(s) = \sqrt{-(s - m_1^2 - m_2^2)}$, which has similar properties. It has similar properties.
+
+---
+
+Quickly, while I'm cleaning the board—what is the analytic structure of this? This is in the $x$-plane. The first one I put as $-9$ to make it more interesting. This first one has the cut on the right, and the second one has a cut—it's very similar but shifted by one. Essentially, it has this structure: one cut, then a second cut. When you have this situation, there is no jump here. You can jump twice, and the cuts overlap, so there's no jump in the function. It's analytic right here. The correct answer is just the cuts connecting two points.
+
+---
+
+This one is tricky. The first time I saw it in a mathematical context, I was really shocked because the branch points are the same. There are two points, $x$ and $x$, where the function is non-analytic. But the locations of the cuts are determined by where the expression under the square root has an argument of $\pi$ or $-\pi$. For a regular square root function, the cut appears where the argument is either $\pi$ or $-\pi$. To understand where your Mathematica, C, or Python library would draw a cut, you need to know where the expression under the square root has an argument touching $\pi$ or $-\pi$.
+
+---
+
+And then, apparently, this is indeed between the points but also along this line. This is the first cut going to infinity, and this is the second cut going to infinity. It's crazy. And this is actually different from this. If you just split the product into two square roots, then the argument—then you remove these two. It's not to confuse you, but to warn you that you must be careful how you write the expression, exactly how you split the square root, because that makes the function different. On the real axis, I think they will be the same, but on the complex plane, the functions are different.
+
+---
+
+To prove to you that this is not equal to that, we can simply evaluate the function at $-1$. I think that's an easy exercise. The way I see that they are different is because I know the analytic structure of this: one cut and then a second cut. There are just two branch points connected by the cut. To go from this to that, I can take this cut, rotate it over here, take this one, rotate it over there, and cancel the two cuts—make them cancel each other. That tells me the function in the original configuration has a different value at $-1$. If I evaluate it, I should see this immediately.
+
+---
+
+If I evaluate the top one, I get $\sqrt{(-2)(-1)}$. If I evaluate the second one, I get $\sqrt{2} \cdot i$. Then the product of them gives me $-\sqrt{2}$.
+
+---
+
+::: callout-warning
+Be cautious when splitting square roots in complex analysis: $\sqrt{ab}
+:::eq \sqrt{a} \cdot \sqrt{b}$ in general due to branch cut ambiguities. The example shows $\sqrt{(-2)(-1)} 
+eq \sqrt{-2} \cdot \sqrt{-1}$ because of differing branch cut configurations.
+
+## Resonances as Poles in the Scattering Amplitude: A House Analogy for Complex Plane Dynamics
+
+
+Its resonances are **poles of the scattering amplitude**. When you hear that, you're probably going to hear this many times in the future.
+
+I would like you to think of the **intensity flow**. The function in the complex plane is the complex structure of a house. In this house, there are just a few routers. You desperately want your Internet—the farther you are from the router, the weaker the signal you get. If you sit at a point and have really good Internet, you're probably sitting near the router.
+
+Similarly, this is our couch in the house where people usually sit and experience different strengths of the Internet. The routers are the **resonances**. Here I have combined two modes on the Y-axis. On the complex S-plane, the real $s$ is on the axis, and this indicates minus imaginary $s$. This is the same as I would have for the complex frame.
+
+I draw a square representing the strength of your Internet when you sit on this couch. In the middle, you have the closest distance to the router, the **resonance pole**, and therefore your strength is the highest. If you sit far away, your Internet weakens.
+
+---
+
+Now let's make the model more complicated. We have several layers, and this is given by the **cuts**. Here is my map of the room. As usual, I am the source where people sit on the real axis. But in this case, the model is more complex. There is a room with different electronics, different floors, so I can go to another room.
+
+I experience all the routers in another room. If there is a router sitting here in another room, I want to see its influence from my car. This is floor one, and the next is floor two. Sheet one is floor one, and sheet two is floor two. Here's the gate—think of it as stairs from one floor to another.
+
+If I have my router here, I have really good strength here and here as well. But if I go around the corner, I start losing the signal. The distance becomes large, and the way to get Internet is around the wall. This is the gate to another floor, and I can only enter on that side.
+
+---
+
+::: callout-important
+**Key Insight**: The resonances are the resonances. I see them on each floor. If they are above the threshold, it's too complicated.
+:::
+When you hear about the complex plane and the poles, think of the **intensity floor** somewhere in the complex domain. This is all complex domain. There are gates to other floors—don't think of them as changing the level, but as connecting one to another. On this surface with different levels, you place the resonances. These resonances influence your intensity, which you see on the detectors.
+
+---
+
+What is the difference between a bigger room and multiple floors? No difference. The rooms are infinitely big. But since at every point I can be on different floors connected smoothly, I have to draw several maps, several sheets. In shopping malls, you also have multiple floors with shops indicated because it's hard to show everything on a single one.
+
+For simplicity, I would use the term **"branch cut,"** which tells us the cut should be to the right. But I would never do it practically like that. The branch cut tells me that, but nothing happens if I place the cut to the left.
+
+---
+
+I will demonstrate with the **square root function**. It has a branch cut, and I'm carrying my function value here. There is nothing happening if I draw the cut in different directions. This function is the same function as before.
+
+At $s = -1$, you have $i$. At $s = -1 + \epsilon$, you have $i$. This function and that function are exactly the same in this dimension. The difference is that I took my branch cut and rotated it to the right, opening the space underneath.
+
+---
+
+I just made a renovation and changed how the rooms are located in the house. But it changes nothing in the strength of the interaction because there are no walls. Everything is continuous. The cut is just a way to separate different floors. There is no wall preventing the signal strength.
+
+For practical reasons, it's convenient to open up the closest room to us. Therefore, it's more natural to place the cut in a convenient location. The cut goes to the right, but I turn it to the left. Now my function is not real, but I expose a bigger range of the complex plane to analyze.
+
+---
+
+If I sit here on the real axis, this point is influenced by all singularities in the complex plane that are nearby. If I have a pole here, I don't have to care about the rooms anymore. I immediately see the effect in the strength of my interaction if my router is nearby. This is the most convenient way to think of the complex plane and the scattering amplitude.
+
+---
+
+I measure my amplitude above threshold at $s = (M_1 + M_2)^2$. What I measure is influenced by structures near threshold. If there is a resonance in the data, it means there is a pole below that makes this resonance. A resonance is always a pole—this is how we define particles.
+
+Particles are always poles in the amplitude. We have conventions for defining the width and mass of the resonance, and they come from the pole location. A single-pole amplitude has the form:
+
+$$
+A(s) \sim \frac{1}{s - s_{\text{pole}}}
+$$
+
+where $s_{\text{pole}}$ is the complex pole location. The denominator vanishes at $s = s_{\text{pole}}$, which is a complex number. The real and imaginary parts are called the mass and width of the pole.
+
+We define the mass as $\Re\sqrt{s_{\text{pole}}}$ and the width as $-2\Im\sqrt{s_{\text{pole}}}$. These are related to the observed mass and width. If you see a signal, it has a peak location and a full width at half maximum. For narrow resonances, $\Gamma \approx \text{FWHM}$ and $m \approx \text{peak location}$. For broad resonances, this is not the case.
+
+---
+
+What is the analytic structure of this function? It is simply a pole. There are no branch points, nothing else. A slightly more complex example is the **K-matrix**, which incorporates poles and correct analytic structure, including square-root branch points from phase space:
+
+$$
+A(s) = \frac{K(s)}{1 - i\rho(s)K(s)}
+$$
+
+It works for multiple loops.
+
+---
+
+The last comment is on data analysis. The goal is to characterize resonances by their pole location. We use parameterizations like the K-matrix or P-vector. A simple Breit-Wigner is a limit case of the K-matrix. The amplitude has a complicated expression but is analytic.
+
+You fit parameters to the data, then explore the analytic expression. You know it has a branch point, but the direction of the cut is your choice. What's important is that everything you see—peaks, spikes—has an origin in the complex plane. If there's a peak, there's likely a pole there.
+
+## Thresholds, Branch Points, and Poles in Amplitude Analysis
+
+
+Another important phenomenon you see sometimes in the data is the **cusp**.
+This is amplitude squared, this is $S$.
+And then you see a cusp.
+That type of singularity is also known as a **branch point**.
+
+---
+
+The first threshold introduces a branch point—every threshold introduces a singularity.
+For two particles, it's a branch point.
+We already discussed this branch point.
+But if there are more than two particles, combinations like $\pi\pi$, $KK$, or $K\bar{K}$ would give a branch point at **1 GeV**.
+
+---
+
+Then my amplitude might have a spike like this.
+It's an indication that in the complex plane all is fine, but there is a branch point.
+For every branch point, I have to attach a tail.
+This is the location of my cut—it's up to me how to draw it—but it introduces more surfaces.
+This is a direction.
+
+---
+
+The last thing to realize is that this is a triangle.
+We know that at threshold the function has **square root singularities**.
+But thresholds are only opening new surfaces for you.
+Thresholds are only determining the map of your complex plane.
+
+---
+
+The real singularities, or the **strong singularities** that make intensity peak, are **poles**.
+So this situation, where your amplitude squared has this threshold behavior but then rises very quickly and falls, indicates that there are some poles nearby.
+If the poles were underneath—if the poles were like that—that kind of function would peak at the place.
+
+---
+
+But in that case, what likely happens is that there is a **bound state**, a pole here.
+If there is a pole on the real axis, it would not show up as a nice resonance-like peaking structure.
+
+---
 
 ::: callout-note
-Each branch point requires attaching a "tail" (branch cut) in the complex plane, which influences the amplitude's behavior.
+**Threshold condition for two-particle production**:
+$$
+S = (M_1 + M_2)^2
+$$
+where $S$ is the Mandelstam variable (center-of-mass energy squared), and $M_1, M_2$ are the masses of the two particles.
 :::
-The $K$-matrix method ensures the correct analytic structure, incorporating both poles and branch points while remaining applicable to multi-loop processes.  
+---
 
-<!--
-Cosine simularity: 0.9598991744416047
--->
-## Threshold Enhancements and Pole Structures in Amplitude Analysis
+Think again about the map of routers and the internet.
+If you have a router here and you sit on the couch, the signal strength will be highest here and then lower, lower, lower there.
+That's simply how to understand **threshold enhancements**.
 
-Every branch point requires attaching a "tail" (branch cut) in the complex plane, and the placement of the cut is arbitrary — it's up to you how to draw it. However, this introduces additional Riemann surfaces.  
+Threshold enhancements are often indications of poles below threshold—these are bound states.
+There is another phenomenon: poles at the same locations but underneath another sheet, called a **virtual state**.
+These are not that different from each other.
 
-For a triangle diagram, if the amplitude has square root singularities at threshold, these thresholds only open new surfaces in the complex plane. The real singularities — or the strong features that produce intensity peaks — are poles.  
+---
 
-When the amplitude squared exhibits threshold behavior but rises sharply and then falls, this suggests the presence of nearby poles. If the poles lie below threshold, the amplitude peaks at that location. In such cases, this typically indicates a bound state — a pole on the real axis. However, a pole on the real axis does not produce a resonance-like peak.  
+The bound state can live forever—it's a real state that can travel, a particle that does not decay.
+The virtual state does not travel and does not decay.
+This is simply an enhancement.
 
-::: callout-note
-Threshold enhancements are often signs of poles below threshold, which correspond to bound states.
-:::
-An analogous example is the signal strength from a router: the intensity is strongest near the router and diminishes with distance. This is how threshold enhancements can be understood. There is also the phenomenon of poles at the same locations but beneath the threshold.
+This is a distinction—one of the objectives and discussion points in the field.
+When you observe a new structure, what kind is it?
 
-<!--
-Cosine simularity: 0.9755648752216739
--->
-## Virtual States and Molecular Nature in Particle Physics
+- Is it related to a threshold?
+- Is it a pole sitting below a certain threshold?
+- Or is it a resonance in the complex plane unrelated to a threshold?
 
-There is another phenomenon of the poles at the same locations, but underneath another sheet which is called a virtual state. Both of them are not that different from each other. This state can live forever — it is a real state that can travel, a particle that does not decay. Another case is the one that does not travel and does not decay. This distinction is one of the objectives and discussion points in the field.  
+---
 
-When you observe a new structure, the key questions are:  
+Relation to a threshold indicates a **molecular nature**.
+Remember, every threshold has two masses summed—it implies a continuum.
+There is one particle and a second particle interacting.
+This is our threshold.
 
-- What kind of structure is it?  
-- Is it related to a threshold?  
-- Is it a pole sitting below a certain threshold?  
-- Or is it a resonance in the complex plane unrelated to a threshold?  
+If there is a pole related to a threshold, likely part of the wave function for this state is of this type—a **molecular type**.
+That's why identifying all thresholds and the complex structure, and where the resonance pole sits, is so important.
 
-Relation to a threshold indicates molecular nature. Every threshold involves two masses summed together, implying a continuum — one particle interacting with another. If a pole is related to a threshold, part of the wave function for this state is likely of molecular type.  
+---
 
-::: callout-note
-Identifying thresholds and the complex structure of resonance poles is crucial for determining whether a state has molecular characteristics.
-:::
-<!--
-Cosine simularity: 0.924689262282351
--->
-## False Thresholds and Imaginary Parts in Amplitude Analysis
+Finishing the lecture—quick questions:
 
-The expression $(S - M_1 + M_2)^2$ corresponds to the "soil threshold," but it is actually a **false threshold**. It appears artificially in our calculations due to the breakup momentum. However, the amplitude itself is not supposed to have a singularity at this point.  
+- "$S - (M_1 + M_2)^2$."
+- "The other so-called threshold—what is what?"
+- "With the so-called threshold $S - (M_1 - M_2)^2$?"
+- "Yes. What's with this one?"
+- "It's a 'zeta threshold.' It appears artificially in our expressions because of the breakup momentum.
+But if you look at the amplitude, it's not supposed to have a singularity there.
 
-This indicates that you should not take this expression literally and continue it beyond the threshold. Instead, the correct approach involves using the phase space factor $\frac{2p}{\sqrt{S}}$, which is the **imaginary part** of the amplitude.  
+---
 
-::: callout-note
-The false threshold arises when only the imaginary part of the amplitude is considered. If you take the full bubble diagram, the false threshold disappears.
-:::
-The imaginary part can be derived from unitarity: when you cut the diagram, it corresponds to the product of matrix elements (both equal to 1) and the two-body phase space. This is why the false threshold appears — it is an artifact of isolating the imaginary part.  
+You cannot literally take this expression and continue at the threshold.
+This is a sort of **false threshold**.
+We don't see this.
+It tells you this is an indication that you should not take this expression literally and build it into your model.
 
-Originally, we planned to compute the bubble diagram explicitly in this lecture, as it is closely related to unitarity. However, the discussion on false thresholds and their origin provides key insights into why such singularities are not physical.  
+Instead of using phase space—$\frac{1}{8\pi} \frac{2p}{\sqrt{S}}$—it's actually the imaginary part of this bubble.
+The imaginary part.
 
-<!--
-Cosine simularity: 0.8862112540954399
--->
-## Climbing Kilimanjaro and Pumping Techniques
+---
 
-The period is when you take the imaginary part. The full amplitude does not have it.  
+You see this simply from unitarity: once you cut this diagram, the imaginary part would be equal to the matrix element here and there, which are both 1, and the two-body phase space because you cut two lines.
+Here is the two-body phase space.
 
-The easiest level for climbing Kilimanjaro is level one. We start with the green and orange, then proceed to gray, yellow, white, brown, and blue.  
+The 'surface threshold' here is present because you use only the imaginary part in your amplitude.
+If you were to take the full bubble diagram, you don't have a surface threshold there."
 
-For pumping, use three fingers at once without hardware. Start with the spot and orange, then release and hang on these two.  
-
-The green and the last one is orange chicken.  
-
-<!--
-Cosine simularity: 0.9758889978114851
--->
-## Market Writing and Infinite Concepts
-
-All right. Now green and the last one is orange chicken.  
-That's a large step. It's a matter of writing market here.  
-Did you find infinite? But not the mother. Say the M1 and M2.  
-But it's still well done.  
-
-<!--
-Cosine simularity: 0.9960124838713215
--->
-## Pinchus Demonstration and Clarification
-
-M1 and M2. Right. Okay. But it's still well done. Thanks a lot. You're about less. Nice. I'm not yet at pinches. Pinchus is like this. This is something different.

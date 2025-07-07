@@ -1,681 +1,807 @@
-<!--
-Cosine simularity: 0.9523891469690801
--->
-## Scheduling and Participation for the Exam
+## Exam Participation and Group Coordination Discussion
 
-We need to fix the day and the format for the exam. The date might still be adjusted between the 23rd and 25th.  
 
-Do you know who from our group would come or meet to do the exam? We would need to have Marx, Mauritz, and maybe Fibian. I'm not sure if Fibian needs the credit points for this, but I will ask them if they will come.  
-
-Paul said he's finishing his bachelor, so I asked both of them, and I would like others who are available to participate as well. Do you want to participate in the exam? We certainly have to make Dhuvanshu participate.  
-
-Durvanshu is a PhD student in our group who was partly involved in the typing exercises. He is at CERN every week doing his hardware job. You might have seen him in the first week—he was here. We should include him in the exam. He skipped the entire semester, so he has to work now.  
-
-Did you receive my encouragement to look at the symmetry breaking? I saw it this morning and made some notes on the ideas. Moritz, I briefly saw it yesterday, but I had a dentist appointment because I sent it on Friday. Yesterday was the first working day.  
-
-I put a date for Hanin on Thursday. You're very welcome to bring the information you obtained today and review it again for Ilya's marketing on Thursday. This is important because it gives you easy points. The exercise is simple, and you might need to report it.  
-
-We don't need to report, but for our number of points over the semester, please collect them. It's a pity we started a bit late.
-
-<!--
-Cosine simularity: 0.994176091854937
--->
-## Introduction to Lattice QCD and HD Spectroscopy
-
-For every counting, please collect. It is a pity we started a bit late because the lecture today is very exciting. I am particularly excited about lattice QCD and the HD spectroscopy that we do in lattice. We will go at the next.
-
-<!--
-Cosine simularity: 0.9082813418250815
--->
-## Mapping Scattering Amplitudes from S-Plane to K-Plane
-
-We have discussed a lot about amplitude, which is a function of $S$. $S$ is the Mandelstam variable, calculated as $(P_1 + P_2)^2$ for the scattering process. This $S$ is a convenient variable to describe the scattering amplitude, where the partial wave amplitude $f$ is a function of this single variable.  
-
-Equivalently, one can consider the breakup momentum variable $K$, which represents the momentum carried by each particle. Here, $S$ is the squared energy of the system in the center-of-mass frame, while $K$ is the momentum of each particle in the same frame. The relationship between $S$ and $K$ is given by the channeling function, and the analytic structure of the amplitude is simpler in terms of $K$ near the threshold.  
-
-Instead of working in the $S$-plane, where the amplitude is analytic except for a few singularities, we now examine the $K$-plane and relate the structures between the two planes. Specifically, we map the following points from the $S$-plane to the $K$-plane:  
-
-1. Points 1 and 2: Resonances located on the second Riemann sheet with respect to the threshold in $S$.  
-2. Point 3: A pole on the real axis in the first Riemann sheet, corresponding to a bound state.  
-3. Point 4: A virtual state, residing on the unphysical sheet below the threshold.  
-
-The goal is to understand how these singularities and structures translate when mapped from the $S$-plane to the $K$-plane.  
-
-$$
-S = 4(K^2 + m^2)
-$$
-where $m$ is the mass of the particle. This relation highlights the connection between the energy ($S$) and the breakup momentum ($K$).  
+- "This form of cross section—exactly."
+- "The form of a cross section, you have to remember."
 
 ::: callout-note
-The $K$-plane simplifies the analysis near thresholds, making it useful for studying bound states, resonances, and virtual states in scattering amplitudes.
+While discussing cross sections, recall that in nuclear physics:
+$$
+\sigma = \frac{\text{Number of reactions}}{\text{Incident flux} \times \text{Target density} \times \text{Thickness}}
+$$
+This formula defines how cross sections are calculated experimentally.
 :::
-<!--
-Cosine simularity: 0.8980450598898875
--->
-## Understanding the Mapping of Real Axis and Threshold in K-Plane
+---
 
-The real axis in the $S$-plane gets mapped to the $K$-plane as well. It is easier to start by mapping the real axis first and then determine the positions of other features relative to it.  
+*We might still adjust between the 23rd and 25th. Do you know who from our group would come to do the exam? We would need to have Max. Moritz, maybe Fabian.*
 
-The real axis above the threshold corresponds to a physical region, and this physical region is preserved when mapped to the $K$-plane. The point where $S = 0$ corresponds to the threshold in the $K$-plane. Below the threshold, when $S$ is smaller than the threshold value, the square root of $S$ becomes imaginary, meaning $K$ is also imaginary.  
+*I'm also not sure if she needs the credit points for this, but I will ask them if they will also come. Because Paul—I know he said he's finishing his bachelor.*
 
-The other square root term (from the breakup momentum function) does not change sign when crossing the threshold. This term remains negative, so it does not introduce any additional complications near the threshold. However, there is a branch point somewhere between zero and the threshold on the real axis in the $K$-plane.  
+*I asked both of them, and I would actually like other guys who also have time to participate in that. Do you want to participate in the exam? We certainly have to make Dhruvanshu participate in that.*
 
-The region close to zero in the $K$-plane is more complicated due to this branch point, but the focus here is on the behavior near the threshold. The key observation is that the physical region in the $S$-plane maps directly to the physical region in the $K$-plane, while non-physical regions (below threshold) map to imaginary values in the $K$-plane.  
+---
 
-The mapping simplifies the analysis of scattering amplitudes, particularly near thresholds, by transforming the $S$-plane structure into a more tractable form in the $K$-plane. The relationship between $S$ and $K$ is given by:  
+**Dhruvanshu is a PhD student in our group** who was partly involved in the typing exercises. Every week he is at CERN doing his hardware work. You might have seen him in the first week he was here. We just made him take the exam. *I think it's fair.* He was skipping the entire semester—**he has to work now.**
 
-$$
-S = 4(K^2 + m^2)
-$$
+---
 
-where $m$ is the mass of the particle. This equation connects the energy variable $S$ to the breakup momentum $K$, making it easier to study bound states, resonances, and virtual states in the $K$-plane.  
+- *Did you receive my email to look at the symmetry breaking?*
+- *I saw it this morning. I went through it and made some notes. I started making some notes on the ideas for that.*
 
-::: callout-note
-The $K$-plane provides a clearer representation of the analytic structure near thresholds, particularly for distinguishing physical and non-physical regions.
-:::
-<!--
-Cosine simularity: 0.9264734071291089
--->
-## Riemann Sheets and Analytic Structure in the K-Plane  
+**Moritz**, I briefly saw it yesterday, but then I had a dentist appointment because I sent it on Friday. Yesterday was the first working day. I put a date for Hanin there on Thursday.
 
-I want to look at the function nearest threshold. What happens is really interesting. If you continue that, you would have another real part—somehow it flips back to the real axis. The dashed line would just come back to the real axis somehow.  
-
-Number four is straightforward—we just add the dashed line, so it ends up here. For number three, the negative part of the... my intuition suggested it might need to be there because it's on another Riemann sheet. We just stay there, but how do you realize that?  
-
-The value of $S$ is positive—or rather, real below threshold—but on the other sheet. When you put $S$ below threshold here, the sheets are related to the $\pm$ sign. That's where the sheet comes from. Being on the first sheet means the $+$ sign, and being on the second sheet means the $-$ sign.  
-
-But also, the square root for $S$ matters here because these are sheets for $S$. On the $K$-plane, $S$ does not change sign, but the square root changes sign. So $S$ here and $S$ here are the same, but when you map it, you have either $+$ or $-$. This tells you that both sheets get mapped to the same $K$-plane—it's just $+$ or $-$.  
-
-Numbers 3 and 4, as well as 2 and 1, are rather easy. Essentially, everything is connected analytically.  
-
-::: callout-note
-The Riemann sheets in the $S$-plane correspond to different signs of the square root when mapped to the $K$-plane, but the underlying $S$ values remain the same.
-:::
-The relationship between $S$ and $K$ is given by:  
-
-$$
-S = 4(K^2 + m^2)  
-$$  
-
-where $m$ is the mass of the particle. This connects the energy variable $S$ to the breakup momentum $K$, clarifying the analytic structure near thresholds.
-
-<!--
-Cosine simularity: 0.8805748676768943
--->
-## Complex Plane Transformations and Riemann Sheets
-
-The transformations between the $S$-plane and $K$-plane are analytically connected. You can visualize this by drawing lines or curves, such as half-circles, that do not intersect the real axis (the dashed line). The exact shape (circle, bicircle, or deformed curve) does not matter as long as the mapping remains analytic.  
-
-The $K$-plane is simply a reparametrization of the $S$-plane. For momentum space ($K$-plane), there is no square root because $K$ itself is the square root of $S$. A function with a square root has two Riemann sheets, but when expressed in terms of $K$, it simplifies to a single-sheeted analytic structure. The two-sheeted nature arises from the $\pm$ sign in front of the square root, which is already embedded in the $K$-plane.  
-
-The mapping is given by the squaring operation:  
-
-$$
-S = K^2
-$$
-
-In the $K$-plane, a domain transforms under squaring, producing a two-sheeted structure in the $S$-plane. This explains why the sheets are connected without discontinuity.  
-
-::: callout-note
-The $\pm$ sign in the square root determines the Riemann sheet in the $S$-plane, while the $K$-plane unifies both sheets under a single analytic structure.
-:::
-The relationship between $S$ and $K$ is further clarified by the threshold behavior:  
-
-$$
-S = 4(K^2 + m^2)
-$$
-
-where $m$ is the particle mass. This connects the energy variable $S$ to the breakup momentum $K$, revealing the analytic structure near thresholds.  
-
-When $S$ is below threshold, its value remains real but lies on the second Riemann sheet (corresponding to the $-$ sign). The first sheet corresponds to the $+$ sign. Importantly, the $K$-plane does not distinguish between sheets—it only reflects the sign change in the square root.  
-
-The dashed lines in the $S$-plane (representing branch cuts) map to specific curves in the $K$-plane, ensuring analytic continuity. This is why transformations between the planes preserve the underlying physics while simplifying the mathematical structure.
-
-<!--
-Cosine simularity: 0.9072497190313804
--->
-## Introduction to QCD and Confinement Phenomenon  
-
-The fundamental fields and building degrees of freedom in QCD are quarks and gluons. However, one of the important phenomena in QCD is confinement. People began understanding the dynamics of QCD by studying protons, neutrons, and nuclear interactions, which exhibit features of confinement.  
-
-For comparison, consider electron-proton scattering or electron-electron scattering, where the electromagnetic coupling constant is small:  
-
-$$
-\frac{e^2}{4\pi} = \frac{1}{137}
-$$  
-
-This small coupling allows perturbative expansions using Feynman diagrams in QED. However, in QCD, the theory is not in a perturbative regime due to confinement.  
-
-The degrees of freedom—quarks and gluons—are confined to small scales, forming composite fields such as mesons. This non-perturbative behavior distinguishes QCD from QED, where perturbation theory is applicable.  
-
-::: callout-note
-The confinement phenomenon means that quarks and gluons cannot be isolated as free particles; they only exist within bound states like hadrons.
-:::
-The transition from perturbative to non-perturbative dynamics in QCD is a key aspect of its study, as it governs the formation of hadronic matter.  
-
-<!--
-Cosine simularity: 0.9161140108008128
--->
-## Effective Chiral Perturbation Theory and Double Well Potential
-
-At low energy, the effective theory describing interactions is chiral perturbation theory. This is an expansion in the masses and momenta of particles, where the small parameter is not the interaction strength but rather the smallness of masses and momenta.  
-
-The theory relies on composite fields (e.g., mesons) as simpler degrees of freedom. A key feature is that when working with these effective fields (fermion-antifermion pairs), the theory exhibits spontaneous symmetry breaking. The potential of this theory has a double-well structure, meaning it has two minima, and the vacuum settles into one of them.  
-
-::: callout-note
-Understanding the precise nature of the sigma field in this context is crucial for accurately describing the vacuum structure and symmetry breaking.
-:::
-This double-well potential is central to the non-perturbative dynamics of the theory, distinguishing it from perturbative expansions like those in QED.
-
-<!--
-Cosine simularity: 0.9381791812855292
--->
-## Classical vs. Quantum Fields and Potential Introduction
-
-The potential can only be introduced when considering fields as classical fields rather than quantum fields. For classical fields, the concept of potential is clear: if a particle moves in a potential, it turns back when its energy is below the potential energy. For example, a ball hitting a wall reflects back.  
-
-Quantum fields behave differently. There is a probability for the particle to penetrate the potential barrier due to quantum effects. If a particle approaches a wall, the wave function has a tail inside the wall, decaying exponentially. This is a consequence of the quantum nature of the system.  
-
-::: callout-note
-The classical picture assumes deterministic reflection, while quantum mechanics allows for tunneling through barriers.
-:::
-<!--
-Cosine simularity: 0.9511210966359905
--->
-## Quasi-Classical Expansion and Field Averaging  
-
-The wave function has a tail in the wall due to the quantum nature of the system. The relation between particles, quantum fields, and classical fields arises through quasi-classical expansion. In quantum field theory, $\hbar$ is treated as a small parameter (though in natural units, it is set to 1). This parameter appears in the Lagrangian and action, allowing an expansion in powers of $\hbar$.  
-
-The first term in this expansion gives the average value of the fields, which we identify as the classical field. For example, the field $\sigma$ can be obtained by performing an $\hbar$-expansion of the Lagrangian. The leading term yields not the fluctuating quantum field but the classical average value of $\sigma$ in space.  
-
-At this level, $\sigma$ is no longer a function of spacetime coordinates $x$ (i.e., it does not fluctuate) but is instead a fixed value. We can then study the quasi-classical potential of the theory, which emerges from this approximation.  
-
-::: callout-note
-The classical field approximation neglects quantum fluctuations, simplifying the analysis while retaining key physical insights.
-:::
-<!--
-Cosine simularity: 0.91486269774443
--->
-## Potential, Sigma Field, and Massless Pions
-
-We can analyze the quasi-classical potential of the theory as a function of the sigma field ($\sigma$). The potential is visualized in three dimensions, where the x-axis represents the real part of $\sigma$ and the y-axis represents the imaginary part. These can be treated as two independent fields, $\sigma_1$ (real) and $\sigma_2$ (imaginary).  
-
-The curvature of the potential indicates the mass of the particle. In the current theory, the degrees of freedom that experience binding in the confinement regime are associated with the sigma field, while the unimportant field is integrated out. The key observation is that the degrees of freedom not experiencing binding—those without curvature in the potential—correspond to the pion ($\pi$) field.  
-
-The vacuum is centered around a non-zero value due to spontaneous symmetry breaking, filling space with a quark condensate represented by the sigma field. On top of this background, there are fluctuations of the massless pion field. This picture illustrates that the vacuum is dominated by the constant sigma field, while the pion fields fluctuate without mass.  
-
-This aligns with the Goldstone theorem: when a symmetry is spontaneously broken, massless bosons (pions, in this case) appear in the theory. In QCD, pions are massless in the idealized scenario—their observed mass in reality arises from the Higgs mechanism, which gives quarks their mass.  
-
-::: callout-note
-The sigma field represents a non-fluctuating classical average, while the pion fields are massless fluctuations on top of this background, as dictated by spontaneous symmetry breaking.
-:::
-<!--
-Cosine simularity: 0.9134690194040399
--->
-## Spontaneous Symmetry Breaking and Goldstone Bosons
-
-The Higgs mechanism gives quarks mass in real life. If quarks were massless, pions ($\pi$), kaons ($K$), and the eta meson ($\eta$) would also be massless, forming a massless multiplet.  
-
-We previously examined the current symmetry, checking whether the Lagrangian remains invariant under independent rotations of left-handed and right-handed quarks. The QCD Lagrangian has a global $SU(2)$ symmetry when no mass term is present. This symmetry is spontaneously broken when moving to the minimum of the theory.  
-
-Introducing independent rotations of the right and left fields corresponds to rotations in the $\sigma$ field, reflecting the symmetry of the potential. Once the system settles at the minimum, this symmetry is broken—it is a global symmetry. The breaking of this left-right symmetry leads to the appearance of Goldstone bosons, which are pions. These pions are massless in the idealized case.  
-
-If the symmetry were larger, the pattern of symmetry breaking would produce additional massless modes. The mass of pions in reality arises from explicit symmetry breaking due to quark masses generated by the Higgs mechanism.  
-
-$$
-m_u = m_d = 0 \Rightarrow M_{\pi} = 0
-$$
-
-This equation shows that if the up ($u$) and down ($d$) quarks were massless, the pion ($\pi$) would also be massless.  
-
-<!--
-Cosine simularity: 0.8878206251657708
--->
-## Higgs Mechanism and Yukawa Couplings in Mass Generation
-
-If symmetry is bigger, like $SU(3)$, we have eight mesons that are massless. And this is two kaons, three pions, and eight etas that disappear to be massless. Now, why are they not massless? Because quarks have mass.  
-
-This connects to the Higgs mechanism, as it is the Higgs interaction with fermions that gives them mass through Yukawa couplings. For the current perturbation theory, we just put a mass term explicitly in the Lagrangian. Now, with the discovery of the Higgs, we understand that a fundamental symmetry breaking occurs with the Higgs field. The vacuum is filled with the Higgs, and particles moving through it acquire mass.  
-
-For the chiral perturbation theory, the mass term appears explicitly in the Lagrangian and breaks the symmetry explicitly.  
-
-::: callout-note
-The Yukawa coupling in the Higgs context refers to how fermions acquire mass via interaction with the Higgs field. Originally, Yukawa proposed the exchange of pions ($\pi$) as the mediator of nuclear forces, but in the Standard Model, Yukawa couplings introduce the mass matrix.
-:::
-Even if you consider QCD without mass terms, the $\eta'$ meson still appears massive. The $\eta'$ is related to the $U(1)$ symmetry, where $SU(3)$ symmetry breaking plays a role.  
-
-<!--
-Cosine simularity: 0.8980919904801077
--->
-## Spontaneous Symmetry Breaking and Goldstone Bosons in QCD
-
-The $\eta'$ meson is related to the $U(1)$ symmetry. Here, the "S" in both groups (e.g., $SU(2)$, $SU(3)$) stands for "special," meaning the determinant of the matrix is equal to 1.  
-
-For $SU(2)$, we have:  
-$$
-U(2) = SU(2) \times U(1)
-$$  
-If you allow the determinant to have a phase (i.e., the $U(1)$ part is a unitary group where $|\det U|^2 = 1$), you can consider the matrix itself as unitary but with an extra phase for the determinant.  
-
-Looking at the Lagrangian, it appears invariant under this $U(1)$ phase transformation, especially for global symmetries where derivatives do not affect the phase. For example, a term like $\bar{\psi}\psi$ is invariant under such phase transformations. However, this symmetry is dynamically broken. Higher-order perturbative calculations reveal that the $U(1)$ symmetry is spontaneously broken, which is related to the mass of the $\eta'$.  
-
-When examining the light meson octet, the $\eta'$ stands out as special. The number of generators in $U(3)$ is 9, with 8 belonging to $SU(3)$. These 8 generators correspond to the spontaneously broken symmetries, giving rise to 8 Goldstone bosons (the pions, kaons, and eta mesons).  
-
-The remaining $U(1)$ symmetry is seemingly preserved, but anomalies cause the $\eta'$ to acquire mass, making it distinct from the other Goldstone bosons.  
-
-<!--
-Cosine simularity: 0.8863066941146426
--->
-## Proton Mass and Quark-Gluon Interactions in QCD
-
-The proton mass is not determined by the bare masses of the quarks but by the energy stored in quark-gluon interactions. In the chiral limit, where quark masses are set to zero, pions and kaons become massless (as they are Goldstone bosons of chiral symmetry breaking), but the proton remains massive. This is because the proton's mass arises from the dynamics of quark-gluon interactions, not from the quark masses themselves.  
-
-The proton is composed of three quarks, but unlike pions, it is not a Goldstone boson. Pions are fluctuations of the quark condensate (the $\sigma$ field), while protons are excitations of this condensate with additional energy stored in their structure. The mass of the proton is thus a manifestation of the strong interaction energy within QCD.  
+---
 
 ::: callout-important
-The mass of hadrons (except Goldstone bosons like pions) is determined by the curvature of the QCD potential. Pions move along flat directions of the potential (no curvature, hence massless), while protons and other hadrons correspond to excitations with non-zero curvature, giving them mass.
+
+- *You're very welcome, together with the information you obtained today.*
+- *Look at it once again and bring it to Ilya for the meeting on Thursday.*
+- **It's also important because it gives you kind of easy points.**
 :::
-The quark-gluon interactions in mesons also exist, but the key difference lies in the nature of their excitations. The quark condensate forms a background, and pions are small fluctuations on this background, whereas protons are more complex excitations with additional energy contributions.  
+*The exercise is simple, and I think you might need to report—no, we don't need to report, but for our number of points you got over the semester. For every counting, please collect them.*
 
-To understand this mathematically, one can examine how the $\sigma$ field acquires a non-zero vacuum expectation value and how pions emerge as fluctuations along flat directions of the potential. The mass of particles corresponds to the curvature of the potential, and since pions move along directions with no curvature, they remain massless. Protons, however, involve excitations of the condensate itself, leading to their observed mass.  
+## Mapping Riemann Sheets and Analytic Structures in the $S$-Plane and $K$-Plane
 
-The theory does not inherently contain a mass scale for the proton; its mass emerges dynamically from the strong interaction dynamics of QCD.
 
-<!--
-Cosine simularity: 0.8922332044354326
--->
-## Impact of Quark Masses on QCD Theory  
+It's a pity we started a bit late because the lecture today is very exciting—I'm particularly excited about **lattice QCD** and the **hadron spectroscopy** that we do in lattice. We will get to that next. I tried to start at 11:15, but we should be discussing lattice QCD already. Before that, we have two more items in the program. Let's start with the recap. Today is **Lecture 11**.
 
-The theory itself does not have special values for the quark masses. You can tune the masses, increase them, or even set them to zero, and the theory remains largely unchanged. This is especially true for the light quarks ($u$ and $d$), whose masses are much smaller than the QCD scale of 1 GeV. Introducing small quark masses does not drastically alter the physics.  
+---
 
-When quark masses are introduced, they effectively add a linear term to the potential, slightly skewing it. The overall picture remains almost the same, but the minimum on one side becomes more pronounced. In the pion direction, there is now a curvature, making pions slightly massive. The theory, however, remains fundamentally unchanged.  
+So far, we've discussed a lot about the **amplitude**, which is a function of $S$. $S$ is the **Mandelstam variable**, calculated as:
+
+$$
+S = (P_1 + P_2)^2
+$$
+
+for the scattering. This $S$ is a very convenient variable to describe the scattering amplitude, as the **partial wave** is a function of a single variable in this sense. Equivalently, one can consider the **breakup momentum**, the variable $K$, which is essentially the momentum that each particle carries. So $S$ is the squared energy of the system in the center of mass, and $K$ is the momentum of each particle in the center of mass.
+
+---
+
+This $K$ is related to $S$ with the **channeling function**, and the **analytic structure** of the function is somewhat simpler for $K$ in the vicinity of the threshold. What I would like to do now is to look, instead of the **$S$-plane** where the function is analytic except for a few singularities, at the **$K$-plane** and relate structures in the $S$-plane to the $K$-plane—to map these points 1, 2, 3, 4 into the other plane.
+
+---
 
 ::: callout-note
-The Mexican hat potential develops a curvature in the pion direction due to quark masses, giving pions a small mass while preserving the structure of QCD.
-:::
-One important quantity often discussed is the ratio of the proton mass to the pion mass, which is primarily determined by QCD interactions and does not change significantly even if quark masses are increased. Computations of properties in lattice QCD are highly dependent on the quark masses used. Interestingly, calculations appear easier when pions are slightly heavier, achieved by introducing larger quark masses. Despite this, the essential properties of the theory—such as those of mesons—do not change much.  
+**Key mappings between $S$ and $K$:**
 
-While details like particle masses and widths do change, the broader characteristics remain stable. This means that even with unphysical pion masses in simulations, we can still extract meaningful insights. The key takeaway is that these variations are a computational tool, not a fundamental limitation.  
+- Physical region ($S > S_{\text{th}}$) maps to **real $K$**.
+- Below threshold ($S < S_{\text{th}}$):
+  - **Bound state** (first sheet) maps to **imaginary $K$** (positive imaginary axis).
+  - **Virtual state** (second sheet) maps to **negative imaginary $K$**.
+:::
+---
+
+Point 1 and point 2 are the **resonances** sitting on the **second Riemann sheet** with respect to $S$. Point 3 is the **pole on the real axis** in the first Riemann sheet, and this is the **bound state**. Point 4 (0.3) is the **virtual state**, which sits on the unphysical sheet below the threshold. I would like to have these points 1, 2, 3, 4 mapped to the other plane, as well as the real axis.
+
+---
+
+The **real axis above threshold** is the **physical region**, and it gets mapped to the physical region in the $K$-plane. This zero corresponds to the threshold. Below the threshold, $S$ is smaller than the threshold, and the square root of it is imaginary, so $K$ is imaginary.
+
+But what about another square root? This is far away from the square root and does not change the sign when you cross the threshold. This is multiplied to $S - M_1^2$, and nothing happens when you go through this point. This one is always negative.
+
+---
+
+The **branch point** should be somewhere between zero and the threshold on this plane. The area close to zero is more complicated due to this branch point, but I want to focus on the function near the threshold.
+
+If you were to continue that, you would have another real axis—somehow it flips back to the real axis. The dashed line would just come back to real. Number four is straightforward: we just add the dashed line, and it ends up here.
+
+---
+
+For number three, the negative part of the—yes, it needs to be there because it's on another Riemann sheet. This is a value of $S$ which is real but below threshold, on the other sheet. The sheets are related to the **plus/minus sign of the square root**:
+
+$$
+K = \pm \sqrt{S - S_{\text{th}}}
+$$
+
+- **First sheet**: plus sign.
+- **Second sheet**: minus sign.
+
+---
+
+On the $K$-plane, the square root changes sign, but on the $S$-plane, $S$ does not change sign. Both sheets get mapped to the same $K$-plane, just with plus or minus.
+
+Points 3 and 4, 2 and 1 are easy to connect analytically. You can draw lines or half-circles to connect them. The shape doesn’t matter as long as it’s analytic.
+
+---
+
+The $K$-plane is just $S$ mapped differently. For the **momentum plane**, you don’t have a square root because $K$ is the square root itself. If you have a function with a square root, it has two Riemann sheets. But when you replace the square root with $K$, it has a simple **single-sheet structure**.
+
+---
+
+The **two-sheet structure** comes from the plus or minus sign in front of the square root, which is part of the $K$-plane. If you do another mapping, like:
+
+$$
+X = K^2
+$$
+
+the squaring operation maps the $K$-plane to a **single-sheeted $X$-plane**. This is why the sheets are connected—there is no discontinuity.
+
+---
+
+## QCD Confinement, Chiral Perturbation Theory, and Spontaneous Symmetry Breaking
+
+
+Now let's go to **physics**.
+I would like to start from the discussion we had at the last lecture and discuss **QCD phenomena**—QCD and quark confinement dependence.
+
+---
+
+As you remember, the **fundamental fields** and **fundamental degrees of freedom** in QCD are quarks and gluons.
+However, when we go to the regime, one of the important phenomena is **confinement**.
+People start realizing the dynamics of QCD by looking at protons and pions—or rather, looking at neutrons.
+Nuclear physics and the interactions of the nucleus have these features of confinement.
+
+---
+
+One compares **electron-proton scattering** or **electron-electron scattering**, where there is a coupling constant:
+$$
+\alpha = \frac{e^2}{4\pi} \approx \frac{1}{137}.
+$$
+This **electromagnetic coupling constant** is small and allows one to expand and use Feynman diagrams.
+In QED, we have $\alpha = \frac{1}{137}$.
+
+Then, for calculations of **pion** and **proton interactions**, you can make an **effective field theory**, match it to the observed phenomena, and figure out that in the **non-perturbative regime**, the theory is not perturbative.
+There is **confinement**.
+
+---
+
+We also know that the **degrees of freedom**—all interactions of quarks and gluons—are confined to a small scale.
+This makes new degrees of freedom, forming **composite fields** like mesons and baryons, or simpler objects like mesons.
+
+---
+
+What we discussed last time is that at **low energy**, there is an **effective theory** describing interactions: **chiral perturbation theory**.
+This is an expansion of the theory in the masses and momentum of particles.
+It’s not about interactions being small, but rather about masses and momentum being small.
+This small parameter is used for the expansion.
+
+::: callout-note
+The expansion parameter in chiral perturbation theory is:
+$$
+\mathcal{L}_{\text{eff}} \sim \sum_n c_n \left(\frac{p}{\Lambda_{\text{QCD}}}\right)^n + \mathcal{O}(m_q),
+$$
+where $p$ is momentum, $\Lambda_{\text{QCD}}$ is the QCD scale, and $m_q$ are quark masses.
+:::
+---
+
+The picture of this effective theory is that we have it.
+The feature is that if you work with these **effective fields**—fermion, anti-fermion, fermion—you realize the theory experiences **spontaneous symmetry breaking**.
+The potential of this theory has a **double-well structure**, and the vacuum ends up in one of the minima.
+
+---
+
+It’s important to make this more accurate and realize what the **sigma field** represents.
+Last time we touched on this, and I reminded myself how the discussion goes.
+The potential can be introduced only when you consider fields as **classical fields**, not quantum fields.
+For classical fields, it’s clear what the potential is.
+
+---
+
+If a particle moves in a potential and its energy is below the potential barrier, it turns back.
+If you hit a ball against a wall, it reflects.
+This is the **classical picture**.
+
+**Quantum fields** are different.
+For quantum fields, there is a probability to end up inside the wall, with an exponential tail.
+If a particle approaches the wall, the wave function has a tail inside the wall due to **quantum effects**.
+
+---
+
+The relation between particles, quantum fields, and classical fields comes via the **quasi-classical expansion**.
+In quantum field theory, there is always $\hbar$, a small number set to one in natural units.
+But you can use $\hbar$ as a small parameter and expand.
+The first term in the expansion is the average value of the fields—the classical version of $\sigma$.
+
+Now, $\sigma$ is no longer a function of $x$; it doesn’t fluctuate in spacetime but is a fixed value.
+We can look at the **quasi-classical potential** of the theory as a function of $\sigma$, and that’s how we define the potential.
+
+---
+
+The potential has a **ring of minima**.
+When you solve the problem—like in the previous assignment—you find the relation for the complex $\sigma$.
+On the $x$-axis is the real part of $\sigma$, and on the $y$-axis is the imaginary part.
+You can replace $\sigma$ with two independent fields, $\sigma_1$ and $\sigma_2$.
+The **curvature of the potential** indicates the particle’s mass.
+
+---
+
+In QCD, the degrees of freedom that experience binding in the **confinement regime** are the $\sigma$ field, which is integrated over—an unimportant field.
+The important degree of freedom is the **pion field**, which doesn’t experience binding and has no curvature in the potential.
+
+The vacuum is aligned at the center, but due to **spontaneous symmetry breaking**, space is filled with the **quark condensate** of the $\sigma$ field:
+$$
+\langle \bar{q}q \rangle \equiv \langle \sigma \rangle = v 
+eq 0.
+$$
+On top of it, there are small fluctuations of the **massless pion field**.
+
+---
+
+It’s a nice picture: everything is filled with the $\sigma$ field, which fluctuates around a vacuum value rather than zero.
+The pion fields are **massless**—they don’t see the curvature of the potential.
+This is the **Goldstone theorem**: spontaneous symmetry breaking leads to massless bosons.
+
+In QCD, pions are massless.
+The light mesons are massless, and they only gain mass in real life due to the **Higgs mechanism**, which makes quarks massive.
+If quarks were massless, pions would be massless Goldstone bosons, and the $\eta$ meson would be too.
+The entire $SU(2)$ multiplet would be massless particles.
+
+That’s it.
+
+---
 
 ::: callout-important
-Lattice QCD computations often use artificially heavy quark masses for numerical stability, but the extracted physics remains representative of the real-world theory.
-:::
-The mass of particles like pions changes with quark masses, but the underlying dynamics of QCD—such as the role of the quark condensate and chiral symmetry breaking—are preserved. This allows us to study QCD effectively even with non-physical parameters.
-
-<!--
-Cosine simularity: 0.9194840503691668
--->
-## Introduction to Lattice QCD and Computational Setup
-
-We work with fields that depend on coordinates $X$, which is a four-dimensional vector (time + spatial dimensions). The approach involves introducing a grid in both spatial and time dimensions, then computing the Lagrangian action or particle correlations on this grid.  
-
-A typical lattice QCD setup extends around 200 points in the time dimension and spans about 7 Fermi in spatial dimensions, discretized into 50 points per side. This forms a box with 50 points on each side, evolving over 200 time steps. These values are determined experimentally to balance computational efficiency and accuracy.  
-
-::: callout-note
-The lattice size and step count are optimized through numerical testing—larger volumes and finer discretization improve accuracy but increase computational cost.
-:::
-Two primary challenges arise:  
-
-1. **Finite volume effects** (due to the box size).  
-2. **Discretization errors** (due to step size).  
-
-To mitigate these:  
-
-- Increase the volume to reduce finite-volume effects.  
-- Decrease step size to minimize discretization errors.  
-
-Both adjustments come at a higher computational cost. The goal is to use the minimal number of points required for reliable results, as lattice QCD calculations are numerically intensive.  
-
-<!--
-Cosine simularity: 0.8881730156253531
--->
-## Periodic Boundary Conditions in Lattice Simulations
-
-The lattice size ratio $\frac{L}{a} \sim 20:50$ is a practical range for balancing computational feasibility and approximating an infinite, continuous space.  
-
-A useful analogy for understanding lattice simulations is to think of a proton placed in a box with periodic boundary conditions. Due to the finite box size and cyclic boundaries, the proton interacts with its mirror images.  
-
-Why use periodic boundary conditions? The alternatives, such as hard-wall boundaries where the wave function vanishes at the edges, introduce quantization effects and restrict the wave function's behavior. Periodic boundary conditions avoid this by allowing the wave function to remain continuous across the box edges.  
-
-In quantum field theory, periodic boundary conditions are advantageous because they preserve translational symmetry and avoid artificial quantization of momenta. This is particularly important in lattice QCD, where the wave function should not be forced to zero at the boundaries.  
-
-::: callout-note
-Hard-wall boundaries impose vanishing wave functions at the edges, while periodic boundaries allow the wave function to propagate smoothly across the box. The choice depends on the physical scenario being modeled.
-:::
-<!--
-Cosine simularity: 0.9453669624343342
--->
-## Finite Volume Effects and Exponential Suppression
-
-I would have assumed that it would have been better, but that wouldn't make a difference. Uncertainties are suppressed by having the wave function in a finite box, and these effects are exponentially suppressed for good observables.  
-
-I should have started by saying that one can spend a semester or several semesters learning quantum thermodynamics on the lattice. It's a rapidly moving field with many interesting techniques, but I can only give you a brief introduction.  
-
-Perhaps John Gulava could hold a lecture on this topic next semester. He would be the right person to introduce all the details, as he has deep expertise in this area. For now, let me give you some vague arguments and a taste of the computations, along with common knowledge about finite volume effects.  
-
-My claim is that corrections due to the lattice size—for good observables like particle masses or form factors—are exponentially suppressed with the lightest degrees of freedom in the theory, which in this case is the pion.  
-
-::: callout-note
-Finite volume effects are suppressed exponentially rather than polynomially, making lattice simulations viable for extracting physical quantities even with limited computational resources.
-:::
-<!--
-Cosine simularity: 0.8971728545638091
--->
-## Virtual Pions and Proton Interactions
-
-The lightest degrees of freedom in the theory are the pions. If you place a proton on the lattice, pions appear as the dominant contribution. The proton is addressed, while pions are beautiful particles that emerge as virtual entities. They do not propagate but instead form clouds around the proton. Since they do not travel, they are virtual particles and cannot sample the boundary of the box.  
-
-Pions provide the correct scale for understanding suppression effects. Another way to see this is by examining the interactions in the middle image. The potential has the form:
-
+The **Mexican hat potential** for sigma and pion fields is:
 $$
-V(R) \sim -e^{-m_\pi R}
+V(\sigma, \pi) = \frac{\lambda}{4}\left(\sigma^2 + \pi^2 - v^2\right)^2,
+$$
+where $\sigma$ is the radial mode (massive) and $\pi$ is the angular mode (massless Goldstone boson).
+:::
+---
+
+The **Goldstone boson (pion) masslessness** (before Higgs mechanism) is given by:
+$$
+m_\pi^2 \propto m_q \quad \text{(if } m_q \to 0, \text{ then } m_\pi \to 0\text{)}.
 $$
 
-where $R$ is the distance and $m_\pi$ is the pion mass. This potential gives an argument for the exponential suppression of finite-volume effects. The pion mass sets the scale for this suppression, as it is the lightest degree of freedom in the theory.  
+## Chiral Symmetry Breaking, Goldstone Bosons, and the η' Mass in QCD
+
+
+Last time we looked at the **chiral symmetry**, checking if the Lagrangian has the symmetry that you can rotate left quarks and right quarks independently.
+The idea is we look at the chiral symmetry for sure.
 
 ::: callout-note
-Virtual pions act as carriers of interactions, forming clouds around protons and mediating forces without propagating as free particles.
+The chiral symmetry in the QCD Lagrangian (massless case) is given by:
+$$\mathcal{L}_{QCD} = \bar{\psi}_L i \gamma^\mu D_\mu \psi_L + \bar{\psi}_R i \gamma^\mu D_\mu \psi_R$$
+where $\psi_L$ and $\psi_R$ are left- and right-handed quark fields, and $D_\mu$ is the covariant derivative.
 :::
-<!--
-Cosine simularity: 0.9024427746640916
--->
-## Lattice Volume Effects and Discretization  
+The Lagrangian of QCD has a global $SU(2)$ symmetry when there is no mass term present.
+This symmetry is broken **spontaneously** when you move to the minimum of the theory.
 
-The exponential factor provides another argument for understanding finite-volume effects. Once your lattice is large compared to the inverse mass of the pion ($1/m_\pi$), your computations closely approximate infinite-volume quantities. However, these are still box quantities, meaning the physics is constrained to the box. When the box size $L$ becomes infinite, you approach true infinite-volume physics, and the computations reflect the physical situation.  
+If you introduce independent rotations of the right and left fields, it was related to the rotations one can think of.
+This is the rotation in the $\sigma$ field—the symmetry of the potential.
+Once you move to the spontaneously broken phase, once you move to the minimum, you don't have this symmetry anymore.
+This symmetry is broken, and it is a global symmetry.
 
-Discretization error is another consideration. The more steps you take in the lattice, the better the approximation. Increasing the volume of the box significantly would make computations more intensive, but the box is never truly empty. Even if no explicit particles are placed inside, the vacuum itself contains fluctuating quantum fields. These fields interact, and the box is filled with correlated fields, visualized as bubbles appearing and disappearing in the vacuum.  
-
-Adjusting discretization by varying grid spacing is important. The lattice spacing $a$ affects the scales probed in the theory. For large $a$, confinement may break down, as the theory loses its non-perturbative properties. Therefore, small step sizes are crucial to maintain confinement and ensure accurate results.  
-
-::: callout-note
-Lattice computations are typically performed for multiple discretization values to demonstrate that results are not strongly affected by the choice of spacing.
-:::
-In lattice QCD studies, the physical box size (e.g., 5 Fermi) is fixed, but computations are repeated for different lattice spacings (e.g., $a = 0.05, 0.033, 0.02 \ \text{Fermi}$). This ensures that discretization errors are under control and that the extracted physics is reliable.
-
-<!--
-Cosine simularity: 0.9372319645190186
--->
-## Numerical Computation of Discretization Errors  
-
-To ensure that results are not significantly affected by discretization error, we probe several lattices. The computation of these errors is a complex topic, often addressed numerically.  
-
-A key question is how changes between different states are implemented—for example, whether particles exhibit hopping behavior, such as a hopping probability in a given direction.  
-
-The primary observables computed on the lattice are correlation functions. These are defined as expectation values of operators at different times:  
-
-$$
-\langle \mathcal{O}(t) \mathcal{O}(0) \rangle  
-$$
-
-Here, each node of the lattice registers field values, and the quantities of interest are derived from these correlations. The computation process involves evaluating these expectation values for operators at time $t$ and time $0$.  
-
-::: callout-note
-Numerical methods are essential for handling discretization effects, as analytical solutions are often impractical for complex lattice configurations.
-:::
-<!--
-Cosine simularity: 0.9150903973614808
--->
-## High-Dimensional Integral Challenges in Lattice Field Theory
-
-The correlation function is defined as the expectation value of an operator at time $t$ and the same operator at time $0$. Formally, it is given by:
-
-$$
-\langle \mathcal{O}(t) \mathcal{O}(0) \rangle = \frac{\int \mathcal{D} \bar{\Psi} \mathcal{D} \Psi \, \mathcal{O}(t) \mathcal{O}(0) \, e^{-S[\bar{\Psi}, \Psi]}}{\int \mathcal{D} \bar{\Psi} \mathcal{D} \Psi \, e^{-S[\bar{\Psi}, \Psi]}}
-$$
-
-Here, $S[\bar{\Psi}, \Psi]$ is the Lagrangian action of the theory, and the integral is taken over all configurations of the fields $\bar{\Psi}$ and $\Psi$. The denominator serves as a normalization factor.  
-
-When discretized on a lattice, the dimensions scale as $(L/a)^3 \times (T/a) \times 4 \times 3$, where $L$ and $T$ are spatial and temporal extents, $a$ is the lattice spacing, $4$ accounts for Lorentz indices, and $3$ for color (SU(3)). The field $\Psi$ is a four-dimensional Dirac spinor with color and flavor degrees of freedom.  
-
-The integral becomes extremely high-dimensional—roughly $10^4$ dimensions per field component. For numerical integration, even sampling 10 points per dimension would require $10^{10^4}$ evaluations, which is computationally intractable.  
+The breaking of this left-right symmetry leads to the appearance of **Goldstone bosons**, which are pions and they are massless.
 
 ::: callout-important
-Direct discretization and sampling methods fail due to the exponential growth in computational cost. Instead, statistical mechanics techniques are employed, leveraging importance sampling to approximate the integral efficiently.
+For $SU(2)_L \times SU(2)_R \to SU(2)_V$, the number of Goldstone bosons is:
+$$\text{dim}(G/H) = \text{dim}(SU(2)_L \times SU(2)_R) - \text{dim}(SU(2)_V) = 3$$
 :::
-The challenge lies in avoiding brute-force discretization and instead using statistical methods to estimate high-dimensional integrals in lattice field theory.
-
-<!--
-Cosine simularity: 0.8976942888933842
--->
-## Monte Carlo Sampling for Integral Evaluation
-
-Instead of discretizing and using equal-spaced grid computation, I would create a sample of $x$ distributed uniformly from $a$ to $b$. The integral of $F(x)$ can then be approximated as the average value of the function over this sample, multiplied by the interval length:
-
-$$
-\int_a^b F(x) \, dx \approx \frac{b - a}{N} \sum_{i=1}^N F(x_i)
-$$
-
-Here, $x_i$ are uniformly sampled points in $[a, b]$. This is the Monte Carlo sampling technique, which avoids the need for brute-force discretization.  
-
-::: callout-important
-The key advantage is computational efficiency, especially for high-dimensional integrals where traditional methods fail due to exponential scaling.
-:::
-This approach leverages statistical mechanics principles, using random sampling to estimate integrals rather than deterministic grid-based methods.
-
-<!--
-Cosine simularity: 0.9582510917613123
--->
-## Euclidean Metric for Improved Integral Convergence
-
-The trigger integral is evaluated using the Monte Carlo sampling technique, which is the primary method employed in lattice computations. The procedure involves first generating configurations (samples of the variables, called "tan samples"), then evaluating the statistic and computing the sum.  
-
-One major challenge in applying this method is the significant fluctuation in the integration value due to the phase factor. While the computation remains possible, the convergence is poor because of oscillatory behavior, leading to the so-called "time problem." A complex weight is unsuitable for the emergency fgametric to 5.  
-
-To address this, instead of using the Minkowski metric, one performs a transformation of time to imaginary time and adopts the Euclidean metric. For example, when computing the operator correlation function ( $C(t)$ ), the action becomes imaginary, and the integral's convergence improves significantly when working with real weights.  
-
-The Euclidean metric is introduced by replacing time with imaginary time, which effectively transforms the Lagrangian (or action) into a real-valued quantity. This modification enhances the numerical stability and efficiency of the integral evaluation.
-
-<!--
-Cosine simularity: 0.9163278037602303
--->
-## Evolution of Operators in Heisenberg Picture
-
-The correlation function $C(t)$ is given by:
-
-$$
-C(t) = \langle 0 | O(t) O(0) | 0 \rangle = \frac{1}{2} \sum_{\Psi, \Psi'} D \Psi D \Psi' A O(t) O(0) e^{-S(\Psi + \Psi')}
-$$
-
-Here, the action $S$ replaces the Lagrangian, and the weights are real.  
-
-In the Heisenberg picture in Minkowski space, the evolution of operators at time $T$ requires phase factors on both sides of the vacuum state. The Hamiltonian governs this evolution, with the phase factors being exponentials involving the Hamiltonian matrix.  
-
-The Hamiltonian only gives energy when acting on eigenstates. For example, $O(0) | 0 \rangle$ should yield zero if $| 0 \rangle$ is an eigenstate of the Hamiltonian.  
-
-::: callout-important
-The phase factors are crucial because they encode the time evolution of operators via the Hamiltonian.
-:::
-The Euclidean metric improves integral convergence by transforming time to imaginary time, making the action real and stabilizing numerical evaluations.
-
-<!--
-Cosine simularity: 0.9231459486259544
--->
-## Ground State Energy and Correlation Functions
-
-The Hamiltonian should be zero when acting on the vacuum state $| 0 \rangle$. The operator $O(0)$ applied to the vacuum should also yield zero if $| 0 \rangle$ is an eigenstate of the Hamiltonian.  
-
-To recover the missing cross terms, we use a completeness relation involving states $|\Psi\rangle$ and $|\Psi'\rangle$. The corrected expression includes dagger operations on the operators:  
-
-$$
-C(t) = \langle 0 | O^\dagger(t) O^\dagger(0) | 0 \rangle
-$$
-
-This ensures proper squaring of terms. The correlation function can be expanded as a sum over energy eigenstates $|N\rangle$ with energies $E_N$:  
-
-$$
-C(t) = \sum_N e^{-(E_N - E_0)t}
-$$
-
-Here, $E_0$ is the vacuum energy. The exponential factor $e^{-Ht}$ acts as the identity when applied to the vacuum, assuming $E_0 = 0$.  
-
-::: callout-important
-The ground state energy is the reference level from which other energies are measured.
-:::
-When computing $C(t)$ on a lattice with discrete time points, the long-time behavior of the correlation function is dominated by the lowest energy state. Higher-energy states are exponentially suppressed, leaving only the contribution from the ground state at large $t$.  
-
-<!--
-Cosine simularity: 0.9147616419996627
--->
-## Momentum Quantization and Periodic Boundary Conditions
-
-The long-time behavior of correlation functions is dominated by the ground state because higher-energy states are exponentially suppressed. All non-zero energy terms in the correlation function have time dependence and decay away.  
-
-To isolate the ground state energy, we introduce a modified quantity by comparing correlation functions at different times:
-
-$$
-\tilde{C}(t) = \frac{C(t)}{C(t+1)}
-$$
-
-Taking the logarithm of this ratio gives:
-
-$$
-\log \tilde{C}(t) \approx -E_1
-$$
-
-where $E_1$ is the energy of the lowest excited state. This is a common method to extract energy levels numerically. The energy obtained depends on the operator used:  
-
-- For pion-like operators, it approaches the pion mass.  
-- For vector quantum number operators, it approaches the rho meson mass.  
-
-::: callout-important
-The periodic boundary condition leads to momentum quantization.
-:::
-For a particle in a box of size $L$, the wave function must satisfy $\psi(x + L) = \psi(x)$. For a plane wave $e^{i p x}$, this implies:
-
-$$
-p L = 2 \pi n
-$$
-
-where $n$ is an integer. Thus, the momentum is quantized in units of $2 \pi / L$.  
+When they acquire some mass, if the symmetry is bigger, like $SU(3)$, we have eight mesons now that are massive.
+These are two kaons, two or three pions, and eight eta mesons appear to be massless.
+Why are they not massless? Because quarks have mass.
 
 ::: callout-note
-The phase of the wave function must match after traversing the full length $L$, but not necessarily for smaller distances.
+For $SU(3)_L \times SU(3)_R \to SU(3)_V$, the number of pseudo-Goldstone bosons (pions, kaons, eta) is:
+$$8 = \text{dim}(SU(3)_L \times SU(3)_R) - \text{dim}(SU(3)_V)$$
 :::
-This means the particle's momentum can only take discrete values:
-
-$$
-p_n = \frac{2 \pi n}{L}
-$$
-
-The step size in momentum space is determined by the system size $L$ — larger systems allow finer momentum resolution.
-
-<!--
-Cosine simularity: 0.9385797673327289
--->
-## Discrete Spectrum and Interaction Shifts in Particle Systems
-
-The step size in the spectrum is as small as $1/L$, where $L$ is the system size. For a two-particle system, the spectrum is discrete. Consider particles labeled by $M = 1, 2, 3, 4$ in a periodic band configuration.  
-
-You can visualize this as two particles moving in a circle of length $L$. This is the one-dimensional case of a box with periodic boundary conditions, and the spectrum remains discrete. The total energy of the system is simply the sum of the individual particle energies when they are non-interacting:
-
-$$
-E_{\text{system}} = \sum_i E_i
-$$
-
-However, when interactions are introduced, the energy of the system shifts slightly. The total energy can still be expressed as a sum, but now an interaction term must be included:
-
-$$
-E_{\text{system}} = \sum_i E_i + E_{\text{interaction}}
-$$
-
-This shift in energy levels due to interactions is the key idea behind lattice spectroscopy. By computing the spectrum first without interactions and then with interactions, the differences between energy levels reveal information about the particles, particularly the phase shift induced by their interactions.  
+I just made a connection with the **Higgs mechanism** because it's the Higgs interaction with quarks that gives them mass.
+These are **Yukawa couplings**.
+This discussion is kind of irrelevant for the current perturbation theory.
+We just put a mass term explicitly in the Lagrangian.
 
 ::: callout-note
-The discrete spectrum arises from quantization in a finite system, while interaction shifts provide insights into particle dynamics.
+The Yukawa coupling for quark masses in the Standard Model is:
+$$\mathcal{L}_{Yukawa} = -y_f \bar{\psi}_L \phi \psi_R + h.c.$$
+where $\phi$ is the Higgs field and $y_f$ is the Yukawa coupling constant.
 :::
-The method involves comparing the non-interacting and interacting spectra to extract physical properties of the system.
+Now, having discovered the Higgs, we know that something similar to this fundamental symmetry breaking happens with the Higgs field.
+The vacuum is filled with the Higgs, through which particles, when moving, obtain mass.
+This is something connected but different—a different phenomenon.
+For the chiral perturbation theory, the mass term explicitly appears in the Lagrangian and breaks the symmetry explicitly.
 
-<!--
-Cosine simularity: 0.9323878171590935
--->
-## 2PI Correlator and Scattering Phase Shift Analysis
+The Yukawa coupling in the Higgs mechanism introduces mass.
+The original mechanism Yukawa invented was the exchange of pions—the Yukawa potential.
+Now, in the Standard Model, the mass matrix is introduced through terms called Yukawa couplings.
 
-The 2PI correlator provides information about the phase shift of particle interactions. You compute this quantity for two pions and observe where it separates at high energy. The saturation point of the tilde function at large $T$ gives a measurement of the energy level.  
+It's a bit tricky about the $\eta'$ because even if you consider QCD without mass terms, the $\eta'$ still appears massive.
+The $\eta'$ is the one related to the $U(1)$ symmetry.
 
-Next, you perform the same computation for the interacting system and compare it to the non-interacting (polytronic) case. The difference in shifts between the two systems reveals the scattering phase shift.  
+::: callout-important
+The axial $U(1)_A$ anomaly leads to a mass for the $\eta'$ meson even in the chiral limit:
+$$m_{\eta'}^2 \sim \frac{N_f}{F_\pi^2} \chi_{top}$$
+where $\chi_{top}$ is the topological susceptibility and $N_f$ is the number of flavors.
+:::
+Here, $S$ for both groups means "special," meaning the determinant of the matrix is equal to 1.
+The group $U(2)$ is equal to $SU(2) \times U(1)$.
 
 ::: callout-note
-The scattering phase shift is extracted by comparing the non-interacting and interacting spectra.
+The relation between $U(N)$ and $SU(N) \times U(1)$ is:
+$$U(N) \simeq SU(N) \times U(1)/\mathbb{Z}_N$$
 :::
-The collision dynamics can also be analyzed using alternative techniques in configuration space, where real values of parameters are used. This approach is part of modern lattice QCD, which has significantly advanced our understanding of the hadron spectrum in recent years.  
+If you allow the determinant to be a phase, like if $U(1)$ is a unitary group where the determinant of the matrix squared is one, you can consider this being one but have an extra phase for the determinant.
+The Lagrangian is seemingly invariant under $U(1)$, under this phase rotation, especially globally, so that all derivatives don't touch this phase.
+If you look at the composition of the field, like $\bar{\psi}\psi$, it's invariant under the phase transformation.
 
-<!--
-Cosine simularity: 0.9715297454359875
--->
-## Lattice QCD Advantages in Studying Meson Scattering
+But apparently, this symmetry is also broken dynamically.
+If you compute higher-order perturbations, you find out that this symmetry is spontaneously broken.
+That's related to the mass of the $\eta'$.
+Once you see the light meson octet, you remember there is an $\eta'$ there, which is special.
 
-We have learned so much about the hadron spectrum from lattice QCD. The lattice provides an isolated setup where there are no experimental effects, allowing us to study processes that are impossible in experiments. For example, while scattering two pions is feasible in experiments, scattering a photon on a sigma meson is not — yet this becomes tractable on the lattice.  
+The number of generators in $U(2)$ is 4, and in $U(3)$ it's 9.
+For $SU(3)$, 8 generators belong to $SU(3)$, and these 8 are spontaneously broken, giving 8 Goldstone bosons—pions and kaons.
+The $U(1)$ is seemingly a symmetry, but it could also be broken.
+There are anomalies that make the $\eta'$ massive even when the masses of quarks are zero.
 
-The $2\pi$-sigma meson system, which appears as a blob in the spectrum, is a candidate for a tetraquark state at low energy. In lattice QCD, we can study $\pi\pi$ scattering by inserting a photon current and computing the correlation function:  
+---
 
-$$
-\langle \mathcal{O}(t) \mathcal{O}^\dagger(0) \rangle
-$$
+1. **Chiral symmetry in QCD Lagrangian (massless case)**:
+$\mathcal{L}_{QCD} = \bar{\psi}_L i \gamma^\mu D_\mu \psi_L + \bar{\psi}_R i \gamma^\mu D_\mu \psi_R$
 
-This gives access to the form factor, which reveals the spatial distribution of quarks and gluons inside these mesons.  
+2. **Goldstone bosons from spontaneous symmetry breaking**:
+For $SU(2)_L \times SU(2)_R \to SU(2)_V$, the number of Goldstone bosons is:
+$\text{dim}(G/H) = \text{dim}(SU(2)_L \times SU(2)_R) - \text{dim}(SU(2)_V) = 3$
 
-<!--
-Cosine simularity: 0.9430448990943416
--->
-## Exploring Hadron Structure with Lattice QCD and Current Insertion
+3. **SU(3) case with explicit symmetry breaking**:
+For $SU(3)_L \times SU(3)_R \to SU(3)_V$, the pseudo-Goldstone bosons (pions, kaons, eta) number:
+$8 = \text{dim}(SU(3)_L \times SU(3)_R) - \text{dim}(SU(3)_V)$
 
-Lattice QCD allows us to probe the internal dimensions of mesons, revealing how quarks and gluons are distributed inside them. One of the exciting frontiers is understanding how hadrons behave when a current is inserted — how they look and how quarks and gluons are dynamically distributed in space.  
+4. **Yukawa coupling for quark masses**:
+$\mathcal{L}_{Yukawa} = -y_f \bar{\psi}_L \phi \psi_R + h.c.$
 
-This cannot be studied with KVT (Kinematic Vertex Tracking) because it only deals with pure electronic states, where quarks are not directly accessible. Form factors cannot be computed, and there is no straightforward way to fix low-energy constants. While some researchers using IPT (Instantaneous Perturbation Theory) might argue otherwise, I am not aware of a method to achieve this.  
+5. **U(1) anomaly and $\eta'$ mass**:
+$m_{\eta'}^2 \sim \frac{N_f}{F_\pi^2} \chi_{top}$
 
-<!--
-Cosine simularity: 0.9478731580075307
--->
-## Unitarity Constraints on Scattering Amplitudes in Resonance Production
+6. **Group decomposition**:
+$U(N) \simeq SU(N) \times U(1)/\mathbb{Z}_N$
 
-For low-living resonances, experiments produce them in processes involving stable particles. The production amplitude $\mathcal{P}_I$ is accessible, but constraints are stronger on the scattering amplitude and elastic amplitudes.  
+## Proton Mass and Chiral Symmetry in the Context of Quark-Gluon Interactions
+
+
+We discussed so far about **pions** and **kaons**, but the **proton** is also made of three quarks. There is nothing here that tells or that we haven't discussed the mass of the proton yet. But what's your guess? If you go to the **chiral perturbation theory** in the **chiral limit**, you put masses of quarks to zero:
+$$ m_u = m_d = 0 $$
+What happens with the proton?
+
+* **Pion** is massless.
+* **Kaon** is massless,
+* so the **proton** should also be massless because all masses are zero.
+
+But maybe the **gluon mass** makes the difference.
+
+---
 
 ::: callout-important
-Unitarity imposes severe constraints on the scattering amplitude — it cannot be arbitrary. The amplitude must lie within the unitary circle.
+Pions and kaons are special—they are **Goldstone bosons** of the chiral symmetry, but the proton is actually massive. The proton has energy of the quark-gluon interaction stored into it. The mass of the proton is purely determined by the quark-gluon interactions:
+$$ m_p \approx \Lambda_{\text{QCD}} \sim \mathcal{O}(1 \text{ GeV}) $$
 :::
-In the previous lecture, a matrix element was written on the board, and a question arose about the imaginary part being positive due to unitarity relations. This specifically applies to the scattering amplitude, not the production amplitude.  
+---
 
-$$
-\text{Im}(\mathcal{M}) \geq 0
-$$
-where $\mathcal{M}$ is the scattering amplitude.  
+Do we have **quark-gluon interactions** in mesons as well? We do, but we have a **condensate** of the quarks, and this is the **sigma field**.
 
-The elastic scattering amplitude cannot be chosen arbitrarily; it must satisfy these unitarity bounds.  
+* **Pions** are little fluctuations on the background of this field.
+* **Protons** are something different—they are sort of excitations of this condensate.
+* **Rho mesons** are excitations of the gluon condensate, but protons are a different type of object.
 
-<!--
-Cosine simularity: 0.9523487096357866
--->
-## Elastic Amplitudes and Quark Mass Dependence  
+---
 
-The elastic scattering amplitude must lie within the unitary circle, and if it's elastic, it should be exactly on the circle — it cannot be outside. The imaginary part is always positive. On the lattice, you can access this quantity, which comes with strong constraints.  
+Pions are special—they are massless. The proton just experiences this heavy gluon condensate. The rest of the hadrons, especially except for those **Goldstone bosons**, have a proper mass related to the quark-gluon interaction, and everything sits on the background of this **gluon condensate**. This is tricky to wrap your mind around.
 
-Elastic amplitudes include processes like $\pi\pi \to \pi\pi$, $\pi\pi \to KK$, $\pi K \to \pi K$, and $\pi \eta \to \pi \eta$. Additionally, you can control the quark masses, allowing you to make pions massless or massive.  
+---
 
-::: callout-important
-Changing the pion mass significantly alters the elastic region. When pions are massless, the thresholds for $2\pi$, $3\pi$, and $5\pi$ coincide. However, if you increase the pion mass, a large region opens where the $2\pi$ threshold is accessible, but higher thresholds (e.g., $3\pi$ or $4\pi$) remain closed.
-:::
-This creates a broad elastic region where unitarity constraints provide nearly parameter-free parameterizations, enabling deeper physical insights. By varying the quark masses, you can explore how these thresholds shift and how the elastic amplitude behaves in different regimes.
+One thing that would help is to look at the **mathematics of the mechanism** to see how **sigma** obtains its vacuum non-trivial expectation value:
+$$ \langle \sigma \rangle = v = \sqrt{\frac{\mu^2}{\lambda}} $$
+and how **pions** appear as fluctuations in directions where there is no potential.
 
-<!--
-Cosine simularity: 0.9235111968827721
--->
-## Resonances and Bound States in the K Plane  
+* The **mass of the particles** is the curvature of the potential.
+* **Pions** move in directions where there is no curvature, which is why they don't have masses.
+* **Protons, rho mesons, and other excitations** are different because they have this background field excited—they have energy stored and thus have mass.
 
-The parameterization in the $K$ plane reveals deep physical insights. By adjusting quark masses, particles can transition across the $K$ plane, allowing bound states to become resonances or virtual states. This analytic continuity shows that these phenomena are intrinsically connected — bound states, virtual states, and resonances are all manifestations of QCD under different conditions.  
+---
 
-::: callout-important
-The quark mass determines whether a state appears as a bound state, resonance, or virtual state. As masses vary, particles "travel" through the $K$ plane, smoothly transitioning between these regimes.
-:::
-This demonstrates the unified nature of QCD phenomena, where seemingly distinct states are part of a continuous spectrum tied to quark mass dynamics.
+One important point is that the theory itself does not have values of the masses that are special. You can **tune the masses**—you can increase them or make them zero—and then you have a series. But once you introduce the masses, the theory doesn't change very much. Especially because the masses of the light quarks $u$ and $d$ are rather small—they are smaller than the **QCD scale** of **1 GeV**. There is no big change in the physics when you introduce small-mass quarks.
 
-<!--
-Cosine simularity: 0.9173632046929343
--->
-## Introduction and Exercise Sheet Announcement  
+---
 
-The states of QCD manifestation depend on quark mass, where one state can transition into another.  
+What happens then? When you introduce **quark masses**, you effectively add a linear term to your potential, skewing it slightly. The picture remains almost the same—it's just that the minimum on one side gets more pronounced. Now there is curvature in the pion direction as well. It's a **Mexican hat potential**:
+$$ V(\sigma, \vec{\pi}) = -\frac{\mu^2}{2}(\sigma^2 + \vec{\pi}^2) + \frac{\lambda}{4}(\sigma^2 + \vec{\pi}^2)^2 $$
+
+With quark masses, the potential becomes:
+$$ V(\sigma, \vec{\pi}) \rightarrow V(\sigma, \vec{\pi}) - c \sigma $$
+
+This gives pions a small mass:
+$$ m_\pi^2 \propto m_q \Lambda_{\text{QCD}} $$
+
+---
+
+Moreover, one of the quantities often introduced is the **mass of the proton over the mass of the rho meson**, which is characterized by the QCD interaction:
+$$ \frac{m_p}{m_\rho} \approx \text{constant} $$
+
+This doesn't change much if you increase the quark mass.
+
+---
+
+We will see that computations of the properties of the **chiral perturbation theory** depend very much on the quark masses you put in. It appears easier to calculate when pions are slightly heavier, which is what you do by introducing slightly larger quark masses. Then you do computations for slightly heavier pions. But the properties of the theory—the meson properties—do not change much. The details change, like the mass and width of the particles, but the characteristics remain. You can still learn a lot from **non-physical particle masses**.
+
+You shouldn't be scared by seeing **unphysical pion masses** or quark masses in calculations. Quantitatively, this is a tool we use to learn about the properties of the theory.
+
+---
+
+## Discretization and Grid Setup in Lattice QCD Calculations
+
+
+Now let's move on to discuss **lattice QCD**.
+
+The fields depend on the four-dimensional coordinate vector $x^\mu = (t, \vec{x})$, which includes time and spatial dimensions.
 
 ::: callout-note
-The exercise sheet was prepared by Ilya and printed for you. I worked on it overnight, and Ilya handled the printing.
+The spacetime coordinate is explicitly represented as:
+$$x^\mu = (x^0, x^1, x^2, x^3) = (t, \vec{x})$$
 :::
-Thank you for attending today, and I apologize for running slightly overtime. Well done.
+What we do is introduce a **grid** in both the spatial and time dimensions, then compute the **Lagrangian action** or **particle correlations** on this grid.
+
+::: callout-note
+The lattice action (simplified form) is:
+$$S_{\text{lattice}} = \sum_{n,\mu,
+:::u} \text{Re}\, \text{Tr}\left[1 - U_{\mu
+u}(n)\right] + \sum_n \bar{\psi}_n D \psi_n$$
+> where $U_{\mu
+u}$ is the plaquette variable and $D$ is the Dirac operator on the lattice.
+
+Typically, lattice QCD setups use a time dimension of around **200 points**, with a spatial lattice size of about **7 Fermi**, discretized into **50 points** in each dimension.
+
+::: callout-note
+The lattice spacing $a$ and temporal extent $T$ are given by:
+$$a = \frac{L}{N}$$
+$$T = N_t a_t$$
+where $L = 7$ Fermi, $N = 50$, and $N_t = 200$.
+:::
+Imagine a box with **50 points on each side**. We then observe how it evolves over time by performing **200 steps**.
+
+These values are determined experimentally by testing what works best for calculations.
+
+## Finite Volume Effects and Discretization Errors in Particle Simulation
+
+
+The computations are **very numerically heavy**. Therefore, the lower number of points you can take, the better. But there are two main challenges when you put a particle in the box:
+
+1. **Finite volume effect**: Finite box, finite volume—you more often hear "finite volume effect."
+2. **Discretization error**: Both of them can be addressed: the first by making the volume bigger, the second by making the steps smaller. This comes with the cost of computation.
+
+::: callout-note
+The finite volume effect leads to an energy shift approximated by:
+$$\Delta E(L) \sim \frac{C}{L^3} e^{-m_\pi L}$$
+where $L$ is the box size, $m_\pi$ is the pion mass, and $C$ is a constant.
+:::
+---
+
+It’s intuitive—you would need an **infinite and continuous space** to avoid these issues. That's all there is to it.
+
+Here’s an analogy to help visualize the lattice: think of Wi-Fi and the point-and-box aspect. This is important because we use **cyclic or periodic boundary conditions**. If you put a proton in the box and calculate its properties, due to the finite size and periodic boundary conditions, it sees its mirror image.
+
+::: callout-important
+Periodic boundary conditions enforce:
+$$\psi(x + L) = \psi(x)$$
+This avoids forcing the wave function to vanish at the borders, unlike fixed boundary conditions.
+:::
+---
+
+Why use periodic boundary conditions? There are advantages. What are the alternatives? You could just say the box ends there. If you only calculate something inside the box, it shouldn’t make a difference. But if the box ends there, the boundary condition would still impose **quantization** and affect the wave function.
+
+For example, if the wave function had to vanish at the borders, you’d have a lower probability there. That’s my explanation.
+
+---
+
+Periodic boundary conditions have advantages—the wave function, in a second quantization context, isn’t forced to vanish at the borders. The two approaches are similar, but one fixes the entire wave function while the other lets it move. One is more like a **static configuration**, the other more **dynamic**.
+
+::: callout-note
+Quantized momentum on a lattice with periodic boundary conditions is given by:
+$$p_i = \frac{2\pi n_i}{L}, \quad n_i \in \mathbb{Z}$$
+:::
+---
+
+I would have assumed it wouldn’t make a difference, but uncertainties introduced by a finite box are **exponentially suppressed** for certain good observables.
+
+::: callout-note
+The finite-volume correction to a hadron's mass follows:
+$$m(L) = m_\infty + \frac{A}{L} e^{-m_\pi L} + \cdots$$
+where $m_\infty$ is the infinite-volume mass and $A$ is a constant.
+:::
+## Finite Volume Effects, Discretization, and Observables in Lattice QCD
+
+
+I have to be vague since we just decided to spend one lecture on QCD.
+I should have started by saying that one can spend a semester or several semesters learning **quantum chromodynamics on the lattice**.
+It's a rapidly moving field with many interesting techniques.
+Unfortunately, I can only give you a brief overview.
+
+::: callout-note
+The lecturer suggests reaching out to John Gulava for a deeper dive into QCD next semester, as he is the ideal expert for detailed explanations.
+:::
+Can you convince John Gulava to hold a lecture on this topic next semester?
+I could talk to him.
+He would dream of giving these lectures, and he would be the right person to explain all the details.
+But let me just give you some vague arguments, a taste of the computations, and some common knowledge about it.
+
+---
+
+We discussed **finite volume effects**.
+My claim is that corrections due to the lattice size for good observables like particle masses or form factors are *exponentially suppressed* with the lightest degrees of freedom of the theory, which is the pion.
+
+The reason for this is that if you put a proton on the lattice, pions are present as well.
+The proton is addressed, so pions—these beautiful particles—pop up as **virtual particles**.
+They don't propagate; they exist in clouds around the proton, mediating interactions.
+Since they are virtual, they cannot sample the boundary of the box.
+Because pions are the lightest particles, they set the scale for this suppression.
+
+Another way to see why it scales this way is to look at interactions in momentum space.
+The potential has a **Yukawa form**, proportional to:
+
+$$
+V(r) \propto \frac{e^{-m_\pi r}}{r},
+$$
+
+where $r$ is the distance.
+This also gives you an argument for why the effects are exponentially suppressed.
+
+---
+
+This exponential factor is **key**.
+It means that once your lattice is large compared to the inverse pion mass, your computations closely approximate infinite-volume quantities.
+However, they are still finite-volume quantities.
+It's important to realize that physics in a box is... or rather, **infinite-volume physics** is the ideal case.
+Once you take $L$ to infinity, you approach infinite-volume quantities, and then you have the physical situation.
+
+Now, **discretization errors**—I won’t discuss them in detail, but they are also important.
+The more steps you take, the better.
+
+---
+
+Regarding finite volume effects: would assuming a much larger but mostly empty box make computations much more intensive?
+*Empty in what sense? No particles?*
+If the box were infinite, most of it would be empty—we wouldn’t see particles except those we put in.
+But it’s slightly different.
+The nodes of the lattice all have fields defined.
+For every node, we have $\psi(x)$ defined.
+We work with a box where all fields interact, and even if you don’t insert particles, the vacuum fluctuates.
+The box is never empty; it’s filled with **quantum fields**.
+There are beautiful animations of virtual particle bubbles appearing and disappearing in this vacuum.
+
+---
+
+It wouldn’t make sense to change discretization to have different spacings.
+Maybe varying grid spacing could be considered, but this is related to the **Serber curve** and confinement.
+The grid spacing determines the scale at which you cut off the theory.
+Small step sizes are crucial because if $a$ is too large, QCD loses confinement.
+
+To answer your question: changing $a$ must be done carefully.
+Lattice researchers ensure results aren’t strongly affected by spacing by performing computations at multiple discretization levels.
+For example, in lattice papers, you’ll see results for $a = 0.1, 0.05, 0.02$ fm, etc., to demonstrate discretization errors are under control.
+This is a tricky subject, often addressed numerically.
+
+---
+
+Now, how are changes in states implemented? Is it some sort of hopping probability for particles?
+What we do is compute observables—specifically, **correlation functions**.
+These are expectation values of operators at time $t$ and time $0$, formally defined as:
+
+$$
+\langle O(t)O(0) \rangle = \frac{\int \mathcal{D} \psi \mathcal{D} \bar{\psi} \, O(t)O(0) e^{-S[\psi, \bar{\psi}]}}{\int \mathcal{D} \psi \mathcal{D} \bar{\psi} \, e^{-S[\psi, \bar{\psi}]}},
+$$
+
+where $S$ is the action.
+On the lattice, this involves $(L/a)^3 \times (T/a) \times 4$ (Lorentz) $\times 3$ (color) dimensions.
+The $\psi$ field is a 4D Dirac spinor with color and flavor (SU(3)).
+
+This integral is enormous—think $10^4$ dimensions or more.
+Numerically evaluating it by direct discretization is impossible.
+Instead, we use **Monte Carlo methods** from statistical mechanics.
+We generate field configurations (samples) and evaluate observables statistically.
+
+---
+
+The key problem is the oscillatory phase factor in Minkowski space, which ruins convergence.
+To fix this, we **Wick-rotate** to Euclidean time, making the weights real and the integral tractable.
+
+In Euclidean space, operator correlations decay exponentially with energy gaps.
+For example, a two-point function $\langle O(t)O(0) \rangle$ behaves as:
+
+$$
+\sum_n |\langle 0|O|n \rangle|^2 e^{-E_n t}.
+$$
+
+At large $t$, the lightest state dominates.
+
+To extract energies, we study the **effective mass**:
+
+$$
+m_{\text{eff}}(t) = -\log \left( \frac{C(t)}{C(t-1)} \right),
+$$
+
+which plateaus at the ground-state energy.
+This is how lattice QCD computes particle masses (e.g., pions, rho mesons) and other spectral quantities.
+
+---
+
+::: callout-important
+The **exponential suppression** of finite-volume effects and the **Yukawa potential** are central to understanding lattice QCD's accuracy. The Euclidean correlation functions and effective mass method are critical for extracting physical quantities numerically.
+:::
+## Quantization of Momentum from Periodic Boundary Conditions
+
+
+Let me say one last thing.
+We are already over time, but it's important to note that the homework exercise today is to realize that **the particle in the box is slightly different from the particle in this space**.
+
+::: callout-important
+Due to the periodic boundary condition, you have a quantization of the momentum.
+If your wave function is $\psi(x) = e^{i p x}$, and you require that $\psi(x + L) = \psi(x)$, you immediately realize that $p L$ must be $2 \pi n$, where $n$ is an integer.
+:::
+The key relationships discussed are:
+
+* Wave function periodicity: $\psi(x + L) = \psi(x)$
+* Quantized momentum condition: $p = \frac{2\pi n}{L}$
+* Phase matching: $e^{i p L} = e^{i 2\pi n} = 1$
+
+---
+
+The $n$ comes in if you take more than one $L$. It's a **phase condition**: for the wave function to match, the exponent must satisfy $p L = 2 \pi n$.
+This ensures:
+
+$$
+e^{i p L} = e^{i 2 \pi n} = 1
+$$
+
+meaning the phase repeats every $L$.
+
+---
+
+I thought $L$ would be just $2 \pi$, and $n L$ could be $2 \pi n$. But this is the same principle as a standard wave.
+Even if the phase is $4 \pi$, it still represents a single period.
+
+---
+
+Key points to remember:
+
+* The integer $n$ represents the quantum number for allowed momentum states
+* The quantization condition $p L = 2\pi n$ arises from periodic boundary requirements
+* The phase must return to its original value after distance $L$
+
+## Quantized Momentum and Energy Shifts in a Periodic Two-Particle System
+
+
+What I mean is just that it shouldn't be one if it's anything less than $L$. It shouldn't be one if it's anything less than $L$. For $l = \frac{1}{2}$, it could be one. Why not?
+
+So it means that the **momentum of particles is quantized** and can only take values in steps as small as $\frac{1}{L}$. The quantized momentum condition for particles in a periodic system is:
+
+$$
+p_n = \frac{2\pi n}{L} \quad \text{where } n \in \mathbb{Z}.
+$$
+
+Therefore, if you consider a two-particle system, it has a **discrete spectrum**. Here, $M = 1$, $n = 2$, $n = 3$, and $n = 4$. This is the periodic boundary condition.
+
+You can think of two particles moving in a circle of length $L$. The one-dimensional case of this box computation would be a circle, and the spectrum is discrete.
+
+---
+
+In that case, the energy of the system is equal to the sum of the energies of the particles. For a **non-interacting system**, the energy spectrum is:
+
+$$
+E_{\text{non-int}} = \sum_{i=1}^{2} \frac{p_i^2}{2m} = \sum_{i=1}^{2} \frac{(2\pi n_i)^2}{2mL^2}.
+$$
+
+The particles are freely moving and do not interact. However, once interactions are introduced, the energy of the system becomes slightly different. We can still write the total energy, but we must account for the interaction energy.
+
+---
+
+It is natural that the spectrum of an **interacting system** differs from the non-interacting case. There is a shift due to interaction:
+
+$$
+\Delta E = E_{\text{int}} - E_{\text{non-int}}}.
+$$
+
+This is the idea behind computing interactions on the lattice and performing spectroscopy. First, compute the spectrum without interactions. Then, compute it with interactions and observe how the energy levels shift.
+
+::: callout-important
+The difference between these levels gives information about the **phase shift of the interaction**. The relation between the energy shift and the scattering phase is given by Lüscher's formula for periodic boundary conditions:
+$$
+\Delta E = -\frac{4\pi a}{mL^3} \left[1 + c_1 \frac{a}{L} + c_2 \left(\frac{a}{L}\right)^2 \right] + \mathcal{O}(L^{-6}),
+$$
+where $a$ is the **scattering length** and $c_i$ are numerical constants.
+:::
+---
+
+To measure this, you compute the **two-point correlator**:
+
+$$
+C(t) = \langle \mathcal{O}(t) \mathcal{O}^\dagger(0) \rangle \propto e^{-Et}.
+$$
+
+For example, compute this quantity for two pions. Observe where it saturates at high $T$. The saturation point gives a measurement of the energy level.
+
+Repeat the same computation for the interacting system. Compare the two results to determine the shift. Relate the shift to the scattering phase.
+
+The way collision data connects to the answer is through another technique, typically analyzed in configuration space with real-valued wavefunctions.
+
+## Exploring Hadron Structure and Scattering Amplitudes in Lattice QCD
+
+
+This is my latest QCD lecture.
+I invite you to the full lectures if someone offers them—it's a **fascinating subject**.
+In recent years, we have learned so much about the **hadron spectrum** from lattice QCD.
+
+---
+
+The lattice provides an **isolated setup** free from experimental effects.
+You can perform calculations that are **impossible in experiments**.
+For example, you can scatter two pions.
+While pion scattering is possible experimentally, processes like a photon scattering off a sigma meson are **unattainable in experiments**—but not on the lattice.
+
+::: callout-note
+The sigma meson, a pion-pion S-wave state, is one of the low-energy **tetraquark candidates** observed as a "blob" in the spectrum.
+:::
+By studying pion-pion scattering and inserting a photon current, you can compute **correlation functions** to access form factors.
+These form factors reveal the **spatial distribution** of quarks and gluons inside mesons.
+
+---
+
+One exciting frontier of lattice QCD is probing hadron structure by inserting currents.
+This allows you to visualize how quarks and gluons are distributed spatially.
+Such studies are impossible in QED, where you only have pure electronic states.
+
+In QCD, you can compute form factors, but fixing **low-energy constants** is challenging.
+Some researchers working on LPT might disagree, but I’m unaware of a reliable method.
+
+For higher-energy experiments involving low-lying resonances, you produce them via stable particles.
+You only access the production amplitude, such as:
+$$ \pi + \text{proton} \to \text{target} $$
+
+---
+
+Unitarity constraints, which we discussed earlier, are much stricter for scattering amplitudes.
+In the last lecture, I wrote a matrix element on the board, and Henrik pointed out:
+*"Shouldn’t the imaginary part be positive due to unitarity?"*
+
+This refers to the scattering amplitude $T(s)$, where:
+$$ \text{Im}\,T(s) \geq 0 \quad \text{and} \quad |T(s)| \leq 1 $$
+For purely elastic scattering, $|T_{el}(s)| = 1$—it must lie on the **unitary circle**.
+
+---
+
+On the lattice, you can access amplitudes like:
+
+- $\pi\pi \to \pi\pi$
+- $\pi\pi \to KK$
+- $\pi K \to \pi K$
+
+...all while controlling quark masses.
+You can make pions **massless** or **massive**, drastically altering the elastic region.
+
+- With **massless pions**, thresholds for $2\pi$, $3\pi$, and $5\pi$ states coincide.
+- With **massive pions**, a large elastic region opens where the $2\pi$ threshold is accessible but higher thresholds (e.g., $3\pi$) remain closed.
+
+---
+
+This allows nearly **parameter-free studies** using unitarity constraints.
+By varying quark masses, you can make particles transition in the complex $K$-plane, where:
+$$ K(s) = \sqrt{s/4 - m^2} $$
+
+Resonances appear as **poles in the second Riemann sheet**.
+You can smoothly connect:
+
+- **Bound states**
+- **Resonances**
+- **Virtual states**
+
+...all manifestations of QCD.
+
+---
+
+Bound states, virtual states, and resonances are **deeply interconnected**.
+Depending on quark masses $m_q$, a bound state can become a resonance or vice versa.
+This reveals the **unified nature** of these phenomena in QCD.
+
+## Preparing Exercise Sheets and Closing Remarks
+
+
+* **On exercise sheets:**
+I hope you're going to like the **exercise sheet** that Ilya kindly prepared and printed for you.
+I prepared it in the night, and Ilya printed it.
+
+---
+
+::: callout-note
+**Acknowledgments:**
+Thank you very much for coming today, and sorry for going a little bit overtime.
+*Well done.*
+:::

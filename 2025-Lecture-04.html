@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Mikhail Mikhasenko">
+
+<title>lecture-04 – Hadron Physics</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 16.8em;
+  margin: 0 16.8em 16.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-6729c19c459079745e2be02720e68a89.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-search-results"></div>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#electron-photon-scattering-form-factors-and-baryon-magnetic-moments" id="toc-electron-photon-scattering-form-factors-and-baryon-magnetic-moments" class="nav-link active" data-scroll-target="#electron-photon-scattering-form-factors-and-baryon-magnetic-moments"><span class="header-section-number">1</span> Electron-Photon Scattering, Form Factors, and Baryon Magnetic Moments</a></li>
+  <li><a href="#light-baryon-spectroscopy-and-hadron-production-methods" id="toc-light-baryon-spectroscopy-and-hadron-production-methods" class="nav-link" data-scroll-target="#light-baryon-spectroscopy-and-hadron-production-methods"><span class="header-section-number">2</span> Light Baryon Spectroscopy and Hadron Production Methods</a></li>
+  <li><a href="#su2-algebra-and-delta-baryon-wave-functions" id="toc-su2-algebra-and-delta-baryon-wave-functions" class="nav-link" data-scroll-target="#su2-algebra-and-delta-baryon-wave-functions"><span class="header-section-number">3</span> SU(2) Algebra and Delta Baryon Wave Functions</a></li>
+  <li><a href="#adjustments-to-schedule-and-workload" id="toc-adjustments-to-schedule-and-workload" class="nav-link" data-scroll-target="#adjustments-to-schedule-and-workload"><span class="header-section-number">4</span> Adjustments to Schedule and Workload</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Mikhail Mikhasenko </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="electron-photon-scattering-form-factors-and-baryon-magnetic-moments" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="electron-photon-scattering-form-factors-and-baryon-magnetic-moments"><span class="header-section-number">1</span> Electron-Photon Scattering, Form Factors, and Baryon Magnetic Moments</h2>
+<p>Today’s lecture will start by reviewing <strong>electron-photon scattering</strong>, then continue with the <strong>magnetic moment</strong>. Later, we will discuss different experiments and how they produce various hadrons.</p>
+<hr>
+<p>The electron-photon spectrum was discussed last time. In this context, remember three cross sections:</p>
+<ul>
+<li>The <strong>Rosenfeld cross section</strong></li>
+<li>The <strong>Mott cross section</strong></li>
+<li>The <strong>Rosenbluth cross section</strong></li>
+</ul>
+<p>What’s important here are the <strong>charges</strong>. We neglected the spins of the particles initially. The logical extension is the Mott cross section, where <span class="math inline">\beta</span> is the velocity and the electron spin is considered. It is essentially the Rutherford cross section multiplied by a correction term:</p>
+<p><span class="math display">
+\left(\frac{d\sigma}{d\Omega}\right)_{\text{Mott}} = \left(\frac{d\sigma}{d\Omega}\right)_{\text{Rutherford}} \cdot \left(1 - \beta^2 \sin^2\left(\frac{\theta}{2}\right)\right)
+</span></p>
+<p>This term suppresses scattering at backward angles. At 180 degrees, the cross section is lower due to <strong>conservation laws</strong> for relativistic particles.</p>
+<hr>
+<p>Experiments show the cross section falls more steeply than predicted by the Mott formula. This discrepancy arises because the target is not point-like. The finite size is accounted for by a <strong>form factor</strong>.</p>
+<p>The form factor is the Fourier transform of the charge density:</p>
+<p><span class="math display">
+F(Q^2) = \int \rho(r) e^{i \vec{q} \cdot \vec{r}} d^3r
+</span></p>
+<p>For a point-like particle (<span class="math inline">\rho(r) = \delta(r)</span>), the form factor is a constant. For an exponential charge density (e.g., a proton), it takes a dipole form:</p>
+<p><span class="math display">
+G_E(Q^2) = \left(1 + \frac{Q^2}{\Lambda^2}\right)^{-2}, \quad \Lambda \approx 16.71\,\text{GeV}^2
+</span></p>
+<p>For a nucleus with a diffuse edge, the form factor exhibits <strong>oscillatory behavior</strong>.</p>
+<hr>
+<p>The Rosenbluth cross section incorporates electric and magnetic form factors:</p>
+<p><span class="math display">
+\frac{d\sigma}{d\Omega} = \left(\frac{d\sigma}{d\Omega}\right)_{\text{Mott}} \left[ \frac{G_E^2(Q^2) + \tau G_M^2(Q^2)}{1 + \tau} + 2\tau G_M^2(Q^2) \tan^2\left(\frac{\theta}{2}\right) \right]
+</span></p>
+<p>where <span class="math inline">\tau = Q^2/4m_p^2</span> and <span class="math inline">Q^2</span> is the momentum transfer.</p>
+<div class="callout callout-style-simple callout-important">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>To extract the proton radius, plot the measured cross section divided by the Mott cross section versus <span class="math inline">Q^2</span>. The slope at <span class="math inline">Q^2 \to 0</span> gives the radius:</p>
+<p><span class="math display">
+\langle r_p^2 \rangle = -6 \hbar^2 \left.\frac{dG_E(Q^2)}{dQ^2}\right|_{Q^2=0}
+</span></p>
+</div>
+</div>
+</div>
+<hr>
+<p>The electric form factor of the proton follows a <strong>dipole distribution</strong>, while the neutron’s magnetic form factor starts at <span class="math inline">-1.91</span> at <span class="math inline">Q^2 = 0</span>. The values at <span class="math inline">Q^2 = 0</span> correspond to:</p>
+<ul>
+<li>The proton’s charge (<span class="math inline">1</span>)</li>
+<li>The magnetic moments of the proton and neutron</li>
+</ul>
+<p>Measuring at low <span class="math inline">Q^2</span> is challenging because it requires <strong>small scattering angles</strong>. Experiments like those at the Mainz accelerator use spectrometer arms to detect electrons and protons. New experiments, such as <strong>MUSE at MESA</strong>, aim to improve these measurements.</p>
+<p>Historically, discrepancies arose between proton radii measured via:</p>
+<ul>
+<li><strong>Electron scattering</strong> (<span class="math inline">\sim 16.86</span> fm)</li>
+<li><strong>Atomic spectroscopy</strong> (Lamb shift), which suggested a smaller radius</li>
+</ul>
+<p>New experiments, like <strong>AMBER at CERN</strong> (using muons), seek to resolve this.</p>
+<hr>
+<p>These experiments revealed the proton’s substructure. Now, let’s discuss <strong>spin</strong>, <strong>flavor symmetry</strong>, and calculating baryon magnetic moments.</p>
+<p>The total baryon wave function must be <strong>antisymmetric</strong>. Color wave function antisymmetry implies the spin-flavor part must be symmetric. For a proton (spin-<span class="math inline">1/2</span>), the symmetric spin-flavor wave function is:</p>
+<p><span class="math display">
+|p \uparrow \rangle = \frac{1}{\sqrt{2}} \left( \chi_S \psi_S + \chi_A \psi_A \right)
+</span></p>
+<p>where <span class="math inline">\chi_S</span> and <span class="math inline">\psi_S</span> are symmetric spin and flavor states, and <span class="math inline">\chi_A</span>, <span class="math inline">\psi_A</span> are antisymmetric.</p>
+<hr>
+<p>The magnetic moment of a quark is:</p>
+<p><span class="math display">
+\mu_q = \frac{e_q \hbar}{2m_q}
+</span></p>
+<p>For up (<span class="math inline">e_u = +2/3</span>) and down (<span class="math inline">e_d = -1/3</span>) quarks:</p>
+<p><span class="math display">
+\mu_u = +\frac{2}{3} \frac{e\hbar}{2m_u}, \quad \mu_d = -\frac{1}{3} \frac{e\hbar}{2m_d}
+</span></p>
+<p>The proton’s magnetic moment (spin-up) sums contributions from its quarks:</p>
+<p><span class="math display">
+\mu_p = \langle p \uparrow | \sum_{i=1}^3 \mu_i \sigma_z^{(i)} | p \uparrow \rangle = \frac{4}{3}\mu_u - \frac{1}{3}\mu_d
+</span></p>
+<p>For the neutron, swapping up and down quarks gives:</p>
+<p><span class="math display">
+\frac{\mu_n}{\mu_p} \approx -\frac{2}{3} \quad \text{(if } m_u \approx m_d \text{)}
+</span></p>
+<p>Experimentally, this ratio is close to <span class="math inline">-1.91/2.79 \approx -16.68</span>, consistent with the <strong>quark model</strong>.</p>
+<hr>
+<p>The constituent quark masses include:</p>
+<ul>
+<li><strong>Valence quarks</strong></li>
+<li>Surrounding gluons/quark-antiquark pairs</li>
+</ul>
+<p>This explains their larger values (<span class="math inline">\sim 300</span> MeV) compared to bare quark masses.</p>
+<p>Magnetic moments are measured via:</p>
+<ul>
+<li><strong>Spin splitting</strong> in magnetic fields (e.g., Stern-Gerlach)</li>
+<li><strong>Radiative decays</strong> in photon-proton collisions for short-lived baryons (e.g., <span class="math inline">\Delta^{+}</span>)</li>
+</ul>
+<p>For the <span class="math inline">\Omega^-</span> baryon (three strange quarks), the magnetic moment is:</p>
+<p><span class="math display">
+\mu_{\Omega^-} = 3\mu_s = 3\left(-\frac{1}{3}\frac{e\hbar}{2m_s}\right) = -\frac{e\hbar}{2m_s}
+</span></p>
+<hr>
+<p>This concludes the recap of <strong>electron-photon scattering</strong> and <strong>magnetic moments</strong>. Next, we’ll explore further applications of <strong>flavor symmetry</strong>.</p>
+</section>
+<section id="light-baryon-spectroscopy-and-hadron-production-methods" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="light-baryon-spectroscopy-and-hadron-production-methods"><span class="header-section-number">2</span> Light Baryon Spectroscopy and Hadron Production Methods</h2>
+<p>We already discussed the proton. Now let’s think about the <strong>light baryons</strong>. We have seen you can use <strong>SU(3)</strong> for flavor with the up, down, and strange quark, and combine it with <strong>SU(2) spin</strong>. This gives us <strong>SU(6)</strong> for spin-flavor symmetry:</p>
+<p><span class="math display">
+\text{SU(6)} \supset \text{SU(3)}_{\text{flavor}} \otimes \text{SU(2)}_{\text{spin}}
+</span></p>
+<p>As discussed earlier, for <strong>SU(3) flavor</strong>, we have the baryon decuplet and octet. Combining flavor and spin into <strong>SU(6)</strong>, we get the <strong>20</strong>, <strong>70</strong>, and <strong>56-plets</strong>. The <strong>56-plet</strong> is antisymmetric, while the others are mixed symmetric. With these considerations, we can arrange the known light baryons into these multiplets. I won’t cover all of them, but let’s look at some mass differences as examples.</p>
+<p>For instance, we have:</p>
+<ul>
+<li>The <strong>radial excitation number</strong></li>
+<li><strong>Orbital angular momentum</strong> <span class="math inline">L</span></li>
+<li>The <strong>spin</strong>, which can be <span class="math inline">1/2</span> or <span class="math inline">3/2</span></li>
+</ul>
+<p>For spin <span class="math inline">1/2</span>, we get the nucleons, and for <span class="math inline">3/2</span>, we enter the decuplet, which includes the <span class="math inline">\Delta</span>. I’ll focus on the <span class="math inline">N^*</span> and <span class="math inline">\Delta^*</span> baryons, excluding those with strange quarks. These can have excited states from radial or orbital angular momentum excitations. For <span class="math inline">L=1</span>, the spin can still be <span class="math inline">1/2</span> or <span class="math inline">3/2</span>.</p>
+<hr>
+<p>Let me give an example of <strong>radial excitation</strong>. If we arrange these states in patterns:</p>
+<ul>
+<li><span class="math inline">S</span> denotes <span class="math inline">L=0</span></li>
+<li>The <span class="math inline">N=1</span> state corresponds to <span class="math inline">N=0</span>, which is just the proton or nucleon</li>
+<li>The next band contains <strong>five states</strong>, with masses ranging from <strong>1500 to 1700 MeV</strong></li>
+</ul>
+<p>One state might be slightly lower, and others could include <span class="math inline">D</span>-states, and so on.</p>
+<p>The key point here is the <strong>mass difference</strong> of about <strong>600 MeV</strong>, arising from spin-orbit and spin-spin interactions:</p>
+<p><span class="math display">
+\Delta M \approx 600 \text{ MeV}
+</span></p>
+<p>These states are well-documented up to certain energies in the PDG, with star ratings indicating their reliability. A goal of light baryon spectroscopy is to identify how many states exist and their patterns, based on quark model predictions. Are these correct, or is there different dynamics? We need to study the states’ properties, which leads me to discuss experimental methods for producing hadrons.</p>
+<hr>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Question about 1S and 2S:</strong> I’m surprised you labeled this as 3S. What’s the difference between 1S and 2S? The radial wave function changes, but no orbital angular momentum is added—just the hadron’s size increases. How does this introduce more states? I was checking the quark model’s predictions. Why three states? I’d expect one, like the <span class="math inline">\rho</span> resonance.</p>
+<p>The answer lies in multiplets from different <span class="math inline">LS</span> combinations. For <span class="math inline">n=1</span>, <span class="math inline">l=0</span>, there’s a spin combination. Some papers claim more states should exist, including <span class="math inline">\Delta</span> resonances, but these are distinct. Some studies don’t separate them clearly.</p>
+<p>For radial excitations (increasing <span class="math inline">N</span>), the number of states in the multiplet shouldn’t change because no extra degrees of freedom are added. The 2P multiplet has the same number of states as 1P. Higher excitations introduce <span class="math inline">L=2</span>, altering the count.</p>
+<p>Agreed—for <span class="math inline">N=1, 2, 3</span>, the state count remains the same. Experimentally, only the first band is well-known; the rest are uncertain. Some states match quark model predictions, others don’t, leaving gaps in light baryon spectroscopy.</p>
+</div>
+</div>
+</div>
+<hr>
+<p>Next, let’s discuss <strong>hadron production</strong>. Electromagnetic probes like electron or photon beams can be used, with colliding or fixed-target setups. Hadron beams (e.g., pions or protons) are another option.</p>
+<p>Starting with <strong>electromagnetic probes</strong>, consider the <strong>BESIII facility</strong> in China. It’s a symmetric <span class="math inline">e^+e^-</span> collider with beam energies of <strong>1–2.47 GeV</strong>. The annihilation produces a virtual photon, which can form a <span class="math inline">J/\psi</span>, decaying into other hadrons.</p>
+<p>The <strong>center-of-mass energy</strong> <span class="math inline">\sqrt{s} = 2E_e</span> determines the producible particles. For BESIII, this covers masses up to <strong>~2 GeV</strong>. The cross-section shows peaks like <span class="math inline">J/\psi</span> and <span class="math inline">\psi(2S)</span>, with decays like <span class="math inline">J/\psi \to \gamma \eta \eta'</span> or <span class="math inline">3\pi</span>.</p>
+<p>At higher energies (e.g., Belle, <span class="math inline">\sqrt{s} \approx 10</span> GeV), bottomonium states like <span class="math inline">\Upsilon</span> are produced.</p>
+<hr>
+<p>Now, <strong>photo-production experiments</strong>: fixed-target setups like:</p>
+<ul>
+<li><strong>A2</strong> (Mainz, 16.8–1.6 GeV)</li>
+<li><strong>CBELSA/TAPS</strong> (Bonn)</li>
+<li><strong>GlueX</strong> (US, 6–12 GeV)</li>
+</ul>
+<p>Photon beams are generated via <strong>Bremsstrahlung</strong> from electron beams:</p>
+<p><span class="math display">
+\frac{dN}{dE_\gamma} \propto \frac{1}{E_\gamma}
+</span></p>
+<p>For <span class="math inline">\gamma p</span> collisions, the <strong>center-of-mass energy</strong> is:</p>
+<p><span class="math display">
+s = m_p^2 + 2E_\gamma m_p
+</span></p>
+<p>With <span class="math inline">E_\gamma \leq 3.2</span> GeV, resonances up to <strong>2.7 GeV</strong> (e.g., <span class="math inline">\Delta</span>) are accessible.</p>
+<hr>
+<div class="callout-question">
+<p><strong>Can hyperons be produced here?</strong> No—flavor conservation forbids strangeness change in <span class="math inline">s</span>-channel. However, <span class="math inline">t</span>-channel processes (e.g., <span class="math inline">\gamma p \to K^+ \Sigma</span>) are possible, as planned for the <strong>INSIGHT experiment</strong>.</p>
+</div>
+<p><strong>Quantum number selection rules</strong> apply. For <strong>E1 photons</strong> (<span class="math inline">L=1</span>, parity <span class="math inline">-</span>):</p>
+<p><span class="math display">
+J^P = \frac{1}{2}^- \text{ or } \frac{3}{2}^-
+</span></p>
+<p>Resonances are labeled like <span class="math inline">S_{11}</span>, where:</p>
+<ul>
+<li><span class="math inline">S</span>: <span class="math inline">L=0</span> (meson orbital momentum)</li>
+<li>First subscript: <span class="math inline">2 \times</span> isospin (1 for nucleons, 3 for <span class="math inline">\Delta</span>)</li>
+<li>Second subscript: <span class="math inline">2 \times</span> total angular momentum</li>
+</ul>
+<hr>
+<p><strong>Final note:</strong> Higher energies allow meson spectroscopy, but we’ll cover that next time.</p>
+</section>
+<section id="su2-algebra-and-delta-baryon-wave-functions" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="su2-algebra-and-delta-baryon-wave-functions"><span class="header-section-number">3</span> SU(2) Algebra and Delta Baryon Wave Functions</h2>
+<p>We’ve been talking to theorists yesterday. There will be <strong>advanced theoretical hadron physics</strong> next semester. Everyone is invited to take it, and it will be completely complementary to this course—it will go in-depth into group theory.</p>
+<p>One thing we discussed is that in this course, we cover <span class="math inline">SU(2)</span> well. In the theory course, this <span class="math inline">SU(2)</span> is considered trivial, so it goes to <span class="math inline">SU(3)</span> in depth, looking at the irreducible representations. But for this course, we focus on <span class="math inline">SU(2)</span>, the groups we discussed for the flavor, for the isospin, and for the spin, as Farah demonstrated today.</p>
+<p>It’s indeed simple once you understand it, and understanding requires practice. I mentioned last time, Farah mentioned today, and we will mention yet another time how the <span class="math inline">SU(2)</span> algebra works. But I wanted to invite you to engage with a little exercise.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Key <span class="math inline">SU(2)</span> Algebra Formulas</strong>:</p>
+<ul>
+<li>Commutation relations: <span class="math inline">[J_i, J_j] = i \hbar \epsilon_{ijk} J_k</span> or <span class="math inline">[I_i, I_j] = i \epsilon_{ijk} I_k</span> (with <span class="math inline">\hbar = 1</span>).</li>
+<li>Raising/lowering operators: <span class="math inline">J_{\pm} = J_x \pm i J_y</span> (similarly for <span class="math inline">I_{\pm}</span>). <span class="math inline">J_- |j, m\rangle = \sqrt{j(j+1) - m(m-1)} \, |j, m-1\rangle</span>. <span class="math inline">J_+ |j, m\rangle = \sqrt{j(j+1) - m(m+1)} \, |j, m+1\rangle</span>.</li>
+</ul>
+</div>
+</div>
+</div>
+<hr>
+<p>I’ll quickly write a wave function—it goes nowhere—and I invite you to write down the answer, leave it on the table right here. You don’t even need to write your name on it. We just want to gauge how well you understand what’s going on.</p>
+<p>So, I want to consider a delta that has three quarks in isospin states. There are four states: <span class="math inline">\Delta^{++}</span>, <span class="math inline">\Delta^+</span>, <span class="math inline">\Delta^0</span>, and <span class="math inline">\Delta^-</span>. I would like to build this spin-flavor wave function.</p>
+<p>For example, the <span class="math inline">\Delta^+</span> state would be <span class="math inline">|uud\rangle</span> with spin projection <span class="math inline">J_z = \frac{3}{2}</span>. On this little piece of paper, write:</p>
+<ol type="1">
+<li>What is <span class="math inline">J_-</span> acting on <span class="math inline">|\Delta^+ (J=\frac{3}{2}, J_z=\frac{3}{2})\rangle</span>?</li>
+<li>What is <span class="math inline">J_+</span> acting on <span class="math inline">|\Delta^+ (J=\frac{3}{2}, J_z=\frac{3}{2})\rangle</span>?</li>
+<li>What is <span class="math inline">I_+</span> acting on <span class="math inline">|\Delta^+ (I=\frac{3}{2}, I_z=\frac{1}{2})\rangle</span>?</li>
+<li>What is <span class="math inline">I_-</span> acting on <span class="math inline">|\Delta^+ (I=\frac{3}{2}, I_z=\frac{1}{2})\rangle</span>?</li>
+</ol>
+<p>You have two minutes. I have a meeting now, so I won’t provide solutions—it’s trivial once you understand the logic. Just give it a try.</p>
+<hr>
+<p>A reminder: the total isospin is the sum of the isospins of the three quarks, <span class="math inline">\mathbf{I} = \mathbf{I}_1 + \mathbf{I}_2 + \mathbf{I}_3</span>. The same applies for <span class="math inline">\mathbf{J}</span>. You don’t need much derivation if you know the answer. We just want to check if you remember how the lowering operators act.</p>
+<div class="callout callout-style-simple callout-important">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Exercise Solutions (for reference)</strong>:</p>
+<ul>
+<li><span class="math inline">J_- |\Delta^+ (J=\frac{3}{2}, J_z=\frac{3}{2})\rangle = \sqrt{3} \, |\Delta^+ (J=\frac{3}{2}, J_z=\frac{1}{2})\rangle</span></li>
+<li><span class="math inline">J_+ |\Delta^+ (J=\frac{3}{2}, J_z=\frac{3}{2})\rangle = 0</span> (max <span class="math inline">J_z</span> state)</li>
+<li><span class="math inline">I_+ |\Delta^+ (I=\frac{3}{2}, I_z=\frac{1}{2})\rangle = \sqrt{3} \, |\Delta^{++} (I=\frac{3}{2}, I_z=\frac{3}{2})\rangle</span></li>
+<li><span class="math inline">I_- |\Delta^+ (I=\frac{3}{2}, I_z=\frac{1}{2})\rangle = \sqrt{2} \, |\Delta^0 (I=\frac{3}{2}, I_z=-\frac{1}{2})\rangle</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="adjustments-to-schedule-and-workload" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="adjustments-to-schedule-and-workload"><span class="header-section-number">4</span> Adjustments to Schedule and Workload</h2>
+<p><strong>What is it about at all?</strong> <em>Two minutes is too little.</em> You need <strong>five or ten</strong>.</p>
+<hr>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Administrative updates about scheduling and workload adjustments follow below.</p>
+</div>
+</div>
+</div>
+<hr>
+<ul>
+<li><strong>Next Thursday</strong>, we don’t have exercises plus the lab tutorial.</li>
+<li>That’s also why we simplified the homework volume.</li>
+</ul>
+<hr>
+<p>There will be holidays. <em>Everyone is invited to spend time resting.</em></p>
+<ul>
+<li>Exercises are <strong>light</strong> for this reason.</li>
+</ul>
+<hr>
+<p>We do not have <strong>physical labs</strong>. That’s why I brought…</p>
+<hr>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>While this segment contains no physics formulas, common nuclear physics equations include:</p>
+<ul>
+<li>Radioactive decay: `<span class="math inline">\frac{dN}{dt} = -\lambda N</span></li>
+<li>Binding energy: <span class="math inline">E_B = (Zm_p + Nm_n - m_{nucleus})c^2</span></li>
+<li>Half-life: <span class="math inline">t_{1/2} = \frac{\ln(2)}{\lambda}</span>`</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
