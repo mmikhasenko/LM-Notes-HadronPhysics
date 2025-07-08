@@ -1,4 +1,4 @@
-## Classification of Hadrons and the Role of Isospin
+### Classification of Hadrons and the Role of Isospin
 
 
 **Welcome everyone to today's lecture.**
@@ -140,7 +140,7 @@ Physicists noticed that:
 interactions had **similar strengths**, suggesting the strong interaction doesn't distinguish between them.
 Later, this was extended to quarks, where the strong interaction doesn't distinguish between **up and down quarks**.
 
-## Strangeness, Isospin, and the Eightfold Way: Patterns in Particle Multiplets
+### Strangeness, Isospin, and the Eightfold Way: Patterns in Particle Multiplets
 
 
 First, they had this kind of an **isospin doublet**. Then they found all these other particles like the pions and K's and so on. They grouped them together and looked for bigger patterns with also the **strangeness** included as the next quantum number. There are deltas. Do you remember when that was first found? Around the **60s**. With the Bevatron experiment, one of the first large accelerators in Berkeley, they found over 100 particles and didn't know what to do with them. Were they like atoms or not? Later they found out they could decompose them into smaller particles and understand how. We are still trying to understand.
@@ -157,9 +157,8 @@ Take a three-minute break while I clean the blackboard. Then we will continue wi
 Strangeness conservation:
 
 - **Strong interactions**: $\Delta S = 0$
-- **Weak interactions**: $\Delta S
-:::eq 0$ (e.g., $\Lambda \to p^+ + \pi^-$)
-
+- **Weak interactions**: $\Delta S \neq 0$ (e.g., $\Lambda \to p^+ + \pi^-$)
+:::
 ---
 
 I forgot to mention earlier that **isospin** is also a quantum number conserved in strong interactions. How do we assign this quantum number? Particles consisting of up and down quarks have strangeness $0$, like pions, neutrons, and protons. For others, like lambda, strangeness is $+1$. These are called **hyperons**. There are different types: lambda, sigmas, cascades, and kaons. We can form isospin doublets with $ K^+ $ and $ K^0 $, and similarly $ K^- $ and $ \overline{K^0} $ in a doublet with strangeness $-1$.
@@ -251,7 +250,7 @@ with ~150 MeV between levels.
 
 These patterns come from **group theory**, describing particles mathematically. The mass difference between octet and decuplet arises from spin-spin or spin-orbit interactions, reflecting the dynamics.
 
-## Baryon and Meson Multiplets: Quantum Numbers and Decay Constraints
+### Baryon and Meson Multiplets: Quantum Numbers and Decay Constraints
 
 
 This is for the **baryons**, and we can also do a similar multiplet for the **mesons**.
@@ -319,7 +318,7 @@ When analyzing particle decays, it is important to consider these **quantum numb
 
 There are many more examples to explore in the exercises.
 
-## Resolving the Omega Minus and Delta Plus Plus Symmetry Problem with Color Charge
+### Resolving the Omega Minus and Delta Plus Plus Symmetry Problem with Color Charge
 
 
 Lastly, I want to discuss one thing.
@@ -371,7 +370,7 @@ Key points:
 - For baryons with **identical flavor and spin**, the **color charge** provides the necessary distinction.
 - The **antisymmetric color wave function** ensures the total wave function is antisymmetric.
 
-## Evidence for Three Quark Colors from $e^+ e^-$ Annihilation Cross-Section Ratios
+### Evidence for Three Quark Colors from $e^+ e^-$ Annihilation Cross-Section Ratios
 
 
 Let’s very briefly discuss one last experiment, and then we are done.
@@ -441,7 +440,7 @@ $$
 This can be calculated exactly to determine how large these steps are, and what they found was that the **number of colors must be three**.
 We’ll discuss this more later.
 
-## Historic Development of the Quark Model and Particle Discoveries
+### Historic Development of the Quark Model and Particle Discoveries
 
 
 I just want to leave a couple of minutes for questions.
@@ -459,8 +458,7 @@ This is basically the historic background to this topic.
 ---
 
 What I always find difficult with histories like this is distinguishing what was known and what wasn't.
-For example, when strangeness was introduced with cosmic rays, how did they know it was strangeness ($\Delta S 
-eq 0$) and not just invariant masses?
+For example, when strangeness was introduced with cosmic rays, how did they know it was strangeness ($\Delta S \neq 0$) and not just invariant masses?
 They called these particles *strange* because they were confused about why they only appeared in pairs or had longer lifetimes.
 
 ---
@@ -482,9 +480,8 @@ If you don't observe a decay, there must be a violated quantum number.
 
 ::: callout-important
 CP violation occurs when:
-$$\frac{\Gamma(P \rightarrow f) - \Gamma(\bar{P} \rightarrow \bar{f})}{\Gamma(P \rightarrow f) + \Gamma(\bar{P} \rightarrow \bar{f})}
-:::eq 0$$
-
+$$\frac{\Gamma(P \rightarrow f) - \Gamma(\bar{P} \rightarrow \bar{f})}{\Gamma(P \rightarrow f) + \Gamma(\bar{P} \rightarrow \bar{f})} \neq 0$$
+:::
 ---
 
 I don't know exactly when **charge conjugation** was introduced, but it was early—around the time of the positron, before the antiproton was discovered.
@@ -495,3 +492,13 @@ For example:
 * Quantum numbers were introduced based on cross sections
 It's difficult to track historically.
 
+---
+
+The quark model was mostly correct historically. 
+When the multiplets were assembled, it was only postulated that there might be a smaller substructure. 
+They were first called **partons**, not quarks. 
+ 
+The mass differences in the deltas, sigmas, and cascades suggested different quark content. 
+They saw a mass difference and predicted the next particle would be **150 MeV heavier**, which turned out to be correct. 
+The original quark paper is just two pages—you can look it up. 
+It was an exciting time: quarks were predicted in 1962, and the Omega minus was discovered in 1964.

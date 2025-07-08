@@ -1,4 +1,4 @@
-## Pion Decay Dynamics, Chirality Suppression, and the Muon Magnetic Moment
+### Pion Decay Dynamics, Chirality Suppression, and the Muon Magnetic Moment
 
 
 We are finishing the lecture cycle. Two more to go. Today is the month before last. However, content-wise, today will be more on physics, and next week I would like to discuss meta-issues and how the hadron community functions. I will give you a little bit of background on how research is structured in the field, how collaborations work, and what scientists actually do in the hadron physics domain. There will be less on physics next time. Perhaps I will spend the first 20 minutes reviewing recent discoveries, what experiments have brought up, and what the hadron community is currently working on.
@@ -18,8 +18,7 @@ Key formulas discussed in this lecture:
 :::
 ---
 
-I would like to start today's lecture with a short recap. Let’s revisit our discussion of **helicity and chirality** and examine pion decay: $\pi^+ \to \mu^+ 
-u_\mu$. I would like you to compare this decay. Start by drawing this two-body decay in the rest frame of the pion, indicating momenta and chirality. The vertex is a weak interaction, so the produced particles have definite chiral properties—left or right. On this diagram, chirality is related to spin orientation in the high-mass limit. Given these chiral configurations, what are the ratios of the matrix elements? Which phase space is bigger? And which decay is more likely for the pion? Let’s take three minutes.
+I would like to start today's lecture with a short recap. Let’s revisit our discussion of **helicity and chirality** and examine pion decay: $\pi^+ \to \mu^+ \nu_\mu$. I would like you to compare this decay. Start by drawing this two-body decay in the rest frame of the pion, indicating momenta and chirality. The vertex is a weak interaction, so the produced particles have definite chiral properties—left or right. On this diagram, chirality is related to spin orientation in the high-mass limit. Given these chiral configurations, what are the ratios of the matrix elements? Which phase space is bigger? And which decay is more likely for the pion? Let’s take three minutes.
 
 ---
 
@@ -35,10 +34,7 @@ For phase space, the number of angular configurations is the same, but the energ
 
 ---
 
-The dominant decay of the pion is $\pi^+ \to \mu^+ 
-u_\mu$. This is **important physics**—it’s how parity violation was discovered. The muon is produced polarized because the pion has no spin, and the neutrino escapes undetected. The muon’s polarization can be measured because its decay $\mu^+ \to e^+ 
-u_e \bar{
-u}_\mu$ is self-analyzing. The electron’s angular distribution reveals the muon’s polarization. If the muon is polarized, the electron prefers to align with the spin direction. This setup was used in 1967 to confirm parity violation.
+The dominant decay of the pion is $\pi^+ \to \mu^+ \nu_\mu$. This is **important physics**—it’s how parity violation was discovered. The muon is produced polarized because the pion has no spin, and the neutrino escapes undetected. The muon’s polarization can be measured because its decay $\mu^+ \to e^+ \nu_e \bar{\nu}_\mu$ is self-analyzing. The electron’s angular distribution reveals the muon’s polarization. If the muon is polarized, the electron prefers to align with the spin direction. This setup was used in 1967 to confirm parity violation.
 
 ---
 
@@ -60,7 +56,7 @@ $$
 
 Higher-order terms ($\alpha^2, \alpha^3$, etc.) have been computed up to $\alpha^5$. Modern calculations use computers due to the complexity. The experimental setup involves trapping muons in a magnetic field ring. The muon’s spin precesses at $\omega_s = \omega_c (1 + a_\mu \gamma)$, where $\omega_c$ is the cyclotron frequency. The difference $\omega_s - \omega_c$ isolates $a_\mu$, allowing precise measurements. This technique, pioneered decades ago, remains critical for testing QED and probing new physics.
 
-## Proton Beam to Muon Spin Precession: Measuring Anomalous Magnetic Moment
+### Proton Beam to Muon Spin Precession: Measuring Anomalous Magnetic Moment
 
 
 The experiment is as follows.
@@ -157,7 +153,7 @@ a_\mu = \frac{\omega_a}{\omega_c} = \frac{\omega_a m_\mu}{eB}
 $$
 This is the key equation for extracting $a_\mu$ from the measured $\omega_a$.
 :::
-## Muon Polarization, Anomalous Magnetic Moment, and Hadronic Contributions in $g-2$ Experiments
+### Muon Polarization, Anomalous Magnetic Moment, and Hadronic Contributions in $g-2$ Experiments
 
 
 You're measuring $\omega_S$—it's actually correct. What enters the field is really this variable.
@@ -214,7 +210,7 @@ In the quark model, these mesons belong to the same multiplet. For instance, rep
 
 In the strange sector, the vector meson is $\phi$ ($s\bar{s}$).
 
-## Dispersion Relations and Analyticity in Complex Analysis
+### Dispersion Relations and Analyticity in Complex Analysis
 
 
 The **Cauchy theorem** tells you that in the complex plane you can integrate in the manner of analyticity. The integral is equal to the integral of the function over $S'$. This $S'$ is equal to the sum of the $2\pi i$ residues of the function at the poles. Does it look familiar? We discussed this already—that you can use this to have an integral representation of the function for any function in the domain of its analyticity.
@@ -294,7 +290,7 @@ This is because we started with an analytic function. So this is analytic. We do
 
 Mathematically surprising, but it works.
 
-## Dispersion Relations, Cross Sections, and the R Ratio in Hadronic Processes
+### Dispersion Relations, Cross Sections, and the R Ratio in Hadronic Processes
 
 
 Now we come back to the expression in the last minutes, and I'll wrap up this sketch of how it works.
@@ -362,7 +358,7 @@ $$
 \Delta a_\mu = a_\mu^{\text{exp}} - a_\mu^{\text{theory}} \approx (251 \pm 59) \times 10^{-11}
 $$
 
-## Challenges in Hadronic Contributions and the Weakening New Physics Signal
+### Challenges in Hadronic Contributions and the Weakening New Physics Signal
 
 
 In later years, two works threatened this new physics discovery.
@@ -412,12 +408,10 @@ Still, it remains the dominant source of uncertainty—we know other contributio
 ::: callout-note
 **Light-by-light (HLBL)** scattering involves 64 terms and is even more challenging due to virtual photons:
 $$
-a_\mu^{\text{HLBL}} \propto \int d^4q_1 \, d^4q_2 \, \mathcal{K}(q_1, q_2) \Pi^{\mu
-:::u\rho\sigma}(q_1, q_2)
-> $$
-> where $\Pi^{\mu
-u\rho\sigma}$ is the hadronic light-by-light scattering amplitude.
-
+a_\mu^{\text{HLBL}} \propto \int d^4q_1 \, d^4q_2 \, \mathcal{K}(q_1, q_2) \Pi^{\mu\nu\rho\sigma}(q_1, q_2)
+$$
+where $\Pi^{\mu\nu\rho\sigma}$ is the hadronic light-by-light scattering amplitude.
+:::
 **Logistics:**
 
 - **Thursday**: Obstacle course (canceled if weather doesn’t improve).
@@ -425,7 +419,7 @@ u\rho\sigma}$ is the hadronic light-by-light scattering amplitude.
 
 See you at Linde Park.
 
-## Seeking Sources on SU(N) Representation Theory via Young Tableaux
+### Seeking Sources on SU(N) Representation Theory via Young Tableaux
 
 
 I was wondering—maybe a question for a problem of mine. Maybe you can answer it.

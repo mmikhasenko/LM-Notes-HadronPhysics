@@ -1,4 +1,4 @@
-## Kinematics of Decay and Scattering: The Källén Function and Dalitz Plot
+### Kinematics of Decay and Scattering: The Källén Function and Dalitz Plot
 
 
 **Lecture number 9.**
@@ -71,7 +71,7 @@ $$
 $$
 where $s, t, u$ are Mandelstam variables and $\lambda$ is the Källén function.
 :::
-## Scattering Kinematics, Unitarity, and the Optical Theorem
+### Scattering Kinematics, Unitarity, and the Optical Theorem
 
 
 
@@ -348,7 +348,7 @@ How scattering amplitudes are constrained by the properties of the scattering ma
 To consider this first part, I want to make the first part a little more mathematical by discussing analytic functions and real functions.
 I will say a few words about analytic continuation at the end.
 
-## Analyticity and Singularities in Hadron Scattering Amplitudes
+### Analyticity and Singularities in Hadron Scattering Amplitudes
 
 
 In hadron physics, we deal with interactions that are not driven by simple Lagrangian or Hamiltonian dynamics.
@@ -505,7 +505,7 @@ And I know the answer.
 Just minus sign here or here or there.
 For any way you approach the cut, there should be analytic continuation.
 
-## Riemann Sheets, Analytic Continuation, and Real Analyticity in Scattering Amplitudes
+### Riemann Sheets, Analytic Continuation, and Real Analyticity in Scattering Amplitudes
 
 
 The other notion, the other way people talk about this, is **Riemann sheets**.
@@ -626,7 +626,7 @@ Away from the **elastic region**, more scattering possibilities arise.
 In unitary equations, you don’t just have $a \to a$ but also **cross-channel terms**.
 This reflects the coupled nature of the problem.
 
-## Causality, Analyticity, and the Optical Theorem in Scattering Amplitudes
+### Causality, Analyticity, and the Optical Theorem in Scattering Amplitudes
 
 
 That brings me to the end questions. Having dared to use the word **causality**, I always assume that the answer for causality is connected to **analyticity**. That forces the amplitude to be real analytic.

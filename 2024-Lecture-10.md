@@ -1,4 +1,4 @@
-## Calculating Cross Sections and Spin Algebra in Scattering Processes
+### Calculating Cross Sections and Spin Algebra in Scattering Processes
 
 
 Let me recap what we discussed in the lecture.
@@ -107,7 +107,7 @@ Key takeaways:
 - The optical theorem links the imaginary part of the amplitude to the total cross section.
 - Spin composition rules are essential for understanding particle interactions.
 :::
-## Scattering Length Dimensionality and Spin-1/2 Particle Representations
+### Scattering Length Dimensionality and Spin-1/2 Particle Representations
 
 
 I thought it's important to clarify. The notations got mixed up a little bit at the last lecture concerning the scattering length. The scattering length is indeed measured in **Fermi**. However, when you use relativistic notations, it appears **dimensionless**.
@@ -190,7 +190,7 @@ U_{\text{down}} \approx \frac{P}{E + m} \begin{pmatrix} \cos(\theta/2) \\ e^{i\p
 $$
 When $m \ll E$, $P \approx E$, and this factor approaches 1, simplifying the spinor.
 
-## Properties and Applications of Chiral Projection Operators
+### Properties and Applications of Chiral Projection Operators
 
 
 Now let me introduce **projection operators**, which will allow us to move on.
@@ -287,7 +287,7 @@ These are symbolic representations; the full forms are $4 \times 4$ matrices in 
 :::
 Using these, we can decompose the spinor into its **chiral components**. The result is a clean separation, which is very useful for analyzing interactions.
 
-## Chirality, Helicity, and the $V-A$ Interaction in Particle States
+### Chirality, Helicity, and the $V-A$ Interaction in Particle States
 
 
 It's cumbersome dealing with $4 \times 4$ matrices. This product will give me blocks, and the second component gives me what is inside the block.
@@ -345,15 +345,13 @@ Helicity is tied to Lorentz transformations—it’s the spin’s alignment with
 
 In the Lagrangian, chiral states are easier to work with because they are defined by projection operators ($P_L, P_R$) and don’t mix under boosts. Helicity states, while easier to visualize, do mix when you change reference frames. A left-handed chiral state remains left-handed no matter how you boost or rotate it.
 
-## Flavor Symmetry and Chiral Limit in QCD Lagrangian
+### Flavor Symmetry and Chiral Limit in QCD Lagrangian
 
 
 Here is the **Lagrangian of QCD**. The Lagrangian of QCD is not the Standard Model. We don't talk about electromagnetic interactions here. The dynamics of quarks and gluons is described by this Lagrangian:
 
 $$
-\mathcal{L}_{\text{QCD}} = \bar{\psi}_I^A (i \gamma^\mu D_\mu - m_I) \psi_I^A - \frac{1}{4} G_{\mu
-u}^A G^{A,\mu
-u}
+\mathcal{L}_{\text{QCD}} = \bar{\psi}_I^A (i \gamma^\mu D_\mu - m_I) \psi_I^A - \frac{1}{4} G_{\mu\nu}^A G^{A,\mu\nu}
 $$
 
 ::: callout-note
@@ -361,10 +359,8 @@ Key components of the QCD Lagrangian:
 
 - $\bar{\psi}_I^A (i \gamma^\mu D_\mu) \psi_I^A$: Kinetic term for quarks
 - $\bar{\psi}_I^A m_I \psi_I^A$: Mass term
-- $G_{\mu
-:::u}^A G^{A,\mu
-u}$: Gluon field strength term
-
+- $G_{\mu\nu}^A G^{A,\mu\nu}$: Gluon field strength term
+:::
 The $G$ is the gluon field. This is the **gauge part** of the Lagrangian. There are many things here:
 
 - The $\bar{\psi} \partial \psi$ is the **kinetic term**
@@ -411,7 +407,7 @@ $$
 
 The **vector part** of the interaction is $\bar{\psi}_L \gamma^\mu D_\mu \psi_L + \bar{\psi}_R \gamma^\mu D_\mu \psi_R$. There is no mixing between left and right components. The covariant derivative $D_\mu$ doesn't affect the flavor space, so it doesn't change anything here. The $\gamma^\mu$ could have been $D_\mu$, but I didn't say that.
 
-## Chiral Symmetry and Its Spontaneous Breaking in QCD
+### Chiral Symmetry and Its Spontaneous Breaking in QCD
 
 
 
@@ -446,11 +442,10 @@ Here is the vacuum. QCD, left side, right side—it’s quite spectacular that t
 ::: callout-note
 **Spontaneous Symmetry Breaking via Quark Condensate**:
 $$
-\langle \bar{q} q \rangle
-:::eq 0
-> $$
-> The non-zero vacuum expectation value of the quark condensate signals spontaneous chiral symmetry breaking.
-
+\langle \bar{q} q \rangle \neq 0
+$$
+The non-zero vacuum expectation value of the quark condensate signals spontaneous chiral symmetry breaking.
+:::
 **Imagine a plane of field excitations.** If you’re at zero, chiral symmetry is exact in the Lagrangian, and you can rotate left and right states independently. But the vacuum we live in is not at zero—it’s at a shifted location in field space.
 
 This happens because the potential of the theory has a shape like the **Higgs potential**. For QCD, quark pairs acquire a non-zero expectation value by interacting, so the vacuum resides at a non-zero point in the field space.

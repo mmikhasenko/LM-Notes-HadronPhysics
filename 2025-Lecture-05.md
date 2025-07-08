@@ -1,4 +1,4 @@
-## Production Mechanisms and Kinematic Analysis in Hadron Spectroscopy
+### Production Mechanisms and Kinematic Analysis in Hadron Spectroscopy
 
 
 Let's start this lecture.
@@ -23,7 +23,7 @@ Key formulas referenced in this lecture:
 
 These are foundational for understanding reaction kinematics and phase space representations in hadron spectroscopy.
 :::
-## Flavor Multiplets, Isospin Symmetry, and Gauge Symmetry in Baryons
+### Flavor Multiplets, Isospin Symmetry, and Gauge Symmetry in Baryons
 
 
 Before starting, we go through the recap and I ask you quickly to give me the answers.
@@ -102,15 +102,13 @@ $$
 *Can you boost different points of spacetime differently?*
 No. In standard treatment, Lorentz is global:
 $$
-x^\mu \rightarrow \Lambda^\mu_
-u x^
-u \quad \text{(applied uniformly)}
+x^\mu \rightarrow \Lambda^\mu_\nu x^\nu \quad \text{(applied uniformly)}
 $$
 
 ::: callout-note
 In gravity, Lorentz symmetry can be promoted to **local symmetry**, but here it is treated as global.
 :::
-## Classes of Particle Production Experiments: Fixed Target vs. Collider Setups
+### Classes of Particle Production Experiments: Fixed Target vs. Collider Setups
 
 
 Today is **8, 6, 6**, and we start **lecture 5** on **particle production**.
@@ -237,7 +235,7 @@ The **bremsstrahlung cross section** for photon production is:
 $$\frac{d\sigma}{dE_\gamma} \propto \frac{Z^2}{E_\gamma}$$
 where $Z$ is the atomic number of the target and $E_\gamma$ is the photon energy.
 :::
-## Exclusive vs. Inclusive Processes and Kinematic Frames in Particle Production
+### Exclusive vs. Inclusive Processes and Kinematic Frames in Particle Production
 
 
 To discuss the physics of the production mechanism, we draw **cartoons** like this, where the incoming particles enter the blob on the left side and outgoing particles appear on the right side.
@@ -369,7 +367,7 @@ $$
 P_{\pi^+}^{\text{GJ}} + P_{\pi^-}^{\text{GJ}} = (m_{\pi\pi}, \mathbf{0})
 $$
 
-## Kinematics, Collider Experiments, and Particle Decay Analysis
+### Kinematics, Collider Experiments, and Particle Decay Analysis
 
 
 I will probably try to add a few more exercises on kinematics because that's something worth practicing—how you derive these particular expressions—and it's all over the place. It's a very important skill to be able to operate with the **four-vectors**.
@@ -442,7 +440,7 @@ Theoretically, the spectrum should be a **delta function** at $M_B$, but experim
 - **Key factors**: Tracking precision, hit resolution, and energy/momentum measurements.
 - **Background**: Arises from random combinations of pions passing selection cuts.
 
-## Particle Identification and Phase Space in Decay Dynamics
+### Particle Identification and Phase Space in Decay Dynamics
 
 
 The last feature I want to discuss here is **PID (Particle Identification)**. It's important for all experiments.

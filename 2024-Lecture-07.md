@@ -1,4 +1,4 @@
-## Mass and Quantum Numbers of the PCC Hadronic Molecule
+### Mass and Quantum Numbers of the PCC Hadronic Molecule
 
 
 All right, two minutes.
@@ -86,7 +86,7 @@ That's it.
 **Energy Conservation Constraint**:
 The decay into free constituents is forbidden if the binding energy is positive ($M_{\text{PCC}} < M_C + M_D$), as the system lacks sufficient energy to separate.
 :::
-## Charm Quark Annihilation, Decay Channels, and Bound State Lifetimes in Heavy Mesons
+### Charm Quark Annihilation, Decay Channels, and Bound State Lifetimes in Heavy Mesons
 
 
 Because the $c$ and the $\bar{c}$ undergo **electromagnetic processes**.
@@ -163,7 +163,7 @@ $$ \Sigma_c + D^0 \rightarrow \Sigma_D + \pi \quad \text{or} \quad \Sigma_D + \g
 The **binding energy** and the situation of the decays are actively discussed in the field.
 At every conference, you see roughly five talks on this—it's a **really hot subject**.
 
-## Invariant Variables and Kinematics in Four-Legged Processes
+### Invariant Variables and Kinematics in Four-Legged Processes
 
 
 Let's move to **item number two**.
@@ -258,7 +258,7 @@ For particles moving to the other side, we modify the definition of the invarian
 
 *This is what Ares mentioned—you could redefine the invariants accordingly.*
 
-## Kinematic Domains, Dalitz Plots, and the Kibble Function in Scattering Amplitudes
+### Kinematic Domains, Dalitz Plots, and the Kibble Function in Scattering Amplitudes
 
 
 Two different directions, and then the sum minus $S$ would appear in the first place there.
@@ -348,7 +348,7 @@ Unspellable. And this is—if I got it right—see Bikulov-Janti. No, cycling? N
 Yes, correct me. But the book is excellent.
 So if you get a chance to get yourself this, you know everything about particle kinematics, particularly very peculiar properties of the Kibble function and the Challenger function.
 
-## Unitarity as a Constraint on Scattering Amplitudes
+### Unitarity as a Constraint on Scattering Amplitudes
 
 
 We are ready to move to the topic of today: **unitarity**.
@@ -404,7 +404,7 @@ $$
 $$
 where $\text{Disc}\, \mathcal{M}(s)$ is the discontinuity across the branch cut.
 
-## Unitarity Constraints on Scattering Amplitudes and Partial Wave Expansion
+### Unitarity Constraints on Scattering Amplitudes and Partial Wave Expansion
 
 
 Let's get there step by step, starting with the **scattering amplitude** and **partial waves**. For the sake of time, let me first state where we arrive, and then we can derive it. We will derive the following three equations, all dealing with scattering amplitudes.
@@ -490,7 +490,7 @@ $$
 ::: callout-note
 This expansion converges well for **strong interactions**, as high-$j$ contributions are suppressed by the size of hadrons. In experiments, only a few partial waves are needed to describe the data—often fewer than ten. This makes the partial wave expansion a **powerful and practical tool**.
 :::
-## Properties and Independence of Partial Wave Amplitudes
+### Properties and Independence of Partial Wave Amplitudes
 
 
 Another thing that appears here is the **partial wave amplitude**.
@@ -538,7 +538,7 @@ $$
 
 These formulas highlight how partial waves are functions of a **single variable** ($k$), have **fixed quantum numbers** ($l$), and remain **independent** under unitarity constraints.
 
-## Resonance Phenomenon and Partial Wave Expansion in Scattering Amplitudes
+### Resonance Phenomenon and Partial Wave Expansion in Scattering Amplitudes
 
 
 And the way we can proceed is to insert this here and then simplify the phase space.
@@ -645,7 +645,7 @@ But once you tune the energy to the mass of the resonance frequency—the mass o
 
 So this resonance phenomenon indicates that there is something interesting inside the plot of my interactions—namely, a particle, an intermediate particle that can be formed.
 
-## Poles, Zeros, and Unitarity in Scattering Amplitudes
+### Poles, Zeros, and Unitarity in Scattering Amplitudes
 
 
 Now, what happens from the two-part $2 \times K$ matrix is the two poles. The cross section looks now something like that. It has two peaks:

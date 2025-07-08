@@ -1,4 +1,4 @@
-## Recording and Transcribing Lectures with Whisper
+### Recording and Transcribing Lectures with Whisper
 
 
 My experiment with recording lectures has been **relatively successful**, so I could recover what I was speaking.
@@ -35,7 +35,7 @@ I don't know what to do with that yet, but just *for fun* and for exploring the 
 **Important limitation:**
 It records only me in the sense that it mostly captures my voice. Don't hesitate to talk back, as this will not appear in the recordings anyway.
 
-## Isospin Assignments and Matrix Representations for Hadrons
+### Isospin Assignments and Matrix Representations for Hadrons
 
 
 Today we will discuss **structure functions**, the structure of hadrons, their internal composition, and how we study them.
@@ -117,7 +117,7 @@ $$
 B^+ = b \bar{u}, \quad B^0 = b \bar{d}, \quad B^- = \bar{b} u, \quad \bar{B}^0 = \bar{b} d
 $$
 
-## Spin and Charge Combinations in Quark Systems
+### Spin and Charge Combinations in Quark Systems
 
 
 Now, **Cascade B** has spin **1/2**.
@@ -250,7 +250,7 @@ This is **foundational** for:
 
 **Practice is essential**—start with simple cases and build up.
 
-## Symmetries and Construction of the Proton Wave Function in SU(4) Space
+### Symmetries and Construction of the Proton Wave Function in SU(4) Space
 
 
 
@@ -451,7 +451,7 @@ That came as a surprise.
 ::: callout-note
 The proton wave function construction involves combining symmetric and antisymmetric components in spin and flavor spaces to satisfy the overall antisymmetry requirement due to the color wave function. This ensures the Pauli exclusion principle is obeyed for the quarks inside the baryon.
 :::
-## Probing Proton Structure: Elastic Scattering, Form Factors, and the Three-Quark Model
+### Probing Proton Structure: Elastic Scattering, Form Factors, and the Three-Quark Model
 
 
 Now, let's discuss **three studies of structure**.

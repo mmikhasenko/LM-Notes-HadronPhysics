@@ -1,4 +1,4 @@
-## Exam Participation and Group Coordination Discussion
+### Exam Participation and Group Coordination Discussion
 
 
 - "This form of cross section—exactly."
@@ -40,7 +40,7 @@ This formula defines how cross sections are calculated experimentally.
 :::
 *The exercise is simple, and I think you might need to report—no, we don't need to report, but for our number of points you got over the semester. For every counting, please collect them.*
 
-## Mapping Riemann Sheets and Analytic Structures in the $S$-Plane and $K$-Plane
+### Mapping Riemann Sheets and Analytic Structures in the $S$-Plane and $K$-Plane
 
 
 It's a pity we started a bit late because the lecture today is very exciting—I'm particularly excited about **lattice QCD** and the **hadron spectroscopy** that we do in lattice. We will get to that next. I tried to start at 11:15, but we should be discussing lattice QCD already. Before that, we have two more items in the program. Let's start with the recap. Today is **Lecture 11**.
@@ -118,7 +118,7 @@ the squaring operation maps the $K$-plane to a **single-sheeted $X$-plane**. Thi
 
 ---
 
-## QCD Confinement, Chiral Perturbation Theory, and Spontaneous Symmetry Breaking
+### QCD Confinement, Chiral Perturbation Theory, and Spontaneous Symmetry Breaking
 
 
 Now let's go to **physics**.
@@ -210,8 +210,7 @@ The important degree of freedom is the **pion field**, which doesn’t experienc
 
 The vacuum is aligned at the center, but due to **spontaneous symmetry breaking**, space is filled with the **quark condensate** of the $\sigma$ field:
 $$
-\langle \bar{q}q \rangle \equiv \langle \sigma \rangle = v 
-eq 0.
+\langle \bar{q}q \rangle \equiv \langle \sigma \rangle = v \neq 0.
 $$
 On top of it, there are small fluctuations of the **massless pion field**.
 
@@ -244,7 +243,7 @@ $$
 m_\pi^2 \propto m_q \quad \text{(if } m_q \to 0, \text{ then } m_\pi \to 0\text{)}.
 $$
 
-## Chiral Symmetry Breaking, Goldstone Bosons, and the η' Mass in QCD
+### Chiral Symmetry Breaking, Goldstone Bosons, and the η' Mass in QCD
 
 
 Last time we looked at the **chiral symmetry**, checking if the Lagrangian has the symmetry that you can rotate left quarks and right quarks independently.
@@ -347,7 +346,7 @@ $m_{\eta'}^2 \sim \frac{N_f}{F_\pi^2} \chi_{top}$
 6. **Group decomposition**:
 $U(N) \simeq SU(N) \times U(1)/\mathbb{Z}_N$
 
-## Proton Mass and Chiral Symmetry in the Context of Quark-Gluon Interactions
+### Proton Mass and Chiral Symmetry in the Context of Quark-Gluon Interactions
 
 
 We discussed so far about **pions** and **kaons**, but the **proton** is also made of three quarks. There is nothing here that tells or that we haven't discussed the mass of the proton yet. But what's your guess? If you go to the **chiral perturbation theory** in the **chiral limit**, you put masses of quarks to zero:
@@ -418,7 +417,7 @@ You shouldn't be scared by seeing **unphysical pion masses** or quark masses in 
 
 ---
 
-## Discretization and Grid Setup in Lattice QCD Calculations
+### Discretization and Grid Setup in Lattice QCD Calculations
 
 
 Now let's move on to discuss **lattice QCD**.
@@ -433,12 +432,9 @@ What we do is introduce a **grid** in both the spatial and time dimensions, then
 
 ::: callout-note
 The lattice action (simplified form) is:
-$$S_{\text{lattice}} = \sum_{n,\mu,
-:::u} \text{Re}\, \text{Tr}\left[1 - U_{\mu
-u}(n)\right] + \sum_n \bar{\psi}_n D \psi_n$$
-> where $U_{\mu
-u}$ is the plaquette variable and $D$ is the Dirac operator on the lattice.
-
+$$S_{\text{lattice}} = \sum_{n,\mu,\nu} \text{Re}\, \text{Tr}\left[1 - U_{\mu\nu}(n)\right] + \sum_n \bar{\psi}_n D \psi_n$$
+where $U_{\mu\nu}$ is the plaquette variable and $D$ is the Dirac operator on the lattice.
+:::
 Typically, lattice QCD setups use a time dimension of around **200 points**, with a spatial lattice size of about **7 Fermi**, discretized into **50 points** in each dimension.
 
 ::: callout-note
@@ -451,7 +447,7 @@ Imagine a box with **50 points on each side**. We then observe how it evolves ov
 
 These values are determined experimentally by testing what works best for calculations.
 
-## Finite Volume Effects and Discretization Errors in Particle Simulation
+### Finite Volume Effects and Discretization Errors in Particle Simulation
 
 
 The computations are **very numerically heavy**. Therefore, the lower number of points you can take, the better. But there are two main challenges when you put a particle in the box:
@@ -498,7 +494,7 @@ The finite-volume correction to a hadron's mass follows:
 $$m(L) = m_\infty + \frac{A}{L} e^{-m_\pi L} + \cdots$$
 where $m_\infty$ is the infinite-volume mass and $A$ is a constant.
 :::
-## Finite Volume Effects, Discretization, and Observables in Lattice QCD
+### Finite Volume Effects, Discretization, and Observables in Lattice QCD
 
 
 I have to be vague since we just decided to spend one lecture on QCD.
@@ -617,7 +613,7 @@ This is how lattice QCD computes particle masses (e.g., pions, rho mesons) and o
 ::: callout-important
 The **exponential suppression** of finite-volume effects and the **Yukawa potential** are central to understanding lattice QCD's accuracy. The Euclidean correlation functions and effective mass method are critical for extracting physical quantities numerically.
 :::
-## Quantization of Momentum from Periodic Boundary Conditions
+### Quantization of Momentum from Periodic Boundary Conditions
 
 
 Let me say one last thing.
@@ -657,7 +653,7 @@ Key points to remember:
 * The quantization condition $p L = 2\pi n$ arises from periodic boundary requirements
 * The phase must return to its original value after distance $L$
 
-## Quantized Momentum and Energy Shifts in a Periodic Two-Particle System
+### Quantized Momentum and Energy Shifts in a Periodic Two-Particle System
 
 
 What I mean is just that it shouldn't be one if it's anything less than $L$. It shouldn't be one if it's anything less than $L$. For $l = \frac{1}{2}$, it could be one. Why not?
@@ -713,7 +709,7 @@ Repeat the same computation for the interacting system. Compare the two results 
 
 The way collision data connects to the answer is through another technique, typically analyzed in configuration space with real-valued wavefunctions.
 
-## Exploring Hadron Structure and Scattering Amplitudes in Lattice QCD
+### Exploring Hadron Structure and Scattering Amplitudes in Lattice QCD
 
 
 This is my latest QCD lecture.
@@ -791,7 +787,7 @@ Bound states, virtual states, and resonances are **deeply interconnected**.
 Depending on quark masses $m_q$, a bound state can become a resonance or vice versa.
 This reveals the **unified nature** of these phenomena in QCD.
 
-## Preparing Exercise Sheets and Closing Remarks
+### Preparing Exercise Sheets and Closing Remarks
 
 
 * **On exercise sheets:**
