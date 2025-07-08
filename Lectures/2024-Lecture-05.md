@@ -1,4 +1,4 @@
-## Angular Distributions, Kinematics Variables, and the Dalitz Plot in Two-to-Two Scattering
+### Angular Distributions, Kinematics Variables, and the Dalitz Plot in Two-to-Two Scattering
 
 
 
@@ -258,7 +258,7 @@ For now, let me stick to the notations that relate to kinematics.
 It's important to realize that the **phase space** for three-body decay is **flat** in the variables—it's actually constant in the variables $p_3, p_4, p_2, p_4$.
 In $S$ and $T$, we write it as $\frac{dN}{dX}$.
 
-## Recursive Phase Space Formulas and Dalitz Plot Kinematics in Three-Body Decays
+### Recursive Phase Space Formulas and Dalitz Plot Kinematics in Three-Body Decays
 
 
 So this is the recursive formula that we discussed in the last lecture.
@@ -364,7 +364,7 @@ Looking ahead, we’ll explore how intermediate states shape these distributions
 > $$m_{ij}^2 = (p_i + p_j)^2 = (E_i + E_j)^2 - |\vec{p}_i + \vec{p}_j|^2$$
 > These variables are crucial for understanding the kinematic boundaries and resonance structures in the plot.
 
-## Resonances, Angular Distributions, and Spin in Particle Decays
+### Resonances, Angular Distributions, and Spin in Particle Decays
 
 
 
@@ -449,7 +449,7 @@ Let me stress what we discussed so far was not about weak interactions or strong
 
 Angular distributions are determined by general properties of how space is rotated, plus the little bit we need from strong interactions: what is the preference for which spin particles are produced, and that's what strong interactions tell us. But how they decay and what is the asymmetry in the kinematics—this is determined by the quantum group. That's amazing. Therefore, we can now move on and have a recipe, or a general way, to construct any particle decay chain and figure out what the angular distribution is going to be.
 
-## Spin Rotation and Decay Amplitude Simplification for Particle \( X \)
+### Spin Rotation and Decay Amplitude Simplification for Particle \( X \)
 
 
 Let's now look at the particle \( X \).
@@ -523,7 +523,7 @@ That's it—**as simple as that**.
 
 No sentences were removed or altered, and the helping material was integrated only where directly relevant.
 
-## Predicting Angular Distributions from Quantum Amplitudes and Partial Wave Analysis
+### Predicting Angular Distributions from Quantum Amplitudes and Partial Wave Analysis
 
 
 How many numbers do I need from you in order to compute? Let me think about electromagnetic interactions, or gravity.
@@ -591,7 +591,7 @@ $$
 Partial wave analysis models the cross section with amplitudes, treating these terms as free parameters.
 The goal is to infer what’s inside the blobs by fitting them to data.
 
-## Helicity vs. Canonical States, Spearman's Book Reference, and Dalitz Plot Exercise
+### Helicity vs. Canonical States, Spearman's Book Reference, and Dalitz Plot Exercise
 
 
 I didn’t tell you much about the differences between the **canonical state** that we introduced at the beginning and the **helicity state** that we introduced later.
@@ -643,7 +643,7 @@ From the **kinematics**, you can figure out the masses and perhaps guess what th
 I have cases.
 I would give you one for your group, and then you’d get another one, and then the **EP one**.
 
-## Lecture Fragment on Attendance and Scheduling
+### Lecture Fragment on Attendance and Scheduling
 
 
 **Logistical Announcements:**

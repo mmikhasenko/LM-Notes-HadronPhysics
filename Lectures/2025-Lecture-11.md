@@ -1,4 +1,4 @@
-## Thresholds, Branch Points, and Resonances in ππ Scattering
+### Thresholds, Branch Points, and Resonances in ππ Scattering
 
 
 The threshold for **ππ scattering** is at:
@@ -84,7 +84,7 @@ The **analytic structure** of the amplitude determines these features. In summar
 - Singularities in the scattering amplitude correspond to physical states
 - Their positions reveal whether they are resonances, virtual states, or bound states
 
-## Poles, Bound States, and Virtual States in Scattering Amplitudes
+### Poles, Bound States, and Virtual States in Scattering Amplitudes
 
 
 For the **bound state** of the virtual state, there should be a peak below threshold. For the **virtual state**, there should just be a threshold cusp.
@@ -137,7 +137,7 @@ $$
 \sigma(E) \sim \frac{1}{\sqrt{E - E_{\text{th}}}} \quad \text{near } E = E_{\text{th}}
 $$
 
-## Breakup Momentum Plane and Lattice QCD in Scattering Theory
+### Breakup Momentum Plane and Lattice QCD in Scattering Theory
 
 
 As a main part, another convenient representation of the singularity of the scattering amplitude is the **breakup momentum plane**.
@@ -245,18 +245,15 @@ The optimal choice balances precision and computational feasibility.
 
 This framework—combining **scattering theory** and **lattice QCD**—provides a powerful toolkit for understanding strong interactions. Next, we’ll dive deeper into the technical details of lattice calculations.
 
-## Lagrangian, Path Integral, and Euclidean Time in QCD
+### Lagrangian, Path Integral, and Euclidean Time in QCD
 
 
-The **Lagrangian** is a scalar quantity and it's written as $G_{\mu 
-u} G^{\mu 
-u}$.
+The **Lagrangian** is a scalar quantity and it's written as $G_{\mu \nu} G^{\mu \nu}$.
 This is the gluonic tensor energy momentum.
 This is a gluonic field tensor contracted with another one.
 All repeated indices are contracted among the gluonic fields.
 There are eight of them.
-And then $\mu 
-u$ everywhere.
+And then $\mu \nu$ everywhere.
 Here are Lorentz indices.
 They are relativistic properties, Lorentz group properties of the fields.
 
@@ -381,13 +378,11 @@ So I think I will.
 
 > [!NOTE]
 > Key formulas discussed:
-> - Gluon field strength tensor: $G_{\mu
-u} G^{\mu
-u}$
+> - Gluon field strength tensor: $G_{\mu\nu} G^{\mu\nu}$
 > - Euclidean path integral weight: $e^{iS_{\text{Minkowski}}} \rightarrow e^{-S_{\text{Euclidean}}}$
 > - Wick rotation: $t_E = it$, $S_{\text{Minkowski}} \rightarrow -S_{\text{Euclidean}}$
 
-## Integrating Fermionic Fields and Quenched Calculations in Lattice QCD
+### Integrating Fermionic Fields and Quenched Calculations in Lattice QCD
 
 
 So it's quarter to four, guys. I need ten more minutes. I would really like to show you how we get to the **quenched one-page calculations**, and we'll continue next time. I will clarify in a second. Let me just put it on the board.
@@ -478,7 +473,7 @@ Instead, we use **Monte Carlo sampling**. Configurations are sampled randomly wi
 
 If you take these five points home, I’d be happy. With that, I’ll take questions and finish here.
 
-## Fermionic Action, Gluon Dependence, and Grassmann Variables in QCD
+### Fermionic Action, Gluon Dependence, and Grassmann Variables in QCD
 
 
 **Question:** How is it possible that we can split the fermionic and gluon part of the action? If I look at the dimension, I can see that in the long derivative we have terms that give us gluon fields. But then how do we split it?
@@ -529,7 +524,20 @@ These are paths in the gluon field.
 **Question:** Does a limit exist for quenched and unquenched calculations? Do they converge?
 I don’t see a limit. They are two independent approaches.
 
-## Key Nuclear Physics Formulas and Their Interpretations
+---
+
+**Question:** Historically, how was Grassmann algebra developed? How did it come to physics? 
+It existed independently in mathematics before physics applications. I don’t know who introduced it to physics, but it turns out to be very useful. 
+ 
+**Question:** Aren’t Grassmann variables limiting? You can’t square them, and series expansions truncate. 
+Yes, but you can still use them to describe fields. It’s a trick, but it works. 
+ 
+> [!NOTE] 
+> The Dirac operator with mass term is: 
+> $$ D + M = \gamma^\mu(\partial_\mu - igA_\mu) + M $$ 
+> where the sign change in the discretized version occurs due to flipping time derivatives and gamma matrices.
+
+### Key Nuclear Physics Formulas and Their Interpretations
 
 
 
@@ -607,8 +615,7 @@ $$
 Neutron behavior is modeled by the **diffusion equation**:
 
 $$
-D 
-abla^2 \phi - \Sigma_a \phi + S = \frac{1}{v} \frac{\partial \phi}{\partial t}
+D \nabla^2 \phi - \Sigma_a \phi + S = \frac{1}{v} \frac{\partial \phi}{\partial t}
 $$
 
 The **Bethe-Bloch formula** describes energy loss of charged particles:

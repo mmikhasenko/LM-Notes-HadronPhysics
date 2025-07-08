@@ -1,4 +1,4 @@
-## Scattering Matrix, Unitarity, and the K-Matrix Formalism
+### Scattering Matrix, Unitarity, and the K-Matrix Formalism
 
 
 
@@ -218,7 +218,7 @@ For the single resonance case, this Breit-Wigner parametrization gives us also u
 
 In general, the width can also depend on $s$. So that's not a constant width.
 
-## Two-Resonance Dynamics and Unitary Constraints in Scattering Theory
+### Two-Resonance Dynamics and Unitary Constraints in Scattering Theory
 
 
 Now let's think about **single-channel two resonances**. Imagine we have this plot with two peaks. What we can see here is that this does not correspond to the sum of two $\pi$ thresholds. We also don't want this because it doesn't fulfill unitarity.
@@ -293,7 +293,7 @@ The circle is centered around $(x_0, y_0)$ with radius $R$. For non-elastic scat
 * There is a deviation from this circle, moving inward
 * If unitarity is not fulfilled (as in the case of two-body weakness), the trajectory would go **outside** the unitary circle
 
-## Adjusting Deadlines and Plotting Parameters for Data Analysis
+### Adjusting Deadlines and Plotting Parameters for Data Analysis
 
 
 - **Deadline clarification:**

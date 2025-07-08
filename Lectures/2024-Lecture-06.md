@@ -1,4 +1,4 @@
-## Lambda Baryon Decay: Weak Interaction, Matrix Elements, and Helicity States
+### Lambda Baryon Decay: Weak Interaction, Matrix Elements, and Helicity States
 
 
 Let's start with the recap.
@@ -115,7 +115,7 @@ $$
 
 For canonical states, you first rotate the particle, then boost it. This ensures the spin projection is along the $z$-axis in the lab frame.
 
-## Distinguishing Canonical and Helicity States in Particle Decays and Rotations
+### Distinguishing Canonical and Helicity States in Particle Decays and Rotations
 
 
 Note on the notation: I have to distinguish.
@@ -303,7 +303,7 @@ we likely put the weak decay in.
 > $$\frac{d\Gamma}{d\cos\theta} \propto 1 + \alpha P \cos\theta$$
 > where $\alpha$ is the asymmetry parameter and $P$ is the polarization. This asymmetry arises from weak interactions.
 
-## Parity Violation in Asymmetric Angular Distribution
+### Parity Violation in Asymmetric Angular Distribution
 
 
 No, it's not.
@@ -324,10 +324,9 @@ The parity violation is in the fact that these terms are not equal. This introdu
 \frac{d\sigma}{d\Omega} \propto 1 + \alpha \cos\theta
 \]
 
-Here, $\alpha 
-eq 0$ signals **parity violation**, breaking the isotropy of $\sin^2\theta + \cos^2\theta = 1$.
+Here, $\alpha \neq 0$ signals **parity violation**, breaking the isotropy of $\sin^2\theta + \cos^2\theta = 1$.
 
-## Polarization and Angular Distribution in Λ Decay
+### Polarization and Angular Distribution in Λ Decay
 
 
 Thanks for the question. That's **really important** to know, and in fact, they are not.
@@ -371,7 +370,7 @@ Polarization plays an **important role**, if not more than other observables. Th
 
 ---
 
-## Engaging with Questions Before the Lecture
+### Engaging with Questions Before the Lecture
 
 
 **Questions, questions, questions.**
@@ -389,7 +388,7 @@ For example:
 So I'll just give you the question and see if you know it *without my lecture*.
 Meanwhile, tell me if you have questions.
 
-## Analytic Functions, Contour Integrals, and Dispersion Relations
+### Analytic Functions, Contour Integrals, and Dispersion Relations
 
 
 Can you find half or maybe a quarter page? Maybe we can take Ilya—can you help obtain quarter-page pieces of paper?
@@ -441,7 +440,7 @@ I’m integrating the **imaginary part** of \( F(x) \) from 1 to 7 and asking: C
 > [!NOTE]
 > **Analytic Functions**: A function is **analytic** in a region if it is **complex differentiable** at every point in that region. This implies the function is infinitely differentiable and can be represented by a **power series** locally.
 
-## Branch Points, Cuts, and Analytic Structure in Complex Integration
+### Branch Points, Cuts, and Analytic Structure in Complex Integration
 
 
 Cut both branch points.
@@ -531,7 +530,7 @@ Through the gate, you can go to the other so-called sheet, and there you have a 
 
 You just get used to it. It's really fun to think of this. We will discuss a little bit more of the complex chart structure and how scattering—what is actually the complex structure of the scattering amplitudes.
 
-## Branch Points, Poles, and Multivalued Functions in Complex Analysis
+### Branch Points, Poles, and Multivalued Functions in Complex Analysis
 
 
 **Opening Remarks:**

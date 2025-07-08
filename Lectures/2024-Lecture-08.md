@@ -1,4 +1,4 @@
-## Unitarity, Analyticity, and the Schwarz Reflection Principle
+### Unitarity, Analyticity, and the Schwarz Reflection Principle
 
 
 In today's lecture, I would like to discuss **unitarity** and **complex numbers**, and move towards discussing **complex functions**.
@@ -61,7 +61,7 @@ For instance:
 - Its square root is $2^{1/4} e^{i\pi/8}$
 - Similarly, $1 - i$ gives the conjugate result, illustrating the reflection principle.
 
-## Cauchy's Theorem and Numerical Integration of Discontinuous Functions
+### Cauchy's Theorem and Numerical Integration of Discontinuous Functions
 
 
 
@@ -130,7 +130,7 @@ The key takeaway is that even with discontinuities, **Cauchy's theorem** provide
 > **Equivalence of Methods**:
 > The integral along the branch cut ($\int_{-1}^0 \sqrt{x} \, dx$) matches the contour integral result, demonstrating the flexibility of contour deformation in complex analysis.
 
-## The Scattering Amplitude: Analyticity, Unitarity, and Threshold Behavior
+### The Scattering Amplitude: Analyticity, Unitarity, and Threshold Behavior
 
 
 The **scattering amplitude** is the *real magic function*.
@@ -198,7 +198,7 @@ f(E) = \begin{cases}
 \end{cases}
 $$
 
-## Analyticity, Threshold Singularities, and Unitarity in Scattering Amplitudes
+### Analyticity, Threshold Singularities, and Unitarity in Scattering Amplitudes
 
 
 
@@ -261,7 +261,7 @@ $$
 
 Remember this: the first term gives you a singularity at the threshold, and the second one gives you a singularity at the pseudo-threshold.
 
-## Square Root Behavior and Schwarz Reflection Principle in Threshold Energy Analysis
+### Square Root Behavior and Schwarz Reflection Principle in Threshold Energy Analysis
 
 
 Interior relations, as we wrote it, as we derived, are valid **only above the threshold**. The imaginary part is non-zero and present only once you go above the threshold.
@@ -303,7 +303,7 @@ The relation holds for $\epsilon$ small enough.
 - The **Schwarz reflection principle** ensures symmetry between the upper and lower half-planes.
 - The sign flip in the imaginary part reflects the **discontinuity** across the real axis.
 
-## Analytic Structure and Branch Cuts in Square Root Functions
+### Analytic Structure and Branch Cuts in Square Root Functions
 
 
 Have you heard a song with the word **"infinitesimal"**? I think it's by one of the rock bands. I was really impressed. This is now in pop, in rock. People like the word. Maybe next time I'll bring you something. I was impressed recently. Who is singing **"Infinite"**? You know, *Mother Mother*. That's about *Mother Mother*. So listen to the song **"Infinitesimal."** I like the song actually, but it just means very, very small—**infinitesimal**.
@@ -352,11 +352,9 @@ If I evaluate the top one, I get $\sqrt{(-2)(-1)}$. If I evaluate the second one
 ---
 
 > [!WARNING]
-> Be cautious when splitting square roots in complex analysis: $\sqrt{ab} 
-eq \sqrt{a} \cdot \sqrt{b}$ in general due to branch cut ambiguities. The example shows $\sqrt{(-2)(-1)} 
-eq \sqrt{-2} \cdot \sqrt{-1}$ because of differing branch cut configurations.
+> Be cautious when splitting square roots in complex analysis: $\sqrt{ab} \neq \sqrt{a} \cdot \sqrt{b}$ in general due to branch cut ambiguities. The example shows $\sqrt{(-2)(-1)} \neq \sqrt{-2} \cdot \sqrt{-1}$ because of differing branch cut configurations.
 
-## Resonances as Poles in the Scattering Amplitude: A House Analogy for Complex Plane Dynamics
+### Resonances as Poles in the Scattering Amplitude: A House Analogy for Complex Plane Dynamics
 
 
 Its resonances are **poles of the scattering amplitude**. When you hear that, you're probably going to hear this many times in the future.
@@ -434,7 +432,7 @@ The last comment is on data analysis. The goal is to characterize resonances by 
 
 You fit parameters to the data, then explore the analytic expression. You know it has a branch point, but the direction of the cut is your choice. What's important is that everything you see—peaks, spikes—has an origin in the complex plane. If there's a peak, there's likely a pole there.
 
-## Thresholds, Branch Points, and Poles in Amplitude Analysis
+### Thresholds, Branch Points, and Poles in Amplitude Analysis
 
 
 Another important phenomenon you see sometimes in the data is the **cusp**.

@@ -1,4 +1,4 @@
-## Magnetic Moment of the Omega Baryon and Excitation Patterns of the Sigma Baryon
+### Magnetic Moment of the Omega Baryon and Excitation Patterns of the Sigma Baryon
 
 
 Today's lecture is dedicated to **experiments in spectroscopy** and the **computations of kinematics** for these experiments.
@@ -79,7 +79,7 @@ The **hyperfine splitting** energy scale is suppressed by the heavy quark mass:
 
 These states correspond to physical particles listed in the PDG. The Σ baryon (300) was discovered roughly **10 years ago**.
 
-## Heavy Quark Spin Effects, Exotic Hadrons, and Electron-Positron Collider Experiments
+### Heavy Quark Spin Effects, Exotic Hadrons, and Electron-Positron Collider Experiments
 
 
 Now one word about energy splitting.
@@ -193,7 +193,7 @@ The charmonium spectrum includes:
 - $\psi(2S)$ ($1^-$)
 - $P$-wave states: $\chi_{cJ}$ ($J = 0,1,2$, $J^P = 0^+,1^+,2^+$).
 
-## Reconstructing \( e^+e^- \) Annihilation, Bottomonium Spectroscopy, and Hadron Production at Colliders
+### Reconstructing \( e^+e^- \) Annihilation, Bottomonium Spectroscopy, and Hadron Production at Colliders
 
 
 To reconstruct the schematics before we move away from Belle II, let me relate to what we just discussed.
@@ -262,7 +262,7 @@ At lower energies (**2–3 GeV**), **s-channel scattering dominates**, while hig
 
 Some experiments, like **GlueX**, are nearing the end of their runs but may be upgraded (e.g., **GlueX2**) to explore more exotic spectroscopy.
 
-## Gluonic Fields, Exclusive Scattering, and Kinematic Variables in Phase Space Calculations
+### Gluonic Fields, Exclusive Scattering, and Kinematic Variables in Phase Space Calculations
 
 
 

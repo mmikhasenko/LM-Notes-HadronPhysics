@@ -1,4 +1,4 @@
-## Personalized Lectures, Homework Encouragement, and Flexible Learning
+### Personalized Lectures, Homework Encouragement, and Flexible Learning
 
 
 Similar to courses you've had, **there were always two of us in the lecture**, so it was a personalized education.
@@ -63,7 +63,7 @@ This is something to fulfill, and **I would like you to fulfill that**.
 Have a look.
 They are not that difficult, as you probably discovered, but they require **some thinking**.
 
-## Transition from Unitarity to Hadron Spectroscopy: Models and Lecture Schedule
+### Transition from Unitarity to Hadron Spectroscopy: Models and Lecture Schedule
 
 
 Today we are finishing with **unitarity** and moving toward discussing approaches used in **hadron spectroscopy**.
@@ -122,7 +122,7 @@ In my calendar, the semester extends until the **third week of July**.
 So the **9th, 16th, and even the 23rd** are still part of the semester.
 However, a research school in Bochum will occupy our time, so we aim to finish one week earlier.
 
-## Unitarity Constraints on Partial Amplitudes and the Argand Diagram
+### Unitarity Constraints on Partial Amplitudes and the Argand Diagram
 
 
 
@@ -192,7 +192,7 @@ You look at the list and quickly see which are inside, which are not. I've alrea
 - If $\delta = 0$, that is essentially trivial—**no scattering**.
 - This phase determines the **strength of your scattering**.
 
-## Unitarity and Partial Wave Expansions in Scattering Amplitudes
+### Unitarity and Partial Wave Expansions in Scattering Amplitudes
 
 
 Is this representation correct? Isn't this just the $T$-matrix represented as the $S$-matrix? This "$ \frac{i}{2}(1 - e^{2i \delta}) $," so just this.
@@ -297,7 +297,7 @@ $$
 \rho \propto P = \frac{\sqrt{(s - (M_1 + M_2)^2)(s - (M_1 - M_2)^2)}}{2\sqrt{s}}
 $$
 
-## Kinematic Singularities and Angular Momentum Compensation in Scattering Amplitudes
+### Kinematic Singularities and Angular Momentum Compensation in Scattering Amplitudes
 
 
 Earlier we discussed that there are **invariant variables** described by Mandelstam variables: $S$ and $T$. It is often convenient to express the cosine of the scattering angle in terms of these variables. One can use either the basis of the scattering angle and the energy $\sqrt{S}$, or work directly with Mandelstam variables, as they are related. Thus, $\cos \theta$ can be expressed in terms of $T$ and $S$.
@@ -348,7 +348,7 @@ For $T_J$, the factor is $(2p)^{2J}$. The amplitude here refers to scattering, n
 > - **Scattering ($\pi\pi \to \pi\pi$)**: $T_J \sim (2p)^{2J}$
 > - **Production ($X \to \pi\pi$)**: $A_J \sim (2p)^J$
 
-## Scattering Phase Shift and Amplitude Near Threshold
+### Scattering Phase Shift and Amplitude Near Threshold
 
 
 
@@ -431,7 +431,7 @@ For $a > 0$, there is still a pole, but it is hidden—only visible if you go un
 > **Key Takeaway**:
 > The scattering length approximation simplifies the amplitude near threshold, but the behavior of $\rho$ and the pole conditions reveal deeper structures like virtual states.
 
-## Scattering Length, Bound States, and Effective Field Theory in Threshold Scattering
+### Scattering Length, Bound States, and Effective Field Theory in Threshold Scattering
 
 
 The **scattering length** is an important quantity that is measured from any scattering experiment in nuclear physics.
@@ -551,7 +551,7 @@ There is no bound state, but the amplitude is large at threshold due to a virtua
 That concludes today’s discussion.
 Next time, we will cover methods for sophisticated matrix element calculations, including **lattice QCD**.
 
-## Homework Submission and Scheduling Discussion
+### Homework Submission and Scheduling Discussion
 
 
 **Will** wants to give me your homework exercise, but **Ilya** is not present.

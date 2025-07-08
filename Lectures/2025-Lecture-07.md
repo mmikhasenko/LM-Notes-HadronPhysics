@@ -1,4 +1,4 @@
-## Helicity Formalism, Weak Decays, and Isospin Violation in \(\Lambda^0\) Decay
+### Helicity Formalism, Weak Decays, and Isospin Violation in \(\Lambda^0\) Decay
 
 
 Welcome everyone.
@@ -64,8 +64,7 @@ The transition $0 \to \frac{1}{2} + 1$ violates isospin.
 
 1. **Isospin Conservation (broken in weak decays):**
 $$
-\Delta I 
-eq 0
+\Delta I \neq 0
 $$
 Example for $\Lambda^0 \to p + \pi^-$:
 $$
@@ -74,8 +73,7 @@ $$
 
 2. **Parity Conservation (violated in weak decays):**
 $$
-P_{\text{initial}} 
-eq P_{\text{final}}
+P_{\text{initial}} \neq P_{\text{final}}
 $$
 
 3. **Angular Momentum Conservation:**
@@ -94,7 +92,7 @@ $$
 dm_{12}^2 \cdot dm_{23}^2
 $$
 
-## Identifying the Decaying Particle via Dalitz Plot Analysis and Resonance Bands
+### Identifying the Decaying Particle via Dalitz Plot Analysis and Resonance Bands
 
 
 **All right, question number three.**
@@ -231,7 +229,7 @@ This is the X-axis, this is the Y-axis. Something like that.
 > \Xi_c^+ (usc) \to p(uud) + K^-(\bar{u}s) + \pi^+(u\bar{d})
 > $$
 
-## Isospin Operators, Rotations in Isospin Space, and QCD Evolution in Two-Body Decays
+### Isospin Operators, Rotations in Isospin Space, and QCD Evolution in Two-Body Decays
 
 
 **Question number two.**
@@ -375,7 +373,7 @@ This gives a recipe for any cascade decay with spin.
 > [!TIP]
 > **Key takeaway**: The helicity formalism provides a systematic way to handle spin-dependent decays, with Wigner \(D\)-functions capturing the angular dependence and reduced matrix elements \(H\) encoding the dynamics.
 
-## Factorization, Helicity Amplitudes, and Angular Parameterization in Cascade Decays
+### Factorization, Helicity Amplitudes, and Angular Parameterization in Cascade Decays
 
 
 This is the model, and it is a model not because of the angular functions—they are **precise and exact**—but because of the factorization.
@@ -510,7 +508,7 @@ Key formulas integrated:
 4. **Scalar case**: $\mathcal{M}_{\text{scalar}} = X(s_{12}, s_{23}) \cdot \sqrt{2J+1} \cdot \delta_{\lambda_0,0}$
 5. **Partial wave expansion**: $\mathcal{M} = \sum_J (2J+1) X_J(s) d^J_{00}(\theta)$
 
-## Partial Wave Expansion and Resonance Modeling in Dalitz Plots
+### Partial Wave Expansion and Resonance Modeling in Dalitz Plots
 
 
 We started by writing the matrix element for the decay that proceeds through the resonance with spin \( J \).

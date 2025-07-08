@@ -1,6 +1,13 @@
 import sys
 import re
 import os
+import logging
+logger = logging.getLogger("callout_replacer")
+handler = logging.StreamHandler()
+formatter = logging.Formatter("[%(levelname)s] %(message)s")
+handler.setFormatter(formatter)
+logger.addHandler(handler)
+logger.setLevel(logging.DEBUG)  # set to INFO or WARNING to reduce output
 
 def transform_file(filepath):
     with open(filepath, 'r', encoding='utf-8') as file:
@@ -19,32 +26,71 @@ def transform_file(filepath):
     content = content.replace('\r\n', '\n')  # Normalize Windows line endings
     
     # Match entire callout block (header + all following lines starting with >)
-    pattern = re.compile(
-        r'^> \[!(\w+)\]\s*\n'          # Header line: > [!TAG]
-        r'((?:^>.*\n?)*)',             # All following lines starting with >
-        flags=re.MULTILINE
-    )
 
-    def callout_replacer(m):
-        tag = m.group(1).lower()
-        block = m.group(2)
 
-        # Remove leading '> ' or '>' from each line in the block
-        lines = [line[2:] if line.startswith('> ') else line[1:] for line in block.splitlines()]
-        content = "\n".join(lines).strip()
+    def fix_callouts(content):
+        content = content.replace('\r\n', '\n')
 
-        # Now convert ```math blocks inside content to $$...$$
-        content = re.sub(
-            r'```math\s*\n(.*?)\n```',
-            lambda mm: f"$$\n{mm.group(1)}\n$$",
-            content,
-            flags=re.DOTALL
-        )
+        # Regex to match callout header line
+        header_pattern = re.compile(r'^> \[!(\w+)\]\s*$', flags=re.MULTILINE)
 
-        return f"::: callout-{tag}\n{content}\n:::"
+        # Find all callout headers and process their blocks manually
+        parts = []
+        pos = 0
+        for m in header_pattern.finditer(content):
+            start = m.start()
+            tag = m.group(1).lower()
 
-    content = pattern.sub(callout_replacer, content)
+            # Append text before this callout as-is
+            parts.append(content[pos:start])
 
+            # Now extract the block lines following this header
+            # Start at end of header line
+            block_start = content.find('\n', start) + 1
+            if block_start == 0:
+                # no following lines after header
+                pos = start
+                continue
+
+            # Collect lines until we find next callout header or blank line or EOF
+            lines = []
+            idx = block_start
+            content_lines = content[block_start:].split('\n')
+            for i, line in enumerate(content_lines):
+                # Stop if line is blank
+                if line.strip() == '':
+                    break
+                # Stop if line is another callout header
+                if re.match(r'^> \[!\w+\]', line):
+                    break
+                # Also accept lines that start with '>' or lines that don't but are indented continuation lines
+                # So we accept lines that either start with '>' or lines that don't start with '>' but are continuation
+                # We'll accept all lines until the stopping condition
+                lines.append(line)
+
+            # Remove exactly one leading '>' and optional space from each line if present
+            cleaned_lines = []
+            for line in lines:
+                if line.startswith('> '):
+                    cleaned_lines.append(line[2:])
+                elif line.startswith('>'):
+                    cleaned_lines.append(line[1:])
+                else:
+                    cleaned_lines.append(line)
+
+            inner_content = '\n'.join(cleaned_lines).rstrip()
+
+            parts.append(f"::: callout-{tag}\n{inner_content}\n:::")
+            # Move position pointer forward
+            pos = block_start + sum(len(l)+1 for l in lines)  # +1 for newline per line
+
+        # Append the rest of the content
+        parts.append(content[pos:])
+
+        return ''.join(parts)
+
+
+    content = fix_callouts(content)
     # Convert \[...\] blocks to $$...$$
     content = re.sub(
         r'\\\[\s*\n(.*?)\n\\\]',

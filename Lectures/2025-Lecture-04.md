@@ -1,4 +1,4 @@
-## Electron-Photon Scattering, Form Factors, and Baryon Magnetic Moments
+### Electron-Photon Scattering, Form Factors, and Baryon Magnetic Moments
 
 
 Today's lecture will start by reviewing **electron-photon scattering**, then continue with the **magnetic moment**. Later, we will discuss different experiments and how they produce various hadrons.
@@ -129,7 +129,7 @@ $$
 
 This concludes the recap of **electron-photon scattering** and **magnetic moments**. Next, we’ll explore further applications of **flavor symmetry**.
 
-## Light Baryon Spectroscopy and Hadron Production Methods
+### Light Baryon Spectroscopy and Hadron Production Methods
 
 
 We already discussed the proton. Now let’s think about the **light baryons**. We have seen you can use **SU(3)** for flavor with the up, down, and strange quark, and combine it with **SU(2) spin**. This gives us **SU(6)** for spin-flavor symmetry:
@@ -228,7 +228,7 @@ Resonances are labeled like $S_{11}$, where:
 
 **Final note:** Higher energies allow meson spectroscopy, but we’ll cover that next time.
 
-## SU(2) Algebra and Delta Baryon Wave Functions
+### SU(2) Algebra and Delta Baryon Wave Functions
 
 
 We've been talking to theorists yesterday. There will be **advanced theoretical hadron physics** next semester. Everyone is invited to take it, and it will be completely complementary to this course—it will go in-depth into group theory.
@@ -271,7 +271,7 @@ A reminder: the total isospin is the sum of the isospins of the three quarks, $\
 > - $I_+ |\Delta^+ (I=\frac{3}{2}, I_z=\frac{1}{2})\rangle = \sqrt{3} \, |\Delta^{++} (I=\frac{3}{2}, I_z=\frac{3}{2})\rangle$
 > - $I_- |\Delta^+ (I=\frac{3}{2}, I_z=\frac{1}{2})\rangle = \sqrt{2} \, |\Delta^0 (I=\frac{3}{2}, I_z=-\frac{1}{2})\rangle$
 
-## Adjustments to Schedule and Workload
+### Adjustments to Schedule and Workload
 
 
 **What is it about at all?**

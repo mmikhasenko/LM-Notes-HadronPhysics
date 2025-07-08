@@ -1,4 +1,4 @@
-## Introduction to Hadron Physics and Course Logistics
+### Introduction to Hadron Physics and Course Logistics
 
 
 The first lecture will be dedicated to the **introduction of hadron physics**.
@@ -46,7 +46,7 @@ Additionally:
 - The images will be fed into the language model to generate a **formal typed version**.
 - *Dransh, I will likely ask you to take a picture once we fill the board.*
 
-## Scaling the Universe's Timeline from Big Bang to Hadronization
+### Scaling the Universe's Timeline from Big Bang to Hadronization
 
 
 
@@ -173,7 +173,7 @@ We won't get to the forming of atoms as we know them, with electron shells—it 
 > - Hadronization: $t_{\text{hadronization}} \sim 10^{-6} \, \text{s}$
 > - Recombination: $t_{\text{recombination}} \sim 400,\!000 \, \text{years}$
 
-## Structure of the Atom: Nucleus, Electrons, and Atomic Scale
+### Structure of the Atom: Nucleus, Electrons, and Atomic Scale
 
 
 What I have here is the **electron**. So what is an atom? Let's now go to the second item.
@@ -227,7 +227,7 @@ Dividing by the **effective charge** (e.g., $Z_{\text{eff}} \approx 4$ due to sc
 
 The text now uses **bold** for key terms, *italics* for less critical emphasis, block math for equations, and a callout for contextual notes. Horizontal rules separate logical sections, and a recap box highlights formulas. All original sentences are preserved.
 
-## The Standard Model: Structure, Challenges, and the Strong Interaction
+### The Standard Model: Structure, Challenges, and the Strong Interaction
 
 
 Particle physics has the most accurate and precise theory that describes everything we have observed so far, which is the **Standard Model**. It is so accurate that for 10 years now we have been trying to find any single deviation by colliding particles at CERN and elsewhere from its predictions. So far, we haven't found any—it's very nice and accurate.
@@ -303,7 +303,7 @@ Or their antiparticles:
 
 You'll quickly get used to this language—**strong charge as color charge**. In hadron physics, we'll be talking about the strong interaction, which is also the color interaction.
 
-## Interaction Fields and the Lagrangian Formulation
+### Interaction Fields and the Lagrangian Formulation
 
 
 When we say **interaction**, it's interaction of the object with the field. The fields are represented by these carriers of the force, which are \\( W \\) and \\( Z \\) for the **weak interaction**, photons for the **electromagnetic interaction**, and gluons for the **strong interaction**.
@@ -340,7 +340,7 @@ $$
 
 This describes a system where a point can move without friction, or a pendulum with another mass attached. The **equation of motion** is a differential equation, found by applying the classical equivalent of this formula.
 
-## Lagrangian Structure in QED and QCD: Fields, Indices, and Equations of Motion
+### Lagrangian Structure in QED and QCD: Fields, Indices, and Equations of Motion
 
 
 I will clarify this equation now because this is the one we will use for the fields.
@@ -373,42 +373,30 @@ The Lagrangian is a **scalar quantity**—not a vector, not a matrix, just a num
 A scalar is achieved by dealing with **indices**: every index introduces a dimension, and you only get a scalar when all indices match.
 We use **Einstein notation**, where repeated indices imply summation—same as in quantum mechanics.
 
-Here, $\mu$ and $
-u$ are **Lorentz indices**.
+Here, $\mu$ and $\nu$ are **Lorentz indices**.
 $\mu$ lives in four dimensions—three spatial ($x, y, z$) and one time.
 The $\mu$ here and $\mu$ here must be **contracted**.
-I’m skipping the explicit summation over $\mu$ from 1 to 4, as well as the summation over $
-u$, which also appears twice.
+I’m skipping the explicit summation over $\mu$ from 1 to 4, as well as the summation over $\nu$, which also appears twice.
 
 ---
 
-You can think of $F_{\mu
-u}$ as a **matrix**—$\mu$ is 4-dimensional, and $
-u$ is 4-dimensional, so $F_{\mu
-u}$ is a $4 \times 4$ matrix.
+You can think of $F_{\mu\nu}$ as a **matrix**—$\mu$ is 4-dimensional, and $\nu$ is 4-dimensional, so $F_{\mu\nu}$ is a $4 \times 4$ matrix.
 When you multiply, you don’t multiply matrices the usual way—you multiply them **component-wise**.
 Every component is multiplied by itself, and then you take the **trace** (or sum all elements).
 In Python terms, you broadcast the matrix element-wise and then sum all elements—that's what happens here.
 
-Each component of $F_{\mu
-u}$ is computed as:
+Each component of $F_{\mu\nu}$ is computed as:
 $$
-F_{\mu
-u} = \partial_\mu A_
-u - \partial_
-u A_\mu
+F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu
 $$
-where $\partial_
-u$ is the derivative in time and space—essentially $\partial/\partial x$.
+where $\partial_\nu$ is the derivative in time and space—essentially $\partial/\partial x$.
 
 ---
 
 > [!NOTE]
 > The **QED Lagrangian** is given by:
 > $$
-> \mathcal{L}_{\text{QED}} = \bar{\psi} (i \gamma^\mu D_\mu - m) \psi - \frac{1}{4} F_{\mu
-u} F^{\mu
-u}
+> \mathcal{L}_{\text{QED}} = \bar{\psi} (i \gamma^\mu D_\mu - m) \psi - \frac{1}{4} F_{\mu\nu} F^{\mu\nu}
 > $$
 > This describes fermion-photon interactions, with $\psi$ as the fermion field and $A_\mu$ as the photon field.
 
@@ -452,20 +440,14 @@ For QCD, we introduce a **color index** $G$ because every additional index expan
 
 The **QCD Lagrangian** is:
 $$
-\mathcal{L}_{\text{QCD}} = \sum_f \bar{\psi}_f (i \gamma^\mu D_\mu - m_f) \psi_f - \frac{1}{4} F^a_{\mu
-u} F^{a,\mu
-u}
+\mathcal{L}_{\text{QCD}} = \sum_f \bar{\psi}_f (i \gamma^\mu D_\mu - m_f) \psi_f - \frac{1}{4} F^a_{\mu\nu} F^{a,\mu\nu}
 $$
 where:
 
 - $\psi_f$ is the quark field for flavor $f$,
 - $D_\mu = \partial_\mu - i g_s \lambda^a A^a_\mu$ is the QCD covariant derivative,
 - $\lambda^a$ are the **Gell-Mann matrices** (SU(3) generators),
-- $F^a_{\mu
-u} = \partial_\mu A^a_
-u - \partial_
-u A^a_\mu + g_s f^{abc} A^b_\mu A^c_
-u$ is the gluon field strength tensor.
+- $F^a_{\mu\nu} = \partial_\mu A^a_\nu - \partial_\nu A^a_\mu + g_s f^{abc} A^b_\mu A^c_\nu$ is the gluon field strength tensor.
 
 ---
 
@@ -473,8 +455,7 @@ Now, let’s check the dimensionality.
 There’s a new object $\lambda$ here—these are $3 \times 3$ matrices.
 The indices $I, J$ correspond to **color space**.
 When you commute two matrices, you get another matrix.
-Overall, this is a matrix in $\mu, 
-u$ (4D spacetime) and $I, J$ (3D color space).
+Overall, this is a matrix in $\mu, \nu$ (4D spacetime) and $I, J$ (3D color space).
 
 I’ll try to make more sense of this equation once all indices are introduced.
 I really want you to understand the **mathematical structure**.
@@ -518,12 +499,10 @@ If we apply this to QCD, do you know what the equation is called that describes 
 > $$
 > In QCD, this generalizes to the covariant form with $D_\mu$. The gluon field dynamics are governed by the **Yang-Mills equations**:
 > $$
-> D_\mu F^{a,\mu
-u} = g_s \bar{\psi} \gamma^
-u \lambda^a \psi
+> D_\mu F^{a,\mu\nu} = g_s \bar{\psi} \gamma^\nu \lambda^a \psi
 > $$
 
-## Gauge Symmetry, Phase Ambiguity, and Confinement in Field Theory
+### Gauge Symmetry, Phase Ambiguity, and Confinement in Field Theory
 
 
 
@@ -623,11 +602,7 @@ If you try to separate them, new quark pairs form, maintaining color neutrality.
 Looking at the QCD Lagrangian, gluon self-interaction terms indicate confinement:
 
 $$
-G_{\mu
-u}^a = \partial_\mu A_
-u^a - \partial_
-u A_\mu^a + g f^{abc} A_\mu^b A_
-u^c.
+G_{\mu\nu}^a = \partial_\mu A_\nu^a - \partial_\nu A_\mu^a + g f^{abc} A_\mu^b A_\nu^c.
 $$
 
 These terms lead to vertices with three or four gluons, a signature of confinement.
@@ -640,7 +615,7 @@ $$
 
 At high $Q$ (asymptotic freedom), $\alpha_s$ is small; at low $Q$ (confinement), it grows.
 
-## Exponential Decay and Half-Life Relationships
+### Exponential Decay and Half-Life Relationships
 
 
 When we examine radioactive decay, the number of nuclei decreases **exponentially** over time. The formula is:
@@ -666,13 +641,4 @@ Just like a ticking clock measures regular intervals, the half-life measures **p
 
 The mathematical relationship between $λ$ and $t_{1/2}$ applies to all exponential decay processes in nuclear physics.
 
----
-
-Note that I've:
-1. Preserved every original sentence exactly
-2. Added proper mathematical formatting
-3. Used a single callout block for supplementary information
-4. Added bullet points to organize related concepts
-5. Maintained horizontal rules for logical separation
-6. Kept all emphasis from the original while adding some new emphasis for key terms
 
