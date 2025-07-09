@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Mikhail Mikhasenko">
+
+<title>lecture-13 – Hadron Physics</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 22.8em;
+  margin: 0 22.8em 22.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-6729c19c459079745e2be02720e68a89.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-search-results"></div>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#hadronic-contributions-to-g-2-vacuum-polarization-and-light-by-light" id="toc-hadronic-contributions-to-g-2-vacuum-polarization-and-light-by-light" class="nav-link active" data-scroll-target="#hadronic-contributions-to-g-2-vacuum-polarization-and-light-by-light"><span class="header-section-number">22.1</span> Hadronic Contributions to <span class="math inline">g-2</span>: Vacuum Polarization and Light-by-Light</a></li>
+  <li><a href="#time-dependence-in-euclidean-correlation-functions-and-scattering-in-quantum-mechanics-with-pöschl-teller-potential" id="toc-time-dependence-in-euclidean-correlation-functions-and-scattering-in-quantum-mechanics-with-pöschl-teller-potential" class="nav-link" data-scroll-target="#time-dependence-in-euclidean-correlation-functions-and-scattering-in-quantum-mechanics-with-pöschl-teller-potential"><span class="header-section-number">22.2</span> Time Dependence in Euclidean Correlation Functions and Scattering in Quantum Mechanics with Pöschl-Teller Potential</a></li>
+  <li><a href="#scattering-phase-shifts-virtual-states-and-resonances-in-a-symmetric-potential-well" id="toc-scattering-phase-shifts-virtual-states-and-resonances-in-a-symmetric-potential-well" class="nav-link" data-scroll-target="#scattering-phase-shifts-virtual-states-and-resonances-in-a-symmetric-potential-well"><span class="header-section-number">22.3</span> Scattering Phase Shifts, Virtual States, and Resonances in a Symmetric Potential Well</a></li>
+  <li><a href="#finite-volume-spectrum-and-phase-shifts-in-scattering-theory" id="toc-finite-volume-spectrum-and-phase-shifts-in-scattering-theory" class="nav-link" data-scroll-target="#finite-volume-spectrum-and-phase-shifts-in-scattering-theory"><span class="header-section-number">22.4</span> Finite-Volume Spectrum and Phase Shifts in Scattering Theory</a></li>
+  <li><a href="#connecting-quantum-scattering-with-finite-box-periodic-systems" id="toc-connecting-quantum-scattering-with-finite-box-periodic-systems" class="nav-link" data-scroll-target="#connecting-quantum-scattering-with-finite-box-periodic-systems"><span class="header-section-number">22.5</span> Connecting Quantum Scattering with Finite-Box Periodic Systems</a></li>
+  <li><a href="#extracting-meson-and-baryon-spectra-from-lattice-correlation-functions" id="toc-extracting-meson-and-baryon-spectra-from-lattice-correlation-functions" class="nav-link" data-scroll-target="#extracting-meson-and-baryon-spectra-from-lattice-correlation-functions"><span class="header-section-number">22.6</span> Extracting Meson and Baryon Spectra from Lattice Correlation Functions</a></li>
+  <li><a href="#lattice-qcd-spectroscopy-extracting-meson-spectra-and-resonances-via-finite-volume-phase-shifts" id="toc-lattice-qcd-spectroscopy-extracting-meson-spectra-and-resonances-via-finite-volume-phase-shifts" class="nav-link" data-scroll-target="#lattice-qcd-spectroscopy-extracting-meson-spectra-and-resonances-via-finite-volume-phase-shifts"><span class="header-section-number">22.7</span> Lattice QCD Spectroscopy: Extracting Meson Spectra and Resonances via Finite-Volume Phase Shifts</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Mikhail Mikhasenko </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="hadronic-contributions-to-g-2-vacuum-polarization-and-light-by-light" class="level3" data-number="22.1">
+<h3 data-number="22.1" class="anchored" data-anchor-id="hadronic-contributions-to-g-2-vacuum-polarization-and-light-by-light"><span class="header-section-number">22.1</span> Hadronic Contributions to <span class="math inline">g-2</span>: Vacuum Polarization and Light-by-Light</h3>
+<p>Let’s start with recording.</p>
+<p><strong>What are the two terms in <span class="math inline">g-2</span> that receive hadronic contributions?</strong> The contributions are <strong>vacuum polarization</strong> and <strong>light-by-light</strong>.</p>
+<ul>
+<li><strong>Vacuum polarization</strong>.</li>
+<li><strong>Light-by-light</strong>.</li>
+</ul>
+<hr>
+<p><strong>Can you draw the diagram for the vacuum polarization?</strong> For light-by-light? <em>I think light-by-light.</em></p>
+<p><strong>What is the vacuum polarization diagram?</strong> <em>I would have to look it up.</em> <em>I have a guess, but I’m not sure.</em> <strong>What’s your guess?</strong></p>
+<hr>
+<p>The solid lines represent the fermion. <strong>Which fermion is that?</strong> The fermion in this drawing is the <strong>muon</strong>. The wavy line is the <strong>photon</strong>.</p>
+<p>That diagram shows how the probe—the muon—interacts with the photon. Here, something dresses the photon and changes the vertex. This is the <strong>hadronic vacuum polarization (HVP)</strong>.</p>
+<hr>
+<p>There is also another component—how it fits here. HVP sits here. Another contribution is <strong>hadronic light-by-light (HLbL)</strong>, where hadrons enter.</p>
+<p><strong>If we expand further, where exactly in HLbL do hadrons enter?</strong> Precisely here. It could be a loop of pions or kaons. The particles that matter are those that couple to the photon.</p>
+<hr>
+<p>In contrast, I don’t call it light-by-light if there’s a vertex with three photon legs. Mesons that couple to photons contribute the most—like <span class="math inline">\eta</span> and <span class="math inline">\eta'</span>. All mesons with a strong two-photon coupling are relevant.</p>
+<div class="callout callout-style-simple callout-important">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Key Formulas</strong>: The hadronic contributions to <span class="math inline">g-2</span> are decomposed as: <span class="math display">
+a_\mu = a_\mu^{\text{QED}} + a_\mu^{\text{EW}} + a_\mu^{\text{HVP}} + a_\mu^{\text{HLbL}}
+</span> For HVP: <span class="math display">
+a_\mu^{\text{HVP}} = \left(\frac{\alpha}{\pi}\right)^2 \int_{m_\pi^2}^\infty \frac{ds}{s} K(s) R_{\text{had}}(s)
+</span> For HLbL (simplified): <span class="math display">
+a_\mu^{\text{HLbL}} \propto \sum_{M=\pi^0,\eta,\eta',...} \int d^4q_1 \, d^4q_2 \, \frac{\mathcal{F}_{M\gamma^*\gamma^*}(q_1^2,q_2^2)}{q_1^2 q_2^2 (q_1+q_2)^2}
+</span></p>
+</div>
+</div>
+</div>
+<hr>
+<p>This is important to realize: <strong>hadron physics provides the input for precision physics</strong>. Hadronic contributions are critical for <span class="math inline">g-2</span>, which must be calculated to <strong>10 digits</strong>, as shown last time. Experiments measure this, but theoretical calculations rely on understanding these vertices—what happens inside these blocks.</p>
+<p>These days, there’s less discussion about hadronic light-by-light. The main uncertainty comes from <strong>hadronic vacuum polarization</strong>.</p>
+</section>
+<section id="time-dependence-in-euclidean-correlation-functions-and-scattering-in-quantum-mechanics-with-pöschl-teller-potential" class="level3" data-number="22.2">
+<h3 data-number="22.2" class="anchored" data-anchor-id="time-dependence-in-euclidean-correlation-functions-and-scattering-in-quantum-mechanics-with-pöschl-teller-potential"><span class="header-section-number">22.2</span> Time Dependence in Euclidean Correlation Functions and Scattering in Quantum Mechanics with Pöschl-Teller Potential</h3>
+<p>Second question: What’s the time dependence of the correlation functions computed on the lattice once we transform Minkowski space to Euclidean? The expectation between the vacuum and any operator <span class="math inline">\mathcal{O}_I</span> for the state that’s not the vacuum as a function of <span class="math inline">q</span> has an exponentially falling dependence.</p>
+<p>The time dependence in the Heisenberg representation—the time dependence of the operator—is given by the commutation with the Hamiltonian. We change to Euclidean space, and then the time dependence is given by the exponent: <span class="math display">
+\langle 0 | \mathcal{O}_I(t) | n \rangle \sim e^{-E_n t}.
+</span></p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>This exponential decay in Euclidean time is a key feature of correlation functions in lattice field theory, where <span class="math inline">E_n</span> represents the energy of the state <span class="math inline">|n\rangle</span>.</p>
+</div>
+</div>
+</div>
+<hr>
+<p>Today in the lecture, I plan to connect the scattering problem and quantum mechanics. It is the scattering theory that we have discussed during the course, and we will see how resonance phenomena and complex structure emerge in quantum mechanics. Then, we will connect this to the methods used in lattice field theory in a finite box to obtain useful results on the scattering properties of particles.</p>
+<hr>
+<p>I’m going to start with the scattering problem in quantum mechanics on the basis of the wave functions. The main equation for scattering is the Hamiltonian operator acting on the wave function, giving an eigenvalue. The energy is the same wave function, and the Hamiltonian is the sum of two terms: <span class="math display">
+H = -\frac{d^2}{dx^2} + V(x),
+</span> where:</p>
+<ul>
+<li>The first term is the <strong>kinetic energy</strong> (mapping momentum to the derivative of the coordinate).</li>
+<li>The potential <span class="math inline">V(x)</span> is a function of the coordinate.</li>
+</ul>
+<p>Most of the time in quantum mechanics, we operate in the coordinate space, and the potential in that case is a function of a single variable—the one-dimensional <span class="math inline">x</span>-coordinate. For simplicity, let’s drop all of the constants; at any moment, we can recover them from dimensionality. That’s why there is no good reason to track them.</p>
+<p>That’s a differential equation that can be solved numerically. But there are several types of potentials for which there is a closed form for the solution in two dimensions later. I would like to look at one of them to gain insight.</p>
+<hr>
+<p>Before that, let’s discuss what the variables are here. The energy of the system is a fixed parameter in this differential equation. This is something that we have to probe, fix, and then solve. The way to investigate the system with a given potential goes as follows:</p>
+<ol type="1">
+<li>We fix the energy or the breakup momentum in the system because they are one-to-one related to each other.</li>
+<li>By solving this equation and finding eigenvalues <span class="math inline">P</span>, we can look at what wave functions satisfy this equation.</li>
+</ol>
+<p>But we can also look at the system differently. The solution won’t be present for certain values of <span class="math inline">E</span>. You can consider this energy parameter as the parametric variable in this equation and ask: <strong>for which energy values does the equation have a solution?</strong> With that, we are going to realize what are possible regimes or possible values of the energy of the system.</p>
+<hr>
+<p>I look at the different potentials that have a closed-form solution. One of them is the <strong>Pöschl-Teller potential</strong>: <span class="math display">
+V(x) = -U_0 \text{sech}^2(\alpha x).
+</span> It’s nice when you have a closed form because then you can quickly visualize the code for this. The claim is that if you use this potential and do an algebraic change of variables, you can arrive at an analytic, almost analytic, closed-form expression for the wave function. The hyperbolic cotangent here is then related to the tangent. Everything is formulated in terms of hyperbolic functions, and the solution is given by the hypergeometric function.</p>
+<p>Special functions are not a problem once someone implements them. For any programming language—Mathematica, Python, Julia—you can find implementations of the hypergeometric functions. So we can plot everything.</p>
+<hr>
+<p>The physics is very interesting for this system. That potential has two parameters:</p>
+<ul>
+<li>The depth <span class="math inline">U_0</span></li>
+<li>The size <span class="math inline">\alpha</span> of the well</li>
+</ul>
+<p><span class="math inline">\alpha</span> controls how wide the well is, and <span class="math inline">U_0</span> is how deep it is. Depending on these two parameters, you can have many very nice physics phenomena.</p>
+<p>In the scattering problem, the general features are the following. Let me also sketch next to this potential possible energies. The equation has solutions only for certain values of energies. Not every value would lead to a satisfactory wave function.</p>
+<hr>
+<p>One of the conditions that makes certain energy values unacceptable is the <strong>asymptotic condition</strong>. We want our wave function to be finite—no exponential growth. The usual way we solve that is by saying <span class="math inline">\psi</span> has the term of the incoming wave and then the reflected term: <span class="math display">
+\psi(x) \sim e^{ikx} + r e^{-ikx}.
+</span></p>
+<ul>
+<li>The term with <span class="math inline">+ikx</span> is the plane wave going in the positive <span class="math inline">x</span>-direction.</li>
+<li>The term with <span class="math inline">-ikx</span> goes in the negative direction.</li>
+</ul>
+<p>That asymptotic form is a good approximation for the well.</p>
+<p>For that potential, the way to solve is to look at the differential equation and recognize it as a type of special function. But what’s important here is how the energy spectrum comes about. You take this equation, put it into the differential equation, and find the condition for certain <span class="math inline">k</span> so that the wave function doesn’t grow exponentially at both infinities.</p>
+<hr>
+<p>Why does the exponential appear in the first place? It appears when <span class="math inline">iK</span> is real, as soon as we consider energy below zero. Energy has to be looked at on the scale of <span class="math inline">V</span>. Here is zero. The levels will be for the energy positive, and here is the level for the energy negative.</p>
+<p>As soon as you look at negative energy, <span class="math inline">K</span> becomes imaginary, and <span class="math inline">iK</span> becomes real—one of the exponentials blows up. To avoid this asymptotically, we have to limit some terms. That gives the normalization condition for the wave function. We want this to be finite or oscillating.</p>
+<p>You immediately relate this picture to the energy spectrum. Energy is the lines in the potential. As soon as my energy is above the asymptotic values of the potential, all energy values are allowed. That’s called the <strong>continuum of states</strong>.</p>
+<p>For energies below thresholds, the solution exists as <strong>bound states</strong>. These are bound states in the potential—something with exponential falloff. The wave function for the bound state will have peaks inside the well and exponentially suppressed tails outside.</p>
+<p>The number of solutions inside the well is determined by an integer <span class="math inline">N</span>. If the well is very deep (<span class="math inline">U_0</span> is high), <span class="math inline">N</span> can have many values (0, 1, 2, …). As you make the well deeper, there are more states. There is a finite number because levels with energy much lower than the potential cannot exist.</p>
+<p>If you make the well narrower (<span class="math inline">\alpha</span> increases), you can fit more states in it. The energy is related to the maximal energy, which is tied to the potential term: <span class="math display">
+E_n = -U_0 + \left( \frac{\hbar^2 \alpha^2}{2m} \right) \left( n + \frac{1}{2} - \sqrt{\frac{2m U_0}{\hbar^2 \alpha^2} + \frac{1}{4}} \right)^2.
+</span> Energy is always negative here and limited by <span class="math inline">U_0</span>.</p>
+<hr>
+<p>Now I want to look at this picture once again and then transform it to the way we have seen in the scattering theory. We used to write energy on the <span class="math inline">x</span>-axis—the energy plane—where the continuum was represented by the cut, and bound states appeared as poles.</p>
+<p>It’s very instructive to map the scattering amplitude in scattering theory to the potential problem. That analytic structure is exactly the same for the transmission and reflection coefficients.</p>
+<p>To make it accurate, we have to consider a different problem where we have a clear incoming wave, reflected wave, and transmitted wave. For example, with a potential step:</p>
+<ul>
+<li>On the left, an incoming wave <span class="math inline">1 + e^{ikx} + r</span>.</li>
+<li>On the right, a transmitted wave <span class="math inline">T</span>.</li>
+</ul>
+<p>Here, <span class="math inline">T</span> is the transmission coefficient, and <span class="math inline">R</span> is the reflection coefficient, with <span class="math inline">|T|^2 + |R|^2 = 1</span>.</p>
+<p>When solving the scattering problem, that’s the setup you would use. You could also reverse it—send the wave from the right. But for symmetric potentials, it’s easier to use symmetric functions (cosine/sine).</p>
+<p>The role of the scattering amplitudes is now played by these coefficients, which are functions of momentum and energy. We are dealing with the coordinate space <span class="math inline">x</span>; <span class="math inline">e^{ikx}</span> is a plane wave, and the scattering amplitude is the coefficient in front that depends on energy.</p>
+<p>We can ask: what is the analytic structure of our transmission coefficients in the complex plane? We are going to discover exactly that. In the region where there is a continuum, any value of the energy is possible—you have a branch cut. And then there are bound states that are trapped in the well.</p>
+<div class="callout callout-style-simple callout-important">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>The analytic structure of scattering amplitudes—branch cuts for continuum states and poles for bound states—is a universal feature in quantum mechanics and quantum field theory. Understanding this helps connect lattice calculations to physical observables.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="scattering-phase-shifts-virtual-states-and-resonances-in-a-symmetric-potential-well" class="level3" data-number="22.3">
+<h3 data-number="22.3" class="anchored" data-anchor-id="scattering-phase-shifts-virtual-states-and-resonances-in-a-symmetric-potential-well"><span class="header-section-number">22.3</span> Scattering Phase Shifts, Virtual States, and Resonances in a Symmetric Potential Well</h3>
+<p>When we deal with the <strong>symmetric potential</strong>, instead of using that basis, we can switch to the <strong>cosine and sine basis</strong>. If we use <span class="math inline">kx + \delta_0</span>, then we can use either one or another. Let’s stick to the <strong>even wave functions</strong> that have <strong>positive parity</strong>.</p>
+<hr>
+<p>Now, I want to give you an intuitive understanding of <span class="math inline">\delta_0</span>. <span class="math inline">\delta_0</span> is a <strong>scattering phase shift</strong>. We will look for the solution with <strong>positive energy</strong>.</p>
+<p>Here is our potential—that’s the energy that’s fixed. The wave function is given by: <span class="math display">
+\psi(x) \sim \cos(kx + \delta_0).
+</span> This satisfies the equations <strong>outside the well asymptotically</strong>.</p>
+<hr>
+<p>Let’s say the well is localized in the region of radius <span class="math inline">R</span>. Outside the well, where the potential saturates at zero, the equation: <span class="math display">
+\psi'' + E \psi = 0
+</span> has a solution given by <span class="math inline">\cos(kx + \delta_0)</span>.</p>
+<p>It’s clear that this is a solution. If you take the second derivative, the <span class="math inline">k^2</span> comes out of the cosine, and you still have a cosine with a minus sign. Since <span class="math inline">k^2 = E</span>, you get exactly the terms.</p>
+<hr>
+<div class="callout callout-style-simple callout-important">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Key Insight</strong>: The phase shift <span class="math inline">\delta_0</span> doesn’t spoil the solution—it’s still a solution, and it reflects, asymptotically, the properties of the potential. Despite the potential being localized, the functions at infinity feel the properties of the potential.</p>
+</div>
+</div>
+</div>
+<p>That’s the essence of <strong>scattering theory</strong>: you send a plane wave toward your potential from minus infinity, and then you check the properties of the wave on the other side asymptotically. It comes out as a plane wave, but with a slightly different phase. This difference in phase reflects the properties of the potential.</p>
+<hr>
+<p>Maybe this is also a good moment to think about what happens with these <strong>poles</strong> when we change the potential—that slider we had to move up and down the depth of the well. What happens with these poles? Clearly, they move continuously with the depth of the potential.</p>
+<ul>
+<li>When we make the potential <strong>shallower</strong>, these poles move toward the threshold and then disappear there.</li>
+<li>But in fact, they don’t disappear. They wrap around the branch point and appear on the other <strong>analytic sheet</strong>.</li>
+<li>The function, due to this branch cut, has several <strong>Riemann sheets</strong>.</li>
+<li>What they do is flip, go to the <strong>non-physical sheet</strong>, and become <strong>virtual states</strong>.</li>
+</ul>
+<hr>
+<p>As soon as the potential is in a regime where it’s finite but cannot yet host a bound state, there are only <strong>virtual states</strong>. If the attraction is not strong enough, there are no bound states in the potential. But still, the attraction could be felt by particles, and that indicates there are virtual states. With a certain depth, there are one, two, and then even more states.</p>
+<hr>
+<p>What are <strong>resonances</strong> then? Following this logic, resonances are phenomena where particles with low energy feel the attraction more strongly. At certain energies, we want peaks in the amplitudes. This potential does not have any resonance phenomena. But resonance phenomena could be seen if the probability to pass through the well increases for certain energies.</p>
+<p>For low energy, the probability to pass or the reflection—let’s think of the <strong>reflection coefficient</strong>—changes with the energy of the particle. Resonance phenomena correspond to cases where, when you change the energy, the probability of reflection gets lower or higher and then returns to the same value. If you have a strong dependence of the reflection probability on the frequency of the wave, you have a resonance phenomenon.</p>
+<hr>
+<p>Now we are ready to put this problem into the box. Solving it in the box is also an <strong>academic problem</strong>. I’m not sure this potential can be solved in closed form. But what changes is that you impose another condition.</p>
+<p>A particle at the value <span class="math inline">L</span> has to be the same as the one on the other side, as well as the derivative: <span class="math display">
+\psi(L) = \psi(-L) \quad \text{and} \quad \psi'(L) = \psi'(-L).
+</span> These conditions are <strong>strong</strong> and change the phenomena dramatically.</p>
+</section>
+<section id="finite-volume-spectrum-and-phase-shifts-in-scattering-theory" class="level3" data-number="22.4">
+<h3 data-number="22.4" class="anchored" data-anchor-id="finite-volume-spectrum-and-phase-shifts-in-scattering-theory"><span class="header-section-number">22.4</span> Finite-Volume Spectrum and Phase Shifts in Scattering Theory</h3>
+<p>The first condition does nothing. The function is symmetric, so it is already the same on both sides of the lattice.</p>
+<p>But the <strong>second condition</strong> is actually important. We are still dealing with energies that are <strong>positive</strong>. From this boundary condition, we realize that not every energy is possible—only those where <span class="math inline">E = k^2</span>.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>The energy-momentum relation <span class="math inline">E = k^2</span> is a key constraint here, limiting the allowed energy states.</p>
+</div>
+</div>
+</div>
+<hr>
+<p>Now, in the continuum, certain values are <strong>forbidden</strong>, and only a <strong>discrete spectrum</strong> appears. Let me first draw it as a line. I will still have a bound state below the threshold crossing, but now even above the threshold, I have a discrete spectrum.</p>
+<p>You can see how this transition happens. What effectively occurs is that our branch point and the cut starting from zero and extending to positive energies gets replaced by a set of <strong>poles</strong>. Every allowed value of energy—if it’s isolated—is a pole in the scattering amplitude.</p>
+<p>A bizarre thing happens: we used to have a cut in the complex plane, and now it becomes an <strong>infinite number of poles</strong> along the real axis.</p>
+<hr>
+<p>For a larger lattice, in the limit <span class="math inline">L \to \infty</span>, we recover the <strong>infinite box limit</strong>. In this limit, we resemble the infinite volume with a <strong>continuous spectrum</strong>. Here, I indicate the distance between poles in the region that used to be continuous, and you see they are very close to each other. The distance scales as <span class="math inline">\Delta E \sim \frac{1}{L}</span>.</p>
+<div class="callout callout-style-simple callout-important">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>The scaling <span class="math inline">\Delta E \sim \frac{1}{L}</span> shows how the discrete spectrum approaches continuity as <span class="math inline">L</span> grows.</p>
+</div>
+</div>
+</div>
+<hr>
+<p>Another term in this formula I want to discuss is <span class="math inline">\delta_0</span>. That term, at infinity, remembers the properties of a potential with <strong>infinite range</strong>. As you see, this term changes the spectrum—the discrete spectrum we now have in the continuum, or the region that was once continuous.</p>
+<p>There is a <strong>shift</strong>, related to the exercise we did earlier. We took our potential, made it flat by setting <span class="math inline">U = 0</span>; the phase shift <span class="math inline">\delta</span> vanished, but <span class="math inline">\delta_0</span> was still present. Then we pulled the potential down, and <span class="math inline">\delta_0</span> became significant.</p>
+<p>What you observe is that the energy spectrum—both below and above the threshold—gets <strong>adjusted and shifted</strong>. This shift is related to the properties of the potential. That’s the <strong>key idea</strong> for our finite-volume scattering computations.</p>
+<hr>
+<p>Here, we have a way to <strong>numerically solve</strong> the Schrödinger equation and examine the asymptotic values to find <span class="math inline">\delta_0</span>. We don’t always need to do this, but it’s critical when the potential is not analytically solvable.</p>
+<p>If we perform a scattering experiment and only have access to the <strong>asymptotic form</strong> and energy spectrum, we can deduce the potential’s properties from the spectrum. First, we check the allowed energies without interaction—a simple problem with the solution <span class="math inline">E_n = \left( \frac{2\pi n}{L} \right)^2</span>. Then, we numerically determine the energies with interaction. By comparing these two cases, we can deduce <span class="math inline">\delta_0</span>.</p>
+<p>Note that <span class="math inline">\delta_0</span> <strong>depends on energy</strong>. Here, you probe it with different values of <span class="math inline">k</span>.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>The phase shift <span class="math inline">\delta_0(k)</span> is energy-dependent and connects the finite-volume spectrum to the infinite-volume scattering properties.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="connecting-quantum-scattering-with-finite-box-periodic-systems" class="level3" data-number="22.5">
+<h3 data-number="22.5" class="anchored" data-anchor-id="connecting-quantum-scattering-with-finite-box-periodic-systems"><span class="header-section-number">22.5</span> Connecting Quantum Scattering with Finite-Box Periodic Systems</h3>
+<p>So far, despite quantum mechanics being a <strong>very well-taught course</strong>, usually the connections with the material that comes after—<strong>quantum field theory</strong> and <strong>particle physics</strong>, or any other courses—are not that easy to grasp. I think it’s important to spell out and discuss all points that are shared and make a connection.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>The <strong>periodic boundary conditions</strong> simplify the problem by making the system translationally invariant—only the <em>relative distance</em> between particles matters, not their absolute positions.</p>
+</div>
+</div>
+</div>
+<p>I have an intuitive picture of this scattering in my head. If you think of a finite box with periodic boundary conditions, it’s like having two marbles interacting with each other on a ring. What plays the role of the lattice size is the full circumference of the ring. The variable <span class="math inline">x</span> is the distance between the two marbles. If there is a potential <span class="math inline">V(x)</span> with which they interact, that’s precisely the setup we have.</p>
+<p>Periodic boundary conditions mean it doesn’t matter where they are—what matters is only the distance.</p>
+<hr>
+<ol type="1">
+<li><p><strong>Schrödinger equation</strong> for this system with periodic boundary conditions: <span class="math display">
+\left[ -\frac{\hbar^2}{2m} \nabla^2 + V(\mathbf{r}) \right] \psi(\mathbf{r}) = E \psi(\mathbf{r})
+</span> where <span class="math inline">V(\mathbf{r} + \mathbf{a}) = V(\mathbf{r})</span> for lattice vector <span class="math inline">\mathbf{a}</span>.</p></li>
+<li><p>For a <strong>short-range interaction</strong> (like the “marbles” analogy), the potential can be modeled as: <span class="math display">
+V(x) = V_0 \delta(x - x_0)
+</span> where <span class="math inline">\delta(x)</span> is the <strong>Dirac delta function</strong>.</p></li>
+<li><p>The <strong>scattering amplitude</strong> for two-particle interactions in a finite box: <span class="math display">
+f(k, \theta) = \frac{1}{k} \sum_{\ell=0}^{\infty} (2\ell + 1) e^{i \delta_\ell} \sin \delta_\ell P_\ell (\cos \theta)
+</span> where <span class="math inline">\delta_\ell</span> is the <strong>phase shift</strong> and <span class="math inline">P_\ell</span> are <strong>Legendre polynomials</strong>.</p></li>
+<li><p>The <strong>finite-volume quantization condition</strong> (e.g., Lüscher’s formula for <span class="math inline">\ell = 0</span>): <span class="math display">
+\cot \delta_\ell(k) = \frac{n_\ell(kL/2\pi)}{\sqrt{(kL/2\pi)^2 - \ell(\ell+1)}}
+</span> where <span class="math inline">L</span> is the box size.</p></li>
+</ol>
+<hr>
+<p>The formulas above tie directly to the <strong>intuitive analogy</strong> of marbles on a ring, bridging conceptual understanding with mathematical rigor.</p>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>When working with periodic boundary conditions, always check for <strong>translational symmetry</strong>—it often simplifies calculations!</p>
+</div>
+</div>
+</div>
+<hr>
+<p>Let me know if you’d like further refinements or clarifications!</p>
+</section>
+<section id="extracting-meson-and-baryon-spectra-from-lattice-correlation-functions" class="level3" data-number="22.6">
+<h3 data-number="22.6" class="anchored" data-anchor-id="extracting-meson-and-baryon-spectra-from-lattice-correlation-functions"><span class="header-section-number">22.6</span> Extracting Meson and Baryon Spectra from Lattice Correlation Functions</h3>
+<p>The last thing I would like to do is to properly connect this to what is actually computed on the lattice. At the bottom, the first thing one introduces is the quantity and the <strong>main computation</strong>.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>The fundamental quantity computed in lattice QCD is the <strong>correlation function</strong> between operators, which contains all the spectral information of the theory.</p>
+</div>
+</div>
+</div>
+<p>The only thing that the lattice computes is the correlation of operators. This is the vacuum expectation value of the product of two operators:</p>
+<p><span class="math display">
+C_{ij}(t) = \langle 0 | \mathcal{O}_i(t) \mathcal{O}_j^\dagger(0) | 0 \rangle
+</span></p>
+<p>Here, <span class="math inline">i</span> is the index that labels the operator. Say we have 5 of them, or 1, or 2, or 3, or 4. We compute the <span class="math inline">5 \times 5</span> matrix of the correlation coefficients as a function of time.</p>
+<hr>
+<p>The <strong>spectral decomposition</strong> of this correlation function is:</p>
+<p><span class="math display">
+C_{ij}(t) = \sum_{n} \frac{\langle 0 | \mathcal{O}_i | n \rangle \langle n | \mathcal{O}_j^\dagger | 0 \rangle}{2E_n} e^{-E_n t}
+</span></p>
+<p>It is a combination of exponential functions with coefficients.</p>
+<hr>
+<p>To get the meson spectrum, you would take <span class="math inline">\mathcal{O}</span> as the combination of the quark and antiquark fields:</p>
+<p><span class="math display">
+\mathcal{O}_M(x) = \bar{q}(x) \Gamma q(x)
+</span></p>
+<p>where <span class="math inline">\Gamma</span> represents <strong>Dirac matrices</strong> that determine the meson’s quantum numbers.</p>
+<ul>
+<li>You take this operator and compute its correlation as a function of time</li>
+<li>Then extract <span class="math inline">E</span>, which gives you the energy of the system—all possible energies of the meson system</li>
+<li>These are the ground states—the mesons</li>
+</ul>
+<hr>
+<p><strong>Practical example:</strong> Do this exercise: take <span class="math inline">U \bar{U}</span>, run this correlation on the lattice, and the lowest energy that appears will be the mass of the pion.</p>
+<hr>
+<p>An important aspect to realize is that:</p>
+<ul>
+<li>The higher the energy, the faster the state’s contribution dies</li>
+<li>If you wait long enough, all higher states’ contributions exponentially drop, leaving only the ground state:</li>
+</ul>
+<p><span class="math display">
+\lim_{t \to \infty} C_{ij}(t) \approx \frac{\langle 0 | \mathcal{O}_i | 0 \rangle \langle 0 | \mathcal{O}_j^\dagger | 0 \rangle}{2E_0} e^{-E_0 t}
+</span></p>
+<p>In the meson case, this works well. In the baryon case, it’s a problem.</p>
+<hr>
+<p>There is more information stored in these correlations if your operator basis is larger. Consider the <strong>generalized eigenvalue problem</strong>:</p>
+<p><span class="math display">
+C(t) \vec{v}_n(t, t_0) = \lambda_n(t, t_0) C(t_0) \vec{v}_n(t, t_0)
+</span></p>
+<p>This technique:</p>
+<ul>
+<li>Extracts exponentials of the higher states</li>
+<li>For every value of <span class="math inline">t</span>, you can find an eigenvalue</li>
+<li>The diagonal elements of the diagonalized correlation matrix give the time dependence of those higher states</li>
+<li>This optimizes the overlap of different operators to isolate excited states</li>
+</ul>
+</section>
+<section id="lattice-qcd-spectroscopy-extracting-meson-spectra-and-resonances-via-finite-volume-phase-shifts" class="level3" data-number="22.7">
+<h3 data-number="22.7" class="anchored" data-anchor-id="lattice-qcd-spectroscopy-extracting-meson-spectra-and-resonances-via-finite-volume-phase-shifts"><span class="header-section-number">22.7</span> Lattice QCD Spectroscopy: Extracting Meson Spectra and Resonances via Finite-Volume Phase Shifts</h3>
+<p>The <strong>eigenvalue problem</strong> and that technique are quite different. There is a class of algorithms that makes calculations less noisy related to what we use. For this operator that contracts mesons, the operators we input have different <strong>condition numbers</strong>.</p>
+<p>If you want to calculate the spectrum of the light spin-1 mesons, the operators have quantum numbers of <span class="math inline">0^+</span>, and you obtain one spectrum. For other quantum numbers, you need different operators.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>The Hamiltonian diagonalization for the meson spectrum is given by: <span class="math display">
+H|\psi_n\rangle = E_n|\psi_n\rangle
+</span></p>
+</div>
+</div>
+</div>
+<p>What actually happens—without going into details—is that in a finite volume, <strong>spin is no longer a good quantum number</strong> because you lack full rotational symmetry. The lattice has a reduced symmetry group, not <span class="math inline">SU(2)</span>, so different spins mix.</p>
+<p>In practice, the entire meson spectrum is computed simultaneously. The matrix has a large dimensionality—hundreds of sectors with overlapping non-diagonal elements between different spins. This yields many <strong>eigenenergy values</strong> (eigenvalues), which are mapped and presented as meson masses.</p>
+<hr>
+<p>There is one problem with this approach. Most resonances above decay thresholds are not bound states but <strong>resonances</strong>. Excited mesons like the <span class="math inline">\rho</span> meson and higher states are resonances in <span class="math inline">\pi</span>-<span class="math inline">\pi</span> scattering.</p>
+<p>Strictly speaking, extracting eigenvalues above the two-pion threshold is not reliable. Below the threshold, you measure the pion mass accurately. Above it, you observe two-pion states rather than stable mesons. These extracted values are not trustworthy, so another method is needed to study resonances, such as those in <span class="math inline">\pi</span>-<span class="math inline">\pi</span> scattering.</p>
+<p>Instead of using two core capacitors, four coil capacitors represent meson-meson combinations. The energy spectrum of these combinations is rich and resembles what we see in a finite box.</p>
+<hr>
+<p>When two particles are confined in a box, their energy spectrum is discrete above the threshold. The spacing between levels is roughly <span class="math inline">2\pi/L</span>. The deviation of these discrete states from the non-interacting case gives the <strong>phase shift</strong> <span class="math inline">\delta(k)</span>. This is how the phase shift is extracted.</p>
+<p>A classic example is <span class="math inline">\pi</span>-<span class="math inline">\pi</span> scattering in the <span class="math inline">P</span>-wave. The extracted phase shift shows a resonant behavior, peaking at the <span class="math inline">\rho</span> meson mass. For physical quark masses, the pion mass is <span class="math inline">140 \text{ MeV}</span>, and the <span class="math inline">\rho</span> meson resonance occurs at <span class="math inline">770 \text{ MeV}</span>, where the phase shift passes <span class="math inline">\pi/2</span>.</p>
+<div class="callout callout-style-simple callout-important">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>The <strong>energy shift</strong> between interacting and non-interacting systems is key: <span class="math display">
+\Delta E_n = E_n^{\text{interacting}} - E_n^{\text{free}}
+</span> This connects to Lüscher’s formula for phase shifts: <span class="math display">
+\tan\delta(k) = \frac{\pi^{3/2} q}{\mathcal{Z}_{00}(1;q^2)}, \quad q = \frac{kL}{2\pi}
+</span></p>
+</div>
+</div>
+</div>
+<hr>
+<p>This is how modern hadron spectroscopy works on the lattice. The method is accurate if all relevant channels are included. The steps are:</p>
+<ol type="1">
+<li>Construct a large basis of operators with different quantum numbers.</li>
+<li>Extract eigenvalues to get the energy spectrum of the interacting system.</li>
+<li>Compare it to the non-interacting spectrum.</li>
+<li>The difference <span class="math inline">\Delta E_n = E_n^{\text{interacting}} - E_n^{\text{free}}</span> gives the phase shift <span class="math inline">\delta(k)</span>.</li>
+</ol>
+<p>Plotting <span class="math inline">\delta(k)</span> versus the breakup momentum reveals resonances. Experienced theorists can spot resonances just from the spectrum.</p>
+<p>From first principles—the <strong>QCD Lagrangian</strong>—we obtain scattering spectra and resonance properties. Complications arise from coupled channels. Above thresholds like <span class="math inline">2\pi</span> or <span class="math inline">3\pi</span>, additional operators (<span class="math inline">K\pi</span>, <span class="math inline">\eta'</span>, etc.) must be included.</p>
+<p>The key idea is using the energy shift between interacting and non-interacting systems. This connects to experimental particle physics, where phase shifts and cross-sections are analyzed similarly.</p>
+<hr>
+<p>Further analysis involves parameterizing phase shifts, extracting pole positions, and couplings—the final results shared in the PDG. The <strong>K-matrix formalism</strong> is often used for coupled-channel cases: <span class="math display">
+K = \tan\delta \quad \text{or} \quad T = \frac{K}{1-iK}.
+</span></p>
+<p>Lüscher’s formula links finite-volume energy shifts to infinite-volume phase shifts: <span class="math display">
+\tan\delta(k) = \frac{\pi^{3/2} q}{\mathcal{Z}_{00}(1;q^2)}, \quad q = \frac{kL}{2\pi},
+</span> where <span class="math inline">\mathcal{Z}_{00}</span> is the Lüscher zeta function.</p>
+<p>This machinery bridges lattice calculations and experimental resonance physics.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

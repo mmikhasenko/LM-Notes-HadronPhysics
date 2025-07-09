@@ -322,11 +322,3 @@ Example: $0^+ \to 1^- + 2^-$ requires $L=2$ ($D$-wave) to conserve $J^P$.
 ---
 
 Neglecting spins, sketch the energy spectrum for $n \leq 3$ (1s, 2s, 2p, 3s, 3d). Recall $L < n$ (no $f$-waves).  
-
----
-
-Thanks for attending! Questions are welcome—ask directly or anonymously.  
-
-::: callout-caution
-**Practice**: Constructing $J^P$ tables and decay $L$ assignments are **essential skills** for particle physics.
-:::

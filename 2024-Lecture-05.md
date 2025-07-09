@@ -149,9 +149,8 @@ To me, it sounds very natural to call them invariants.
 ---
 
 Anyway, give an example of these sets of variables.
-We've got one from Hendrik.
 So everyone should get their favorite.
-So Ilya, what's your favorite? $S$ and $T$.
+$S$ and $T$.
 No, not a single pair.
 These sets.
 So we need two variables to describe the process.
@@ -647,36 +646,3 @@ The axis labels are still there, but you just do not know what the mass is.
 From the **kinematics**, you can figure out the masses and perhaps guess what the decay is.
 I have cases.
 I would give you one for your group, and then you’d get another one, and then the **EP one**.
-
-### Lecture Fragment on Attendance and Scheduling
-
-
-**Logistical Announcements:**
-
-::: callout-note
-*"I have to leave because you don't want to take it? No."*
-:::
-
-- This is a **kind of homework** (non-negotiable).
-- *"Oh, sorry."* (Apology for inconvenience)
-
-**Next Steps:**
-
-1. *"You come with me, and I'll give it to you from my office."*
-2. *"And you guys as well."* (Group inclusion)
-
----
-
-**Gratitude & Scheduling:**
-
-- **Thanks a lot for coming**, and *sorry for being slightly late*.
-- **Availability check:** *"Will you have time tomorrow at 8 a.m.?"*
-
-Final instruction:
-*"Leave."*
-
----
-
-::: callout-caution
-No physics formulas were discussed in this segment. For reference, common nuclear physics formulas (e.g., radioactive decay, half-life) can be provided upon request.
-:::

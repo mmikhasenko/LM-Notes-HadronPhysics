@@ -349,21 +349,3 @@ The lecturer follows several key texts:
 - Comparing **QED** (electromagnetic interactions) and **QCD** (added complexity).  
 *"Starting with a simpler case and explaining how to calculate terms is a good starting point."*
 :::
----
-
-::: callout-caution
-
-- Only **four students** from the department are enrolled.  
-- *"I don’t like the whiteboard in the office—it’s too small. You get used to it."*  
-- *"No, you can stay there. That’s still not a big... I think we go right."*
-:::
----
-
-::: callout-important
-
-- Lecturer’s reflection: *"I’ve done this exercise for QED and wonder if people grasp the complications QCD brings."*  
-- **Key takeaway**: QED explains most electromagnetic interactions, while QCD introduces **non-abelian gauge symmetry** challenges.
-:::
----
-
-*"I rushed at the beginning and end, so you’ll have to explain stuff. We’ll calculate something for QED if time permits."*  

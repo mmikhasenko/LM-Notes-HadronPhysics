@@ -294,31 +294,3 @@ The circle is centered around $(x_0, y_0)$ with radius $R$. For non-elastic scat
 
 * There is a deviation from this circle, moving inward
 * If unitarity is not fulfilled (as in the case of two-body weakness), the trajectory would go **outside** the unitary circle
-
-### Adjusting Deadlines and Plotting Parameters for Data Analysis
-
-
-- **Deadline clarification:**
-*"So you set the deadline for Sunday, but I do think you have to solve the updated problem. When is the deadline for week seven? For now, I just set it by default."*
-
-- **Moodle update:**
-*"They can upload it now on Moodle. I will update the deadline."*
-
-::: callout-note
-The speaker acknowledges being over time:
-*"Sorry to be a bit over time again."*
-:::
----
-
-For better data visualization:
-
-1. *"make the plotting bigger in a wider range"*
-2. *"make the width smaller"*
-**Result:** *"Then you really see the structure."*
-
----
-
-- *"Is there anything important if you begin before? We can start the next step."*
-- *"That's a great idea, actually. I was about to suggest exactly that."*
-- *"No, it won't. It's not actually. Can you see it there?"*
-
