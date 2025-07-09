@@ -71,6 +71,31 @@
             color: white;
             background-color: #122a49; /* Darker shade of RUB-Blau */
         }
+        .lecture-box.missing {
+            background-color: #999; /* Gray for missing lectures */
+            color: #ccc;
+            cursor: not-allowed;
+            opacity: 0.7;
+        }
+        .lecture-box.missing:hover {
+            background-color: #999; /* Keep gray on hover */
+            color: #ccc;
+        }
+        .stats {
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+            margin: 10px 0;
+        }
+        .legend {
+            text-align: center;
+            color: #666;
+            font-size: 0.8em;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -87,7 +112,6 @@
     <h2>Summer Semester 2024 - Ruhr University Bochum</h2>
     
     <h2>Lectures</h2>
-
     <details open>
         <summary style="font-size: 1.2em; font-weight: bold; color: #17365c; margin: 10px 0;">2025</summary>
         <div class="container">
@@ -96,15 +120,14 @@
             <a href="2025-Lecture-03.html" class="lecture-box">Lecture 3</a>
             <a href="2025-Lecture-04.html" class="lecture-box">Lecture 4</a>
             <a href="2025-Lecture-05.html" class="lecture-box">Lecture 5</a>
-            <a href="2025-Lecture-06.html" class="lecture-box">Lecture 6</a>
+            <span class="lecture-box missing" title="Material not available">Lecture 6</span>
             <a href="2025-Lecture-07.html" class="lecture-box">Lecture 7</a>
             <a href="2025-Lecture-08.html" class="lecture-box">Lecture 8</a>
             <a href="2025-Lecture-09.html" class="lecture-box">Lecture 9</a>
-            <a href="2025-Lecture-10.html" class="lecture-box">Lecture 10</a>
+            <span class="lecture-box missing" title="Material not available">Lecture 10</span>
             <a href="2025-Lecture-11.html" class="lecture-box">Lecture 11</a>
-            <a href="2025-Lecture-12.html" class="lecture-box">Lecture 12</a>
-            <a href="2025-Lecture-13.html" class="lecture-box">Lecture 13</a>
-            <a href="2025-Lecture-14.html" class="lecture-box">Lecture 14</a>
+            <span class="lecture-box missing" title="Material not available">Lecture 12</span>
+            <span class="lecture-box missing" title="Material not available">Lecture 13</span>
         </div>
     </details>
     <details open>
@@ -122,9 +145,14 @@
             <a href="2024-Lecture-10.html" class="lecture-box">Lecture 10</a>
             <a href="2024-Lecture-11.html" class="lecture-box">Lecture 11</a>
             <a href="2024-Lecture-12.html" class="lecture-box">Lecture 12</a>
-            <a href="2024-Lecture-13.html" class="lecture-box">Lecture 13</a>
-            <a href="2024-Lecture-14.html" class="lecture-box">Lecture 14</a>
+            <span class="lecture-box missing" title="Material not available">Lecture 13</span>
         </div>
     </details>
+    <div class="stats">
+        Available: 21 lectures | Missing: 5 lectures | Total: 26 lectures
+    </div>
+    <div class="legend">
+        <strong>Legend:</strong> Blue buttons = Available | Gray buttons = Missing material
+    </div>
 </body>
 </html>
