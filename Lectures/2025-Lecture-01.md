@@ -16,35 +16,7 @@ Then we'll discuss:
 3. The equations that describe the motion of fields.
 4. The **SU(3) group** and the important property of the strong interaction key to matter formation, known as **confinement**.
 
-> [!NOTE]
-> The speaker mentions they will later write the **basic equations** to help solve exercises. These may include:
-> - Quantum Chromodynamics (QCD) Lagrangian
-> - Covariant derivative in QCD
-> - SU(3) generators (Gell-Mann matrices)
-
 ---
-
-- At the end of the lecture, we'll do **logic as well**.
-- Then something is prepared towards the end, but we'll get to it.
-
-**Today is the 8th.** This is the **second iteration** of the course.
-- I will be reusing material from last year's lecture.
-- Last year, we conducted an experiment where we recorded the lectures and transcribed them into text.
-- There is an ongoing project to **automate this process further**.
-- Through experimentation, we aim to gather more material to refine this system.
-
----
-
-I would like to ask if anyone objects to me recording this lecture.
-- This iPhone will serve as the recording device.
-- Typically, no other voices are captured.
-- However, if you object, I don’t have to proceed—I already have recordings from last year.
-- This will benefit you as well, since the intention is to provide you with the **lecture text**.
-
-Additionally:
-- If someone takes pictures of the board once it’s filled, those will also be processed.
-- The images will be fed into the language model to generate a **formal typed version**.
-- *Dransh, I will likely ask you to take a picture once we fill the board.*
 
 ### Scaling the Universe's Timeline from Big Bang to Hadronization
 
@@ -55,7 +27,6 @@ They are really hard to imagine—either **very small** or **very large**.
 That's why we need this on a **human scale** first.
 
 ---
-
 
 I can put here the number that is where we are now, and this is **14 billion years**.
 That's what we believe is the age of the universe:
@@ -640,5 +611,3 @@ Just like a ticking clock measures regular intervals, the half-life measures **p
 * Universal behavior across all radioactive isotopes
 
 The mathematical relationship between $λ$ and $t_{1/2}$ applies to all exponential decay processes in nuclear physics.
-
-

@@ -560,4 +560,3 @@ Good question.
 > - Proton: $\mu_p \approx 2.79 \frac{e}{2m_p}$
 > - Neutron: $\mu_n \approx -1.91 \frac{e}{2m_p}$
 > These values arise from the proton's quark structure and wave function.
-

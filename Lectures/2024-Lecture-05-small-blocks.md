@@ -40,7 +40,6 @@ For **(C)**, give an example of variables fully describing the process.
 ---
 
 **Student Discussion**:
-- Vivian's calculation:
 - Start with $2 \times 2 \times 3 = 12$ (kinematic degrees of freedom).
 - Subtract 4 (conservation laws) → 8.
 - Subtract 6 (3 rotations + 3 boosts) → **2 variables**.
@@ -88,7 +87,7 @@ $$
 
 
 **Example of Kinematic Variables:**
-Give an example of these sets of variables. We've got one from Hendrik. Everyone should get their favorite. Ilya, what's your favorite?
+Give an example of these sets of variables. Everyone should get their favorite.
 
 - **S, S and T.**
 No, not a single pair. These sets. We need two variables to describe the process.

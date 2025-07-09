@@ -314,11 +314,3 @@ In the quark model, heavy quarks (e.g., charm) are treated without gluons. The $
 ---
 
 Neglecting spins, sketch the energy spectrum for $n \leq 3$ (1s, 2s, 2p, 3s, 3d). Recall $L < n$ (no $f$-waves).  
-
----
-
-Thanks for attending! Questions are welcome—ask directly or anonymously.  
-
-> [!CAUTION]  
-> **Practice**: Constructing $J^P$ tables and decay $L$ assignments are **essential skills** for particle physics.
-
