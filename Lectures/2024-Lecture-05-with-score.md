@@ -260,14 +260,24 @@ In $S$ and $T$, we write it as $\frac{dN}{dX}$.
 
 <details> <summary>  480/600 = 80/100   </summary>
 
+<<<<<<< HEAD
 ### Physics Accuracy Assessment  
 
 #### **Statement 1**:  
+=======
+#### Physics Accuracy Assessment  
+
+##### **Statement 1**:  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "Scalar particles (0-minus)"  
 * **Comment:** **Severe error**. Particles with $J^P=0^-$ are **pseudoscalars** (e.g., $\pi^0$, $K^0$), *not* scalars. Scalars have $J^P=0^+$ (e.g., $f_0(500)$). Misidentifying quantum numbers undermines core formalism.  
 * **Rating:** 20/100  
 
+<<<<<<< HEAD
 #### **Statement 2**:  
+=======
+##### **Statement 2**:  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "Spin-3 gives seven dimensions; spin-1 gives three dimensions; scattering amplitude is a 21-dimensional object."  
 * **Comment:** **Partially correct but misleading**. For massive particles:  
   - Spin-$j$ has $\mathbf{2j+1}$ helicity states: spin-3 → 7D, spin-1 → 3D.  
@@ -275,7 +285,11 @@ In $S$ and $T$, we write it as $\frac{dN}{dX}$.
   - *Error*: Ignores that amplitudes reduce under Lorentz symmetry. For *massive* particles, the rank is correct, but for massless cases (e.g., photons), helicity $\lambda=\pm1$ reduces dimensionality.  
 * **Rating:** 65/100  
 
+<<<<<<< HEAD
 #### **Statement 3**:  
+=======
+##### **Statement 3**:  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "Two variables suffice for 2→2 kinematics, regardless of spin."  
 * **Comment:** **Correct**. Kinematic degrees of freedom are frame-independent:  
   - 4-momenta → 16 components.  
@@ -284,12 +298,20 @@ In $S$ and $T$, we write it as $\frac{dN}{dX}$.
   - **Net DOF = 16 - 4 - 6 = 6**, but for 2→2, **two Lorentz-invariant variables** (e.g., $s$, $t$) suffice. Spin affects the *amplitude structure*, not kinematic DOF.  
 * **Rating:** 100/100  
 
+<<<<<<< HEAD
 #### **Statement 4**:  
+=======
+##### **Statement 4**:  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "There are no stable $J^P=3^-$ or $J^P=1^+$ particles."  
 * **Comment:** **Correct**. All observed $J^P=3^-$ (e.g., $\rho_3(1690)$) and $1^+$ (e.g., $a_1(1260)$) states are resonances decaying via strong/EM interactions. No stable hadrons exist with these quantum numbers.  
 * **Rating:** 95/100 (deducted for omitting "strong/EM decay" context).  
 
+<<<<<<< HEAD
 #### **Statement 5**:  
+=======
+##### **Statement 5**:  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "Three-body decays require two kinematic variables; Dalitz plot phase space is flat."  
 * **Comment:** **Correct**. Three-body decay (e.g., $D^+ \to K^-\pi^+\pi^+$) has:  
   - 12 momentum components → 4 conservation constraints → 8 DOF.  
@@ -297,24 +319,40 @@ In $S$ and $T$, we write it as $\frac{dN}{dX}$.
   - Phase space density $\frac{d\Gamma}{ds\,dt}$ is **constant** if matrix element is uniform.  
 * **Rating:** 100/100  
 
+<<<<<<< HEAD
 #### **Statement 6**:  
+=======
+##### **Statement 6**:  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "Mandelstam $s$, $t$, $u$: Only two are independent; $u$ is a linear combination."  
 * **Comment:** **Correct**. For 2→2 scattering: $s + t + u = \sum m_i^2$. Only two are independent (e.g., $s$ and $t$).  
 * **Rating:** 100/100  
 
+<<<<<<< HEAD
 #### **Statement 7**:  
+=======
+##### **Statement 7**:  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "Invariance is not a valid word."  
 * **Comment:** **Irrelevant/non-physics**. "Invariance" is standard in physics (e.g., Lorentz invariance). Distractor with no impact on content.  
 * **Rating:** N/A (excluded from scoring)  
 
+<<<<<<< HEAD
 #### **Statement 8**:  
+=======
+##### **Statement 8**:  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "The scattering blob is a 'unitarity diagram', not a Feynman diagram."  
 * **Comment:** **Correct distinction**. Unitarity diagrams represent S-matrix unitarity cuts; Feynman diagrams are perturbative. Crucial for non-perturbative formalisms.  
 * **Rating:** 100/100  
 
 ---
 
+<<<<<<< HEAD
 ### **Total Score**: 480/600 = 80/100  
+=======
+#### **Total Score**: 480/600 = 80/100  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 **Summary**:  
 - ⚠️ **Major warning** for misidentifying **pseudoscalars as scalars** (Statement 1). This is a critical error in quantum number classification.  
 - Core kinematics (Statements 3,5,6,8) are flawless.  
@@ -432,65 +470,111 @@ Looking ahead, we’ll explore how intermediate states shape these distributions
 
 <details> <summary>  55/100   </summary>
 
+<<<<<<< HEAD
 ### Physics Errors Analysis
 
 #### **Statement 1**:  
+=======
+#### Physics Errors Analysis
+
+##### **Statement 1**:  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "The two-body phase space factor is \( d\Phi_2 = \frac{1}{8\pi^2} \cdot \frac{2p}{\sqrt{s}} \cdot \frac{d^3\omega}{4\pi} \)."  
 * **Comment:** Incorrect. The standard Lorentz-invariant two-body phase space is \( d\Phi_2 = \frac{1}{8\pi} \frac{p}{\sqrt{s}} d\Omega \) (after angular integration if isotropic). The given formula adds erroneous factors:  
   - Extra \( \frac{1}{2\pi} \) and \( \frac{1}{4\pi} \) inflate the denominator to \( 8\pi^2 \).  
   - The factor \( \frac{2p}{\sqrt{s}} \) should be \( \frac{p}{\sqrt{s}} \).  
 * **Rating:** 30/100 (fundamental error in defining a core kinematic quantity).  
 
+<<<<<<< HEAD
 #### **Statement 2**:  
+=======
+##### **Statement 2**:  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "The phase space factor approaches \( \frac{1}{\pi} \) in the asymptotic limit."  
 * **Comment:** Misleading. While \( \frac{p}{\sqrt{s}} \to \text{constant} \) as \( \sqrt{s} \to \infty \), this constant is not \( \frac{1}{\pi} \). It depends on masses and is unrelated to \( \pi \).  
 * **Rating:** 50/100 (incorrect asymptotic behavior).  
 
+<<<<<<< HEAD
 #### **Statement 3**:  
+=======
+##### **Statement 3**:  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "For the three-body phase space, the Jacobian for converting to paired mass variables is constant with no extra dependency."  
 * **Comment:** Overstated. The Jacobian is constant only when using linearly related Mandelstam variables (e.g., \( m_{ij}^2 \)). For arbitrary mass pairs, the phase space density can vary due to kinematic singularities.  
 * **Rating:** 70/100 (correct in specific cases but lacks nuance).  
 
+<<<<<<< HEAD
 #### **Statement 4**:  
+=======
+##### **Statement 4**:  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "The \( \Lambda_c \) travels about 10 mm in the lab frame at the LHC."  
 * **Comment:** Incorrect. The \( \Lambda_c \) lifetime is \( \tau \approx 2 \times 10^{-13} \) s. With LHC boosts (\( \gamma \sim 10-100 \)), decay length \( = \gamma \beta c\tau \approx 0.06-0.6 \) mm, not 10 mm.  
 * **Rating:** 20/100 (order-of-magnitude error).  
 
+<<<<<<< HEAD
 #### **Statement 5**:  
+=======
+##### **Statement 5**:  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "Experiments like BES and Belle observe \( \Lambda_c \) abundantly."  
 * **Comment:** Partially incorrect. Belle (KEKB collider) studies \( \Lambda_c \), but BES (BEPC collider) operates below charm threshold (\( \sqrt{s} \sim 3-4 \) GeV) and cannot produce \( \Lambda_c \). LHCb/ALICE are primary LHC experiments for \( \Lambda_c \).  
 * **Rating:** 60/100 (BES error undermines accuracy).  
 
+<<<<<<< HEAD
 #### **Statement 6**:  
+=======
+##### **Statement 6**:  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "The \( c \to s \) transition is unsuppressed."  
 * **Comment:** Misleading. While Cabibbo-allowed (\( |V_{cs}| \approx 0.97 \)), it is still suppressed by phase space, form factors, and QCD corrections. "Unsuppressed" incorrectly implies no dynamical suppression.  
 * **Rating:** 65/100 (oversimplifies weak decay dynamics).  
 
+<<<<<<< HEAD
 #### **Statement 7**:  
+=======
+##### **Statement 7**:  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "In the Dalitz plot, maximizing \( m_{pK} \) places the point at the bottom right."  
 * **Comment:** Correct for \( m_{pK}^2 \) vs. \( m_{K\pi}^2 \) axes. The bottom-right corner corresponds to maximal \( m_{pK}^2 \) (when \( p \) and \( K^- \) are collinear).  
 * **Rating:** 95/100 (minor deduction for unclear axis labeling).  
 
+<<<<<<< HEAD
 #### **Statement 8**:  
+=======
+##### **Statement 8**:  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "Minimizing \( m_{K\pi} \) occurs when \( K^- \) and \( \pi^+ \) move together."  
 * **Comment:** Correct. Minimal invariant mass requires co-linear, co-moving configurations.  
 * **Rating:** 100/100.  
 
+<<<<<<< HEAD
 #### **Statement 9**:  
+=======
+##### **Statement 9**:  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "The symmetric Dalitz plot uses an equilateral triangle with a 60° skew transformation."  
 * **Comment:** Correct for identical particles. For non-identical cases (e.g., \( p K^- \pi^+ \)), the standard plot is rectangular, but symmetric variables (e.g., Kibble coordinates) use affine transformations with 60° angles.  
 * **Rating:** 90/100 (accurate but context-dependent).  
 
 ---
 
+<<<<<<< HEAD
 ### **WARNING**  
+=======
+#### **WARNING**  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 **MAJOR INACCURACIES DETECTED**:  
 - Fundamental errors in **two-body phase space formula** (Statement 1).  
 - Incorrect **\( \Lambda_c \) decay length** (Statement 4) and **experimental context** (Statement 5).  
 - Multiple misleading claims (Statements 2, 3, 6).  
 **Proceed with caution**—core kinematic concepts require revision.  
 
+<<<<<<< HEAD
 ### **Total Score**: 55/100  
+=======
+#### **Total Score**: 55/100  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 *Breakdown*:  
 - Low ratings (≤70) for 6/9 statements due to errors.  
 - High ratings (≥90) for accurate Dalitz plot kinematics (Statements 7–9).  
@@ -585,46 +669,80 @@ Angular distributions are determined by general properties of how space is rotat
 
 <details> <summary>  95/100   </summary>
 
+<<<<<<< HEAD
 ### Physics Accuracy Assessment  
 
 #### **Statement 1**: Cross Sections and Resonances  
+=======
+#### Physics Accuracy Assessment  
+
+##### **Statement 1**: Cross Sections and Resonances  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "The resonance cross-section follows the Breit-Wigner formula: \(\sigma(E) = \frac{4\pi}{k^2} \frac{\Gamma^2/4}{(E-E_0)^2 + \Gamma^2/4}\)."  
 * **Comment:** Correct. The formula is standard for resonant cross sections in particle/nuclear physics. The variables (\(E_0\), \(\Gamma\), \(k\)) are appropriately defined.  
 * **Rating:** 100/100  
 
+<<<<<<< HEAD
 #### **Statement 2**: Resonances in Dalitz Plots  
+=======
+##### **Statement 2**: Resonances in Dalitz Plots  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "Bent structures in Dalitz plots correspond to resonances; projecting them onto an axis shows resonance shapes. Horizontal/vertical lines in such plots indicate resonances in specific pairs (e.g., \(K^* \to K\pi\), \(\Delta \to N\pi\), \(\Lambda\)-like states)."  
 * **Comment:** Correct. Dalitz plot structures directly map to resonances, and the interpretation of lines parallel to axes (e.g., horizontal = fixed \(K\pi\) mass) is standard. Specific particle assignments (\(K^*\), \(\Delta\)) are accurate.  
 * **Rating:** 100/100  
 
+<<<<<<< HEAD
 #### **Statement 3**: Angular Distributions and Spin  
+=======
+##### **Statement 3**: Angular Distributions and Spin  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "Angular distributions reveal spin/parity via inhomogeneities (e.g., minima/nodes). For scalar final states, the number of nodes equals the spin \(J\). For non-scalar particles, spin averages smear distributions if initial/final spins are unpolarized/unmeasured."  
 * **Comment:** Mostly correct. Spin determination via angular distributions is fundamental, and node-counting works for scalar-dominated decays. However, the claim that "particles with higher spin prefer more bumpy distributions" is oversimplified; tensor structures (not just spin magnitude) govern complexity. The unpolarized averaging explanation is accurate.  
 * **Rating:** 90/100 (deduction for oversimplification)  
 
+<<<<<<< HEAD
 #### **Statement 4**: Wigner D-Functions  
+=======
+##### **Statement 4**: Wigner D-Functions  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "Angular distributions use Wigner D-functions: \(I(\theta) \propto \sum |D^J_{M'M}(\theta)|^2\) and \(D^J_{M'M}(\alpha,\beta,\gamma) = e^{-iM'\alpha}d^J_{M'M}(\beta)e^{-iM\gamma}\). Rotations mix spin projections, and Euler angles parameterize orientations."  
 * **Comment:** Flawless. Formulas and interpretations align with quantum mechanics textbooks. The connection to Clebsch-Gordan coefficients is valid.  
 * **Rating:** 100/100  
 
+<<<<<<< HEAD
 #### **Statement 5**: Spin Measurement Practicality  
+=======
+##### **Statement 5**: Spin Measurement Practicality  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "For most newly discovered particles (observed as bumps), quantum numbers are unknown initially; angular distributions are the primary tool to determine them."  
 * **Comment:** Overstated. While angular analysis is crucial, many resonances have quantum numbers inferred *alongside* discovery (e.g., via decay products). Not "most" remain unknown post-discovery in modern experiments.  
 * **Rating:** 80/100  
 
+<<<<<<< HEAD
 #### **Statement 6**: Rotational Symmetry Dominance  
+=======
+##### **Statement 6**: Rotational Symmetry Dominance  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "Angular distributions are governed by rotational symmetry, not interaction details (e.g., strong/weak forces)."  
 * **Comment:** Correct. Kinematic distributions (e.g., decay angles) rely on Lorentz/rotational invariance, while dynamics (e.g., decay rates) depend on interactions.  
 * **Rating:** 100/100  
 
+<<<<<<< HEAD
 #### **Statement 7**: Spin-1/2 Rotation Example  
+=======
+##### **Statement 7**: Spin-1/2 Rotation Example  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "Rotating \(|J=1/2, M=1/2\rangle\) by \(30^\circ\) about Y-axis yields a mix of \(|M= \pm 1/2\rangle\) with coefficients from Wigner d-matrices (e.g., \(\cos(15^\circ)\), \(\sin(15^\circ)\))."  
 * **Comment:** Technically sound but incomplete. Coefficients for \(J=1/2\) rotations are \(d_{1/2,1/2} = \cos(\beta/2)\), \(d_{1/2,-1/2} = -\sin(\beta/2)\). For \(\beta=30^\circ\), this gives \(\cos(15^\circ)\) and \(\sin(15^\circ)\) – correct but lacks explicit calculation.  
 * **Rating:** 95/100  
 
 ---
 
+<<<<<<< HEAD
 ### **Total Score**: 95/100  
+=======
+#### **Total Score**: 95/100  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 **Summary**: The material is **highly accurate overall**, with minor oversimplifications (angular distributions for high-spin states) and one overstated claim (prevalence of unknown quantum numbers). No major errors warranting a warning.  
 **Breakdown**:  
 - Strengths: Correct resonance physics, Dalitz plot interpretations, Wigner function formalism, rotational invariance principles.  
@@ -709,35 +827,61 @@ No sentences were removed or altered, and the helping material was integrated on
 
 <details> <summary>  67/100 </summary>
 
+<<<<<<< HEAD
 ### Physics Errors Review  
 
 #### **Statement 1**:  
+=======
+#### Physics Errors Review  
+
+##### **Statement 1**:  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "We must adjust the quantization axis by rotating the spin vector of \( X \) to align with its decay direction."  
 * **Comment:** Correct. Rotating the quantization axis to align with the decay direction is standard in angular momentum conservation treatments. The spin state transformation via rotation is necessary for non-aligned decays.  
 * **Rating:** 100/100  
 
+<<<<<<< HEAD
 #### **Statement 2**:  
+=======
+##### **Statement 2**:  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "The Wigner \( D \)-matrix rotates spin states: \( D^{J}_{\lambda,\lambda'}(\alpha,\beta,\gamma) \), where \( J \) is total angular momentum, \( \lambda,\lambda' \) are spin projections, and \( (\alpha,\beta,\gamma) \) are Euler angles."  
 * **Comment:** Correct. The Wigner \( D \)-matrix is the unitary operator for rotating quantum states of angular momentum. The parameters and indices are accurately defined.  
 * **Rating:** 100/100  
 
+<<<<<<< HEAD
 #### **Statement 3**:  
+=======
+##### **Statement 3**:  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "When \( \phi = \theta = 0 \) (aligned kinematics), no rotation is necessary, simplifying the \( D \)-matrix."  
 * **Comment:** Correct. For \( \beta = 0 \) (equivalent to \( \theta = 0 \)), the \( D \)-matrix reduces to \( \delta_{\lambda,\lambda'} \), as \( e^{-i\lambda\gamma} \delta_{\lambda,\lambda'} \). This reflects the absence of rotation.  
 * **Rating:** 100/100  
 
+<<<<<<< HEAD
 #### **Statement 4**:  
+=======
+##### **Statement 4**:  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "The expression becomes \( \sum_{\lambda_X, \lambda_3} D^{J_X}_{0, \lambda_X - \lambda_3}(0, 0, 0) \) and \( D^{J_X}_{\lambda_X, \lambda_1 - \lambda_2}(\theta, \phi) \)."  
 * **Comment:** Partially problematic. The indices in the first \( D \)-matrix should reflect the *difference* in helicities. Correct form:  
   \( D^{J_X}_{\lambda_X, \lambda_X'}(0,0,0) \) at \( \theta = \phi = 0 \), where \( \lambda_X' = \lambda_1 - \lambda_2 \) (helicity conservation). The delta function \( \delta_{\lambda_X, \lambda_1 - \lambda_2} \) arises here, not later.  
 * **Rating:** 60/100 (Index misuse obscures angular momentum conservation.)  
 
+<<<<<<< HEAD
 #### **Statement 5**:  
+=======
+##### **Statement 5**:  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "The delta function \( \delta_{\lambda_0, \lambda_X - \lambda_3} \) implies \( \lambda_X \) is constrained."  
 * **Comment:** Incorrect. \( \lambda_0 \) is undefined. The constraint should directly link the decay helicities: \( \delta_{\lambda_X, \lambda_1 - \lambda_2} \) (for the decay \( X \to 1 + 2 \)). The term \( \lambda_3 \) appears unrelated.  
 * **Rating:** 30/100 (Violates angular momentum conservation; undefined symbols.)  
 
+<<<<<<< HEAD
 #### **Statement 6**:  
+=======
+##### **Statement 6**:  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** Final amplitude: \( \mathcal{H}_0 \, D^{J_X}_{\lambda_0 + \lambda_3, \lambda_3}(\theta, \phi) \, D^{J_X}_{\lambda_0 + \lambda_3, \lambda_1 - \lambda_2}(\theta, \phi) \).  
 * **Comment:** Severely flawed.  
   - \( \lambda_0 \) and \( \lambda_3 \) are undefined.  
@@ -747,7 +891,11 @@ No sentences were removed or altered, and the helping material was integrated on
 
 ---
 
+<<<<<<< HEAD
 ### 🔴 **MAJOR WARNING**  
+=======
+#### 🔴 **MAJOR WARNING**  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 **Critical inaccuracies** in Statements 4–6:  
 1. **Angular momentum violation**: Statement 5 misapplies the delta function, ignoring helicity conservation \( \lambda_X = \lambda_1 - \lambda_2 \).  
 2. **Undefined quantities**: \( \lambda_0 \) and \( \lambda_3 \) lack context (e.g., production process).  
@@ -761,7 +909,11 @@ No sentences were removed or altered, and the helping material was integrated on
 
 ---
 
+<<<<<<< HEAD
 ### **Total Score**: 67/100
+=======
+#### **Total Score**: 67/100
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 
 </details>
 
@@ -835,41 +987,71 @@ The goal is to infer what’s inside the blobs by fitting them to data.
 
 <details> <summary>  600/600 (100% Accurate)   </summary>
 
+<<<<<<< HEAD
 ### Physics Accuracy Assessment
 
 #### **Statement 1**:  
+=======
+#### Physics Accuracy Assessment
+
+##### **Statement 1**:  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "The spin multiplicity factor \((2j_1 + 1)(2j_2 + 1)\) accounts for the number of possible spin states for particles with spins \(j_1\) and \(j_2\)."  
 * **Comment:** Correct. For a particle with spin quantum number \(j\), there are \(2j + 1\) possible spin projections. The product \((2j_1 + 1)(2j_2 + 1)\) gives the total spin states for two particles.  
 * **Rating:** 100/100  
 
+<<<<<<< HEAD
 #### **Statement 2**:  
+=======
+##### **Statement 2**:  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "The angular distribution \(\frac{d\Gamma}{d(\cos\theta)} \propto |\mathcal{M}|^2\), where \(|\mathcal{M}|^2\) is the matrix element squared."  
 * **Comment:** Correct. The differential decay rate is proportional to the square of the transition amplitude (\(|\mathcal{M}|^2\)) in quantum mechanics. Using \(\cos\theta\) avoids Jacobian complications from \(\sin\theta\).  
 * **Rating:** 100/100  
 
+<<<<<<< HEAD
 #### **Statement 3**:  
+=======
+##### **Statement 3**:  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "Experiments measure \(|\mathcal{M}|^2\) (probability), not the amplitude \(\mathcal{M}\) itself."  
 * **Comment:** Accurate. Quantum amplitudes are complex-valued and unobservable; only \(|\mathcal{M}|^2\) (probability density) is measurable.  
 * **Rating:** 100/100  
 
+<<<<<<< HEAD
 #### **Statement 4**:  
+=======
+##### **Statement 4**:  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "For unpolarized decays, angular distributions are averaged over initial spins and summed over final spins."  
 * **Comment:** Correct. Unpolarized cross-sections require averaging over initial spin states and summing over final spins to match experimental observations.  
 * **Rating:** 100/100  
 
+<<<<<<< HEAD
 #### **Statement 5**:  
+=======
+##### **Statement 5**:  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "Angular distributions can be expanded in Legendre polynomials: \(\frac{d\sigma}{d(\cos\theta)} = \sum_{\ell} a_\ell P_\ell(\cos\theta)\)."  
 * **Comment:** Accurate. Legendre polynomials form a complete orthogonal basis for functions over \([-1, 1]\), making them ideal for partial wave analysis.  
 * **Rating:** 100/100  
 
+<<<<<<< HEAD
 #### **Statement 6**:  
+=======
+##### **Statement 6**:  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "Partial wave analysis decomposes the cross-section into amplitudes for different angular momenta (\(\ell\)) to infer underlying physics."  
 * **Comment:** Correct. This method fits coefficients \(a_\ell\) to data, revealing spin-parity contributions without assuming specific amplitudes.  
 * **Rating:** 100/100  
 
 ---
 
+<<<<<<< HEAD
 ### **Total Score**: 600/600 (100% Accurate)  
+=======
+#### **Total Score**: 600/600 (100% Accurate)  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 **Conclusion**: All statements are physically correct. No significant errors detected.
 
 </details>
@@ -928,31 +1110,53 @@ I would give you one for your group, and then you’d get another one, and then 
 
 <details> <summary>  97.5/100   </summary>
 
+<<<<<<< HEAD
 ### Physics Accuracy Assessment  
 
 #### **Helicity Operator Definition**:  
+=======
+#### Physics Accuracy Assessment  
+
+##### **Helicity Operator Definition**:  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "The **helicity operator** is defined as $\hat{h} = \frac{\mathbf{J} \cdot \mathbf{p}}{|\mathbf{p}|}$, where $\mathbf{J}$ is the total angular momentum operator and $\mathbf{p}$ is the momentum."  
 * **Comment:** Correct. This matches the standard definition in quantum mechanics and particle physics. Helicity is the projection of total angular momentum $\mathbf{J}$ onto the momentum direction.  
 * **Rating:** 100/100  
 
+<<<<<<< HEAD
 #### **Dalitz Plot Kinematics Formula**:  
+=======
+##### **Dalitz Plot Kinematics Formula**:  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "For **Dalitz plot kinematics**, $m_{12}^2 + m_{23}^2 + m_{31}^2 = m_D^2 + m_1^2 + m_2^2 + m_3^2$."  
 * **Comment:** Correct. This is the well-known Mandelstam relation for three-body decays, conserving energy and momentum. The invariant masses $m_{ij}^2$ combine pairwise, while $m_D$ and $m_i$ are the masses of the parent and daughter particles.  
 * **Rating:** 100/100  
 
+<<<<<<< HEAD
 #### **Book and Chapter Reference**:  
+=======
+##### **Book and Chapter Reference**:  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "Martin Spearman's *Elementary Particle Theory*, **Chapter Four** covers Lorentz group, vectors, group theory, and particle definitions."  
 * **Comment:** Plausible but unverifiable. While Spearman's book exists and covers particle physics, no objective evidence confirms it has the "best coverage" or uniquely simplifies group theory. This is subjective praise, not a factual error.  
 * **Rating:** 90/100 (points docked for hyperbolic claim).  
 
+<<<<<<< HEAD
 #### **Exercise on Dalitz Plots**:  
+=======
+##### **Exercise on Dalitz Plots**:  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "Identify decays using Dalitz plots from CLEO/BaBar with unlabeled axes, leveraging kinematics to infer masses."  
 * **Comment:** Correct methodology. Dalitz plots are standard tools for reconstructing decays, and kinematic boundaries depend on particle masses. The approach is valid.  
 * **Rating:** 100/100  
 
 ---
 
+<<<<<<< HEAD
 ### **Total Score**: 97.5/100  
+=======
+#### **Total Score**: 97.5/100  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 **Summary**: All physics content is **accurate**. Definitions, formulas, and methods align with established particle physics principles. The book recommendation is slightly overstated but not erroneous. No warnings needed.
 
 </details>
@@ -988,19 +1192,31 @@ Final instruction:
 
 <details> <summary>  200/200   </summary>
 
+<<<<<<< HEAD
 #### **Statement 1**:
+=======
+##### **Statement 1**:
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "This segment contains **no physics formulas** or technical nuclear physics content."
 * **Comment:** Accurate. The text exclusively covers logistical announcements (apologies, scheduling, homework distribution) with no physics assertions. The disclaimer about omitted nuclear physics content (e.g., radioactive decay formulas) is correct and appropriate.
 * **Rating:** 100/100  
 
+<<<<<<< HEAD
 #### **Statement 2**:
+=======
+##### **Statement 2**:
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 * **Statement:** "Common nuclear physics formulas (e.g., radioactive decay, half-life) can be provided upon request."
 * **Comment:** Correct. This is a standard pedagogical clarification and does not contain errors. Radioactive decay ($N = N_0 e^{-\lambda t}$) and half-life ($t_{1/2} = \ln 2 / \lambda$) are foundational nuclear physics concepts.
 * **Rating:** 100/100  
 
 ---
 
+<<<<<<< HEAD
 ### **Total Score**: 200/200  
+=======
+#### **Total Score**: 200/200  
+>>>>>>> 21e93b9 (Update headers inside <details> tag)
 *Content is entirely accurate with no physics errors. Logistical disclaimers are valid and properly qualified.*
 
 </details>
