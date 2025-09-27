@@ -8,6 +8,7 @@ $$
 $$
 
 We go through our **standard checklist** to understand this reaction:
+
 1. What type of interaction is responsible?
 2. What variables describe the process?
 3. Write the matrix element for the process.
@@ -38,6 +39,7 @@ This is a **one-to-two transition**, and we work in the **center-of-mass frame**
 Next, the matrix element. The amplitude for this process is denoted $H$. What does $H$ depend on? No variables, because the kinematics are fixed. The only dependencies are the discrete spin projection indices.
 
 The particles involved have spins:
+
 - **Lambda**: $J^P = \frac{1}{2}^+$
 - **Proton**: $J^P = \frac{1}{2}^+$
 - **Pion**: $J^P = 0^-$
@@ -64,9 +66,9 @@ The phase space integral simplifies to 1 because the kinematics are aligned.
 
 This decay is the **main channel** for lambda decay, determining its lifetime of about $10^{-9}$ seconds. In experiments, the lambda is identified by its decay to a proton and pion, with charged tracks pointing to a secondary vertex.
 
-> [!NOTE]
-> Did I forget the $\frac{1}{2}$ from $\frac{1}{2J+1}$? No, it’s absorbed correctly because only two terms survive in the sum.
-
+::: callout-note
+Did I forget the $\frac{1}{2}$ from $\frac{1}{2J+1}$? No, it’s absorbed correctly because only two terms survive in the sum.
+:::
 This becomes more interesting when there’s a **preferred direction** in space, such as when the lambda is moving. The direction of motion provides a reference axis, and we can study the decay in the helicity frame.
 
 ---
@@ -93,6 +95,7 @@ $$
 ---
 
 For a moving particle, there are two ways to define spin states:
+
 1. **Helicity states**: Spin quantized along the direction of motion.
 2. **Canonical states**: Spin quantized along the $z$-axis.
 
@@ -144,12 +147,12 @@ The only thing that remains is I have to apply the rotation operator to the stat
 And this, you know, is the Wigner D-matrix acting on this state.
 Therefore, what I'm going to get is the sum of Clebsch-Gordan coefficients.
 
-> [!NOTE]
-> **Key Transformation**:
-> The canonical state $\ket{P, J, M}_{\text{can}}$ is defined as:
-> $$\ket{P, J, M}_{\text{can}} = R B_z^{-1}(P) \ket{0, J, M}$$
-> where $R$ is the rotation operator and $B_z^{-1}(P)$ is the inverse boost along the $z$-axis.
-
+::: callout-note
+**Key Transformation**:
+The canonical state $\ket{P, J, M}_{\text{can}}$ is defined as:
+$$\ket{P, J, M}_{\text{can}} = R B_z^{-1}(P) \ket{0, J, M}$$
+where $R$ is the rotation operator and $B_z^{-1}(P)$ is the inverse boost along the $z$-axis.
+:::
 ---
 
 **Question:** Doesn't the momentum $P$ also change because we change the angle?
@@ -177,12 +180,12 @@ What I want—I want to write so clearly—they are not equal to each other, but
 And these coefficients are then...
 I would like you to have a clear understanding of how we find these coefficients.
 
-> [!NOTE]
-> **Helicity State Relation**:
-> The helicity state $\ket{P, J, \lambda}_{\text{hel}}$ can be expressed as:
-> $$\ket{P, J, \lambda}_{\text{hel}} = \sum_{M} C_{M \lambda} \ket{P, J, M}_{\text{can}}$$
-> where $C_{M \lambda}$ are Clebsch-Gordan coefficients.
-
+::: callout-note
+**Helicity State Relation**:
+The helicity state $\ket{P, J, \lambda}_{\text{hel}}$ can be expressed as:
+$$\ket{P, J, \lambda}_{\text{hel}} = \sum_{M} C_{M \lambda} \ket{P, J, M}_{\text{can}}$$
+where $C_{M \lambda}$ are Clebsch-Gordan coefficients.
+:::
 ---
 
 I wanted to quickly come back to the lambda decay and tell a little bit more about how we derived the formula.
@@ -297,12 +300,12 @@ big decay amplitudes.
 Parity...
 we likely put the weak decay in.
 
-> [!IMPORTANT]
-> **Parity Violation in Decay**:
-> The differential decay rate for polarized particles (e.g., $\Lambda$) shows parity violation:
-> $$\frac{d\Gamma}{d\cos\theta} \propto 1 + \alpha P \cos\theta$$
-> where $\alpha$ is the asymmetry parameter and $P$ is the polarization. This asymmetry arises from weak interactions.
-
+::: callout-important
+**Parity Violation in Decay**:
+The differential decay rate for polarized particles (e.g., $\Lambda$) shows parity violation:
+$$\frac{d\Gamma}{d\cos\theta} \propto 1 + \alpha P \cos\theta$$
+where $\alpha$ is the asymmetry parameter and $P$ is the polarization. This asymmetry arises from weak interactions.
+:::
 ### Parity Violation in Asymmetric Angular Distribution
 
 
@@ -315,14 +318,14 @@ No, I don't.
 The point is in the **general**.
 It's a great question.
 
-> [!IMPORTANT]
-> Where this parity violation appears is when the two terms are not equal to each other. If they were equal, $\sin^2\theta + \cos^2\theta$ would give 1 with no angle dependence.
-
+::: callout-important
+Where this parity violation appears is when the two terms are not equal to each other. If they were equal, $\sin^2\theta + \cos^2\theta$ would give 1 with no angle dependence.
+:::
 The parity violation is in the fact that these terms are not equal. This introduces an **asymmetry**, making the distribution angle-dependent, as seen in the formula:
 
-\[
+$$
 \frac{d\sigma}{d\Omega} \propto 1 + \alpha \cos\theta
-\]
+$$
 
 Here, $\alpha \neq 0$ signals **parity violation**, breaking the isotropy of $\sin^2\theta + \cos^2\theta = 1$.
 
@@ -344,6 +347,7 @@ $$
 $$
 
 where:
+
 - $\Gamma_0$ is the **total decay rate**,
 - $\alpha$ is the **analyzing power** (polarizing power),
 - $\lambda$ is the **degree of polarization** ($0 \leq \lambda \leq 1$),
@@ -353,9 +357,9 @@ where:
 
 We can rewrite these equations by contracting the matrix element with the polarization matrix and find that the **difference between two edges** defines how well this particular decay reflects polarization. The quantity $\alpha$ is often called the **polarizing power**. It tells you how well this decay is suited to measure the initial polarization.
 
-> [!IMPORTANT]
-> If the couplings are equal to each other, you don't have sensitivity to the initial polarization. It can also happen even for big decays that the couplings are equal. Parity can be violated, but for most cases, there is a non-zero analyzing power.
-
+::: callout-important
+If the couplings are equal to each other, you don't have sensitivity to the initial polarization. It can also happen even for big decays that the couplings are equal. Parity can be violated, but for most cases, there is a non-zero analyzing power.
+:::
 This $\alpha$ is **non-zero**, and that's why by looking at the angular distribution, you see **parity violation**. But you can also measure the initial polarization. That's called the **polarimetry technique**, and it's actively used.
 
 ---
@@ -382,9 +386,9 @@ For example:
 * If I were to explain the material to you, you would already know it
 * But I haven't
 
-> [!NOTE]
-> The speaker is using a Socratic approach - testing understanding before delivering content. Common in physics lectures to gauge baseline knowledge.
-
+::: callout-note
+The speaker is using a Socratic approach - testing understanding before delivering content. Common in physics lectures to gauge baseline knowledge.
+:::
 So I'll just give you the question and see if you know it *without my lecture*.
 Meanwhile, tell me if you have questions.
 
@@ -401,45 +405,45 @@ So, we need a little bit of **complex algebra**, from 1 to 7. From 1 to 7. Let m
 
 ---
 
-> [!IMPORTANT]
-> **Key Theorem**:
-> The **Cauchy Integral Theorem** states that for any analytic function \( F(z) \) inside and on a closed contour \( C \):
-> \[
-> \oint_C F(z) \, dz = 0.
-> \]
-
-What is written here is obtained by doing the **contour integral**. I started with a small circle—my function is analytic—and I’m going to stretch the circle in all directions. This is my complex plane (\( x \)-plane).
-
-The **Cauchy integral** of \( F(x) \), if no singularities occur inside my integration contour, is zero for any analytic function:
-\[
+::: callout-important
+**Key Theorem**:
+The **Cauchy Integral Theorem** states that for any analytic function $F(z)$ inside and on a closed contour $C$:
+$$
 \oint_C F(z) \, dz = 0.
-\]
+$$
+:::
+What is written here is obtained by doing the **contour integral**. I started with a small circle—my function is analytic—and I’m going to stretch the circle in all directions. This is my complex plane ($x$-plane).
+
+The **Cauchy integral** of $F(x)$, if no singularities occur inside my integration contour, is zero for any analytic function:
+$$
+\oint_C F(z) \, dz = 0.
+$$
 
 ---
 
-Then, there is a theorem that tells me I can insert a **singularity** explicitly inside the circle. If I integrate \( \frac{F(x')}{x' - x} \, dx' \) and integrate this around—the integral was zero, but now let me put a pole explicitly inside like this.
+Then, there is a theorem that tells me I can insert a **singularity** explicitly inside the circle. If I integrate $\frac{F(x')}{x' - x} \, dx'$ and integrate this around—the integral was zero, but now let me put a pole explicitly inside like this.
 
-When I integrate, my integral is no longer zero—it’s equal to the function evaluated at the pole, and that’s my \( F \). This is given by **Cauchy's Integral Formula**:
-\[
+When I integrate, my integral is no longer zero—it’s equal to the function evaluated at the pole, and that’s my $F$. This is given by **Cauchy's Integral Formula**:
+$$
 F(a) = \frac{1}{2\pi i} \oint_C \frac{F(z)}{z - a} \, dz.
-\]
+$$
 
 ---
 
 Now, I have this beast here. It’s something similar, but I started from a small contour and stretched it to infinity. Here is infinity—this part of the contour drops out, and the only thing that remains is the integral from 1 to 7.
 
-I’m integrating the **imaginary part** of \( F(x) \) from 1 to 7 and asking: Can this equation be satisfied? This relates to the **dispersion relation**:
-\[
+I’m integrating the **imaginary part** of $F(x)$ from 1 to 7 and asking: Can this equation be satisfied? This relates to the **dispersion relation**:
+$$
 \text{Re}\, F(x) = \frac{1}{\pi} \mathcal{P} \int_{1}^{7} \frac{\text{Im}\, F(x')}{x' - x} \, dx'.
-\]
+$$
 
 ---
 
 **Second question**: What is the **analytic structure**? What do you mean by "analytic"?
 
-> [!NOTE]
-> **Analytic Functions**: A function is **analytic** in a region if it is **complex differentiable** at every point in that region. This implies the function is infinitely differentiable and can be represented by a **power series** locally.
-
+::: callout-note
+**Analytic Functions**: A function is **analytic** in a region if it is **complex differentiable** at every point in that region. This implies the function is infinitely differentiable and can be represented by a **power series** locally.
+:::
 ### Branch Points, Cuts, and Analytic Structure in Complex Integration
 
 
@@ -453,6 +457,7 @@ If you have anything to say about that, write it down. Maybe it's too complicate
 ---
 
 Let’s make a round. Say a few words about this. Start with:
+
 - Can you be satisfied?
 - Can we be satisfied?
 
@@ -470,13 +475,13 @@ It can be satisfied. The answer is: Give me any function, whatever you want. I p
 
 Take $\sqrt{X}$. Put it here, and it's satisfied. Just anything put inside the imaginary part, it's satisfied. The reason we're satisfied is this: it's a way to construct the function.
 
-> [!IMPORTANT]
-> The function $F(X)$ can be constructed using the integral representation:
-> $$
-> F(x) = \frac{1}{\pi} \int_1^7 \frac{\sqrt{t}}{t - x} dt
-> $$
-> where the integral is taken along the real axis, avoiding the branch cut.
-
+::: callout-important
+The function $F(X)$ can be constructed using the integral representation:
+$$
+F(x) = \frac{1}{\pi} \int_1^7 \frac{\sqrt{t}}{t - x} dt
+$$
+where the integral is taken along the real axis, avoiding the branch cut.
+:::
 ---
 
 Let me show you: this $\sqrt{X}$, I put it here instead of this expression, $\sqrt{X}$. Then this way I compute my function $F(X)$. This is a **super special function**. Its imaginary part is equal to $\sqrt{X}$ in the region from $-1$ to $7$.
@@ -508,6 +513,7 @@ The branch point is where it starts and where it ends. You forget about the bran
 ---
 
 The analytic structure of my function in the $X$ plane has:
+
 - A branch point at $1$,
 - A branch point at $7$,
 - And they're connected by a cut.
@@ -595,11 +601,12 @@ $$
 \frac{1}{(x - c)\log(x - c)} \text{ is not a pole.}
 $$
 
-> [!NOTE]
-> **Key distinction:**
-> - A **pole** is an isolated singularity that can be resolved by an infinitesimal shift in the complex plane.
-> - A **branch point** (e.g., for $\sqrt{x}$ or $\log(x)$) is non-isolated and requires branch cuts to define the function uniquely.
+::: callout-note
+**Key distinction:**
 
+- A **pole** is an isolated singularity that can be resolved by an infinitesimal shift in the complex plane.
+- A **branch point** (e.g., for $\sqrt{x}$ or $\log(x)$) is non-isolated and requires branch cuts to define the function uniquely.
+:::
 ---
 
 **Teaching Style and Context:**

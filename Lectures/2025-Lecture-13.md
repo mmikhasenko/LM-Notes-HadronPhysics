@@ -1,9 +1,9 @@
-### Hadronic Contributions to \( g-2 \): Vacuum Polarization and Light-by-Light
+### Hadronic Contributions to $g-2$: Vacuum Polarization and Light-by-Light
 
 
 Let’s start with recording.
 
-**What are the two terms in \( g-2 \) that receive hadronic contributions?**
+**What are the two terms in $g-2$ that receive hadronic contributions?**
 The contributions are **vacuum polarization** and **light-by-light**.
 
 - **Vacuum polarization**.
@@ -45,28 +45,28 @@ The particles that matter are those that couple to the photon.
 ---
 
 In contrast, I don’t call it light-by-light if there’s a vertex with three photon legs.
-Mesons that couple to photons contribute the most—like \( \eta \) and \( \eta' \).
+Mesons that couple to photons contribute the most—like $\eta$ and $\eta'$.
 All mesons with a strong two-photon coupling are relevant.
 
-> [!IMPORTANT]
-> **Key Formulas**:
-> The hadronic contributions to \( g-2 \) are decomposed as:
-> $$
-> a_\mu = a_\mu^{\text{QED}} + a_\mu^{\text{EW}} + a_\mu^{\text{HVP}} + a_\mu^{\text{HLbL}}
-> $$
-> For HVP:
-> $$
-> a_\mu^{\text{HVP}} = \left(\frac{\alpha}{\pi}\right)^2 \int_{m_\pi^2}^\infty \frac{ds}{s} K(s) R_{\text{had}}(s)
-> $$
-> For HLbL (simplified):
-> $$
-> a_\mu^{\text{HLbL}} \propto \sum_{M=\pi^0,\eta,\eta',...} \int d^4q_1 \, d^4q_2 \, \frac{\mathcal{F}_{M\gamma^*\gamma^*}(q_1^2,q_2^2)}{q_1^2 q_2^2 (q_1+q_2)^2}
-> $$
-
+::: callout-important
+**Key Formulas**:
+The hadronic contributions to $g-2$ are decomposed as:
+$$
+a_\mu = a_\mu^{\text{QED}} + a_\mu^{\text{EW}} + a_\mu^{\text{HVP}} + a_\mu^{\text{HLbL}}
+$$
+For HVP:
+$$
+a_\mu^{\text{HVP}} = \left(\frac{\alpha}{\pi}\right)^2 \int_{m_\pi^2}^\infty \frac{ds}{s} K(s) R_{\text{had}}(s)
+$$
+For HLbL (simplified):
+$$
+a_\mu^{\text{HLbL}} \propto \sum_{M=\pi^0,\eta,\eta',...} \int d^4q_1 \, d^4q_2 \, \frac{\mathcal{F}_{M\gamma^*\gamma^*}(q_1^2,q_2^2)}{q_1^2 q_2^2 (q_1+q_2)^2}
+$$
+:::
 ---
 
 This is important to realize: **hadron physics provides the input for precision physics**.
-Hadronic contributions are critical for \( g-2 \), which must be calculated to **10 digits**, as shown last time.
+Hadronic contributions are critical for $g-2$, which must be calculated to **10 digits**, as shown last time.
 Experiments measure this, but theoretical calculations rely on understanding these vertices—what happens inside these blocks.
 
 These days, there’s less discussion about hadronic light-by-light.
@@ -83,9 +83,9 @@ $$
 \langle 0 | \mathcal{O}_I(t) | n \rangle \sim e^{-E_n t}.
 $$
 
-> [!NOTE]
-> This exponential decay in Euclidean time is a key feature of correlation functions in lattice field theory, where $E_n$ represents the energy of the state $|n\rangle$.
-
+::: callout-note
+This exponential decay in Euclidean time is a key feature of correlation functions in lattice field theory, where $E_n$ represents the energy of the state $|n\rangle$.
+:::
 ---
 
 
@@ -99,6 +99,7 @@ $$
 H = -\frac{d^2}{dx^2} + V(x),
 $$
 where:
+
 - The first term is the **kinetic energy** (mapping momentum to the derivative of the coordinate).
 - The potential $V(x)$ is a function of the coordinate.
 
@@ -110,6 +111,7 @@ That's a differential equation that can be solved numerically. But there are sev
 
 
 Before that, let's discuss what the variables are here. The energy of the system is a fixed parameter in this differential equation. This is something that we have to probe, fix, and then solve. The way to investigate the system with a given potential goes as follows:
+
 1. We fix the energy or the breakup momentum in the system because they are one-to-one related to each other.
 2. By solving this equation and finding eigenvalues $P$, we can look at what wave functions satisfy this equation.
 
@@ -130,6 +132,7 @@ Special functions are not a problem once someone implements them. For any progra
 
 
 The physics is very interesting for this system. That potential has two parameters:
+
 - The depth $U_0$
 - The size $\alpha$ of the well
 
@@ -144,6 +147,7 @@ One of the conditions that makes certain energy values unacceptable is the **asy
 $$
 \psi(x) \sim e^{ikx} + r e^{-ikx}.
 $$
+
 - The term with $+ikx$ is the plane wave going in the positive $x$-direction.
 - The term with $-ikx$ goes in the negative direction.
 
@@ -178,6 +182,7 @@ Now I want to look at this picture once again and then transform it to the way w
 It's very instructive to map the scattering amplitude in scattering theory to the potential problem. That analytic structure is exactly the same for the transmission and reflection coefficients.
 
 To make it accurate, we have to consider a different problem where we have a clear incoming wave, reflected wave, and transmitted wave. For example, with a potential step:
+
 - On the left, an incoming wave $1 + e^{ikx} + r$.
 - On the right, a transmitted wave $T$.
 
@@ -189,19 +194,19 @@ The role of the scattering amplitudes is now played by these coefficients, which
 
 We can ask: what is the analytic structure of our transmission coefficients in the complex plane? We are going to discover exactly that. In the region where there is a continuum, any value of the energy is possible—you have a branch cut. And then there are bound states that are trapped in the well.
 
-> [!IMPORTANT]
-> The analytic structure of scattering amplitudes—branch cuts for continuum states and poles for bound states—is a universal feature in quantum mechanics and quantum field theory. Understanding this helps connect lattice calculations to physical observables.
-
+::: callout-important
+The analytic structure of scattering amplitudes—branch cuts for continuum states and poles for bound states—is a universal feature in quantum mechanics and quantum field theory. Understanding this helps connect lattice calculations to physical observables.
+:::
 ### Scattering Phase Shifts, Virtual States, and Resonances in a Symmetric Potential Well
 
 
-When we deal with the **symmetric potential**, instead of using that basis, we can switch to the **cosine and sine basis**. If we use \( kx + \delta_0 \), then we can use either one or another.
+When we deal with the **symmetric potential**, instead of using that basis, we can switch to the **cosine and sine basis**. If we use $kx + \delta_0$, then we can use either one or another.
 Let's stick to the **even wave functions** that have **positive parity**.
 
 ---
 
-Now, I want to give you an intuitive understanding of \(\delta_0\).
-\(\delta_0\) is a **scattering phase shift**. We will look for the solution with **positive energy**.
+Now, I want to give you an intuitive understanding of $\delta_0$.
+$\delta_0$ is a **scattering phase shift**. We will look for the solution with **positive energy**.
 
 Here is our potential—that's the energy that's fixed. The wave function is given by:
 $$
@@ -211,22 +216,22 @@ This satisfies the equations **outside the well asymptotically**.
 
 ---
 
-Let's say the well is localized in the region of radius \( R \).
+Let's say the well is localized in the region of radius $R$.
 Outside the well, where the potential saturates at zero, the equation:
 $$
 \psi'' + E \psi = 0
 $$
-has a solution given by \(\cos(kx + \delta_0)\).
+has a solution given by $\cos(kx + \delta_0)$.
 
-It's clear that this is a solution. If you take the second derivative, the \( k^2 \) comes out of the cosine, and you still have a cosine with a minus sign.
-Since \( k^2 = E \), you get exactly the terms.
+It's clear that this is a solution. If you take the second derivative, the $k^2$ comes out of the cosine, and you still have a cosine with a minus sign.
+Since $k^2 = E$, you get exactly the terms.
 
 ---
 
-> [!IMPORTANT]
-> **Key Insight**: The phase shift \(\delta_0\) doesn't spoil the solution—it's still a solution, and it reflects, asymptotically, the properties of the potential.
-> Despite the potential being localized, the functions at infinity feel the properties of the potential.
-
+::: callout-important
+**Key Insight**: The phase shift $\delta_0$ doesn't spoil the solution—it's still a solution, and it reflects, asymptotically, the properties of the potential.
+Despite the potential being localized, the functions at infinity feel the properties of the potential.
+:::
 That's the essence of **scattering theory**: you send a plane wave toward your potential from minus infinity, and then you check the properties of the wave on the other side asymptotically.
 It comes out as a plane wave, but with a slightly different phase. This difference in phase reflects the properties of the potential.
 
@@ -262,7 +267,7 @@ If you have a strong dependence of the reflection probability on the frequency o
 Now we are ready to put this problem into the box. Solving it in the box is also an **academic problem**.
 I'm not sure this potential can be solved in closed form. But what changes is that you impose another condition.
 
-A particle at the value \( L \) has to be the same as the one on the other side, as well as the derivative:
+A particle at the value $L$ has to be the same as the one on the other side, as well as the derivative:
 $$
 \psi(L) = \psi(-L) \quad \text{and} \quad \psi'(L) = \psi'(-L).
 $$
@@ -278,9 +283,9 @@ But the **second condition** is actually important.
 We are still dealing with energies that are **positive**.
 From this boundary condition, we realize that not every energy is possible—only those where $E = k^2$.
 
-> [!NOTE]
-> The energy-momentum relation $E = k^2$ is a key constraint here, limiting the allowed energy states.
-
+::: callout-note
+The energy-momentum relation $E = k^2$ is a key constraint here, limiting the allowed energy states.
+:::
 ---
 
 Now, in the continuum, certain values are **forbidden**, and only a **discrete spectrum** appears.
@@ -300,9 +305,9 @@ In this limit, we resemble the infinite volume with a **continuous spectrum**.
 Here, I indicate the distance between poles in the region that used to be continuous, and you see they are very close to each other.
 The distance scales as $\Delta E \sim \frac{1}{L}$.
 
-> [!IMPORTANT]
-> The scaling $\Delta E \sim \frac{1}{L}$ shows how the discrete spectrum approaches continuity as $L$ grows.
-
+::: callout-important
+The scaling $\Delta E \sim \frac{1}{L}$ shows how the discrete spectrum approaches continuity as $L$ grows.
+:::
 ---
 
 Another term in this formula I want to discuss is $\delta_0$.
@@ -330,18 +335,18 @@ By comparing these two cases, we can deduce $\delta_0$.
 Note that $\delta_0$ **depends on energy**.
 Here, you probe it with different values of $k$.
 
-> [!NOTE]
-> The phase shift $\delta_0(k)$ is energy-dependent and connects the finite-volume spectrum to the infinite-volume scattering properties.
-
+::: callout-note
+The phase shift $\delta_0(k)$ is energy-dependent and connects the finite-volume spectrum to the infinite-volume scattering properties.
+:::
 ### Connecting Quantum Scattering with Finite-Box Periodic Systems
 
 
 So far, despite quantum mechanics being a **very well-taught course**, usually the connections with the material that comes after—**quantum field theory** and **particle physics**, or any other courses—are not that easy to grasp.
 I think it's important to spell out and discuss all points that are shared and make a connection.
 
-> [!NOTE]
-> The **periodic boundary conditions** simplify the problem by making the system translationally invariant—only the *relative distance* between particles matters, not their absolute positions.
-
+::: callout-note
+The **periodic boundary conditions** simplify the problem by making the system translationally invariant—only the *relative distance* between particles matters, not their absolute positions.
+:::
 I have an intuitive picture of this scattering in my head. If you think of a finite box with periodic boundary conditions, it’s like having two marbles interacting with each other on a ring.
 What plays the role of the lattice size is the full circumference of the ring. The variable $x$ is the distance between the two marbles.
 If there is a potential $V(x)$ with which they interact, that's precisely the setup we have.
@@ -379,9 +384,9 @@ where $L$ is the box size.
 
 The formulas above tie directly to the **intuitive analogy** of marbles on a ring, bridging conceptual understanding with mathematical rigor.
 
-> [!TIP]
-> When working with periodic boundary conditions, always check for **translational symmetry**—it often simplifies calculations!
-
+::: callout-tip
+When working with periodic boundary conditions, always check for **translational symmetry**—it often simplifies calculations!
+:::
 ---
 
 Let me know if you'd like further refinements or clarifications!
@@ -392,9 +397,9 @@ Let me know if you'd like further refinements or clarifications!
 The last thing I would like to do is to properly connect this to what is actually computed on the lattice.
 At the bottom, the first thing one introduces is the quantity and the **main computation**.
 
-> [!NOTE]
-> The fundamental quantity computed in lattice QCD is the **correlation function** between operators, which contains all the spectral information of the theory.
-
+::: callout-note
+The fundamental quantity computed in lattice QCD is the **correlation function** between operators, which contains all the spectral information of the theory.
+:::
 The only thing that the lattice computes is the correlation of operators.
 This is the vacuum expectation value of the product of two operators:
 
@@ -438,6 +443,7 @@ Do this exercise: take $U \bar{U}$, run this correlation on the lattice, and the
 ---
 
 An important aspect to realize is that:
+
 * The higher the energy, the faster the state's contribution dies
 * If you wait long enough, all higher states' contributions exponentially drop, leaving only the ground state:
 
@@ -457,6 +463,7 @@ C(t) \vec{v}_n(t, t_0) = \lambda_n(t, t_0) C(t_0) \vec{v}_n(t, t_0)
 $$
 
 This technique:
+
 * Extracts exponentials of the higher states
 * For every value of $t$, you can find an eigenvalue
 * The diagonal elements of the diagonalized correlation matrix give the time dependence of those higher states
@@ -467,53 +474,54 @@ This technique:
 
 The **eigenvalue problem** and that technique are quite different. There is a class of algorithms that makes calculations less noisy related to what we use. For this operator that contracts mesons, the operators we input have different **condition numbers**.
 
-If you want to calculate the spectrum of the light spin-1 mesons, the operators have quantum numbers of \(0^+\), and you obtain one spectrum. For other quantum numbers, you need different operators.
+If you want to calculate the spectrum of the light spin-1 mesons, the operators have quantum numbers of $0^+$, and you obtain one spectrum. For other quantum numbers, you need different operators.
 
-> [!NOTE]
-> The Hamiltonian diagonalization for the meson spectrum is given by:
-> $$
-> H|\psi_n\rangle = E_n|\psi_n\rangle
-> $$
-
-What actually happens—without going into details—is that in a finite volume, **spin is no longer a good quantum number** because you lack full rotational symmetry. The lattice has a reduced symmetry group, not \(SU(2)\), so different spins mix.
+::: callout-note
+The Hamiltonian diagonalization for the meson spectrum is given by:
+$$
+H|\psi_n\rangle = E_n|\psi_n\rangle
+$$
+:::
+What actually happens—without going into details—is that in a finite volume, **spin is no longer a good quantum number** because you lack full rotational symmetry. The lattice has a reduced symmetry group, not $SU(2)$, so different spins mix.
 
 In practice, the entire meson spectrum is computed simultaneously. The matrix has a large dimensionality—hundreds of sectors with overlapping non-diagonal elements between different spins. This yields many **eigenenergy values** (eigenvalues), which are mapped and presented as meson masses.
 
 ---
 
-There is one problem with this approach. Most resonances above decay thresholds are not bound states but **resonances**. Excited mesons like the \(\rho\) meson and higher states are resonances in \(\pi\)-\(\pi\) scattering.
+There is one problem with this approach. Most resonances above decay thresholds are not bound states but **resonances**. Excited mesons like the $\rho$ meson and higher states are resonances in $\pi$-$\pi$ scattering.
 
-Strictly speaking, extracting eigenvalues above the two-pion threshold is not reliable. Below the threshold, you measure the pion mass accurately. Above it, you observe two-pion states rather than stable mesons. These extracted values are not trustworthy, so another method is needed to study resonances, such as those in \(\pi\)-\(\pi\) scattering.
+Strictly speaking, extracting eigenvalues above the two-pion threshold is not reliable. Below the threshold, you measure the pion mass accurately. Above it, you observe two-pion states rather than stable mesons. These extracted values are not trustworthy, so another method is needed to study resonances, such as those in $\pi$-$\pi$ scattering.
 
 Instead of using two core capacitors, four coil capacitors represent meson-meson combinations. The energy spectrum of these combinations is rich and resembles what we see in a finite box.
 
 ---
 
-When two particles are confined in a box, their energy spectrum is discrete above the threshold. The spacing between levels is roughly \(2\pi/L\). The deviation of these discrete states from the non-interacting case gives the **phase shift** \(\delta(k)\). This is how the phase shift is extracted.
+When two particles are confined in a box, their energy spectrum is discrete above the threshold. The spacing between levels is roughly $2\pi/L$. The deviation of these discrete states from the non-interacting case gives the **phase shift** $\delta(k)$. This is how the phase shift is extracted.
 
-A classic example is \(\pi\)-\(\pi\) scattering in the \(P\)-wave. The extracted phase shift shows a resonant behavior, peaking at the \(\rho\) meson mass. For physical quark masses, the pion mass is \(140 \text{ MeV}\), and the \(\rho\) meson resonance occurs at \(770 \text{ MeV}\), where the phase shift passes \(\pi/2\).
+A classic example is $\pi$-$\pi$ scattering in the $P$-wave. The extracted phase shift shows a resonant behavior, peaking at the $\rho$ meson mass. For physical quark masses, the pion mass is $140 \text{ MeV}$, and the $\rho$ meson resonance occurs at $770 \text{ MeV}$, where the phase shift passes $\pi/2$.
 
-> [!IMPORTANT]
-> The **energy shift** between interacting and non-interacting systems is key:
-> $$
-> \Delta E_n = E_n^{\text{interacting}} - E_n^{\text{free}}
-> $$
-> This connects to Lüscher's formula for phase shifts:
-> $$
-> \tan\delta(k) = \frac{\pi^{3/2} q}{\mathcal{Z}_{00}(1;q^2)}, \quad q = \frac{kL}{2\pi}
-> $$
-
+::: callout-important
+The **energy shift** between interacting and non-interacting systems is key:
+$$
+\Delta E_n = E_n^{\text{interacting}} - E_n^{\text{free}}
+$$
+This connects to Lüscher's formula for phase shifts:
+$$
+\tan\delta(k) = \frac{\pi^{3/2} q}{\mathcal{Z}_{00}(1;q^2)}, \quad q = \frac{kL}{2\pi}
+$$
+:::
 ---
 
 This is how modern hadron spectroscopy works on the lattice. The method is accurate if all relevant channels are included. The steps are:
+
 1. Construct a large basis of operators with different quantum numbers.
 2. Extract eigenvalues to get the energy spectrum of the interacting system.
 3. Compare it to the non-interacting spectrum.
-4. The difference \(\Delta E_n = E_n^{\text{interacting}} - E_n^{\text{free}}\) gives the phase shift \(\delta(k)\).
+4. The difference $\Delta E_n = E_n^{\text{interacting}} - E_n^{\text{free}}$ gives the phase shift $\delta(k)$.
 
-Plotting \(\delta(k)\) versus the breakup momentum reveals resonances. Experienced theorists can spot resonances just from the spectrum.
+Plotting $\delta(k)$ versus the breakup momentum reveals resonances. Experienced theorists can spot resonances just from the spectrum.
 
-From first principles—the **QCD Lagrangian**—we obtain scattering spectra and resonance properties. Complications arise from coupled channels. Above thresholds like \(2\pi\) or \(3\pi\), additional operators (\(K\pi\), \(\eta'\), etc.) must be included.
+From first principles—the **QCD Lagrangian**—we obtain scattering spectra and resonance properties. Complications arise from coupled channels. Above thresholds like $2\pi$ or $3\pi$, additional operators ($K\pi$, $\eta'$, etc.) must be included.
 
 The key idea is using the energy shift between interacting and non-interacting systems. This connects to experimental particle physics, where phase shifts and cross-sections are analyzed similarly.
 
@@ -528,6 +536,6 @@ Lüscher’s formula links finite-volume energy shifts to infinite-volume phase 
 $$
 \tan\delta(k) = \frac{\pi^{3/2} q}{\mathcal{Z}_{00}(1;q^2)}, \quad q = \frac{kL}{2\pi},
 $$
-where \(\mathcal{Z}_{00}\) is the Lüscher zeta function.
+where $\mathcal{Z}_{00}$ is the Lüscher zeta function.
 
 This machinery bridges lattice calculations and experimental resonance physics.

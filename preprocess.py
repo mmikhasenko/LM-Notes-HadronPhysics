@@ -2,6 +2,8 @@ import sys
 import re
 import os
 import logging
+from typing import Callable
+from collections import defaultdict
 logger = logging.getLogger("callout_replacer")
 handler = logging.StreamHandler()
 formatter = logging.Formatter("[%(levelname)s] %(message)s")
@@ -90,6 +92,29 @@ def transform_file(filepath):
         return ''.join(parts)
 
 
+    def replace_all_except_first(pattern: str, repl_func: Callable[[re.Match], str], text: str) -> str:
+        """
+        Replace all matches of `pattern` in `text` except the first occurrence per key.
+        The key is taken from capture group 1 of the pattern (adjust if your key group is different).
+        `repl_func` is called with the Match for matches that should be replaced.
+        """
+        regex = re.compile(pattern)
+        seen = set()
+
+        def _sub(m: re.Match) -> str:
+            key_group = 1
+            key = m.group(key_group)
+            if key in seen:
+                return repl_func(m)
+            else:
+                seen.add(key)
+                return m.group(0)  # keep the first occurrence as-is
+
+        return regex.sub(_sub, text)
+
+
+
+
     content = fix_callouts(content)
     # Convert \[...\] blocks to $$...$$
     content = re.sub(
@@ -111,6 +136,26 @@ def transform_file(filepath):
         lambda m: f"${m.group(1)}$",
         content,
         flags=re.DOTALL
+    )
+
+    content = replace_all_except_first(
+        r'\!\[.*\]\(images/fig([0-9]).png\)',
+        lambda m: f"Refer to @fig-fg{m.group(1)}",
+        content
+    )
+
+    content = re.sub(
+        r'(\!\[.*\]\(images/fig([0-9]).png\))',
+        lambda m: f"\n\n{m.group(1)}{{#fig-fg{m.group(2)}}}\n\n",
+        content,
+    )
+
+
+    content = re.sub(
+        r'\bRefer to Figure ([0-9]+)\b',
+        lambda m: f"Refer to @fig-fg{m.group(1)}",
+        content,
+        flags=re.IGNORECASE,
     )
 
     # Render lists - add space before first list item, but not between items

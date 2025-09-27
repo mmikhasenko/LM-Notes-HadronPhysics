@@ -7,18 +7,19 @@ We had too little time in the previous lecture to cover these aspects, but they 
 ---
 
 I will introduce two mathematical concepts:
+
 - **Analytic functions**
 - **Holomorphic functions** (which are interchangeable terms)
 
 A function is called **analytic** if there is a Taylor series equal to the function in the vicinity of each point.
 If there are coefficients such that the series gives exact values of the function, then the function is analytic at the point $X$.
 
-> [!NOTE]
-> The Taylor series expansion for an analytic function at point $x_0$ is:
-> $$
-> f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(x_0)}{n!} (x - x_0)^n
-> $$
-
+::: callout-note
+The Taylor series expansion for an analytic function at point $x_0$ is:
+$$
+f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(x_0)}{n!} (x - x_0)^n
+$$
+:::
 A function is analytic at $X_0$ if the series exists for $(X - X_0)^N$, with coefficients depending on $X_0$:
 $$
 f(X) = \sum_{n=0}^{\infty} \frac{f^{(n)}(X_0)}{n!} (X - X_0)^n.
@@ -42,21 +43,24 @@ $$
 f(\overline{z}) = \overline{f(z)}.
 $$
 
-> [!NOTE]
-> Demonstration using $1 + i = \sqrt{2} e^{i\pi/4}$:
-> - $\sqrt{1 + i} = 2^{1/4} e^{i\pi/8}$
-> - $\sqrt{1 - i} = 2^{1/4} e^{-i\pi/8}$
-> This confirms the reflection principle since $\sqrt{\overline{z}} = \overline{\sqrt{z}}$.
+::: callout-note
+Demonstration using $1 + i = \sqrt{2} e^{i\pi/4}$:
 
+- $\sqrt{1 + i} = 2^{1/4} e^{i\pi/8}$
+- $\sqrt{1 - i} = 2^{1/4} e^{-i\pi/8}$
+This confirms the reflection principle since $\sqrt{\overline{z}} = \overline{\sqrt{z}}$.
+:::
 ---
 
 For **analytic functions** of a single argument, it's useful to visualize the domain as the complex plane:
+
 - **Real part** on the x-axis
 - **Imaginary part** on the y-axis
 
 The Schwarz reflection principle implies **symmetry** between the upper and lower planes—values in the lower plane can be derived from the upper plane via conjugation.
 
 For instance:
+
 - $1 + i$ has magnitude $\sqrt{2}$ and angle $\pi/4$
 - Its square root is $2^{1/4} e^{i\pi/8}$
 - Similarly, $1 - i$ gives the conjugate result, illustrating the reflection principle.
@@ -69,13 +73,13 @@ I would like to cover **Cauchy's theorem**.
 It states that the integral over a closed contour in the complex plane of a function is equal to all **non-analytic contributions** inside this contour.
 If it's a pole, it's given by residues. If it's a branch point, the correct way is to contour around it, and so on—the left side captures all non-analytic behavior.
 
-> [!IMPORTANT]
-> **Cauchy's Integral Theorem (general form)**:
-> $$
-> \oint_\gamma f(z) \, dz = 2\pi i \sum \text{Res}(f, a_k)
-> $$
-> where $\gamma$ is a closed contour and $a_k$ are the poles (or other singularities) inside $\gamma$.
-
+::: callout-important
+**Cauchy's Integral Theorem (general form)**:
+$$
+\oint_\gamma f(z) \, dz = 2\pi i \sum \text{Res}(f, a_k)
+$$
+where $\gamma$ is a closed contour and $a_k$ are the poles (or other singularities) inside $\gamma$.
+:::
 What I realized recently is that this is actually a **numerically well-defined procedure** to integrate a discontinuous function.
 For example, we can compute the integral of $\sqrt{z}$ over a circle of radius 1, and the integral converges despite the function being discontinuous at the branch point.
 
@@ -126,10 +130,10 @@ $$
 This is straightforward, and the result aligns with the contour integration.
 The key takeaway is that even with discontinuities, **Cauchy's theorem** provides a rigorous way to compute such integrals.
 
-> [!NOTE]
-> **Equivalence of Methods**:
-> The integral along the branch cut ($\int_{-1}^0 \sqrt{x} \, dx$) matches the contour integral result, demonstrating the flexibility of contour deformation in complex analysis.
-
+::: callout-note
+**Equivalence of Methods**:
+The integral along the branch cut ($\int_{-1}^0 \sqrt{x} \, dx$) matches the contour integral result, demonstrating the flexibility of contour deformation in complex analysis.
+:::
 ### The Scattering Amplitude: Analyticity, Unitarity, and Threshold Behavior
 
 
@@ -149,12 +153,12 @@ However, scattering theory and probability conservation imply that certain prope
 
 ---
 
-> [!IMPORTANT]
-> **Analyticity as a Postulate**:
-> The fact that it's analytic is a postulate.
-> This is something we have to assume—though it's stronger than an assumption.
-> We don't assume its analytic properties; this is the building principle of our series.
-
+::: callout-important
+**Analyticity as a Postulate**:
+The fact that it's analytic is a postulate.
+This is something we have to assume—though it's stronger than an assumption.
+We don't assume its analytic properties; this is the building principle of our series.
+:::
 ---
 
 - **Unitarity**:
@@ -206,9 +210,9 @@ So here I have a diagram on the $x$-axis. Again, it's a complex plane of the ene
 
 What we get to deal with is only the values of this amplitude above the threshold. However, the past tenets of our theory tell you that using analyticity, we can extend the domain of the definition into the full complex plane.
 
-> [!IMPORTANT]
-> **Key Idea**: The amplitude $A(s)$ can be analytically continued into the complex plane, allowing us to evaluate it at complex energies, not just real ones above threshold.
-
+::: callout-important
+**Key Idea**: The amplitude $A(s)$ can be analytically continued into the complex plane, allowing us to evaluate it at complex energies, not just real ones above threshold.
+:::
 I hope you wrap your mind around the idea that now we can extend this analytic domain and think of our amplitude as a complex function. So instead of energy of the interactions of, say, 5 GeV, you can put a complex number there and then probe the function away from the real axis.
 
 Now, this function has a certain range of singularities. From the fact that the imaginary part is not present below threshold and then suddenly appears above threshold tells you that a certain singular disk pops up. And these singularities are the branch points.
@@ -278,15 +282,15 @@ where $E$ is the energy and $E_{\text{th}}$ is the threshold energy. This indica
 
 Above the threshold, the function exhibits this square root behavior. It would be useful to connect this to the **Schwarz reflection principle**.
 
-> [!IMPORTANT]
-> Since our function was real and analytic on a segment of the real axis, the Schwarz reflection principle applies. It relates the amplitude in the upper half-plane to the amplitude in the lower half-plane:
->
-> $$
-> f(E + i\epsilon) = \overline{f(E - i\epsilon)},
-> $$
->
-> for real $E$ and small $\epsilon > 0$, where $\overline{f}$ denotes the complex conjugate.
+::: callout-important
+Since our function was real and analytic on a segment of the real axis, the Schwarz reflection principle applies. It relates the amplitude in the upper half-plane to the amplitude in the lower half-plane:
 
+$$
+f(E + i\epsilon) = \overline{f(E - i\epsilon)},
+$$
+
+for real $E$ and small $\epsilon > 0$, where $\overline{f}$ denotes the complex conjugate.
+:::
 ---
 
 This means the imaginary part flips sign when you cross the real axis:
@@ -314,9 +318,9 @@ I'm going to use this $i\varepsilon$, and you've seen it before. This is just th
 
 ---
 
-> [!NOTE]
-> The $i\varepsilon$ prescription is a common technique in complex analysis and quantum field theory to handle poles and branch cuts by shifting the contour infinitesimally away from the real axis.
-
+::: callout-note
+The $i\varepsilon$ prescription is a common technique in complex analysis and quantum field theory to handle poles and branch cuts by shifting the contour infinitesimally away from the real axis.
+:::
 ---
 
 I wanted to quickly give an example of such a function—an example of a **real analytic function**, discarding this cut to the right. An example of a real analytic function like our scattering amplitude, but something very simple with a square root function that has a cut to the right. So $\sqrt{x}$ doesn’t work—its cut is on the left. Let’s cut to the left. How do I see where it has the cut? Simply because $\text{Amplitude}(1 + \varepsilon) = \text{Amplitude}(1 - \varepsilon)$, there is no cut. Then, $\sqrt{-1 - \varepsilon} = -i$, and $\sqrt{-1 + \varepsilon} = i$. On this side, the function evaluated from above and below have different values. That tells me in which direction I put my cut.
@@ -351,9 +355,9 @@ If I evaluate the top one, I get $\sqrt{(-2)(-1)}$. If I evaluate the second one
 
 ---
 
-> [!WARNING]
-> Be cautious when splitting square roots in complex analysis: $\sqrt{ab} \neq \sqrt{a} \cdot \sqrt{b}$ in general due to branch cut ambiguities. The example shows $\sqrt{(-2)(-1)} \neq \sqrt{-2} \cdot \sqrt{-1}$ because of differing branch cut configurations.
-
+::: callout-warning
+Be cautious when splitting square roots in complex analysis: $\sqrt{ab} \neq \sqrt{a} \cdot \sqrt{b}$ in general due to branch cut ambiguities. The example shows $\sqrt{(-2)(-1)} \neq \sqrt{-2} \cdot \sqrt{-1}$ because of differing branch cut configurations.
+:::
 ### Resonances as Poles in the Scattering Amplitude: A House Analogy for Complex Plane Dynamics
 
 
@@ -375,9 +379,9 @@ If I have my router here, I have really good strength here and here as well. But
 
 ---
 
-> [!IMPORTANT]
-> **Key Insight**: The resonances are the resonances. I see them on each floor. If they are above the threshold, it's too complicated.
-
+::: callout-important
+**Key Insight**: The resonances are the resonances. I see them on each floor. If they are above the threshold, it's too complicated.
+:::
 When you hear about the complex plane and the poles, think of the **intensity floor** somewhere in the complex domain. This is all complex domain. There are gates to other floors—don't think of them as changing the level, but as connecting one to another. On this surface with different levels, you place the resonances. These resonances influence your intensity, which you see on the detectors.
 
 ---
@@ -475,13 +479,13 @@ If there is a pole on the real axis, it would not show up as a nice resonance-li
 
 ---
 
-> [!NOTE]
-> **Threshold condition for two-particle production**:
-> $$
-> S = (M_1 + M_2)^2
-> $$
-> where $S$ is the Mandelstam variable (center-of-mass energy squared), and $M_1, M_2$ are the masses of the two particles.
-
+::: callout-note
+**Threshold condition for two-particle production**:
+$$
+S = (M_1 + M_2)^2
+$$
+where $S$ is the Mandelstam variable (center-of-mass energy squared), and $M_1, M_2$ are the masses of the two particles.
+:::
 ---
 
 Think again about the map of routers and the internet.
@@ -500,6 +504,7 @@ This is simply an enhancement.
 
 This is a distinction—one of the objectives and discussion points in the field.
 When you observe a new structure, what kind is it?
+
 - Is it related to a threshold?
 - Is it a pole sitting below a certain threshold?
 - Or is it a resonance in the complex plane unrelated to a threshold?
@@ -517,6 +522,7 @@ That's why identifying all thresholds and the complex structure, and where the r
 ---
 
 Finishing the lecture—quick questions:
+
 - "$S - (M_1 + M_2)^2$."
 - "The other so-called threshold—what is what?"
 - "With the so-called threshold $S - (M_1 - M_2)^2$?"

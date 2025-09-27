@@ -17,11 +17,12 @@ For the $S$ channel, we can see that:
 
 Depending on what type of reaction you have—for example, if it's an **elastic scattering** or **non-elastic scattering** reaction—we can also have mass constraints here.
 
-> [!NOTE]
-> **Elastic vs. Non-Elastic Scattering**:
-> - If it's elastic, then this would be just the masses here four times, and similarly here as well.
-> - For non-elastic, the constraints differ.
+::: callout-note
+**Elastic vs. Non-Elastic Scattering**:
 
+- If it's elastic, then this would be just the masses here four times, and similarly here as well.
+- For non-elastic, the constraints differ.
+:::
 In general, there's a function called the **Kibble function** that gives us the constraints and how exactly these areas are constrained. We just put some variation here.
 
 What I have sketched is the more general case where we don't have elastic scattering. For elastic scattering, we would have a different kind of border where it would go a little bit over here.
@@ -187,9 +188,9 @@ $$
 
 This is what we want to do next.
 
-> [!IMPORTANT]
-> **Correction**: The denominator of the amplitude has $g^2$ times $\rho$, which is mass times width, not just $\Gamma$. So it's not $\Gamma$ over two. It's $M \Gamma$.
-
+::: callout-important
+**Correction**: The denominator of the amplitude has $g^2$ times $\rho$, which is mass times width, not just $\Gamma$. So it's not $\Gamma$ over two. It's $M \Gamma$.
+:::
 Let's start with our unitarity condition. We can now bring one of the $T$'s to the other side and also split this up. So we have here $2i$ times the identity matrix.
 
 What we get is we bring this here. This part here is what we call the $K$-matrix $N^{-1}$. Since there's an equal sign between this means that $K$ has to be **Hermitian**.
@@ -235,11 +236,11 @@ In this case, they are so far apart that we can consider them **isolated**. If t
 
 ---
 
-> [!IMPORTANT]
-> The Breit-Wigner formula describes isolated resonances:
-> $$f(E) = \frac{\Gamma/2}{(E - E_0) + i\Gamma/2}$$
-> For two resonances, we sum their individual contributions when they're far apart.
-
+::: callout-important
+The Breit-Wigner formula describes isolated resonances:
+$$f(E) = \frac{\Gamma/2}{(E - E_0) + i\Gamma/2}$$
+For two resonances, we sum their individual contributions when they're far apart.
+:::
 ---
 
 We have only a couple of minutes left. One important thing to remember is that we are looking at:
@@ -248,6 +249,7 @@ We have only a couple of minutes left. One important thing to remember is that w
 * The **phase shifts**
 
 We expect to see:
+
 - A peak in the imaginary part
 - In the real part, we see a phase motion going through zero
 

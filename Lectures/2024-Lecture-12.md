@@ -9,12 +9,13 @@ But today I would like to talk more about physics and still have to write formul
 
 ---
 
-> [!NOTE]
-> Key formulas discussed in this lecture:
-> - Weak interaction vertex: $\mathcal{L}_{\text{weak}} \propto \bar{\psi}\gamma^\mu (1 - \gamma_5)\psi$
-> - Pion decay amplitude suppression: $\mathcal{M} \propto m_\ell / E_\ell$
-> - Muon magnetic moment: $\vec{\mu} = g \left( \frac{e}{2m} \right) \vec{S}$
+::: callout-note
+Key formulas discussed in this lecture:
 
+- Weak interaction vertex: $\mathcal{L}_{\text{weak}} \propto \bar{\psi}\gamma^\mu (1 - \gamma_5)\psi$
+- Pion decay amplitude suppression: $\mathcal{M} \propto m_\ell / E_\ell$
+- Muon magnetic moment: $\vec{\mu} = g \left( \frac{e}{2m} \right) \vec{S}$
+:::
 ---
 
 I would like to start today's lecture with a short recap. Let’s revisit our discussion of **helicity and chirality** and examine pion decay: $\pi^+ \to \mu^+ \nu_\mu$. I would like you to compare this decay. Start by drawing this two-body decay in the rest frame of the pion, indicating momenta and chirality. The vertex is a weak interaction, so the produced particles have definite chiral properties—left or right. On this diagram, chirality is related to spin orientation in the high-mass limit. Given these chiral configurations, what are the ratios of the matrix elements? Which phase space is bigger? And which decay is more likely for the pion? Let’s take three minutes.
@@ -70,13 +71,13 @@ In this tunnel, they decay.
 Some of the pions convert to muons, and the muons are trapped.
 In the ring, they start moving.
 
-> [!NOTE]
-> The muon's anomalous magnetic moment ($a_\mu$) is central to this experiment:
-> $$
-> a_\mu = \frac{g_\mu - 2}{2}
-> $$
-> where $g_\mu$ is the g-factor of the muon.
-
+::: callout-note
+The muon's anomalous magnetic moment ($a_\mu$) is central to this experiment:
+$$
+a_\mu = \frac{g_\mu - 2}{2}
+$$
+where $g_\mu$ is the g-factor of the muon.
+:::
 ---
 
 Since pions produce **polarized muons**, they already have exactly the configuration we want.
@@ -103,6 +104,7 @@ A particle comes in, leaves energy, and the sensor collects it.
 ---
 
 These calorimeters measure the flux of electrons.
+
 - If the spin points **outwards**, you detect fewer electrons.
 - If the spin points **inwards**, you detect more electrons.
 Along the circle, you see fluctuations in the energy deposit.
@@ -144,14 +146,14 @@ They opened the envelope, entered the frequency, and revealed the measured numbe
 
 ---
 
-> [!IMPORTANT]
-> The relationship between the anomalous magnetic moment and precession frequency is:
-> $$
-> a_\mu = \frac{\omega_a}{\omega_c} = \frac{\omega_a m_\mu}{eB}
-> $$
-> This is the key equation for extracting $a_\mu$ from the measured $\omega_a$.
-
-### Muon Polarization, Anomalous Magnetic Moment, and Hadronic Contributions in \(g-2\) Experiments
+::: callout-important
+The relationship between the anomalous magnetic moment and precession frequency is:
+$$
+a_\mu = \frac{\omega_a}{\omega_c} = \frac{\omega_a m_\mu}{eB}
+$$
+This is the key equation for extracting $a_\mu$ from the measured $\omega_a$.
+:::
+### Muon Polarization, Anomalous Magnetic Moment, and Hadronic Contributions in $g-2$ Experiments
 
 
 You're measuring $\omega_S$—it's actually correct. What enters the field is really this variable.
@@ -166,10 +168,10 @@ For some reason, I thought you saw a difference between them, but no. I'm not su
 
 ---
 
-> [!NOTE]
-> **Key Physics Context**:
-> The discussion involves precision measurements of spin dynamics, where $\omega_S$ and $\omega_C$ represent frequencies related to spin and cyclotron motion, respectively. The difference between these frequencies is critical for observing effects like the anomalous magnetic moment ($g-2$).
-
+::: callout-note
+**Key Physics Context**:
+The discussion involves precision measurements of spin dynamics, where $\omega_S$ and $\omega_C$ represent frequencies related to spin and cyclotron motion, respectively. The difference between these frequencies is critical for observing effects like the anomalous magnetic moment ($g-2$).
+:::
 ---
 
 The key question is: Are the other muons polarized when you shoot them into the ring? Does it matter? Muons? Yes, when they come up. Exactly.
@@ -185,6 +187,7 @@ To achieve such precision—quantified in parts per billion (**ppb**)—is remar
 You might ask, *"What does hadronic physics have to do with this?"* Hadronic corrections appear prominently in the theoretical calculation of the anomalous magnetic moment $g-2$.
 
 There are **two major hadronic contributions** to $g-2$:
+
 1. **Hadronic Vacuum Polarization (HVP)**:
 - A photon produces hadrons and then turns back into a photon.
 - This is *running vacuum polarization*.
@@ -210,69 +213,69 @@ In the strange sector, the vector meson is $\phi$ ($s\bar{s}$).
 ### Dispersion Relations and Analyticity in Complex Analysis
 
 
-The **Cauchy theorem** tells you that in the complex plane you can integrate in the manner of analyticity. The integral is equal to the integral of the function over \( S' \). This \( S' \) is equal to the sum of the \( 2\pi i \) residues of the function at the poles. Does it look familiar? We discussed this already—that you can use this to have an integral representation of the function for any function in the domain of its analyticity.
+The **Cauchy theorem** tells you that in the complex plane you can integrate in the manner of analyticity. The integral is equal to the integral of the function over $S'$. This $S'$ is equal to the sum of the $2\pi i$ residues of the function at the poles. Does it look familiar? We discussed this already—that you can use this to have an integral representation of the function for any function in the domain of its analyticity.
 
-You can write this in the following way, and what you do, actually, is manually introduce a pole by hand such that this integral would be equal. In this integral, it will be equal to the residue of the integrand. This function \( F \) that is here is this ratio; it has one pole. Therefore, you have to take the function right at the pole, and that would make you substitute \( S \) for \( S' \), and then it would make the derivation valid. This is known as the **Cauchy theorem**, and this is kind of a little consequence of it.
+You can write this in the following way, and what you do, actually, is manually introduce a pole by hand such that this integral would be equal. In this integral, it will be equal to the residue of the integrand. This function $F$ that is here is this ratio; it has one pole. Therefore, you have to take the function right at the pole, and that would make you substitute $S$ for $S'$, and then it would make the derivation valid. This is known as the **Cauchy theorem**, and this is kind of a little consequence of it.
 
 ---
 
-Now, there is a **trick**, especially for real analytic functions. Imagine that you have a function that is real analytic in the domain below the cut, and then the cut starts at that threshold. We would like to use something like that to evaluate the value. So what I'm going to do is write this representation for this contour: my function \( G(S) \) is equal to \( \frac{1}{2\pi i} \) integral over contour \( C \) of \( \frac{G(S_1)}{S_1 - S} dS_1 \). This is my contour \( C \).
+Now, there is a **trick**, especially for real analytic functions. Imagine that you have a function that is real analytic in the domain below the cut, and then the cut starts at that threshold. We would like to use something like that to evaluate the value. So what I'm going to do is write this representation for this contour: my function $G(S)$ is equal to $\frac{1}{2\pi i}$ integral over contour $C$ of $\frac{G(S_1)}{S_1 - S} dS_1$. This is my contour $C$.
 
-> [!IMPORTANT]
-> **Key Property of Real Analytic Functions** (cut discontinuity):
-> \[
-> G(S + i\epsilon) = G^*(S - i\epsilon) \quad \text{(for real } S \text{ below threshold)}
-> \]
-> implying \( \text{Re}\, G(S + i\epsilon) = \text{Re}\, G(S - i\epsilon) \) and \( \text{Im}\, G(S + i\epsilon) = -\text{Im}\, G(S - i\epsilon) \).
-
+::: callout-important
+**Key Property of Real Analytic Functions** (cut discontinuity):
+$$
+G(S + i\epsilon) = G^*(S - i\epsilon) \quad \text{(for real } S \text{ below threshold)}
+$$
+implying $\text{Re}\, G(S + i\epsilon) = \text{Re}\, G(S - i\epsilon)$ and $\text{Im}\, G(S + i\epsilon) = -\text{Im}\, G(S - i\epsilon)$.
+:::
 I'm going to blow up the contour. Changing the contour does not change anything. The only singularity that I encounter is the one introduced by hand—it's a pole in the center or somewhere inside of it. So I'm transforming my plane into the following contour. It has two contributions: the one that comes from the circle and the one from the cut. The one from the cut is actually evaluated along the real axis.
 
-I'm going to use the property that \( G(S + i\epsilon) \) (with \( \epsilon \) infinitesimal) is related to \( G(S - i\epsilon) \). This is due to the **real analyticity**. It's rather intuitively clear, but not necessarily so.
+I'm going to use the property that $G(S + i\epsilon)$ (with $\epsilon$ infinitesimal) is related to $G(S - i\epsilon)$. This is due to the **real analyticity**. It's rather intuitively clear, but not necessarily so.
 
 ---
 
-Let's consider an example just on the side. Any function with such a cut will be real analytic. We had an exercise on that. I want to have an \( x \) domain, and then the function has a cut starting at one, going to the right, and the function should be real here. My favorite example is \( \sqrt{1 - x} \). But \( \sqrt{x} \) could have a cut in the other direction. So I think I should do \( \sqrt{1 - x} \).
+Let's consider an example just on the side. Any function with such a cut will be real analytic. We had an exercise on that. I want to have an $x$ domain, and then the function has a cut starting at one, going to the right, and the function should be real here. My favorite example is $\sqrt{1 - x}$. But $\sqrt{x}$ could have a cut in the other direction. So I think I should do $\sqrt{1 - x}$.
 
-This function has a cut to the right; it starts at 1. If I put \( x = 0 \), I can evaluate this, no problem. It's real analytic because for negative \( x \), say \( x = -8 \), then I have \( \sqrt{9} = 3 \).
+This function has a cut to the right; it starts at 1. If I put $x = 0$, I can evaluate this, no problem. It's real analytic because for negative $x$, say $x = -8$, then I have $\sqrt{9} = 3$.
 
-My claim is that \( G(x + i0) \) has a real and imaginary part. If I calculate this for negative, it has the same real part and negative imaginary part. Let's check it for some value. At \( x = 5 \), \( G(5 + i0) = \sqrt{-4 - i0} = 2i \). Indeed, it's a real analytic function. The value above and below the cut has the same real part and opposite imaginary parts.
+My claim is that $G(x + i0)$ has a real and imaginary part. If I calculate this for negative, it has the same real part and negative imaginary part. Let's check it for some value. At $x = 5$, $G(5 + i0) = \sqrt{-4 - i0} = 2i$. Indeed, it's a real analytic function. The value above and below the cut has the same real part and opposite imaginary parts.
 
 That lets me write this integral as a principal value integral over the imaginary part. Plus, another thing I use is that the integral in one direction is equal to minus the integral in the other direction. That's what gave me the minus sign here.
 
 ---
 
-If the function drops fast enough when \( S \) goes to infinity, I can blow up my circle even more and drop the contribution from the circle. I forgot a \( 2i \) here—so here in the numerator should be \( 2i \). This is a beautiful formula that we derived, known as a **dispersion relation**.
+If the function drops fast enough when $S$ goes to infinity, I can blow up my circle even more and drop the contribution from the circle. I forgot a $2i$ here—so here in the numerator should be $2i$. This is a beautiful formula that we derived, known as a **dispersion relation**.
 
-> [!NOTE]
-> **Dispersion Relation** (recovering a function from its imaginary part):
-> \[
-> G(S) = \frac{1}{\pi} \int_{\text{cut}} \frac{\text{Im}\, G(S')}{S' - S} \, dS'
-> \]
-> (Assumes \( G \) vanishes sufficiently fast at infinity.)
-
+::: callout-note
+**Dispersion Relation** (recovering a function from its imaginary part):
+$$
+G(S) = \frac{1}{\pi} \int_{\text{cut}} \frac{\text{Im}\, G(S')}{S' - S} \, dS'
+$$
+(Assumes $G$ vanishes sufficiently fast at infinity.)
+:::
 This function allows us to recover the full function from its imaginary part. It's quite amazing. It just tells you what the function is equal to here, and using this relation, I can give it to you anywhere in the complex plane.
 
 It's an advanced subject, the dispersion relation, but it's part of the classwork. It's a little exercise that helps you understand better how dispersion works.
 
 ---
 
-There is also the **subtraction**. People say we do this dispersion relation with one subtraction. It's not just one, but two poles are introduced. Then it's under the integral with the prime. This is the variable I integrate over, and then \( S - a \). Once you do that, you have to multiply this without the prime outside the integral. Then obviously this term is going to vanish once \( S = a \). Therefore, to have the correct relation, you need \( G(a) \) here.
+There is also the **subtraction**. People say we do this dispersion relation with one subtraction. It's not just one, but two poles are introduced. Then it's under the integral with the prime. This is the variable I integrate over, and then $S - a$. Once you do that, you have to multiply this without the prime outside the integral. Then obviously this term is going to vanish once $S = a$. Therefore, to have the correct relation, you need $G(a)$ here.
 
-This is called a **once-subtracted dispersion relation**. The easiest subtraction is at zero. Then \( a = 0 \), and you have just \( G(S) = G(0) + \frac{S}{\pi} \) (and then an extra \( S \) for the integration). That's what you have to do when your condition for the high circle is not met—when your function does not decrease fast enough. You can still use this dispersion relation; you just have to do one subtraction or two subtractions.
+This is called a **once-subtracted dispersion relation**. The easiest subtraction is at zero. Then $a = 0$, and you have just $G(S) = G(0) + \frac{S}{\pi}$ (and then an extra $S$ for the integration). That's what you have to do when your condition for the high circle is not met—when your function does not decrease fast enough. You can still use this dispersion relation; you just have to do one subtraction or two subtractions.
 
 The twice-subtracted version would be putting this to power two and then having it as well. Quite amazing—I can't believe it works.
 
 ---
 
-Just look here. I can use this formulation for my \( \sqrt{1 - x} \) function.
+Just look here. I can use this formulation for my $\sqrt{1 - x}$ function.
 
-> [!NOTE]
-> **Example with \(\sqrt{1-x}\)** (applied dispersion relation):
-> \[
-> \sqrt{1 - x} = 1 + \frac{x}{\pi} \int_{1}^{\infty} \frac{\text{Im}\, \sqrt{1 - x'}}{x'(x' - x)} \, dx'
-> \]
-> where \( \text{Im}\, \sqrt{1 - x'} \) is non-zero only for \( x' > 1 \).
-
+::: callout-note
+**Example with $\sqrt{1-x}$** (applied dispersion relation):
+$$
+\sqrt{1 - x} = 1 + \frac{x}{\pi} \int_{1}^{\infty} \frac{\text{Im}\, \sqrt{1 - x'}}{x'(x' - x)} \, dx'
+$$
+where $\text{Im}\, \sqrt{1 - x'}$ is non-zero only for $x' > 1$.
+:::
 (Maybe just a technical question: By real analyticity, you mean that the function is real for real inputs up to the threshold?)
 
 Exactly. And this implies the relation.
@@ -281,7 +284,7 @@ So I think we can also understand this in a way that suddenly—where is my draw
 
 The cut can only—analyticity can only introduce an imaginary part consistently from both sides of the cut, given that it was real here. Right? Would you believe that?
 
-So \( \sqrt{1 - x} \) is equal to the integral of \( \frac{\text{Im}\sqrt{1 - x'}}{\pi(x' - x)} \). And then I have to add here the value at zero, which is 1. Quite nontrivial—like, would you believe that if you just saw it? But mathematically, it works.
+So $\sqrt{1 - x}$ is equal to the integral of $\frac{\text{Im}\sqrt{1 - x'}}{\pi(x' - x)}$. And then I have to add here the value at zero, which is 1. Quite nontrivial—like, would you believe that if you just saw it? But mathematically, it works.
 
 This is because we started with an analytic function. So this is analytic. We do the circle integral, we use... This can be evaluated explicitly. I could actually tell you what this imaginary part of the square root is—it's just a Heaviside step function. So we could just have a real expression.
 
@@ -324,9 +327,9 @@ $$
 
 The denominator is the $\mu^+\mu^-$ cross section calculated theoretically.
 
-> [!NOTE]
-> The $R$ ratio compares hadronic production to muon pair production in $e^+e^-$ collisions, serving as a probe for QCD dynamics and resonances.
-
+::: callout-note
+The $R$ ratio compares hadronic production to muon pair production in $e^+e^-$ collisions, serving as a probe for QCD dynamics and resonances.
+:::
 This is not directly from experimental measurements, but the $R$ ratio we use here is consistent with experimental data.
 The theoretical calculations for this process are very close to what is measured in experiments.
 The exercise sheet provides the minor differences that arise.
@@ -365,13 +368,13 @@ They don’t work in the space domain with $Q^2$, but in the **time domain**.
 They interrelate the two and calculate the part of this quantity that’s also possible to evaluate theoretically.
 And they disagree.
 
-> [!IMPORTANT]
-> **Key Formula**: The Hadronic Vacuum Polarization (HVP) contribution to muon $g-2$ is given by:
-> $$
-> a_\mu^{\text{HVP}} = \left(\frac{\alpha}{\pi}\right)^2 \int_{m_\pi^2}^\infty \frac{ds}{s} K(s) R(s)
-> $$
-> where $K(s)$ is a kernel function and $R(s)$ is the hadronic $R$-ratio from $e^+e^- \to \text{hadrons}$.
-
+::: callout-important
+**Key Formula**: The Hadronic Vacuum Polarization (HVP) contribution to muon $g-2$ is given by:
+$$
+a_\mu^{\text{HVP}} = \left(\frac{\alpha}{\pi}\right)^2 \int_{m_\pi^2}^\infty \frac{ds}{s} K(s) R(s)
+$$
+where $K(s)$ is a kernel function and $R(s)$ is the hadronic $R$-ratio from $e^+e^- \to \text{hadrons}$.
+:::
 Lattice disagrees with **phenomenological calculations** using perturbative methods, which calls part of this technique into question.
 This isn’t purely theoretical—there’s experimental input, specifically the $R$-ratio, which has uncertainties.
 These uncertainties are still large, and they dominate the error.
@@ -402,14 +405,15 @@ The hadronic parts are the most difficult to calculate.
 The uncertainty was **600 ppb** (parts per billion), but new work has reduced it to 200 or even 100 ppb.
 Still, it remains the dominant source of uncertainty—we know other contributions much better.
 
-> [!NOTE]
-> **Light-by-light (HLBL)** scattering involves 64 terms and is even more challenging due to virtual photons:
-> $$
-> a_\mu^{\text{HLBL}} \propto \int d^4q_1 \, d^4q_2 \, \mathcal{K}(q_1, q_2) \Pi^{\mu\nu\rho\sigma}(q_1, q_2)
-> $$
-> where $\Pi^{\mu\nu\rho\sigma}$ is the hadronic light-by-light scattering amplitude.
-
+::: callout-note
+**Light-by-light (HLBL)** scattering involves 64 terms and is even more challenging due to virtual photons:
+$$
+a_\mu^{\text{HLBL}} \propto \int d^4q_1 \, d^4q_2 \, \mathcal{K}(q_1, q_2) \Pi^{\mu\nu\rho\sigma}(q_1, q_2)
+$$
+where $\Pi^{\mu\nu\rho\sigma}$ is the hadronic light-by-light scattering amplitude.
+:::
 **Logistics:**
+
 - **Thursday**: Obstacle course (canceled if weather doesn’t improve).
 - **Friday at 2:00**: Project meeting (everyone invited, Swiss sweets provided).
 
@@ -422,12 +426,13 @@ I was wondering—maybe a question for a problem of mine. Maybe you can answer i
 
 I'm currently looking for a book explaining the **representation theory of SU(N)**. I read in a textbook how you get representations from **Young tableaux** using representations of $S_n$. Very exciting.
 
-> [!NOTE]
-> The connection between SU(N) representations and symmetric groups $S_n$ via Young tableaux involves several key formulas:
-> - Dimension of SU(N) reps: $\text{dim}(λ) = \prod_{1 ≤ i < j ≤ N} \frac{λ_i - λ_j + j - i}{j - i}$
-> - Hook length formula for $S_n$: $\text{dim}(λ) = \frac{n!}{\prod_{(i,j) ∈ λ} h_{i,j}}$
-> - Branching rules and tensor products follow Littlewood-Richardson coefficients.
+::: callout-note
+The connection between SU(N) representations and symmetric groups $S_n$ via Young tableaux involves several key formulas:
 
+- Dimension of SU(N) reps: $\text{dim}(λ) = \prod_{1 ≤ i < j ≤ N} \frac{λ_i - λ_j + j - i}{j - i}$
+- Hook length formula for $S_n$: $\text{dim}(λ) = \frac{n!}{\prod_{(i,j) ∈ λ} h_{i,j}}$
+- Branching rules and tensor products follow Littlewood-Richardson coefficients.
+:::
 And it's impossible to find a source for that. Z? That's a book? What do you mean, Z? That's why I went to [Yugo?].
 
 This is rather **good level**.

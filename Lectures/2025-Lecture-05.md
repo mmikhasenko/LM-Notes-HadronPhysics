@@ -9,20 +9,20 @@ We will also go into depth on the **kinematics of different reactions**, discuss
 
 ---
 
-> [!NOTE]
-> Key formulas referenced in this lecture:
->
-> 1. **Invariant Mass** (Mandelstam variable $s$):
->    $$ s = (p_1 + p_2)^2 = (E_1 + E_2)^2 - (\vec{p}_1 + \vec{p}_2)^2 $$
->
-> 2. **Decay Width**:
->    $$ \Gamma = \frac{1}{\tau} = \frac{|\mathcal{M}|^2}{2\pi} \rho_f $$
->
-> 3. **Lorentz Invariant Phase Space**:
->    $$ d\Phi_n = (2\pi)^4 \delta^4\left(P - \sum_{i=1}^n p_i\right) \prod_{i=1}^n \frac{d^3p_i}{(2\pi)^3 2E_i} $$
->
-> These are foundational for understanding reaction kinematics and phase space representations in hadron spectroscopy.
+::: callout-note
+Key formulas referenced in this lecture:
 
+1. **Invariant Mass** (Mandelstam variable $s$):
+   $$ s = (p_1 + p_2)^2 = (E_1 + E_2)^2 - (\vec{p}_1 + \vec{p}_2)^2 $$
+
+2. **Decay Width**:
+   $$ \Gamma = \frac{1}{\tau} = \frac{|\mathcal{M}|^2}{2\pi} \rho_f $$
+
+3. **Lorentz Invariant Phase Space**:
+   $$ d\Phi_n = (2\pi)^4 \delta^4\left(P - \sum_{i=1}^n p_i\right) \prod_{i=1}^n \frac{d^3p_i}{(2\pi)^3 2E_i} $$
+
+These are foundational for understanding reaction kinematics and phase space representations in hadron spectroscopy.
+:::
 ### Flavor Multiplets, Isospin Symmetry, and Gauge Symmetry in Baryons
 
 
@@ -37,8 +37,9 @@ So I would ask you guys in the first row to translate the words one by one.
 In this context, *what does "flavor" refer to here?* It's a **quantum number** for the multiplet.
 There are many quantum numbers. This is a quantum number—the **flavor quantum number**.
 
-> [!NOTE]
-> Flavor quantum numbers include: **up, down, strange, charm** (not to be confused with **color** charges like red, green, blue).
+::: callout-note
+Flavor quantum numbers include: **up, down, strange, charm** (not to be confused with **color** charges like red, green, blue).
+:::
 
 - **Multiplet**:
 *What is a multiplet?* There are singlets and multiplets.
@@ -74,17 +75,18 @@ For baryons composed of three quarks:
 $$
 3 \otimes 3 \otimes 3 = 10 \oplus 8 \oplus 8 \oplus 1
 $$
-(or alternatively mentioned as \(6 \oplus \bar{3}\) for 3 ⊗ 3).
+(or alternatively mentioned as $6 \oplus \bar{3}$ for 3 ⊗ 3).
 
 ---
 
 *What are possible spins for a two-pion system?*
-- **Pion**: Quantum numbers \(0^-\).
+
+- **Pion**: Quantum numbers $0^-$.
 - **D-wave spin**:
 $$
 J^P = 2^+
 $$
-(from combining \(L = 2\) with total intrinsic spin \(S = 0\)).
+(from combining $L = 2$ with total intrinsic spin $S = 0$).
 
 ---
 
@@ -103,9 +105,9 @@ $$
 x^\mu \rightarrow \Lambda^\mu_\nu x^\nu \quad \text{(applied uniformly)}
 $$
 
-> [!NOTE]
-> In gravity, Lorentz symmetry can be promoted to **local symmetry**, but here it is treated as global.
-
+::: callout-note
+In gravity, Lorentz symmetry can be promoted to **local symmetry**, but here it is treated as global.
+:::
 ### Classes of Particle Production Experiments: Fixed Target vs. Collider Setups
 
 
@@ -116,16 +118,19 @@ I called the first section *"A Dictionary and Slang of Particle Production,"* bu
 
 When we talk about **production kinematics**, it makes sense to distinguish a few different classes.
 We will see this classification depending on:
+
 - The **reaction kinematics**
 - The **practicalities** of the experiments
 
 ---
 
 I want to start by separating the two different classes of experiments:
+
 1. **Fixed target experiments**: where you install the target and shoot it with a beam.
 2. **Collider experiments**: where you collide two beams.
 
 There are practical differences in these reactions:
+
 - The energy one can achieve is **much higher** when you collide two particles.
 - However, the decay products are also **more boosted** in a fixed target experiment.
 
@@ -134,28 +139,32 @@ Depending on what you want to achieve—either **higher collision energy** or **
 ---
 
 Most of the time, fixed target experiments study reactions that were **historically easier to perform**.
+
 - You just need the target and the beam, and the setup is much simpler.
 - Essentially, you only care about the **beam production**.
 - The two particles are directed to your experiment, and the target is a simple fixed setup.
 
-> [!NOTE]
-> The **interaction rate** in fixed target experiments can be expressed as:
-> $$R = \Phi \cdot \sigma \cdot n \cdot L$$
-> where:
-> - $\Phi$ = beam flux
-> - $\sigma$ = interaction cross section
-> - $n$ = target number density
-> - $L$ = target length
+::: callout-note
+The **interaction rate** in fixed target experiments can be expressed as:
+$$R = \Phi \cdot \sigma \cdot n \cdot L$$
+where:
 
+- $\Phi$ = beam flux
+- $\sigma$ = interaction cross section
+- $n$ = target number density
+- $L$ = target length
+:::
 ---
 
 As an example, consider experiments with **fixed target particle production** and **hadron spectroscopy studies**.
 I would name the **GlueX experiment** that Farah introduced last time, where we have:
+
 - A **photon beam** on a **hydrogen target**
 - **Pion or proton beams**
 - Sometimes a **mixed beam of K and N**
 
 There are different targets:
+
 - **Lead**
 - **Front targets**
 - **Ammonia** (for polarized targets)
@@ -164,23 +173,27 @@ But mostly, it’s a **hydrogen target**.
 ---
 
 To give you an idea, **hydrogen targets** are the most popular in hadron spectroscopy.
+
 - They look like a **1-meter pipe, 30 cm long**, filled with **liquid hydrogen**—which is **highly explosive**.
 - Handling this apparatus requires **great care**.
 - The hydrogen must be kept **liquid under high pressure**.
 - Not every experiment can operate with such a setup.
 
-> [!CAUTION]
-> At CERN, setting up **COMPASS** took years of effort to pass security inspections for a liquid hydrogen target.
-> - If it exploded, it could destroy the **entire building**.
-> - With such a volume of liquid hydrogen (e.g., 1 meter long and 30 cm in diameter), it would be a **major disaster**.
+::: callout-caution
+At CERN, setting up **COMPASS** took years of effort to pass security inspections for a liquid hydrogen target.
 
+- If it exploded, it could destroy the **entire building**.
+- With such a volume of liquid hydrogen (e.g., 1 meter long and 30 cm in diameter), it would be a **major disaster**.
+:::
 ---
 
 The beam interacts with protons in the hydrogen target somewhere inside it.
+
 - By reconstructing **final-state particles** and tracing them back, you can determine the exact **interaction vertex**.
 - If you collect data for days and plot the vertex distribution, it matches the **target shape**.
 
 One funny observation is that the target isn’t always filled to **100%**.
+
 - If you plot the **XY coordinates**, you see empty regions where there are no vertices.
 - This is a **transverse cut** of the target.
 
@@ -189,34 +202,39 @@ $$
 \frac{dN}{dr} \propto \exp\left(-\frac{r^2}{2\sigma_r^2}\right)
 $$
 and is slightly **wider than the target** in COMPASS, so the entire target is exposed.
+
 - Ideally, the beam should be **more focused** to avoid wasting particles that miss the target.
 
 ---
 
 A **beryllium target** is simpler—just a **3 cm disk**, a few centimeters thick.
+
 - It’s the **cheapest and easiest** target to use.
 - At this thickness, it provides a **significant particle production rate**.
 
 **Lead targets** have even higher **Z**, so the cross section is larger.
+
 - The cross section scales with **Z** (the number of protons in the target):
 $$\sigma \propto Z^\alpha$$
 where $\alpha$ is typically **1-2** depending on the process.
+
 - For some physics programs, **heavy-Z targets** are preferred.
 
 ---
 
 Earlier, we discussed how the **Buicks setup** differs slightly.
 To produce photons for experiments, you use **bremsstrahlung** from electron scattering:
+
 - When electrons pass through a **thin foil** (a few hundred micrometers), photons are emitted.
 - The electron beam is converted into a **photon beam**.
 - Electrons that emit bremsstrahlung lose momentum and are deflected by a magnet, while the photons continue forward.
 - A **magnetic field** placed after the foil removes all electrons, leaving only the photon beam to hit the target.
 
-> [!NOTE]
-> The **bremsstrahlung cross section** for photon production is:
-> $$\frac{d\sigma}{dE_\gamma} \propto \frac{Z^2}{E_\gamma}$$
-> where $Z$ is the atomic number of the target and $E_\gamma$ is the photon energy.
-
+::: callout-note
+The **bremsstrahlung cross section** for photon production is:
+$$\frac{d\sigma}{dE_\gamma} \propto \frac{Z^2}{E_\gamma}$$
+where $Z$ is the atomic number of the target and $E_\gamma$ is the photon energy.
+:::
 ### Exclusive vs. Inclusive Processes and Kinematic Frames in Particle Production
 
 
@@ -237,11 +255,12 @@ Inclusive processes average over different production mechanisms and in turn pro
 
 ---
 
-> [!NOTE]
-> **Key distinction**:
-> - **Exclusive**: All particles accounted for.
-> - **Inclusive**: Only specific particles of interest are tracked, others are averaged over.
+::: callout-note
+**Key distinction**:
 
+- **Exclusive**: All particles accounted for.
+- **Inclusive**: Only specific particles of interest are tracked, others are averaged over.
+:::
 ---
 
 If you want to see how this **strangeness** is produced—well, depending on the case, it would probably be better to use **muons** here.
@@ -367,10 +386,11 @@ Two important concepts to introduce are **production** and **decays**:
 1. **Prompt production**: Hadrons produced directly from the colliding beams (primary vertex).
 2. **Delayed production**: Long-lived particles fly away from the primary vertex and decay later.
 
-> [!NOTE]
-> The **strong interaction** is called "strong" because it makes the cross section large and processes happen quickly. The **weak interaction** is "weak" because it has a smaller cross section, leading to longer lifetimes for particles decaying weakly.
-
+::: callout-note
+The **strong interaction** is called "strong" because it makes the cross section large and processes happen quickly. The **weak interaction** is "weak" because it has a smaller cross section, leading to longer lifetimes for particles decaying weakly.
+:::
 For example:
+
 - **B meson**, **D meson**, **Lambda baryon**, **Omega baryons** all decay weakly because the strong interaction cannot change flavor or color.
 
 ---
@@ -384,10 +404,10 @@ When a particle decays weakly, its lifetime is large, allowing it to fly away fr
 
 - **Charm particles**: Shorter travel distance ($\sim 5\,\text{mm}$).
 
-> [!IMPORTANT]
-> The distance a particle travels is **not fixed**—it follows an **exponential distribution** due to quantum decay probabilities:
-> $$ N(t) = N_0 e^{-\lambda t} $$
-
+::: callout-important
+The distance a particle travels is **not fixed**—it follows an **exponential distribution** due to quantum decay probabilities:
+$$ N(t) = N_0 e^{-\lambda t} $$
+:::
 ---
 
 In experiments, we reconstruct decays by tracking final-state particles (e.g., pions). Key steps:
@@ -410,9 +430,9 @@ The spectrum shows:
 2. **Background**: Combinatorial noise from random track associations.
 3. **Secondary peaks**: Misidentified particles.
 
-> [!NOTE]
-> The **multiplicity** of proton-proton collisions at the LHC ($7\,\text{TeV}$) is **a few thousand particles per event**, leading to high combinatorics in track reconstruction.
-
+::: callout-note
+The **multiplicity** of proton-proton collisions at the LHC ($7\,\text{TeV}$) is **a few thousand particles per event**, leading to high combinatorics in track reconstruction.
+:::
 ---
 
 Theoretically, the spectrum should be a **delta function** at $M_B$, but experimental uncertainties widen it into a Gaussian.
@@ -439,10 +459,10 @@ That's why experiments need good particle identification detectors, like ring-im
 
 ---
 
-> [!IMPORTANT]
-> **Key Challenge in PID**:
-> Misidentifying particles (e.g., kaons as pions) leads to incorrect energy calculations and distorted invariant mass reconstructions. Proper PID detectors are essential to suppress this background.
-
+::: callout-important
+**Key Challenge in PID**:
+Misidentifying particles (e.g., kaons as pions) leads to incorrect energy calculations and distorted invariant mass reconstructions. Proper PID detectors are essential to suppress this background.
+:::
 ---
 
 In experiments, simulation is crucial. We model collisions, decays, and detector interactions using computer programs.
@@ -489,9 +509,10 @@ Here’s a **COMPASS measurement example**. The mass distribution in a 2D plot r
 
 ---
 
-> [!NOTE]
-> **Phase Space & Dalitz Plots**:
-> - Two-body phase space reduces to angular integrals after momentum conservation.
-> - Three-body phase space decomposes into sequential two-body systems with intermediate masses.
-> - The Kibble function $\Phi \leq 0$ defines the physical boundary of the Dalitz plot.
+::: callout-note
+**Phase Space & Dalitz Plots**:
 
+- Two-body phase space reduces to angular integrals after momentum conservation.
+- Three-body phase space decomposes into sequential two-body systems with intermediate masses.
+- The Kibble function $\Phi \leq 0$ defines the physical boundary of the Dalitz plot.
+:::

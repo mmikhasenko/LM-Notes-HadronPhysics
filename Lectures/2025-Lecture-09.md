@@ -4,6 +4,7 @@
 **Lecture number 9.**
 We start with a recap.
 Let's discuss the problems:
+
 - Who is finished with the first?
 - Who is finished with the second?
 Good.
@@ -12,21 +13,21 @@ Good.
 
 What's the name of the area of the decay that we have here? The usual representation of the decay in the coordinates of the invariants is called the **Dalitz plot**. But you can use the same type of coordinates for the **crossed process**, for the **scattering process**.
 
-> [!IMPORTANT]
-> The **Källén function** (or triangle function) defines the kinematic boundary for both decay and scattering processes:
-> \[
-> \lambda(S, T, U) = S^2 + T^2 + U^2 - 2ST - 2SU - 2TU = 0
-> \]
-
+::: callout-important
+The **Källén function** (or triangle function) defines the kinematic boundary for both decay and scattering processes:
+$$
+\lambda(S, T, U) = S^2 + T^2 + U^2 - 2ST - 2SU - 2TU = 0
+$$
+:::
 I don't want you to know the equation by heart, but rather I want to stress that the same equation would be relevant not just for the Dalitz plot and the decay region, but exactly the same equation would determine the border of the scattering process.
 
 ---
 
 Can anyone tell me what equation that is? It's the **Källén function**.
-The Källén function of \( S, T, U \) is equal to zero:
-\[
+The Källén function of $S, T, U$ is equal to zero:
+$$
 \lambda(S, T, U) = 0
-\]
+$$
 
 The Källén function is the determinant of the **Chew-Low functions**. The Chew-Low function has the mass of the decaying particle, the pair mass of the two particles, and then the other one.
 
@@ -35,58 +36,63 @@ The Källén function is the determinant of the **Chew-Low functions**. The Chew
 If you want to plot the area, you just look for the solutions in the plane.
 Is this just common knowledge? It's easy to derive—either for scattering or for the decay.
 
-The fact that it describes both appears once you look at the equations. Essentially, changing one particle to the other side does not change the kinematics. This comes from considering the scattering angle and requiring that the scattering angle is either \( +1 \) or \( -1 \), which determines the border:
-\[
+The fact that it describes both appears once you look at the equations. Essentially, changing one particle to the other side does not change the kinematics. This comes from considering the scattering angle and requiring that the scattering angle is either $+1$ or $-1$, which determines the border:
+$$
 \cos \theta = \pm 1
-\]
+$$
 
 ---
 
 The meaning of this scattering angle changes slightly when you go from the scattering domain to the decay domain. But it's always seen in the **rest frame of two particles**.
 
 For the **S channel**:
+
 - Here's particle 1,
 - Here's particle 2,
 - 1, 2, 3.
 
-This is the cosine theta. The condition for the border is determined by the equations where \( \cos \theta = \pm 1 \). It's the same for the decay and for the scattering.
+This is the cosine theta. The condition for the border is determined by the equations where $\cos \theta = \pm 1$. It's the same for the decay and for the scattering.
 
 ---
 
 The only difference is the **direction of the arrow**.
+
 - For the **decay**, two particles collide, and the system you consider is the center of mass for the whole system—that's for the scattering.
 - For the **decay**, it's just a subsystem of the final state.
 
-The way you derive it: you write the cosine in terms of the invariants, set \( \cos \theta = 1 \), and arrive at the same equation.
+The way you derive it: you write the cosine in terms of the invariants, set $\cos \theta = 1$, and arrive at the same equation.
 
 ---
 
-> [!NOTE]
-> The **scattering angle** \(\theta\) in the center-of-mass frame relates to invariants via:
-> \[
-> \cos \theta = \frac{t - u}{\sqrt{\lambda(s, m_1^2, m_2^2)}}
-> \]
-> where \(s, t, u\) are Mandelstam variables and \(\lambda\) is the Källén function.
-
+::: callout-note
+The **scattering angle** $\theta$ in the center-of-mass frame relates to invariants via:
+$$
+\cos \theta = \frac{t - u}{\sqrt{\lambda(s, m_1^2, m_2^2)}}
+$$
+where $s, t, u$ are Mandelstam variables and $\lambda$ is the Källén function.
+:::
 ### Scattering Kinematics, Unitarity, and the Optical Theorem
 
 
 
-> [!NOTE]
-> Key formulas discussed in this section:
-> - Breakup momentum (phase space factor):
->   $$
->   \rho = \frac{1}{16\pi^2} \cdot \frac{2p}{\sqrt{s}}
->   $$
-> - Unitarity condition for partial wave amplitude:
->   $$
->   \text{Im}\, A_l(s) = \rho(s) |A_l(s)|^2
->   $$
-> - Optical theorem:
->   $$
->   \text{Im}\, A(s, t=0) = 2\sqrt{s}\, p\, \sigma_{\text{tot}}(s)
->   $$
+::: callout-note
+Key formulas discussed in this section:
 
+- Breakup momentum (phase space factor):
+  $$
+  \rho = \frac{1}{16\pi^2} \cdot \frac{2p}{\sqrt{s}}
+  $$
+
+- Unitarity condition for partial wave amplitude:
+  $$
+  \text{Im}\, A_l(s) = \rho(s) |A_l(s)|^2
+  $$
+
+- Optical theorem:
+  $$
+  \text{Im}\, A(s, t=0) = 2\sqrt{s}\, p\, \sigma_{\text{tot}}(s)
+  $$
+:::
 I'm surprised you need scattering.
 Most of the variables are defined for momentum, and then you use energy conservation.
 You can introduce Källén functions there—or tuning functions.
@@ -168,13 +174,13 @@ More accurately, you have to open a computational notebook—otherwise, it's int
 ---
 
 
-> [!IMPORTANT]
-> The optical theorem relates the forward scattering amplitude to the total cross-section:
-> $$
-> \text{Im}\, A(s, t=0) = 2\sqrt{s}\, p\, \sigma_{\text{tot}}(s)
-> $$
-> This is derived from unitarity and is valid in the elastic region.
-
+::: callout-important
+The optical theorem relates the forward scattering amplitude to the total cross-section:
+$$
+\text{Im}\, A(s, t=0) = 2\sqrt{s}\, p\, \sigma_{\text{tot}}(s)
+$$
+This is derived from unitarity and is valid in the elastic region.
+:::
 Questions here quickly: the second unitarity equations.
 We consider the elastic scattering process.
 Shall we break this down?
@@ -320,11 +326,13 @@ Here is the analog of this, related to the transition matrix element amplitude w
 
 - **Unitarity for $A$**:
 The imaginary part of the amplitude is related to the amplitude squared in the elastic region.
+
 - **Partial wave unitarity**:
 $$
 \text{Im}\, A_l(s) = \rho(s) |A_l(s)|^2
 $$
 Here, $A_l(s)$ depends only on $S$, and partial waves don't mix—only the same $L$ appears on both sides.
+
 - **Optical theorem**:
 Relates the forward scattering amplitude to the total cross-section:
 $$
@@ -360,9 +368,9 @@ If a function depends on $s$ and $t$, this function must extend in validity beyo
 
 ---
 
-> [!IMPORTANT]
-> **Key Insight**: The scattering amplitude $\mathcal{A}(s,t)$ is a complex function of Mandelstam variables $s$ and $t$, which can be analytically continued into the complex plane. This allows us to study singularities (poles, branch cuts) that reveal physical properties like resonances.
-
+::: callout-important
+**Key Insight**: The scattering amplitude $\mathcal{A}(s,t)$ is a complex function of Mandelstam variables $s$ and $t$, which can be analytically continued into the complex plane. This allows us to study singularities (poles, branch cuts) that reveal physical properties like resonances.
+:::
 ---
 
 Then, we consider the amplitude as a complex function of its variables—the scattering amplitude.
@@ -407,13 +415,14 @@ And then the line that connects the branch points is called the branch cut.
 
 ---
 
-> [!NOTE]
-> **Branch Cut Examples**:
-> - $\sqrt{z}$: Branch cut along $(-\infty, 0]$
-> - $\log z$: Branch cut along $(-\infty, 0]$
-> - $\sqrt{z - a}$: Branch cut from $a$ to $-\infty$
-> - $\sqrt{(z - a)(z - b)}$: Branch cut connecting $a$ and $b$
+::: callout-note
+**Branch Cut Examples**:
 
+- $\sqrt{z}$: Branch cut along $(-\infty, 0]$
+- $\log z$: Branch cut along $(-\infty, 0]$
+- $\sqrt{z - a}$: Branch cut from $a$ to $-\infty$
+- $\sqrt{(z - a)(z - b)}$: Branch cut connecting $a$ and $b$
+:::
 ---
 
 Let me draw a few examples convenient to discuss.
@@ -521,15 +530,15 @@ No, it’s actually $+i\pi$.
 We computed this already—it’s $-i\pi$.
 If we add $i\pi$, we get the value on that side: $F_2 = +i\pi$, ensuring analytic continuation.
 
-> [!NOTE]
-> The logarithm function on different sheets:
-> \[
-> F_1(-1 + i\epsilon) = \log(-1 + i\epsilon) = i\pi
-> \]
-> \[
-> F_2(-1 - i\epsilon) = \log(-1 - i\epsilon) = -i\pi
-> \]
-
+::: callout-note
+The logarithm function on different sheets:
+$$
+F_1(-1 + i\epsilon) = \log(-1 + i\epsilon) = i\pi
+$$
+$$
+F_2(-1 - i\epsilon) = \log(-1 - i\epsilon) = -i\pi
+$$
+:::
 Why is it Sheet 3 right away?
 It’s not Sheet 3—it’s just labeling.
 You can call it 2 or whatever.
@@ -549,9 +558,9 @@ Analyticity is a special type of continuity—once you move away from the real a
 If the imaginary part grows in the positive direction above the axis, it must grow in the negative direction below.
 This is the **Schwarz reflection principle**:
 
-\[
+$$
 f(z^*) = f(z)^*
-\]
+$$
 
 The star denotes **complex conjugation**—flipping the imaginary part.
 
@@ -561,9 +570,9 @@ The function becomes non-real only when a branch point and cut appear.
 The imaginary part develops oppositely on either side of the cut: positive on one side, negative on the other.
 The **discontinuity** across the cut is twice the imaginary part because they grow in opposite directions.
 
-\[
+$$
 \text{Disc}\, f(z) = 2i\,\text{Im}\, f(z)
-\]
+$$
 
 Now, the second branch cut opens.
 For analytic functions, the domain must be open.
@@ -576,9 +585,9 @@ If we fix $T$ (e.g., for 30-degree scattering), $A$ becomes a function of $S$ al
 In the complex $S$-plane, $A$ has thresholds for the $S$- and $U$-channels and a real segment.
 The Schwarz reflection principle applies, linking the discontinuity to the imaginary part:
 
-\[
+$$
 \text{Disc}\, A(s) = 2i\,\text{Im}\, A(s)
-\]
+$$
 
 This connects to **unitarity**, as the imaginary part relates to the discontinuity.
 
@@ -607,9 +616,9 @@ These are **coupled channels**—their scattering problems are interconnected.
 The amplitude $A_{ab}(s)$ describes scattering from channel $a$ to $b$.
 For example:
 
-\[
+$$
 A_{\Xi\pi \to \Xi\pi}(s), \quad A_{\Lambda K \to \Lambda K}(s), \quad A_{\Xi\pi \to \Lambda K}(s)
-\]
+$$
 
 All these amplitudes share the same complex plane with branch points for each channel.
 
@@ -634,9 +643,9 @@ With this hypothesis, you get disconnected regions, but then you can elevate it 
 
 The introduction in the Martin experiment suggests that these are all interrelated objects—different amplitudes that look different but are connected.
 
-> [!NOTE]
-> **Why complex angles?** The function $S$ is a complex function of two variables. It’s complicated to treat them simultaneously. $T$ is almost an angle—it depends on the angle. It’s a function of two variables, and both could be complex.
-
+::: callout-note
+**Why complex angles?** The function $S$ is a complex function of two variables. It’s complicated to treat them simultaneously. $T$ is almost an angle—it depends on the angle. It’s a function of two variables, and both could be complex.
+:::
 We haven’t discussed this, but causality seems to relate all these different regions. Are you asking how causality acts in the multivariable case? How does it lead to analyticity?
 
 In two dimensions, you go to four dimensions because $s$ and $t$ will be complex. Instead of talking about the domain of real analyticity where you have a segment of real values, you need a domain where the function is real and exists.
@@ -676,6 +685,7 @@ For less competitive momenta, the imaginary part of the amplitude is proportiona
 ---
 
 Key points:
+
 - **Causality** restricts singularities to the real axis.
 - **Analyticity** is enforced by causality.
 - The **optical theorem** links unitarity and scattering amplitudes.

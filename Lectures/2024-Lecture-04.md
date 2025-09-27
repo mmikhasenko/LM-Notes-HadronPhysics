@@ -13,6 +13,7 @@ For the second question, I'm referring to **isospin fermions**. Let's address th
 ---
 
 First, what's the quark content of the Ω⁻? It consists of **three strange quarks**. What is the wave function? The total wave function is always a product of four parts, though not necessarily a direct product. It lives in the tensor product space of:
+
 - Color coordinates
 - Isospin
 - Spin
@@ -22,28 +23,28 @@ Flavor is trivial here, so we focus on **spin**. Two quarks should be spin-up, a
 
 The Ω⁻ exists in a $J=3/2^+$ state. What's the multiplicity? For spin-$3/2$, how many projections are there?
 
-> [!NOTE]
-> The **spin multiplicity** for $J=3/2$ is given by:
-> ```latex
-> \text{Multiplicity} = 2J + 1 = 4 \quad \text{(for } J=\tfrac{3}{2}\text{)}
-> ```
-
+::: callout-note
+The **spin multiplicity** for $J=3/2$ is given by:
+$$
+\text{Multiplicity} = 2J + 1 = 4 \quad \text{(for } J=\tfrac{3}{2}\text{)}
+$$
+:::
 To obtain all components, act with a lowering operator on the maximal projection state. For the **magnetic moment calculation**, we only need one component because the magnetic moment is proportional to spin.
 
 The magnetic moment operator is:
-```latex
+$$
 \hat{\mu}_z = \sum_{i=1}^3 \mu_{iz} = \sum_{i=1}^3 g_i \left(\frac{e \hbar}{2 m_i c}\right) S_{iz}
-```
+$$
 Here, the **g-factor** is the charge number. Since all quarks have charge $-1/3$, the total is $-1$. The magnetic moment is then:
-```latex
+$$
 \mu_{\Omega^-} = -3 \left(\frac{e \hbar}{2 m_s c}\right)
-```
+$$
 where $m_s$ is the strange quark mass (~500 MeV).
 
 The Ω⁻ mass is roughly three times the strange quark mass:
-```latex
+$$
 M_{\Omega^-} \approx 3m_s \approx 1500 \text{ MeV}
-```
+$$
 The magnetic moment is similar to the electron's but **1000 times smaller** due to the larger mass.
 
 **Key takeaway**: For simple wave functions, calculating the magnetic moment is straightforward. You only need the maximal projection state.
@@ -51,31 +52,33 @@ The magnetic moment is similar to the electron's but **1000 times smaller** due 
 ---
 
 The ground state of the Σ baryon has:
+
 - A light diquark in a **spin-1** configuration
 - A **spin-$1/2^+$** heavy quark
 
 The isospin multiplicity is:
-```latex
+$$
 \text{Multiplicity} = 2I + 1 = 3 \quad \text{(for } I=1\text{)}
-```
+$$
 This gives three charge partners: $+1$, $0$, and $-1$.
 
 For the **excitation pattern**, we combine the spins of:
+
 1. The light diquark (spin-1)
 2. The heavy quark (spin-$1/2$)
 
 For the **S-wave**, we get two states: $1/2^+$ and $3/2^+$.
 
 For the **P-wave ($L=1$)**, combining spins gives:
-```latex
+$$
 J = \tfrac{1}{2}^-, \tfrac{3}{2}^-
-```
+$$
 The multiplicity for the P-block is **5**, while the S-block has **2 states**.
 
 The **hyperfine splitting** energy scale is suppressed by the heavy quark mass:
-```latex
+$$
 \Delta E_{\text{hyperfine}} \propto \frac{1}{m_Q}
-```
+$$
 
 These states correspond to physical particles listed in the PDG. The Σ baryon (300) was discovered roughly **10 years ago**.
 
@@ -142,12 +145,13 @@ It’s at the Beijing Electron-Positron Collider (BEPC), colliding electrons and
 BES studies hadrons in the charmonium and tau regions.
 The collision produces a virtual photon, which couples to hadrons.
 
-> [!NOTE]
-> **Quantum number selection rules for $e^+e^- \to \text{hadrons}$**:
-> Electrons and positrons have spin-1/2, so their collision can only produce spin-1 states (not spin-0).
-> The parity is also fixed, so BES explores hadrons with $J^P = 1^-$.
-
+::: callout-note
+**Quantum number selection rules for $e^+e^- \to \text{hadrons}$**:
+Electrons and positrons have spin-1/2, so their collision can only produce spin-1 states (not spin-0).
+The parity is also fixed, so BES explores hadrons with $J^P = 1^-$.
+:::
 BES operates in two modes:
+
 1. **Resonance peak**: Collecting data at specific energies (e.g., $J/\psi$ peak).
 2. **Energy scan**: Measuring cross-sections by tuning beam energy.
 
@@ -189,22 +193,23 @@ $$
 ---
 
 The charmonium spectrum includes:
+
 - $J/\psi(1S)$ ($1^-$) and $\eta_c(1S)$ ($0^-$)
 - $\psi(2S)$ ($1^-$)
 - $P$-wave states: $\chi_{cJ}$ ($J = 0,1,2$, $J^P = 0^+,1^+,2^+$).
 
-### Reconstructing \( e^+e^- \) Annihilation, Bottomonium Spectroscopy, and Hadron Production at Colliders
+### Reconstructing $e^+e^-$ Annihilation, Bottomonium Spectroscopy, and Hadron Production at Colliders
 
 
 To reconstruct the schematics before we move away from Belle II, let me relate to what we just discussed.
 The process remains the same: **$e^+e^-$ annihilation**. The cross section $\sigma(e^+ e^- \to \text{everything})$ is the **total cross section**.
 
-> [!NOTE]
-> **Key formula**: The total cross section for electron-positron annihilation is given by:
-> $$
-> \sigma(e^+ e^- \to \text{everything})
-> $$
-
+::: callout-note
+**Key formula**: The total cross section for electron-positron annihilation is given by:
+$$
+\sigma(e^+ e^- \to \text{everything})
+$$
+:::
 Belle's experiment operates in the region of **$J/\psi$** and **$\Upsilon$** production—**charmonium** and **bottomonium**. Belle specifically focuses on **bottomonium**, the bound states of **$b\bar{b}$**. Similarly, **charmonium** consists of **$c\bar{c}$**.
 
 Moving further in energy, the **$\Upsilon(4S)$** resides in the **3 GeV region** (2–4 GeV). At around **10 GeV**, we reach the **bottomonium system**, which is analogous to charmonium but with a heavier quark. Since the **$b$ quark** is more massive, the **hyperfine splitting** $\Delta m = m(1^-) - m(0^-)$ is smaller. The mass difference between **$\eta_b$** and the **vector bottomonium** is reduced, and the energy levels are more condensed. The scale between levels remains roughly a few hundred MeV, but within each block, the spacing is much tighter.
@@ -212,6 +217,7 @@ Moving further in energy, the **$\Upsilon(4S)$** resides in the **3 GeV region**
 Now, introducing the symbol **$\Upsilon$**: this is the **vector particle** with **spin-parity $1^-$**, the bottomonium counterpart of the **$J/\psi$**. The **$J/\psi$** is the easiest charmonium state to produce in **$e^+e^-$ annihilation** and is the most studied. Its bottomonium equivalent is the **$\Upsilon$**.
 
 The **$\Upsilon(4S)$** is part of the **excitation spectrum**. As we scan the energy, we observe:
+
 - **$J/\psi$**
 - **$\Upsilon(1S)$**
 - **$\Upsilon(2S)$**
@@ -219,6 +225,7 @@ The **$\Upsilon(4S)$** is part of the **excitation spectrum**. As we scan the en
 - **$\Upsilon(4S)$**
 
 All these states are **above threshold**, requiring beam energies above **9 GeV**. For example:
+
 - The **$\Upsilon(1S)$** is at **9.46 GeV**
 - Higher states at increasing energies
 
@@ -235,6 +242,7 @@ with most particles at **low energy** and a tail extending to higher **$p_T$**. 
 ---
 
 LHCb has been highly productive in discovering new hadrons due to the **large cross section** of proton-proton interactions compared to **$e^+e^-$ annihilation**. Two main production mechanisms are explored:
+
 1. **Prompt production**: The particle of interest originates from the primary vertex.
 2. **Probe production**: Secondary vertices from decays of heavier particles.
 
@@ -250,11 +258,13 @@ A prominent example is the decay **$\Lambda_b \to J/\psi p K^-$**, a **three-bod
 ---
 
 Now, let’s briefly discuss **fixed-target experiments**. Three examples are:
+
 1. **GlueX** at Jefferson Lab: **9 GeV photon beam** on liquid hydrogen.
 2. **COMPASS** at CERN: **Pion beam** on liquid hydrogen.
 3. **CLAS** at Jefferson Lab: **2 GeV photon beam**, focusing on light hadrons.
 
 These experiments study **light hadron spectroscopy** via two mechanisms:
+
 - **Diffraction**: The proton acts as a source of gluonic fields, with the beam (photon/pion) interacting and exciting resonances.
 - **s-channel scattering**: Resonant production **$\gamma p \to X \to \text{final state}$**, where **$X$** is a hadronic resonance (e.g., **$N^*$**, **$\Delta$**).
 
@@ -266,9 +276,9 @@ Some experiments, like **GlueX**, are nearing the end of their runs but may be u
 
 
 
-> [!NOTE]
-> The proton remains color-neutral, so it emits a **gluonic field** rather than a single gluon. This is why we describe it as **diffraction** rather than gluon exchange.
-
+::: callout-note
+The proton remains color-neutral, so it emits a **gluonic field** rather than a single gluon. This is why we describe it as **diffraction** rather than gluon exchange.
+:::
 I have a quick question regarding the diagram. You said that they interact via gluons. So is that a direct or indirect interaction? One can see that. Essentially, what is here is the layer of gluons. Since it's color neutral, it cannot be a single gluon. The proton should stay color neutral. The thing that it emits to interact is not a single gluon, but rather a gluonic field that is color neutral. We call it diffraction rather than gluon exchange because that's something special.
 
 This process is not well understood in terms of gluons. It's understood physically. The proton sits there and emits the gluonic field. The interaction happens like light would scatter on an object and produce a diffractive picture. A similar thing happens here. The proton sits as the black disk, and what we see is a diffractive picture on the wall.

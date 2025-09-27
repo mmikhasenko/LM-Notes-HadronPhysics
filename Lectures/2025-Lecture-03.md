@@ -32,13 +32,13 @@ We will go through this list:
 - Magnetic moment computation in the quark model.
 - Relation to observables.
 
-> [!NOTE]
-> **Key Formula**: Magnetic moment in the quark model:
-> $$
-> \mu = \sum_i \mu_i = \sum_i q_i \frac{e\hbar}{2m_i} \langle \sigma_z \rangle_i
-> $$
-> where $q_i$, $m_i$, and $\langle \sigma_z \rangle_i$ are the charge, mass, and spin projection of the $i$-th quark.
-
+::: callout-note
+**Key Formula**: Magnetic moment in the quark model:
+$$
+\mu = \sum_i \mu_i = \sum_i q_i \frac{e\hbar}{2m_i} \langle \sigma_z \rangle_i
+$$
+where $q_i$, $m_i$, and $\langle \sigma_z \rangle_i$ are the charge, mass, and spin projection of the $i$-th quark.
+:::
 ---
 
 Before starting, I wanted to pose a question to recap. There are two questions:
@@ -50,11 +50,12 @@ Before starting, I wanted to pose a question to recap. There are two questions:
 2. **Second question**:
 - What is the isospin of the $\Xi_{cc}$ baryon and its quark content?
 
-> [!IMPORTANT]
-> **Isospin Assignments**:
-> - For $D^+$ ($c\bar{u}$) and $D^0$ ($c\bar{d}$): $I = \frac{1}{2}$.
-> - For $\Xi_{cc}$ ($ccu$ or $ccd$): $I = \frac{1}{2}$.
+::: callout-important
+**Isospin Assignments**:
 
+- For $D^+$ ($c\bar{u}$) and $D^0$ ($c\bar{d}$): $I = \frac{1}{2}$.
+- For $\Xi_{cc}$ ($ccu$ or $ccd$): $I = \frac{1}{2}$.
+:::
 ---
 
 Isospin symmetry is related to the symmetry of the wave functions with respect to the light quarks.
@@ -64,23 +65,26 @@ Isospin symmetry is related to the symmetry of the wave functions with respect t
 - This multiplicity-two wave function corresponds to the $+\frac{1}{2}$ or $-\frac{1}{2}$ isospin projections.
 
 **Key Points**:
+
 - One light quark $\implies$ isospin $\frac{1}{2}$.
 - Two light quarks $\implies$ combined isospin $1$ or $0$.
 
 ---
 
 The second question:
+
 - $J/\psi$ ($J^P = 1^-$) decays to two vector particles ($1^-$ each).
 - What is the orbital angular momentum $L$ between them for parity conservation?
 
-> [!NOTE]
-> **Parity Constraint**:
-> $$
-> P_{final} = (-1)^L \cdot P_{V_1} \cdot P_{V_2} = (-1)^L \cdot (-1) \cdot (-1) = (-1)^L
-> $$
-> Since $P_{J/\psi} = -1$, $L$ must be **odd** ($1, 3, \dots$).
-
+::: callout-note
+**Parity Constraint**:
+$$
+P_{final} = (-1)^L \cdot P_{V_1} \cdot P_{V_2} = (-1)^L \cdot (-1) \cdot (-1) = (-1)^L
+$$
+Since $P_{J/\psi} = -1$, $L$ must be **odd** ($1, 3, \dots$).
+:::
 **Possible Configurations**:
+
 - Total spin combinations: $0$, $1$, or $2$.
 - Orbital angular momentum: $L = 1$ (P-wave), $L = 3$ (F-wave), etc.
 
@@ -93,10 +97,12 @@ Why don’t you have isospin for heavier quarks?
 - For $u$ and $d$ quarks: masses are nearly equal $\implies$ isospin symmetry holds.
 
 **Extension to SU(3) Flavor Symmetry**:
+
 - Includes $u$, $d$, $s$ quarks:
 $$
 \text{SU(3)}_f \supset \text{SU(2)}_I \times \text{U(1)}_Y
 $$
+
 - Charm quark could be included if masses were equal (hypothetical).
 
 ---
@@ -105,6 +111,7 @@ $$
 - **LHCb convention**: Charge-conjugated states are implicitly included in analyses.
 
 **Spin-Orbit Combinations**:
+
 - Learn to fill the table of possible quantum numbers for decays.
 - Example: For $L = 2$ (D-wave), total angular momentum can be $2^+$, $1^+$, or $3^+$.
 
@@ -113,25 +120,26 @@ $$
 
 
 The next step is to look at what is decaying and identify within this table what decays.
-I'm looking at this list, and one that decays is \(1^-\).
+I'm looking at this list, and one that decays is $1^-$.
 I have it here, here, here—so **four combinations**.
 The answer to this question is it decays into two.
 
 Let me remove identical particles because identical particles make it more difficult.
-Two identical particles cannot be in a certain configuration of \(S\).
+Two identical particles cannot be in a certain configuration of $S$.
 We will come back to this identical particle point later.
 
-> [!IMPORTANT]
-> For identical particles:
-> - These two are forbidden for \(L=3\)
-> - Three combinations forbidden when considering \(L=3\) and the cases shown
-> - Only remains when \(L + S\) is even (since \(3 + 2 = 5\) is odd)
+::: callout-important
+For identical particles:
 
+- These two are forbidden for $L=3$
+- Three combinations forbidden when considering $L=3$ and the cases shown
+- Only remains when $L + S$ is even (since $3 + 2 = 5$ is odd)
+:::
 But identical particles will make these two forbidden.
-For \(L=3\), these two are forbidden.
-For \(L=3\) and the two you showed—three forbidden.
-I think I remember that \(L + S\) must be even for identical particles.
-So \(3 + 2\) is odd.
+For $L=3$, these two are forbidden.
+For $L=3$ and the two you showed—three forbidden.
+I think I remember that $L + S$ must be even for identical particles.
+So $3 + 2$ is odd.
 This is why only one combination remains.
 For identical particles, only one decay is allowed, while for non-identical particles, all four combinations are possible.
 
@@ -140,6 +148,7 @@ For identical particles, only one decay is allowed, while for non-identical part
 
 Second question:
 You read this and realize you need to:
+
 1. Draw a table like this
 2. Quickly fill it—it's **super easy**
 3. Identify what is stable
@@ -159,6 +168,7 @@ The electron side is simple: the electron is point-like and interacts with the p
 This is well understood.
 
 The proton side is more interesting:
+
 - At **low momentum transfer**, the electron sees the proton's charge
 - At **high momentum transfer**, the electron starts probing the quarks inside the proton
 
@@ -171,12 +181,13 @@ Large accelerators are built to study this process.
 ---
 
 
-For a \(2 \to 2\) reaction, the observables are simple:
+For a $2 \to 2$ reaction, the observables are simple:
+
 - **Total energy** (set by beam energy)
 - **Electron scattering angle**
 
 More familiar quantities are the center-of-mass energy and scattering angle.
-But Mandelstam variables \(s\) and \(t\) are more natural:
+But Mandelstam variables $s$ and $t$ are more natural:
 
 $$
 s = (p_1 + p_2)^2 \quad \text{(center-of-mass energy squared)}
@@ -192,9 +203,9 @@ $$
 \sqrt{s} = E_{\text{total}} = E_e + E_p
 $$
 
-The proton momentum \(p_p^* = -p_e^*\) (star denotes center-of-mass frame).
+The proton momentum $p_p^* = -p_e^*$ (star denotes center-of-mass frame).
 
-For \(t\):
+For $t$:
 
 $$
 t = m_e^2 + m_e^2 - 2E_e E_e' + 2|\vec{p}_e||\vec{p}_e'|\cos\theta
@@ -210,7 +221,7 @@ $$
 
 
 To connect theory to experiment, we use cross sections.
-The differential cross section depends on the matrix element \(\mathcal{M}\):
+The differential cross section depends on the matrix element $\mathcal{M}$:
 
 $$
 \frac{d\sigma}{d\Omega} = \frac{1}{64\pi^2 s} \frac{|\vec{p}_f|}{|\vec{p}_i|} |\mathcal{M}|^2
@@ -223,7 +234,7 @@ $$
 $$
 
 Phase space counts final-state configurations.
-For \(n\) particles:
+For $n$ particles:
 
 $$
 d\Pi_n = \prod_{i=1}^n \frac{d^3p_i}{(2\pi)^3 2E_i} (2\pi)^4 \delta^{(4)}\left(p_{\text{initial}} - \sum p_i\right)
@@ -244,15 +255,17 @@ $$
 ---
 
 
-In elastic scattering, \(Q^2\) (the spacelike momentum transfer) is key.
-The beams' energy is fixed; the scattering angle determines \(Q^2\).
+In elastic scattering, $Q^2$ (the spacelike momentum transfer) is key.
+The beams' energy is fixed; the scattering angle determines $Q^2$.
 Electrons scatter at different angles:
-- **Small \(Q^2\)** (small angles): probe proton charge distribution
-- **Large \(Q^2\)** (large angles): probe quark structure
+
+- **Small $Q^2$** (small angles): probe proton charge distribution
+- **Large $Q^2$** (large angles): probe quark structure
 
 For small-angle scattering, we measure:
-1. Proton charge radius (approximated by \(\rho(r) \sim e^{-r/R}\))
-2. Magnetic moment \(\vec{\mu}\), which interacts with external fields:
+
+1. Proton charge radius (approximated by $\rho(r) \sim e^{-r/R}$)
+2. Magnetic moment $\vec{\mu}$, which interacts with external fields:
 
 $$
 H_{\text{int}} = -\vec{\mu} \cdot \vec{B}
@@ -269,6 +282,7 @@ For the **two-body case**, there was a classwork to compute this.
 We will meet this expression very often, so I will give the expression for **two-body phase space**.
 
 Let's first count the number of variables:
+
 - Every **delta function** gives the energy-momentum constraint, which removes one integration variable.
 - So you can count the number of differentials $d$ that appear—this is the number of variables to integrate—and then subtract the number of constraints.
 - Each constraint allows us to remove one integration variable.
@@ -285,13 +299,13 @@ $$
 d(\text{phase space})_2 = \frac{1}{8\pi} \frac{\lambda^{1/2}(s, m_1^2, m_2^2)}{s} \frac{d(\cos\theta) \, d\phi}{4\pi}
 $$
 
-> [!IMPORTANT]
-> The **Källén function** $\lambda(s, m_1^2, m_2^2)$ appearing in the phase space formula is defined as:
-> $$
-> \lambda(s, m_1^2, m_2^2) = s^2 + m_1^4 + m_2^4 - 2sm_1^2 - 2sm_2^2 - 2m_1^2m_2^2
-> $$
-> This governs the energy dependence of the phase space volume.
-
+::: callout-important
+The **Källén function** $\lambda(s, m_1^2, m_2^2)$ appearing in the phase space formula is defined as:
+$$
+\lambda(s, m_1^2, m_2^2) = s^2 + m_1^4 + m_2^4 - 2sm_1^2 - 2sm_2^2 - 2m_1^2m_2^2
+$$
+This governs the energy dependence of the phase space volume.
+:::
 This is a great exercise because it's **totally analytic** and contains many **physical insights**.
 I recommend doing it **three times**: once, then again, and a third time—then you truly understand it.
 
@@ -300,6 +314,7 @@ In **2-to-2 scattering**, there is one variable (the scattering angle $\theta$) 
 If the problem is **unpolarized**, the matrix element does not depend on $\phi$, so we can ignore it.
 
 Imagine a coordinate system:
+
 - The **z-axis** is the collision axis.
 - The **x- and y-axes** are transverse.
 The scattered electron has an angle $\theta$ relative to the z-axis and an azimuthal angle $\phi$ in the XZ plane.
@@ -314,10 +329,12 @@ $$
 The **nontrivial part** is the $\cos\theta$ dependence, which relates to $Q^2$ and probes the **parton structure**.
 
 The **kinematic factor** $\lambda^{1/2}(s, m_1^2, m_2^2)/s$ tells us the number of configurations available at a given energy.
+
 - At **low energy** (close to threshold), this factor **suppresses the phase space**.
 - It **vanishes** when $s = (m_1 + m_2)^2$, meaning no phase space is available below threshold.
 
 This makes sense:
+
 - If the system energy is **barely enough** to produce the particles, there are very few possible configurations.
 - In the **non-relativistic limit**, the phase space is simply given by the number of angular configurations ($4\pi$).
 - But for **relativistic particles**, we get this suppression factor near threshold.
@@ -335,6 +352,7 @@ I think it will involve **interactive training**, like a ChatGPT that forces you
 3. Next, a **gaming-like format** where you solve problems interactively. 
  
 For example: 
+
 - *"What is the high-energy behavior of phase space?"*—and you figure it out through **guided exploration**. 
  
 Imagine **"Duolingo for hadron physics."** 
@@ -352,13 +370,13 @@ This is something we can derive if we have a theory of interaction. If we don't 
 
 We know how to write an expression that, when squared, gives the cross-section. The sum over final states and the average over initial states yields a mathematical expression we can compare to experiment. This expression can only depend on two variables: $s$ and $t$.
 
-> [!NOTE]
-> The matrix element for electromagnetic scattering in QED + QCD is given by:
-> $$
-> \mathcal{M} = \bar{u}(p_3) \gamma^\mu u(p_1) \left( \frac{-ig_{\mu\nu}}{q^2} \right) \bar{u}(p_4) \left[ F_1(q^2) \gamma^\nu + F_2(q^2) \frac{i\sigma^{\nu\rho} q_\rho}{2M} \right] u(p_2)
-> $$
-> where $F_1(q^2)$ and $F_2(q^2)$ are form factors, and $q = p_3 - p_1$ is the momentum transfer.
-
+::: callout-note
+The matrix element for electromagnetic scattering in QED + QCD is given by:
+$$
+\mathcal{M} = \bar{u}(p_3) \gamma^\mu u(p_1) \left( \frac{-ig_{\mu\nu}}{q^2} \right) \bar{u}(p_4) \left[ F_1(q^2) \gamma^\nu + F_2(q^2) \frac{i\sigma^{\nu\rho} q_\rho}{2M} \right] u(p_2)
+$$
+where $F_1(q^2)$ and $F_2(q^2)$ are form factors, and $q = p_3 - p_1$ is the momentum transfer.
+:::
 ---
 
 The matrix element is defined in the domain of the phase space variables. The phase space, as we discussed, is a function of two variables. In the unpolarized case, there is no $\phi$ dependence, so only $\theta$ remains. Therefore, the matrix element in our case will be a function of the **scattering angle**. It also depends on the total energy, which is fixed by the colliding particles.
@@ -388,6 +406,7 @@ $$
 $$
 
 where:
+
 - $\left( \frac{d\sigma}{d\Omega} \right)_{\text{Mott}}$ is the Mott cross-section,
 - $G_E(q^2) = F_1(q^2) + \tau F_2(q^2)$ (electric form factor),
 - $G_M(q^2) = F_1(q^2) + F_2(q^2)$ (magnetic form factor),
@@ -422,6 +441,7 @@ The quark model assumes that gluonic degrees of freedom are integrated out, leav
 ---
 
 Today, we discussed:
+
 - Electron-proton scattering kinematics,
 - Form factors and their relation to charge and magnetic properties.
 
@@ -434,6 +454,6 @@ Next time, we will derive the quark model predictions for magnetic moments.
 
 ---
 
-> [!NOTE]
-> This concludes the lecture segment. No technical content was present in this portion to analyze or enhance with nuclear physics formulas.
-
+::: callout-note
+This concludes the lecture segment. No technical content was present in this portion to analyze or enhance with nuclear physics formulas.
+:::

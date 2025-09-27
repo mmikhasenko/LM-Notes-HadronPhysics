@@ -4,6 +4,7 @@
 The first lecture will be dedicated to the **introduction of hadron physics**.
 
 I would like to start by explaining:
+
 - What hadron physics is
 - Its origin
 - How it appeared in the early stages of the universe, where it played a role in the evolution of our universe
@@ -11,6 +12,7 @@ I would like to start by explaining:
 ---
 
 Then we'll discuss:
+
 1. **Matter composition** and how quark physics plays its own part.
 2. A brief overview of the **Standard Model**.
 3. The equations that describe the motion of fields.
@@ -137,36 +139,37 @@ For the rest of the semester, what will happen with our universe, which we just 
 There will be some **nucleosynthesis** starting, maybe.
 We won't get to the forming of atoms as we know them, with electron shells—it only happens **400,000 years** after.
 
-> [!NOTE]
-> **Key Scales Recap**:
-> - Electroweak symmetry breaking: $E_{\text{EW}} \sim 100 \, \text{GeV}$
-> - Planck time: $t_{\text{Planck}} \sim 10^{-43} \, \text{s}$
-> - Hadronization: $t_{\text{hadronization}} \sim 10^{-6} \, \text{s}$
-> - Recombination: $t_{\text{recombination}} \sim 400,\!000 \, \text{years}$
+::: callout-note
+**Key Scales Recap**:
 
+- Electroweak symmetry breaking: $E_{\text{EW}} \sim 100 \, \text{GeV}$
+- Planck time: $t_{\text{Planck}} \sim 10^{-43} \, \text{s}$
+- Hadronization: $t_{\text{hadronization}} \sim 10^{-6} \, \text{s}$
+- Recombination: $t_{\text{recombination}} \sim 400,\!000 \, \text{years}$
+:::
 ### Structure of the Atom: Nucleus, Electrons, and Atomic Scale
 
 
 What I have here is the **electron**. So what is an atom? Let's now go to the second item.
 What is **matter**? What's the most abundant element in the crust of the Earth? By mass, the most abundant element is **iron**, but in the crust, it's **oxygen**.
 
-> [!NOTE]
-> Oxygen is an element with **eight protons and eight neutrons**, forming a compact object at the center of the atom—the **atomic nucleus**. These nucleons are packed together very tightly.
-
+::: callout-note
+Oxygen is an element with **eight protons and eight neutrons**, forming a compact object at the center of the atom—the **atomic nucleus**. These nucleons are packed together very tightly.
+:::
 The size of a single proton or neutron is roughly **one fermi**. Imagine 16 balls of one fermi packed together. This gives a nucleus with a diameter of about **six fermi**. A naive calculation suggests a radius of three fermi, so doubling that gives the six fermi diameter.
 
 ---
 
 **Electrons** are the other part of the atom. How many do we expect? They occupy shells:
-\[
+$$
 1s^2 2s^2 2p^4
-\]
+$$
 The $s$ orbital is **circular**, while the $p$ orbital has a **dumbbell shape**.
 
 The energy of electrons versus angular momentum shows the lower energy levels: $1s$, then $2s$, and so on. The wave function of the electron in the $1s$ orbital is:
-\[
+$$
 \psi_{1s}(r) \propto e^{-r/a_0}
-\]
+$$
 where $a_0$ is the **Bohr radius**. This gives the scale of the atom.
 
 ---
@@ -180,13 +183,13 @@ To visualize this, compare it to the **solar system**. If the nucleus is scaled 
 ---
 
 The average radius for the $1s$ orbital is:
-\[
+$$
 \langle r \rangle_{1s} = \frac{3}{2}a_0
-\]
+$$
 For the $2s$ orbital:
-\[
+$$
 \langle r \rangle_{2s} = 6a_0
-\]
+$$
 Dividing by the **effective charge** (e.g., $Z_{\text{eff}} \approx 4$ due to screening) gives the outer radius. This is why $a_0$ sets the scale, leading to the estimate of around **100 picometers**.
 
 ---
@@ -205,11 +208,11 @@ Particle physics has the most accurate and precise theory that describes everyth
 
 There are some problems with the Standard Model, which we will probably touch on at large scales. When we think of the evolution of the universe, there are also questions of **naturalness** of certain couplings—certain parameters have been measured, and we know them accurately in the Standard Model. But it's unclear where they come from or why they are like this.
 
-> [!NOTE]
-> The Standard Model's mathematical structure is captured by:
-> $$ \mathcal{L}_{\text{SM}} = \mathcal{L}_{\text{EW}} + \mathcal{L}_{\text{QCD}} $$
-> where $\mathcal{L}_{\text{EW}}$ describes electroweak interactions and $\mathcal{L}_{\text{QCD}}$ describes strong interactions.
-
+::: callout-note
+The Standard Model's mathematical structure is captured by:
+$$ \mathcal{L}_{\text{SM}} = \mathcal{L}_{\text{EW}} + \mathcal{L}_{\text{QCD}} $$
+where $\mathcal{L}_{\text{EW}}$ describes electroweak interactions and $\mathcal{L}_{\text{QCD}}$ describes strong interactions.
+:::
 Roughly, the Standard Model can be thought of as the **electroweak sector** times **QCD**. The fact that the Standard Model is such a good theory and works so well doesn't mean we understand it fully. This particularly refers to **quantum chromodynamics**, the interaction that describes the strong force. Everything we talk about in hadron physics is governed by the strong interaction.
 
 Quantum chromodynamics is the theory of the strong interaction, the theory of the color charge. It works very well for phenomena in physics, but it's so complicated that until recently, direct predictions from its basic equations to real-world observables were not possible. The reason, which we will discuss later, is that the fundamental interaction describes interactions between its building blocks—**quarks** and **gluons**. This is where they were present last time, even before that.
@@ -277,18 +280,18 @@ You'll quickly get used to this language—**strong charge as color charge**. In
 ### Interaction Fields and the Lagrangian Formulation
 
 
-When we say **interaction**, it's interaction of the object with the field. The fields are represented by these carriers of the force, which are \\( W \\) and \\( Z \\) for the **weak interaction**, photons for the **electromagnetic interaction**, and gluons for the **strong interaction**.
+When we say **interaction**, it's interaction of the object with the field. The fields are represented by these carriers of the force, which are \$W \$ and \$Z \$ for the **weak interaction**, photons for the **electromagnetic interaction**, and gluons for the **strong interaction**.
 
 ---
 
 We discussed the **Standard Model composition**, and we're reaching unification. The standard framework in field theory to describe the fields and the interaction between particles and carriers is **field theory**, which starts with the **Lagrangian**—an expression that describes interaction in a very condensed line.
 
-> [!NOTE]
-> The **Standard Model Lagrangian** includes terms for kinetic energy, gauge interactions, the Higgs mechanism, and Yukawa couplings:
-> $$
-> \mathcal{L}_{\text{SM}} = \mathcal{L}_{\text{kinetic}} + \mathcal{L}_{\text{gauge}} + \mathcal{L}_{\text{Higgs}} + \mathcal{L}_{\text{Yukawa}}
-> $$
-
+::: callout-note
+The **Standard Model Lagrangian** includes terms for kinetic energy, gauge interactions, the Higgs mechanism, and Yukawa couplings:
+$$
+\mathcal{L}_{\text{SM}} = \mathcal{L}_{\text{kinetic}} + \mathcal{L}_{\text{gauge}} + \mathcal{L}_{\text{Higgs}} + \mathcal{L}_{\text{Yukawa}}
+$$
+:::
 ---
 
 Here is an example. You might remember **Lagrangian mechanics** from your first or second semester, where the entire motion of the system was condensed down to a single equation. This was the **Lagrange equation**:
@@ -297,13 +300,13 @@ $$
 \mathcal{L} = T - V
 $$
 
-where \\( T \\) is the **kinetic term** and \\( V \\) is the **potential term**. Once you subtract them, you get an expression representing the energy of the system.
+where \$T \$ is the **kinetic term** and \$V \$ is the **potential term**. Once you subtract them, you get an expression representing the energy of the system.
 
 ---
 
 In that case, **kinetic minus potential** gives the equation of motion. What happens with the system in the next moment, starting from the initial state, is described by an equation derived from the Lagrangian.
 
-To find it, you differentiate the Lagrangian by the velocity \\( \dot{q} \\), then subtract the term that differentiates the Lagrangian by the coordinate \\( q \\):
+To find it, you differentiate the Lagrangian by the velocity \$\dot{q} \$, then subtract the term that differentiates the Lagrangian by the coordinate \$q \$:
 
 $$
 \frac{d}{dt}\left(\frac{\partial \mathcal{L}}{\partial \dot{q}}\right) - \frac{\partial \mathcal{L}}{\partial q} = 0
@@ -364,13 +367,13 @@ where $\partial_\nu$ is the derivative in time and space—essentially $\partial
 
 ---
 
-> [!NOTE]
-> The **QED Lagrangian** is given by:
-> $$
-> \mathcal{L}_{\text{QED}} = \bar{\psi} (i \gamma^\mu D_\mu - m) \psi - \frac{1}{4} F_{\mu\nu} F^{\mu\nu}
-> $$
-> This describes fermion-photon interactions, with $\psi$ as the fermion field and $A_\mu$ as the photon field.
-
+::: callout-note
+The **QED Lagrangian** is given by:
+$$
+\mathcal{L}_{\text{QED}} = \bar{\psi} (i \gamma^\mu D_\mu - m) \psi - \frac{1}{4} F_{\mu\nu} F^{\mu\nu}
+$$
+This describes fermion-photon interactions, with $\psi$ as the fermion field and $A_\mu$ as the photon field.
+:::
 ---
 
 This would be simple if it were just $\mu$ contracted with $\mu$.
@@ -463,16 +466,16 @@ If we apply this to QCD, do you know what the equation is called that describes 
 
 ---
 
-> [!NOTE]
-> The **Dirac equation** describes fermion dynamics in QED/QCD:
-> $$
-> (i \gamma^\mu \partial_\mu - m) \psi = 0
-> $$
-> In QCD, this generalizes to the covariant form with $D_\mu$. The gluon field dynamics are governed by the **Yang-Mills equations**:
-> $$
-> D_\mu F^{a,\mu\nu} = g_s \bar{\psi} \gamma^\nu \lambda^a \psi
-> $$
-
+::: callout-note
+The **Dirac equation** describes fermion dynamics in QED/QCD:
+$$
+(i \gamma^\mu \partial_\mu - m) \psi = 0
+$$
+In QCD, this generalizes to the covariant form with $D_\mu$. The gluon field dynamics are governed by the **Yang-Mills equations**:
+$$
+D_\mu F^{a,\mu\nu} = g_s \bar{\psi} \gamma^\nu \lambda^a \psi
+$$
+:::
 ### Gauge Symmetry, Phase Ambiguity, and Confinement in Field Theory
 
 
@@ -516,13 +519,13 @@ It does not transform into the same equation because the derivative introduces a
 This means that **local gauge transformation** is not a symmetry of the free Lagrangian of the Dirac particle.
 You cannot adjust the phase independently at different points for the free particle.
 
-> [!IMPORTANT]
-> The Dirac Lagrangian with gauge field interaction is:
-> $$
-> \mathcal{L} = \bar{\psi} (i D_\mu \gamma^\mu - m) \psi
-> $$
-> where $D_\mu = \partial_\mu - i e A_\mu$ is the covariant derivative.
-
+::: callout-important
+The Dirac Lagrangian with gauge field interaction is:
+$$
+\mathcal{L} = \bar{\psi} (i D_\mu \gamma^\mu - m) \psi
+$$
+where $D_\mu = \partial_\mu - i e A_\mu$ is the covariant derivative.
+:::
 In simple words, this is an **incomplete theory**.
 It only becomes complete if you consider **radiation**, photons, and **charged particles** together.
 When you look at the full Lagrangian, you update the phase of the field $\psi$ and the electromagnetic field simultaneously.
@@ -597,9 +600,9 @@ The half-life, when half the nuclei have decayed, is related to the decay consta
 
 $$t_{1/2} = \frac{\ln(2)}{λ}$$
 
-> [!NOTE]
-> This shows the fundamental relationship between the decay rate ($λ$) and the characteristic time ($t_{1/2}$) for radioactive processes. The decay constant $λ$ represents the probability per unit time that a nucleus will decay.
-
+::: callout-note
+This shows the fundamental relationship between the decay rate ($λ$) and the characteristic time ($t_{1/2}$) for radioactive processes. The decay constant $λ$ represents the probability per unit time that a nucleus will decay.
+:::
 Just like a ticking clock measures regular intervals, the half-life measures **probabilistic decay intervals**.
 
 ---

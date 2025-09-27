@@ -14,6 +14,7 @@ $$
 The branch cut should be drawn from the branch point to the right to satisfy causality.
 
 There is also a **cross channel** to this reaction because ππ scattering isn't the only possible process. If we consider backward scattering in energy, another π can scatter to another π. For example:
+
 - **π⁺π⁻** can scatter to **π⁺π⁻**
 - Equivalently, **π⁺** can scatter with **π⁺** if we rearrange the particles
 
@@ -22,6 +23,7 @@ This means there is another branch point on the left side from the cross channel
 ---
 
 When discussing **scattering amplitudes**, we visualize a "blob" connecting the initial and final states. For ππ scattering:
+
 1. We draw the blob with time moving in one direction
 2. Initial pions come together, interact, and then scatter out
 3. This defines a physical process with well-defined kinematics
@@ -31,24 +33,28 @@ $$
 \sqrt{s} > 2m_\pi
 $$
 The **Mandelstam variables** s and t describe the kinematics:
+
 - **s** is positive above threshold
 - **t** is negative for elastic scattering (represents momentum transfer)
 
-> [!NOTE]
-> The scattering amplitude is an analytic function of s and t, defined across the entire complex plane - even for unphysical values. This allows us to study processes like π₁π̄₃ → π₂π₄ through **crossing symmetry** by exchanging s and t.
-
+::: callout-note
+The scattering amplitude is an analytic function of s and t, defined across the entire complex plane - even for unphysical values. This allows us to study processes like π₁π̄₃ → π₂π₄ through **crossing symmetry** by exchanging s and t.
+:::
 ---
 
 In the **s-plane**:
+
 - **Positive s**: s-channel scattering
 - **Negative s**: t-channel or u-channel contributions
 
 The amplitude has singularities, but we can **analytically continue** it to a second Riemann sheet, where resonant states appear. For example:
+
 - In ππ P-wave scattering, the **ρ meson** appears as a resonance
 - In the quark model, mesons are organized by energy levels (**1s, 1p, 2s**, etc.) with hyperfine splitting due to spin interactions
 - The ρ meson and pion differ only in their **spin wavefunctions**
 
 Unlike in electromagnetism (where transitions occur via photon emission), in QCD:
+
 - The ρ meson decays to ππ by emitting another pion
 - This occurs because quark-antiquark pairs can be easily created from the vacuum
 
@@ -57,6 +63,7 @@ Unlike in electromagnetism (where transitions occur via photon emission), in QCD
 The ρ meson appears as a **resonance** in ππ scattering - when two pions interact, they "feel" the ρ meson, leading to a peak in the cross section. This corresponds to a pole in the complex plane.
 
 To fully understand resonances, we must analytically continue the amplitude to the second sheet. The classification includes:
+
 1. **Resonances**: appear as peaks above threshold
 2. **Virtual states**: lie on unphysical sheets below threshold
 3. **Bound states**: on the physical sheet below threshold
@@ -77,10 +84,12 @@ $$
 ---
 
 For different states:
+
 - **Resonance**: cross section peaks at the resonance mass
 - **Bound state**: signal appears below threshold
 
 The **analytic structure** of the amplitude determines these features. In summary:
+
 - Singularities in the scattering amplitude correspond to physical states
 - Their positions reveal whether they are resonances, virtual states, or bound states
 
@@ -91,11 +100,12 @@ For the **bound state** of the virtual state, there should be a peak below thres
 
 The peak below the threshold is **divergent**—it goes to infinity at this point. In contrast, the branch point has poles. The amplitude is undefined, or infinity, at the pole. Therefore, the poles are **strong singularities**. They truly make the amplitude infinite.
 
-> [!IMPORTANT]
-> **Key distinction**:
-> - Bound state pole: $E = -E_b$ (with $E_b > 0$)
-> - Virtual state pole: $E = -E_v + i0^+$ (with $E_v > 0$)
+::: callout-important
+**Key distinction**:
 
+- Bound state pole: $E = -E_b$ (with $E_b > 0$)
+- Virtual state pole: $E = -E_v + i0^+$ (with $E_v > 0$)
+:::
 Imagine taking this pole and moving it closer to the physical axis, where measurements are made. The closer it gets, the higher the cross-section value becomes, and the smaller the width. This distance to the pole is called the **width of the resonance**, $\Gamma$. The smaller the width, the narrower the peak, but also the stronger the resonance effect.
 
 $$
@@ -120,14 +130,15 @@ Real particles are like poles below the threshold but with a small imaginary par
 
 For example, if weak interactions are absent, the $B$ meson remains stable because flavor is conserved. In reality, weak interactions cause the $B$ meson to decay. This is why the bound state pole in any amplitude is slightly shifted downward.
 
-> [!NOTE]
-> **Flavor conservation in strong interactions**:
-> $$ [H_{\text{strong}}, Q_{\text{flavor}}] = 0 $$
-> where $Q_{\text{flavor}}$ is a flavor quantum number.
-
+::: callout-note
+**Flavor conservation in strong interactions**:
+$$ [H_{\text{strong}}, Q_{\text{flavor}}] = 0 $$
+where $Q_{\text{flavor}}$ is a flavor quantum number.
+:::
 ---
 
 The discussion focuses on **pole positions** in the complex energy plane and their observable effects (peaks, cusps, and enhancements) in scattering amplitudes and cross-sections. The key distinction is between:
+
 - **Bound states** (poles on the real axis below threshold)
 - **Virtual states** (poles on the second Riemann sheet near threshold)
 - **Resonances** (poles near the physical region with finite width).
@@ -157,17 +168,20 @@ You can also find the inverse relation and determine how $s$ is related to $P$.
 The key point is that if the amplitude is only a function of $P$, the square root will never appear. There is no $\sqrt{P}$ in the amplitude—it is actually an **analytic function** of $P$.
 
 What we discussed earlier with the first and second sheets now merges into a single complex plane.
+
 - The **upper part** represents $A(P)$.
 - The **lower part** represents $A_2(P)$.
 The real physics corresponds to $P$ being real and positive, which maps to $s$.
 
-> [!NOTE]
-> **Pole positions in the $P$-plane**:
-> - **Bound state**: On the positive imaginary axis ($P = i|P|$).
-> - **Virtual state**: On the negative imaginary axis ($P = -i|P|$).
-> - **Resonances**: Complex-conjugate pairs in the lower-half plane ($P = \text{Re}(P) - i\text{Im}(P)$).
+::: callout-note
+**Pole positions in the $P$-plane**:
 
+- **Bound state**: On the positive imaginary axis ($P = i|P|$).
+- **Virtual state**: On the negative imaginary axis ($P = -i|P|$).
+- **Resonances**: Complex-conjugate pairs in the lower-half plane ($P = \text{Re}(P) - i\text{Im}(P)$).
+:::
 Let me quickly sketch where the bound and virtual states are in this representation.
+
 - The **bound state** sits on the real axis just below the threshold.
 - The **virtual state** is also on the real axis but above the threshold.
 - **Resonances** appear as pairs in the complex plane.
@@ -179,11 +193,13 @@ However, this representation works as an expansion near the threshold and become
 
 To summarize:
 We’ve discussed **scattering theory**, widely used in hadron spectroscopy. Unlike field theory, this approach doesn’t start from a Lagrangian but uses general principles of scattering theory—**unitarity**, **analyticity**, and **crossing symmetry**.
+
 - **Resonances** are identified as poles of the scattering amplitude.
 - The amplitude is constructed to satisfy these principles and fitted to experimental data.
 - Once fixed, it reveals its analytic structure, including branch points and poles on unphysical sheets.
 
 In experimental particle physics, we:
+
 1. Constrain this amplitude using data.
 2. Analytically continue it.
 3. Locate poles.
@@ -192,6 +208,7 @@ The **pole position** gives the mass and width, while the **residue** (from the 
 
 **Question:** What changes if we add spin to the particles? For example, in $\rho \rho$ scattering compared to $\pi \pi$ scattering?
 The short answer is: nothing fundamental changes except kinematics.
+
 - The amplitude gains extra **kinematic factors** at threshold.
 - It becomes a **vector of amplitudes** due to different helicity states.
 For $\rho \rho$ scattering, there are multiple amplitudes corresponding to different helicity combinations. However, the **analytic structure** and **pole interpretation** remain the same.
@@ -200,31 +217,37 @@ For $\rho \rho$ scattering, there are multiple amplitudes corresponding to diffe
 
 
 QCD is a **gauge theory** with an $SU(3)$ gauge group, featuring **confinement** and **asymptotic freedom**.
+
 - At **high momentum**, quarks behave as free particles.
 - At **low energy**, they confine into hadrons.
 
 This makes QCD difficult to study analytically because perturbation theory fails—the coupling is too strong at low energies.
 
 One powerful method is **lattice QCD**, where we:
+
 1. Discretize spacetime into a grid (e.g., a $2 \text{ fm} \times 2 \text{ fm} \times 2 \text{ fm}$ box).
 2. Solve the equations numerically.
 
 We use **periodic boundary conditions**, meaning the field at one edge matches the field at the opposite edge. This effectively tiles space with identical copies of the box.
 
 Key parameters:
+
 - **Lattice spacing** $a$ (e.g., $0.1 \text{ fm}$).
 - **Box size** $L = N \cdot a$.
 
 We want the lattice:
+
 - Large enough to fit hadrons (e.g., a meson of size $\sim 1 \text{ fm}$).
 - Small enough to avoid interactions with mirrored images.
 
 The QCD Lagrangian has few parameters:
+
 - The coupling $g$.
 - Quark masses $m_f$.
 
 On the lattice, we tune these parameters to match physical observables (e.g., the pion mass $m_\pi$).
 Interestingly, we can explore "alternative universes" by varying quark masses continuously. For example:
+
 - A resonance like the $\rho$-meson can become a **bound state** if quark masses are increased.
 - The pion mass follows $m_\pi \propto \sqrt{m_q}$ in the **chiral limit**.
 
@@ -283,12 +306,13 @@ You put together quarks and gluons, and you can measure the expectation of this 
 
 ---
 
-> [!IMPORTANT]
-> The expectation value is something you can compute.
-> It's no longer a function of the coordinates.
-> The operator can depend on the fields like $\psi$ and $A_\mu$.
-
+::: callout-important
+The expectation value is something you can compute.
+It's no longer a function of the coordinates.
+The operator can depend on the fields like $\psi$ and $A_\mu$.
+:::
 The notion of **local** and **non-local operators** is intuitive.
+
 - **Local**: Evaluated at a single spacetime point.
 - **Non-local**: Evaluated across multiple spacetime points.
 
@@ -376,12 +400,13 @@ So I think I will.
 
 ---
 
-> [!NOTE]
-> Key formulas discussed:
-> - Gluon field strength tensor: $G_{\mu\nu} G^{\mu\nu}$
-> - Euclidean path integral weight: $e^{iS_{\text{Minkowski}}} \rightarrow e^{-S_{\text{Euclidean}}}$
-> - Wick rotation: $t_E = it$, $S_{\text{Minkowski}} \rightarrow -S_{\text{Euclidean}}$
+::: callout-note
+Key formulas discussed:
 
+- Gluon field strength tensor: $G_{\mu\nu} G^{\mu\nu}$
+- Euclidean path integral weight: $e^{iS_{\text{Minkowski}}} \rightarrow e^{-S_{\text{Euclidean}}}$
+- Wick rotation: $t_E = it$, $S_{\text{Minkowski}} \rightarrow -S_{\text{Euclidean}}$
+:::
 ### Integrating Fermionic Fields and Quenched Calculations in Lattice QCD
 
 
@@ -399,19 +424,19 @@ The way to do this is to look at the original expression and notice that the fer
 
 Here, it's kind of bizarre mathematics because everything here are operators, and you integrate not over $\psi$ but over all possible functional forms of it. But it works similarly to real variables.
 
-> [!NOTE]
-> **Grassmann variable anticommutation relation**:
-> $$
-> \{X, Y\} = XY + YX = 0 \quad \Rightarrow \quad XY = -YX
-> $$
-> $$
-> X^2 = Y^2 = 0
-> $$
-> **Exponential of Grassmann variables**:
-> $$
-> e^{1 - XY} = 1 - XY
-> $$
-
+::: callout-note
+**Grassmann variable anticommutation relation**:
+$$
+\{X, Y\} = XY + YX = 0 \quad \Rightarrow \quad XY = -YX
+$$
+$$
+X^2 = Y^2 = 0
+$$
+**Exponential of Grassmann variables**:
+$$
+e^{1 - XY} = 1 - XY
+$$
+:::
 I was trying to convince myself by looking at a simple example of Grassmann variables. Grassmann means they anticommute: $XY = -YX$. That means $X^2 = Y^2 = 0$. If you write $XYXY$ and swap $Y$ and $X$, you get $X^2Y^2 = 0$. So $e^{1 - XY} = 1 - XY$. Isn't it amazing? You expand it just like that—no higher power terms are needed.
 
 For Grassmann variables, integration is introduced as differentiation. It's a definition:
@@ -432,43 +457,43 @@ After that, I thought I should spend more time learning about this—it's fascin
 
 You didn't explain how the determinant pops up, right? How from $M$ you get a determinant. There is a formula. You can do this trick for two variables, say $x_1, x_2$, and even then, you get a determinant. It generalizes to higher dimensions.
 
-> [!NOTE]
-> **Fermionic path integral and determinant**:
-> $$
-> \int \mathcal{D}\bar{\psi} \mathcal{D}\psi \, e^{-\bar{\psi} M \psi} = \det M
-> $$
-> where $M$ is the fermionic operator (Dirac operator in QCD).
-
+::: callout-note
+**Fermionic path integral and determinant**:
+$$
+\int \mathcal{D}\bar{\psi} \mathcal{D}\psi \, e^{-\bar{\psi} M \psi} = \det M
+$$
+where $M$ is the fermionic operator (Dirac operator in QCD).
+:::
 ---
 
 If we integrate over the gluonic fields, what remains is the integral over all configurations of the quark fields. The operator depends only on the gauge fields, and the determinant represents the effect of virtual quarks. All quarks are integrated, so the only effect is $\bar{Q}Q$ popping up from the vacuum. This expression only cares about gluons, and quarks only appear in loops.
 
 Now, important terminology: **quenched and unquenched calculations** refer to this term. When lattice physicists say "quenched calculations," it means this term is ignored—no quarks in loops. This universe without quark loops is not so different and provides valuable insights into QCD. It's also much cheaper computationally—the integral converges faster without this term. Remember: **"quenched" means no fermion determinant**.
 
-> [!NOTE]
-> **Quenched approximation**:
-> $$
-> Z_{\text{quenched}} = \int \mathcal{D}A \, e^{-S_{\text{gluon}}[A]}
-> $$
-> instead of the full (unquenched) partition function:
-> $$
-> Z_{\text{unquenched}} = \int \mathcal{D}A \, \det M[A] \, e^{-S_{\text{gluon}}[A]}
-> $$
-> where $S_{\text{gluon}}[A]$ is the gluonic action and $\det M[A]$ represents virtual quark loops.
-
+::: callout-note
+**Quenched approximation**:
+$$
+Z_{\text{quenched}} = \int \mathcal{D}A \, e^{-S_{\text{gluon}}[A]}
+$$
+instead of the full (unquenched) partition function:
+$$
+Z_{\text{unquenched}} = \int \mathcal{D}A \, \det M[A] \, e^{-S_{\text{gluon}}[A]}
+$$
+where $S_{\text{gluon}}[A]$ is the gluonic action and $\det M[A]$ represents virtual quark loops.
+:::
 ---
 
 The last thing is how we compute this integral. Naively, you could discretize space and integrate over all lattice values. For a lattice of size $100 \times 200$ (time × space), how many variables are there? The gluon field $A_\mu$ has 4 × 9 components (plus complex parts). That's 8,640 variables per site. If you replace $DA$ with integrals over all these, you'd need $10^{10}$ evaluations. Even with 3 points per dimension, it's $3^{10^{10}}$—impossible to compute in the age of the universe.
 
 Instead, we use **Monte Carlo sampling**. Configurations are sampled randomly with a weight, making the calculation feasible. For lattice QCD, discretize spacetime, use Minkowski transformations, and apply Monte Carlo sampling for the weights. This trick also helps eliminate fermions.
 
-> [!NOTE]
-> **Monte Carlo sampling for lattice QCD**:
-> $$
-> \langle \mathcal{O} \rangle \approx \frac{1}{N} \sum_{i=1}^N \mathcal{O}[A_i]
-> $$
-> where $A_i$ are gauge field configurations sampled with weight $e^{-S[A_i]}$.
-
+::: callout-note
+**Monte Carlo sampling for lattice QCD**:
+$$
+\langle \mathcal{O} \rangle \approx \frac{1}{N} \sum_{i=1}^N \mathcal{O}[A_i]
+$$
+where $A_i$ are gauge field configurations sampled with weight $e^{-S[A_i]}$.
+:::
 ---
 
 If you take these five points home, I’d be happy. With that, I’ll take questions and finish here.
@@ -478,10 +503,10 @@ If you take these five points home, I’d be happy. With that, I’ll take quest
 
 **Question:** How is it possible that we can split the fermionic and gluon part of the action? If I look at the dimension, I can see that in the long derivative we have terms that give us gluon fields. But then how do we split it?
 
-> [!NOTE]
-> The fermionic part of the action in path integral representation is:
-> $$ e^{-S_{\text{fermionic}}} = \int \mathcal{D}\psi \mathcal{D}\bar{\psi} \, e^{\int d^4x \, \bar{\psi}(D + M)\psi} $$
-
+::: callout-note
+The fermionic part of the action in path integral representation is:
+$$ e^{-S_{\text{fermionic}}} = \int \mathcal{D}\psi \mathcal{D}\bar{\psi} \, e^{\int d^4x \, \bar{\psi}(D + M)\psi} $$
+:::
 We don’t split it. The fermionic part is this:
 $$ e^{-S_{\text{fermionic}}} = \int \mathcal{D}\psi \mathcal{D}\bar{\psi} \, e^{\int d^4x \, \bar{\psi}(D + M)\psi} $$
 
@@ -532,7 +557,8 @@ It existed independently in mathematics before physics applications. I don’t k
 **Question:** Aren’t Grassmann variables limiting? You can’t square them, and series expansions truncate. 
 Yes, but you can still use them to describe fields. It’s a trick, but it works. 
  
-> [!NOTE] 
-> The Dirac operator with mass term is: 
-> $$ D + M = \gamma^\mu(\partial_\mu - igA_\mu) + M $$ 
-> where the sign change in the discretized version occurs due to flipping time derivatives and gamma matrices.
+::: callout-note
+The Dirac operator with mass term is: 
+$$ D + M = \gamma^\mu(\partial_\mu - igA_\mu) + M $$ 
+where the sign change in the discretized version occurs due to flipping time derivatives and gamma matrices.
+:::

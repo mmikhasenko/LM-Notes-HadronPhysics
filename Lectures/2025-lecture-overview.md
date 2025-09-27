@@ -1,6 +1,7 @@
 ### 2025-Lecture-01: Introduction to Hadron Physics and Course Logistics
 
 **Main Content:**
+
 - Introduction to hadron physics: what it is, its origin, and its role in the early universe.
 - Timeline of the universe from the Big Bang to hadronization, with key epochs and physical scales.
 - Overview of matter composition, the Standard Model, and the SU(3) group.
@@ -10,6 +11,7 @@
 - Introduction to quantum chromodynamics (QCD) and the concept of color charge.
 
 **Practical skills:**
+
 - Explain the timeline of the early universe and identify when hadrons formed.
 - Describe the basic structure of the Standard Model and the role of QCD.
 - Relate atomic and nuclear scales and understand the concept of confinement.
@@ -19,6 +21,7 @@
 ### 2025-Lecture-02: Classification of Hadrons and the Role of Isospin
 
 **Main Content:**
+
 - Historical context: discovery of many new particles (“particle zoo”) and the need for classification.
 - Introduction and mathematical structure of isospin symmetry (SU(2)), its analogy to spin, and its role in strong interactions.
 - Construction of isospin multiplets for mesons and baryons.
@@ -28,6 +31,7 @@
 - Use of group theory in organizing hadrons.
 
 **Practical skills:**
+
 - Classify hadrons using isospin and strangeness.
 - Apply the Gell-Mann–Nishijima formula to relate charge, isospin, and hypercharge.
 - Identify multiplet structures and predict missing particles.
@@ -38,6 +42,7 @@
 ### 2025-Lecture-03: Symmetry, Hadron Structure, and Isospin in Meson and Baryon Systems
 
 **Main Content:**
+
 - Deeper exploration of symmetry in hadron physics.
 - Experimental evidence for hadron substructure (quark model).
 - Calculation of cross sections and kinematics in scattering.
@@ -48,6 +53,7 @@
 - Introduction to deep inelastic scattering as a probe of hadron structure.
 
 **Practical skills:**
+
 - Calculate cross sections and analyze kinematics for simple scattering processes.
 - Use form factors to extract information about hadron structure.
 - Assign isospin to hadrons and analyze decay channels.
@@ -57,6 +63,7 @@
 ### 2025-Lecture-04: Electron-Photon Scattering, Form Factors, and Baryon Magnetic Moments
 
 **Main Content:**
+
 - Review of electron-photon scattering and key cross sections (Rosenfeld, Mott, Rosenbluth).
 - Introduction to form factors and their physical interpretation (Fourier transform of charge density).
 - Extraction of proton and neutron radii from scattering data.
@@ -66,6 +73,7 @@
 - Overview of experimental facilities and production mechanisms.
 
 **Practical skills:**
+
 - Analyze electron scattering data to extract form factors and radii.
 - Calculate magnetic moments of baryons using the quark model.
 - Classify baryon states by spin, flavor, and excitation.
@@ -75,6 +83,7 @@
 ### 2025-Lecture-05: Production Mechanisms and Kinematic Analysis in Hadron Spectroscopy
 
 **Main Content:**
+
 - Overview of hadron production mechanisms: fixed target vs. collider experiments.
 - Kinematics of particle production and decay, including invariant mass and phase space.
 - Exclusive vs. inclusive processes in experiments.
@@ -83,6 +92,7 @@
 - Analysis of strangeness production and gluon distributions in the proton.
 
 **Practical skills:**
+
 - Distinguish between exclusive and inclusive processes.
 - Analyze kinematic setups for different experimental configurations.
 - Calculate phase space and invariant mass for multi-particle final states.
@@ -92,6 +102,7 @@
 ### 2025-Lecture-07: Helicity Formalism, Weak Decays, and Isospin Violation in Λ⁰ Decay
 
 **Main Content:**
+
 - Helicity formalism and partial wave expansion.
 - Mandelstam plane and analyticity in scattering amplitudes.
 - Weak decays (e.g., Λ⁰ → p + π⁻), conservation and violation of isospin and parity.
@@ -100,6 +111,7 @@
 - Isospin operators and rotations in isospin space.
 
 **Practical skills:**
+
 - Apply helicity and partial wave formalism to decay and scattering problems.
 - Analyze weak decays and identify conservation law violations.
 - Use Dalitz plots to interpret decay kinematics and resonance structures.
@@ -109,6 +121,7 @@
 ### 2025-Lecture-08: Scattering Matrix, Unitarity, and the K-Matrix Formalism
 
 **Main Content:**
+
 - Scattering matrix (S-matrix) and transition matrix (T).
 - Unitarity and conservation of probability in quantum mechanics.
 - Phase space integrals and their role in scattering.
@@ -117,6 +130,7 @@
 - Unitarity constraints for overlapping resonances.
 
 **Practical skills:**
+
 - Write and manipulate the S-matrix and T-matrix for scattering processes.
 - Apply unitarity constraints to scattering amplitudes.
 - Use partial wave expansion to analyze angular distributions.
@@ -127,6 +141,7 @@
 ### 2025-Lecture-09: Kinematics of Decay and Scattering: The Källén Function and Dalitz Plot
 
 **Main Content:**
+
 - Kinematic boundaries for decay and scattering: Dalitz plot and Källén function.
 - Mandelstam variables and their geometric interpretation.
 - Scattering angle and its relation to invariants.
@@ -135,6 +150,7 @@
 - Introduction to lattice QCD and its role in studying hadron properties.
 
 **Practical skills:**
+
 - Use the Källén function to determine kinematic boundaries.
 - Apply the optical theorem and unitarity to scattering problems.
 - Interpret Dalitz plots for both decay and scattering.
@@ -145,6 +161,7 @@
 ### 2025-Lecture-11: Thresholds, Branch Points, and Resonances in ππ Scattering
 
 **Main Content:**
+
 - Thresholds and branch points in scattering amplitudes.
 - Analytic structure of amplitudes: Riemann sheets, poles, and branch cuts.
 - Resonances, virtual states, and bound states in the complex plane.
@@ -153,6 +170,7 @@
 - Physical interpretation of pole positions and their relation to observables.
 
 **Practical skills:**
+
 - Analyze the analytic structure of scattering amplitudes.
 - Distinguish between resonances, bound states, and virtual states.
 - Use lattice QCD concepts to interpret hadron properties.
@@ -163,6 +181,7 @@
 ### 2025-Lecture-13: Hadronic Contributions to (g-2): Vacuum Polarization and Light-by-Light
 
 **Main Content:**
+
 - Hadronic contributions to the muon anomalous magnetic moment (g-2): vacuum polarization and light-by-light scattering.
 - Feynman diagrams for hadronic corrections.
 - Importance of hadron physics in precision measurements.
@@ -171,6 +190,7 @@
 - Analytic structure of scattering amplitudes and their connection to quantum mechanics.
 
 **Practical skills:**
+
 - Identify and draw Feynman diagrams for hadronic contributions to g-2.
 - Understand the role of hadronic uncertainties in precision physics.
 - Analyze time dependence in lattice QCD correlation functions.

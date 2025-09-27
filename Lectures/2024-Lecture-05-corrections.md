@@ -41,9 +41,9 @@ The first question: *How many variables does one need to describe the two-to-two
 - Example: **P-plus**.
 - It's again scattering of 0-minus from 0-minus to, let's say, **3-minus** and **1-plus**.
 
-> [!NOTE]
-> The scattering process is represented by a "blob" indicating the interaction (e.g., strong interaction). Arrows show particles entering and leaving. This is a **unitarity diagram**, not a Feynman diagram.
-
+::: callout-note
+The scattering process is represented by a "blob" indicating the interaction (e.g., strong interaction). Arrows show particles entering and leaving. This is a **unitarity diagram**, not a Feynman diagram.
+:::
 Here is a little blob that indicates generally what we are discussing.
 This is the scattering process—something described by strong interaction theory happens inside the blob, and the arrows indicate the particles entering the interaction and then leaving it.
 This is a cartoon diagram.
@@ -58,16 +58,18 @@ The first question: *How many variables does one need to describe the two-to-two
 
 1. **Scalar particles**—let's say $0^-$ scalars.  
    - The scalar particles ($0^-$) scatter to $0^-$, and the final state also has two $0^-$ scalar particles.  
+
 2. **Spin-dependent scattering**.  
    - It's scattering of $0^-$ from $0^-$ to, let's say, $3^-$ and $1^+$.  
 
-> [!NOTE]  
-> The scattering process is represented by a "blob" indicating the interaction (e.g., strong interaction). Arrows show particles entering and leaving. This is a **unitarity diagram**, not a Feynman diagram.  
->   
-> This is a cartoon diagram. These are not Feynman diagrams; sometimes they're called **unitarity diagrams**.  
-> We will touch on unitarity later, but for now, this indicates what we are talking about.
-
+::: callout-note
+The scattering process is represented by a "blob" indicating the interaction (e.g., strong interaction). Arrows show particles entering and leaving. This is a **unitarity diagram**, not a Feynman diagram.  
+  
+This is a cartoon diagram. These are not Feynman diagrams; sometimes they're called **unitarity diagrams**.  
+We will touch on unitarity later, but for now, this indicates what we are talking about.
+:::
 ### Comment:
+
 - Removed unclear examples ("P-plus") and confusing phrases (e.g., mass speculation, invariance remarks).  
 - Standardized notation: Mandelstam variables as $s, t, u$; four-momenta as $p_1, \dots, p_4$; spin-parity as $J^P$ (e.g., $0^-$, $3^-$, $1^+$).  
 - Deleted redundant/ambiguous sections (student names, repeated "Essentially", irrelevant questions).  
@@ -84,6 +86,7 @@ The blob could be electromagnetic, strong, gravity—whatever you want.
 Something happens inside the blob, and the question is: *How many variables do you need?*
 
 There are two possibilities:
+
 1. **Particles without spin**.
 2. **Particles with spin**—how many variables do you need to describe the process?
 
@@ -101,6 +104,7 @@ The blob could be electromagnetic, strong, gravity—whatever you want.
 Something happens inside the blob, and the question is: *How many variables do you need?*  
 
 There are two possibilities:  
+
 1. **Particles without spin**.  
 2. **Particles with spin**—how many variables do you need to describe the process?  
 
@@ -138,6 +142,7 @@ For two particles in the initial state, each described by a four-momentum, there
 
 ### Comment:
 The original text contained multiple physics errors:  
+
 - Incorrect subtraction of "six degrees" for boosts and rotations (boosts do not reduce degrees of freedom in this context; only rotations are relevant).  
 - Misrepresentation of conservation law constraints (four-momentum conservation removes four degrees, not "subtract four" from an incorrect base).  
 - Ambiguous phrases ("two times two, or four... multiply by three... subtract four") were removed for clarity.  
@@ -165,6 +170,7 @@ The spin-parity states involved are $J^P = 3^-$ and $J^P = 1^+$.
 
 ### Comment:
 The original text contained conversational ambiguity, incorrect angle multiplicity, and improper notation. Corrections applied:  
+
 - Removed unclear fragments ("So they are...", "Then four? Why four?", and dialogue about introducing angles).  
 - Clarified that only one angle ($\theta$) is physically meaningful for two-to-two scattering kinematics.  
 - Replaced "3-minus" and "1-plus" with standard $J^P$ notation ($3^-$, $1^+$).  
@@ -213,6 +219,7 @@ In my cartoon, I also added the $p$'s, which are four-vectors here.
 They have an energy component, a three-dimensional component, and, for particles with spin, indicated spin orientation—their **helicity values**, $\lambda_3$ and $\lambda_4$.
 
 ### Comment:
+
 - Corrected Mandelstam variables to standard lowercase notation ($s$, $t$) and four-vectors to lowercase ($p_i$).  
 - Clarified that $\sqrt{s}$ (not $s$) gives the total energy in the center-of-mass frame.  
 - Rephrased the description of $t$ to emphasize it as the Lorentz-invariant momentum transfer squared, removing unclear phrasing about "vertical direction" or "how energy".  
@@ -226,15 +233,16 @@ In the first case, my amplitude describing the blob—the interaction—is a **s
 It's just a single number.
 In the case where particles have spin, it's not a number—it's a **higher-rank object**.
 So here, in that case, what is the size dimension of my scattering amplitude?
+
 - Spin-3 gives me **seven dimensions**.
 - Spin-1 gives me **three dimensions**.
 - Therefore, my scattering amplitude is a **21-dimensional object**.
 
 So I have 21 amplitudes, but all of them are functions of **two variables**.
 
-> [!IMPORTANT]
-> When particles have spin, you have more amplitudes, but they all have the **same dependencies**. The situation changes when you take into account the decays of the final-state particles.
-
+::: callout-important
+When particles have spin, you have more amplitudes, but they all have the **same dependencies**. The situation changes when you take into account the decays of the final-state particles.
+:::
 Usually, we do not know any stable 3-minus particles, nor any stable 1-plus particles—they would fly away, and we would consider them final-state particles.
 Therefore, both of these particles decay.
 Often, you can take into account the decay products and introduce more variables.
@@ -247,6 +255,7 @@ In the first case, my amplitude describing the blob—the interaction—is a **s
 It's just a single number.  
 In the case where particles have spin, it's not a number—it's a **higher-rank object**.  
 So here, for two particles:  
+
 - Spin-1 gives a **3×3 matrix** (9 components).  
 - Spin-3 gives a **7×7 matrix** (49 components).  
 
@@ -254,17 +263,19 @@ Therefore, the scattering amplitude is a **matrix with dimensions determined by 
 
 All amplitudes are functions of **two variables**, $s$ and $t$, the Mandelstam invariants.  
 
-> [!IMPORTANT]  
-> When particles have spin, you have more amplitudes, but they all have the **same dependencies on $s$ and $t$**. The situation changes when accounting for decays of final-state particles.  
-
+::: callout-important
+When particles have spin, you have more amplitudes, but they all have the **same dependencies on $s$ and $t$**. The situation changes when accounting for decays of final-state particles.
+:::
 Usually, no stable $3^-$ or $1^+$ particles exist—they decay rapidly.  
 Thus, both particles decay. While decay products introduce more variables, restricting to **$s$ and $t$** suffices here.
 
 ### Comment:
 The key error was misrepresenting the scattering amplitude's dimensionality. For spin-$s$ particles, the amplitude is a $(2s_1 + 1) \times (2s_2 + 1)$ matrix, not a product of dimensions. I corrected:  
+
 - Spin-1: 3 states → $3 \times 3$ matrix (9 components).  
 - Spin-3: 7 states → $7 \times 7$ matrix (49 components).  
 Other fixes:  
+
 - Mandelstam variables lowercase ($s$, $t$).  
 - Spin-parity as $J^P$ ($3^-$, $1^+$).  
 - Removed unclear phrases (e.g., "21-dimensional object").  
@@ -308,6 +319,7 @@ Actually, that's okay, you can put a plus, but it's going to be a mixture of $s$
 What is more common is to put particles in the final state with a minus sign, in the initial state with a plus sign, and then have this, what you propose, to have masses in this convention, so $s$ and $t$ are invariants.
 
 ### Comment:
+
 - Removed unclear phrases (e.g., "I guess it would be... That works," "Example: P-plus").  
 - Corrected Mandelstam variables to lowercase ($s$, $t$) and four-vectors to lowercase ($p_1$, $p_2$).  
 - Replaced "S and T are Mandelstam" with "$s$ and $t$ are invariants" for precision.  
@@ -339,6 +351,7 @@ They are just something that characterizes the whole process.
 It doesn't matter in which frame you consider, so $s$ and $t$ are invariants.
 
 ### Comment:
+
 - Corrected uppercase Mandelstam variables ($S$, $T$) to standard lowercase notation ($s$, $t$).  
 - Replaced "so $S$ and $T$ are Mandelstam" with "so $s$ and $t$ are invariants" for physical accuracy.  
 - Removed the irrelevant paragraph about the word "invariance" in dictionaries, as it adds no physical value.  
@@ -417,6 +430,7 @@ Any two independent kinematic variables (e.g., energies $E_1$ and $E_3$ in a fix
 
 ### Comment:
 Corrections applied:  
+
 - Replaced student names with "the students" per anonymity requirement.  
 - Corrected "S and T are Mandelstam" to "Mandelstam invariants" and used lowercase notation ($s$, $t$, $u$, $p_i$) as standard in relativistic kinematics.  
 - Removed unclear/phrasing errors: "No, not a single pair," repetitive questions ("What else...?"), "That’s my favorite," and redundant "Essentially."  
@@ -446,13 +460,13 @@ Essentially, the same number of legs tells you the number of variables.
 For **three-pion or DDK decays**, there are **two variables** that describe the process completely.
 Once you give me these two variables—$S$ and $T$, or angles, or any other—I should be able to draw the entire kinematics.
 
-> [!NOTE]
-> The **Dalitz plot** is a powerful tool for analyzing three-body decays, where the phase space is flat in $S$ and $T$ variables:
-> $$
-> \frac{dN}{dS\,dT} = \text{constant}
-> $$
-> This allows for clear visualization of dynamical effects.
-
+::: callout-note
+The **Dalitz plot** is a powerful tool for analyzing three-body decays, where the phase space is flat in $S$ and $T$ variables:
+$$
+\frac{dN}{dS\,dT} = \text{constant}
+$$
+This allows for clear visualization of dynamical effects.
+:::
 So remember my analogy of the **rigid body**: when you print on a 3D printer a blob out of which the vectors are sticking, this is a rigid body that describes a kinematic point.
 The angles between all vectors are fixed.
 The lengths of the vectors are fixed.
@@ -471,6 +485,7 @@ So, from that kinematics to this kinematics, what it takes is to take one leg an
 And it's done by changing the sign on the momentum.
 
 So, for three-body decay, what we do—let me define it here:
+
 - $S = (p_1 + p_2)^2 = (p_3 + p_4)^2$
 - $T = (p_1 - p_3)^2$
 
@@ -489,20 +504,22 @@ We're going to continue discussing the **angular dependence** after the **Dalitz
 So the homework we had the exercise on the **Dalitz plot**, part of the course specific to hadrons. From this lecture onward, we will focus on **hadron spectroscopy**, including **three-body decay**. The **Dalitz plot** is a technique to study the dynamics of interactions.  
 
 In **three-body decay**, one particle decays into three, with two variables fully describing the kinematics. For example, in $\boldsymbol{\pi\pi\pi}$ or $\boldsymbol{DDK}$ decays, the Mandelstam invariants $\boldsymbol{s}$ and $\boldsymbol{t}$ are used:  
+
 - $\boldsymbol{s = (p_1 + p_2)^2}$  
 - $\boldsymbol{t = (p_1 - p_3)^2}$  
 
-> [!NOTE]  
-> The **Dalitz plot** analyzes three-body decays. If dynamics are uniform, phase space is flat in $\boldsymbol{s}$ and $\boldsymbol{t}$:  
-> $$  
-> \frac{d\Gamma}{ds\,dt} \propto \text{constant}  
-> $$  
-> Deviations reveal dynamical effects.  
-
+::: callout-note
+The **Dalitz plot** analyzes three-body decays. If dynamics are uniform, phase space is flat in $\boldsymbol{s}$ and $\boldsymbol{t}$:  
+$$  
+\frac{d\Gamma}{ds\,dt} \propto \text{constant}  
+$$  
+Deviations reveal dynamical effects.
+:::
 The kinematics is fixed at a point in phase space by $\boldsymbol{s}$ and $\boldsymbol{t}$. For non-identical final-state masses, the phase-space density is constant only if interactions are uniform.
 
 ### Comment:
 I corrected the following physics errors:  
+
 1. **Notation**: Capitalized Mandelstam variables ($S, T$) changed to standard lowercase ($s, t$). Four-momenta ($p_i$) kept lowercase.  
 2. **Definition**: Fixed $\boldsymbol{s = (p_1 + p_2)^2}$ (not $(p_3 + p_4)^2$). Clarified $\boldsymbol{t = (p_1 - p_3)^2}$.  
 3. **Phase space**: Replaced $\frac{dN}{dS\,dT}$ with $\frac{d\Gamma}{ds\,dt}$. Emphasized flatness requires uniform dynamics.  
@@ -515,46 +532,47 @@ I corrected the following physics errors:
 
 ### Original:
 So this is the recursive formula that we discussed in the last lecture.
-It's easy to use this equation to demonstrate that once you substitute the two phase spaces and apply the proper transformation, you end up with the factor \( \frac{1}{8\pi^2} \).
-This comes from the two phase spaces: \( 2\pi \) for each, as you recall.
+It's easy to use this equation to demonstrate that once you substitute the two phase spaces and apply the proper transformation, you end up with the factor $\frac{1}{8\pi^2}$.
+This comes from the two phase spaces: $2\pi$ for each, as you recall.
 
-From the first phase space, we have \( \frac{1}{8\pi} \cdot \frac{2p}{m_1} \).
+From the first phase space, we have $\frac{1}{8\pi} \cdot \frac{2p}{m_1}$.
 These are **two-body phase spaces**.
-From the other, we have this phase space multiplied by \( 2^3 \), and both have the same form: \( \frac{1}{8\pi} \cdot \frac{2p}{\sqrt{s}} \).
+From the other, we have this phase space multiplied by $2^3$, and both have the same form: $\frac{1}{8\pi} \cdot \frac{2p}{\sqrt{s}}$.
 
-What also appears is that every phase space has a \( \frac{1}{2\pi} \cdot \frac{1}{8\pi^2} \cdot \frac{2p}{\sqrt{s}} \), and then \( \frac{d^3\omega}{4\pi} \).
-This is easy to remember because it approaches \( \frac{1}{\pi} \) in the asymptotic limit.
+What also appears is that every phase space has a $\frac{1}{2\pi} \cdot \frac{1}{8\pi^2} \cdot \frac{2p}{\sqrt{s}}$, and then $\frac{d^3\omega}{4\pi}$.
+This is easy to remember because it approaches $\frac{1}{\pi}$ in the asymptotic limit.
 These terms approach unity at high energy, and that's a unit integral if there is no dependence.
 
 ### Score: 85
 
 ### Correction:
 So this is the recursive formula that we discussed in the last lecture.  
-It's easy to use this equation to demonstrate that once you substitute the two phase spaces and apply the proper transformation, you end up with the factor \( \frac{1}{8\pi^2} \).  
-This comes from the two phase spaces: \( 2\pi \) for each, as you recall.  
+It's easy to use this equation to demonstrate that once you substitute the two phase spaces and apply the proper transformation, you end up with the factor $\frac{1}{8\pi^2}$.  
+This comes from the two phase spaces: $2\pi$ for each, as you recall.  
 
-From the first phase space, we have \( \frac{1}{8\pi} \cdot \frac{2p}{m_1} \).  
+From the first phase space, we have $\frac{1}{8\pi} \cdot \frac{2p}{m_1}$.  
 These are **two-body phase spaces**.  
-From the other, we have this phase space multiplied by \( 2^3 \), and both have the same form: \( \frac{1}{8\pi} \cdot \frac{2p}{\sqrt{s}} \).  
+From the other, we have this phase space multiplied by $2^3$, and both have the same form: $\frac{1}{8\pi} \cdot \frac{2p}{\sqrt{s}}$.  
 
-What also appears is that every phase space has a \( \frac{1}{2\pi} \cdot \frac{1}{8\pi^2} \cdot \frac{2p}{\sqrt{s}} \), and then \( \frac{d\Omega}{4\pi} \).  
+What also appears is that every phase space has a $\frac{1}{2\pi} \cdot \frac{1}{8\pi^2} \cdot \frac{2p}{\sqrt{s}}$, and then $\frac{d\Omega}{4\pi}$.  
 These terms approach a constant in the asymptotic limit.  
 These terms approach unity at high energy, and that's a unit integral if there is no dependence.
 
 ### Comment:
-1. Corrected \( \frac{d^3\omega}{4\pi} \) → \( \frac{d\Omega}{4\pi} \): The notation \( d^3\omega \) is non-standard for solid-angle integration. The standard differential element for angular integration is \( d\Omega \).  
-2. Clarified asymptotic behavior: The claim that terms approach \( \frac{1}{\pi} \) is incorrect. Phase space factors approach a constant (e.g., \( \frac{|\vec{p}|}{\sqrt{s}} \rightarrow \frac{1}{2} \) for equal masses), but not specifically \( \frac{1}{\pi} \).  
-3. The remaining physics (phase space factors, \( \frac{1}{8\pi^2} \) origin, high-energy behavior) is correct.
+
+1. Corrected $\frac{d^3\omega}{4\pi}$ → $\frac{d\Omega}{4\pi}$: The notation $d^3\omega$ is non-standard for solid-angle integration. The standard differential element for angular integration is $d\Omega$.  
+2. Clarified asymptotic behavior: The claim that terms approach $\frac{1}{\pi}$ is incorrect. Phase space factors approach a constant (e.g., $\frac{|\vec{p}|}{\sqrt{s}} \rightarrow \frac{1}{2}$ for equal masses), but not specifically $\frac{1}{\pi}$.  
+3. The remaining physics (phase space factors, $\frac{1}{8\pi^2}$ origin, high-energy behavior) is correct.
 
 
 # Index: 1
 
 ### Original:
-> [!NOTE]
-> The **two-body phase space factor** is given by:
-> $$d\Phi_2 = \frac{1}{8\pi^2} \cdot \frac{2p}{\sqrt{s}} \cdot \frac{d^3\omega}{4\pi}$$
-> This formula captures the kinematic dependencies discussed in the lecture.
-
+::: callout-note
+The **two-body phase space factor** is given by:
+$$d\Phi_2 = \frac{1}{8\pi^2} \cdot \frac{2p}{\sqrt{s}} \cdot \frac{d^3\omega}{4\pi}$$
+This formula captures the kinematic dependencies discussed in the lecture.
+:::
 ### Score: 50
 
 ### Correction:
@@ -564,11 +582,13 @@ This formula captures the kinematic dependencies discussed in the lecture.
 
 ### Comment:
 The original formula contained three errors:  
+
 1. The momentum factor should be $\frac{p}{\sqrt{s}}$ (not $\frac{2p}{\sqrt{s}}$).  
 2. The angular term must use the solid angle element $d\Omega$ (not $\frac{d^3\omega}{4\pi}$).  
 3. The differential notation $d\Omega$ replaces the incorrect $d^3\omega$.  
 
 The corrected version aligns with the standard Lorentz-invariant phase space definition for two-body final states, where:  
+
 - $p = \frac{\sqrt{[s - (m_1 + m_2)^2][s - (m_1 - m_2)^2]}}{2\sqrt{s}}$ (c.m. frame momentum)  
 - $d\Omega = \sin\theta  d\theta  d\phi$ (solid angle element)  
 - $s$ is the Mandelstam invariant (correct lowercase notation).
@@ -579,9 +599,9 @@ The corrected version aligns with the standard Lorentz-invariant phase space def
 ### Original:
 So that's what we discussed already.
 For both phase spaces, you use this expression.
-For one of them, the cosine \( \theta \) is described in terms of the scattering angle.
-Essentially, you express \( m \) (say, \( m_{34} \)) in terms of the cosine of the scattering angle.
-These \( 2p \) terms appear here, and you must replace \( E' \) by \( p \).
+For one of them, the cosine $\theta$ is described in terms of the scattering angle.
+Essentially, you express $m$ (say, $m_{34}$) in terms of the cosine of the scattering angle.
+These $2p$ terms appear here, and you must replace $E'$ by $p$.
 This appears as a Jacobian, though I realize now I might have been incorrect in how I used it.
 
 We arrived at this in a few lines without details, but we’ll revisit it later.
@@ -592,16 +612,16 @@ There is no extra dependency.
 This means when we examine the differential width or cross section against these variables, there’s no distortion due to the choice of variables.
 
 We have several choices, but only Mandelstam invariance gives an undistorted representation of the density.
-If you plot differential widths against two variables (e.g., \( m_{34}^2 \) or \( m_{24}^2 \)), it will be a constant numerical value, not rescaled.
+If you plot differential widths against two variables (e.g., $m_{34}^2$ or $m_{24}^2$), it will be a constant numerical value, not rescaled.
 
 ### Score: 85
 
 ### Correction:
 So that's what we discussed already.  
 For both phase spaces, you use this expression.  
-For one of them, the cosine \( \theta \) is described in terms of the scattering angle.  
-Essentially, you express the invariant mass \( s_{34} \) in terms of the cosine of the scattering angle.  
-These \( 2p \) terms appear here, and you must replace \( E' \) by \( p \).  
+For one of them, the cosine $\theta$ is described in terms of the scattering angle.  
+Essentially, you express the invariant mass $s_{34}$ in terms of the cosine of the scattering angle.  
+These $2p$ terms appear here, and you must replace $E'$ by $p$.  
 This appears as a Jacobian, though I realize now I might have been incorrect in how I used it.  
 
 We arrived at this in a few lines without details, but we’ll revisit it later.  
@@ -611,11 +631,11 @@ For the three-body case, using the recursive formula shows that the Jacobian for
 There is no extra dependency.  
 This means when we examine the differential width or cross section against these variables, there’s no distortion due to the choice of variables.  
 
-We have several choices, but only Mandelstam variables (\( s, t, u \)) give an undistorted representation of the density.  
-If you plot differential widths against two invariants (e.g., \( s_{34} \) or \( s_{24} \)), it will be a constant numerical value, not rescaled.
+We have several choices, but only Mandelstam variables ($s, t, u$) give an undistorted representation of the density.  
+If you plot differential widths against two invariants (e.g., $s_{34}$ or $s_{24}$), it will be a constant numerical value, not rescaled.
 
 ### Comment:
-Corrected notation for Mandelstam variables (lowercase \( s, t, u \)) and invariant masses (e.g., \( s_{34} \) instead of \( m_{34}^2 \)) to align with standard relativistic kinematics. Removed "\( m \) (say, \( m_{34} \))" to avoid confusion between mass and invariant mass squared. The physics content is sound: Jacobian constancy for paired invariant masses in three-body phase space and the role of Mandelstam variables in preserving density are correctly described.
+Corrected notation for Mandelstam variables (lowercase $s, t, u$) and invariant masses (e.g., $s_{34}$ instead of $m_{34}^2$) to align with standard relativistic kinematics. Removed "$m$ (say, $m_{34}$)" to avoid confusion between mass and invariant mass squared. The physics content is sound: Jacobian constancy for paired invariant masses in three-body phase space and the role of Mandelstam variables in preserving density are correctly described.
 
 
 # Index: 1
@@ -624,17 +644,17 @@ Corrected notation for Mandelstam variables (lowercase \( s, t, u \)) and invari
 That’s why representing three-body processes in Mandelstam variables (or linearly related ones) is so powerful—you directly see the interaction’s content in the "blob."
 This is essentially what the Dalitz plot shows.
 
-Consider the decay \( \Lambda_c \to p K^- \pi^+ \).
-We measure \( \Lambda_c \) produced in proton-proton collisions.
-Experiments like **BES** and **Belle** observe \( \Lambda_c \) abundantly because charm ground-state particles live long enough to travel from the primary vertex.
+Consider the decay $\Lambda_c \to p K^- \pi^+$.
+We measure $\Lambda_c$ produced in proton-proton collisions.
+Experiments like **BES** and **Belle** observe $\Lambda_c$ abundantly because charm ground-state particles live long enough to travel from the primary vertex.
 We reconstruct them, giving us a good sample to study their decay kinematics and dynamics—the "blob’s" content.
 
 In this decay, a charm quark in the initial state disappears, indicating weak interaction.
 The charm quark decays into a strange quark, which ends up in the kaon.
-The \( c \to s \) transition is allowed and unsuppressed.
+The $c \to s$ transition is allowed and unsuppressed.
 This is a **golden channel** for reconstruction because the final state has three charged particles (proton, kaon, pion), all stable and detectable.
 
-The \( \Lambda_c \) travels about 10 mm in the lab frame due to its boost from production at the LHC.
+The $\Lambda_c$ travels about 10 mm in the lab frame due to its boost from production at the LHC.
 This decay is well-studied.
 
 Here’s an experimental result resembling the data.
@@ -649,8 +669,9 @@ Colored regions represent allowed kinematics; white areas are forbidden by energ
 
 ### Comment:
 The physics content is accurate and well-presented. Minor spelling errors ("proton" → proton, "Colored" → colored) exist but do not impact scientific validity. Key physics elements are correct:  
+
 - Mandelstam variables and Dalitz plots are properly linked to three-body decay kinematics.  
-- The \( \Lambda_c \to p K^- \pi^+ \) decay mechanism via \( c \to s \) weak transition is correctly described.  
+- The $\Lambda_c \to p K^- \pi^+$ decay mechanism via $c \to s$ weak transition is correctly described.  
 - Experimental aspects (detectability at BES/Belle, LHC boost, particle stability) are sound.  
 - Kinematic boundaries in the plot follow energy conservation.  
 No substantive physics errors require correction.
@@ -665,26 +686,27 @@ This constrained range defines the Dalitz plot.
 
 Colors on the plot indicate decay probabilities.
 Certain kinematics are more probable because particles prefer specific directions.
-For example, one configuration (maximizing \( m_{pK} \)) is rarer than another.
+For example, one configuration (maximizing $m_{pK}$) is rarer than another.
 
 To locate these points:
+
 - At the plot’s border, particles are collinear.
-- Maximizing \( m_{pK} \) requires momenta to oppose each other, placing the point at the bottom right.
-- Minimizing \( m_{K\pi} \) occurs when the kaon and pion move together, reducing their invariant mass.
+- Maximizing $m_{pK}$ requires momenta to oppose each other, placing the point at the bottom right.
+- Minimizing $m_{K\pi}$ occurs when the kaon and pion move together, reducing their invariant mass.
 
-In the \( K\pi \) rest frame, their relative momentum is small, so their mass nears the sum of their masses.
-This corresponds to the minimal \( m_{K\pi} \) point.
+In the $K\pi$ rest frame, their relative momentum is small, so their mass nears the sum of their masses.
+This corresponds to the minimal $m_{K\pi}$ point.
 
-For three-body decays, we can fix one pair’s mass (e.g., \( m_{K\pi} \)) and vary the angle \( \theta \) between the third particle and the pair.
-In the \( K\pi \) rest frame, their momenta are back-to-back, and the proton’s angle \( \theta \) changes.
-At \( \theta = 0 \), \( m_{pK} \) is maximal; at \( \theta = \pi \), it’s minimal.
+For three-body decays, we can fix one pair’s mass (e.g., $m_{K\pi}$) and vary the angle $\theta$ between the third particle and the pair.
+In the $K\pi$ rest frame, their momenta are back-to-back, and the proton’s angle $\theta$ changes.
+At $\theta = 0$, $m_{pK}$ is maximal; at $\theta = \pi$, it’s minimal.
 
-Another variable, \( U \), is a symmetric combination of the other two.
-Fixing \( m_{p\pi} \) defines a diagonal line on the plot.
+Another variable, $U$, is a symmetric combination of the other two.
+Fixing $m_{p\pi}$ defines a diagonal line on the plot.
 
-The standard Dalitz plot uses \( m_{pK}^2 \) vs. \( m_{K\pi}^2 \), but a symmetric representation uses an equilateral triangle.
+The standard Dalitz plot uses $m_{pK}^2$ vs. $m_{K\pi}^2$, but a symmetric representation uses an equilateral triangle.
 Here, each mass is a distance to a side, maintaining symmetry.
-The transformation between these representations involves skewing due to the \( 60^\circ \) angles.
+The transformation between these representations involves skewing due to the $60^\circ$ angles.
 
 This kinematic representation reveals dynamics—where densities increase due to intermediate resonances.
 For example, two particles may briefly form a resonance, enhancing decay probability at specific energies.
@@ -701,26 +723,27 @@ This constrained range defines the Dalitz plot.
 
 Colors on the plot indicate decay probabilities.  
 Certain kinematics are more probable because particles prefer specific directions.  
-For example, one configuration (maximizing \( m_{pk} \)) is rarer than another.  
+For example, one configuration (maximizing $m_{pk}$) is rarer than another.  
 
 To locate these points:  
+
 - At the plot’s border, particles are collinear.  
-- Maximizing \( m_{pk} \) requires momenta to oppose each other, placing the point at the bottom right.  
-- Minimizing \( m_{k\pi} \) occurs when the kaon and pion move together, reducing their invariant mass.  
+- Maximizing $m_{pk}$ requires momenta to oppose each other, placing the point at the bottom right.  
+- Minimizing $m_{k\pi}$ occurs when the kaon and pion move together, reducing their invariant mass.  
 
-In the \( k\pi \) rest frame, their relative momentum is small, so their mass nears the sum of their masses.  
-This corresponds to the minimal \( m_{k\pi} \) point.  
+In the $k\pi$ rest frame, their relative momentum is small, so their mass nears the sum of their masses.  
+This corresponds to the minimal $m_{k\pi}$ point.  
 
-For three-body decays, we can fix one pair’s mass (e.g., \( m_{k\pi} \)) and vary the angle \( \theta \) between the third particle and the pair.  
-In the \( k\pi \) rest frame, their momenta are back-to-back, and the proton’s angle \( \theta \) changes.  
-At \( \theta = 0 \), \( m_{pk} \) is maximal; at \( \theta = \pi \), it’s minimal.  
+For three-body decays, we can fix one pair’s mass (e.g., $m_{k\pi}$) and vary the angle $\theta$ between the third particle and the pair.  
+In the $k\pi$ rest frame, their momenta are back-to-back, and the proton’s angle $\theta$ changes.  
+At $\theta = 0$, $m_{pk}$ is maximal; at $\theta = \pi$, it’s minimal.  
 
-Another variable, \( u \), is a symmetric combination of the other two.  
-Fixing \( m_{p\pi} \) defines a diagonal line on the plot.  
+Another variable, $u$, is a symmetric combination of the other two.  
+Fixing $m_{p\pi}$ defines a diagonal line on the plot.  
 
-The standard Dalitz plot uses \( m_{pk}^2 \) vs. \( m_{k\pi}^2 \), but a symmetric representation uses an equilateral triangle.  
+The standard Dalitz plot uses $m_{pk}^2$ vs. $m_{k\pi}^2$, but a symmetric representation uses an equilateral triangle.  
 Here, each mass squared is a distance to a side, maintaining symmetry.  
-The transformation between these representations involves skewing due to the \( 60^\circ \) angles.  
+The transformation between these representations involves skewing due to the $60^\circ$ angles.  
 
 This kinematic representation reveals dynamics—where densities increase due to intermediate resonances.  
 For example, two particles may briefly form a resonance, enhancing decay probability at specific energies.  
@@ -729,24 +752,24 @@ This explains peaks or enhanced regions in the Dalitz plot.
 Looking ahead, we’ll explore how intermediate states shape these distributions.
 
 ### Comment:
-The original text contained minor notation errors: invariant masses (\( m_{ab} \)) and Mandelstam variables (\( u \)) require lowercase subscripts and symbols. These were corrected for physical consistency. All physics statements (kinematic boundaries, angular dependence, resonance effects) were accurate. The symmetric Dalitz plot description is mathematically sound.
+The original text contained minor notation errors: invariant masses ($m_{ab}$) and Mandelstam variables ($u$) require lowercase subscripts and symbols. These were corrected for physical consistency. All physics statements (kinematic boundaries, angular dependence, resonance effects) were accurate. The symmetric Dalitz plot description is mathematically sound.
 
 
 # Index: 1
 
 ### Original:
-> [!IMPORTANT]
-> The **Dalitz plot variables** (Mandelstam invariants) for three-body decay are:
-> $$m_{ij}^2 = (p_i + p_j)^2 = (E_i + E_j)^2 - |\vec{p}_i + \vec{p}_j|^2$$
-> These variables are crucial for understanding the kinematic boundaries and resonance structures in the plot.
-
+::: callout-important
+The **Dalitz plot variables** (Mandelstam invariants) for three-body decay are:
+$$m_{ij}^2 = (p_i + p_j)^2 = (E_i + E_j)^2 - |\vec{p}_i + \vec{p}_j|^2$$
+These variables are crucial for understanding the kinematic boundaries and resonance structures in the plot.
+:::
 ### Score: 95
 
 ### Correction:
 *No correction necessary.*
 
 ### Comment:
-The provided text is physically correct and clear. The formula for \(m_{ij}^2\) accurately defines the Mandelstam invariant for a particle pair in three-body decay using standard notation. The description of its role in kinematic boundaries and resonance analysis is appropriate. No errors or ambiguities are present, and the notation aligns with relativistic kinematics conventions (e.g., lowercase \(m_{ij}\), arrow notation for three-momenta \(\vec{p}\)).
+The provided text is physically correct and clear. The formula for $m_{ij}^2$ accurately defines the Mandelstam invariant for a particle pair in three-body decay using standard notation. The description of its role in kinematic boundaries and resonance analysis is appropriate. No errors or ambiguities are present, and the notation aligns with relativistic kinematics conventions (e.g., lowercase $m_{ij}$, arrow notation for three-momenta $\vec{p}$).
 
 
 # Index: 2
@@ -754,11 +777,11 @@ The provided text is physically correct and clear. The formula for \(m_{ij}^2\) 
 ### Original:
 You might have seen cross sections for the two-particle resonances. That has a bump in it known as the hadronic resonance. The physics of that is you have a system of two particles, and the quantum numbers of the system match the quantum numbers of some other resonance. By adjusting the energy of the system, you explore how the system behaves—how likely two particles are to interact at a certain energy.
 
-> [!NOTE]
-> The resonance cross-section follows the **Breit-Wigner formula**:
-> $$ \sigma(E) = \frac{4\pi}{k^2} \frac{\Gamma^2/4}{(E-E_0)^2 + \Gamma^2/4} $$
-> where $E_0$ is the resonance energy and $\Gamma$ is the width.
-
+::: callout-note
+The resonance cross-section follows the **Breit-Wigner formula**:
+$$ \sigma(E) = \frac{4\pi}{k^2} \frac{\Gamma^2/4}{(E-E_0)^2 + \Gamma^2/4} $$
+where $E_0$ is the resonance energy and $\Gamma$ is the width.
+:::
 If there is an intermediate resonance, this system can resonate at this energy, and the probability is going to increase once you pass through the resonance region. This leads to the appearance of the bent structures in the Dalitz distribution, or if you project it onto one of the axes, you're going to see the resonance-like shape. These bent structures you can identify on both.
 
 ### Score: 75
@@ -766,15 +789,16 @@ If there is an intermediate resonance, this system can resonate at this energy, 
 ### Correction:
 You might have seen cross sections for two-particle resonances. These exhibit peaks known as hadronic resonances. The underlying physics involves a two-particle system whose quantum numbers match those of a resonant state. By varying the system's energy, one probes the interaction probability between the particles.
 
-> [!NOTE]
-> The resonance cross-section follows the **Breit-Wigner formula**:
-> $$\sigma(E) = \frac{2\pi \hbar^2}{k^2} \frac{\Gamma^2}{(E - E_0)^2 + \Gamma^2/4}$$
-> where $E_0$ is the resonance energy, $\Gamma$ is the width, $k$ is the wave number, $\hbar$ is the reduced Planck constant, and $\mu$ is the reduced mass.
-
+::: callout-note
+The resonance cross-section follows the **Breit-Wigner formula**:
+$$\sigma(E) = \frac{2\pi \hbar^2}{k^2} \frac{\Gamma^2}{(E - E_0)^2 + \Gamma^2/4}$$
+where $E_0$ is the resonance energy, $\Gamma$ is the width, $k$ is the wave number, $\hbar$ is the reduced Planck constant, and $\mu$ is the reduced mass.
+:::
 When an intermediate resonance exists, the interaction probability peaks near the resonance energy. This creates characteristic structures in the Dalitz distribution. Projections of the Dalitz plot may show resonance-like shapes, though background effects can obscure them.
 
 ### Comment:
 Key corrections made:
+
 1. Fixed the Breit-Wigner formula to include the reduced Planck constant $\hbar$ and corrected the prefactor to $\frac{2\pi \hbar^2}{k^2}$ for dimensional accuracy.
 2. Clarified that $k$ is the wave number ($k = \sqrt{2\mu E}/\hbar$).
 3. Replaced vague "bent structures" with "characteristic structures" for resonance bands in Dalitz plots.
@@ -808,6 +832,7 @@ The Dalitz plot structure shows resonance bands parallel to the axes/sides: K* b
 
 ### Comment:
 Corrected physics errors:  
+
 1. Standardized resonance notation (K* instead of "K-star").  
 2. Clarified axes: horizontal = fixed $m_{K\pi}$, vertical = fixed $m_{pK\pi}$.  
 3. Defined resonance systems unambiguously (Kπ → K*, pKπ → Λ*, πp → Δ).  
@@ -834,6 +859,7 @@ This angular dependence can lead to anisotropy in the decay distribution. Even w
 
 ### Comment:
 The physics content is largely correct but required refinement in terminology and precision:
+
 - Replaced "inhomogeneity" with "anisotropy" (standard term for angular dependence).
 - Clarified that spin-induced anisotropy occurs specifically for resonances with spin ≥1 (spin-0 particles yield isotropic distributions).
 - Removed vague phrasing ("less probable kinematics," "easy to believe").
@@ -846,11 +872,11 @@ The physics content is largely correct but required refinement in terminology an
 ### Original:
 Angular distribution is a very powerful tool to understand properties of particles. As we already discussed, that's our way to measure spin, parity, and other quantum numbers in particle interactions. Particles with higher spin would prefer more bumpy, more spiky angular distributions, and particles with lower spin—if everything is scalar—are going to produce no asymmetries at all, no structures in angular distributions.
 
-> [!IMPORTANT]
-> The angular distribution intensity for spin measurement follows:
-> $$ I(\theta) \propto \sum_{M,M'} |D^J_{M'M}(\theta)|^2 $$
-> where $D^J_{M'M}$ are Wigner D-functions describing the rotation of spin states.
-
+::: callout-important
+The angular distribution intensity for spin measurement follows:
+$$ I(\theta) \propto \sum_{M,M'} |D^J_{M'M}(\theta)|^2 $$
+where $D^J_{M'M}$ are Wigner D-functions describing the rotation of spin states.
+:::
 By looking at the angular distribution, especially in the rest frame of the particle decay, one examines the ratio of the aligned kinematics and other types of kinematics. With this, one can infer the information of the spin. For most of the particles that we have discovered up to now, the quantum numbers are not known. We discover particles as bumps in the spectrum, and then the next step to understand their properties is to determine their quantum numbers. This is done by looking at angular distributions.
 
 Most of the time, it's as simple as looking at the Dalitz plot and seeing if there is a minimum in the angular distribution, if this line has several structures, several nodes. The maxima and nodes indicate, in the case of scalar particles in the final state, the nodes would literally tell you the spin. If you have one node, you have spin one. If you have two nodes, you have spin two. If you have three nodes, you have spin three. The intensity would really vanish at certain points in the dark spot.
@@ -864,11 +890,11 @@ If you consider a certain spin projection of the lambda-C and proton, you'll aga
 ### Correction:
 Angular distribution is a very powerful tool to understand properties of particles. As we already discussed, that's our way to measure spin, parity, and other quantum numbers in particle interactions. Particles with higher spin would prefer more bumpy, more spiky angular distributions in their production processes or in decays where the final state particles have spin, and particles with lower spin—if everything is scalar and the resonance is unpolarized—are going to produce no asymmetries at all, no structures in angular distributions.
 
-> [!IMPORTANT]
-> The angular distribution intensity for spin measurement follows:
-> $$ I(\theta) \propto \sum_{M,M'} |D^J_{M'M}(\theta)|^2 $$
-> where $D^J_{M'M}$ are Wigner D-functions describing the rotation of spin states.
-
+::: callout-important
+The angular distribution intensity for spin measurement follows:
+$$ I(\theta) \propto \sum_{M,M'} |D^J_{M'M}(\theta)|^2 $$
+where $D^J_{M'M}$ are Wigner D-functions describing the rotation of spin states.
+:::
 By looking at the angular distribution, especially in the rest frame of the particle decay, one examines the ratio of the aligned kinematics and other types of kinematics. With this, one can infer the information of the spin. For most of the particles that we have discovered up to now, the quantum numbers are not known. We discover particles as bumps in the spectrum, and then the next step to understand their properties is to determine their quantum numbers. This is done by looking at angular distributions.
 
 Most of the time, in the case of three-body decays, one uses the Dalitz plot to analyze the distribution. For two-body decays, if the final state particles have spin or if the resonance is polarized, the angular distribution can show structures such as minima and nodes. For example, in the decay of a polarized resonance of spin $J$ to two spinless particles, the number of nodes in the angular distribution can be related to $J$. However, for an unpolarized resonance decaying to two spinless particles, the angular distribution is flat and does not exhibit nodes.
@@ -879,6 +905,7 @@ If you consider a certain spin projection of the $\Lambda_c$ and proton, you'll 
 
 ### Comment:
 The original text contained significant errors:  
+
 1. Claimed nodes appear in angular distributions for unpolarized decays to two spinless particles (e.g., "if you have one node, you have spin one"), which is incorrect—such decays yield flat distributions. This was corrected by clarifying that nodes only arise with polarized resonances or non-scalar final states.  
 2. Used non-standard notation "lambda-C" instead of $\Lambda_c$.  
 3. Unclear phrasing like "with the jump" was replaced with "in the decay process".  
@@ -893,11 +920,11 @@ A particle with spin can have $2J + 1$ projections to the quantization axis. Let
 
 When I act with the rotation on the state, I'm going to produce not a certain state, but a mixture of different states—it's as simple as that. When I rotate the state, if it were a vector in regular space, I could probably adjust this to have exactly a certain projection. But in quantum mechanics, it doesn't work this way. Once you act with the rotation, most of the time you're going to end up with a mixture of all states. Let me rotate. These coefficients are tabulated, so they are known functions for any state. You can have a look and check what these coefficients are. They are called Wigner D-functions.
 
-> [!NOTE]
-> The Wigner D-functions describe rotations of spin states:
-> $$ D^J_{M'M}(\alpha,\beta,\gamma) = e^{-iM'\alpha}d^J_{M'M}(\beta)e^{-iM\gamma} $$
-> where $(\alpha,\beta,\gamma)$ are Euler angles and $d^J_{M'M}$ is the reduced rotation matrix.
-
+::: callout-note
+The Wigner D-functions describe rotations of spin states:
+$$ D^J_{M'M}(\alpha,\beta,\gamma) = e^{-iM'\alpha}d^J_{M'M}(\beta)e^{-iM\gamma} $$
+where $(\alpha,\beta,\gamma)$ are Euler angles and $d^J_{M'M}$ is the reduced rotation matrix.
+:::
 Let me be more concrete. I'm going to rotate about the Y-axis in a second. So I have a Z, I have my X, and I have my Y. XYZ. That's correct. They should form the right-handed triple of axes X, Y, Z. I'm going to rotate about the Y-axis on $|JM\rangle$. In order to do that, I have to—so $J_+$, as you remember, it's $\begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}$. So it operates like that. And $J_-$ is the opposite $\begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix}$ like that. The $J_y$ operator then has zero on the diagonal and these coefficients above and below the diagonal.
 
 Then, in order to apply the transformation to the state, you have to do the matrix exponential of $J_y$. But this is done for you, and we know what they are. These are these coefficients, these coefficients where they are C, C, C, C. These coefficients—they need to know about the initial state as well. That's why JM indices are kept in these notations. Imagine I tell you we work with spin-1 that is perpendicular to the Y-axis and rotated by 30 degrees. What is going to be the composition of the state? When I do that, you have everything $|JM\rangle$ that corresponds to this perpendicular—I mean, to the orientation along the Y-axis. Then you look up these functions, and you know what the composition is.
@@ -913,14 +940,15 @@ A particle with spin can have $2J + 1$ projections to the quantization axis. Let
 
 When I rotate the state, I produce a superposition of different $M$ states. If the state were a classical vector, I could align it exactly, but in quantum mechanics, rotations generally create mixtures. The coefficients for these superpositions are tabulated as known functions called Wigner D-functions.
 
-> [!NOTE]
-> The Wigner D-functions describe rotations of spin states:
-> $$ D^J_{M'M}(\alpha,\beta,\gamma) = e^{-iM'\alpha}d^J_{M'M}(\beta)e^{-iM\gamma} $$
-> where $(\alpha,\beta,\gamma)$ are Euler angles and $d^J_{M'M}$ is the reduced rotation matrix.
-
+::: callout-note
+The Wigner D-functions describe rotations of spin states:
+$$ D^J_{M'M}(\alpha,\beta,\gamma) = e^{-iM'\alpha}d^J_{M'M}(\beta)e^{-iM\gamma} $$
+where $(\alpha,\beta,\gamma)$ are Euler angles and $d^J_{M'M}$ is the reduced rotation matrix.
+:::
 To be concrete, consider rotating $|JM\rangle$ about the Y-axis. The $J_y$ operator has off-diagonal matrix elements. The rotation operator is given by the matrix exponential of $J_y$, but the result is encapsulated in the Wigner functions. These coefficients depend on the initial and final states, which is why the $J$, $M$, and $M'$ indices are retained. For example, for a spin-1 state initially quantized along the Y-axis and rotated by 30°, the composition is found using these functions.
 
 The D-functions are defined for arbitrary rotations parameterized by Euler angles. In particle physics conventions, a general rotation $R$ consists of:  
+
 1. Rotation by $\phi$ about the Z-axis,  
 2. Rotation by $\theta$ about the Y-axis,  
 3. Rotation by $\gamma$ about the (new) Z-axis.  
@@ -930,6 +958,7 @@ $$\langle J, M' | R(\phi, \theta, \gamma) | J, M \rangle = e^{-i\gamma M'} d^J_{
 The $\theta$-dependent term $d^J_{M'M}(\theta)$ is the core nontrivial component, as rotations about Z-axes only contribute phases.
 
 ### Comment:
+
 - Removed inconsistent 2×2 matrix examples for $J_±$ (specific to spin-1/2) since the context is general spin $J$.
 - Corrected $d^l_{M'M} \to d^J_{M'M}$ to match standard notation.
 - Clarified the Euler angle decomposition and the matrix element expression, explicitly including $J$ in states.
@@ -962,6 +991,7 @@ These coefficients derive from the Wigner $D$-matrix for $j=1/2$, which uses hal
 
 ### Comment:
 The original text contained physically correct statements about half-angles in spin-1/2 rotations and SU(2) group matrices but had confusing phrasing ("I should have picked 60 degrees...") and lacked explicit formulas. The correction:  
+
 - Clarifies the rotation matrix structure.  
 - Fixes notation (explicit $R_y(\beta)$, matrix form).  
 - Removes ambiguous remarks while preserving the valid core physics (half-angle dependence, Clebsch-Gordan connection).  
@@ -987,9 +1017,9 @@ The input text contains no physics errors requiring correction. All statements a
 # Index: 3
 
 ### Original:
-Let's now look at the particle \( X \).
-The particle \( X \) carries the spin projection \( \lambda_X \).
-It decays to particles **1** and **2**, which move at a certain angle relative to the direction of \( X \).
+Let's now look at the particle $X$.
+The particle $X$ carries the spin projection $\lambda_X$.
+It decays to particles **1** and **2**, which move at a certain angle relative to the direction of $X$.
 
 ### Score: 100
 
@@ -997,23 +1027,23 @@ It decays to particles **1** and **2**, which move at a certain angle relative t
 *No correction necessary.*
 
 ### Comment:
-The provided text is physically correct. The notation for spin projection \(\lambda_X\) is standard in particle physics, and the description of the decay angle relative to the parent particle's direction is appropriate when interpreted in the rest frame of \(X\) with the quantization axis aligned along its lab-frame motion. No ambiguous, unclear, or erroneous elements require modification.
+The provided text is physically correct. The notation for spin projection $\lambda_X$ is standard in particle physics, and the description of the decay angle relative to the parent particle's direction is appropriate when interpreted in the rest frame of $X$ with the quantization axis aligned along its lab-frame motion. No ambiguous, unclear, or erroneous elements require modification.
 
 
 # Index: 3
 
 ### Original:
 To compensate for this angle, we must adjust the quantization axis.
-This adjustment is done by rotating the spin vector of \( X \) to align with its decay direction.
+This adjustment is done by rotating the spin vector of $X$ to align with its decay direction.
 We rotate from the initial configuration to the decay configuration, as indicated by the rotation orientation of the decay.
 
-> [!NOTE]
-> The **Wigner D-matrix** is used to rotate spin states:
-> $$
-> D^{J}_{\lambda,\lambda'}(\alpha,\beta,\gamma)
-> $$
-> where $J$ is the total angular momentum, $\lambda,\lambda'$ are spin projections, and $(\alpha,\beta,\gamma)$ are Euler angles.
-
+::: callout-note
+The **Wigner D-matrix** is used to rotate spin states:
+$$
+D^{J}_{\lambda,\lambda'}(\alpha,\beta,\gamma)
+$$
+where $J$ is the total angular momentum, $\lambda,\lambda'$ are spin projections, and $(\alpha,\beta,\gamma)$ are Euler angles.
+:::
 ### Score: 95
 
 ### Correction:
@@ -1021,6 +1051,7 @@ We rotate from the initial configuration to the decay configuration, as indicate
 
 ### Comment:
 The provided text accurately describes the rotation of spin states using the Wigner D-matrix. The notation is physically correct:  
+
 - $J$ properly denotes total angular momentum  
 - $\lambda$ and $\lambda'$ correctly represent spin projections  
 - Euler angles $(\alpha, \beta, \gamma)$ are standard parameters  
@@ -1031,19 +1062,19 @@ No ambiguous statements, incorrect variables, or unclear explanations are presen
 # Index: 3
 
 ### Original:
-I would like to evaluate this expression in the **aligned kinematics**, where \( \phi = \theta = 0 \).
+I would like to evaluate this expression in the **aligned kinematics**, where $\phi = \theta = 0$.
 In the **center-of-mass (CM) frame**, the expression simplifies.
 
 When the angles are zero, the transformation reduces significantly.
-The Wigner \( D \)-matrix appears because we need to rotate the system, but if the angles are zero, **no rotation is necessary**.
-This simplifies the summation over \( \lambda_X \).
+The Wigner $D$-matrix appears because we need to rotate the system, but if the angles are zero, **no rotation is necessary**.
+This simplifies the summation over $\lambda_X$.
 
-Since \( X \) is already moving along the \( z \)-axis, no rotation is needed.
+Since $X$ is already moving along the $z$-axis, no rotation is needed.
 The expression becomes:
 $$
 \sum_{\lambda_X, \lambda_3} D^{J_X}_{0, \lambda_X - \lambda_3}(0, 0, 0)
 $$
-and another term involving \( \lambda_1, \lambda_2 \):
+and another term involving $\lambda_1, \lambda_2$:
 $$
 D^{J_X}_{\lambda_X, \lambda_1 - \lambda_2}(\theta, \phi)
 $$
@@ -1051,28 +1082,29 @@ $$
 ### Score: 85
 
 ### Correction:
-I would like to evaluate this expression in the **aligned kinematics**, where \( \phi = \theta = 0 \).  
+I would like to evaluate this expression in the **aligned kinematics**, where $\phi = \theta = 0$.  
 In the **center-of-mass (CM) frame**, the expression simplifies.  
 
 When the angles are zero, the transformation reduces significantly.  
-The Wigner \( D \)-matrix appears because we need to rotate the system, but if the angles are zero, **no rotation is necessary**.  
-This simplifies the summation over \( \lambda_X \).  
+The Wigner $D$-matrix appears because we need to rotate the system, but if the angles are zero, **no rotation is necessary**.  
+This simplifies the summation over $\lambda_X$.  
 
-Since \( X \) is already moving along the \( z \)-axis, no rotation is needed.  
+Since $X$ is already moving along the $z$-axis, no rotation is needed.  
 The expression becomes:  
-\[
+$$
 \sum_{\lambda_X, \lambda_3} D^{J_X}_{0, \lambda_X - \lambda_3}(0, 0, 0)
-\]  
-and another term involving \( \lambda_1, \lambda_2 \):  
-\[
+$$  
+and another term involving $\lambda_1, \lambda_2$:  
+$$
 D^{J_X}_{\lambda_X, \lambda_1 - \lambda_2}(0, 0)
-\]
+$$
 
 ### Comment:
-The original text contained inconsistent notation for the second Wigner \(D\)-matrix, where angles \((\theta, \phi)\) were retained despite specifying \(\phi = \theta = 0\) kinematics. This was corrected by setting the angles to \((0, 0)\) in the second \(D\)-matrix. All physics statements are now consistent:  
-- In aligned kinematics (\(\theta = \phi = 0\)), rotations are trivial, so \(D\)-matrices reduce to Kronecker deltas.  
-- The summation over \(\lambda_X\) simplifies correctly due to the absence of rotation.  
-- Four-vector notation (\(z\)-axis alignment) and angular momentum labels (\(\lambda_i\)) are physically sound.
+The original text contained inconsistent notation for the second Wigner $D$-matrix, where angles $(\theta, \phi)$ were retained despite specifying $\phi = \theta = 0$ kinematics. This was corrected by setting the angles to $(0, 0)$ in the second $D$-matrix. All physics statements are now consistent:  
+
+- In aligned kinematics ($\theta = \phi = 0$), rotations are trivial, so $D$-matrices reduce to Kronecker deltas.  
+- The summation over $\lambda_X$ simplifies correctly due to the absence of rotation.  
+- Four-vector notation ($z$-axis alignment) and angular momentum labels ($\lambda_i$) are physically sound.
 
 
 # Index: 3
@@ -1082,19 +1114,19 @@ This results in a **delta function constraint** due to angular momentum conserva
 $$
 \delta_{\lambda_0, \lambda_X - \lambda_3}
 $$
-The only way to avoid rotation is if the state remains unchanged, meaning \( \lambda_X \) is **constrained**.
+The only way to avoid rotation is if the state remains unchanged, meaning $\lambda_X$ is **constrained**.
 
 ### Score: 70
 
 ### Correction:
 This results in a **delta function constraint** due to angular momentum conservation:  
-\[
+$$
 \delta_{\lambda_0,\,\lambda_X - \lambda_3}
-\]  
-which enforces the helicity conservation condition \(\lambda_0 = \lambda_X - \lambda_3\). This constraint arises from rotational invariance about the \(z\)-axis.
+$$  
+which enforces the helicity conservation condition $\lambda_0 = \lambda_X - \lambda_3$. This constraint arises from rotational invariance about the $z$-axis.
 
 ### Comment:
-The original formula \(\delta_{\lambda_0, \lambda_X - \lambda_3}\) is physically correct but lacks clarity in notation; a comma with space improves readability. The vague phrase "avoid rotation" is replaced with a precise statement about rotational invariance. The condition \(\lambda_0 = \lambda_X - \lambda_3\) is explicitly stated, and the misleading implication that \(\lambda_X\) alone is constrained is corrected (the constraint involves all three helicities). The delta function notation is standard for helicity conservation in scattering amplitudes.
+The original formula $\delta_{\lambda_0, \lambda_X - \lambda_3}$ is physically correct but lacks clarity in notation; a comma with space improves readability. The vague phrase "avoid rotation" is replaced with a precise statement about rotational invariance. The condition $\lambda_0 = \lambda_X - \lambda_3$ is explicitly stated, and the misleading implication that $\lambda_X$ alone is constrained is corrected (the constraint involves all three helicities). The delta function notation is standard for helicity conservation in scattering amplitudes.
 
 
 # Index: 3
@@ -1104,7 +1136,7 @@ The final expression is:
 $$
 \mathcal{H}_0 \, D^{J_X}_{\lambda_X, \lambda_3}(\theta, \phi)
 $$
-where \( \lambda_X = \lambda_0 + \lambda_3 \).
+where $\lambda_X = \lambda_0 + \lambda_3$.
 
 The complete decay amplitude is:
 $$
@@ -1118,10 +1150,10 @@ The complete decay amplitude is:
 $$
 \mathcal{H}_0 \, D^{J_X}_{\lambda_X, \lambda_3}(\theta, \phi)  
 $$  
-where \(\lambda_X = \lambda_0 + \lambda_3\).
+where $\lambda_X = \lambda_0 + \lambda_3$.
 
 ### Comment:
-The original second expression incorrectly included two Wigner D-functions, which is physically erroneous for a single decay amplitude. In standard particle decay formalism, the angular distribution is described by **one** Wigner D-function \(D^{J_X}_{\lambda_X, \lambda_3}(\theta, \phi)\), where \(\lambda_X = \lambda_0 + \lambda_3\) enforces helicity conservation. The extraneous \(D^{J_X}_{\lambda_0 + \lambda_3, \lambda_1 - \lambda_2}(\theta, \phi)\) term was removed. The first expression and helicity definition are correct and retained. Notation (\(J_X\), \(\lambda_i\), \(\theta\), \(\phi\)) is physically appropriate.
+The original second expression incorrectly included two Wigner D-functions, which is physically erroneous for a single decay amplitude. In standard particle decay formalism, the angular distribution is described by **one** Wigner D-function $D^{J_X}_{\lambda_X, \lambda_3}(\theta, \phi)$, where $\lambda_X = \lambda_0 + \lambda_3$ enforces helicity conservation. The extraneous $D^{J_X}_{\lambda_0 + \lambda_3, \lambda_1 - \lambda_2}(\theta, \phi)$ term was removed. The first expression and helicity definition are correct and retained. Notation ($J_X$, $\lambda_i$, $\theta$, $\phi$) is physically appropriate.
 
 
 # Index: 3
@@ -1141,11 +1173,13 @@ The input phrase "That's it—**as simple as that**." contains no physics conten
 # Index: 3
 
 ### Original:
+
 1. **Horizontal rules (`
 
 ### Score: 0
 
 ### Correction:
+
 1. **Horizontal rules (`
 
 ### Comment:
@@ -1156,10 +1190,11 @@ The input consists solely of an incomplete markdown header fragment ("1. **Horiz
 
 ### Original:
 `)** to separate logical blocks.
+
 2. **Bold emphasis** for critical terms like **1**, **2**, and **aligned kinematics**.
 3. **Callout block** for the Wigner D-matrix definition, placed contextually where rotation is first discussed.
-4. **Block math (`$$...$$`)** for all major equations, properly spaced.
-5. **Inline math (`$...$`)** for variables like $\lambda,\lambda'$ inside the callout.
+4. **Block math (`$$...$$)** for all major equations, properly spaced.
+5. **Inline math ($...$`)** for variables like $\lambda,\lambda'$ inside the callout.
 
 No sentences were removed or altered, and the helping material was integrated only where directly relevant.
 
@@ -1184,9 +1219,9 @@ What is inside of the blobs? What's inside of this block, this blob, or that blo
 - I have $(2j_1 + 1) \times (2j_2 + 1)$ values here, which might depend on particle masses—say, the masses of $x$.
 - I also need a similar number for these terms, but there’s a reasonable way to approximate them.
 
-> [!NOTE]
-> The **spin multiplicity factor** $(2j_1 + 1)(2j_2 + 1)$ accounts for the number of possible spin states for particles with spins $j_1$ and $j_2$.
-
+::: callout-note
+The **spin multiplicity factor** $(2j_1 + 1)(2j_2 + 1)$ accounts for the number of possible spin states for particles with spins $j_1$ and $j_2$.
+:::
 ### Score: 60
 
 ### Correction:
@@ -1194,6 +1229,7 @@ How many numbers do I need to compute angular distributions in electromagnetic i
 
 ### Comment:
 I retained the physically correct statement about the spin multiplicity factor but removed the following problematic sections:  
+
 - Vague references to "blobs" and their undefined contents.  
 - Ambiguous claims about "two quantities" being sufficient without justification.  
 - The unclear phrase "masses of $x$" (undefined variable $x$).  
@@ -1229,6 +1265,7 @@ That’s why we often analyze $\cos\theta$, and this distribution is proportiona
 
 ### Comment:
 The physics content was largely correct, but two improvements were needed:  
+
 1. "Intensity observed along the line" was vague and non-standard; replaced with "differential decay rate" for physical precision.  
 2. Clarified "particle-dependent" by specifying $c$ as a coupling constant (or form factor) to avoid ambiguity.  
 Notation for $\frac{d\Gamma}{d(\cos\theta)}$ and $|M|^2$ was correct, and the Jacobian explanation for $\cos\theta$ is accurate.
@@ -1242,12 +1279,13 @@ Here, $\theta$ and $\cos\theta$ are plotted: $\theta = 0$ corresponds to $\cos\t
 We scan from $-1$ to $1$, and if the distribution is flat, that’s one possibility.
 
 For particles with spin, you often see:
+
 - A **parabola**—a second-order polynomial in $\cos\theta$.
 - Or you might see **this shape**.
 
-> [!IMPORTANT]
-> The **angular distribution** $\frac{d\Gamma}{d(\cos\theta)} \propto |\mathcal{M}|^2$ is directly tied to the quantum transition amplitude $A$, where $|\mathcal{M}|^2 = |A|^2$. Experiments only measure $|A|^2$.
-
+::: callout-important
+The **angular distribution** $\frac{d\Gamma}{d(\cos\theta)} \propto |\mathcal{M}|^2$ is directly tied to the quantum transition amplitude $A$, where $|\mathcal{M}|^2 = |A|^2$. Experiments only measure $|A|^2$.
+:::
 ### Score: 65
 
 ### Correction:
@@ -1256,12 +1294,14 @@ Here, $\theta$ and $\cos\theta$ are plotted: $\theta = 0$ corresponds to $\cos\t
 We scan $\cos\theta$ from $-1$ to $1$, and if the distribution is flat, that’s one possibility.  
 
 For particles with spin, you often see:  
+
 - A **parabolic shape** proportional to $\cos^2\theta$.  
 
-> [!IMPORTANT]  
-> The **angular distribution** $\frac{d\Gamma}{d(\cos\theta)} \propto |\mathcal{M}|^2$ arises from the quantum transition amplitude $A$, where $|\mathcal{M}|^2 = |A|^2$. Experiments measure $\frac{d\Gamma}{d(\cos\theta)}$, from which $|A|^2$ is inferred.
-
+::: callout-important
+The **angular distribution** $\frac{d\Gamma}{d(\cos\theta)} \propto |\mathcal{M}|^2$ arises from the quantum transition amplitude $A$, where $|\mathcal{M}|^2 = |A|^2$. Experiments measure $\frac{d\Gamma}{d(\cos\theta)}$, from which $|A|^2$ is inferred.
+:::
 ### Comment:
+
 - Critical error: $\theta = 0$ implies $\cos\theta = 1$, not $-1$ (corrected).  
 - Vague phrases ("this shape") removed; specified parabolic dependence as $\cos^2\theta$.  
 - Clarified experimental measurement: Experiments directly measure $\frac{d\Gamma}{d(\cos\theta)}$, not $|A|^2$ itself.  
@@ -1293,6 +1333,7 @@ You square the amplitude, average over initial spin projections and sum over fin
 Then you ask: What does this tell me?
 
 ### Comment:
+
 - Corrected "$G$" to "$A$" for consistency with the defined quantum transition amplitude.  
 - Revised the spin handling for unpolarized decays: averaging over initial spins (division by the number of initial spin states) and summing over final spins is standard. The original phrase "sum over initial and final spin projections" omitted averaging and was physically inaccurate.  
 - No other physics errors found; the core concepts of probability amplitudes, squaring, and experimental measurement are correct.
@@ -1323,6 +1364,7 @@ The goal is to infer what’s inside the blobs by fitting them to data.
 
 ### Comment:
 The provided text on partial wave analysis is physically accurate and well-structured. Key strengths include:  
+
 1. Correct definition of Legendre polynomial expansion for angular distributions: $P_\ell(\cos\theta)$  
 2. Proper distinction between partial wave analysis (amplitude modeling) and moment analysis (cross section projection)  
 3. Accurate formula for differential cross section: $\frac{d\sigma}{d(\cos\theta)} = \sum_{\ell} a_\ell P_\ell(\cos\theta)$  
@@ -1336,20 +1378,20 @@ Notation is consistent ($\ell$, $\theta$, $d(\cos\theta)$), and all statements a
 I didn’t tell you much about the differences between the **canonical state** that we introduced at the beginning and the **helicity state** that we introduced later.
 We only touched a little bit on how the state is defined in the **rest frame**, and hopefully we will explore more.
 
-> [!NOTE]
-> The **helicity operator** is defined as:
-> $$
-> \hat{h} = \frac{\mathbf{J} \cdot \mathbf{p}}{|\mathbf{p}|}
-> $$
-> where $\mathbf{J}$ is the total angular momentum operator and $\mathbf{p}$ is the momentum.
-
+::: callout-note
+The **helicity operator** is defined as:
+$$
+\hat{h} = \frac{\mathbf{J} \cdot \mathbf{p}}{|\mathbf{p}|}
+$$
+where $\mathbf{J}$ is the total angular momentum operator and $\mathbf{p}$ is the momentum.
+:::
 ### Score: 95
 
 ### Correction:
 *No correction necessary.*
 
 ### Comment:
-The provided content is physically correct and clearly presented. The definition of the helicity operator \(\hat{h} = \frac{\mathbf{J} \cdot \mathbf{p}}{|\mathbf{p}|}\) uses standard notation (bold for vectors), properly identifies \(\mathbf{J}\) as the total angular momentum operator, and accurately describes the helicity-state framework. No errors in physics, notation, or logical flow are present. The note about the rest frame is appropriately contextualized.
+The provided content is physically correct and clearly presented. The definition of the helicity operator $\hat{h} = \frac{\mathbf{J} \cdot \mathbf{p}}{|\mathbf{p}|}$ uses standard notation (bold for vectors), properly identifies $\mathbf{J}$ as the total angular momentum operator, and accurately describes the helicity-state framework. No errors in physics, notation, or logical flow are present. The note about the rest frame is appropriately contextualized.
 
 
 # Index: 5
@@ -1387,13 +1429,13 @@ I just tell you that:
 
 And you know a lot about **kinematics** already.
 
-> [!TIP]
-> For **Dalitz plot kinematics**, the invariant masses of decay products satisfy:
-> $$
-> m_{12}^2 + m_{23}^2 + m_{31}^2 = m_D^2 + m_1^2 + m_2^2 + m_3^2
-> $$
-> where $m_{ij}^2$ are the invariant masses of two decay products, and $m_D$ is the mass of the decaying D-meson.
-
+::: callout-tip
+For **Dalitz plot kinematics**, the invariant masses of decay products satisfy:
+$$
+m_{12}^2 + m_{23}^2 + m_{31}^2 = m_D^2 + m_1^2 + m_2^2 + m_3^2
+$$
+where $m_{ij}^2$ are the invariant masses of two decay products, and $m_D$ is the mass of the decaying D-meson.
+:::
 ### Score: 95
 
 ### Correction:
@@ -1402,7 +1444,7 @@ And you know a lot about **kinematics** already.
 ### Comment:
 The provided content is physically accurate. The Dalitz plot kinematics formula is correct:  
 $$m_{12}^2 + m_{23}^2 + m_{31}^2 = m_D^2 + m_1^2 + m_2^2 + m_3^2$$  
-where \(m_{ij}\) denotes the invariant mass of two decay products, \(m_D\) is the decaying D-meson mass, and \(m_1, m_2, m_3\) are the final-state particle masses. Notation is consistent (lowercase for masses), and the experimental context (CLEO/BaBar, D vs. \(D_s\) decays) is appropriate. No physics errors or ambiguous statements require correction.
+where $m_{ij}$ denotes the invariant mass of two decay products, $m_D$ is the decaying D-meson mass, and $m_1, m_2, m_3$ are the final-state particle masses. Notation is consistent (lowercase for masses), and the experimental context (CLEO/BaBar, D vs. $D_s$ decays) is appropriate. No physics errors or ambiguous statements require correction.
 
 
 # Index: 5

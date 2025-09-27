@@ -3,28 +3,31 @@
 
 My experiment with recording lectures has been **relatively successful**, so I could recover what I was speaking.
 
-> [!NOTE]
-> **Speech-to-Text Technology:**
-> There is an open large language model from OpenAI called **Whisper** that can translate audio to text. Since the architecture is known, it runs even on CPUs in parallel, such as on a Mac. You just:
-> 1. Download it
-> 2. Execute it
-> And then you have a transcript of your speech.
+::: callout-note
+**Speech-to-Text Technology:**
+There is an open large language model from OpenAI called **Whisper** that can translate audio to text. Since the architecture is known, it runs even on CPUs in parallel, such as on a Mac. You just:
 
+1. Download it
+2. Execute it
+And then you have a transcript of your speech.
+:::
 ---
 
 *Important notes about recording:*
+
 - The lecture is recorded
 - I do it for myself
 - It might be converted to a document
 
-> [!TIP]
-> **Collaboration Opportunity:**
-> If someone would volunteer to:
-> * Type the questions
-> * Add the equations
-> * Check them
-> That would be helpful.
+::: callout-tip
+**Collaboration Opportunity:**
+If someone would volunteer to:
 
+* Type the questions
+* Add the equations
+* Check them
+That would be helpful.
+:::
 ---
 
 I don't know what to do with that yet, but just *for fun* and for exploring the technologies, I will keep the recordings.
@@ -41,115 +44,125 @@ Before diving deeper, let’s start with a recap and address a few questions. Th
 ---
 
 **Question 1**: Without consulting the PDG, determine the isospin of these particles based on their quark content:
-- \( c \bar{s} \)
-- \( b q \)
-- \( b s \)
-- \( q \bar{q} \)
+
+- $c \bar{s}$
+- $b q$
+- $b s$
+- $q \bar{q}$
 
 **Question 2**: What is the dimensionality of the isospin matrix acting on a system of three quarks with two possible charges?
-If we treat the quarks as a wave function in two dimensions—where spin-up corresponds to the \( u \)-quark and spin-down to the \( d \)-quark—what is the size of this matrix?
+If we treat the quarks as a wave function in two dimensions—where spin-up corresponds to the $u$-quark and spin-down to the $d$-quark—what is the size of this matrix?
 
 **Question 3**: What are the irreducible representations of this matrix’s action on the quarks? In other words, how does it decompose into independent blocks that do not interact?
 
 ---
 
-When discussing isospin, we focus on **light quarks**. The first meson, \( c \bar{s} \), contains no light quarks, so its isospin is \( 0 \).
+When discussing isospin, we focus on **light quarks**. The first meson, $c \bar{s}$, contains no light quarks, so its isospin is $0$.
 
-For the \( B \)-mesons:
-- If the quark \( q \) is light (e.g., \( u \) or \( d \)), the isospin is \( \frac{1}{2} \).
-- If \( q \) is heavy (e.g., \( c \) or \( b \)), the isospin is \( 0 \).
+For the $B$-mesons:
 
-The \( s \)-quark belongs to the light quarks in \( SU(3) \) but is excluded in isospin discussions. For the \( b s \) state, if \( s \) is the only light quark, the isospin is \( \frac{1}{2} \).
+- If the quark $q$ is light (e.g., $u$ or $d$), the isospin is $\frac{1}{2}$.
+- If $q$ is heavy (e.g., $c$ or $b$), the isospin is $0$.
 
-For a pentaquark with three light quarks, the isospin matches that of the \( \Delta \)-baryons. The \( \Delta \) states (\( \Delta^{++} \), \( \Delta^+ \), \( \Delta^0 \), \( \Delta^- \)) have isospin \( \frac{3}{2} \).
+The $s$-quark belongs to the light quarks in $SU(3)$ but is excluded in isospin discussions. For the $b s$ state, if $s$ is the only light quark, the isospin is $\frac{1}{2}$.
+
+For a pentaquark with three light quarks, the isospin matches that of the $\Delta$-baryons. The $\Delta$ states ($\Delta^{++}$, $\Delta^+$, $\Delta^0$, $\Delta^-$) have isospin $\frac{3}{2}$.
 
 ---
 
-> [!IMPORTANT]
-> **Clarification**: When assigning isospin to a particle, we refer to the **length of the isospin vector**, not its projection. For example, the \( B \)-meson’s isospin \( \frac{1}{2} \) implies two charge states:
-> - \( B^+ = b \bar{u} \)
-> - \( B^0 = b \bar{d} \)
->
-> The antiparticles are fully conjugated:
-> - \( B^- = \bar{b} u \)
-> - \( \bar{B}^0 = \bar{b} d \)
->
-> These form a separate triplet in the antiparticle space.
+::: callout-important
+**Clarification**: When assigning isospin to a particle, we refer to the **length of the isospin vector**, not its projection. For example, the $B$-meson’s isospin $\frac{1}{2}$ implies two charge states:
 
+- $B^+ = b \bar{u}$
+- $B^0 = b \bar{d}$
+
+The antiparticles are fully conjugated:
+
+- $B^- = \bar{b} u$
+- $\bar{B}^0 = \bar{b} d$
+
+These form a separate triplet in the antiparticle space.
+:::
 ---
 
 1. **Isospin assignments for mesons**:
-\[
+$$
 I = \begin{cases}
 0 & \text{(no light quarks)} \\
 \frac{1}{2} & \text{(one light quark)} \\
 1 & \text{(two light quarks)}
 \end{cases}
-\]
+$$
 
-2. **Isospin of the \( \Delta \)-baryon**:
-\[
+2. **Isospin of the $\Delta$-baryon**:
+$$
 I_\Delta = \frac{3}{2}
-\]
+$$
 
 3. **Dimensionality of the isospin matrix for three quarks**:
-\[
+$$
 \text{dim}(\mathbf{I}) = 8 \times 8
-\]
+$$
 
-4. **Irreducible representations for three quarks in \( SU(2) \)**:
-\[
+4. **Irreducible representations for three quarks in $SU(2)$**:
+$$
 \mathbf{2} \otimes \mathbf{2} \otimes \mathbf{2} = \mathbf{4} \oplus \mathbf{2} \oplus \mathbf{2}
-\]
-- \( \mathbf{4} \): Symmetric (spin-\( \frac{3}{2} \), like \( \Delta \)).
-- \( \mathbf{2} \): Mixed-symmetry (spin-\( \frac{1}{2} \)).
+$$
 
-5. **Charge states of \( B \)-mesons**:
-\[
+- $\mathbf{4}$: Symmetric (spin-$\frac{3}{2}$, like $\Delta$).
+- $\mathbf{2}$: Mixed-symmetry (spin-$\frac{1}{2}$).
+
+5. **Charge states of $B$-mesons**:
+$$
 B^+ = b \bar{u}, \quad B^0 = b \bar{d}, \quad B^- = \bar{b} u, \quad \bar{B}^0 = \bar{b} d
-\]
+$$
 
 ### Spin and Charge Combinations in Quark Systems
 
 
 Now, **Cascade B** has spin **1/2**.
-- **1/2** means that the dimensionality is \(2J + 1 = 2\).
+
+- **1/2** means that the dimensionality is $2J + 1 = 2$.
 - There are two particles of this type: **Cascade B** and **Cascade B**.
 
 ---
 
 Now, the **charges**.
 The quark charges are:
-- **Lower row (D, S, B)**: \(Q = -\frac{1}{3}\)
-- **Upper row (U, C, T)**: \(Q = +\frac{2}{3}\)
 
-When I combine three lower-row quarks like **DDD**, the total charge is \(-1\).
-If I combine three upper-row quarks like **UUU**, the total charge is \(+2\).
+- **Lower row (D, S, B)**: $Q = -\frac{1}{3}$
+- **Upper row (U, C, T)**: $Q = +\frac{2}{3}$
+
+When I combine three lower-row quarks like **DDD**, the total charge is $-1$.
+If I combine three upper-row quarks like **UUU**, the total charge is $+2$.
 *Intermediate combinations give other values.*
 
 ---
 
 Here, I combined **B** and **S**.
+
 - I almost have the full bottom row: **B** and **S**.
-- If I had another lower-row quark, the total charge would be \(-1\), but instead, I have an upper-row quark, so the total charge is **zero**.
+- If I had another lower-row quark, the total charge would be $-1$, but instead, I have an upper-row quark, so the total charge is **zero**.
 - That's why it's zero here.
-- If you replace it with a lower-row quark, you get \(-1\).
+- If you replace it with a lower-row quark, you get $-1$.
 
 ---
 
 Now we come to the last case, which has **three quarks** and several possible combinations.
+
 - What is the spin of this state?
 - What are the possible combinations for spin **1/2** (P-C plus and P-C zero)?
 - For spin **3/2**, I will have P-C.
 - The **1/3** means four particles in the multiplet, like **Delta plus-plus**.
 
-> [!NOTE]
-> The dimensionality of the isospin matrix acting on three quarks is \(2^3 = 8\).
-> We have an \(8 \times 8\) matrix, but we can split it into irreducible representations.
-
+::: callout-note
+The dimensionality of the isospin matrix acting on three quarks is $2^3 = 8$.
+We have an $8 \times 8$ matrix, but we can split it into irreducible representations.
+:::
 ---
 
 An interesting question: What is the antiparticle for **P-C plus**?
+
 - For **P-C plus**, the antiparticle is not **P-C minus**—it's **P-C plus bar**.
 - For baryons, it's important to distinguish baryons from antibaryons because they have different quark components.
 
@@ -157,41 +170,43 @@ An interesting question: What is the antiparticle for **P-C plus**?
 
 Now, let's discuss the **irreducible representation** of the three quarks.
 Combining three spin-**1/2** particles:
+
 1. First, combine two spin-**1/2** particles to get spin-0 or spin-1.
 2. Then, combine the result with the third spin-**1/2** particle.
-3. The dimensionality check: \(2 \times 2 \times 2 = 8\) matches \(2 + 2 + 4\).
+3. The dimensionality check: $2 \times 2 \times 2 = 8$ matches $2 + 2 + 4$.
 
 ---
 
-To construct the basis for the highest isospin state, start with \(|uuu\rangle\) and apply the lowering operator:
-\[
+To construct the basis for the highest isospin state, start with $|uuu\rangle$ and apply the lowering operator:
+$$
 J_- |J, J\rangle = \sqrt{2J} \, |J, J-1\rangle
-\]
-For \(J = 3/2\), this gives:
-\[
+$$
+For $J = 3/2$, this gives:
+$$
 J_- |3/2, 3/2\rangle = \sqrt{3} \, |3/2, 1/2\rangle
-\]
+$$
 The normalized state is:
-\[
+$$
 |3/2, 1/2\rangle = \frac{1}{\sqrt{3}}(|uud\rangle + |udu\rangle + |duu\rangle)
-\]
+$$
 
 ---
 
 For the spin-**1/2** states, we construct orthogonal combinations:
-\[
+$$
 |1/2, 1/2\rangle = \frac{1}{\sqrt{6}}(2|uud\rangle - |udu\rangle - |duu\rangle)
-\]
+$$
 Applying the lowering operator gives:
-\[
+$$
 |1/2, -1/2\rangle = \frac{1}{\sqrt{6}}(2|ddu\rangle - |dud\rangle - |udd\rangle)
-\]
+$$
 
 ---
 
 The same logic applies to higher spins.
+
 - For example, combining two spin-1 particles gives spin-0, spin-1, or spin-2.
-- The dimensionality check: \(3 \times 3 = 1 + 3 + 5\).
+- The dimensionality check: $3 \times 3 = 1 + 3 + 5$.
 
 This is **standard spin algebra**, applicable to both integer and half-integer spins.
 The key is to start with the highest state and use lowering operators to construct the rest.
@@ -201,24 +216,26 @@ The key is to start with the highest state and use lowering operators to constru
 
 For practical calculations, you can derive these coefficients using ladder operators.
 For example, the spin-1 triplet states are:
-\[
+$$
 |1, 1\rangle = |\uparrow \uparrow\rangle, \quad |1, 0\rangle = \frac{1}{\sqrt{2}}(|\uparrow \downarrow\rangle + |\downarrow \uparrow\rangle), \quad |1, -1\rangle = |\downarrow \downarrow\rangle
-\]
+$$
 The singlet state is:
-\[
+$$
 |0, 0\rangle = \frac{1}{\sqrt{2}}(|\uparrow \downarrow\rangle - |\downarrow \uparrow\rangle)
-\]
+$$
 
 ---
 
 This method works for **any spin combination**.
 For three quarks, the irreducible representations are:
+
 - A **quartet** (spin-**3/2**)
 - Two **doublets** (spin-**1/2**)
 
 The same principles apply to **isospin** and **flavor SU(3)**, though SU(3) is more complex.
 For **SU(2)**, it’s straightforward spin addition.
 You need to be comfortable with:
+
 - Dimensionalities
 - Lowering operators
 - Orthogonal combinations
@@ -226,6 +243,7 @@ You need to be comfortable with:
 ---
 
 This is **foundational** for:
+
 - Quantum mechanics
 - Particle physics
 - Group theory
@@ -248,17 +266,18 @@ One of them is **color**, which we've already discussed.
 The baryon wave function would have color indices and must be color-neutral, as all hadrons are.
 
 We have to work with:
+
 1. A **space wave function** that essentially describes how the wave function is distributed in space—its dependence on $x$ and time $t$.
 2. **Isospin**
 3. **Spin**
 
-> [!IMPORTANT]
-> It's important to realize that, in the general case, they are **not factorizable**.
-> You cannot say you have to deal with the product of the functions.
-> The wave function lives in this product of the four spaces and can mix the spaces.
-> You need to have a sum of the components in these spaces.
-> It would be unfair to write, in the general case, isospin times the rest—not true in general.
-
+::: callout-important
+It's important to realize that, in the general case, they are **not factorizable**.
+You cannot say you have to deal with the product of the functions.
+The wave function lives in this product of the four spaces and can mix the spaces.
+You need to have a sum of the components in these spaces.
+It would be unfair to write, in the general case, isospin times the rest—not true in general.
+:::
 ---
 
 
@@ -291,6 +310,7 @@ The $\Delta^{++}$ with $J_z = \frac{3}{2}$ is obtained by acting with the loweri
 
 
 What happens if we act with the lowering operator in the isospin space? $G_-$ acting on $|\!u\!\!\uparrow u\!\!\uparrow u\!\!\uparrow \rangle$.
+
 - If we act with the lowering operator in the **spin space**, we reduce the projection.
 - If we act with the lowering operator in the **flavor space**, we reduce the charge and obtain a different particle: the $\Delta^+$.
 
@@ -428,9 +448,9 @@ That came as a surprise.
 
 ---
 
-> [!NOTE]
-> The proton wave function construction involves combining symmetric and antisymmetric components in spin and flavor spaces to satisfy the overall antisymmetry requirement due to the color wave function. This ensures the Pauli exclusion principle is obeyed for the quarks inside the baryon.
-
+::: callout-note
+The proton wave function construction involves combining symmetric and antisymmetric components in spin and flavor spaces to satisfy the overall antisymmetry requirement due to the color wave function. This ensures the Pauli exclusion principle is obeyed for the quarks inside the baryon.
+:::
 ### Probing Proton Structure: Elastic Scattering, Form Factors, and the Three-Quark Model
 
 
@@ -461,11 +481,11 @@ It's amazing to think this way.
 
 Those who took nuclear physics before can easily tell me: *what is the most probable outcome?* Where will the electron go—perpendicular, 30 degrees, 20 degrees? Do you have a feeling?
 
-> [!NOTE]
-> The **Rutherford scattering formula** for point-like particles is:
-> $$\frac{d\sigma}{d\Omega} \propto \frac{1}{\sin^4(\theta/2)}$$
-> This explains the huge peak at small angles in the scattering probability.
-
+::: callout-note
+The **Rutherford scattering formula** for point-like particles is:
+$$\frac{d\sigma}{d\Omega} \propto \frac{1}{\sin^4(\theta/2)}$$
+This explains the huge peak at small angles in the scattering probability.
+:::
 Something you might remember is the $\frac{1}{Q^4}$ Rutherford scattering term, $\frac{1}{\sin^4(\theta/2)}$.
 There's a huge peak at around zero angle in the probability.
 Most of the time, the electron prefers to go straight with zero scattering angle.
@@ -497,6 +517,7 @@ It's convenient to introduce combinations of these form factors: the **electric 
 In non-relativistic theory, they have a straightforward interpretation—they show the **charge and magnetic distributions in momentum space**.
 We can transform these to coordinate space via **Fourier transform**.
 The normalization of these form factors is fixed:
+
 - $G_E(0)$ gives the total charge (**1 for the proton**),
 - $G_M(0)$ gives the magnetic moment.
 
@@ -555,8 +576,10 @@ Good question.
 
 ---
 
-> [!NOTE]
-> Key experimental values for magnetic moments:
-> - Proton: $\mu_p \approx 2.79 \frac{e}{2m_p}$
-> - Neutron: $\mu_n \approx -1.91 \frac{e}{2m_p}$
-> These values arise from the proton's quark structure and wave function.
+::: callout-note
+Key experimental values for magnetic moments:
+
+- Proton: $\mu_p \approx 2.79 \frac{e}{2m_p}$
+- Neutron: $\mu_n \approx -1.91 \frac{e}{2m_p}$
+These values arise from the proton's quark structure and wave function.
+:::
