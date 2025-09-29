@@ -181,7 +181,7 @@ window.Quarto = {
 <img src="images/fig1.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fg1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: 1 A unitary diagram for the three-body decay. The arrows show the initial and final state particles, and the blob stands for the interaction that transforms the initial state into the final state.
+Figure&nbsp;1: A unitary diagram for the three-body decay. The arrows show the initial and final state particles, and the blob stands for the interaction that transforms the initial state into the final state.
 </figcaption>
 </figure>
 </div>
@@ -227,7 +227,7 @@ Figure&nbsp;1: 1 A unitary diagram for the three-body decay. The arrows show the
 <img src="images/fig3.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fg3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: 3 The Dalitz plot, a representation of the phase-space for the three-body decay. It appears as an ellipse-shaped area where the internal region corresponds to allowed kinematics and the outside region is forbidden. On the x-axis lies the squared mass of two final-state particles, while the y-axis corresponds to the other subsystem. A horizontal line represents a slice of the phase-space with one mass fixed. The borders of the area correspond to configurations where all three momenta are aligned in the rest frame of the decaying particle, or equivalently, where the scattering angle in the relevant rest frame is either 0 or π.
+Figure&nbsp;2: The Dalitz plot, a representation of the phase-space for the three-body decay. It appears as an ellipse-shaped area where the internal region corresponds to allowed kinematics and the outside region is forbidden. On the x-axis lies the squared mass of two final-state particles, while the y-axis corresponds to the other subsystem. A horizontal line represents a slice of the phase-space with one mass fixed. The borders of the area correspond to configurations where all three momenta are aligned in the rest frame of the decaying particle, or equivalently, where the scattering angle in the relevant rest frame is either 0 or π.
 </figcaption>
 </figure>
 </div>
@@ -248,7 +248,7 @@ Figure&nbsp;2: 3 The Dalitz plot, a representation of the phase-space for the th
 <img src="images/fig2.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fg2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3: 2 A sketch illustrating the recursive relation when computing the phase-space expression. This is not a dynamic assumption but a mathematical trick that rewrites the full three-body phase-space through lower-dimensional phase-space elements and the two-body phase-space, for which the expression is simple.
+Figure&nbsp;3: A sketch illustrating the recursive relation when computing the phase-space expression. This is not a dynamic assumption but a mathematical trick that rewrites the full three-body phase-space through lower-dimensional phase-space elements and the two-body phase-space, for which the expression is simple.
 </figcaption>
 </figure>
 </div>
@@ -285,7 +285,9 @@ d\Phi_2 = \frac{1}{8\pi} \frac{2|\vec{p}|}{\sqrt{s}} \frac{d\Omega}{4\pi}
 </div>
 </div>
 </div>
-<p>We now turn to a Dalitz plot analysis. Refer to <a href="#fig-fg3" class="quarto-xref">Figure&nbsp;2</a> The following plot resembles real experimental data—in fact, with such high statistics, the actual data would look just as smooth.</p>
+<p>We now turn to a Dalitz plot analysis.</p>
+<p>Refer to <a href="#fig-fg3" class="quarto-xref">Figure&nbsp;2</a></p>
+<p>The following plot resembles real experimental data—in fact, with such high statistics, the actual data would look just as smooth.</p>
 <ul>
 <li><p><strong>x-axis</strong>: invariant mass squared of the proton and kaon, <span class="math display">
 m_{pK}^2 = (p_p + p_K)^2
@@ -404,7 +406,7 @@ d\Gamma = \frac{1}{2m_{\Lambda_c}} |\mathcal{M}|^2 \, d\Phi_3
 <img src="images/fig4.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fg4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4: 4 A diagram showing the spin projection. The horizontal line arrow indicates the z-axis, which is chosen as the quantization axis. The arrow denotes the particle spin, and its projection onto the axis is represented by m in the equations.
+Figure&nbsp;4: A diagram showing the spin projection. The horizontal line arrow indicates the z-axis, which is chosen as the quantization axis. The arrow denotes the particle spin, and its projection onto the axis is represented by m in the equations.
 </figcaption>
 </figure>
 </div>
@@ -434,7 +436,9 @@ D^{(1/2)}_{m'm}(\alpha, \beta, \gamma) = \begin{pmatrix} \cos(\beta/2) &amp; -\s
 </div>
 </div>
 </div>
-<p>Are there any questions concerning the Wigner D functions? Would you be able to calculate any rotations of the spin projection? Refer to <a href="#fig-fg4" class="quarto-xref">Figure&nbsp;4</a> It looks alright, right? What’s important to note is the convention with the minus sign. If you want to do matrix exponentiation yourself, in previous exercises we computed these matrices.</p>
+<p>Are there any questions concerning the Wigner D functions? Would you be able to calculate any rotations of the spin projection?</p>
+<p>Refer to <a href="#fig-fg4" class="quarto-xref">Figure&nbsp;4</a></p>
+<p>It looks alright, right? What’s important to note is the convention with the minus sign. If you want to do matrix exponentiation yourself, in previous exercises we computed these matrices.</p>
 <p>In principle, one can do that using Python or Julia: just use matrix exponentiation, input the matrix, and you have the Wigner D functions. But you can also look them up, as they are conventional. Be careful with Mathematica in particular. Mathematica has an opposite convention to what we use: it has a plus sign here, I think, and some indices are swapped. Be careful with that.</p>
 <p>Wikipedia is the most reliable source in that respect. You can search for Wigner D functions, and it gives a table with conventions and everything. That is my go-to page if I need to check what the Wigner functions are. They are coded correctly in Python in the sympy library, and they are coded correctly in ROOT. There is a word of caution.</p>
 <p>Let me stress that we discussed so far did not involve weak interactions or strong interactions. It was about rotations and the rotational group. That’s a fun part, and it still impresses me: in order to understand how particles behave and what the angular distributions are, you need little from the strong interaction.</p>
@@ -448,7 +452,7 @@ D^{(1/2)}_{m'm}(\alpha, \beta, \gamma) = \begin{pmatrix} \cos(\beta/2) &amp; -\s
 <img src="images/fig5.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fg5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;5: 5 A dynamic diagram of a cascade decay, where particle 0 decays to a three-body final state through an intermediate state x that sequentially decays into particles 1 and 2. The intermediate particle carries spin j and serves as an expansion term of the full amplitude, known as the partial projection term. Lines represent initial and final state particles, while the double line denotes the intermediate particle.
+Figure&nbsp;5: A dynamic diagram of a cascade decay, where particle 0 decays to a three-body final state through an intermediate state x that sequentially decays into particles 1 and 2. The intermediate particle carries spin j and serves as an expansion term of the full amplitude, known as the partial projection term. Lines represent initial and final state particles, while the double line denotes the intermediate particle.
 </figcaption>
 </figure>
 </div>
@@ -472,7 +476,8 @@ Figure&nbsp;5: 5 A dynamic diagram of a cascade decay, where particle 0 decays t
 <p>This <span class="math inline">H</span> is the physics, and for the hard interactions, this is something unknown because we don’t have a way to parameterize it. With this <span class="math inline">H</span>, we mean that you have a particle <span class="math inline">\lambda_X</span>, number 3. These are the three particles: <span class="math inline">\lambda_X</span>, <span class="math inline">\lambda_3</span>, 0 became 2. So the other <span class="math inline">H</span> degree, and plus this <span class="math inline">X</span> going to 1 and 2 and the <span class="math inline">G</span>.</p>
 <p>The <span class="math inline">G</span> is the rotation orientation of the decay. The first index tells you who decays. The second index gives where it decays. The particles have their spin in the frame where the particle moves. The most natural way to use the spin to actually quantize the spin is that the quantized direction of the spin is the direction of motion.</p>
 <p>In that case, the <span class="math inline">\lambda</span>’s are helicity projections, projection to motion to <span class="math inline">P</span>. The <span class="math inline">D</span> has the first index telling you who decays, and then the second index after rotation where it decays, and then particle 0.</p>
-<p>Let’s look at particle <span class="math inline">X</span>. Particle <span class="math inline">X</span> carries the spin projection <span class="math inline">\lambda_X</span>. It decays to particles 1 and 2. They are going at a certain angle with respect to the direction of motion of <span class="math inline">X</span>. To compensate for this angle, one has to adjust the quantization axis. Refer to <a href="#fig-fg5" class="quarto-xref">Figure&nbsp;5</a></p>
+<p>Let’s look at particle <span class="math inline">X</span>. Particle <span class="math inline">X</span> carries the spin projection <span class="math inline">\lambda_X</span>. It decays to particles 1 and 2. They are going at a certain angle with respect to the direction of motion of <span class="math inline">X</span>. To compensate for this angle, one has to adjust the quantization axis.</p>
+<p>Refer to <a href="#fig-fg5" class="quarto-xref">Figure&nbsp;5</a></p>
 <p>One has to adjust, and this is done by rotating the spin of <span class="math inline">X</span> to the direction in which it decays. From that combination, one has to rotate to that combination. That’s what is indicated by this rotation operator of the decay rotation.</p>
 <p>I would like to evaluate this expression in aligned kinematics: <span class="math inline">\phi = 0</span>, <span class="math inline">\theta = 0</span>. Here is the CM frame. This is the expression. If you evaluate that, what you’re going to have is the amplitude <span class="math inline">A</span> that depends on <span class="math inline">s</span> and <span class="math inline">c</span> and depends on all <span class="math inline">\lambda</span>’s.</p>
 <p>Let’s evaluate when angles are zero. The transformations reduce so the <span class="math inline">D</span> appears because we have to rotate the system. But if angles are zero, we don’t have to rotate. We can reduce significantly the summation over <span class="math inline">\lambda_X</span> here.</p>
@@ -500,7 +505,7 @@ Figure&nbsp;5: 5 A dynamic diagram of a cascade decay, where particle 0 decays t
 <img src="images/fig6.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fg6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6: 6 A kinematic representation of the transition from the initial state to the final state in the process where particle 0 decays into particle x and particle 3. The arrows indicate the three-momenta of particles 3 and x, and the fat dot marks particle 0, which is at rest in this frame.
+Figure&nbsp;6: A kinematic representation of the transition from the initial state to the final state in the process where particle 0 decays into particle x and particle 3. The arrows indicate the three-momenta of particles 3 and x, and the fat dot marks particle 0, which is at rest in this frame.
 </figcaption>
 </figure>
 </div>
@@ -510,7 +515,7 @@ Figure&nbsp;6: 6 A kinematic representation of the transition from the initial s
 <img src="images/fig7.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fg7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7: 7 A kinematic configuration for the introduction of the helicity matrix in the transition of particle x decaying into particles 1 and 2. The representation is drawn in the rest frame of particle x, shown as a dot at rest, with arrows representing the three-momenta of particles 1 and 2 in this frame.
+Figure&nbsp;7: A kinematic configuration for the introduction of the helicity matrix in the transition of particle x decaying into particles 1 and 2. The representation is drawn in the rest frame of particle x, shown as a dot at rest, with arrows representing the three-momenta of particles 1 and 2 in this frame.
 </figcaption>
 </figure>
 </div>
