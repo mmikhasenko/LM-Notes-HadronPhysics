@@ -17,8 +17,9 @@ Two such scalar particles scatter into two final-state scalar particles.
 Second, consider the case with spin — for example, scattering a 0⁻ particle into a 3⁻ and a 1⁺ final state.
 
 > [!NOTE]
-> The "blob" in scattering diagrams represents the interaction region — where strong, electromagnetic, or other forces act. Arrows show incoming and outgoing particles. These are not Feynman diagrams; they are sometimes called unitarity diagrams. 
-![1 A unitary diagram for the three-body decay. The arrows show the initial and final state particles, and the blob stands for the interaction that transforms the initial state into the final state.](images/fig1.png)
+> The "blob" in scattering diagrams represents the interaction region — where strong, electromagnetic, or other forces act. Arrows show incoming and outgoing particles. These are not Feynman diagrams; they are sometimes called unitarity diagrams.
+> 
+> ![A unitary diagram for the three-body decay. The arrows show the initial and final state particles, and the blob stands for the interaction that transforms the initial state into the final state.](images/fig1.png)
 
 
 We are only discussing kinematics here — whatever happens inside the blob does not change the number of variables needed.
@@ -58,15 +59,17 @@ Common choices include:
 Any two independent variables work, but some choices (like $s$ and $t$) are Lorentz invariant and avoid unphysical foldings in phase space.
 
 
-Now, moving to three-body decays — such as in Dalitz plot analysis — we again need **two variables** to fully describe the kinematics. 
-![3 The Dalitz plot, a representation of the phase-space for the three-body decay. It appears as an ellipse-shaped area where the internal region corresponds to allowed kinematics and the outside region is forbidden. On the x-axis lies the squared mass of two final-state particles, while the y-axis corresponds to the other subsystem. A horizontal line represents a slice of the phase-space with one mass fixed. The borders of the area correspond to configurations where all three momenta are aligned in the rest frame of the decaying particle, or equivalently, where the scattering angle in the relevant rest frame is either 0 or π.](images/fig3.png)
+Now, moving to three-body decays — such as in Dalitz plot analysis — we again need **two variables** to fully describe the kinematics.
+
+![The Dalitz plot, a representation of the phase-space for the three-body decay. It appears as an ellipse-shaped area where the internal region corresponds to allowed kinematics and the outside region is forbidden. On the x-axis lies the squared mass of two final-state particles, while the y-axis corresponds to the other subsystem. A horizontal line represents a slice of the phase-space with one mass fixed. The borders of the area correspond to configurations where all three momenta are aligned in the rest frame of the decaying particle, or equivalently, where the scattering angle in the relevant rest frame is either 0 or π.](images/fig3.png)
 
 
 > [!TIP]
 > In a three-body decay, the differential decay rate plotted against two Mandelstam variables (e.g., $m_{12}^2$ and $m_{23}^2$) is flat in phase space — meaning the density directly reflects the dynamics of the interaction, without kinematic distortion.
 
 The three-body phase space can be written recursively using two-body phase spaces:
-![2 A sketch illustrating the recursive relation when computing the phase-space expression. This is not a dynamic assumption but a mathematical trick that rewrites the full three-body phase-space through lower-dimensional phase-space elements and the two-body phase-space, for which the expression is simple.](images/fig2.png)
+
+![A sketch illustrating the recursive relation when computing the phase-space expression. This is not a dynamic assumption but a mathematical trick that rewrites the full three-body phase-space through lower-dimensional phase-space elements and the two-body phase-space, for which the expression is simple.](images/fig2.png)
 
 
 $$
@@ -122,7 +125,10 @@ We observe clean tracks through the detector layers and see that they originate 
 
 
 
-We now turn to a Dalitz plot analysis. ![3 The Dalitz plot, a representation of the phase-space for the three-body decay. It appears as an ellipse-shaped area where the internal region corresponds to allowed kinematics and the outside region is forbidden. On the x-axis lies the squared mass of two final-state particles, while the y-axis corresponds to the other subsystem. A horizontal line represents a slice of the phase-space with one mass fixed. The borders of the area correspond to configurations where all three momenta are aligned in the rest frame of the decaying particle, or equivalently, where the scattering angle in the relevant rest frame is either 0 or π.    ](images/fig3.png)
+We now turn to a Dalitz plot analysis.
+
+![The Dalitz plot, a representation of the phase-space for the three-body decay. It appears as an ellipse-shaped area where the internal region corresponds to allowed kinematics and the outside region is forbidden. On the x-axis lies the squared mass of two final-state particles, while the y-axis corresponds to the other subsystem. A horizontal line represents a slice of the phase-space with one mass fixed. The borders of the area correspond to configurations where all three momenta are aligned in the rest frame of the decaying particle, or equivalently, where the scattering angle in the relevant rest frame is either 0 or π.    ](images/fig3.png)
+
 The following plot resembles real experimental data—in fact, with such high statistics, the actual data would look just as smooth.
 
 - **x-axis**: invariant mass squared of the proton and kaon,
@@ -239,8 +245,10 @@ This **angular dependence** occurs because the intermediate resonance (e.g., the
 Particles with higher spin produce more structured distributions. However, if the initial state is unpolarized and the final state spins are not measured, the distributions are averaged and smeared, potentially removing clear nodes.
 
 A particle with spin $J$ has $2J+1$ possible spin projections $m$ onto a quantization axis (z-axis). 
-![4 A diagram showing the spin projection. The horizontal line arrow indicates the z-axis, which is chosen as the quantization axis. The arrow denotes the particle spin, and its projection onto the axis is represented by m in the equations.](images/fig4.png)
- The state is a vector with $2J+1$ components. Operators acting on this state are matrices.
+
+![A diagram showing the spin projection. The horizontal line arrow indicates the z-axis, which is chosen as the quantization axis. The arrow denotes the particle spin, and its projection onto the axis is represented by m in the equations.](images/fig4.png)
+
+The state is a vector with $2J+1$ components. Operators acting on this state are matrices.
 
 When I rotate a state $|J, m\rangle$, I generally get a mixture of all possible $m$ states. The coefficients for this transformation are given by the **Wigner D-matrix**.
 
@@ -275,7 +283,11 @@ I just remember this table because it's super simple. The $D^{(1/2)}_{m' m}$ mat
 > $$
 > This is the Wigner D-matrix for spin-1/2, representing the rotation operator in the SU(2) group. It gives the amplitude for a state with spin projection $m$ to transform into $m'$ under a rotation by Euler angles, with $\beta$ as the rotation angle about the y-axis.
 
-Are there any questions concerning the Wigner D functions? Would you be able to calculate any rotations of the spin projection? ![4 A diagram showing the spin projection. The horizontal line arrow indicates the z-axis, which is chosen as the quantization axis. The arrow denotes the particle spin, and its projection onto the axis is represented by m in the equations.    ](images/fig4.png) It looks alright, right? What's important to note is the convention with the minus sign. If you want to do matrix exponentiation yourself, in previous exercises we computed these matrices.
+Are there any questions concerning the Wigner D functions? Would you be able to calculate any rotations of the spin projection?
+
+![A diagram showing the spin projection. The horizontal line arrow indicates the z-axis, which is chosen as the quantization axis. The arrow denotes the particle spin, and its projection onto the axis is represented by m in the equations.    ](images/fig4.png)
+
+It looks alright, right? What's important to note is the convention with the minus sign. If you want to do matrix exponentiation yourself, in previous exercises we computed these matrices.
 
 In principle, one can do that using Python or Julia: just use matrix exponentiation, input the matrix, and you have the Wigner D functions. But you can also look them up, as they are conventional. Be careful with Mathematica in particular. Mathematica has an opposite convention to what we use: it has a plus sign here, I think, and some indices are swapped. Be careful with that.
 
@@ -291,7 +303,8 @@ Therefore, we can now move on and have a recipe, a general way to construct any 
 Let's now explore the blob that I had on the previous slide and consider one of the possible decay kinematics, one of the possible decay dynamics. We're going to make up a model for what is inside the blob. It's not kinematics; it really comes from a modeling assumption.
 
 I'm going to assume that the three particles in the final state are produced via a cascade process where the initial particle goes first to an intermediate particle with spin $J$, and then $X$ decays to 1 and 2. This three-way process with two variables and spins gives the dimension of the matrix, the discrete dimensions. 
-![5 A dynamic diagram of a cascade decay, where particle 0 decays to a three-body final state through an intermediate state x that sequentially decays into particles 1 and 2. The intermediate particle carries spin j and serves as an expansion term of the full amplitude, known as the partial projection term. Lines represent initial and final state particles, while the double line denotes the intermediate particle.](images/fig5.png)
+
+![A dynamic diagram of a cascade decay, where particle 0 decays to a three-body final state through an intermediate state x that sequentially decays into particles 1 and 2. The intermediate particle carries spin j and serves as an expansion term of the full amplitude, known as the partial projection term. Lines represent initial and final state particles, while the double line denotes the intermediate particle.](images/fig5.png)
 
 
 For this problem, since all particles have spin, I'm going to deal with dimensions which are the product of $(2j_0 + 1)$ for all particles: $(2j_0 + 1) \times (2j_1 + 1) \times (2j_2 + 1) \times (2j_3 + 1)$. If a particle's spin is 0, the dimension of the corresponding spin is 1. That's easy.
@@ -317,7 +330,9 @@ The $G$ is the rotation orientation of the decay. The first index tells you who 
 
 In that case, the $\lambda$'s are helicity projections, projection to motion to $P$. The $D$ has the first index telling you who decays, and then the second index after rotation where it decays, and then particle 0.
 
-Let's look at particle $X$. Particle $X$ carries the spin projection $\lambda_X$. It decays to particles 1 and 2. They are going at a certain angle with respect to the direction of motion of $X$. To compensate for this angle, one has to adjust the quantization axis. ![5 A dynamic diagram of a cascade decay, where particle 0 decays to a three-body final state through an intermediate state x that sequentially decays into particles 1 and 2. The intermediate particle carries spin j and serves as an expansion term of the full amplitude, known as the partial projection term. Lines represent initial and final state particles, while the double line denotes the intermediate particle.    ](images/fig5.png)
+Let's look at particle $X$. Particle $X$ carries the spin projection $\lambda_X$. It decays to particles 1 and 2. They are going at a certain angle with respect to the direction of motion of $X$. To compensate for this angle, one has to adjust the quantization axis.
+
+![A dynamic diagram of a cascade decay, where particle 0 decays to a three-body final state through an intermediate state x that sequentially decays into particles 1 and 2. The intermediate particle carries spin j and serves as an expansion term of the full amplitude, known as the partial projection term. Lines represent initial and final state particles, while the double line denotes the intermediate particle.    ](images/fig5.png)
 
 One has to adjust, and this is done by rotating the spin of $X$ to the direction in which it decays. From that combination, one has to rotate to that combination. That's what is indicated by this rotation operator of the decay rotation.
 
@@ -345,10 +360,10 @@ The final expression is $H_0 D^{J_X}_{\lambda_X, \lambda_1 - \lambda_2}(\theta, 
 > This is the amplitude in aligned kinematics ($\phi = 0, \theta = 0$), where rotations simplify due to quantization along the z-axis. It constrains intermediate spin projections via $\lambda_X = \lambda_0 + \lambda_3$, reducing the summation.
 
 
-![6 A kinematic representation of the transition from the initial state to the final state in the process where particle 0 decays into particle x and particle 3. The arrows indicate the three-momenta of particles 3 and x, and the fat dot marks particle 0, which is at rest in this frame.](images/fig6.png)
+![A kinematic representation of the transition from the initial state to the final state in the process where particle 0 decays into particle x and particle 3. The arrows indicate the three-momenta of particles 3 and x, and the fat dot marks particle 0, which is at rest in this frame.](images/fig6.png)
 
 
-![7 A kinematic configuration for the introduction of the helicity matrix in the transition of particle x decaying into particles 1 and 2. The representation is drawn in the rest frame of particle x, shown as a dot at rest, with arrows representing the three-momenta of particles 1 and 2 in this frame.](images/fig7.png)
+![A kinematic configuration for the introduction of the helicity matrix in the transition of particle x decaying into particles 1 and 2. The representation is drawn in the rest frame of particle x, shown as a dot at rest, with arrows representing the three-momenta of particles 1 and 2 in this frame.](images/fig7.png)
 
 
 How many numbers do I need in order to compute? I want to think now about electromagnetic interactions or gravity. How many numbers as an input do I need to predict the angular distribution? It's essentially here, but it misses fundamental components.
@@ -416,5 +431,5 @@ $$
 d\Phi_3 = \frac{1}{(8\pi)^2 2s} \int dm_{23}^2 dm_{24}^2
 $$
 
-This is particularly important for understanding how the **angular distributions** integrate over the available phase space in particle decays. ![2 A sketch illustrating the recursive relation when computing the phase-space expression. This is not a dynamic assumption but a mathematical trick that rewrites the full three-body phase-space through lower-dimensional phase-space elements and the two-body phase-space, for which the expression is simple.    ](images/fig2.png)
+This is particularly important for understanding how the **angular distributions** integrate over the available phase space in particle decays. ![A sketch illustrating the recursive relation when computing the phase-space expression. This is not a dynamic assumption but a mathematical trick that rewrites the full three-body phase-space through lower-dimensional phase-space elements and the two-body phase-space, for which the expression is simple.    ](images/fig2.png)
 
