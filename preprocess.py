@@ -1,7 +1,9 @@
 import sys
+import yaml
 import re
 import os
 import logging
+from pathlib import Path
 from typing import Callable
 from collections import defaultdict
 logger = logging.getLogger("callout_replacer")
@@ -11,9 +13,61 @@ handler.setFormatter(formatter)
 logger.addHandler(handler)
 logger.setLevel(logging.DEBUG)  # set to INFO or WARNING to reduce output
 
+import json
+import re
+
+def get_metadata(basename, authors):
+    print(basename)
+    match = re.fullmatch(r"([0-9]{4})-Lecture-([0-9]{1,2}).md", basename)
+    year = int(match.group(1))
+    lecture = int(match.group(2))
+    lecture_key = f"Lecture {lecture}"
+    year_key = str(year)
+    metadata = authors.get(year_key, {}).get(lecture_key, {})
+    presenter = metadata.get("presenter", "Unknown")
+    note_taker = metadata.get("note_taker", "Unknown")
+    return (f"({year}) Lecture {lecture}", presenter, note_taker, str(year), "html")
+
+
+
+def build_preamble(title: str, presenter: str, note_taker: str,
+                   date: str, fmt: str) -> str:
+    """
+    Return a YAML front‑matter block that Quarto will recognise.
+    """
+    preamble_dict = {
+        "title": title,
+        "author": "",          # optional static author
+        "presenter": presenter,
+        "note_taker": note_taker,
+        "date": date,
+        "format": fmt
+    }
+    # Convert dict → YAML string
+    yaml_block = yaml.safe_dump(preamble_dict, sort_keys=False).strip()
+    return f"""---
+{yaml_block}
+---
+"""+"""
+**Presenter**: {{< meta presenter >}}
+
+**Note Taker**: {{< meta note_taker >}}
+
+"""
+
 def transform_file(filepath):
     with open(filepath, 'r', encoding='utf-8') as file:
         content = file.read().replace("```latex", "```math")
+    path = Path(filepath)
+    try:
+        with open('authors.json') as f:
+            authors = json.load(f)
+        title, presenter, note_taker, date, fmt = get_metadata(path.name, authors)
+        preamble = build_preamble(title, presenter, note_taker, date, fmt)
+        content = preamble + content
+    except AttributeError:
+        pass
+
 
     
     # Convert \(...\) blocks to $...$
