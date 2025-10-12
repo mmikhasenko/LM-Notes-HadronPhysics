@@ -1,3 +1,16 @@
+---
+title: (2025) Lecture 4
+author: ''
+presenter: Farah Afzal
+note_taker: Anna Zimmer
+date: '2025'
+format: html
+---
+
+**Presenter**: {{< meta presenter >}}
+
+**Note Taker**: {{< meta note_taker >}}
+
 ### Electron-Photon Scattering, Form Factors, and Baryon Magnetic Moments
 
 

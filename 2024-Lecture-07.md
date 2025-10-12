@@ -1,3 +1,16 @@
+---
+title: (2024) Lecture 7
+author: ''
+presenter: Mikhail Mikhasenko
+note_taker: Ilya Segal
+date: '2024'
+format: html
+---
+
+**Presenter**: {{< meta presenter >}}
+
+**Note Taker**: {{< meta note_taker >}}
+
 ### Mass and Quantum Numbers of the PCC Hadronic Molecule
 
 

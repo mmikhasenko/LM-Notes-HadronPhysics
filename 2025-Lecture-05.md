@@ -1,3 +1,16 @@
+---
+title: (2025) Lecture 5
+author: ''
+presenter: Mikhail Mikhasenko
+note_taker: Anna Zimmer
+date: '2025'
+format: html
+---
+
+**Presenter**: {{< meta presenter >}}
+
+**Note Taker**: {{< meta note_taker >}}
+
 ### Production Mechanisms and Kinematic Analysis in Hadron Spectroscopy
 
 

@@ -1,3 +1,16 @@
+---
+title: (2025) Lecture 11
+author: ''
+presenter: Mikhail Mikhasenko
+note_taker: Anna Zimmer
+date: '2025'
+format: html
+---
+
+**Presenter**: {{< meta presenter >}}
+
+**Note Taker**: {{< meta note_taker >}}
+
 ### Thresholds, Branch Points, and Resonances in ππ Scattering
 
 

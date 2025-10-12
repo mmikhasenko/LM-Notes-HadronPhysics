@@ -1,3 +1,16 @@
+---
+title: (2024) Lecture 6
+author: ''
+presenter: Mikhail Mikhasenko
+note_taker: Ilya Segal
+date: '2024'
+format: html
+---
+
+**Presenter**: {{< meta presenter >}}
+
+**Note Taker**: {{< meta note_taker >}}
+
 ### Lambda Baryon Decay: Weak Interaction, Matrix Elements, and Helicity States
 
 

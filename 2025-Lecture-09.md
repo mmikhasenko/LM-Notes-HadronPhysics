@@ -1,3 +1,16 @@
+---
+title: (2025) Lecture 9
+author: ''
+presenter: Mikhail Mikhasenko
+note_taker: Anna Zimmer
+date: '2025'
+format: html
+---
+
+**Presenter**: {{< meta presenter >}}
+
+**Note Taker**: {{< meta note_taker >}}
+
 ### Kinematics of Decay and Scattering: The Källén Function and Dalitz Plot
 
 

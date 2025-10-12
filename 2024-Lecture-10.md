@@ -1,3 +1,16 @@
+---
+title: (2024) Lecture 10
+author: ''
+presenter: Mikhail Mikhasenko
+note_taker: Ilya Segal
+date: '2024'
+format: html
+---
+
+**Presenter**: {{< meta presenter >}}
+
+**Note Taker**: {{< meta note_taker >}}
+
 ### Calculating Cross Sections and Spin Algebra in Scattering Processes
 
 

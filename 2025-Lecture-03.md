@@ -1,3 +1,16 @@
+---
+title: (2025) Lecture 3
+author: ''
+presenter: Mikhail Mikhasenko
+note_taker: Anna Zimmer
+date: '2025'
+format: html
+---
+
+**Presenter**: {{< meta presenter >}}
+
+**Note Taker**: {{< meta note_taker >}}
+
 ### Symmetry, Hadron Structure, and Isospin in Meson and Baryon Systems
 
 

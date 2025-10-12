@@ -1,3 +1,16 @@
+---
+title: (2025) Lecture 7
+author: ''
+presenter: Mikhail Mikhasenko
+note_taker: Anna Zimmer
+date: '2025'
+format: html
+---
+
+**Presenter**: {{< meta presenter >}}
+
+**Note Taker**: {{< meta note_taker >}}
+
 ### Helicity Formalism, Weak Decays, and Isospin Violation in $\Lambda^0$ Decay
 
 

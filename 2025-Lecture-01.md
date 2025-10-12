@@ -1,3 +1,16 @@
+---
+title: (2025) Lecture 1
+author: ''
+presenter: Mikhail Mikhasenko
+note_taker: Anna Zimmer
+date: '2025'
+format: html
+---
+
+**Presenter**: {{< meta presenter >}}
+
+**Note Taker**: {{< meta note_taker >}}
+
 ### Introduction to Hadron Physics and Course Logistics
 
 

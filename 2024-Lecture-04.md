@@ -1,3 +1,16 @@
+---
+title: (2024) Lecture 4
+author: ''
+presenter: Mikhail Mikhasenko
+note_taker: Ilya Segal
+date: '2024'
+format: html
+---
+
+**Presenter**: {{< meta presenter >}}
+
+**Note Taker**: {{< meta note_taker >}}
+
 ### Magnetic Moment of the Omega Baryon and Excitation Patterns of the Sigma Baryon
 
 

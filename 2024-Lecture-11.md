@@ -1,3 +1,16 @@
+---
+title: (2024) Lecture 11
+author: ''
+presenter: Mikhail Mikhasenko
+note_taker: Ilya Segal
+date: '2024'
+format: html
+---
+
+**Presenter**: {{< meta presenter >}}
+
+**Note Taker**: {{< meta note_taker >}}
+
 ### Exam Participation and Group Coordination Discussion
 
 

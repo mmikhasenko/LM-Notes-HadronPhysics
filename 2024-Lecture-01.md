@@ -1,3 +1,16 @@
+---
+title: (2024) Lecture 1
+author: ''
+presenter: Mikhail Mikhasenko
+note_taker: Ilya Segal
+date: '2024'
+format: html
+---
+
+**Presenter**: {{< meta presenter >}}
+
+**Note Taker**: {{< meta note_taker >}}
+
 ### Lecture Upload Plans and Transition to Logistics
 
 ::: callout-note
